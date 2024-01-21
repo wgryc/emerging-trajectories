@@ -1,6 +1,13 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+et_api_key = os.getenv("ET_API_KEY")
+
+
 from emergingtrajectories import Client 
 
-c = Client(api_key = "sk-et-eegIKTiiTep9mCeA68y46ev1UDaA0W8tZHx0IQ0Xmu5zv7XxdsG0ou2tXFJxvxZXpiA")
+c = Client(api_key = et_api_key)
 
 #response = c.create_statement(title = "The price of Bitcoin will exceed $100,000 by the end of 2024.",
 #                   description = "Same as above.",
