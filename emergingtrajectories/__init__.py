@@ -28,7 +28,7 @@ class Client(object):
         else:
             raise Exception(response.text)
         
-    def create_forecast(self, statement_id, title, justification, value, prediction_agent):
+    def create_forecast(self, statement_id, title, justification, value, prediction_agent, additional_data={}):
         url = self.base_url + "create_forecast/" + str(statement_id)
         headers = {
             'Authorization': f'Bearer {self.api_key}',
@@ -38,7 +38,8 @@ class Client(object):
             "title": title,
             "justification": justification,
             "value": value,
-            "prediction_agent": prediction_agent
+            "prediction_agent": prediction_agent,
+            "additional_data": additional_data
         }
         response = requests.post(url, headers=headers, data=json.dumps(data))
         if response.status_code == 201:
