@@ -77,7 +77,10 @@ class UtilityHelper(object):
         output = chatbot.resend()
         if output == _extract_prediction_prompt_error:
             raise Exception("Unable to extract prediction from response.")
-        
+
+        if output[0] == "$":
+            output = output[1:]
+
         print(output)
 
         if not is_numeric(output):

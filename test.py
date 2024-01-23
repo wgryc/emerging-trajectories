@@ -14,5 +14,5 @@ c = Client(api_key = et_api_key)
 #                   deadline = "2024-12-31T23:59:59Z")
 #print(response)
 
-#response = c.create_forecast(1, "Test", "Test", 0.1, "Agent 1")
+#response = c.create_forecast(1, "Test", "Test", 0.1, "Agent 1", {"test": "test"})
 #print(response)
