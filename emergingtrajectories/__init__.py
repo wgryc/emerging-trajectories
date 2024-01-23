@@ -11,7 +11,7 @@ class Client(object):
     def __init__(self, api_key):
         self.api_key = api_key
 
-    def create_statement(self, title, description, deadline):
+    def create_statement(self, title, description, deadline, fill_in_the_blank):
         url = self.base_url + "create_statement"
         headers = {
             'Authorization': f'Bearer {self.api_key}',
@@ -20,7 +20,8 @@ class Client(object):
         data = {
             "title": title,
             "description": description,
-            "deadline": deadline
+            "deadline": deadline,
+            "fill_in_the_blank": fill_in_the_blank
         }
         response = requests.post(url, headers=headers, data=json.dumps(data))
         if response.status_code == 201:
@@ -28,6 +29,18 @@ class Client(object):
         else:
             raise Exception(response.text)
         
+    def get_statement(self, statement_id):
+        url = self.base_url + "get_statement" + "/" + str(statement_id)
+        headers = {
+            'Authorization': f'Bearer {self.api_key}',
+            'Content-Type': 'application/json'
+        }
+        response = requests.post(url, headers=headers)
+        if response.status_code == 200:
+            return response.json()
+        else:
+            raise Exception(response.text)
+
     def create_forecast(self, statement_id, title, justification, value, prediction_agent, additional_data={}):
         url = self.base_url + "create_forecast/" + str(statement_id)
         headers = {
