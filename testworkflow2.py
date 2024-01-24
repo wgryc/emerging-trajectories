@@ -14,8 +14,9 @@ agent_results = ScrapeAndPredictAgent(
     google_api_key,
     google_search_id,
     "Oil price projections for end of 2024",
-    4,
-    et_api_key
+    5,
+    et_api_key,
+    prediction_agent="GPT-4 with web scraping"
 )
 
 print(agent_results)
