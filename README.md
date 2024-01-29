@@ -10,4 +10,6 @@ pip install emergingtrajectories
 
 ## Questions?
 
+Visit our site: https://emergingtrajectories.com/
+
 Please reach out: hello --at-- phaseai --dot-- com
