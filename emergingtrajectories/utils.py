@@ -75,15 +75,18 @@ class UtilityHelper(object):
         chatbot.messages = message_stack
         
         output = chatbot.resend()
+
+        print(f"\n\n\n{output}\b\b\b")
+
         if output == _extract_prediction_prompt_error:
             raise Exception("Unable to extract prediction from response.")
 
         if output[0] == "$":
             output = output[1:]
 
-        print(output)
+        #print(output)
 
         if not is_numeric(output):
-            raise Exception("Prediction does not appear to be numeric.")
+            raise Exception(f"Prediction does not appear to be numeric:\n{output}")
         
         return float(output)

@@ -34,6 +34,7 @@ c = Client(api_key = et_api_key)
 response = c.create_statement(
     title = "Oil price prediction.",
     description = "We are predicting the price of oil for the end of the 2024 calendar year.",
+    fill_in_the_blank = "The price of oil by end of 2024 will be at $____ USD per barrel.",
     deadline = "2024-12-31T23:59:59Z")
 
 statement_id = response["statement_id"]
