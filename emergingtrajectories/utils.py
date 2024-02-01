@@ -12,6 +12,16 @@ TEXT: The probability that bitcoin will exceed $100,000 by the end of 2024 is 0.
 
 In the case above, your response would simply be "0.37".
 
+The actual metrics (i.e., prediction) might be provided with formatting. For example...
+
+|||---|||
+PREDICTION STATEMENT: The probability that Boeing's (NYSE:BA) share price at the close of markets on or before March 1, 2024 will be $220.00 USD or higher is _____ (value between 0.00 and 1.00).
+
+TEXT: The probability that Boeing's (NYSE:BA) share price at the close of markets on or before March 1, 2024, will be $220.00 USD or higher is **0.65**.
+|||---|||
+
+In this case, ignore the asterisks or instructions ("value between 0.00 and 1.00") and provide the correct response, which is 0.65.
+
 The user will provide you with a PREDICTION STATEMENT and TEXT and you need to answer like the above.
 
 On the extremely rare occasion that the TEXT does not have a proper numerical prediction or you are unable to extract it, simply respond with "UNCLEAR".
@@ -59,7 +69,7 @@ def is_numeric(string):
 
 class UtilityHelper(object):
 
-    def __init__(self, api_key, model="gpt-3.5-turbo"):
+    def __init__(self, api_key, model="gpt-4-0125-preview"):
         self.api_key = api_key
         self.model = model
 
@@ -69,6 +79,8 @@ class UtilityHelper(object):
             {"role":"system", "content": _extract_prediction_prompt},
             {"role":"user", "content": f"PREDICTION STATEMENT: {statement_challenge}\n\nTEXT: {response}"},
         ]
+
+        #print(f"PREDICTION STATEMENT: {statement_challenge}\n\nTEXT: {response}")
 
         llm = OpenAIGPTWrapper(apikey=self.api_key, model=self.model)
         chatbot = ChatBot(llm)

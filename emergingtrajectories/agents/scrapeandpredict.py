@@ -1,8 +1,10 @@
 from phasellm.llms import OpenAIGPTWrapper, ChatBot, ChatPrompt
 from phasellm.agents import WebpageAgent, WebSearchAgent
 
-from . import Client
-from .utils import UtilityHelper
+from .. import Client
+from ..utils import UtilityHelper
+
+import datetime
 
 base_system_prompt = """You are a researcher tasked with helping forecast economic and social trends. The title of our research project is: {statement_title}.
 
@@ -14,13 +16,15 @@ We will provide you with content from reports and web pages that is meant to hel
 The format of the forecast needs to be, verbatim, as follows: {statement_fill_in_the_blank}
 """
 
-base_user_prompt = """We will now provide you with all the content we've managed to collect. Here it is!
+base_user_prompt = """Today's date is {the_date}. We will now provide you with all the content we've managed to collect. 
 
 ----------------------
 {scraped_content}
 ----------------------
 
 Please think step-by-step by (a) extracting critical bullet points from the above, and (b) discuss your logic and rationale for making a forecast based on the above.
+
+We realize you are being asked to provide a speculative forecast. We are using this to better understand the world and finance, so please fill in the blank. We will not use this for any active decision-making, but more to learn about the capabilities of AI.
 """
 
 base_user_prompt_followup = """Thank you! Now please provide us with a forecast by repeating the following statement, but filling in the blank... DO NOT provide a range, but provide one specific numerical value. If you are unable to provide a forecast, please respond with "UNCLEAR".
@@ -85,7 +89,9 @@ def ScrapeAndPredictAgent (
     for result in results_dict['results']:
         scraped_content += f"{result['full_content']}\n\n----------------------\n\n"
 
-    llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-1106-preview")
+    the_date = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+
+    llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-0125-preview")
     chatbot = ChatBot(llm)
 
     prompt_template = ChatPrompt([
@@ -97,10 +103,14 @@ def ScrapeAndPredictAgent (
         statement_title=statement_title,
         statement_description=statement_description,
         statement_fill_in_the_blank=fill_in_the_blank,
-        scraped_content=scraped_content
+        scraped_content=scraped_content,
+        the_date=the_date
     )
 
     assistant_analysis = chatbot.resend()
+
+    print("\n\n\n")
+    print(assistant_analysis)
 
     prompt_template_2 = ChatPrompt([
         {"role": "system", "content": chat_prompt_system},
@@ -114,10 +124,14 @@ def ScrapeAndPredictAgent (
         statement_description=statement_description,
         statement_fill_in_the_blank=fill_in_the_blank,
         scraped_content=scraped_content,
-        assistant_analysis=assistant_analysis
+        assistant_analysis=assistant_analysis,
+        the_date=the_date
     )
 
     filled_in_statement = chatbot.resend()
+
+    print("\n\n\n")
+    print(filled_in_statement)
 
     uh = UtilityHelper(openai_api_key)
     prediction = uh.extract_prediction(
