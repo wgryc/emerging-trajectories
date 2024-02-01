@@ -53,7 +53,7 @@ class Client(object):
         else:
             raise Exception(response.text)        
 
-    def create_forecast(self, statement_id, title, justification, value, prediction_agent, additional_data={}, prior_forecast=None):
+    def create_forecast(self, statement_id, title, justification, value, prediction_agent, additional_data={}, prior_forecast=None, is_human=False):
         url = self.base_url + "create_forecast/" + str(statement_id)
         headers = {
             'Authorization': f'Bearer {self.api_key}',
@@ -64,7 +64,8 @@ class Client(object):
             "justification": justification,
             "value": value,
             "prediction_agent": prediction_agent,
-            "additional_data": additional_data
+            "additional_data": additional_data,
+            "is_human": is_human
         }
         if prior_forecast is not None:
             data["prior_forecast"] = prior_forecast

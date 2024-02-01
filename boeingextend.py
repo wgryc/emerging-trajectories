@@ -16,7 +16,8 @@ agent_results = ExtendScrapePredictAgent(
     "Boeing Share Price Projections",
     18,
     et_api_key,
-    prediction_agent="Web Scraper - Boeing (Extending Forecast)"
+    prediction_agent="Web Scraper - Boeing (Extending Forecast)",
+    is_human=False
 )
 
 print(agent_results)
