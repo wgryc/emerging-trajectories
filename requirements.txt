@@ -1,2 +1,3 @@
 phasellm
 python-dotenv
+Django
