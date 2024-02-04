@@ -4,7 +4,7 @@ from emergingtrajectories.knowledge import KnowledgeBaseFileCache
 #content = w.get("https://10millionsteps.com/ai-inflection")
 #print(content)
 
-from emergingtrajectories.agents import ScrapeAndPredictAgent2
+from emergingtrajectories.agents import ScrapeAndPredictAgent3
 
 import os
 from dotenv import load_dotenv
@@ -17,7 +17,12 @@ google_search_id = os.getenv("GOOGLE_SEARCH_ID")
 
 kb = KnowledgeBaseFileCache("f_cachetest")
 
-agent_results = ScrapeAndPredictAgent2(
+## Adding new files.
+#kb.add_content_from_file("cachetest_newcontent.txt")
+#kb.add_content_from_file("cachetest_newcontent2.txt")
+#kb.add_content_from_file("cachetest_newcontent3.txt")
+
+agent_results = ScrapeAndPredictAgent3(
     openai_api_key,
     google_api_key,
     google_search_id,

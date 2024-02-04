@@ -14,7 +14,7 @@ agent_results = ExtendScrapePredictAgent(
     google_api_key,
     google_search_id,
     "Boeing Share Price Projections",
-    24,
+    31,
     et_api_key,
     prediction_agent="Web Scraper - Boeing (Extending Forecast)",
 )

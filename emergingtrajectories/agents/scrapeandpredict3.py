@@ -34,7 +34,9 @@ base_user_prompt_followup = """Thank you! Now please provide us with a forecast 
 {statement_fill_in_the_blank}
 """
 
-def ScrapeAndPredictAgent2 (
+# In this case, we also get any documents that haven't been accessed by the agent.
+# This is why agent <-> kb needs to be a 1:1 relationship.
+def ScrapeAndPredictAgent3 (
     openai_api_key,
     google_api_key,
     google_search_id,
@@ -81,7 +83,16 @@ def ScrapeAndPredictAgent2 (
         if not knowledge_base.in_cache(result.url):
             added_new_content = True
             page_content = knowledge_base.get(result.url)
+            knowledge_base.log_access(result.url)
             scraped_content += f"{page_content}\n\n----------------------\n\n"
+
+    # We also check the knowledge base for content that was added manually.
+    unaccessed_uris = knowledge_base.get_unaccessed_content()
+    for ua in unaccessed_uris:
+        added_new_content = True
+        page_content = knowledge_base.get(ua)
+        knowledge_base.log_access(ua)
+        scraped_content += f"{page_content}\n\n----------------------\n\n"
 
     if not added_new_content:
         print("No new content added to the forecast.")

@@ -1,0 +1,48 @@
+# Why Oil Prices Rose After Shrugging Off a Crisis
+# DATE: Jan 29, 2024
+
+Oil prices have climbed, and not just because of the recent turmoil in the Red Sea.
+
+Futures on Brent crude gained more than 6% last week to settle at $83.55 a barrel Friday, their highest level since early November. The rise came after winter storms slammed U.S. oil production and new data showed the country’s economy has remained resilient, suggesting robust demand for fuel ahead.
+
+The jump roused an oil market that has been surprisingly sleepy, given the growing threat that the Israel-Hamas war will spread into a wider conflict. On Monday, Brent crude retreated 1.4% despite another attack by Yemen’s Houthi rebels on an oil-carrying vessel over the weekend. 
+
+Here’s a look at what is driving the oil market’s unexpected moves in recent weeks.
+
+The climb in oil prices began earlier this month after winter storms and dangerously low temperatures hit much of the country. Deep freezes in North Dakota and Texas oil fields slowed U.S. crude output by about 1 million barrels a day for the week ended Jan. 19, according to federal record-keepers. The pullback amounted to about 7.5% of typical daily domestic production. 
+
+Then last week, new data showed the economy grew at a 3.3% annual rate in the fourth quarter, adjusted for inflation. That was better than the 2% economists had forecast and drove up expectations for fuel demand. 
+
+It isn’t clear how much more prices will increase in the near term.
+
+Oil’s recent rise has “catalyzed massive buying” from a large legion of trend-following traders, according to Daniel Ghali, a commodity strategist at TD Securities. Prices would need to climb further to entice them to buy more, Ghali said, putting the onus on other traders to keep the rally going.
+
+But too many have been burned by short-lived price surges since 2022, said Scott Shelton, energy analyst at United ICAP. Moscow’s invasion of Ukraine, Western sanctions on Russian exports and OPEC production cuts have all failed to drive a sustained jump in prices.
+
+“It’s been one of the more toxic trades for the last two years,” Shelton said. “Every time you buy because of geopolitics, you lose money.”
+
+The threat of an expanding Israel-Hamas war was the latest global risk that didn’t lead to a lasting increase in prices. 
+
+Before last week, futures on Brent crude oil had largely remained in the $70s for six weeks, well below its price before Hamas attacked Israel on Oct. 7. That was despite Houthi attacks on shipping vessels in the Red Sea, the diversion of oil tankers from the region and flare-ups in Iran, the West Bank and off the coast of Oman. 
+
+Analysts at J.P. Morgan recently calculated that there was no geopolitical risk premium built into petroleum prices.
+
+The lack of major supply disruptions has helped the market keep its cool. The attacks also come after two years of other supply threats that briefly pushed up prices, before quickly fizzling out. 
+
+Oil options prices show the market’s lack of panic. Option-implied volatility, a measure of the cost of insuring against oil price spikes, soared to more than 50% after Hamas struck Israel, but has since slid to about 36%, according to the CME. That is a level typical of tranquil times and close to where it was before the attack.
+
+Based on the small amount of damage caused by their attacks, the Houthis appear more interested in disrupting traffic than in taking out targets, Vikas Dwivedi, Macquarie’s global energy strategist, wrote in a note. 
+
+Deutsche Bank analyst Michael Hsueh wrote in a report that the Yemeni rebels are unlikely to expand their campaign to the more critical Strait of Hormuz, through which about a fifth of the world’s oil flows. That would be “too bluntly damaging” to Houthi ally Iran, which exports through the Strait, he said.
+
+The impact of Red Sea shipping disruptions is “small and easily handled,” J.P. Morgan Commodities Research said in a note. For affected ships, the bank estimated that the detour lengthens voyages by eight to nine days and tacks about $2 a barrel onto prices.
+
+The delays on oil supplies, like the U.S. cold snap, are expected to have a transitory impact on prices. Front-month Brent futures have surged by more than $6.50 a barrel since Jan. 10, but those for later delivery have risen much less.
+
+Oil prices have also been weighed down by a global surplus of crude. Gushers of oil from non-OPEC countries including the U.S., Brazil and Guyana helped to keep a lid on prices last year and should exceed global petroleum demand growth in 2024, according to the International Energy Agency.
+
+Expanding offshore projects could add to the glut in 2025. Growth in oil demand is also expected to slow as the pandemic’s aftereffects recede and an expanding number of electric vehicles curtails gasoline consumption. As a result, Citi Research expects global oil inventories to balloon by an average of 1.2 million barrels a day next year.
+
+“Sell rallies in early 2024 before the storm hits in 2025,” Citi’s analysts wrote in a recent note.
+
+Even if a disaster strikes supplies, or if the world’s thirst for fossil fuels exceeds expectations, idle output potential could fill the gap. OPEC’s cuts have left it with nearly five million barrels a day of spare production capacity, according to the Energy Department. That is far more than its prepandemic average.

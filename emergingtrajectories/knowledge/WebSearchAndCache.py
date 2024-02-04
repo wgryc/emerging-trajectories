@@ -76,10 +76,24 @@ class KnowledgeBaseFileCache:
         self.cache[uri] = {
             "obtained_on": obtained_on,
             "last_accessed": last_accessed,
+            "accessed": 0,
             "uri_md5": uri_md5
         }
         with open(self.cache_file, "w") as f:
             json.dump(self.cache, f, cls=DjangoJSONEncoder)
+
+    def log_access(self, uri):
+        self.cache[uri]["last_accessed"] = datetime.now()
+        self.cache[uri]["accessed"] = 1
+        with open(self.cache_file, "w") as f:
+            json.dump(self.cache, f, cls=DjangoJSONEncoder)
+
+    def get_unaccessed_content(self):
+        unaccessed = []
+        for uri in self.cache:
+            if self.cache[uri]["accessed"] == 0:
+                unaccessed.append(uri)
+        return unaccessed
 
     def get(self, uri):
         uri_md5 = uri_to_local(uri)
@@ -100,3 +114,16 @@ class KnowledgeBaseFileCache:
             self.update_cache(uri, datetime.now(), datetime.now())
 
             return content_parsed
+        
+    def add_content(self, content, uri=None):
+        if uri is None:
+            uri = hashlib.md5(content.encode('utf-8')).hexdigest()
+        uri_md5 = uri_to_local(uri)
+        with open(os.path.join(self.root_parsed, uri_md5), "w") as f:
+            f.write(content)
+        self.update_cache(uri, datetime.now(), datetime.now())
+
+    def add_content_from_file(self, filepath, uri=None):
+        with open(filepath, "r") as f:
+            content = f.read()
+        self.add_content(content, uri)
