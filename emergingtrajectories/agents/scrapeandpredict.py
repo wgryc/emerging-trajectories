@@ -1,10 +1,8 @@
 from phasellm.llms import OpenAIGPTWrapper, ChatBot, ChatPrompt
-from phasellm.agents import WebpageAgent, WebSearchAgent
+from phasellm.agents import WebSearchAgent
 
 from .. import Client
 from ..utils import UtilityHelper
-
-from ..knowledge import KnowledgeBaseFileCache
 
 import datetime
 
@@ -34,11 +32,10 @@ base_user_prompt_followup = """Thank you! Now please provide us with a forecast 
 {statement_fill_in_the_blank}
 """
 
-a = {"a": 1, "b": 2}
 
 # In this case, we also get any documents that haven't been accessed by the agent.
 # This is why agent <-> kb needs to be a 1:1 relationship.
-def ScrapeAndPredictAgent (
+def ScrapeAndPredictAgent(
     openai_api_key,
     google_api_key,
     google_search_id,
@@ -66,18 +63,23 @@ def ScrapeAndPredictAgent (
         statement_description = statement["description"]
         fill_in_the_blank = statement["fill_in_the_blank"]
 
-    if statement_id == -1 and (statement_title is None or statement_description is None or fill_in_the_blank is None):
-        raise Exception("You must provide either a statement ID or a statement title, description, and fill-in-the-blank.")
-    
-    scraper = WebpageAgent()
+    if statement_id == -1 and (
+        statement_title is None
+        or statement_description is None
+        or fill_in_the_blank is None
+    ):
+        raise Exception(
+            "You must provide either a statement ID or a statement title, description, and fill-in-the-blank."
+        )
+
     webagent = WebSearchAgent(api_key=google_api_key)
-    results = webagent.search_google(query=google_search_query, 
-                                 custom_search_engine_id=google_search_id, 
-                                 num=10)
-    
+    results = webagent.search_google(
+        query=google_search_query, custom_search_engine_id=google_search_id, num=10
+    )
+
     scraped_content = ""
-    
-    added_new_content = False 
+
+    added_new_content = False
 
     for result in results:
         if not knowledge_base.in_cache(result.url):
@@ -103,17 +105,19 @@ def ScrapeAndPredictAgent (
     llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-0125-preview")
     chatbot = ChatBot(llm)
 
-    prompt_template = ChatPrompt([
-        {"role": "system", "content": chat_prompt_system},
-        {"role": "user", "content": chat_prompt_user}
-    ])
+    prompt_template = ChatPrompt(
+        [
+            {"role": "system", "content": chat_prompt_system},
+            {"role": "user", "content": chat_prompt_user},
+        ]
+    )
 
     chatbot.messages = prompt_template.fill(
         statement_title=statement_title,
         statement_description=statement_description,
         statement_fill_in_the_blank=fill_in_the_blank,
         scraped_content=scraped_content,
-        the_date=the_date
+        the_date=the_date,
     )
 
     assistant_analysis = chatbot.resend()
@@ -121,12 +125,14 @@ def ScrapeAndPredictAgent (
     print("\n\n\n")
     print(assistant_analysis)
 
-    prompt_template_2 = ChatPrompt([
-        {"role": "system", "content": chat_prompt_system},
-        {"role": "user", "content": chat_prompt_user},
-        {"role": "assistant", "content": "{assistant_analysis}"},
-        {"role": "user", "content": chat_prompt_user_followup}
-    ])
+    prompt_template_2 = ChatPrompt(
+        [
+            {"role": "system", "content": chat_prompt_system},
+            {"role": "user", "content": chat_prompt_user},
+            {"role": "assistant", "content": "{assistant_analysis}"},
+            {"role": "user", "content": chat_prompt_user_followup},
+        ]
+    )
 
     chatbot.messages = prompt_template_2.fill(
         statement_title=statement_title,
@@ -134,7 +140,7 @@ def ScrapeAndPredictAgent (
         statement_fill_in_the_blank=fill_in_the_blank,
         scraped_content=scraped_content,
         assistant_analysis=assistant_analysis,
-        the_date=the_date
+        the_date=the_date,
     )
 
     filled_in_statement = chatbot.resend()
@@ -143,21 +149,19 @@ def ScrapeAndPredictAgent (
     print(filled_in_statement)
 
     uh = UtilityHelper(openai_api_key)
-    prediction = uh.extract_prediction(
-        filled_in_statement, 
-        fill_in_the_blank
-    )
+    prediction = uh.extract_prediction(filled_in_statement, fill_in_the_blank)
 
     response = client.create_forecast(
-        statement_id, 
+        statement_id,
         prediction_title,
         assistant_analysis,
         prediction,
         prediction_agent,
-        {"full_response_from_llm": assistant_analysis,
-         "raw_forecast": filled_in_statement,
-         "extracted_value": prediction
-        }
+        {
+            "full_response_from_llm": assistant_analysis,
+            "raw_forecast": filled_in_statement,
+            "extracted_value": prediction,
+        },
     )
 
     return response

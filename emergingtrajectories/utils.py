@@ -53,7 +53,7 @@ def is_numeric(string: str) -> bool:
 
 class UtilityHelper(object):
 
-    def __init__(self, api_key, model="gpt-4-0125-preview"):
+    def __init__(self, api_key, model="gpt-4-0125-preview") -> None:
         """
         The UtilityHelper class is used to extract predictions from text messages.
 
@@ -65,7 +65,7 @@ class UtilityHelper(object):
         self.api_key = api_key
         self.model = model
 
-    def extract_prediction(self, response, statement_challenge):
+    def extract_prediction(self, response: str, statement_challenge: str) -> float:
         """
         Extracts the prediction value from the response to a statement challenge.
 
