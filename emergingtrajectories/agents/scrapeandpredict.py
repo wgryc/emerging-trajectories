@@ -3,6 +3,7 @@ from phasellm.agents import WebSearchAgent
 
 from .. import Client
 from ..utils import UtilityHelper
+from ..knowledge import KnowledgeBaseFileCache
 
 import datetime
 
@@ -36,24 +37,44 @@ base_user_prompt_followup = """Thank you! Now please provide us with a forecast 
 # In this case, we also get any documents that haven't been accessed by the agent.
 # This is why agent <-> kb needs to be a 1:1 relationship.
 def ScrapeAndPredictAgent(
-    openai_api_key,
-    google_api_key,
-    google_search_id,
-    google_search_query,
-    knowledge_base=None,
-    statement_id=-1,
-    et_api_key=None,
-    statement_title=None,
-    statement_description=None,
-    fill_in_the_blank=None,
-    chat_prompt_system=base_system_prompt,
-    chat_prompt_user=base_user_prompt,
-    chat_prompt_user_followup=base_user_prompt_followup,
-    prediction_title="Prediction",
-    prediction_agent="Generic Agent",
-):
+    openai_api_key: str,
+    google_api_key: str,
+    google_search_id: str,
+    google_search_query: str,
+    knowledge_base: KnowledgeBaseFileCache = None,
+    statement_id: int = -1,
+    et_api_key: str = None,
+    statement_title: str = None,
+    statement_description: str = None,
+    fill_in_the_blank: str = None,
+    chat_prompt_system: str = base_system_prompt,
+    chat_prompt_user: str = base_user_prompt,
+    chat_prompt_user_followup: str = base_user_prompt_followup,
+    prediction_title: str = "Prediction",
+    prediction_agent: str = "Generic Agent",
+) -> dict:
     """
-    We can pull a statement ID from Emerging Trajectories, or override/ignore this.
+    This agent submits a search query to Google to find information related to its forecast. It also uses any information that it has not previously accessed in its KnowledgeBase. It then generates a forecast with all the relevant information.
+
+    Args:
+        openai_api_key: the OpenAI API key
+        google_api_key: the Google Search API key
+        google_search_id: the Google search ID
+        google_search_query: the Google search query
+        knowledge_base: the KnowledgeBaseFileCache object
+        statement_id: the ID of the statement to use
+        et_api_key: the Emerging Trajectories API key
+        statement_title: the title of the statement (if not submitting a statement ID)
+        statement_description: the description of the statement (if not submitting a statement ID)
+        fill_in_the_blank: the fill-in-the-blank component of the statement (if not submitting a statement ID)
+        chat_prompt_system: the system prompt for the chatbot (optional, for overriding defaults)
+        chat_prompt_user: the user prompt for the chatbot (optional, for overriding defaults)
+        chat_prompt_user_followup: the follow-up user prompt for the chatbot (optional, for overriding defaults)
+        prediction_title: the title of the forecast
+        prediction_agent: the agent making the forecast
+
+    Returns:
+        dict: the response from the Emerging Trajectories platform
     """
 
     if et_api_key is not None:

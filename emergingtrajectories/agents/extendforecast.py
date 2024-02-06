@@ -65,23 +65,23 @@ ext_message_3 = """Thank you! Now please provide us with a forecast by repeating
 
 
 def ExtendScrapePredictAgent(
-    openai_api_key,
-    google_api_key,
-    google_search_id,
-    google_search_query,
-    knowledge_base,
-    forecast_id,
-    et_api_key=None,
-    statement_title=None,
-    statement_description=None,
-    fill_in_the_blank=None,
-    chat_prompt_system=base_system_prompt_ext,
-    ext_message_1=ext_message_1,
-    ext_message_2=ext_message_2,
-    ext_message_3=ext_message_3,
-    prediction_title="Prediction",
-    prediction_agent="Generic Agent",
-):
+    openai_api_key: str,
+    google_api_key: str,
+    google_search_id: str,
+    google_search_query: str,
+    knowledge_base: KnowledgeBaseFileCache,
+    forecast_id: int,
+    et_api_key: str = None,
+    statement_title: str = None,
+    statement_description: str = None,
+    fill_in_the_blank: str = None,
+    chat_prompt_system: str = base_system_prompt_ext,
+    ext_message_1: str = ext_message_1,
+    ext_message_2: str = ext_message_2,
+    ext_message_3: str = ext_message_3,
+    prediction_title: str = "Prediction",
+    prediction_agent: str = "Generic Agent",
+) -> dict:
     """
     We can pull a statement ID from Emerging Trajectories, or override/ignore this.
     """
