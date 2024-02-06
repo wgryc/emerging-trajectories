@@ -4,6 +4,8 @@ from phasellm.agents import WebpageAgent, WebSearchAgent
 from .. import Client
 from ..utils import UtilityHelper
 
+from ..knowledge import KnowledgeBaseFileCache
+
 import datetime
 
 base_system_prompt = """You are a researcher tasked with helping forecast economic and social trends. The title of our research project is: {statement_title}.
@@ -32,11 +34,16 @@ base_user_prompt_followup = """Thank you! Now please provide us with a forecast 
 {statement_fill_in_the_blank}
 """
 
+a = {"a": 1, "b": 2}
+
+# In this case, we also get any documents that haven't been accessed by the agent.
+# This is why agent <-> kb needs to be a 1:1 relationship.
 def ScrapeAndPredictAgent (
     openai_api_key,
     google_api_key,
     google_search_id,
     google_search_query,
+    knowledge_base=None,
     statement_id=-1,
     et_api_key=None,
     statement_title=None,
@@ -46,7 +53,7 @@ def ScrapeAndPredictAgent (
     chat_prompt_user=base_user_prompt,
     chat_prompt_user_followup=base_user_prompt_followup,
     prediction_title="Prediction",
-    prediction_agent="Generic Agent"
+    prediction_agent="Generic Agent",
 ):
     """
     We can pull a statement ID from Emerging Trajectories, or override/ignore this.
@@ -69,25 +76,27 @@ def ScrapeAndPredictAgent (
                                  num=10)
     
     scraped_content = ""
-    results_dict = {"results": []}
-    for result in results:
-        r = {
-            "title": result.title,
-            "url": result.url,
-            "desc": result.description,
-            #"content": result.content,
-        }
-        page_content = result.content
-        try:
-            print(f"Crawling: {result.url}")
-            page_content = scraper.scrape(result.url, text_only=True, body_only=True)
-        except:
-            print(f"Error accessing {result.url}")
-        r["full_content"] = page_content
-        results_dict["results"].append(r)
+    
+    added_new_content = False 
 
-    for result in results_dict['results']:
-        scraped_content += f"{result['full_content']}\n\n----------------------\n\n"
+    for result in results:
+        if not knowledge_base.in_cache(result.url):
+            added_new_content = True
+            page_content = knowledge_base.get(result.url)
+            knowledge_base.log_access(result.url)
+            scraped_content += f"{page_content}\n\n----------------------\n\n"
+
+    # We also check the knowledge base for content that was added manually.
+    unaccessed_uris = knowledge_base.get_unaccessed_content()
+    for ua in unaccessed_uris:
+        added_new_content = True
+        page_content = knowledge_base.get(ua)
+        knowledge_base.log_access(ua)
+        scraped_content += f"{page_content}\n\n----------------------\n\n"
+
+    if not added_new_content:
+        print("No new content added to the forecast.")
+        return None
 
     the_date = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
