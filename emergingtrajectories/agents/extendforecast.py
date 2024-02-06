@@ -3,8 +3,9 @@ from phasellm.agents import WebpageAgent, WebSearchAgent
 
 from .. import Client
 from ..utils import UtilityHelper
+from ..knowledge import KnowledgeBaseFileCache
 
-#from . import scrapeandpredict as sap
+# from . import scrapeandpredict as sap
 
 import datetime
 
@@ -62,23 +63,25 @@ ext_message_3 = """Thank you! Now please provide us with a forecast by repeating
 {statement_fill_in_the_blank}
 """
 
-def ExtendScrapePredictAgent (
-    openai_api_key,
-    google_api_key,
-    google_search_id,
-    google_search_query,
-    forecast_id,
-    et_api_key=None,
-    statement_title=None,
-    statement_description=None,
-    fill_in_the_blank=None,
-    chat_prompt_system=base_system_prompt_ext,
-    ext_message_1=ext_message_1,
-    ext_message_2=ext_message_2,
-    ext_message_3=ext_message_3,
-    prediction_title="Prediction",
-    prediction_agent="Generic Agent"
-):
+
+def ExtendScrapePredictAgent(
+    openai_api_key: str,
+    google_api_key: str,
+    google_search_id: str,
+    google_search_query: str,
+    knowledge_base: KnowledgeBaseFileCache,
+    forecast_id: int,
+    et_api_key: str = None,
+    statement_title: str = None,
+    statement_description: str = None,
+    fill_in_the_blank: str = None,
+    chat_prompt_system: str = base_system_prompt_ext,
+    ext_message_1: str = ext_message_1,
+    ext_message_2: str = ext_message_2,
+    ext_message_3: str = ext_message_3,
+    prediction_title: str = "Prediction",
+    prediction_agent: str = "Generic Agent",
+) -> dict:
     """
     We can pull a statement ID from Emerging Trajectories, or override/ignore this.
     """
@@ -96,30 +99,32 @@ def ExtendScrapePredictAgent (
 
     scraper = WebpageAgent()
     webagent = WebSearchAgent(api_key=google_api_key)
-    results = webagent.search_google(query=google_search_query, 
-                                 custom_search_engine_id=google_search_id, 
-                                 num=10)
-    
-    scraped_content = ""
-    results_dict = {"results": []}
-    for result in results:
-        r = {
-            "title": result.title,
-            "url": result.url,
-            "desc": result.description,
-            #"content": result.content,
-        }
-        page_content = result.content
-        try:
-            print(f"Crawling: {result.url}")
-            page_content = scraper.scrape(result.url, text_only=True, body_only=True)
-        except:
-            print(f"Error accessing {result.url}")
-        r["full_content"] = page_content
-        results_dict["results"].append(r)
+    results = webagent.search_google(
+        query=google_search_query, custom_search_engine_id=google_search_id, num=10
+    )
 
-    for result in results_dict['results']:
-        scraped_content += f"{result['full_content']}\n\n----------------------\n\n"
+    scraped_content = ""
+
+    added_new_content = False
+
+    for result in results:
+        if not knowledge_base.in_cache(result.url):
+            added_new_content = True
+            page_content = knowledge_base.get(result.url)
+            knowledge_base.log_access(result.url)
+            scraped_content += f"{page_content}\n\n----------------------\n\n"
+
+    # We also check the knowledge base for content that was added manually.
+    unaccessed_uris = knowledge_base.get_unaccessed_content()
+    for ua in unaccessed_uris:
+        added_new_content = True
+        page_content = knowledge_base.get(ua)
+        knowledge_base.log_access(ua)
+        scraped_content += f"{page_content}\n\n----------------------\n\n"
+
+    if not added_new_content:
+        print("No new content added to the forecast.")
+        return None
 
     the_date = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
@@ -128,10 +133,12 @@ def ExtendScrapePredictAgent (
 
     # Steps 0 and 1
 
-    prompt_template = ChatPrompt([
-        {"role": "system", "content": chat_prompt_system},
-        {"role": "user", "content": ext_message_1}
-    ])
+    prompt_template = ChatPrompt(
+        [
+            {"role": "system", "content": chat_prompt_system},
+            {"role": "user", "content": ext_message_1},
+        ]
+    )
 
     chatbot.messages = prompt_template.fill(
         statement_title=statement_title,
@@ -140,7 +147,7 @@ def ExtendScrapePredictAgent (
         scraped_content=scraped_content,
         the_date=the_date,
         forecast_value=str(forecast_value),
-        forecast_justification=justification
+        forecast_justification=justification,
     )
 
     new_facts = chatbot.resend()
@@ -150,12 +157,14 @@ def ExtendScrapePredictAgent (
 
     # Step 3
 
-    prompt_template_2 = ChatPrompt([
-        {"role": "system", "content": chat_prompt_system},
-        {"role": "user", "content": ext_message_1},
-        {"role": "assistant", "content": "{new_facts}"},
-        {"role": "user", "content": ext_message_2},
-    ])
+    prompt_template_2 = ChatPrompt(
+        [
+            {"role": "system", "content": chat_prompt_system},
+            {"role": "user", "content": ext_message_1},
+            {"role": "assistant", "content": "{new_facts}"},
+            {"role": "user", "content": ext_message_2},
+        ]
+    )
 
     chatbot.messages = prompt_template_2.fill(
         statement_title=statement_title,
@@ -165,7 +174,7 @@ def ExtendScrapePredictAgent (
         new_facts=new_facts,
         the_date=the_date,
         forecast_value=str(forecast_value),
-        forecast_justification=justification
+        forecast_justification=justification,
     )
 
     assistant_analysis = chatbot.resend()
@@ -175,14 +184,16 @@ def ExtendScrapePredictAgent (
 
     # Step 4
 
-    prompt_template_3 = ChatPrompt([
-        {"role": "system", "content": chat_prompt_system},
-        {"role": "user", "content": ext_message_1},
-        {"role": "assistant", "content": "{new_facts}"},
-        {"role": "user", "content": ext_message_2},
-        {"role": "assistant", "content": "{assistant_analysis}"},
-        {"role": "user", "content": ext_message_3},
-    ])
+    prompt_template_3 = ChatPrompt(
+        [
+            {"role": "system", "content": chat_prompt_system},
+            {"role": "user", "content": ext_message_1},
+            {"role": "assistant", "content": "{new_facts}"},
+            {"role": "user", "content": ext_message_2},
+            {"role": "assistant", "content": "{assistant_analysis}"},
+            {"role": "user", "content": ext_message_3},
+        ]
+    )
 
     chatbot.messages = prompt_template_3.fill(
         statement_title=statement_title,
@@ -193,7 +204,7 @@ def ExtendScrapePredictAgent (
         assistant_analysis=assistant_analysis,
         the_date=the_date,
         forecast_value=str(forecast_value),
-        forecast_justification=justification
+        forecast_justification=justification,
     )
 
     filled_in_statement = chatbot.resend()
@@ -202,21 +213,19 @@ def ExtendScrapePredictAgent (
     print(filled_in_statement)
 
     uh = UtilityHelper(openai_api_key)
-    prediction = uh.extract_prediction(
-        filled_in_statement, 
-        fill_in_the_blank
-    )
+    prediction = uh.extract_prediction(filled_in_statement, fill_in_the_blank)
 
     response = client.create_forecast(
-        statement_id, 
+        statement_id,
         prediction_title,
         assistant_analysis,
         prediction,
         prediction_agent,
-        {"full_response_from_llm": assistant_analysis,
-         "raw_forecast": filled_in_statement,
-         "extracted_value": prediction
-        }
+        {
+            "full_response_from_llm": assistant_analysis,
+            "raw_forecast": filled_in_statement,
+            "extracted_value": prediction,
+        },
     )
 
     return response
