@@ -1,6 +1,8 @@
 """
+Solutions for finding, extracting, storing, and reviisting knowledge.
+"""
 
-
+"""
 This is the first knowledge base, and is meant to be a POC, really.
 
 All of our agents as of today (Feb 1) focus on web searches and website content. Today, we do a Google search and scrape the content from the top results. We repeat this process every time the agent runs.
@@ -12,7 +14,6 @@ This should also be able to do multiple searches *and* accept other URLs to scra
 How would this one work?
 1. Have a folder where things get cached.
 2. Have a JSON file that tracks when a knowledge base was accessed, the source URL, etc.
-
 """
 
 import os
