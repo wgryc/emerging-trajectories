@@ -3,8 +3,10 @@ import json
 from datetime import datetime
 
 
-def hello():
-
+def hello() -> None:
+    """
+    Just a hello() message/function to confirm you've installed everything!
+    """
     print("Welcome to the Emerging Trajectories package! We've been expecting you. 😉")
 
 

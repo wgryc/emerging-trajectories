@@ -21,7 +21,7 @@ setup(
             "sphinx-autobuild>=2021.3.14",
         ]
     },
-    python_requires=">=3.9.0",
+    python_requires=">=3.10.0",
     keywords="llm, nlp, ai, social, politics, economics",
     classifiers=[
         "Development Status :: 3 - Alpha",

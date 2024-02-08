@@ -87,7 +87,27 @@ def ExtendScrapePredictAgent(
     prediction_agent: str = "Generic Agent",
 ) -> dict:
     """
-    We can pull a statement ID from Emerging Trajectories, or override/ignore this.
+    Extends an existing forecast by scraping content and including any content from a knowledge base (assuming there's new content).
+
+    Args:
+        openai_api_key: the OpenAI API key
+        google_api_key: the Google Search API key
+        google_search_id: the Google search ID
+        google_search_query: the Google search query
+        knowledge_base: the KnowledgeBaseFileCache object
+        forecast_id: the ID of the forecast to extend
+        et_api_key: the Emerging Trajectories API key
+        statement_title: the title of the statement (if not submitting a statement ID)
+        statement_description: the description of the statement (if not submitting a statement ID)
+        fill_in_the_blank: the fill-in-the-blank component of the statement (if not submitting a statement ID)
+        ext_message_1: the first message to the LLM
+        ext_message_2: the second message to the LLM
+        ext_message_3: the third message to the LLM
+        prediction_title: the title of the forecast
+        prediction_agent: the agent making the forecast
+
+    Returns:
+        dict: the response from the Emerging Trajectories platform
     """
 
     if et_api_key is not None:
@@ -101,7 +121,6 @@ def ExtendScrapePredictAgent(
         justification = forecast["justification"]
         forecast_value = forecast["value"]
 
-    scraper = WebpageAgent()
     webagent = WebSearchAgent(api_key=google_api_key)
     results = webagent.search_google(
         query=google_search_query, custom_search_engine_id=google_search_id, num=10
