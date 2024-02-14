@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-------------------------------------------------->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57293135-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-57293135-1');
+        </script>
+        <!-------------------------------------------------->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+        <meta charset="utf-8">
+        <title>January 2024 National Climate Report | National Centers for Environmental Information (NCEI)</title>
+        <meta name="description" content="An analysis of national temperatures and precipitation each month, placing the data into a historical perspective">
+        <meta name="keywords" content="National Monthly Climate Report, monthly national report, National Monthly Report, temperatures, precipiation, rain, anomalies, ranks, trends, national, United States">
+        <meta name="author" content="NCEI.Monitoring.Info@noaa.gov">
+        <!-- remove the 300ms tap delay for mobile optimization -->
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="shortcut icon" href="https://www.ncei.noaa.gov/themes/custom/ncei/favicon.ico" type="image/vnd.microsoft.icon">
+
+        <link rel="stylesheet" media="all"   href="/monitoring-content/lib/css/reset.css">
+        <link rel="stylesheet" media="all"   href="/cmb-lib/assets/jquery-ui-1.13.2/jquery-ui.min.css">
+        <link rel="stylesheet" media="all"   href="/cmb-lib/assets/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" media="all"   href="/cmb-lib/assets/fontawesome6/css/all.min.css">
+        <link rel="stylesheet" media="all"   href="/monitoring-content/lib/css/monitoring.css">
+        <link rel="stylesheet" media="print" href="/monitoring-content/lib/css/print.css">
+        
+        <link rel="stylesheet" href="/monitoring-content/sotc/css/sotc.css">
+        <link rel="stylesheet" href="/monitoring-content/sotc/national/css/national.css">
+
+        <script src="/cmb-lib/assets/jquery-3.6.0.min.js"></script>
+        <script src="/cmb-lib/assets/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+        <script src="/cmb-lib/assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/cmb-lib/js/search-monitoring.js"></script>
+        <script src="/cmb-lib/js/img-overlay.js"></script>
+        <script src="/cmb-lib/js/alerts.js"></script>
+        <script src="/cmb-lib/js/skip-to-main.js"></script>
+        
+        <script src="/cmb-lib/assets/zingchart-2.9.3/zingchart.min.js"></script>
+    </head>
+    <body>
+        <a class="skip-to-main" href="#main-content" tabindex="0">Skip to main content</a>
+        <header role="banner">
+            <div class="print" id="print-head"><img alt="NOAA Logo" src="/monitoring-content/lib/images/noaa-logo.png"> NOAA's National Centers for Environmental Information</div>
+            <span id="backToTop" title="Back to Top"><span></span></span>
+            <div class="ncei-header-footer-container">
+                <div class="ncei-header-footer">
+                    <div class="ncei-header-footer-inner">
+                        <div class="ncei-footer-third-width">
+                            <div class="ncei-header-logo">
+                                <a href="http://www.ncei.noaa.gov"><img src="/monitoring-content/lib/images/ncei/logo.svg" title="Link to NCEI's Homepage" alt="Link to NCEI's Homepage"></a>
+                            </div>
+                        </div>
+                        <div class="ncei-footer-third-width"><div class="product-name"><h1>January 2024 National Climate Report</h1></div></div><div id="search-monitoring-div" class="ncei-footer-third-width"><input id="search-monitoring" name="search-monitoring" autocomplete="on" placeholder="Search Monitoring Products"><span id="monitoring-search-icon"><span></span></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-container">
+                <div class="ncei-app-inner container">
+                    <div class="ncei-footer-two-thirds-width"><nav role="navigation" aria-label="Breadcrumbs"><ol class="app-breadcrumbs"><li class="app-breadcrumb-item"><a title="NCEI Home" href="/">Home</a></li><li class="app-breadcrumb-item"><a title="Climate Monitoring Home" href="/access/monitoring/products/">Climate Monitoring</a></li><li class="app-breadcrumb-item"><a title="January 2024 National Climate Report" href="/access/monitoring/monthly-report/national">January 2024 National Climate Report</a></li></ol></nav></div>
+                    <div class="ncei-footer-third-width" id="next-release"><a href="/access/monitoring/dyk/monthly-releases">January Global Release: Wed, 14 Feb 2024, 11:00 AM EST</a></div>
+                </div>
+            </div>
+            <div class="alerts"></div>
+        </header>
+        <main role="main" id="main-content" tabindex="-1">
+            <div id="page-content-container">
+                <div id="page-content" class="container">
+
+<ul class="tabs"><li class="selected"><a href="/access/monitoring/monthly-report/">Monthly Report</a></li><li><a href="https://www.ncei.noaa.gov/news/national-climate-202401">Summary Info</a></li><li><a href="/access/monitoring/monthly-report/briefings">Monthly Briefings</a></li><li><a type="application/rss+xml" href="/access/monitoring/monthly-report/rss.xml">RSS Feed </a></li></ul>
+
+
+<form id="report-selection" method="get" action="/access/monitoring/monthly-report/report-select">
+    <span class="nowrap smallMarginRight">
+        <label for="report">Report:</label>
+        <select id="report" name="report">
+            <optGroup label="National"><option value="national" selected="selected">National Climate Report</option><option value="drought">Drought Report</option><option value="fire">Wildfires Report</option><option value="snow">National Snow and Ice Report</option><option value="tornadoes">Tornadoes Report</option><option value="synoptic">Synoptic Discussion</option></optGroup><optGroup label="Global"><option value="global">Global Climate Report</option><option value="global-drought">Global Drought Narrative</option><option value="global-regions">Regional Analysis</option><option value="upper-air">Upper Air Report</option><option value="tropical-cyclones">Tropical Cyclones Report</option><option value="global-snow">Global Snow and Ice Report</option></optGroup><optGroup label="Discontinued"><option value="hazards">Global Hazards</option><option value="enso">El Ni&ntilde;o/Southern Oscillation</option></optGroup>
+        </select>
+    </span>
+    <span class="nowrap smallMarginRight">
+        <label for="year">Year:</label>
+        <select id="year" name="year">
+            <option value="2024" selected="selected">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option>
+        </select>
+    </span>
+    <span class="nowrap smallMarginRight">
+        <label for="month">Month:</label>
+        <select id="month" name="month">
+            <option value="1" selected="selected">January</option><option value="2">February</option><option class="season" value="14">Winter (DJF)</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option class="season" value="15">Spring (MAM)</option><option value="6">June</option><option value="7">July</option><option value="8">August</option><option class="season" value="16">Summer (JJA)</option><option value="9">September</option><option value="10">October</option><option value="11">November</option><option class="season" value="17">Autumn (SON)</option><option value="12">December</option><option value="13">Annual</option>
+        </select>
+    </span>
+    <input type="submit" value="View Report">
+</form>
+
+<div class="arrowNav"><div class="arrowLeft"><a data-toggle="tooltip" title="Annual 2023 Monthly National Climate Report" href="/access/monitoring/monthly-report/national/202313"><i class="fas fa-chevron-circle-left" aria-hidden="true"></i></a></div><div class="arrowRight"></div></div>
+
+<div id="reportContent"><div id="sotc-content"><div id="related-materials">
+    <div id="additional-resources">
+        <h2>Additional Resources</h2>
+        <div id="additional-resources-flexbox">
+            <div>
+                <h3>Rankings Maps</h3>
+                <ul id="rankings-maps-additional-resources">
+                    <li><a href="/access/monitoring/us-maps/1/202401">January 2024</a></li>
+                    <li><a href="/access/monitoring/us-maps/3/202401">Nov 2023 - Jan 2024</a></li>
+                    <li><a href="/access/monitoring/us-maps/6/202401">Aug 2023 - Jan 2024</a></li>
+                    <li><a href="/access/monitoring/us-maps/12/202401">Feb 2023 - Jan 2024</a></li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h3>U.S. Percentage Areas</h3>
+                <ul id="uspa-additional-resources">
+                    <li><a href="/access/monitoring/uspa/warm-cold/1">Very Warm/Very Cold</a></li>
+                    <li><a href="/access/monitoring/uspa/wet-dry/1">Very Wet/Very Dry</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Related Materials</h3>
+                <ul id="related-materials-additional-resources">
+                    <li><a href="/access/monitoring/climate-at-a-glance/">Climate at a Glance</a></li>
+                    <li><a href="/access/monitoring/cei/">U.S. Climate Extremes Index (CEI)</a></li>
+                    <li><a href="/access/monitoring/dyk/ranking-definition">Climatological Rankings</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<div id="supplemental-material"><h2>Supplemental Material</h2><ul><li><a href="/access/monitoring/monthly-report/national/202401/supplemental/page-1">County Superlatives</a></li><li><a href="/access/monitoring/monthly-report/national/202401/supplemental/page-2">January 2024 Record Setters</a></li></ul></div>
+</div>
+
+<hr><h2 id="national-overview" class="pageSection">National Overview</h2>
+
+<a href="/monitoring-content/sotc/national/2024/jan/monthlysigeventsmap-012024.png">
+    <img
+        alt="January Extreme Weather/Climate Events"
+        src="/monitoring-content/sotc/national/2024/jan/monthlysigeventsmap-012024.png"
+        width="100%"
+        title="January Extreme Weather/Climate Events"
+    >
+</a>
+
+<hr>
+
+<h2 class="pageSection" id="month-highlights" data-shortmenutitle="January">January Highlights</h2><div class="flex center small"><div class="pad"><a title="Average Temperature Departures (January)" href="/monitoring-content/sotc/national/grid-temp/tave-anom-202401.png"><img alt="Average Temperature Departures (January)" src="/monitoring-content/sotc/national/grid-temp/tave-anom-202401.png" width="100%"><br>January Average Temperature Departures</a></div><div class="pad"><a title="January Percent of Average Precip" href="/monitoring-content/sotc/national/grid-prcp/prcp-pon-202401.png"><img alt="January Percent of Average Precip" src="/monitoring-content/sotc/national/grid-prcp/prcp-pon-202401.png" width="100%"><br>January Percent of Average Precipitation</a></div></div>
+<h3 class="pageSubsection" id="month-temp">January Temperature</h3><div class="floatRight small center pad" style="width:48%"><a title="January 2024 Statewide Temperature Ranks Map" href="/monitoring-content/sotc/national/statewidetavgrank/statewidetavgrank-202401.png"><img src="/monitoring-content/sotc/national/statewidetavgrank/statewidetavgrank-202401.png" width="100%" alt="January 2024 Statewide Temperature Ranks Map"><br>January 2024 Statewide Temperature Ranks</a></div>
+
+<p>The <a href="/access/monitoring/climate-at-a-glance/national/rankings/110/tavg/202401">contiguous U.S. average temperature</a> during January was 31.8&deg;F, 1.6&deg;F above average, ranking in the middle third of the 130-year record.</p>
+
+<p>Generally, <a href="/monitoring-content/sotc/national/grid-ranks-temp/grid-ranks-tavg-202401.png">temperatures</a> were above average from the Carolina Coast to the Northeast and across parts of the West Coast, central Rockies, Upper Midwest and Great Lakes, with below-normal temperatures extending from parts of the Northwest to the Gulf of Mexico. <a href="/access/monitoring/climate-at-a-glance/statewide/time-series/47/tavg/1/1/1895-2024?base_prd=true&begbaseyear=1895&endbaseyear=2000">Wisconsin</a> had its 10th-warmest January on record, while no state ranked among their top-10 coldest January on record.</p>
+
+<p>The <a href="/access/monitoring/climate-at-a-glance/national/time-series/110/tmax/1/1/1895-2024?base_prd=true&begbaseyear=1895&endbaseyear=2000">contiguous U.S. average maximum (daytime) temperature</a> during January was 40.9&deg;F, 0.4&deg;F above the 20th century average, ranking in the middle third of the historical record for daytime temperatures. <a href="/monitoring-content/sotc/national/grid-ranks-temp/grid-ranks-tmax-202401.png">Maximum temperatures</a> were above average across much of the Northeast, along the East Coast, and in parts of the Upper Midwest, Great Lakes, and central Rockies to the West Coast. Below-normal temperatures extended from parts of the northern Plains to the Gulf of Mexico and occurred in parts of the Northwest. No state ranked among their top-10 warmest or coldest January for daytime temperatures.</p>
+
+<p>The <a href="/access/monitoring/climate-at-a-glance/national/time-series/110/tmin/1/1/1895-2024?base_prd=true&begbaseyear=1895&endbaseyear=2000">contiguous U.S. average minimum (nighttime) temperature</a> during January was 22.6&deg;F, 2.8&deg;F above the 20th century average, ranking in the warmest third of the record for overnight temperatures. <a href="/monitoring-content/sotc/national/grid-ranks-temp/grid-ranks-tmin-202401.png">Minimum temperatures</a> were above average from parts of the northern Plains to the Northeast, across much of the West and in the Florida Peninsula, while below-normal temperatures were observed from parts of the Northwest to the Southeast. No state ranked among their top-10 coldest January for nighttime temperatures. Conversely, <a href="/access/monitoring/climate-at-a-glance/statewide/time-series/27/tmin/1/1/1895-2024?base_prd=true&begbaseyear=1895&endbaseyear=2000">New Hampshire</a> ranked second warmest and <a href="/access/monitoring/climate-at-a-glance/statewide/time-series/47/tmin/1/1/1895-2024?base_prd=true&begbaseyear=1895&endbaseyear=2000">Wisconsin</a> ranked third warmest January on record for nighttime temperatures, while five additional states ranked among their top-10 warmest January on record.</p>
+
+<p>The <a href="/access/monitoring/climate-at-a-glance/statewide/rankings/50/tavg/202401">Alaska statewide January temperature</a> was 2.9&deg;F, 0.7&deg;F above the long-term average, ranking in the middle third of the 100-year period of record for the state. <a href="/monitoring-content/sotc/national/grid-ranks-temp/grid-ranks-ak-tavg-202401.png">Temperatures</a> were near average across much of the state with above-normal temperatures observed in parts of the North, West and the Aleutians. Below-normal temperatures were observed in parts of the Interior and East.</p>
+
+<p>Based on <a href="/access/monitoring/redti/">NOAA's Residential Energy Demand Temperature Index (REDTI)</a>, the contiguous U.S. temperature-related energy demand during January was 73 percent of average and the 35th-lowest value in the 130-year period of record.</p>
+	
+<h3 class="pageSubsection" id="month-precip">January Precipitation</h3><div class="floatRight small center pad" style="width:48%"> <a title="January 2024 Statewide Precipitation Ranks Map" href="/monitoring-content/sotc/national/statewidepcpnrank/statewidepcpnrank-202401.png"><img src="/monitoring-content/sotc/national/statewidepcpnrank/statewidepcpnrank-202401.png" width="100%" alt="January 2024 Statewide Precipitation Ranks Map"><br>January 2024 Statewide Precipitation Ranks</a></div>
+
+<p>The <a href="/access/monitoring/climate-at-a-glance/national/rankings/110/pcp/202401">January precipitation total</a> for the contiguous U.S. was 3.18 inches, 0.87 inch above average, ranking as the 10th-wettest January in the historical record.</p>
+
+<p><a href="/monitoring-content/sotc/national/grid-ranks-prcp/grid-ranks-prcp-202401.png">Precipitation</a> was above average across much of the central to eastern U.S. and in parts of the West. Conversely, precipitation was below average from parts of the northern Rockies to portions of the Upper Midwest and in parts of the Southwest and coastal Carolinas.</p>
+
+<p><a href="/access/monitoring/climate-at-a-glance/statewide/time-series/19/pcp/1/1/1895-2024?base_prd=true&begbaseyear=1895&endbaseyear=2000">Massachusetts</a> and <a href="/access/monitoring/climate-at-a-glance/statewide/time-series/6/pcp/1/1/1895-2024?base_prd=true&begbaseyear=1895&endbaseyear=2000">Connecticut</a> each ranked third wettest on record for the month, while an additional 11 states ranked among their top-10 wettest January on record. <a href="/access/monitoring/climate-at-a-glance/statewide/time-series/32/pcp/1/1/1895-2024?base_prd=true&begbaseyear=1895&endbaseyear=2000">North Dakota</a> had its 10th-driest January on record for this month.</p>
+
+<p>Alaska’s average monthly precipitation ranked in the middle third of the historical record. Precipitation was below average across much of the state, while above-normal precipitation was observed in parts of the southeast Interior, Panhandle and the Aleutians during the month.</p>
+
+<p>According to the January 30 <a href="https://droughtmonitor.unl.edu/DmData/DataTables.aspx">U.S. Drought Monitor</a>, about 23.5% of the contiguous U.S. was in drought, down about 9.5% from the beginning of January. Drought or abnormally dry conditions expanded or intensified across northern parts of the Rockies and Plains and in parts of the Northwest, Southwest and Puerto Rico this month. Drought or abnormally dry conditions contracted or were reduced in intensity across much of the Great Plains to the East Coast, and in parts of the Northwest, Southwest and Hawaii.</p>
+
+<h3 class="pageSubsection" id="notable-events">Other Notable Events</h3>
+
+<p>An arctic air mass brought record-breaking cold temperatures and snow to much of the contiguous U.S. during mid-January:</p>
+
+<ul>
+	<li>The mid-January arctic air mass dropped temperatures to 20 to 35°F below normal over parts of the northern and central Plains, while heavy snow fell over portions of the Great Lakes and the Northeast.</li>
+    <li>Heavy snow fell over much of the Northeast, while New York City reported over an inch of snow for the first time in nearly two years on January 16.</li>
+    <li>The arctic air mass from January 14–18 broke nearly 2,500 daily county minimum temperature records from the Northwest to the Lower Mississippi Valley.</li>
+	<li>Nashville received over six inches of snow on January 15—more than an entire winter’s worth of snow for the city.</li>
+</ul>
+
+<p>A powerful bomb cyclone brought cold temperatures, strong winds and heavy snow to portions of the Northwest on January 8–10, resulting in the Seattle NWS issuing the first blizzard warning in over 11 years for the region.</p>
+<p>Historic snowfall continued across portions of Alaska. Anchorage has received over 100 inches of snow since October—the snowiest water year (October 2023–September 2024) to date. In Juneau, the airport received more than 76 inches of snow in January, the highest January total on record and second highest monthly total.</p>
+
+<hr>
+
+<h3 class="pageSubsection" id="outlook">Monthly Outlook</h3>
+
+<p>According to the January 31 <a href="https://www.cpc.ncep.noaa.gov/products/predictions/30day/">One-Month Outlook</a> from the Climate Prediction Center, above-normal monthly <a href="/monitoring-content/sotc/national/2023/dec/usdotempoutlook-202312.gif">average temperatures in January</a> are favored to impact northern portions of the U.S., as well as Alaska, in February while above-normal monthly <a href="/monitoring-content/sotc/national/2024/jan/usdoprcpoutlook-202401.gif">precipitation</a> is likely to be above average across portions of the southwestern U.S. and Southeast Coast. <a href="/monitoring-content/sotc/national/2024/jan/usdodroughtoutlook-202401.png">Drought</a> is likely to persist across portions of the Northwest, Southwest, Midwest, Hawaii and Puerto Rico.</p>
+
+<p>According to the <a href="/monitoring-content/sotc/national/2024/jan/nifcfireoutlook-202401.png">One-Month Outlook</a> issued on February 1 from the <a href="https://www.nifc.gov/">National Interagency Fire Center</a>, Puerto Rico has an above-normal significant wildland fire potential during the month of February, while much of the southern Plains and Southeast are expected to have below-normal potential for the month.</p>
+
+<hr>
+
+<h2 id="regional-highlights" class="pageSection">Regional Highlights</h2>
+
+<p class="italic">These regional summaries were provided by the six <a href="/regional/regional-climate-centers">Regional Climate Centers</a> and reflect conditions in their respective regions. These six regions differ spatially from the <a href="/access/monitoring/reference-maps/us-climate-regions">nine climatic regions</a> of the National Centers for Environmental Information.</p>
+
+<h3 class="pageSubsection" id="NRCC" data-menutitle="Northeast">Northeast <em class="small"> (Information provided by the <a href="http://www.nrcc.cornell.edu/">Northeast Regional Climate Center</a>) </em></h3>
+
+<!--
+<h4>Report not available at time of publishing.</h4>
+-->
+
+<p>A warm, wet January featured several significant storms but variable snowfall amounts.</p>
+
+<h4 class="pageSub2section" id="nrcc-temp">Temperature</h4>
+
+<p>The Northeast had its 17th warmest January since records began in 1895 with an average temperature of 28.0 degrees F, 4.0 degrees F above normal. For the 12 Northeast states, January average temperatures ranged from 0.8 degrees F above normal in West Virginia to 6.0 degrees F above normal in Vermont. January 2024 ranked among the 20 warmest Januarys on record for eight states: New Hampshire, 11th warmest; Maine and Vermont, 12th warmest; New York, 15th warmest; Connecticut and Massachusetts, 16th warmest; Rhode Island, 18th warmest; and New Jersey, 20th warmest.</p>
+
+<h4 class="pageSub2section" id="nrcc-prcp">Precipitation</h4>
+
+<p>It was the seventh wettest January since record-keeping began in 1895 for the Northeast, which received 5.07 inches of precipitation, 155 percent of normal. January precipitation for the 12 Northeast states ranged from 110 percent of normal in Maine to 209 percent of normal in Rhode Island. Ten states experienced one of their 20 wettest Januarys on record: Connecticut and Massachusetts, third wettest; Rhode Island, fourth wettest; Maryland, New Jersey, and New York, sixth wettest; Delaware, New Hampshire, and Pennsylvania, eighth wettest; and Vermont, 18th wettest.</p>
+
+<h4 class="pageSub2section" id="nrcc-drought">Drought</h4>
+
+<p>The U.S. Drought Monitor from January 2 showed one percent of the Northeast in severe drought, two percent in moderate drought, and 10 percent as abnormally dry. Abundant precipitation during January eased dryness across much of the region. For instance, severe drought was erased from western New York and West Virginia, with moderate drought and abnormal dryness also easing or contracting in those states. Meanwhile, abnormal dryness was removed from Maryland and shrank in coverage in Pennsylvania and southeastern Massachusetts. However, driven largely by reduced groundwater levels, severe drought persisted on Nantucket and Martha’s Vineyard in Massachusetts. The U.S. Drought Monitor released on February 1 showed less than one percent of the Northeast in severe drought, less than one percent in moderate drought, and three percent as abnormally dry. At times in early January, a few locations including western New York, northwestern and south-central Pennsylvania, and eastern and southern West Virginia saw below-normal or much below-normal 7-day streamflow, based on USGS streamgages. Streamflow was generally normal or higher during the rest of the month. However, groundwater was slower to recover, with record low levels measured at times at USGS wells in western New York and on Nantucket and Martha’s Vineyard in Massachusetts. Levels remained below normal at month’s end but showed signs of improvement. Additionally, below-normal or lower levels were also reported during the month in places like northwestern Pennsylvania and southern New Jersey. While water supplies continued to recover, several Pennsylvania communities had mandatory water use restrictions in place or were asked to voluntarily conserve water.</p>
+
+<h4 class="pageSub2section" id="nrcc-notable">Notable Weather</em></h4>
+
+<p>The Northeast saw multiple notable storms during January:</p>
+
+<ul>
+
+	<li>January 6 to 7: The season’s first major nor’easter dropped heavy snow on an area from northeastern Pennsylvania through eastern New York into New England, with the greatest snow totals in these areas generally up to 18 inches.</li>
+	<li>January 9 to 10: A major storm with mild temperatures, unusually strong winds, and heavy precipitation brought flooding to multiple areas. Portions of New England, particularly higher elevations of Maine and New Hampshire, saw up to 15 inches of snow. Meanwhile, an area from southern Maryland into southern New England saw some of the greatest precipitation totals, mostly in the form of rain, of up to 4 inches. In some of these areas, the ground was already saturated and waterways were running above normal due to previous storms. Additionally, several locations had multiple inches of snow on the ground from the storm a few days prior. All of this, combined with above-normal temperatures, resulted in waterways reaching moderate or major flood stage in multiple places. For instance, preliminary data shows that waterways such as the Pawtuxet River at Cranston, Rhode Island, and the Yantic River at Yantic, Connecticut, reached one of their five highest water levels on record, while several gages including a few along the Raritan River and Saddle River in New Jersey recorded one of their 10 highest water levels. Storm reports noted multiple water rescues, some evacuations, and dozens of homes and structures impacted by flooding. Wind gusts of up to 60 mph were common, with locally higher gusts of up to 78 mph. Downed trees and power lines blocked roads, damaged buildings, and left more than 350,000 customers in the Northeast, including over 142,000 in New York, without power. The winds also contributed to record- or near-record high water levels at multiple coastal locations from Maryland to Maine, resulting in significant coastal flooding that inundated roads, buildings, and vehicles. Coastal Maine was hit particularly hard, with a record-high water level set at Bar Harbor, with records back to 1947. Many buildings, structures, and roads along Maine’s coast were damaged, including a historic lighthouse featured on the state’s quarter, while some structures washed out to sea. A few water rescues also took place. Across the Northeast, several people suffered storm-related injuries.</li>
+	<li>January 13 to 14: A storm brought another round of precipitation, damaging winds, and flooding to the region, followed by intense lake-effect snow. Storm precipitation totals were generally 2.50 inches or less, while winds gusted up to 60mph, with locally higher gusts of up to 70 mph. Downed trees and wires blocked roads, damaged roofs, and resulted in some power outages. The storm’s greatest impact was coastal flooding, especially in Maine where significant erosion occurred. The tidal gauge at Portland, Maine, had its highest water level since records began in 1912, while Bar Harbor, Maine, beat its previous high water level record set a few days prior during the January 9 to 10 storm. In addition, Eastport, Maine, saw its fourth highest water level since records began there in 1929. Compounded by the storm earlier in the week, storm reports noted flooded and severely damaged roads and buildings, with some structures including homes partially collapsed, completely destroyed, or washed into the ocean. Elsewhere in the Northeast, coastal flooding inundated roads, buildings, and vehicles, resulting in some water rescues. As the system exited, a cold front, with Arctic air behind it, produced snow squalls. Bursts of intense snow and wind gusts of 30 to 50 mph reduced visibility to a few hundred feet or less and quickly covered roads, resulting in multiple accidents. As the Arctic air poured into the region across the unusually warm Great Lakes, a significant lake-effect snow event occurred in western and northern New York through January 15. As much as 41 inches of snow fell in Erie County, east of Lake Erie, while up to 22 inches fell in Jefferson County, east of Lake Ontario. A travel ban was enacted in Erie County, New York, where a National Football League game was postponed due to weather.</li>
+    <li>January 15 to 17: A minor storm produced the first inch of snow in nearly two years for major cities along the Interstate 95 corridor. Baltimore, Maryland, and Philadelphia, Pennsylvania, saw an inch of snow for the first time since late January 2022, while Central Park, New York, and Dulles Airport, Virginia, saw their first inch of snow since mid-February 2022 and mid-March 2022, respectively. The snow created hazardous travel conditions, with multiple accidents shutting down roads and contributing to several deaths. Behind the system, another significant lake-effect event produced heavy snow in western and northern New York through January 19. The greatest snow totals were around 50 inches in Jefferson County, east of Lake Ontario, and 43 inches in Erie County, east of Lake Erie. Travel bans were once again enacted in parts of Erie County, where at least three storm-related deaths occurred. In Rochester, a plane slid off a taxiway amid snowy conditions. Snow totals for the back-to-back lake effect events between January 14 and 19 totaled around 80 inches in Erie County and around 70 inches in Jefferson County.</li>
+</ul>
+
+<p>For more information, please visit the <a href="http://www.nrcc.cornell.edu/">Northeast Regional Climate Center Home Page</a>.</p>
+
+<h4 class="pageSubsection" id="MRCC" data-menutitle="Midwest">Midwest Region <em class="small">(Information provided by the <a href="https://mrcc.purdue.edu">Midwest Regional Climate Center</a>)</em></h4>
+
+<!--
+<h4>Report not available at time of publishing.</h4>
+-->
+
+<h4 class="pageSub2section" id="mrcc-temp">Temperature</h4>
+
+<p>The average January temperature for the Midwest was 23.5 degrees F (-4.7 degrees C), which was 1.1 degrees F (40.6 degrees C) above the 1991-2020 normal. Temperatures were generally 2-8 degrees F (1.1-4.4 degrees C) above normal across the upper Midwest and 1-3 degrees F (0.6-1.7 degrees C) below normal across the lower Midwest. Preliminary statewide average temperatures ranged from 5.4 degrees F (3 degrees C) above normal in Wisconsin to 4 degrees F (2.2 degrees C) below normal in Missouri. The month started with unusual warmth in the central and northern Midwest before giving way to the coldest temperatures so far this winter. Multiple rounds of winter storms ushered in cold temperatures, bitter wind chills, and precipitation that affected the region from January 9 until about January 22. Overnight low air temperatures dipped to -10 to -20 degrees F (-23.3 to -28.9 degrees C) across Minnesota, Wisconsin, Iowa, Missouri, and Illinois from January 14-16. Conditions were worsened by high winds that resulted in dangerous wind chill temperatures. Des Moines, Iowa, recorded two consecutive days when the wind chill reached -40 degrees F (-40 degrees C), which has happened just six other times since records began in 1948. St. Joseph, Missouri, had two consecutive days when the wind chill reached -30 degrees F (-34.4 degrees C), which has only occurred three other times since 1944. Temperatures thawed to close the month. Average temperatures during the last 10 days of January were 15-25 degrees F (8.3-13.9 degrees C) above normal across the upper Midwest and 5-10 degrees F (2.8-5.6 degrees C) above normal across the lower Midwest. On January 31, the high temperature at International Falls, Minnesota, reached 53 degrees F (11.7 degrees C). This was the first time International Falls recorded a January temperature above 50 degrees F (10 degrees C) since record-keeping began in 1895.</p>
+
+<h4 class="pageSub2section" id="mrcc-prcp">Precipitation</h4>
+
+<p>January precipitation totaled 3.11 inches (79 mm) for the Midwest, which was 1.17 inches (30 mm) above normal, or 160 percent of normal. Precipitation was 1-5 inches (25.4-127 mm) above normal across the lower Midwest, southern Wisconsin, and southern Michigan, with the wettest conditions in Missouri’s bootheel and along the Ohio River. Conversely, conditions were drier than normal in the northwest across Minnesota, northern Wisconsin, and northern Michigan. Preliminary statewide precipitation totals ranged from 0.26 inches (7 mm) below normal in Minnesota to 2.48 inches (63 mm) above normal in Indiana. Preliminary rankings indicate Iowa tied for the 7th wettest January on record. The month oscillated from dry to wet throughout January, with multiple occasions of heavy precipitation throughout the region. Many locations had measurable precipitation on more than half the days in the month, particularly across Illinois, Indiana, Kentucky, Ohio, and Michigan. Detroit, Michigan, and St. Louis, Missouri, both tied their record for the greatest number of days with measurable precipitation in January. Detroit, Michigan, recorded its wettest January in 151 years with 5.25 inches (133.4 mm). Conversely, Minneapolis, Minnesota, tied for the 6th driest January in 152 years with 0.13 inches (3.3 mm).</p>
+
+<h4 class="pageSub2section" id="mrcc-drought">Drought</h4>
+
+<p>Drought significantly improved in January across the lower Midwest, while dry conditions lingered in Iowa and across the upper Midwest. Illinois, Indiana, Kentucky, and Ohio ended the month drought-free. Just 15 percent of Missouri was in drought by late January compared with 72 percent at the start of the month. Iowa remained the epicenter of drought for the region, with drought or dryness affecting 95 percent of the state. Drought was spotty across Minnesota and Wisconsin, with areas of severe drought intermixed with drought-free zones.</p>
+
+<h4 class="pageSub2section" id="mrcc-drought">Snowfall</h4>
+
+<p>January snowfall was highly variable across the region. The greatest snowfall was measured along a swath from western Iowa northeastward to northern Michigan, where totals ranged from 15-40 inches (38.1-101.6 cm). In Waterloo, Iowa, a record 5-day snowfall total of 23.9 inches (60.7 cm) shattered the old 5-day snowfall record of 16 inches (40.6 cm). In Moline, Illinois, 15.4 inches (39.1 cm) of snow fell on January 12, which was the 2nd highest daily total on record and only the third time over 15 inches (38.1 cm) of snow fell in a single day. Conversely, snowfall deficits of 5-20 inches (12.7-50.8 cm) were observed across Minnesota, northern Wisconsin, and Michigan’s Upper Peninsula. Snowfall was also below normal across a wide area from southern Illinois eastward through Ohio. Northeast Ohio, which typically receives ample lake-effect snow, had totals 5-25 inches (12.7-63.5 cm) below normal. While most lake-effected areas around the Great Lakes had normal or below-normal snowfall in January, the southern shore of Lake Michigan had above-normal conditions. An extreme lake-effect snow event affected far southwest Michigan and northwest Indiana on January 19-20 with snowfall rates of 2-3 inches (5.1-7.6 cm) per hour. As much as 2-3 feet (61-94 cm) of snow was reported in northwest Indiana, and a 5-10 car pileup shut down the Indiana Toll Road. A record single-day snowfall of 21.9 inches (55.6 cm) was reported in LaPorte, Indiana.</p>
+
+<h4 class="pageSub2section" id="nrcc-notable">Notable Weather</em></h4>
+
+<p>Cloud Cover and Fog: While January is known to be a gloomy time of year across the Midwest, January 2024 was notably cloudy and foggy for much of the region. The Minnesota Climatology Office noted that the average solar radiation (sunshine) in St. Paul was the lowest among all Januarys since 1963 (when record-keeping began). About 75 percent of days in January reported noontime cloud cover in Indianapolis compared to the historical average of 44 percent of days. Persistent dense fog blanketed most of the Midwest (and the larger central US) from January 23 to 25 as mild Gulf Coast air pushed across cold, moist, and snow-covered ground. Dense fog advisories covered most of the region as poor visibility disrupted flights, delayed schools, and generated hazardous driving conditions.</p>
+
+<p>For further details on the weather and climate events in the Midwest, see the weekly and monthly reports at the <a href="https://mrcc.purdue.edu/cliwatch/watch.htm">Midwest Climate Watch page</a>.</p>
+
+<h3 class="pageSubsection" id="SERCC" data-menutitle="Southeast">Southeast <em class="small">(Information provided by the <a href="https://sercc.com/">Southeast Regional Climate Center</a>)</em></h3>
+
+<!--
+<h4>Report not available at time of publishing.</h4>
+-->
+
+<h4 class="pageSub2section" id="sercc-temp">Temperature</h4>
+
+<p>
+Temperatures were variable across the Southeast in January. Much of the interior and southwestern portions of the region were below average for the month. The greatest departures were found across Alabama and northern portions of Georgia, where mean temperatures were 2 to 4 degrees F (1.1 to 2.2 degrees C) below average for the month. In contrast, mean temperatures were above average across the eastern half of the region and in the Caribbean. The greatest departures were found across South Florida, eastern portions of Georgia, the Carolinas, and Virginia, as well as much of Puerto Rico and the U.S. Virgin Islands, where mean temperatures were 2 to 4 degrees F (1.1 to 2.2 degrees C) above average for the month. Saint Croix recorded its warmest January on record (since 1951), while San Juan, PR recorded its second warmest January on record (since 1898). 
+The coldest weather of the month occurred from the 17th to the 22nd, as a very strong but modified Arctic air mass poured into the region. Mean temperatures were between 15- and 20-degrees F (8.3 and 11.1 degrees C) below average across the interior of the region. Some of these temperatures were driven by snow cover from a departing low-pressure system. Of note, minimum temperatures dropped below 0 degrees F (-17.8 degrees C) across parts of western Virginia and northern Alabama on the 17th. Maximum temperatures were also noteworthy. On the 20th, temperatures remained below freezing as far south as central Georgia and Alabama, and below 50 degrees F (10 degrees C) across the Florida Panhandle, resulting in numerous daily record low maximum temperatures. The warmest weather of the month occurred several days later in advance of a low-pressure system that tracked west of the region. Numerous locations set daily record high maximum and minimum temperatures, as well as a few monthly records. On the 25th, Richmond, VA (1871-2024) and Raleigh-Durham, NC (1887-2024) tied their highest minimum January temperature on record of 62 degrees F (16.7 degrees C) and 64 degrees F (17.8 degrees C), respectively.  On the 26th, Washington Reagan Airport (1871-2024) reached 80 degrees F (26.7 degrees C) for the first time on record in the month of January. That same day, Wilmington, NC (1871-2024) recorded its warmest maximum January temperature on record with a value of 83 degrees F (28.3 degrees C).</p>
+
+<h4 class="pageSub2section" id="sercc-prcp">Precipitation</h4>
+
+<p>Precipitation was also variable across the Southeast in January. The wettest locations were found along a swath extending from southern Alabama through northern portions of Georgia and South Carolina and western and central portions of North Carolina and Virginia, where some places recorded more than double their expected monthly total. Precipitation was also above average across parts of northern and central Florida. Following a wet December, several locations recorded one of their wettest Januaries on record. Athens, GA (1898-2024), Asheville, NC (1869-2024), Greensboro, NC (1903-2024), Greenville-Spartanburg, SC (1884-2024), and Highlands, NC (1879-2024) all recorded their second wettest January on record. Much of this precipitation fell on the 9th of the month, as a strengthening low-pressure system tracked through the Mississippi and Ohio River Valleys. Daily precipitation totals ranged from 2 to 5 inches (51 to 127 mm) across interior portions of the region. Athens, GA and Greenville-Spartanburg, SC recorded their wettest January day on record with 4.56 inches (116 mm) and 4.38 inches (111 mm), respectively. 
+While the interior of the region was wetter than average, eastern and southern portions of the region largely missed out on the precipitation due to the prevailing inland track of low-pressure systems. Parts of southeast Florida received less than 1 inch (25 mm) of precipitation for the month, while coastal sections of the Carolinas, including Wilmington and Cape Hatteras, recorded less than half of their expected monthly total. For the third straight month, precipitation was below average across Puerto Rico and the U.S. Virgin Islands.
+In terms of winter weather, freezing rain and sleet were recorded across central and western portions of North Carolina and Virginia on the 6th of the month. Freezing rain and sleet were also recorded across central and southern Alabama and northwest Florida from the 14th to the 16th, while 2 to 8 inches (51 to 203 mm) of snow was observed across much of the interior of the region extending from northern Alabama to northern Virginia, with some locations recording over 10 inches (254 mm) of snow. Numerous vehicles were stranded along portions of the Beech Mountain Parkway in western North Carolina. Another round of winter precipitation occurred on the 29th, resulting in 1 to 5 inches (25 to 127 mm) of snow across western portions of North Carolina and Virginia. For the month, Beech Mountain, NC recorded 37.2 inches (945 mm) of snow, making it the fourth highest total on record (since 1991), while Mount Mitchell, NC recorded 22.8 inches (579 mm). The highest monthly snowfall total in Virginia was 21.5 inches (546 mm) from a CoCoRaHS observer in Harrisonburg, located in the Shenandoah Valley around 1,300 feet (400 m). The highest monthly snowfall total in Alabama was 7 inches (178 mm) from a CoCoRaHS observer in Florence located in the extreme northern portion of the state.</p>
+
+<h4 class="pageSub2section" id="sercc-drought">Drought</h4>
+
+<p>Drought conditions continued to improve across the region in January. Extreme (D3) drought was eliminated across northern Alabama and along the West Coast of Florida, with mostly moderate (D1) and localized areas of severe (D2) drought remaining at the end of the month. Severe (D2) and moderate (D1) drought were eliminated across Virginia and the Carolinas, with only small areas of abnormal dryness (D0) remaining in the extreme southwestern corners of both states. Severe (D2) drought was eliminated across northern Georgia, with small areas of moderate (D1) drought and abnormal dryness (D0) remaining at the end of the month. In contrast, drought conditions continued to worsen in the Caribbean. By the end of the month, moderate (D1) drought covered about 50 percent of Puerto Rico, while abnormal dryness (D0) was reintroduced on Saint John. Severe (D2) drought persisted on Saint Thomas, while moderate (D1) drought persisted on Saint Croix.</p>
+
+<h4 class="pageSub2section" id="sercc-ag">Agriculture</h4>
+
+<p>Field conditions continued to improve in many places due to above average precipitation and increased soil moisture, allowing farmers to finish harvesting and preparing fields for spring planting. Pastures and recently planted winter wheat progressed well during the month, though cooler weather did affect winter grazing and hindered the growth of small grains, particularly across parts of Alabama and Georgia. Citrus crops were also affected by the surge of cooler air during the latter half of the month, with some damage noted. On the other hand, the cooler weather helped peaches accumulate chill hours. As has been the case over the past few months, field activities were limited or delayed in places that received too much precipitation, most notably across parts of Georgia, South Carolina, and Florida. Wet weather in Florida also saturated pastures and damaged sugarcane. Many cattle producers were still low on hay due to the drought from last year, particularly in Alabama, Georgia, and South Carolina. Continued warm and dry weather across the Caribbean negatively affected crops. Yields for most fruits and vegetables were low and farmers were rotating livestock and buying hay and grain due to ongoing forage shortages. Soils were extremely dry, and irrigation was being used to help prepare fields. Crops and vegetation were also damaged from forest fires in Puerto Rico.</p>
+
+<h4 class="pageSub2section" id="sercc-notable">Notable Weather</h4>
+
+<p>There were 432 reports of severe weather across the Southeast in January, which is well-above the median frequency of 58 reports over the period 2000 to 2022 (744 percent of normal). There were 38 confirmed tornadoes (14 EF-0s, 17 EF-1s, 6 EF-2s, 1 EF-3), which is well-above the median frequency of eight (475 percent of normal). All but four of these occurred as part of a severe weather outbreak across the region from the 8th to the 10th of the month. The strongest tornado was an EF-3 that caused significant damage around Panama City Beach, FL. Two tornado-related fatalities were confirmed from this outbreak, both in manufactured homes. One occurred in the community of Cottonwood in southeast Alabama, and the other in the town of Claremont located northwest of Charlotte, NC. A total of 14 injuries were also confirmed from these tornadoes.  
+There were 388 wind reports in January, which is well-above the median frequency of 48 reports (808 percent normal). Many of these occurred as part of the severe weather outbreak from the 8th to the 10th. Gusts of 50 to 60 mph (22 to 27 m/s), some higher, were reported across a large portion of the region. Mobile, AL (1948-2024), and Wilmington, NC (1942-2024) recorded their highest winter (December-February) gusts on record with values of 68 mph (30 m/s) and 73 mph (33 m/s), respectively. Raleigh-Durham, NC recorded a gust of 69 mph (31 m/s), which is the fifth highest gust for any day on record (since 1945). Other gusts of note included a 78 mph (35 m/s) gust in New Bern, NC and a 69 mph (31 m/s) gust in Charleston, SC. In addition to severe weather, this system contributed to flash flooding, coastal flooding, erosion, and landslides. More high winds were observed on the 12th of the month. Gusts between 70 and 90 mph (31 and 40 m/s) were recorded across northern Georgia and southwestern Virginia, while 40 to 50 mph (18 to 22 m/s) gusts were recorded across northern and central portions of Alabama. There were five hail reports in January, which is above the median frequency of two reports (250 percent of normal). The largest hailstone was baseball-sized, or 2.75 inches (70 mm), in the town of Dothan in extreme southeastern Alabama on the 9th of the month.</p>
+
+<p>For more information, please visit the <a href="https://sercc.com/">Southeast Regional Climate Center Home Page</a>.</p>
+
+<h3 class="pageSubsection" id="HPRCC" data-menutitle="High Plains">High Plains <em class="small">(Information provided by the <a href="http://www.hprcc.unl.edu/">High Plains Regional Climate Center</a>)</em></h3>
+
+<!--
+<h4>Report not available at time of publishing.</h4>
+-->
+
+<p>The run of scalding hot temperatures stretching back to September finally ended this month, and winter arrived with a vengeance. Temperatures dipped below zero, while wind chills plummeted. Several rounds of snow pushed through the southern portions of the region, but the northern parts were nearly bone-dry. 
+Temperatures were mild during the first week of the month before a front packed with arctic air and heavy snowfall trekked south. Up to 12 inches (30.48 cm) of snow fell in parts of Nebraska on the 8th, while air temperatures fell to –30 degrees F (-34.4 degrees C) at Old Faithful at Yellowstone National Park in Wyoming. The thermometer continued to drop across the region, with thousands of daily and over 30 all-time records broken at the end of this arctic blast. Light winds were also present for several days, creating life-threatening wind chills nearing –65 degrees F (-53.9 degrees C) in North Dakota. 
+After a steady warmup, the month ended on a bright note with temperatures rising to over 60 degrees F (15.6 degrees C) for many. Not only did this provide a reprieve from the absurdly cold temperatures, but it also melted away the snow and ice in the region.</p>
+
+<h4 class="pageSub2section" id="hprcc-temp">Temperature</h4>
+
+<p>Temperatures were below normal for most of the region, due to the arctic blast in the middle of the month. Despite the cold, the southwestern and northeastern parts of the region experienced departures of over 4 degrees F (2.2 degrees C) above normal. Even with the variability, very few locations ranked in the top 10 warmest or coldest this month.  
+The warmth from the back half of 2023 carried into the opening days of 2024, with temperatures reaching up to 57 degrees F (13.9 degrees C) in Kansas on the 4th. That would be the last glimmer of hope as much of the region plunged into below-freezing temperatures for almost two weeks. High temperatures dropped all the way to –25 degrees F (-31.7 degrees C) outside of Williston, North Dakota, and subzero highs stretched all the way to Kansas. The peak of this cold spell occurred on the 14th when hundreds of daily records were broken. After suffering through this, temperatures steadily rose until the end of the month. 
+The unbearable cold didn’t impact some in the region, and Grand Junction, Colorado was among them. It was their 6th warmest January on record, with an average temperature of 34.8 degrees F (1.6 degrees C). High temperatures reached 60 degrees (15.6 degrees C) twice this month, which is highly unusual since it has only happened three times since records began in 1893.</p>
+
+<h4 class="pageSub2section" id="hprcc-prcp">Precipitation</h4>
+
+<p>A one-two punch impacted Kansas and Nebraska this month, while the rest had spotty precipitation. The Dakotas and northern Wyoming were near bone-dry, with parts of those states receiving less than 0.10 inches (2.54 mm) of precipitation this month. 
+Winter arrived with a vengeance in Kansas and Nebraska. A moderate amount of snow fell on the 8th and the 9th, but the gut punch occurred on the 12th. Nearly a foot (30.48 cm) of snow fell in parts of Nebraska, while temperatures plummeted below zero. Roads rapidly turned into icy nightmares, with hundreds of wrecks reported. At the end of the month, several major locations ranked in the top 10 for January snowfall. Norfolk, Nebraska nearly broke their monthly record, with 20.6 inches (52.32 cm) of snow, while a CoCoRaHS observer near Columbus reported a whopping 31 inches (78.74 cm) this month. 
+Outside of the southeastern corner of South Dakota, the Dakotas largely missed any form of precipitation this month. Fargo, North Dakota recorded their 6th lowest January snowfall while other parts of the state recorded a mere dusting. 
+In the west, Colorado and Wyoming had isolated patches of above-normal precipitation but also significant dryness. Akron, Colorado only measured 0.01 (0.254 mm) of precipitation, ranking third driest and Cody, Wyoming received trace amounts to tie for fourth driest.</p>
+
+<h4 class="pageSub2section" id="hprcc-drought">Drought</h4>
+
+<p>The continued above-normal precipitation in Kansas and eastern Nebraska over the past 90 days has tremendously improved the drought situation, while conditions have deteriorated in the northern portions of the region due to low snowfall. Despite this increase, the region experienced a reduction of nearly 6 percent in D0 to D4 (abnormally dry to exceptional drought conditions).
+Drought conditions have improved significantly in Kansas since the beginning of the water year, with a 40 percent reduction in D2 to D4 (severe to exceptional drought) due to several timely bouts of precipitation. The same can be said for eastern Nebraska, where the intensity of drought conditions has been reduced immensely. On the opposite end of the spectrum, snowfall has been hard to come by in northern Wyoming, with drought degrading up to 3 classes this month. Elsewhere in the region, other improvements and degradation were observed.</p>
+
+<p>For more information, please visit the <a href="http://www.hprcc.unl.edu/">High Plains Regional Climate Center Home Page</a>.</p>
+
+<h3 class="pageSubsection" id="SRCC" data-menutitle="South">South <em class="small">(Information provided by the <a href="https://www.srcc.tamu.edu/">Southern Regional Climate Center</a>)</em></h3>
+
+<!--
+<h4>Report not available at time of publishing.</h4>
+-->
+
+<p>A cold snap brought frigid temperatures to much of the Southern Region in January, leading to widespread travel delays and closures. Widespread flooding impacted Texas, Louisiana, Arkansas, and Mississippi.</p>
+
+<h4 class="pageSub2section" id="srcc-temp">Temperature</h4>
+
+<p>Temperatures were below normal across the Southern Region during January, with the majority of stations reporting two to six degrees F below normal. Only a few isolated stations in far west Texas were above normal for the month. Statewide averages were well below their median values for all six states in the Southern Region, including two top fifteen coldest: Arkansas (14th coldest, out of 130 years), Oklahoma (14th coldest), the Southern Region as a whole (21st coldest), Tennessee (27th coldest), Mississippi (28th coldest), Texas (28th coldest), and Louisiana (29th coldest). The only state not to record sub-zero temperatures during January was Louisiana. The warmest recorded temperature in the region was 91F at McAllen, Texas on January 8th. The coldest observed temperature in the Region was -18F at Lewisburg Experiment Station, Tennessee on January 17th. There were no long-term stations in the Southern Region that set records for highest maximum monthly temperature or lowest minimum temperature for January.</p>
+
+<h4 class="pageSub2section" id="srcc-prcp">Precipitation</h4>
+
+<p>Precipitation in much of the Southern Region during January was well above normal, with only far west and parts of deep south Texas reporting below normal precipitation. A large swath of the Region stretching from the central Gulf Coast of Texas and central Texas to Tennessee had stations recording 150 to 300 percent of normal precipitation. State totals for the Southern Region were well above their median values for all six states, including four top ten wettest: the Southern Region as a whole (7th wettest, out of 130 years), Louisiana (9th wettest), Texas (10th wettest), Arkansas (10th wettest), Mississippi (18th wettest), Oklahoma (27th wettest), and Tennessee (33rd wettest). Two stations exceeded 18 inches of precipitation for January, both CoCoRaHS: near Mandeville, Louisiana (18.43 inches) and near Montgomery, Texas (19.24 inches). Three stations near Brenham, Texas, all CoCoRaHS, reported in excess of 7.3 inches of precipitation on January 24th: Brenham 0.7 E (7.31 inches), Brenham 0.7 NW (7.61 inches), and Brenham 1.4 NNW (8.7 inches). Fifteen long-term stations set single-day accumulation records for January, with the largest being 6.3 inches at San Augustine, Texas on January 24th beating the old record of 5.00 inches set in 2007.</p>
+
+<h4 class="pageSub2section" id="srcc-drought">Drought/Flooding</h4>
+
+<p>During January the Southern Region saw widespread improvement of drought conditions across the eastern portions of the Region and portions of eastern Texas and south-central Oklahoma. Much of this region saw one to two categories of improvement, with isolated patches of three categories of improvement in drought conditions, according to the US Drought Monitor. In central and west Texas, the Texas Panhandle, and southeastern Oklahoma drought conditions were unchanged. Portions of deep south Texas saw one category of degradation in drought conditions. As of January 30th, despite widespread improvements, drought conditions persist in west, central, and southeast Texas, much of Louisiana, Mississippi, southeastern Arkansas, and western Tennessee. Exceptional drought, according to the US Drought Monitor, is persistent in northwest Mississippi. On January 24th and 25th, many areas in across Texas, Louisiana, Arkansas, Mississippi, and Tennessee experienced heavy rains leading to widespread reports of flooding and damage from floodwaters. At least two deaths have been attributed to the flooding, one in Trinity County, Texas and one in Pearl County, Mississippi. With the recent rains, modeled soil moisture values from the Climate Prediction Center have shown improvements, though substantial deficits are present in areas of the Region experiencing drought.</p>
+
+<h4 class="pageSub2section" id="srcc-notable">Notable Weather</h4>
+
+<p>A cold snap in mid-January affected much of the Southern Region, along with much of the United States. Snow, ice, and extremely cold temperatures accompanied this event, with 182 stations across all states in the Region except Louisiana reporting sub-zero temperatures over a period from January 14th to January 18th. Widespread closures of roadways, flight cancellations, and activities across the Region were common due to snow and cold temperatures. In addition to the cold, the eastern portions of the region saw exceptionally heavy rainfall during the week of January 24th, leading to flooding and road closures across the region. Two fatalities were associated with floods in Texas and Mississippi. San Jacinto County in Texas declared a county-wide disaster due to flooding from the San Jacinto River. Some residents of Coldspring, Texas, and Camilla, Texas were asked to evacuate their homes due to flooding. 
+There were three tornadoes reported across the Southern Region in January, all rated EF0, affecting Louisiana and Mississippi on January 8th. No injuries or fatalities were associated with these tornadoes. There were 32 reports of hail across the Region in January, with the largest hail being 4.0 inches near Newton, Texas on January 26th. There were 96 severe wind reports, with the fastest being 74 mph near Pine Bluff, Arkansas on January 12th.</p>
+
+<p>For more information, please visit the <a href="https://www.srcc.tamu.edu/">Southern Regional Climate Center Home Page</a>.</p>
+
+<h3 class="pageSubsection" id="WRCC" data-menutitle="West">West <em class="small">(Information provided by the <a href="https://www.wrcc.dri.edu/">Western Region Climate Center</a>)</em></h3>
+
+<!--
+<h4>Report not available at time of publishing.</h4>
+-->
+
+<p>This January warm temperature records were broken in California and Oregon.  Most of the western United States experienced average temperatures and no locations reached below average temperatures.  The month of January brought many near record total precipitation values to most of the western United states.  Locations in Oregon, southern Washington, Nevada, central Idaho, Alaska, New Mexico, and southern Arizona all observed record to near record precipitation totals.  Parts of Montana and Alaska were the only states to see below average precipitation totals.</p>
+
+<h4 class="pageSub2section" id="wrcc-temp">Temperature</h4>
+
+<p>January was marked by most states recording average temperatures.  Only California and Oregon recorded temperatures 3 to 5 degrees Fahrenheit above normal.  Both California and Oregon also set new warm temperature averages for the month of January.  Some locations of note in California were Santa Rosa, which tied its warmest January in its 111 year record at 53 degrees Fahrenheit (4 degrees Fahrenheit above average), Tracy, which set a new record temperature at 53.6 degrees Fahrenheit (5 degrees Fahrenheit above average), Stockton, second warmest (4 degrees Fahrenheit above average), San Jose, second warmest (4 degrees Fahrenheit above average), and Sacramento (3 degrees Fahrenheit above average).  Oregon recorded above normal temperatures in Grants Pass, which recorded its warmest January in 129 years at 46.3 degrees Fahrenheit (5 degrees Fahrenheit above average), Medford (5 degrees Fahrenheit above average), Roseburg (4 degrees Fahrenheit above average), North Bend (3 degrees Fahrenheit above average), and Riddle (3 degrees Fahrenheit above average).  Also notable was the lack of below average temperatures in the western United States with no locations below normal.</p>
+
+<h4 class="pageSub2section" id="wrcc-prcp">Precipitation</h4>
+
+<p>Most of the western United States recorded above average-to-average precipitation totals for the month of January.  Areas in Nevada, Washington, Oregon, Idaho, Arizona, and New Mexico received record to near record above normal precipitation totals.  Gila, NM set a new wettest January at 3.71 inches, 2.7 inches above average.  Other locations of note were Winnemucca, NV (1.5 inches above average), Rebel Creek, NV (1.23 inches above average), Chilly, ID (1.18 inches above average), Heppner, OR (2.37 inches above average), Detroit, OR (8.72 inches above average), Portland, OR (4.4 inches above average), Kennewick, WA (1.42 inches above average), Sasabe, AZ (2.66 inches above average), San Simon, AZ (0.9 inches above average), and Clayton, NM (0.53 inches above average).  On the other hand, only a few stations in Montana recorded drier than average conditions for the month of January.  Moorhead received 0.05 inches (0.25 inches below average), Lewistown received 0.09 inches (0.49 inches below average), and Livingston recorded 0.07 inches (0.37 inches below average).</p>
+
+<h4 class="pageSub2section" id="wrcc-drought">Drought</h4>
+
+<p>According to the U.S. Drought Monitor at the end of January, 29 percent of the western United States is under drought conditions.  This is a 5 percent increase from December.  Areas of extreme (D3) and exceptional (D4) drought can be found in Arizona, New Mexico, and Colorado.  Moderate (D1) to severe (D2) drought is occurring in all western states besides California.</p>
+
+<h4 class="pageSub2section" id="wrcc-ak">Alaska Summary</h4>
+
+<p>Temperatures remained average across Alaska for the month of January with no significant below or above average values.  However, precipitation totals varied across the state with a record wettest January being set on Alaska’s peninsula in Cold Bay at 6.82 inches (3.44 inches above average) and more above average totals for the Southeast and Southcentral regions in Gulkana (0.48 inches above average) and Juneau (3.66 inches above average).  A tie for the record driest January was set in Alaska’s Interior of Tanana with 0.00 inches recorded (0.38 inches below average) and more below average totals in the Southwest at Kenai (0.77 inches below average), Iliamna (0.62 inches below average), and King Salmon (0.64 inches below average).  Alaska also remains drought free with no areas under abnormally dry or higher conditions.</p>
+
+<h4 class="pageSub2section" id="wrcc-hi">Hawaii Summary</h4>
+
+<p>Hawaii ended January with a very average month.  No areas received significant variations in averages of precipitation or temperature.  Most importantly, Hawaii’s drought conditions have significantly improved with only 9 percent of the state under moderate (D1) drought.  There are no regions under severe (D2), extreme (D3), or exceptional (D4) drought.  41 percent of the state remains under abnormally dry conditions, but this is a massive improvement from the past few months.</p>
+
+<h4 class="pageSub2section" id="wrcc-notable">Notable Weather</h4>
+
+<p>Atmospheric River Causes Flash Flooding in San Diego, California: An atmospheric river hit southern California from January 21st to January 22nd dropping 2 to 3 inches in San Diego prompting the mayor to declare a state of emergency.  The rain caused severe flash flooding leading to many water rescues, closed roadways, and massive property damage.  Multiple landslides and rockslides were also caused by the excess water.</p>
+
+<p>For more information, please go to the <a href="https://www.wrcc.dri.edu/">Western Regional Climate Center Home Page</a>.</p></div></div>
+<hr>
+<div id="additional-info"><div id="citation"><h2>Citing This Report</h2>NOAA National Centers for Environmental Information, Monthly National Climate Report for January 2024, published online February 2024, retrieved on February 13, 2024 from <a id="citation-anchor" href="/access/monitoring/monthly-report/national/202401">https://www.ncei.noaa.gov/<wbr>access/<wbr>monitoring/<wbr>monthly-report/<wbr>national/<wbr>202401</a>.</div><div id="metadata"><h2>Metadata</h2><a id="metadata-anchor" href="https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00674">https:/<wbr>/<wbr>www.ncei.noaa.gov/<wbr>access/<wbr>metadata/<wbr>landing-page/<wbr>bin/<wbr>iso?id=gov.noaa.ncdc:C00674</a></div></div>
+<script>
+var report = "national",
+    year   = "2024",
+    month  = 1,
+    date   = year + ('0' + String(month)).slice(-2),
+    dates  = {"national":["199813","199901","199902","199914","199903","199904","199905","199915","199906","199907","199908","199916","199909","199910","199911","199917","199913","200001","200002","200014","200003","200004","200005","200015","200006","200007","200008","200016","200009","200010","200011","200017","200012","200013","200101","200102","200114","200103","200104","200105","200106","200107","200108","200109","200110","200111","200112","200113","200201","200202","200203","200204","200205","200206","200207","200208","200209","200210","200211","200212","200301","200302","200303","200304","200305","200306","200307","200308","200309","200310","200311","200312","200401","200402","200403","200404","200405","200406","200407","200408","200409","200410","200411","200412","200501","200502","200514","200503","200504","200505","200515","200506","200507","200508","200516","200509","200510","200511","200517","200512","200601","200602","200614","200603","200604","200605","200606","200607","200608","200609","200610","200611","200612","200613","200701","200702","200703","200704","200705","200706","200707","200708","200709","200710","200711","200712","200713","200801","200802","200803","200804","200805","200806","200807","200808","200809","200810","200811","200812","200813","200901","200902","200903","200904","200905","200906","200907","200908","200909","200910","200911","200912","200913","201001","201002","201003","201004","201005","201006","201007","201008","201009","201010","201011","201012","201013","201101","201102","201103","201104","201105","201106","201107","201108","201109","201110","201111","201112","201113","201201","201202","201203","201204","201205","201206","201207","201208","201209","201210","201211","201212","201213","201301","201302","201303","201304","201305","201306","201307","201308","201309","201310","201311","201312","201313","201401","201402","201403","201404","201405","201406","201407","201408","201409","201410","201411","201412","201413","201501","201502","201503","201504","201505","201506","201507","201508","201509","201510","201511","201512","201513","201601","201602","201603","201604","201605","201606","201607","201608","201609","201610","201611","201612","201613","201701","201702","201703","201704","201705","201706","201707","201708","201709","201710","201711","201712","201713","201801","201802","201803","201804","201805","201806","201807","201808","201809","201810","201811","201812","201813","201901","201902","201903","201904","201905","201906","201907","201908","201909","201910","201911","201912","201913","202001","202002","202003","202004","202005","202006","202007","202008","202009","202010","202011","202012","202013","202101","202102","202103","202104","202105","202106","202107","202108","202109","202110","202111","202112","202113","202201","202202","202203","202204","202205","202206","202207","202208","202209","202210","202211","202212","202213","202301","202302","202303","202304","202305","202306","202307","202308","202309","202310","202311","202312","202313","202401"],"drought":["199907","199916","199909","200005","200016","200009","200010","200011","200012","200101","200102","200103","200104","200105","200106","200107","200108","200109","200110","200111","200112","200201","200202","200203","200204","200205","200206","200207","200208","200209","200210","200211","200212","200213","200301","200302","200303","200304","200305","200306","200307","200308","200309","200310","200311","200312","200313","200401","200402","200403","200404","200405","200406","200407","200408","200409","200410","200411","200412","200413","200501","200502","200503","200504","200505","200506","200507","200508","200509","200510","200511","200512","200513","200601","200602","200603","200604","200605","200606","200607","200608","200609","200610","200611","200612","200613","200701","200702","200703","200704","200705","200706","200707","200708","200709","200710","200711","200712","200713","200801","200802","200803","200804","200805","200806","200807","200808","200809","200810","200811","200812","200813","200901","200902","200903","200904","200905","200906","200907","200908","200909","200910","200911","200912","200913","201001","201002","201003","201004","201005","201006","201007","201008","201009","201010","201011","201012","201013","201101","201102","201103","201104","201105","201106","201107","201108","201109","201110","201111","201112","201113","201201","201202","201203","201204","201205","201206","201207","201208","201209","201210","201211","201212","201213","201301","201302","201303","201304","201305","201306","201307","201308","201309","201310","201311","201312","201313","201401","201402","201403","201404","201405","201406","201407","201408","201409","201410","201411","201412","201413","201501","201502","201503","201504","201505","201506","201507","201508","201509","201510","201511","201512","201513","201601","201602","201603","201604","201605","201606","201607","201608","201609","201610","201611","201612","201613","201701","201702","201703","201704","201705","201706","201707","201708","201709","201710","201711","201712","201713","201801","201802","201803","201804","201805","201806","201807","201808","201809","201810","201811","201812","201813","201901","201902","201903","201904","201905","201906","201907","201908","201909","201911","201912","201913","202001","202002","202003","202004","202005","202006","202007","202008","202009","202010","202011","202012","202013","202101","202102","202103","202104","202105","202106","202107","202108","202109","202110","202111","202112","202113","202201","202202","202203","202204","202205","202206","202207","202208","202209","202210","202211","202212","202213","202301","202302","202303","202304","202305","202306","202307","202308","202309","202310","202311","202312","202313","202401"],"fire":["199813","200206","200207","200208","200209","200213","200306","200307","200308","200309","200310","200313","200315","200404","200405","200406","200407","200408","200409","200410","200413","200506","200507","200508","200509","200510","200511","200513","200601","200602","200603","200604","200605","200606","200607","200608","200609","200610","200613","200703","200704","200705","200706","200707","200708","200709","200710","200711","200713","200803","200804","200805","200806","200807","200808","200809","200810","200811","200813","200901","200902","200903","200904","200905","200906","200907","200908","200909","200910","200911","200912","200913","201001","201002","201003","201004","201005","201006","201007","201008","201009","201010","201011","201012","201013","201101","201102","201103","201104","201105","201106","201107","201108","201109","201110","201111","201112","201113","201201","201202","201203","201204","201205","201206","201207","201208","201209","201210","201211","201212","201213","201301","201302","201303","201304","201305","201306","201307","201308","201309","201310","201311","201312","201313","201401","201402","201403","201404","201405","201406","201407","201408","201409","201410","201411","201412","201413","201501","201502","201503","201504","201505","201506","201507","201508","201509","201510","201511","201512","201513","201601","201602","201603","201604","201605","201606","201607","201608","201609","201610","201611","201612","201613","201701","201702","201703","201704","201705","201706","201707","201708","201709","201710","201711","201712","201713","201801","201802","201803","201804","201805","201806","201807","201808","201809","201810","201811","201812","201813","201901","201902","201903","201904","201905","201906","201907","201908","201909","201910","201911","201912","201913","202001","202002","202003","202004","202005","202006","202007","202008","202009","202010","202011","202012","202013","202101","202102","202103","202104","202105","202106","202107","202108","202109","202110","202111","202112","202113","202201","202202","202203","202204","202205","202206","202207","202208","202209","202210","202211","202212","202213","202301","202302","202303","202304","202305","202306","202307","202308","202309","202310","202311","202312","202313","202401"],"snow":["200210","200211","200212","200301","200302","200303","200304","200305","200311","200312","200401","200402","200403","200404","200409","200410","200411","200412","200501","200502","200503","200504","200505","200510","200511","200512","200601","200602","200603","200604","200610","200611","200612","200701","200702","200703","200704","200710","200711","200712","200801","200802","200803","200804","200805","200810","200811","200812","200813","200901","200902","200903","200904","200910","200911","200912","200913","201001","201002","201003","201004","201010","201011","201012","201013","201101","201102","201103","201104","201110","201111","201112","201113","201201","201202","201203","201204","201210","201211","201212","201213","201301","201302","201303","201304","201305","201310","201311","201312","201313","201401","201402","201403","201404","201405","201410","201411","201412","201413","201501","201502","201503","201504","201510","201511","201512","201513","201601","201602","201603","201604","201610","201613","201701","201702","201703","201704","201711","201712","201713","201801","201802","201803","201804","201811","201812","201813","201901","201902","201903","201904","201910","201911","201912","201913","202001","202002","202003","202004","202010","202011","202012","202013","202101","202102","202103","202110","202111","202112","202113","202201","202202","202210","202211","202212","202213","202301","202302","202303","202304","202310","202311","202312","202401"],"tornadoes":["200615","200815","200806","200807","200808","200809","200810","200811","200812","200813","200902","200903","200904","200905","200906","200907","200908","200917","200912","200913","201001","201003","201004","201005","201006","201007","201008","201009","201010","201011","201012","201013","201102","201103","201104","201105","201106","201107","201108","201109","201110","201111","201112","201113","201201","201202","201203","201204","201205","201206","201207","201208","201209","201210","201211","201212","201213","201301","201302","201303","201304","201305","201306","201307","201308","201309","201310","201311","201312","201313","201401","201402","201403","201404","201405","201406","201407","201408","201409","201410","201411","201412","201413","201501","201502","201503","201504","201505","201506","201507","201508","201509","201510","201511","201512","201513","201601","201602","201603","201604","201605","201606","201607","201608","201609","201610","201611","201613","201701","201702","201703","201704","201705","201706","201707","201708","201709","201710","201711","201713","201802","201803","201804","201805","201806","201807","201808","201809","201810","201811","201813","201902","201903","201904","201905","201906","201907","201908","201909","201910","201911","201913","202001","202002","202003","202004","202005","202006","202007","202008","202009","202010","202011","202012","202013","202101","202102","202103","202104","202105","202106","202107","202108","202109","202110","202111","202112","202113","202201","202202","202203","202204","202205","202206","202207","202208","202209","202210","202211","202212","202213","202301","202302","202303","202304","202305","202306","202307","202308","202309","202310","202311","202312","202313","202401"],"synoptic":["201107","201108","201109","201110","201111","201112","201201","201202","201203","201204","201205","201206","201207","201208","201209","201210","201211","201212","201301","201302","201303","201304","201305","201306","201307","201308","201309","201310","201311","201312","201401","201402","201403","201404","201405","201406","201407","201408","201409","201410","201411","201412","201501","201502","201503","201504","201505","201506","201507","201508","201509","201510","201511","201512","201601","201602","201603","201604","201605","201606","201607","201608","201609","201610","201611","201612","201701","201702","201703","201704","201705","201706","201707","201708","201709","201710","201711","201712","201801","201802","201803","201804","201805","201806","201807","201808","201809","201810","201811","201812","201901","201902","201903","201904","201905","201906","201907","201908","201909","201910","201911","201912","202001","202002","202003","202004","202005","202006","202007","202008","202009","202010","202011","202012","202013","202101","202102","202103","202104","202105","202106","202107","202108","202109","202110","202111","202112","202113","202201","202202","202203","202204","202205","202206","202207","202208","202209","202210","202211","202212","202213","202301","202302","202303","202304","202305","202306","202307","202308","202309","202310","202311","202312","202313","202401"],"global":["199713","199801","199802","199803","199804","199805","199806","199807","199808","199809","199810","199811","199813","199901","199902","199914","199903","199904","199905","199915","199906","199907","199908","199916","199909","199910","199911","199917","199913","200001","200002","200003","200004","200005","200006","200007","200008","200009","200010","200011","200012","200101","200102","200103","200104","200105","200106","200107","200108","200109","200110","200111","200112","200113","200201","200202","200203","200204","200205","200206","200207","200208","200209","200210","200211","200212","200213","200301","200302","200303","200304","200305","200306","200307","200308","200309","200310","200311","200312","200313","200401","200402","200403","200404","200405","200406","200407","200408","200409","200410","200411","200412","200413","200501","200502","200503","200504","200505","200506","200507","200508","200509","200510","200511","200512","200513","200601","200602","200603","200604","200605","200606","200607","200608","200609","200610","200611","200612","200613","200701","200702","200703","200704","200705","200706","200707","200708","200709","200710","200711","200712","200713","200801","200802","200803","200804","200805","200806","200807","200808","200809","200810","200811","200812","200813","200901","200902","200903","200904","200905","200906","200907","200908","200909","200910","200911","200912","200913","201001","201002","201003","201004","201005","201006","201007","201008","201009","201010","201011","201012","201013","201101","201102","201103","201104","201105","201106","201107","201108","201109","201110","201111","201112","201113","201201","201202","201203","201204","201205","201206","201207","201208","201209","201210","201211","201212","201213","201301","201302","201303","201304","201305","201306","201307","201308","201309","201310","201311","201312","201313","201401","201402","201403","201404","201405","201406","201407","201408","201409","201410","201411","201412","201413","201501","201502","201503","201504","201505","201506","201507","201508","201509","201510","201511","201512","201513","201601","201602","201603","201604","201605","201606","201607","201608","201609","201610","201611","201612","201613","201701","201702","201703","201704","201705","201706","201707","201708","201709","201710","201711","201712","201713","201801","201802","201803","201804","201805","201806","201807","201808","201809","201810","201811","201812","201813","201901","201902","201903","201904","201905","201906","201907","201908","201909","201910","201911","201912","201913","202001","202002","202003","202004","202005","202006","202007","202008","202009","202010","202011","202012","202013","202101","202102","202103","202104","202105","202106","202107","202108","202109","202110","202111","202112","202113","202201","202202","202203","202204","202205","202206","202207","202208","202209","202210","202211","202212","202213","202301","202302","202303","202304","202305","202306","202307","202308","202309","202310","202311","202312","202313"],"global-drought":["202203","202204","202205","202206","202207","202208","202209","202210","202211","202212","202301","202302","202303","202304","202305","202306","202307","202308","202309","202310","202311","202312"],"upper-air":["200005","200006","200007","200008","200009","200010","200011","200012","200101","200102","200103","200104","200105","200106","200107","200108","200109","200110","200111","200112","200113","200201","200202","200203","200204","200205","200206","200207","200208","200209","200210","200211","200212","200213","200301","200302","200303","200304","200305","200306","200307","200308","200309","200310","200311","200312","200313","200401","200402","200403","200404","200405","200406","200407","200408","200409","200410","200411","200412","200413","200501","200502","200503","200504","200505","200506","200507","200508","200509","200510","200511","200512","200513","200601","200602","200603","200604","200605","200606","200607","200608","200609","200610","200611","200612","200613","200701","200702","200703","200704","200705","200706","200707","200708","200709","200710","200711","200712","200713","200801","200802","200803","200804","200805","200806","200807","200808","200809","200810","200811","200812","200813","200901","200902","200903","200904","200905","200906","200907","200908","200909","200910","200911","200912","200913","201001","201002","201003","201004","201005","201006","201007","201008","201009","201010","201011","201012","201013","201101","201102","201103","201104","201105","201106","201107","201108","201109","201110","201111","201112","201113","201201","201202","201203","201204","201205","201206","201207","201208","201209","201210","201211","201212","201213","201301","201302","201303","201304","201305","201306","201307","201308","201309","201310","201311","201312","201313","201401","201402","201403","201404","201405","201406","201407","201408","201409","201410","201411","201412","201413","201501","201502","201503","201504","201505","201506","201507","201508","201509","201510","201511","201512","201513","201601","201602","201603","201604","201605","201606","201607","201608","201609","201610","201611","201612","201613","201701","201702","201703","201704","201705","201706","201707","201708","201709","201710","201711","201712","201713","201801","201802","201803","201804","201805","201806","201807","201808","201809","201810","201811","201812","201813","201901","201902","201903","201904","201905","201906","201907","201908","201909","201910","201911","201912","201913","202001","202002","202003","202004","202005","202006","202007","202008","202009","202010","202011","202012","202013","202101","202102","202103","202104","202105","202106","202107","202108","202109","202110","202111","202112","202113","202201","202202","202203","202204","202205","202206","202207","202208","202209","202210","202211","202212","202213","202301","202302","202303","202304","202305","202306","202307","202308","202309","202310","202311","202312","202313"],"tropical-cyclones":["200206","200207","200208","200209","200210","200213","200304","200305","200306","200307","200308","200309","200310","200312","200313","200406","200407","200408","200409","200410","200413","200505","200506","200507","200508","200509","200510","200513","200606","200607","200608","200609","200610","200611","200613","200705","200706","200707","200708","200709","200710","200712","200713","200805","200806","200807","200808","200809","200810","200811","200812","200813","200901","200902","200903","200904","200905","200906","200907","200908","200909","200910","200911","200912","200913","201001","201002","201003","201004","201005","201006","201007","201008","201009","201010","201011","201012","201013","201101","201102","201103","201104","201105","201106","201107","201108","201109","201110","201111","201112","201113","201201","201202","201203","201205","201206","201207","201208","201209","201210","201211","201213","201306","201307","201308","201309","201310","201311","201313","201406","201407","201408","201409","201410","201411","201413","201505","201506","201507","201508","201509","201510","201511","201513","201606","201607","201608","201609","201610","201611","201613","201706","201707","201708","201709","201710","201713","201806","201807","201808","201809","201810","201813","201905","201906","201907","201908","201909","201910","201911","201913","202005","202006","202007","202008","202009","202010","202011","202012","202013","202101","202102","202103","202104","202105","202106","202107","202108","202109","202110","202111","202112","202113","202201","202202","202203","202204","202205","202206","202207","202208","202209","202210","202211","202212","202213","202301","202302","202303","202304","202305","202306","202307","202308","202309","202310","202311","202312","202313"],"global-snow":["200213","200313","200413","200507","200509","200510","200511","200512","200513","200601","200602","200603","200604","200605","200606","200607","200608","200609","200610","200613","200701","200702","200703","200704","200705","200706","200707","200708","200709","200710","200711","200712","200713","200801","200802","200803","200804","200805","200806","200807","200808","200809","200810","200811","200812","200813","200901","200902","200903","200904","200905","200906","200907","200908","200909","200910","200911","200912","200913","201001","201002","201003","201004","201005","201006","201007","201008","201009","201010","201011","201012","201013","201101","201102","201103","201104","201105","201106","201107","201108","201109","201110","201111","201112","201113","201201","201202","201203","201204","201205","201206","201207","201208","201209","201210","201211","201212","201213","201301","201302","201303","201304","201305","201306","201307","201308","201309","201310","201311","201312","201313","201401","201402","201403","201404","201405","201406","201407","201408","201409","201410","201411","201412","201413","201501","201502","201503","201504","201505","201506","201507","201508","201509","201510","201511","201512","201513","201601","201602","201603","201604","201606","201607","201608","201609","201610","201611","201612","201613","201701","201702","201703","201704","201705","201706","201707","201708","201709","201710","201711","201712","201713","201801","201802","201803","201804","201805","201806","201807","201808","201809","201810","201811","201812","201901","201902","201903","201904","201905","201906","201907","201908","201909","201910","201911","201912","202001","202002","202003","202004","202005","202006","202007","202008","202009","202010","202011","202012","202101","202102","202103","202104","202105","202106","202107","202108","202109","202110","202111","202112","202201","202202","202203","202204","202205","202206","202207","202208","202209","202210","202211","202212","202301","202302","202303","202304","202305","202306","202307","202308","202309","202310","202311","202312"],"hazards":["199816","199813","199901","199902","199903","199904","199905","199906","199907","199908","199909","199910","199911","200001","200002","200003","200004","200005","200006","200007","200008","200009","200010","200011","200012","200101","200102","200103","200104","200105","200106","200107","200108","200109","200110","200111","200112","200201","200202","200203","200204","200205","200206","200207","200208","200209","200210","200211","200212","200301","200302","200303","200304","200305","200306","200307","200308","200309","200310","200311","200312","200401","200402","200403","200404","200405","200406","200407","200408","200409","200410","200411","200412","200501","200502","200503","200504","200505","200506","200507","200508","200509","200510","200511","200512","200601","200602","200603","200604","200605","200606","200607","200608","200609","200610","200611","200612","200701","200702","200703","200704","200705","200706","200707","200708","200709","200710","200711","200712","200801","200802","200803","200804","200805","200806","200807","200808","200809","200810","200811","200812","200901","200902","200903","200904","200905","200906","200907","200908","200909","200910","200911","200912","201001","201002","201003","201004","201005","201006","201007","201008","201009","201010","201011","201012","201101","201102","201103","201104","201105","201106","201107","201108","201109","201110","201111","201112","201201","201202","201203","201204","201205","201206","201207","201208","201209","201210","201211","201212","201301","201302","201303","201304"],"enso":["200313","200401","200402","200403","200404","200405","200406","200407","200408","200409","200410","200411","200412","200413","200501","200502","200503","200504","200505","200506","200507","200508","200509","200510","200511","200512","200513","200601","200602","200603","200604","200605","200606","200607","200608","200609","200610","200611","200612","200613","200701","200702","200703","200704","200705","200706","200707","200708","200709","200710","200711","200712","200713","200801","200802","200803","200804","200805","200806","200807","200808","200809","200810","200811","200812","200813","200901","200902","200903","200904","200905","200906","200907","200908","200909","200910"],"global-regions":["201506","201507","201508","201509","201510","201511","201512","201513","201601","201602","201603","201604","201605","201606","201607","201608","201609","201610","201611","201612","201613","201701","201702","201703","201704","201705","201706","201707","201708","201709","201710","201711","201712","201713","201801","201802","201803","201804","201805","201806","201807","201808","201809","201810","201811","201812","201813","201901","201902","201903","201904","201905","201906","201907","201908","201909","201910","201911","201912","201913","202001","202002","202003","202004","202005","202006","202007","202008","202009","202010","202011","202012","202013","202101","202102","202103","202104","202105","202106","202107","202108","202109","202110","202111","202112","202113","202201","202202","202203","202204","202205","202206","202207","202208","202209","202210","202211","202212","202213","202301","202302","202303","202304","202305","202306","202307","202308","202309","202310","202311","202312","202313"]};
+
+$(document).ready(function(){
+    $.ajax({
+        url: '/access/monitoring/monthly-report/js/report-selection.js'
+    }).done(function(){
+        fillYears();
+        $('#report').change(fillYears);
+        $('#year').change(fillMonths);
+    });
+
+    populatePageSections();
+
+    $('nav#pageNav .pageLink').click(function(){
+        const vw = window.innerWidth || document.documentElement.clientWidth;
+
+        var pageNavHeight = (vw >= 660 ?
+            $('#pageNav').height() +
+            parseInt($('#pageNav').css('marginTop')) +
+            parseInt($('#pageNav').css('marginBottom')) +
+            parseInt($('#pageNav').css('paddingTop')) +
+            parseInt($('#pageNav').css('paddingBottom'))
+            :
+            0
+        );
+
+        var loc = $(this).data('section');
+
+        $('html, body').stop().animate(
+            { scrollTop: $('#' + loc).offset().top - pageNavHeight },
+            'slow',
+            'swing'
+        );
+
+        history.pushState(null, null, window.location.pathname + window.location.search + '#' + loc);
+
+        return false;
+    });
+
+    setBreadcrumb()
+});
+
+function tocScopeClick(){
+    scope = $(this).data("scope");
+    $("#scopes li").removeClass("selected");
+    $("#show-" + scope).addClass("selected");
+    $("#reports-toc > *").hide();
+    $("." + scope).show();
+    return false;
+}
+
+function populatePageSections(){
+    var pageSectionsContent = '';
+
+    // page sections
+    var pageSections = [],thisSectionType,prevSectionType;
+
+    $('.pageSection,.pageSubsection,.pageSub2section').each(function(){
+        var id   = $(this).attr('id'),
+            text = ($(this).data('menutitle') ? $(this).data('menutitle') : $(this).text().replace(/:?\s+\(.*\)$/g,'')),
+            attrText = text;
+
+        if ($(this).data('shortmenutitle')) {
+        text = '<span class="longTitle">' +
+                text +
+                '</span><span class="shortTitle">' +
+                    $(this).data('shortmenutitle') +
+                '</span>';
+        }
+
+        var section = '<a ' +
+                'href="#' + id + '" ' +
+                'title="Scroll to ' + attrText + ' section" ' +
+                'aria-label="Scroll to ' + attrText + ' section" ' +
+                'class="pageLink" ' +
+                'id="section-' + id + '"' +
+                'data-section="' + id + '"' +
+            '>' +
+                        text +
+                    '</a>';
+
+        if ($(this).hasClass('pageSub2section'))
+        thisSectionType = 'sub2';
+        else if ($(this).hasClass('pageSubsection'))
+        thisSectionType = 'sub';
+        else
+        thisSectionType = 'section';
+
+        if (pageSections.length > 0) {
+            // do not allow skipping hierarchy
+            if (prevSectionType == 'section' && thisSectionType == 'sub2') {
+                return; // continue
+            }
+
+            if (
+                (prevSectionType == 'section' && thisSectionType == 'sub') ||
+                (prevSectionType == 'sub'     && thisSectionType == 'sub2')
+            ) {
+                // beginning of sub/sub2 section
+                pageSections.push('<ul>');
+            } else if (
+                (prevSectionType == 'sub'  && thisSectionType == 'section') ||
+                (prevSectionType == 'sub2' && thisSectionType == 'sub') ||
+                (prevSectionType == 'sub2' && thisSectionType == 'section')
+            ) {
+                // end of sub/sub2 section
+                pageSections.push('</ul>');
+            }
+
+            pageSections.push('</li>');
+
+            if (prevSectionType == 'sub2' && thisSectionType == 'section') {
+                pageSections.push('</ul></li>');
+            }
+        }
+
+        pageSections.push('<li>' + section);
+
+        prevSectionType = thisSectionType;
+    });
+
+    if (pageSections.length > 1) {
+        pageSections.push('</li>');
+
+        if (prevSectionType == 'sub2') {
+            pageSections.push('</ul></li></ul>');
+        } else if (prevSectionType == 'sub') {
+            pageSections.push('</ul>');
+        }
+
+        pageSectionsContent = '<nav id="pageNav"><ul id="onThisPageList">' + pageSections.join('') + '</ul></nav>';
+
+        $('#onThisPage').click(function(){
+            $('#onThisPageList').hide();
+            return false;
+        });
+    }
+
+    if (pageSectionsContent.length > 0) {
+        $("#pageSections").remove();
+        $('#reportContent').prepend('<div id="pageSections">' + pageSectionsContent + '</div>').ready(function(){
+        $.getScript('/sotc/js/page-nav.js')});
+    } else {
+        $('#reportContent').prepend('<hr>');
+    }
+}
+
+function setBreadcrumb(){
+    var appHomeLink = '<a href="/access/monitoring/monthly-report">Monthly Report</a>',
+        reportLink  = '<a href="/access/monitoring/monthly-report/national/202401">' +
+            $(".app-breadcrumb-item:last-of-type").text() + '</a>';
+
+    $(".app-breadcrumb-item:last-of-type").remove();
+    $(".app-breadcrumbs").append('<li class="app-breadcrumb-item">' + appHomeLink + '</li>');
+    $(".app-breadcrumbs").append('<li class="app-breadcrumb-item">' + reportLink + '</li>');
+}
+</script>
+
+                </div>
+            </div>
+        </main>
+        <footer role="contentinfo">
+            <div class="ncei-header-footer-container">
+                <div class="ncei-header-footer">
+                    <div class="ncei-header-footer-inner">
+                        <div class="ncei-footer-half-width">
+                            <div class="ncei-footer-logo">
+                                <a href="http://www.ncei.noaa.gov">
+                                    <img src="/monitoring-content/lib/images/ncei/logo_bw.svg" title="Link to NCEI's Homepage" alt="Link to NCEI's Homepage">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ncei-footer-quarter-width">
+                            <p class="ncei-header-footer-title">FOLLOW US</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/NOAANCEI/">
+                                        @NOAANCEI
+                                        <img src="/monitoring-content/lib/images/ncei/facebook-icon.png" width="100" height="100" title="NCEI Facebook" alt="NCEI Facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/noaadata/">
+                                        @NOAAData
+                                        <img src="/monitoring-content/lib/images/ncei/instagram-icon.png" width="100" height="100" title="NOAA Data Instagram" alt="NOAA Data Instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/NOAANCEI">
+                                        @NOAANCEI
+                                        <img src="/monitoring-content/lib/images/ncei/twitter-icon.png" width="100" height="100" title="NOAA NCEI Twitter" alt="NOAA NCEI Twitter">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ncei.noaa.gov/news.xml">
+                                        News Feed
+                                        <img src="/monitoring-content/lib/images/ncei/rss-icon.png" width="100" height="100" title="NCEI RSS Feed" alt="NCEI RSS Feed">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ncei-footer-quarter-width">
+                            <p class="ncei-header-footer-title">CONTACT US</p>
+                            <ul>
+                                <li><a href="mailto:ncei.info@noaa.gov">Email: ncei.info@noaa.gov</a></li>
+                                <li><a href="tel:8282714800">Phone: (828) 271-4800</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/cmb-lib/js/back-to-top.js"></script>
+    <script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC%26subagency=NOAA"></script></body>
+</html>

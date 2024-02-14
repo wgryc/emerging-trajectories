@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]> <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
+<html lang="en">
+
+
+<head>
+	<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5e33925808","applicationID":"18843320","transactionName":"JVcPR0MLWApSRU1eAQVVEhxSC1oSUlkWbBMHXwRAHhdcCUA=","queueTime":0,"applicationTime":797,"agent":""}</script>
+	<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<!-- Responsiveness -->
+	<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+	<meta content="authenticity_token" name="csrf-param" />
+	<meta content="dyAd3Gqq5RunLKIQ9rvikxC5O6aMS+mMr89K3qYNOvw=" name="csrf-token" />
+	<title>Center for Climate Sciences: About</title>
+	<meta content='Center for Climate Sciences' property='og:site_name'>
+	<meta content='' name='author'>
+	<meta content='' name='keywords'>
+	<meta content='' name='description'>
+	<meta content='' property='og:description'>
+	<meta content='Home' property='og:title'>
+	<meta content='/events/summer-school/about' property='og:url'>
+	<meta content='article' property='og:type'>
+	<meta content='2016-06-10 03:59:44 UTC' property='og:updated_time'>
+	<meta content='/system/site_config_values/meta_share_images/1_ccs-logo.png' property='og:image'>
+	<link href='../../../system/site_config_values/meta_share_images/1_ccs-logo.png' rel='image_src'>
+
+
+	<link href="../../../assets/public_manifest-ad8822f46aa9b10a23508aa5dd862007.css" media="all" rel="stylesheet" />
+	<link href="../../../assets/vendor/jquery.fancybox-7bf3f1f7c53e06f5e482f94ec4c9420a.css" media="screen" rel="stylesheet" />
+	<link href="../../../assets/vendor/jquery.fancybox-thumbs-52538dafd7c3648356514ae81655bff4.css" media="screen" rel="stylesheet" />
+	<link href="../../../assets/print-8711b21157d1c1e0d65a18e67a63d327.css" media="print" rel="stylesheet" />
+	<script src="../../../assets/public_manifest-0bdd6212cc087d7ed754709af9590a8b.js"></script>
+	<script src="../../../assets/vendor/jquery.fancybox-a20428595960a9087b25c694fad59655.js"></script>
+	<script src="../../../assets/vendor/jquery.fancybox-thumbs-f96e2347bcc97f32eabd1c52b7192887.js"></script>
+	<script src="../../../assets/mb_manifest-4f77e98482eb6892b9041b2553b0e29a.js"></script>
+</head>
+<body id='about'>
+	<div id='main_container'>
+		<div id='site_body'>
+			<div class='site_header_area'>
+				<header class='site_header'>
+					<div class='brand_area'>
+						<div class='brand1'>
+							<a class='nasa_logo' href='http://www.nasa.gov/' target='_blank' title='visit nasa.gov'>NASA</a>
+						</div>
+						<div class='brand2'>
+							<a class='top_logo' href='http://jpl.nasa.gov/' id='jpl_logo' title='JPL'>Jet Propulsion Laboratory</a>
+							<a class='sub_logo' href='http://www.caltech.edu/' id='caltech_logo' title='Caltech'>California Institute of Technology</a>
+						</div>
+						<img alt='Print Logo' class='print_only print_logo' src='../../../assets/logo_nasa_mission_black%402x.png'>
+					</div>
+
+					<a class='visuallyhidden focusable' href='#page'>Skip Navigation</a>
+					<div class='site_logo'>
+						<a href='../../../index.html' title='Home'>
+							<!-- /%img.site_logo_black{:alt => "", :src => "/assets/logo-dark@2x.png"} -->
+							<!-- /%img.site_logo_white{:alt => "", :src => "/assets/logo-white@2x.png"} -->
+							<h1 class='logo'>
+								Center for Climate Sciences
+							</h1>
+						</a>
+					</div>
+					<div class='right_header_container'>
+						<!-- %form.nav_search{:action=> "/search.html"} -->
+						<!-- %input.search_field{:name => "q", :onblur => "this.placeholder = 'search'", :onfocus => "this.placeholder = ''", :placeholder => "search", :type => "text", :value => ""} -->
+						<!-- %input.search_submit{:type => "submit", :value => ""} -->
+						<!-- form action='/search.html' class='nav_search'>
+						<input class='search_field' name='q' type='text' value=''>
+						<div class='search_submit' value=''></div>
+						</form -->
+						<a class='menu_button' href='javascript:void(0);' id='menu_button' title='menu icon'><span class='hidden'>Menu Icon</span>
+							<span class='menu_icon'></span>
+						</a>
+						<a class='modal_close' id='modal_close' title='menu icon close'>
+							<span class='modal_close_icon' alt='menu icon close'></span>
+						</a>
+					</div>
+				</header>
+			</div>
+			<!-- #sticky_nav_spacer -->
+<!-- .nav_area -->
+<!-- #site_nav_container -->
+<!-- = render :partial => "/layouts/shared/nav" -->
+<div id="sticky_nav_spacer">
+</div>
+<div class="nav_area">
+    <div id="site_nav_container">
+        <nav class="site_nav">
+            <ul class="nav">
+                <li>
+                    <div class="arrow_box">
+                        <span class="arrow_down">
+                        </span>
+                    </div>
+                    <div class="nav_title">
+                        <a class="dark main_nav_item" href="/projects" target="_self">
+                            Projects
+                        </a>
+                    </div>
+                    <div class="global_subnav_container">
+                        <ul class="subnav">
+                            <li>
+                                <a href="/projects/cmda" target="_self">
+                                    Climate Data Analysis
+                                </a>
+                            </li>
+                            <!-- Commented out per Joao -20230312 -->
+                            <!--<li>
+                                <a href="/projects/enso" target="_self">
+                                    El Niño/La Niña
+                                </a>
+                            </li>
+                            -->
+                            <li>
+                                <a href="/projects/measures" target="_self">
+                                    MEaSUREs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/projects/obs4mips" target="_self">
+                                    Obs4MIPs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gradient_line">
+                    </div>
+                </li>
+                <li>
+                    <div class="arrow_box">
+                        <span class="arrow_down">
+                        </span>
+                    </div>
+                    <div class="nav_title">
+                        <a class="main_nav_item" href="/events" target="_self">
+                            Events
+                        </a>
+                    </div>
+                    <div class="global_subnav_container">
+                        <ul class="subnav">
+                            <li>
+                                <a href="/events/seminars" target="_self">
+                                    Seminars
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/events/workshops" target="_self">
+                                    Workshops
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/events/summer-school/about" target="_self">
+                                    Summer School
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gradient_line">
+                    </div>
+                </li>
+                <li>
+                    <div class="arrow_box">
+                        <span class="arrow_down">
+                        </span>
+                    </div>
+                    <div class="nav_title">
+                        <a class="main_nav_item" href="/multimedia" target="_self">
+                            Resources
+                        </a>
+                    </div>
+                    <div class="global_subnav_container">
+                        <ul class="subnav">
+                            <li>
+                                <a href="/multimedia" target="_self">
+                                    Multimedia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/more-resources" target="_self">
+                                    More Resources
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gradient_line">
+                    </div>
+                </li>
+                <li>
+                    <div class="arrow_box">
+                        <span class="arrow_down">
+                        </span>
+                    </div>
+                    <div class="nav_title">
+                        <a class="main_nav_item" href="/bytes" target="_self">
+                            Climate Bytes
+                        </a>
+                    </div>
+                    <div class="global_subnav_container">
+                        <ul class="subnav">
+                            <li>
+                                <a href="/bytes/" target="_self">
+                                    Recent Bytes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/bytes/archive.php" target="_self">
+                                    All Climate Bytes
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gradient_line">
+                    </div>
+                </li>
+                <li>
+                    <div class="arrow_box">
+                        <span class="arrow_down">
+                        </span>
+                    </div>
+                    <div class="nav_title">
+                        <a class="main_nav_item" href="/about-the-center/missions-and-goals" target="_self">
+                            About the Center
+                        </a>
+                    </div>
+                    <div class="global_subnav_container">
+                        <ul class="subnav">
+                            <li>
+                                <a href="/about-the-center/missions-and-goals" target="_self">
+                                    Missions &amp; Goals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/about-the-center/who-we-are" target="_self">
+                                    Who We Are
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/about-the-center/advisory-board" target="_self">
+                                    Advisory Board
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gradient_line">
+                    </div>
+                </li>
+            </ul>
+            <!-- .social_nav -->
+            <!-- .nav_title -->
+            <!-- Stay Connected -->
+            <!-- .share -->
+            <!-- = render :partial => '/layouts/shared/addthis_connect' -->
+        </nav>
+    </div>
+</div>			<div id='page'>
+				<!-- title to go in the page_header -->
+				<div class='header_mask'></div>
+				<script>
+					addthis_loader.init("//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56cf8bc8b2780303", {floater: true})
+				</script>
+
+				<section class='content_page module'>
+					<div class='grid_layout'>
+						<article>
+							<header id='page_header'>
+								<h1 class='article_title'>
+									NASA Summer School on Satellite Observations and Climate Models
+								</h1>
+								<nav class='tertiary_nav tertiary_nav_desktop'>
+									<ul>
+										<li class='current'>
+											<a href="index.html">About</a>
+										</li>
+										<li class=''>
+											<a href="../details/index.html">Details</a>
+										</li>
+										<li class=''>
+											<a href="../apply/index.html">Apply</a>
+										</li>
+									</ul>
+								</nav>
+								<nav class='tertiary_nav tertiary_nav_mobile'>
+									<select onchange='main.changePage(this.value);'>
+										<option selected='selected' value='/events/summer-school/about'>
+											About
+										</option>
+										<option value='/events/summer-school/details'>
+											Details
+										</option>
+										<option value='/events/summer-school/apply'>
+											Apply
+										</option>
+									</select>
+								</nav>
+
+							</header>
+							<div class='clearfix' id='primary_column'>
+								<div class='wysiwyg_content'>
+									<h2 class='event_title'>
+										Organized by the JPL Center for Climate Sciences and the Keck Institute for Space Studies
+
+									</h2>
+									<!--<p class='location'>
+									<b>***DEADLINE EXTENDED ***</b><br /> The application period has been extended until <b>May 8, 2024 (9:00pm Pacific Time)</b>.
+									</p>-->
+									<p class='list_date'>
+										<h3>
+											Dates: July 31–August 1 (virtual) and August 5–9 (in-person) <br />Attendance REQUIRED for ALL dates
+										</h3>
+										
+									</p>
+									
+									<p class='location'>
+									    This event will be held in two parts: 
+									     <ul>
+											<li>July 31–August 1 2024 half days online</li>
+											<li>5–9 Aug. 2024 full days in person at at the Keck Institute for Space Studies (KISS) at 
+												the California Institute of Technology (Caltech), Pasadena, CA. </li>
+										</ul>
+										
+									</p>
+									<p class='location'>
+									Workshop format is subject to change dependent on COVID-19 conditions in late summer. 
+                                     </p>
+                                     <p class='list_date'>
+										<h3>COVID-19 Vaccination Requirements</h3>
+									</p>
+									<p class='location'>
+										All participants must be fully vaccinated, including booster, to be allowed onto the Caltech campus. Verification of vaccination status
+										will be required prior to acceptance into the Summer School.  Masking requirements will be determined by county, city, and campus policies at the time.
+									</p>
+									<h3>About the Summer School</h3>
+
+									<p>Each year the Center for Climate Sciences brings together the next generation of climate scientists &ndash; approximately 25 graduate students and postdocs from around the world &ndash; to engage with premier climate scientists.</p>
+
+									<p>Our yearly summer school focuses on the topic of &quot;Using Satellite Observations to Advance Climate Models&quot;. Students will explore how satellite observations can be used to evaluate and improve climate models, and will hear from a range of speakers on climate model diagnostics and evaluation and remote sensing of the planet.</p>
+
+									<p>Program Topics will include:</p>
+
+									<ul>
+										<li>
+											<p>Global Climate Models</p>
+										</li>
+										<li>
+											<p>Satellite Remote Sensing</p>
+										</li>
+										<li>
+											<p>Climate Model Diagnostics and Evaluation</p>
+										</li>
+									</ul>
+									
+                   
+									<p>Student travel and accommodation expenses are included.</p>
+
+									<h3>Student Selection</h3>
+
+									<p>Up to 25 students will be selected by the Center to participate in the Summer School. We accept applications from graduate students and postdoctoral researchers that are actively engaged in climate modeling, using satellite observations of Earth, researching the physical climate system, climate modeling, or related fields. However, we will also consider applications from exceptional undergraduate students working in these areas.</p>
+
+									<h3>Application</h3>
+                                   
+									<p> Applying does not confirm participation in the Summer School.  We will contact successful applicants in early June.  
+									</p>
+									<p>The information about your work and interests which you provide in your application is what we use to assess your fit for this opportunity. Please be thoughtful and thorough.</p>
+									<p>
+									 <strong><a href="../apply/">Apply now</a> for the 2024 CCS Summer School</strong>.<!-- <strong>Application Period Opening February 2022!</strong>-->
+									</p>
+									<!--<p class='location'>
+									<b>*** DEADLINE EXTENDED ***</b><br /> The application period has been extended until <b>May 8, 2024 (9:00pm Pacific Time)</b>.
+									</p>-->
+									
+									<p>
+                                        The application period will close on <strong>May 1, 2024 (9pm Pacific Time).</strong></p> 
+									<p>
+                                    
+									<hr />
+									<h3>Previous Summer Schools</h3>
+
+									<p>Each year we host a summer school that brings together the next generation of climate scientists to engage with premier climate scientists from the Jet Propulsion Laboratory and elsewhere. Our inaugural summer school was held in 2011. Learn more about some of our previous summer schools.</p>
+
+									<p>&nbsp;<a href="../archive/index.html">&rsaquo; View all past Center for Climate Sciences Summer Schools</a></p>
+
+								</div>
+							</div>
+							<div id='secondary_column'>
+								<aside class='boxed'>
+									<header>
+										<h2 class='sidebar_title'>
+											Application Period Now Open!
+										</h2>
+									</header>
+									
+									<p>
+										The 2024 JPL Center for Climate Sciences Summer School program will take place July 31–August 1 (virtual) and August 5–9 (in-person)</span></strong>. 
+                                     </p>
+                                      <p><strong><a href="../apply/">Apply now</a> for the 2024 CCS Summer School.</strong> 
+                                        </p>
+                                        <!--<p>
+                                        The application period is now closed.</strong> Successful applicants will be advised around the end of May. </p> -->
+										<!---You may apply to the school <a href="../apply/">here</a>. --->
+									<!--<p>-->
+
+										Before you apply please be aware;
+									</p>
+									<ul class="bullet_list">
+										<li>Attendance is expected for all sessions and may include some evening gatherings. </li>
+										<li>Cooperative group work is a significant element of the experience.</li>
+										<li>Participation enriches the program for all attendees. Discussion is strongly encouraged.</li>
+									</ul>
+								</aside>
+
+								<aside class='boxed'>
+									<header>
+										<h2 class='sidebar_title'>
+											Other Summer School topics may include;
+										</h2>
+									</header>
+									<ul class="bullet_list">
+										<li>Radiative Transfer</li>
+										<li>Satellite Remote Sensing</li>
+										<li>The Climate System</li>
+										<li>Climate Statistics</li>
+										<li>Monitoring sea level from space</li>
+										<li>Large Scale Dynamics</li>
+										<li>CMIP/IPCC Process and Model Diagnostics</li>
+										<li>Climate Models: Atmospheric Physics</li>
+										<li>Observations for Components of the Water Cycle; Modeling/Assimilation</li>
+										<li>Atmospheric Passive Remote Sensing</li>
+										<li>Climate Models: Ocean and Ice Physics</li>
+										<li>Land Surface Physics</li>
+										<li>Atmospheric Composition and Retrieval Theory</li>
+										<li>Data-Assimilation</li>
+									</ul>
+								</aside>
+
+								<!-- KLK - commented out to add list of potential other topics. And this info is duplicated in the Application Period Now Closed box above.
+									This may change once it's closed. -->
+									
+								<!--<aside class='boxed'>
+								<header>
+								<h2 class='sidebar_title'>
+								Details
+								</h2>
+								<p>
+								The 2018 NASA Summer School on Satellite Observations and Climate Models program will take place August 27<sup>th</sup> - 31<sup>th</sup>, 2018.
+								</p>
+								<p>Please be aware:</p>
+								<ul class="bullet_list">
+									<li>Attendance is expected for all five days, including some evening events</li>
+									<li>Cooperative group work is a significant element of the experience</li>
+									<li>Participation by all attendees enriches the program for all. Discussion is encouraged.</li>
+								</ul>
+								</aside>
+								-->
+                                <!---
+								<aside class='boxed'>
+									<header>
+										<h2 class='sidebar_title'>
+											Presentations
+										</h2>
+									</header>
+									<div class='advanced_sidebar_body'>
+										<p>Past participants may view presentations from summer school sessions. Please use the Login &amp; Password that you were provided.</p>
+									</div>
+									<p>
+										<a class="more_sidebar" href="../../57/presentations/index.html" target="_self">View presentations</a>
+									</p>
+								</aside>
+                                --->
+								<!--<aside class='boxed'>
+								<header>
+								<h2 class='sidebar_title'>
+								Photos
+								</h2>
+								</header>
+								<div class='advanced_sidebar_body'>
+								Interested in attending the JPL Center for Climate Sciences Summer School? View photos from previous Summer Schools.
+								</div>
+								<p>
+								<a class='fancybox_slideshow' data-description='<p>In the classroom, 2015 Summer School.</p>' data-fancybox-group='images' data-fancybox-href='/system/resources/detail_files/18_IMG_0598.jpg' data-link='/resources/18' data-thumbnail='/system/resources/list_images/18_IMG_0598.jpg' data-title='Summer School 2015'>
+								View Photos
+								</a>
+								<span style='display: none;'>
+								<a class='fancybox_slideshow' data-description='<p>In the classroom, 2015 Summer School.</p>' data-fancybox-group='images' data-fancybox-href='/system/resources/detail_files/19_IMG_0613.jpg' data-link='/resources/19' data-thumbnail='/system/resources/list_images/19_IMG_0613.jpg' data-title='Summer School 2015'></a>
+								<a class='fancybox_slideshow' data-description='<p>The Keck Center, 2015 Summer School.</p>' data-fancybox-group='images' data-fancybox-href='/system/resources/detail_files/20_IMG_0636.jpg' data-link='/resources/20' data-thumbnail='/system/resources/list_images/20_IMG_0636.jpg' data-title='Summer School 2015'></a>
+								<a class='fancybox_slideshow' data-description='<p>Students at the Keck Center, 2015 Summer School.</p>' data-fancybox-group='images' data-fancybox-href='/system/resources/detail_files/21_IMG_0642.jpg' data-link='/resources/21' data-thumbnail='/system/resources/list_images/21_IMG_0642.jpg' data-title='Summer School 2015'></a>
+								<a class='fancybox_slideshow' data-description='<p>Students at the Keck Center, 2015 Summer School.</p>' data-fancybox-group='images' data-fancybox-href='/system/resources/detail_files/22_IMG_0647.jpg' data-link='/resources/22' data-thumbnail='/system/resources/list_images/22_IMG_0647.jpg' data-title='Summer School 2015'></a>
+								<a class='fancybox_slideshow' data-description='<p>Students at the Keck Center, 2014 Summer School.</p>' data-fancybox-group='images' data-fancybox-href='/system/resources/detail_files/43_Climate_Center_Summer_School_2014-3.jpg' data-link='/resources/43' data-thumbnail='/system/resources/list_images/43_Climate-Center-Summer-School-2014-3-th.jpg' data-title='Summer School 2014'></a>
+								<a class='fancybox_slideshow' data-description='<p>Students at the Keck Center, 2014 Summer School.</p>' data-fancybox-group='images' data-fancybox-href='/system/resources/detail_files/44_Climate_Center_Summer_School_2014-5.jpg' data-link='/resources/44' data-thumbnail='/system/resources/list_images/44_Climate-Center-Summer-School-2014-5-th.jpg' data-title='Summer School 2014'></a>
+								<a class='fancybox_slideshow' data-description='<p>Students at the Keck Center, 2011 Summer School.</p>' data-fancybox-group='images' data-fancybox-href='/system/resources/detail_files/45_Summer-School-Group_Final2011.jpg' data-link='/resources/45' data-thumbnail='/system/resources/list_images/45_Summer-School-Group_Final2011-th.jpg' data-title='Summer School 2011'></a>
+								</span>
+								</p>
+								</aside>-->
+
+								<aside class='boxed'>
+									<header>
+										<h2 class='sidebar_title'>
+											About the Facilities
+										</h2>
+									</header>
+									<div class='sidebar_image'>
+										<img alt="Keck Institute" src="/assets/images/keck.jpg" />
+									</div>
+									<div class='advanced_sidebar_body'>
+										<p>The <a href="http://www.kiss.caltech.edu/" target="_blank">Keck Institute for Space Studies</a> (KISS) is located within the Keck Center and the Tolman/Bacher House at Caltech in Pasadena, California.</p>
+
+										<p>We have a Think Tank workshop room in the Keck Center that seats 30 people at computer tables. A fast wireless internet connection is available. This room is used for talks, breakout sessions and discussions. A laptop and a projector are at the front of the room.</p>
+
+										<p>A color printer, a fax machine and a copier are located near the pantry and are available for use by any of the participants in the Keck Center.</p>
+
+										<p>KISS staff offices are located in the Tolman/Bacher house and the office of the directors is located in the Keck Center. Please do not hesitate to ask a KISS member if you need assistance.</p>
+									</div>
+								</aside>
+
+								<aside class="boxed">
+    <header>
+        <h2 class="sidebar_title">
+            Questions
+        </h2>
+    </header>
+    <disclaimer>
+        Have a question about the JPL Center for Climate Sciences Summer School program that isn’t answered here? Send us an email.
+    </disclaimer>
+    <a href="mailto:jpl.climate.center@jpl.nasa.gov">
+        <span class="hidden">Send us an email</span>
+		<input class="button" type="submit" value="Email Us">
+    </a>
+</aside>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class='module suggested_features'>
+					<div class='grid_layout'>
+						<header>
+							<h2 class='module_title'>You Might Also Like</h2>
+						</header>
+						<section>
+    <script>
+        $(document).ready(function(){
+          $(".features").slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slide: '.features .slide',
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            lazyLoad: 'progressive',
+            centerMode: false,
+            centerPadding: '30px',
+            arrows: true,
+            responsive: [{"breakpoint":953,"settings":{"slidesToShow":2,"slidesToScroll":2,"centerMode":false}},{"breakpoint":480,"settings":{"slidesToShow":1,"slidesToScroll":1,"centerMode":true,"arrows":false}}]
+          });
+        });
+    </script>
+    <div class="features">
+        <!---  Summer school 2018
+        <div class="slide">
+            <div class="image_and_description_container">
+                <a href="/events/summer-school/about">
+                    <div class="rollover_description">
+                        <div class="rollover_description_inner">
+                            August 27 - 31, 2018 
+                            <br />
+                            The application period for the 2018 CCS Summer School is now closed. Successful applicants will be advised around the end of May.
+                            
+                        </div>
+                        <div class="overlay_arrow">
+                            <img alt="More" src="/assets/images/overlay-arrow.png">
+                        </div>
+                    </div>
+                    <img alt="2017 summer school students" class="img-lazy" data-lazy="/system/feature_items/images/16_2015-summer-school-th.jpg" src="/assets/images/loading_320x240.png">
+                </a>
+            </div>
+            <div class="content_title">
+                <a href="/events/summer-school/about">
+                    Summer School 2018
+                </a>
+            </div>
+        </div>   
+        --->
+         <!---Summer School 2019 open
+        <div class="slide">
+            <div class="image_and_description_container">
+                <a href="/events/summer-school/about">
+                    <div class="rollover_description">
+                        <div class="rollover_description_inner">
+                            <span style="color: red;"><strong>August 19 - 23, 2019 (Please note date change)</strong></span>
+                            <br /><br />
+                            The application period for the 2019 CCS Summer School is now open! Successful applicants will be advised around the end of May.
+                            
+                        </div>
+                        <div class="overlay_arrow">
+                            <img alt="More" src="/assets/images/overlay-arrow.png">
+                        </div>
+                    </div>
+                    <img alt="2018 summer school students" class="img-lazy" data-lazy="/assets/images/2018summer-school-class-th.jpg" src="/assets/images/loading_320x240.png">
+                </a>
+            </div>
+            <div class="content_title">
+                <a href="/events/summer-school/about">
+                    Summer School 2019 - application period now open!
+                </a>
+            </div>
+        </div>   
+        --->
+        <!-- slide 1 -->
+        <div class="slide">
+            <div class="image_and_description_container">
+                <a href="/projects/measures/">
+                    <div class="rollover_description">
+                        <div class="rollover_description_inner">
+                            JPL  MEaSUREs
+                            <br />  <br />
+                           LST&E MEaSUREs Project
+                        </div>
+                        <div class="overlay_arrow">
+                            <img alt="More" src="/assets/images/overlay-arrow.png">
+                        </div>
+                    </div>
+                    <img alt="Climate Seminar" class="img-lazy" data-lazy="/assets/images/MEaSUREa_LSTE-th320.jpg" src="/assets/images/loading_320x240.png">
+                </a>
+            </div>
+            <div class="content_title">
+                <a href="/projects/measures/">
+                     JPL  MEaSUREs - Featured Project
+                </a>
+            </div>
+        </div>      
+        <!-- end slide 1 -->
+        <!-- slide 2 -->
+         <div class="slide">
+            <div class="image_and_description_container">
+                <a href="/events/summer-school/about">
+                    <div class="rollover_description">
+                        <div class="rollover_description_inner">
+                           
+                            Summer School 2024 <br /> 
+                           July 31–August 1 (virtual) and August 5–9 (in-person)
+                            <br /><br />
+                           <strong>The application period is now open! </strong> 
+                            
+									   
+                           
+                        </div>
+                        <div class="overlay_arrow">
+                            <img alt="More" src="/assets/images/overlay-arrow.png">
+                        </div>
+                    </div>
+                    <img alt="2018 summer school students" class="img-lazy" data-lazy="/assets/images/2018summer-school-class-th.jpg" src="/assets/images/loading_320x240.png">
+                </a>
+            </div>
+            <div class="content_title">
+                <a href="/events/summer-school/about">
+                    Summer School 2024 Application Now Open
+                </a>
+                
+            </div>
+        </div>   
+        <!-- end slide 2 -->
+        <!--slide 3 - Generic lecture -->
+       <div class="slide">
+            <div class="image_and_description_container">
+                <a href="/events/seminars/">
+                    <div class="rollover_description">
+                        <div class="rollover_description_inner">
+                           Center for Climate Sciences<br /> Lecture Series
+                            <br /><br />
+                            Up Next! February 2, 2024<br /> Hartmut “George” Aumann on Northward Shift and Narrowing of the ITCZ in 20 Years of AIRS Data
+                        </div>
+                        <div class="overlay_arrow">
+                            <img alt="More" src="/assets/images/overlay-arrow.png">
+                        </div>
+                    </div>
+                    <img alt="Center for Climate Sciences Lecture Series" class="img-lazy" data-lazy="/assets/images/home-page-lecture-series-th.jpg" src="/assets/images/loading_320x240.png">
+                </a>
+            </div>
+            <div class="content_title">
+                <a href="/events/seminars/">
+                   Up Next! February 2, 2024
+                </a>
+            </div>
+        </div>   
+        <!-- end slide 3 - Generic lecture -->
+    </div>
+</section>
+					</div>
+				</section>
+
+			</div>
+			            <footer class='clearfix' id='site_footer'>
+               <section class='sitemap'>
+                  <div class='grid_layout'>
+                     <div class='sitemap_directory' id='sitemap_directory'>
+                        <div class='sitemap_block'>
+                           <div class='footer_sitemap_item'>
+                              <h3 class='sitemap_title'>
+                                 <a href="/projects/index.html">Projects</a>
+                              </h3>
+                              <ul>
+                                 <li>
+                                    <div class='global_subnav_container'>
+                                       <ul class='subnav'>
+                                          <li>
+                                             <a href='/projects/cmda/index.html' target='_self'>Climate Data Analysis </a>
+                                          </li>
+                                          <!--<li>
+                                             <a href='/projects/enso/index.html' target='_self'>El Niño/La Niña</a>
+                                          </li>-->
+                                          <li>
+                                             <a href='/projects/obs4mips/index.html' target='_self'>Obs4MIPs</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class='sitemap_block'>
+                           <div class='footer_sitemap_item'>
+                              <h3 class='sitemap_title'>
+                                 <a href="/index.html">Events</a>
+                              </h3>
+                              <ul>
+                                 <li class='current'>
+                                    <div class='global_subnav_container'>
+                                       <ul class='subnav'>
+                                          <li>
+                                             <a href='/events/seminars/index.html' target='_self'>Seminars</a>
+                                          </li>
+                                          <li>
+                                             <a href='/events/workshops/index.html' target='_self'>Workshops</a>
+                                          </li>
+                                          <li>
+                                             <a href='/events/summer-school/about/index.html' target='_self'>Summer School</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class='sitemap_block'>
+                           <div class='footer_sitemap_item'>
+                              <h3 class='sitemap_title'>
+                                 <a href="/multimedia/index.html">Resources</a>
+                              </h3>
+                              <ul>
+                                 <li>
+                                    <div class='global_subnav_container'>
+                                       <ul class='subnav'>
+                                          <li>
+                                             <a href='/multimedia/index.html' target='_self'>Multimedia</a>
+                                          </li>
+                                          <li>
+                                             <a href='/more-resources/index.html' target='_self'>More Resources</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <!--
+                        <div class='sitemap_block'>
+                           <div class='footer_sitemap_item'>
+                              <h3 class='sitemap_title'>
+                                  <a href="/bytes" target="_self">Climate Bytes</a>
+                              </h3>
+                              <ul>
+                                 <li>
+                                    <div class='global_subnav_container'>
+                                       <ul class='subnav'>
+                                          <li>
+                                             <a href="/bytes/" target="_self">Recent Bytes</a>
+                                          </li>
+                                          <li>
+                                              <a href="/bytes/archive.php" target="_self">All Climate Bytes</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        -->
+                        <div class='sitemap_block'>
+                           <div class='footer_sitemap_item'>
+                              <h3 class='sitemap_title'>
+                                 <a href="/about-the-center/missions-and-goals/index.html">About&nbsp;the&nbsp;Center</a>
+                              </h3>
+                              <ul>
+                                 <li>
+                                    <div class='global_subnav_container'>
+                                       <ul class='subnav'>
+                                          <li>
+                                             <a href='/about-the-center/missions-and-goals/index.html' target='_self'>Missions &amp; Goals</a>
+                                          </li>
+                                          <li>
+                                             <a href='/about-the-center/who-we-are/index.html' target='_self'>Who We Are</a>
+                                          </li>
+                                          <li>
+                                             <a href='/about-the-center/advisory-board/index.html' target='_self'>Advisory Board</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class='gradient_line'></div>
+               </section>
+               <section class='lower_footer'>
+                  <div class='grid_layout'>
+                     <div class='nav_container'>
+                        <nav>
+                           <ul>
+                              <li><a href='https://www.nasa.gov/'>NASA</a></li>
+                                <li>|</li>
+                              <li><a href='http://www.caltech.edu/'>Caltech</a></li>
+                                <li>|</li>
+                              <li>
+                                 <a href='https://www.jpl.nasa.gov/contact-jpl'>Feedback</a>
+                              </li>
+                              <li>|</li>
+                              <li>
+                                 <a href='https://www.jpl.nasa.gov/caltechjpl-privacy-policies-and-important-notices/'>JPL Privacy Statement</a>
+                              </li>
+                                <li>|</li>
+                              <li><a href="https://www.jpl.nasa.gov/jpl-image-use-policy/">Image Policy</a></li>
+                                <li>|</li>
+                              <li><a href="https://www.jpl.nasa.gov/frequently-asked-questions/">FAQ</a></li>
+                             
+
+                           </ul>
+                        </nav>
+                     </div>
+                     <div class='credits'>
+                        <div class='staff'>
+                           <p>
+                              Site Manager: 
+                              <a href="mailto:margaret.srinivasan@jpl.nasa.gov?subject=%5BCenter%20for%20Climate%20Sciences%5D">Margaret Srinivasan</a>
+                              <br>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class='brand_area'>
+                     <div class='brand1'>
+                        <a class='nasa_logo' href='http://www.nasa.gov/' target='_blank' title='visit nasa.gov'>NASA</a>
+                     </div>
+                     <div class='brand2'>
+                        <a class='top_logo' href='http://jpl.nasa.gov/' id='jpllogo' title='JPL'>Jet Propulsion Laboratory</a>
+                        <a class='sub_logo' href='http://www.caltech.edu/' id='caltechlogo' title='Caltech'>California Institute of Technology</a>
+                     </div>
+                     <img alt='NASA, Jet Propulsion Laboratory, Caltech Logo' class='print_only print_logo' src='/assets/logo_nasa_mission_black%402x.png'>
+                  </div>
+               </section>
+            </footer>
+         </div>
+      </div>
+
+      <script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=JPLclimatesciences&dclink=true&Sdor=false"></script>
+   </body>
+<!-- Mirrored from climatesciences.jpl.nasa.gov/events/summer-school/about/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2017 23:19:26 GMT -->
+</html>

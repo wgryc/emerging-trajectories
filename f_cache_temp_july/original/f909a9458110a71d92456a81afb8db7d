@@ -1,0 +1,542 @@
+<!DOCTYPE HTML><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="https://www.giss.nasa.gov/css/css2104.css" media="all" />
+
+
+<title>Data.GISS: 
+GISS Surface Temperature Analysis (GISTEMP v4)
+</title>
+<style>
+p.update {
+text-indent:-1.5em;
+padding-left:1.5em;
+margin-bottom:0.5em;
+}
+p.more {
+text-indent:0.0em;
+padding-left:1.5em;
+padding-top:0em;
+margin-top:0em;
+}
+</style>
+<link rel="apple-touch-icon" href="/gfx/apple-touch-icon-180x180.png" />
+<link rel="apple-touch-icon-precomposed" href="/gfx/apple-touch-icon-180x180.png" />
+<link rel="apple-touch-icon" sizes="192x192" href="/gfx/apple-touch-icon-192x192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/gfx/apple-touch-icon-180x180.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/gfx/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="128x128" href="/gfx/apple-touch-icon-128x128.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/gfx/apple-touch-icon-76x76.png" />
+<meta name="orgcode" content="611" />
+<meta name="rno" content="Gavin.A.Schmidt.1" />
+<meta name="content-owner" content="Robert.B.Schmunk.1" />
+<meta name="webmaster" content="Robert.B.Schmunk.1" />
+<meta name="viewport" content="width=956, initial-scale=1" /><script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&amp;subagency=GISS&amp;yt=true&amp;dclink=true&amp;pua=UA-52099626-1" async="async"></script>
+</head>
+<body>
+<div id="bkg1"><div id="bkg2"></div><!-- end bkg2 --></div><!-- end bkg1 -->
+<div id="page">
+<div class="hidden">
+<a href="#content" title="Go to Main Content" accesskey="2">Go to Main Content (Accesskey 2)</a><br /><a href="#nav" title="Go to Site Menu" accesskey="3">Go to Site Menu (Accesskey 3)</a></div><!-- end hidden -->
+<div id="header">
+<div id="headerlogo">
+<a href="https://www.nasa.gov/"><img src="https://www.giss.nasa.gov/gfx/2013/nasa_x2.png" alt="NASA Logo, National Aeronautics and Space Administration" style="width:140px;height:98px" /></a></div><!-- end headerlogo -->
+<div id="centername">
+<h1><a href="https://www.nasa.gov/">National Aeronautics and Space Administration</a></h1>
+<h2><a href="https://www.giss.nasa.gov/">Goddard Institute for Space Studies</a></h2></div><!-- end centername -->
+<div id="hierarchy">
+<h2><a href="https://www.nasa.gov/goddard/">Goddard Space Flight Center</a><br /><a href="https://science.gsfc.nasa.gov/sci">Sciences and Exploration Directorate</a><br /><a href="https://science.gsfc.nasa.gov/earth">Earth Sciences Division</a></h2></div><!-- end hierarchy --></div><!-- end header -->
+<div id="paper">
+<div id="content">
+
+
+<div class="col2a">
+<div class="col2bx">
+
+
+<h2 class="wbx">GISTEMP v4 Figures</h2>
+
+<p><a href="graphs_v4/"><b>Graphs</b><br/>
+<img src="link_graphs_v4.png" style="width:248px;height:140px;border:solid 1px #6a80b1"
+     alt="Go to Graphs page"/></a>
+</p>
+
+<p><a href="maps/"><b>Global Maps</b><br/>
+<img src="link_maps_v4.png" style="width:248px;height:140px;border:solid 1px #6a80b1;background:#fff"
+     alt="Go to Maps page"/></a>
+</p>
+
+<p><a href="station_data_v4_globe/"><b>Station Data</b><br/>
+<img src="link_stations_v4.png" style="width:248px;height:140px;border:solid 1px #6a80b1"
+     alt="Go to Station Data page"/></a>
+</p>
+
+<p><a href="zonal_means/"><b>Zonal Means: Series or Seasonal Cycle</b><br/>
+<img src="link_ZM.jpg" style="width:248px;height:140px;border:solid 1px #6a80b1"
+     alt="Go to Zonal Means page"/></a>
+</p>
+
+<p><a href="animations/"><b>Animations</b><br/>
+<img src="link_animations.png" style="width:248px;height:140px;border:solid 1px #6a80b1"
+     alt="Go to Animations page"/></a>
+</p>
+
+</div><!-- end first col2bx -->
+</div><!-- end first col2a -->
+
+
+
+
+
+
+
+
+<div class="col1a">
+<div class="col1b">
+
+<h2>GISS Surface Temperature Analysis (GISTEMP v4)</h2>
+
+<p>
+The GISS Surface Temperature Analysis version 4 (GISTEMP v4) is an estimate of global surface temperature change.
+Graphs and tables are updated around the middle of every month using current data files from <b>NOAA GHCN
+v4</b> (meteorological stations) and <b>ERSST v5</b> (ocean areas), combined as
+described in our publications
+<a href="https://pubs.giss.nasa.gov/abs/ha00510u.html">Hansen et al. (2010)</a> and
+<a href="https://pubs.giss.nasa.gov/abs/le05800h.html">Lenssen et al. (2019)</a>.
+These updated files incorporate reports for the previous month and also late reports
+and corrections for earlier months.
+</P>
+
+
+
+
+
+<h3>News and Updates</h3>
+
+
+
+
+<p class="update">
+<b>Feb. 8, 2024:</b>
+3 stations in Northern Canada were discovered to have a discontinuity in their records that is not present in the any other station in that area. This was reported to NOAA/NCEI and the reports after the discontinuity were removed.</p>
+
+<p class="update">
+<b>Jan. 12, 2024:</b>
+NASA has posted a news release <a href="https://www.nasa.gov/news-release/nasa-analysis-confirms-2023-as-warmest-year-on-record/">2023 annual global temperature anomaly</a>.
+The NASA Earth Observatory website has also posted <a href="https://earthobservatory.nasa.gov/images/152313/five-factors-to-explain-the-record-heat-in-2023">an explainer</a> about causes of the record anomaly.</p>
+
+<p class="update">
+<b>Oct. 13, 2023:</b>
+NASA has posted a short feature about the <a href="https://www.nasa.gov/image-article/nasa-september-2023-temperature-data-shows-continued-record-warming/">September 2023 global temperature anomaly</a>.</p>
+
+<p class="update">
+<b>Sep. 14, 2023:</b>
+NASA has posted a news release about the <a href="https://www.nasa.gov/press-release/nasa-announces-summer-2023-hottest-on-record/">Summer (JJA) 2023 global temperature anomaly</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<p>See the
+<a href="news/"><b>GISTEMP News page</b></a> for a list of announcements and NASA articles related to the GISTEMP analysis.
+Announcements when our monthly updates are released are posted to the <a href="https://twitter.com/NASAGISS">NASA/GISS Twitter feed</a>.</p>
+
+<p>See the
+<a href="updates_v4/"><b>Updates to Analysis</b></a> page for detailed update information about GISTEMP v4.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr style="width:50%;margin-top:16px;margin-bottom:16px" />
+
+
+<h3>Contacts/Personnel</h3>
+
+<p>
+Before contacting us, please check if your question about the GISTEMP analysis is already answered in
+<a href="faq/"><b>the FAQ</b></a>.
+</p>
+
+<p>
+If the FAQ does not answer your question,
+please address your inquiry to
+<a href="https://www.giss.nasa.gov/staff/rruedy.html">Dr. Reto Ruedy</a>.</p>
+
+<p>
+Other researchers currently participating in the GISTEMP analysis include
+<a href="https://www.giss.nasa.gov/staff/mhendrickson.html">Michael Hendrickson</a>,
+<a href="https://www.giss.nasa.gov/staff/melling.html">Maxwell Elling</a>,
+<a href="https://www.giss.nasa.gov/staff/msato.html">Dr. Makiko Sato</a>,
+and Dr. Nathan Lenssen.
+</p>
+
+<p>
+The GISTEMP analysis was initiated by Dr. James E. Hansen, now retired.
+It is currently led by <a href="https://www.giss.nasa.gov/staff/gschmidt.html">Dr. Gavin Schmidt</a>.</p>
+
+<p>
+Past members on the GISTEMP team have included
+Dr. Sergej Lebedeff,
+Dr. Helene Wilson,
+Jay Glascoe,
+Avraham Persin,
+Dr. Ken Lo, and others.
+We also thank Nick Barnes et al. at the Clear Climate Code project for their contributions.
+</p>
+
+
+
+
+
+
+<h3>Citation</h3>
+
+<p>
+When <a href="references.html">referencing</a> the GISTEMP v4 data provided here,
+please cite both this webpage and also our most recent
+scholarly publication about the data.
+In citing the webpage, be sure to include the date of access.</p>
+
+<ul style="padding-left:16px">
+<li>GISTEMP Team, 2024:
+<cite>GISS Surface Temperature Analysis (GISTEMP), version 4</cite>. NASA Goddard Institute for Space Studies.
+Dataset accessed 20YY-MM-DD at <a href="https://data.giss.nasa.gov/gistemp/">https://data.giss.nasa.gov/gistemp/</a>.</li>
+<li>Lenssen, N., G. Schmidt, J. Hansen, M. Menne, A. Persin, R. Ruedy, and D. Zyss, 2019: <a href="https://pubs.giss.nasa.gov/abs/le05800h.html">Improvements in the GISTEMP uncertainty model</a>. <cite>J. Geophys. Res. Atmos.</cite>, <b>124</b>, no. 12, 6307-6326, doi:10.1029/2018JD029522.</li>
+</ul>
+
+
+<p>Graphics from these GISTEMP pages are subject to NASA
+<a href="https://www.nasa.gov/nasa-brand-center/images-and-media/">Image and Media guidance</a>.
+Per those guidelines, graphics you may create using the website tools here do not require
+permission for you to use elsewhere, but acknowledgment of their source should be given.
+Please credit "NASA's Goddard Institute for Space Studies" or, if space is limited,
+"NASA GISS/GISTEMP".</p>
+
+
+
+
+
+
+
+
+
+<hr style="width:50%;margin-top:16px;margin-bottom:16px" />
+
+<h3>Background, History and Updates</h3>
+
+<p>
+The basic GISS temperature analysis scheme was defined in the late 1970s by James Hansen when a method
+of estimating global temperature change was needed for comparison with one-dimensional global climate
+models.
+The analysis method was fully documented in
+<a href="https://pubs.giss.nasa.gov/abs/ha00700d.html">Hansen and Lebedeff (1987)</a>.
+Several papers describing updates to the analysis followed over the following decades,
+most recently that of
+<a href="https://pubs.giss.nasa.gov/abs/ha00510u.html">Hansen et al. (2010)</a>,
+as well as the uncertainty quantification of 
+<a href="https://pubs.giss.nasa.gov/abs/le05800h.html">Lenssen et al. (2019)</a>.</p>
+
+<p>For further details, please see the GISTEMP
+<b><a href="history/background.html">Background</a></b>,
+<b><a href="history/">History</a></b>, and
+<b><a href="references.html">References</a></b> pages.
+We also maintain a running record of modifications made to the analysis on our
+<a href="updates_v4/"><b>Updates to Analysis</b></a> page. </p>
+
+<p>The GISTEMP analysis is updated regularly. Graphs and tables are posted around the
+middle of every month using the latest GHCN and ERSST data. The update incorporates reports
+for the previous month as well as late reports and corrections for earlier months.</p>
+
+
+
+
+<h3>Source Code</h3>
+
+<p>Programs used in the GISTEMP analysis and documentation on their use are
+<a href="sources_v4/">available for download</a>.
+The programs assume a Unix-like operating system and require familiarity with Python for installation and use.</p>
+
+
+
+
+
+
+
+
+
+
+
+<hr style="width:50%;margin-top:16px;margin-bottom:16px" />
+
+
+<h3 id="tabledata">Tables of Global and Hemispheric Monthly Means and Zonal Annual Means</h3>
+
+
+<h4>Combined Land-Surface Air and Sea-Surface Water Temperature Anomalies
+(Land-Ocean Temperature Index, L-OTI)</h4>
+
+<p><i>The following are plain-text files in tabular format of temperature anomalies, i.e. deviations from the corresponding 1951-1980 means.</i></p>
+
+<ul style="padding-left:16px">
+<li><b>Global-mean monthly, seasonal, and annual means</b>, 1880-present, updated through most recent
+    month:
+    <i><a href="tabledata_v4/GLB.Ts+dSST.txt">TXT</a>,
+    <a href="tabledata_v4/GLB.Ts+dSST.csv">CSV</a></i></li>
+<li><b>Northern Hemisphere-mean monthly, seasonal, and annual means</b>, 1880-present, updated through
+    most recent month:
+    <i><a href="tabledata_v4/NH.Ts+dSST.txt">TXT</a>,
+    <a href="tabledata_v4/NH.Ts+dSST.csv">CSV</a></i>
+</li>
+<li><b>Southern Hemisphere-mean monthly, seasonal, and annual means</b>, 1880-present, updated through
+    most recent month:
+    <i><a href="tabledata_v4/SH.Ts+dSST.txt">TXT</a>,
+    <a href="tabledata_v4/SH.Ts+dSST.csv">CSV</a></i>
+</li>
+<li><b>Zonal annual means</b>, 1880-present, updated through most recent complete year:
+    <i><a href="tabledata_v4/ZonAnn.Ts+dSST.txt">TXT</a>,
+    <a href="tabledata_v4/ZonAnn.Ts+dSST.csv">CSV</a></i></li>
+</ul>
+
+
+
+<h4>AIRS v6 and AIRS v7 Temperature Anomalies</h4>
+
+<p><i>The following tables show anomalies based on AIRS data vs. 2007-2016. Corresponding L-OTI anomaly data are also provided.</i></p>
+
+<ul style="padding-left:16px">
+<li><b>Global-mean monthly, seasonal, and annual means</b>, 2002-present, updated through most recent
+    month:
+    <i><a href="tabledata_v4/T_AIRS/GLB.Ts+dSST.txt">TXT</a>,
+    <a href="tabledata_v4/T_AIRS/GLB.Ts+dSST.csv">CSV</a></i>
+</li>
+<li><b>Northern Hemisphere-mean monthly, seasonal, and annual means</b>, 2002-present, updated through
+    most recent month:
+    <i><a href="tabledata_v4/T_AIRS/NH.Ts+dSST.txt">TXT</a>,
+    <a href="tabledata_v4/T_AIRS/NH.Ts+dSST.csv">CSV</a></i>
+</li>
+<li><b>Southern Hemisphere-mean monthly, seasonal, and annual means</b>, 2002-present, updated through
+    most recent month:
+    <i><a href="tabledata_v4/T_AIRS/SH.Ts+dSST.txt">TXT</a>,
+    <a href="tabledata_v4/T_AIRS/SH.Ts+dSST.csv">CSV</a></i>
+</li>
+<li><b>Zonal annual means</b>, 2002-present, updated through most recent complete year:
+    <i><a href="tabledata_v4/T_AIRS/ZonAnn.Ts+dSST.txt">TXT</a>,
+    <a href="tabledata_v4/T_AIRS/ZonAnn.Ts+dSST.csv">CSV</a></i></li>
+</ul>
+
+
+
+
+
+
+
+<hr style="width:50%;margin-top:16px;margin-bottom:16px" />
+
+<h3>Gridded Monthly Temperature Anomaly Data</h3>
+
+<p>
+Users interested in the entire gridded surface air temperature anomaly data may
+download netCDF files containing selected series on a regular 2&deg;&#215;2&deg;
+grid or the basic SBBX binary files.</p>
+
+<h4>Compressed NetCDF Files (regular 2&#176;&#215;2&#176; grid)</h4>
+
+<ul style="padding-left:16px">
+<li><a href="/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz">Land-Ocean Temperature Index, ERSSTv5, 1200km smoothing</a> (23 MB)</li>
+<li><a href="/pub/gistemp/gistemp250_GHCNv4.nc.gz">Surface air temperature (no ocean data), 250km smoothing</a> (9 MB)</li>
+<li><a href="/pub/gistemp/landmask.2degx2deg.txt">Land Mask on a 2&deg;&#215;2&deg; grid</a></li>
+</ul>
+
+<h4 id="zarr">Compressed Zarr Directories (regular 2&#176;&#215;2&#176; grid)</h4>
+
+<ul style="padding-left:16px">
+<li><a href="/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.zarr.tar.gz">Land-Ocean Temperature Index, ERSSTv5, 1200km smoothing</a> (53 MB)</li>
+<li><a href="/pub/gistemp/gistemp250_GHCNv4.zarr.tar.gz">Surface air temperature (no ocean data), 250km smoothing</a> (27 MB)</li>
+
+</ul> 
+ 
+<h4>Compressed Basic Subbox Grid Series (equal-area grid)</h4>
+
+<ul style="padding-left:16px">
+<li><a href="/pub/gistemp/SBBX1880.Ts.GHCNv4.1200.gz">Surface air temperature, 1200km smoothing - GISTEMP v4</a> (27 MB)</li>
+<li><a href="/pub/gistemp/SBBX1880.Ts.GHCNv4.250.gz">Surface air temperature, 250km smoothing - GISTEMP v4</a> (9 MB)</li>
+<li><a href="/pub/gistemp/SBBX.ERSSTv5.gz">Sea surface air temperature (ERSSTv5)</a>, currently used (30 MB)</li>
+<li><a href="/pub/gistemp/SBBX.ERSSTv4.gz">Sea surface air temperature (ERSSTv4)</a>, used until July 2017 (30 MB)</li>
+<li><a href="/pub/gistemp/SBBX.ERSST.gz">Sea surface air temperature (ERSSTv3b)</a>,  used until June 2015 (30 MB)</li>
+<li><a href="/pub/gistemp/SBBX.HadR2.gz">Sea surface air temperature (HadR2)</a>, used until Nov. 2012 (30 MB)</li>
+</ul>
+
+<p>
+Also available are various FORTRAN programs and instructions to create (time series of) regular gridded
+anomaly maps from the basic files. Be sure to read the README file for discussion of the files' binary
+format.
+</p>
+
+
+<ul style="padding-left:16px">
+<li><a href="/pub/gistemp/README.txt">README.txt</a></li>
+<li><a href="/pub/gistemp/mkTsMap.f">mkTsMap.f</a></li>
+<li><a href="/pub/gistemp/SBBX_to_nc.f">SBBX_to_nc.f</a></li>
+<li><a href="/pub/gistemp/SBBX_to_1x1.f">SBBX_to_1x1.f</a></li>
+<li><a href="/pub/gistemp/SBBX_to_txt.f">SBBX_to_txt.f</a></li>
+</ul>
+
+</div><!-- end second col1b -->
+</div><!-- end second col1a -->
+
+
+
+
+
+
+
+
+<div class="col2a">
+<div class="col2b">
+
+
+<h3 style="margin-top:8px">References</h3>
+
+<p>Please see the <a href="references.html">GISTEMP references page</a> for citations to publications
+related to this research.
+Copies of many of our papers are available in the <a href="https://pubs.giss.nasa.gov/">GISS publications database</a>.</p>
+
+</div><!-- end second col2b -->
+</div><!-- end second col2a -->
+
+<div class="col2a">
+<div class="col2b">
+
+<h3 style="margin-top:8px" id="quick_links">Related Links</h3>
+
+<div class="quicklinks">
+
+<p>+ <a href="faq/">Frequently Asked Questions</a><p>
+<p>+ <a href="history">GISTEMP History</a><p>
+<p>+ <a href="uncertainty/">Uncertainty Quantification</a><p>
+<p>+ <a href="https://www.fao.org/3/cb4410en/cb4410en.pdf">UN FAOSTAT Temperature Data</a><p>
+<p>+ <a href="https://www.ncdc.noaa.gov/sotc/">NOAA/NCEI State of the Climate</a></p>
+<p>+ <a href="release_dates.html">Update Release Schedule</a></p>
+
+<h4 style="margin-top:8px">Data Sources:</h4>
+
+<p>+ <a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-monthly">Land data: GHCN v4</a></p>
+<p>+ <a href="https://www.ncei.noaa.gov/products/extended-reconstructed-sst">Ocean data: ERSST v5</a></p>
+<p>+ <a href="https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.81-10.ascii">El Ni&ntilde;o data</a></p>
+<p>+ <a href="https://disc.gsfc.nasa.gov/datasets/AIRS3STM_006/summary?keywords=AIRS%20L3">AIRS Data v6</a></p>
+<p>+ <a href="https://disc.gsfc.nasa.gov/datasets/AIRS3STM_7.0/summary?keywords=AIRS%20L3">AIRS Data v7</a></p>
+
+</div><!-- end quicklinks -->
+
+</div><!-- end second col2b -->
+</div><!-- end second col2a -->
+
+
+
+
+
+
+
+
+
+</div><!-- end content -->
+<div id="nav"><h3>Site Menu</h3>
+<ul id="mnav">
+<li><a href="https://www.giss.nasa.gov/">GISS Home</a></li>
+<li><a href="https://www.giss.nasa.gov/research/">News &amp; Features</a>
+<ul class="mnav2">
+<li><a href="https://www.giss.nasa.gov/research/">News &amp; Features Overview</a></li></ul><!-- end mnav2 --></li>
+<li><a href="https://www.giss.nasa.gov/projects/">Projects &amp; Groups</a>
+<ul class="mnav2">
+<li><a href="https://www.giss.nasa.gov/projects/">Projects Overview</a></li>
+<li><a href="https://www.giss.nasa.gov/projects/gcm/">Global Climate Modeling</a></li>
+<li><a href="https://www.giss.nasa.gov/projects/astrobio/">Astrobiology / ROCKE-3D</a></li>
+<li><a href="https://www.giss.nasa.gov/projects/impacts/">Climate Impacts</a></li>
+<li><a href="https://isccp.giss.nasa.gov/">ISCCP</a></li></ul><!-- end mnav2 --></li><li class="sel"><a href="https://data.giss.nasa.gov/">Datasets</a>
+<ul class="mnav2">
+<li><a href="https://data.giss.nasa.gov/">Datasets Overview</a></li>
+<li><a href="https://data.giss.nasa.gov/gistemp/">GISTEMP Surface Temperature</a></li>
+<li><a href="https://data.giss.nasa.gov/modelE/">Model E Simulations</a></li>
+<li><a href="https://data.giss.nasa.gov/modelforce/">Model Forcings</a></li>
+<li><a href="https://data.giss.nasa.gov/rocke3d/maps/">ROCKE-3D Simulations</a></li>
+<li><a href="https://isccp.giss.nasa.gov/products/onlineData.html">ISCCP Data Products</a></li>
+<li><a href="https://gacp.giss.nasa.gov/datasets/">GACP Data Products</a></li></ul><!-- end mnav2 --></li>
+<li><a href="https://pubs.giss.nasa.gov/">Publications</a>
+<ul class="mnav2">
+<li><a href="https://pubs.giss.nasa.gov/">Publications Overview</a></li>
+<li><a href="https://pubs.giss.nasa.gov/year/2024.html">2024 Publications</a></li>
+<li><a href="https://pubs.giss.nasa.gov/year/2023.html">2023 Publications</a></li>
+<li><a href="https://pubs.giss.nasa.gov/year/2022.html">2022 Publications</a></li>
+<li><a href="https://pubs.giss.nasa.gov/year/2021.html">2021 Publications</a></li>
+<li><a href="https://pubs.giss.nasa.gov/year/2020.html">2020 Publications</a></li>
+<li><a href="https://pubs.giss.nasa.gov/year/inpress.html">Accepted &amp; In Press</a></li>
+<li><a href="https://pubs.giss.nasa.gov/authors/">Author Bibliographies</a></li>
+<li><a href="https://pubs.giss.nasa.gov/best.html">Annual Best</a></li>
+<li><a href="https://pubs.giss.nasa.gov/cited.html">Most Cited</a></li>
+<li><a href="https://pubs.giss.nasa.gov/dissertations.html">Dissertations</a></li></ul><!-- end mnav2 --></li>
+<li><a href="https://www.giss.nasa.gov/tools/">Software</a>
+<ul class="mnav2">
+<li><a href="https://www.giss.nasa.gov/tools/">Software Overview</a></li>
+<li><a href="https://www.giss.nasa.gov/tools/modelE/">GCM Model E</a></li>
+<li><a href="https://www.giss.nasa.gov/tools/panoply/">Panoply Data Viewer</a></li>
+<li><a href="https://www.giss.nasa.gov/tools/gprojector/">G.Projector</a></li>
+<li><a href="https://www.giss.nasa.gov/tools/mars24/">Mars24 Sunclock</a></li></ul><!-- end mnav2 --></li>
+<li><a href="https://www.giss.nasa.gov/edu/">Education</a>
+<ul class="mnav2">
+<li><a href="https://www.giss.nasa.gov/edu/">Education Overview</a></li>
+<li><a href="https://www.giss.nasa.gov/edu/grad/">Graduate Study</a></li>
+<li><a href="https://www.giss.nasa.gov/about/jobs/postdoc.html">Postdoc Research</a></li>
+<li><a href="https://www.giss.nasa.gov/edu/intern/">Internships</a></li>
+<li><a href="https://www.giss.nasa.gov/edu/ccri/">CCRI</a></li>
+<li><a href="https://www.giss.nasa.gov/edu/res/">STEM Curriculum Modules</a></li></ul><!-- end mnav2 --></li>
+<li><a href="https://www.giss.nasa.gov/events/">Events</a>
+<ul class="mnav2">
+<li><a href="https://www.giss.nasa.gov/events/">Events Overview</a></li>
+<li><a href="https://www.giss.nasa.gov/events/lunch/">Lunch Seminars</a></li>
+<li><a href="https://www.giss.nasa.gov/events/past.html">Past Events</a></li></ul><!-- end mnav2 --></li>
+<li><a href="https://www.giss.nasa.gov/about/">About GISS</a>
+<ul class="mnav2">
+<li><a href="https://www.giss.nasa.gov/about/">About GISS</a></li>
+<li><a href="https://www.giss.nasa.gov/about/management.html">Management Staff</a></li>
+<li><a href="https://www.giss.nasa.gov/staff/">Personnel Directory</a></li>
+<li><a href="https://www.giss.nasa.gov/about/visiting/">Visitors' Info</a></li>
+<li><a href="https://www.giss.nasa.gov/about/jobs/">Employment</a></li></ul><!-- end mnav2 --></li></ul><!-- end mnav --></div><!-- end nav -->
+
+<div id="endpaper"></div></div><!-- end paper -->
+<div id="footer">
+<div id="footerlogo">
+<a href="https://www.nasa.gov"><img src="https://www.giss.nasa.gov/gfx/2013/nasa_x2.png" alt="NASA Logo, National Aeronautics and Space Administration" style="width:140px;height:98px" /></a></div><!-- end footerlogo -->
+<div id="footersig"><a href="https://www.nasa.gov/goddard/" class="imageLink"><img src="https://www.giss.nasa.gov/gfx/2013/gsig.png" alt="Goddard Space Flight Center" style="width:172px;height:68px" /></a></div><!-- end footersig -->
+<div id="footerlinks">
+<ul>
+<li>NASA Official:
+<a href="https://www.giss.nasa.gov/staff/gschmidt.html">
+Gavin A. Schmidt</a></li>
+<li>Website Curator:
+<a href="https://www.giss.nasa.gov/staff/rschmunk.html">
+Robert B. Schmunk</a></li>
+<li>Page updated: 2024-02-08 10:46</li></ul></div><!-- end footerlinks -->
+<div id="footerplus">
+<ul><li><a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">NASA Privacy Policy &amp; Important Notices</a></li>
+<li><a href="https://www.giss.nasa.gov/about/contact.html">Contact Us</a></li><li><a href="https://www.giss.nasa.gov/about/contact.html#Qimageuse">Image Use</a></li></ul></div><!-- end footerplus --></div><!-- end footer --></div><!-- end page --></body>
+
+</html>

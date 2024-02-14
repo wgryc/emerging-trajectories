@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><title>Columbia Metro Climate Plots for 2024</title><meta name="DC.title" content="Columbia Metro Climate Plots for 2024" /><meta name="DC.description" content="Columbia Metro Climate Plots for 2024" /><meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" /><meta name="DC.date.created" scheme="ISO8601" content="September 10th 2023 7:53 PM" /><meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" /><meta name="DC.keywords" content="Columbia Metro Climate Plots for 2024" /><meta name="DC.publisher" content="NOAA's National Weather Service" /><meta name="DC.contributor" content="National Weather Service" /><meta name="DC.rights" content="http://www.weather.gov/disclaimer.php" /><meta name="rating" content="General" /><meta name="robots" content="index,follow" />
+
+        <link href="/css/weatherstyle.css" rel="stylesheet" type="text/css" />
+        <link href="/css/template.css" rel="stylesheet" type="text/css" />
+        <link href="/css/myfcst.css" rel="stylesheet" type="text/css" />
+        <link href="/css/ForecastSearch.css" rel="stylesheet" type="text/css" />
+        <link href="/css/pointforecast.css" rel="stylesheet" type="text/css" />
+        <link href="/css/jqueryui10_3_1custom/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
+        <link href="/css/widgets.css" rel="stylesheet" type="text/css" />
+        <link href="/css/colorbox/colorbox.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+        <!-- <script type="text/javascript" src="/js/jquery.mobile-1.4.0.min.js"></script> //-->
+        <script type="text/javascript" src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>
+        <script type="text/javascript" src="/js/ForecastSearch.js"></script>
+        <script type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&sub-agency=NOAA&pua=G-736JJ6NL0V"></script>
+        <script type="text/javascript" src="/js/topNavMenu.js"></script>
+        <script type="text/javascript" src="/js/NidsESRI.js"></script>
+        <script type="text/javascript">
+        (function() {
+          var a = document.createElement('script');
+          a.type = 'text/javascript';
+          a.async = true;
+          a.src = 'https://cdn.gov.cfigroup.com/webmon/s/source/webmon/ce989efe8b1040/webmon.js';
+          var b = document.getElementsByTagName('script')[0];
+          b.parentNode.insertBefore(a, b);
+        })();
+        </script>
+        <script type="text/javascript" src="/js/widgets.js"></script>
+        <script type="text/javascript" src="/js/jquery.cycle2.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
+        <script type="text/javascript" src="/js/nwsexit.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-736JJ6NL0V"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+gtag('config', 'G-736JJ6NL0V');
+gtag('config', 'G-Z9CZEQW57Z');
+</script>
+<script>
+$(document).ready(function() {
+  $('img.nocache').each(function () {
+      var $this = $(this);
+      $this.attr('src', noCache($this.attr('src')));
+  });
+});
+function noCache(url) {
+  return url + (url.indexOf('?') >= 0 ? '&nocache=' : '?') + $.now();
+}
+</script>
+
+    </head>
+    <body> 
+        <!-- CFI SURVEY -->
+        <div id='ZN_9tslIS2mj3KoPgp'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div> 
+        <!-- CFI SURVEY END -->
+
+        		<div class="header">
+			<div class="header-content">
+			<a href="http://www.weather.gov" class="header-nws"><img src="/css/images/header.png"  alt="National Weather Service"/></a>
+			<a href="http://www.commerce.gov" class="header-doc"><img src="/css/images/header_doc.png" alt="United States Department of Commerce"/></a>
+            <a href="http://www.noaa.gov" class="header-noaa" title="National Oceanic and Atmospheric Administration"></a>
+            </div>
+                    <div style="clear:both"></div>
+		</div>
+
+		<div class="header-shadow">
+			<div class="header-shadow-content"></div>
+		</div>
+	
+
+        <div class="center">
+
+                    <div class="content">
+            <div class="topnav">
+                <ul id="topnav">
+                    <li>
+                        <script type="text/javascript">
+                            function goBack()
+                            {
+                                if (document.referrer.toLowerCase().indexOf("weather.gov") != -1)
+                                {
+                                    history.back();
+                                }
+                                else
+                                {
+                                    document.location.href = "http://www.weather.gov";
+                                }
+                            }
+                        </script>
+                        <div class="topMenuNavList home">
+                            <a href="#" onclick="goBack();">HOME</a>
+                        </div>
+                    </li>
+                    <li>	
+                        <div class="topMenuNavList section-link">
+                            	<a href="http://www.weather.gov/forecastmaps">FORECAST</a>                        </div>
+                            <div style="opacity: 0;" class="sub"> <ul>                        <li>                            <a href="http://www.weather.gov">Local</a>                        </li>                        <li>                            <a href="http://digital.weather.gov">Graphical</a>                        </li>                        <li>                            <a href="http://www.aviationweather.gov/">Aviation</a>                        </li>                        <li>                            <a href="http://www.weather.gov/marine">Marine</a>                        </li>                        <li>                            <a href="http://water.weather.gov/ahps/">Rivers and Lakes</a>                        </li>                        <li>                            <a href="http://www.nhc.noaa.gov/">Hurricanes</a>                        </li>                        <li>                            <a href="http://www.spc.noaa.gov/">Severe Weather</a>                        </li>                        <li>                            <a href="http://www.weather.gov/fire/">Fire Weather</a>                        </li>                        <li>                            <a href="https://www.esrl.noaa.gov/gmd/grad/solcalc/sunrise.html">Sun/Moon</a>                        </li>                        <li>                            <a href="http://www.cpc.ncep.noaa.gov/">Long Range Forecasts</a>                        </li>                        <li>                            <a href="http://www.cpc.ncep.noaa.gov">Climate Prediction</a>                        </li>                        <li>                            <a href="https://www.swpc.noaa.gov/">Space Weather</a>                        </li></ul></div>                        </li>
+            <li>	
+                        <div class="topMenuNavList section-link">
+                            	<a href="https://www.weather.gov/wrh/climate/">PAST WEATHER</a>                        </div>
+                            <div style="opacity: 0;" class="sub"> <ul>                        <li>                            <a href="https://www.weather.gov/wrh/climate/">Past Weather</a>                        </li>                        <li>                            <a href="https://www.weather.gov/wrh/climate/">Heating/Cooling Days</a>                        </li>                        <li>                            <a href="https://www.weather.gov/wrh/climate/">Monthly Temperatures</a>                        </li>                        <li>                            <a href="https://www.weather.gov/wrh/climate/">Records</a>                        </li>                        <li>                            <a href="http://aa.usno.navy.mil/">Astronomical Data</a>                        </li></ul></div>                        </li>
+            <li>	
+                        <div class="topMenuNavList section-link">
+                            	<a href="http://www.weather.gov/safety">SAFETY</a>                        </div>
+                            <div style="opacity: 0;" class="sub"> <ul>                        <li>                            <a href="https://www.weather.gov/safety/tsunami">Tsunamis</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/flood">Floods</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/beachhazards">Beach Hazards</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/wildfire">Wildfire</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/cold">Cold</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/tornado">Tornadoes</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/airquality">Air Quality</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/fog">Fog</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/heat">Heat</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/hurricane">Hurricanes</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/lightning">Lightning</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/safeboating">Safe Boating</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/ripcurrent">Rip Currents</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/thunderstorm">Thunderstorms</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/space">Space Weather</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/heat-uv">Sun (Ultraviolet Radiation)</a>                        </li>                        <li>                            <a href="http://www.weather.gov/safetycampaign">Safety Campaigns</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/wind">Wind</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/drought">Drought</a>                        </li>                        <li>                            <a href="https://www.weather.gov/safety/winter">Winter Weather</a>                        </li></ul></div>                        </li>
+            <li>	
+                        <div class="topMenuNavList section-link">
+                            	<a href="http://www.weather.gov/informationcenter">INFORMATION</a>                        </div>
+                            <div style="opacity: 0;" class="sub"> <ul>                        <li>                            <a href="http://www.weather.gov/wrn/wea">Wireless Emergency Alerts</a>                        </li>                        <li>                            <a href="https://www.weather.gov/owlie/publication_brochures">Brochures</a>                        </li>                        <li>                            <a href="http://www.weather.gov/wrn/">Weather-Ready Nation</a>                        </li>                        <li>                            <a href="https://www.weather.gov/coop/">Cooperative Observers</a>                        </li>                        <li>                            <a href="http://www.weather.gov/briefing/">Daily Briefing</a>                        </li>                        <li>                            <a href="http://www.nws.noaa.gov/om/hazstats.shtml">Damage/Fatality/Injury Statistics</a>                        </li>                        <li>                            <a href="http://mag.ncep.noaa.gov/">Forecast Models</a>                        </li>                        <li>                            <a href="https://www.weather.gov/gis">GIS Data Portal</a>                        </li>                        <li>                            <a href="https://www.weather.gov/nwr/">NOAA Weather Radio</a>                        </li>                        <li>                            <a href="http://weather.gov/publications">Publications</a>                        </li>                        <li>                            <a href="http://www.weather.gov/SKYWARN">SKYWARN Storm Spotters</a>                        </li>                        <li>                            <a href="http://www.weather.gov/StormReady">StormReady</a>                        </li>                        <li>                            <a href="https://www.weather.gov/TsunamiReady/">TsunamiReady</a>                        </li>                        <li>                            <a href="https://www.weather.gov/notification/">Service Change Notices</a>                        </li></ul></div>                        </li>
+            <li>	
+                        <div class="topMenuNavList section-link">
+                            	<a href="http://www.weather.gov/education">EDUCATION</a>                        </div>
+                            <div style="opacity: 0;" class="sub"> <ul>                        <li>                            <a href="https://www.weather.gov/wrn/force">Be A Force of Nature</a>                        </li>                        <li>                            <a href="http://www.weather.gov/owlie">NWS Education Home</a>                        </li></ul></div>                        </li>
+            <li>	
+                        <div class="topMenuNavList section-link">
+                            	<a href="http://www.weather.gov/news/">NEWS</a>                        </div>
+                            <div style="opacity: 0;" class="sub"> <ul>                        <li>                            <a href="http://www.weather.gov/news">NWS News</a>                        </li>                        <li>                            <a href="https://www.weather.gov/wrn/calendar">Events</a>                        </li>                        <li>                            <a href="https://www.weather.gov/owlie/publication_brochures">Pubs/Brochures/Booklets </a>                        </li>                        <li>                            <a href="http://www.noaa.gov/NOAA-Communications">NWS Media Contacts</a>                        </li></ul></div>                        </li>
+            <li>	
+                        <div class="topMenuNavList section-link">
+                            	<a href="http://www.weather.gov/search">SEARCH</a>                        </div>
+                             
+                            <div style="opacity: 0;" class="sub">     
+                                <ul class="no-links">
+                                <li><!-- Begin search code -->
+                                    <div id="site-search">
+                                        <form method="get" action="https://search.usa.gov/search" style="margin-bottom: 0; margin-top: 0;">
+                                            <input type="hidden" name="v:project" value="firstgov" /> 
+                                            <label for="query">Search For</label> 
+                                            <input type="text" name="query" id="query" size="12" /> 
+                                            <input type="submit" value="Go" />
+                                            <p>
+                                                <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" /> 
+                                                <label for="nws" class="search-scope">NWS</label> 
+                                                <input type="radio" name="affiliate" value="noaa.gov" id="noaa" /> 
+                                                <label for="noaa" class="search-scope">All NOAA</label>
+                                            </p>
+                                        </form>
+                                    </div>
+                                </li>
+                                </ul>
+                            </div>
+                                                        </li>
+            <li class="last">	
+                        <div class="topMenuNavList section-link">
+                            	<a href="http://www.weather.gov/about">ABOUT</a>                        </div>
+                            <div style="opacity: 0;" class="sub"> <ul>                        <li>                            <a href="http://www.weather.gov/about">About NWS</a>                        </li>                        <li>                            <a href="http://www.weather.gov/organization">Organization</a>                        </li>                        <li>                            <a href="https://www.weather.gov/media/wrn/NWS-2023-Strategic-Plan.pdf">Strategic Plan</a>                        </li>                        <li>                            <a href="http://www.weather.gov/careers/#diversity">Commitment to Diversity</a>                        </li>                        <li>                            <a href="https://sites.google.com/a/noaa.gov/nws-insider/">For NWS Employees</a>                        </li>                        <li>                            <a href="http://www.weather.gov/insider">International</a>                        </li>                        <li>                            <a href="http://www.weather.gov/ncep">National Centers</a>                        </li>                        <li>                            <a href="http://www.weather.gov/careers/">Careers</a>                        </li>                        <li>                            <a href="http://www.weather.gov/contact">Contact Us</a>                        </li>                        <li>                            <a href="https://w1.weather.gov/glossary">Glossary</a>                        </li>                        <li>                            <a href="https://weather.gov/socialmedia">Social Media</a>                        </li></ul></div>                        </li>
+                            </ul>
+            </div>
+        </div>
+
+        
+
+            <div class="center-content">
+                <div id="zipcity_news">
+                    		<div class="one-sixth-first">
+			<div id="forecast-lookup">
+				<form name="getForecast" id="getForecast" action="https://forecast.weather.gov/zipcity.php" method="get">
+                    <label for="inputstring">Local forecast by <br />"City, St" or ZIP code</label>
+                    <input id="inputstring" name="inputstring" type="text" value="Enter location ..." onclick="this.value=''" />
+                    <input name="btnSearch" id="btnSearch" type="submit" value="Go" />
+                    <div id="txtError">
+                        <div id="errorNoResults" style="display:none;">Sorry, the location you searched for was not found. Please try another search.</div>
+                        <div id="errorMultipleResults" style="display:none">Multiple locations were found. Please select one of the following:</div>
+                        <div id="errorChoices" style="display:none"></div>
+                        <input id="btnCloseError" type="button" value="Close" style="display:none" />
+                    </div>
+                    <div id="txtHelp"><a style="text-decoration: underline;" href="javascript:void(window.open('http://weather.gov/ForecastSearchHelp.html','locsearchhelp','status=0,toolbar=0,location=0,menubar=0,directories=0,resizable=1,scrollbars=1,height=500,width=530').focus());">Location Help</a></div>
+                </form>
+
+			</div><!-- <div id="forecast-lookup"> -->
+		</div><!-- <div class="one-sixth-first"> -->
+	
+                    <div class="five-sixth-last">
+    <div id="topnews">
+        <div id="global_localnews" style="float:left;width:800px;">
+            <div id="global_localnews_headerbar_main">
+                <div id="global_localnews_headerbar_sub_left">
+                    <div id="global_localnews_title" style="color:black;margin:5px 0px 2px 0px;font-size:14px;font-weight:bold;">News Headlines</div>
+                </div>
+            </div>
+            <div id="localnews">
+                <ul>
+                                    <li><a href="https://www.weather.gov/cae/climate2024Jan"><strong>Climate Summary for January, 2024</strong></a></li>
+                                    <li><a href="https://www.weather.gov/cae/StudentVolunteerOpportunitiesCAE.html"><strong>Announcing 2024 Student Volunteer Opportunities at NWS Columbia!</strong></a></li>
+                                </ul>
+                            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    /** news headline Additional Headlines link **/
+    $(document).ready(function () {
+        $("#additionalNews").toggle();
+        $(".toggleHeadlines a").click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            $(".toggleHeadlines").toggle();
+            $(".hidden-news-link").toggle();
+        });
+    });
+</script>
+
+                </div>
+                <div class="full-width-bordertop">
+                    <div class="div-full">
+
+                        <!-- area for the myforecast widget and wwamap data -->
+                        <div class="one-sixth-first" id="sidebar">
+                                    <script type="text/javascript" src="/js/jquery-cookie.js"></script>
+        <script type="text/javascript" src="/js/MyForecastWidget.js"></script>
+        <div id="myfcst-widget">
+            <div id="myfcst">
+                <form id='myfcst-form' action='/widgets/MyForecastWidget.php'>
+                    <span id="myfcst-title">Customize Your <strong>Weather.gov</strong></span>
+                    <span id="myfcst-error"></span>
+                    <div id="myfcst-input-block">
+                        <input type="text" name="myfcst-location-input" id="myfcst-location-input" value="City, ST" /> 
+                        <label for="myfcst-location-input">Enter Your City, ST or ZIP Code</label><br />	
+                        <input type="checkbox" name="myfcst-remember" id="myfcst-remember" />
+                        <label for="myfcst-remember">Remember Me</label> 					
+                    </div>
+                    <div class="myfcst-footer">
+                        <input type="submit" value="Get Weather" id="myfcst-submit" />
+                        <p class="myfcst-policy"><a href="http://www.weather.gov/privacy.php">Privacy Policy</a></p>
+                    </div>
+                </form>
+                <div id="myfcst-fcst"></div>
+                <div id="myfcst-multi-result"></div>
+                <div id="myfcst-loading">LOADING...</div>
+            </div>
+            
+        </div>
+        
+                            
+                        </div><!-- end of <div class="one-sixth-first"> -->
+
+                        <div class="five-sixth-first" id="pagebody">
+                            <div class="div-full breadcrumb">    <div class="sitename">        <p class="sitename-name">Columbia, SC</p>        <p class="sitename-class">Weather Forecast Office</p>    </div>    <div class="location">        <h1 class='location-pagetitle'>Columbia Metro Climate Plots for 2024</h1>        <div class='location-breadcrumb'>            <a href="https://www.weather.gov">Weather.gov</a> &gt; <a href="https://www.weather.gov/cae">Columbia, SC</a> &gt; Columbia Metro Climate Plots for 2024        </div>    </div></div>
+                            <div class="div-full">    <div class="subMenuNav">        <ul id="subMenuNav">            <li>                <div class="subMenuNavList section-link">                    <a href="https://forecast.weather.gov/product.php?site=NWS&issuedby=CAE&product=HWO">Current Hazards</a>                </div>                <div class="sub">                    <ul>                        <li>                            <a href="https://www.wpc.ncep.noaa.gov/nationalfloodoutlook/">River Flooding</a>                        </li>                        <li>                            <a href="https://www.weather.gov/cae/briefing">Briefing Page</a>                        </li>                        <li>                            <a href="http://www.wpc.ncep.noaa.gov/#page=wwx">Winter</a>                        </li>                        <li>                            <a href="https://www.swpc.noaa.gov/products/alerts-watches-and-warnings">Space</a>                        </li>                        <li>                            <a href="https://forecast.weather.gov/product.php?site=NWS&issuedby=CAE&product=HWO">Local Outlook</a>                        </li>                        <li>                            <a href="http://droughtmonitor.unl.edu/">Drought</a>                        </li>                        <li>                            <a href="https://www.spc.noaa.gov/">Thunderstorms</a>                        </li>                        <li>                            <a href="https://www.weather.gov/cae/tropical">Hurricanes</a>                        </li>                    </ul>                </div>            </li>            <li>                <div class="subMenuNavList section-link">                    <a href="/">Current Conditions</a>                </div>                <div class="sub">                    <ul>                        <li>                            <a href="https://forecast.weather.gov/product.php?site=CAE&issuedby=CAE&product=RWR&format=CI&version=1">Observations (List)</a>                        </li>                        <li>                            <a href="https://water.weather.gov/precip/">Rainfall</a>                        </li>                        <li>                            <a href="https://airnow.gov/">Air Quality</a>                        </li>                        <li>                            <a href="https://www.star.nesdis.noaa.gov/GOES/index.php">Satellite</a>                        </li>                        <li>                            <a href="https://nowcoast.noaa.gov/#x=-71.780639&y=42.001869&z=8&layers=95+125:1,6,2,3,4+185+225+285+295+300+305+315+320+325&au=10&o=1.00,1.00,1.00,0.75,0.50,0.85,1.00">Observations (Map)</a>                        </li>                    </ul>                </div>            </li>            <li>                <div class="subMenuNavList section-link">                    <a href="https://radar.weather.gov">Radar</a>                </div>                <div class="sub">                    <ul>                        <li>                            <a href="https://radar.weather.gov/station/KCAE/standard">Local KCAE Standard Radar (low bandwidth)</a>                        </li>                        <li>                            <a href="https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJsb2NhbCIsImNlbnRlciI6Wy04MS4xMTksMzMuOTQ5XSwibG9jYXRpb24iOm51bGwsInpvb20iOjcuMTY2NjY2NjY2NjY2NjY2LCJmaWx0ZXIiOiJXU1ItODhEIiwibGF5ZXIiOiJzcl9icmVmIiwic3RhdGlvbiI6IktDQUUifSwiYW5pbWF0aW5nIjpmYWxzZSwiYmFzZSI6InN0YW5kYXJkIiwiYXJ0Y2MiOmZhbHNlLCJjb3VudHkiOmZhbHNlLCJjd2EiOmZhbHNlLCJyZmMiOmZhbHNlLCJzdGF0ZSI6ZmFsc2UsIm1lbnUiOnRydWUsInNob3J0RnVzZWRPbmx5Ijp0cnVlLCJvcGFjaXR5Ijp7ImFsZXJ0cyI6MC44LCJsb2NhbCI6MC42LCJsb2NhbFN0YXRpb25zIjowLjgsIm5hdGlvbmFsIjowLjZ9fQ%3D%3D#/">Local KCAE Enhanced Radar</a>                        </li>                        <li>                            <a href="https://radar.weather.gov/region/southeast/standard">Regional Standard Radar (low bandwidth)</a>                        </li>                        <li>                            <a href="https://radar.weather.gov/region/conus/standard">National Standard Radar (low bandwidth)</a>                        </li>                        <li>                            <a href="https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJsb2NhbCIsImNlbnRlciI6Wy04MC44ODMsMzUuMjY4XSwiem9vbSI6OSwiZmlsdGVyIjoiVERXUiIsImxheWVyIjoiYnJlZjEiLCJzdGF0aW9uIjoiVENMVCIsInRyYW5zcGFyZW50Ijp0cnVlLCJhbGVydHNPdmVybGF5Ijp0cnVlLCJzdGF0aW9uSWNvbnNPdmVybGF5IjpmYWxzZX0sImJhc2UiOiJzdGFuZGFyZCIsImNvdW50eSI6dHJ1ZSwiY3dhIjpmYWxzZSwic3RhdGUiOnRydWUsIm1lbnUiOnRydWUsInNob3J0RnVzZWRPbmx5Ijp0cnVlfQ%3D%3D#/">CLT TDWR Radar</a>                        </li>                    </ul>                </div>            </li>            <li>                <div class="subMenuNavList section-link">                    <a href="#">Forecasts</a>                </div>                <div class="sub">                    <ul>                        <li>                            <a href="https://forecast.weather.gov/product.php?site=CAE&issuedby=CAE&product=AFD&format=CI&version=1&glossary=1&highlight=off">Forecasters' Discussion</a>                        </li>                        <li>                            <a href="https://forecast.weather.gov/gridpoint.php?site=cae&TypeDefault=graphical">Hourly View</a>                        </li>                        <li>                            <a href="https://graphical.weather.gov/sectors/cae.php">Map View</a>                        </li>                        <li>                            <a href="https://www.aviationweather.gov/">Aviation</a>                        </li>                        <li>                            <a href="https://www.weather.gov/cae/tropical">Tropical</a>                        </li>                        <li>                            <a href="https://forecast.weather.gov/wxplanner.php?site=cae">Activity Planner</a>                        </li>                        <li>                            <a href="http://www.weather.gov/cae/fire_weather.html">Fire Weather</a>                        </li>                    </ul>                </div>            </li>            <li>                <div class="subMenuNavList section-link">                    <a href="https://water.weather.gov/ahps2/index.php?wfo=CAE">Rivers and Lakes</a>                </div>                <div class="sub">                    <ul>                        <li>                            <a href="https://water.weather.gov/ahps2/index.php?wfo=cae">River Observations (Map)</a>                        </li>                        <li>                            <a href="https://water.weather.gov/ahps2/forecasts.php?wfo=cae">River Forecasts (Map)</a>                        </li>                        <li>                            <a href="http://waterwatch.usgs.gov/?m=real&w=gmap&regions=sc">Current & Past Streamflow</a>                        </li>                        <li>                            <a href="https://www.weather.gov/erh/mmefs">Ensemble River Guidance</a>                        </li>                        <li>                            <a href="https://water.weather.gov/ahps/rfc/rfc.php">River Forecast Centers</a>                        </li>                    </ul>                </div>            </li>            <li>                <div class="subMenuNavList section-link">                    <a href="https://www.weather.gov/wrh/Climate?wfo=cae">Climate and Past Weather</a>                </div>                <div class="sub">                    <ul>                        <li>                            <a href="https://www.weather.gov/wrh/Climate?wfo=cae">Past Observed Weather</a>                        </li>                        <li>                            <a href="https://forecast.weather.gov/product.php?site=CAE&issuedby=CAE&product=RTP">24 Hour Summary</a>                        </li>                        <li>                            <a href="https://www.cocorahs.org/">CoCoRaHS</a>                        </li>                        <li>                            <a href="https://water.weather.gov/precip">Past Rainfall</a>                        </li>                        <li>                            <a href="https://www.ncdc.noaa.gov/snow-and-ice/">Snowfall Records</a>                        </li>                        <li>                            <a href="https://www.cpc.ncep.noaa.gov/products/expert_assessment/sdo_summary.php">Drought Outlook</a>                        </li>                        <li>                            <a href="https://www.weather.gov/wrh/Climate?wfo=cae">Historical Records</a>                        </li>                        <li>                            <a href="https://www.cpc.ncep.noaa.gov/">Climate Prediction</a>                        </li>                        <li>                            <a href="https://www.weather.gov/cae/TropicalEventSummary">Tropical Cyclone Reports</a>                        </li>                    </ul>                </div>            </li>            <li>                <div class="subMenuNavList section-link">                    <a href="http://www.weather.gov/cae/office.html">Local Programs</a>                </div>                <div class="sub">                    <ul>                        <li>                            <a href="http://www.weather.gov/cae/outreach.html">Outreach</a>                        </li>                        <li>                            <a href="http://www.weather.gov/cae/nwr.html">NWR</a>                        </li>                        <li>                            <a href="http://www.weather.gov/cae/skywarn.html">Skywarn</a>                        </li>                    </ul>                </div>            </li>        </ul>    </div></div>
+
+                            
+                            
+                            
+                                        <div class="div-full">
+                <div class="cms-content"><p>&lt;</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+	<tbody>
+		<tr valign="top">
+			<td align="center" valign="top" width="540">
+			<h2 align="center"><font face="Arial">2024 Columbia Metro Climate Plots</font></h2>
+
+			<p><font face="Arial">Climate data on this page is PRELIMINARY (unofficial). CERTIFIED (official) climate data is available from the <a href="https://www.ncdc.noaa.gov" title="National Climatic Data Center (NCDC)">National Climatic Data Center (NCDC)</a>. </font></p>
+
+			<p>&nbsp;</p>
+
+			<p><a href="https://www.weather.gov/cae/cliplots">Back to Main Cliplots Page</a><br />
+			&nbsp;</p>
+			&nbsp;
+
+			<table border="0" cellpadding="2" cellspacing="1" width="200">
+				<tbody>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">Year 2024 </font> </strong><br />
+						<a href="/images/cae/cliplots/KCAE2024plot.png"><img align="middle" alt="click to enlarge" src="/images/cae/cliplots/KCAE2024plot.png" style="border-width: 0px; border-style: solid; height: 508px; width: 680px;" /> </a></font></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p><font face="Arial">&nbsp;</font></p>
+
+			<table border="0" cellpadding="2" cellspacing="1" width="200">
+				<tbody>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">Current 31 Day Period </font> </strong><br />
+						<a href="/images/cae/cliplots/KCAEcurrent2.png"><img align="middle" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAEcurrent1.png" /> </a> </font></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p><font face="Arial">&nbsp;</font></p>
+
+			<table border="0" cellpadding="2" cellspacing="1" width="600">
+				<tbody>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">January 2024</font></strong><br />
+						<a href="/images/cae/cliplots/KCAE202401plot-2.png"><img align="left" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAE202401plot.png" /> </a> </font></p>
+						</td>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">February 2024</font></strong><br />
+						<a href="/images/cae/cliplots/KCAE202402plot-2.png"><img align="left" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAE202402plot.png" /> </a> </font></p>
+						</td>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">March 2024</font></strong><br />
+						<a href="/images/cae/cliplots/KCAE202403plot-2.png"><img align="left" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAE202403plot.png" /> </a> </font></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">April 2024</font></strong><br />
+						<a href="/images/cae/cliplots/KCAE202404plot-2.png"><img align="left" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAE202404plot.png" /> </a> </font></p>
+						</td>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">May 2024</font></strong><br />
+						<a href="/images/cae/cliplots/KCAE202405plot-2.png"><img align="left" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAE202405plot.png" /> </a> </font></p>
+						</td>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">June 2024</font></strong><br />
+						<a href="/images/cae/cliplots/KCAE202406plot-2.png"><img align="left" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAE202406plot.png" /> </a> </font></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">July 2024</font></strong><br />
+						<a href="/images/cae/cliplots/KCAE202407plot-2.png"><img align="left" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAE202407plot.png" /> </a> </font></p>
+						</td>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">August 2024</font></strong><br />
+						<a href="/images/cae/cliplots/KCAE202408plot-2.png"><img align="left" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAE202408plot.png" /> </a> </font></p>
+						</td>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">September 2024</font></strong><br />
+						<a href="/images/cae/cliplots/KCAE202409plot-2.png"><img align="left" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAE202409plot.png" /> </a> </font></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">October 2024</font></strong><br />
+						<a href="/images/cae/cliplots/KCAE202410plot-2.png"><img align="left" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAE202410plot.png" /> </a> </font></p>
+						</td>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">November 2024</font></strong><br />
+						<a href="/images/cae/cliplots/KCAE202411plot-2.png"><img align="left" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAE202411plot.png" /> </a> </font></p>
+						</td>
+						<td>
+						<p align="center"><font face="Arial"><strong><font color="#ff0000">December 2024</font></strong><br />
+						<a href="/images/cae/cliplots/KCAE202412plot-2.png"><img align="left" alt="click to enlarge" border="0" src="/images/cae/cliplots/KCAE202412plot.png" /> </a> </font></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<font face="Arial"><!-- *** Help Section begin --> </font>
+
+			<table height="976" width="600">
+				<tbody>
+					<tr>
+						<td bgcolor="#e1e1e1">
+						<h3 align="left"><font face="Arial">How to Read the Plots:</font></h3>
+						<font face="Arial">Below is an example of the monthly climate plot. The observed high and low temperatures are indicated by the tops and bottoms of the vertical blue bars, respectively. The normal temperature ranges are indicated by the green band. Record highs are shown on the top of the light pink band, and record lows are indicated along the bottom of the light blue band.<br />
+						<br />
+						Please note that Columbia Metro and Augusta Bush Field will have both the normals and record data included on the plots. Jim Hamilton - L.B. Owens Airport, Orangeburg, and Augusta Daniel Field will only have the normals.<br />
+						<br />
+						<img alt="" src="/images/cae/cliplots/KCAE202401plot-2.png" /><br />
+						<br />
+						<br />
+						Next we have an example of the year to date climate plot. As with the monthly plot, observed temperatures are shown by the dark blue areas, normals with the light green areas, record highs in the light red areas, and record lows in the light blue areas. The bottom portion of the graph indicates the precipitation for the year to date. The yellow line (and green area below it) represents the normal year to date total at the given time frame. Periods that have year to date totals above the climatological normals are shown by dark green areas above the yellow line. Periods that are below normal are shown with the brown areas below the yellow line.<br />
+						<br />
+						Please note that Columbia Metro and Augusta Bush Field will have both the normals and record data included on the plots. Jim Hamilton - L.B. Owens Airport, Orangeburg, and Augusta Daniel Field will only have the normals.<br />
+						<br />
+						<img alt="" src="/images/cae/cliplots/KCAE2024plot.png" style="height: 486px; width: 680px;" /> </font></td>
+					</tr>
+				</tbody>
+			</table>
+			<br />
+			&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+            </div>
+            <div style="clear:both"></div>
+            
+                        </div>
+
+                    </div><!-- end of <div class="partial-width-borderbottom"> -->
+   
+                </div><!-- <div class="full-width-border"> -->
+           
+                <!-- area for features, frontpage thumbs, and custom page -->
+                
+                
+                <!-- end of <div class="partial-width-borderbottom feature-block"> -->
+                        <link rel="stylesheet" type="text/css" href="/css/mod-image-tiles.css" />
+                            <div id="image_tiles">
+        <div class="div-full mod-image-tiles">
+                    <div class="one-sixth-first" >
+                <a href="https://radar.weather.gov/station/KCAE/standard"><img alt="Radar" src="/images/erh/tile_icons/radar.png" />Radar</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="https://nowcoast.noaa.gov/"><img alt="Current Weather" src="/images/erh/tile_icons/observations.png" />Current Weather</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="https://water.weather.gov/ahps2/index.php?wfo=cae"><img alt="Rivers &amp; Lakes" src="/images/erh/tile_icons/rivers.png" />Rivers &amp; Lakes</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="https://www.star.nesdis.noaa.gov/GOES/index.php"><img alt="Satellite" src="/images/erh/tile_icons/satellite.png" />Satellite</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="https://www.wpc.ncep.noaa.gov/national_forecast/natfcst.php"><img alt="Forecast Maps" src="/images/erh/tile_icons/maps.png" />Forecast Maps</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="https://forecast.weather.gov/gridpoint.php?site=cae&amp;TypeDefault=graphical"><img alt="Hour by Hour Forecast" src="/images/erh/tile_icons/hourly.png" />Hour by Hour Forecast</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="https://www.weather.gov/cae/winter"><img alt="Winter Weather" src="/images/erh/tile_icons/winter.png" />Winter Weather</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="https://www.weather.gov/erh/ghwo?wfo=cae"><img alt="Graphical Hazards Outlook" src="/images/erh/tile_icons/ehwo.jpg" />Graphical Hazards</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="http://www.weather.gov/cae/cliplots"><img alt="Climate Plots" src="//www.weather.gov/images/erh/tile_icons/climate.png" />Climate Plots</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="http://www.weather.gov/cae/briefing"><img alt="Weather Briefing" src="//www.weather.gov/images/erh/tile_icons/briefing.png" />Weather Briefing</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="http://www.weather.gov/cae/RegionalObservations.html"><img alt="Regional Observations" src="//www.weather.gov/images/erh/tile_icons/observations.png" />Regional Observations</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="http://www.weather.gov/cae/fire_weather.html"><img alt="Fire Weather" src="//www.weather.gov/images/erh/tile_icons/fire.png" />Fire Weather</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="http://forecast.weather.gov/product.php?site=NWS&amp;issuedby=CAE&amp;product=AFD&amp;format=CI&amp;version=1&amp;glossary=0&amp;highlight=off"><img alt="Forecaster's Discussion" src="//www.weather.gov/images/erh/tile_icons/afd.png" />Forecaster's Discussion</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="http://www.weather.gov/cae/skywarn.html"><img alt="Skywarn" src="//www.weather.gov/images/erh/tile_icons/skywarn.png" />Skywarn</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="http://www.weather.gov/cae/drought.html"><img alt="Drought Info" src="//www.weather.gov/images/erh/tile_icons/drought.png" />Drought</a>
+            </div>
+                    <div class="one-sixth-first" >
+                <a href="http://www.weather.gov/cae/textProds"><img alt="Text Bulletins" src="//www.weather.gov/images/erh/tile_icons/text.png" />Text Bulletins</a>
+            </div>
+                </div>
+                    </div>
+        
+                <div class="full-width-bordertop">
+                    		 <div class="full-width-first communication-links">
+                        	<div class ="one-sixth-first divs">
+            		<div class="myforecast-current">
+                		<a style="text-decoration:none;" href="https://twitter.com/nwscolumbia" target="_blank">
+                			<img src="/css/images/twitter.png" width="16" alt="Follow us on Twitter" height="16" />&nbsp;&nbsp;Follow us on Twitter
+                		</a>
+               		</div>
+               	</div>
+                        	<div class ="one-sixth-first divs">
+            		<div class="myforecast-current">
+                		<a style="text-decoration:none;" href="http://www.facebook.com/NWSColumbia" target="_blank">
+                			<img src="/css/images/fb.png" width="16" height="16" alt="Follow us on Facebook" />&nbsp;&nbsp;Follow us on Facebook
+                		</a>
+                	</div>
+                </div>
+         	            	<div class ="one-sixth-first divs">
+            		<div class="myforecast-current">
+            			<a style="text-decoration:none;" href="https://youtube.com/NWSCAE" target="_blank">
+            				<img src="/css/images/youtube_play.png" alt="Follow us on YouTube" />&nbsp;&nbsp;Follow us on YouTube
+            			</a>
+            		</div>
+            	</div>
+                        <div class ="one-half-last nopad">
+               	<span class="txt-rt myforecast-current">
+                	<div class="myforecast-current">
+                		<a href="/rss_page.php?site_name=cae" target="_blank" style="text-decoration:none;font-size:11px;">
+							<img src="/css/images/rss.png" width="16" height="16" alt="CAE RSS Feed" />&nbsp;&nbsp;CAE RSS Feed
+						</a>
+                	</div>
+                </span>
+          	</div>
+      	</div>
+    	<div style="clear:both;"></div>
+	
+                </div>
+
+
+                <div style="clear:both;"></div>
+
+            </div><!-- <div class="center-content"> -->
+
+        </div><!-- end of <div class="center"> -->
+
+        <!-- sitemap area -->
+        <div class="footer">
+            		<style type="text/css">
+            .footer-column-head a:link, .footer-column-head a:visited {
+                color: #ED7A08;		
+            }
+		</style>
+		<div class="footer-content">
+							<div class="footer-column" style="padding:10px 10px;">
+                                            <p>
+                            <span class="footer-column-head">
+                                <a href="http://www.nws.noaa.gov/view/prodsByState.php?state=sc&amp;prodtype=allwarnings">Hazards</a>
+                            </span><br />
+                                                        <a href=" http://www.nws.noaa.gov/view/prodsByState.php?state=ga&amp;prodtype=allwarnings">Georgia </a><br />
+                                                            <a href=" http://www.nws.noaa.gov/view/prodsByState.php?state=sc&amp;prodtype=allwarnings">South Carolina </a><br />
+                                                            <a href="http://www.nws.noaa.gov/largemap.php">National Warnings </a><br />
+                                                            <a href="http://forecast.weather.gov/product.php?site=cae&amp;product=HWO&amp;issuedby=cae">Hazardous Outlook </a><br />
+                                                            <a href=" http://www.weather.gov/cae/tropical">Tropical Weather </a><br />
+                                                            <a href="http://www.weather.gov/cae/briefing">Weather Briefing</a><br />
+                                                            <a href=" http://www.weather.gov/cae/severe_reports.html">Provide Storm Reports </a><br />
+                                                            <a href=" http://www.weather.gov/emailupdates/">Email Alerts </a><br />
+                                                            <a href="https://www.weather.gov/cae/EHWO">Enhanced Hazardous Weather Outlook</a><br />
+                                                    </p>
+                                                <p>
+                            <span class="footer-column-head">
+                                <a href=" https://www.weather.gov/cae/SocialMediaFeeds.html">Social Media</a>
+                            </span><br />
+                                                        <a href=" https://www.weather.gov/cae/Facebook_CAE.html">Facebook </a><br />
+                                                            <a href=" https://www.weather.gov/cae/Twitter_CAE.html">Twitter </a><br />
+                                                            <a href="https://www.youtube.com/NWSCAE">YouTube</a><br />
+                                                    </p>
+                              			</div>
+            				<div class="footer-column" style="padding:10px 10px;">
+                                            <p>
+                            <span class="footer-column-head">
+                                <a href="http://www.nws.noaa.gov/gis/">GIS</a>
+                            </span><br />
+                                                        <a href="https://www.weather.gov/gis/NWS_KMLFiles">KML/KMZ Data</a><br />
+                                                            <a href="https://www.weather.gov/gis/NWS_Shapefile">Shapefile Data</a><br />
+                                                    </p>
+                                                <p>
+                            <span class="footer-column-head">
+                                <a href=" http://www.srh.noaa.gov/data/CAE/RWRCAE">Current Conditions</a>
+                            </span><br />
+                                                        <a href="http://www.weather.gov/cae/RegionalObservations.html">Observations </a><br />
+                                                            <a href=" http://www.goes.noaa.gov/">Satellite Images </a><br />
+                                                            <a href=" http://www.weather.gov/cae/FivePointsGages.html">Five Points </a><br />
+                                                            <a href="http://forecast.weather.gov/product.php?site=NWS&amp;product=RVA&amp;issuedby=CAE">River and Lake Levels</a><br />
+                                                            <a href=" http://water.weather.gov/ahps2/index.php?wfo=cae">River and Lake AHPS</a><br />
+                                                            <a href="http://www.weather.gov/cae/coop.html">Coop Reports</a><br />
+                                                            <a href=" http://www.weather.gov/cae/newLakeMapCAE.html">Lake Observations </a><br />
+                                                            <a href="http://www.weather.gov/cae/MetCalculator4.html">Met Calculator </a><br />
+                                                            <a href="http://mesowest.utah.edu/cgi-bin/droman/mesomap.cgi?state=SC&amp;rawsflag=3">Mesonet Data </a><br />
+                                                    </p>
+                              			</div>
+            				<div class="footer-column" style="padding:10px 10px;">
+                                            <p>
+                            <span class="footer-column-head">
+                                <a href=" http://radar.weather.gov/radar.php?rid=cae&amp;product=N0R&amp;overlay=11101111&amp;loop=no">Radar</a>
+                            </span><br />
+                                                        <a href=" http://radar.weather.gov/Conus/">Nationwide </a><br />
+                                                            <a href="https://radar.weather.gov/radar_lite.php?rid=cae&amp;product=NCR&amp;loop=yes">Columbia Radar </a><br />
+                                                            <a href=" http://www.srh.noaa.gov/ridge2/ridgenew2/?rid=CLT&amp;pid=TZL&amp;lat=35.292176308987244&amp;lon=">Charlotte TDWR </a><br />
+                                                    </p>
+                                                <p>
+                            <span class="footer-column-head">
+                                <a href=" http://forecast.weather.gov/wxplanner.php?site=cae">Forecasts</a>
+                            </span><br />
+                                                        <a href="http://www.weather.gov/CAE/winter">Winter</a><br />
+                                                            <a href=" http://forecast.weather.gov/wxplanner.php?site=cae">Activity Planner </a><br />
+                                                            <a href=" http://www.weather.gov/cae/digital.html">Graphic Forecasts </a><br />
+                                                            <a href="https://forecast.weather.gov/product_types.php?site=NWS">Text Products </a><br />
+                                                            <a href=" http://www.weather.gov/cae/aviation.html">Aviation </a><br />
+                                                            <a href=" http://www.weather.gov/cae/marine.html">Marine </a><br />
+                                                            <a href=" http://www.weather.gov/cae/fire_weather.html">Fire Weather </a><br />
+                                                            <a href=" http://www.weather.gov/cae/airquality.html">Air Quality </a><br />
+                                                            <a href=" http://forecast.weather.gov/product.php?site=NWS&amp;issuedby=CAE&amp;product=AFD&amp;format=CI&amp;version=1&amp;glossary=0&amp;highlight=off">Forecast Discussion </a><br />
+                                                            <a href=" http://www.weather.gov/alerts">RSS/XML </a><br />
+                                                            <a href="https://digital.weather.gov/?zoom=7&amp;lat=33.7&amp;lon=-81.12&amp;layers=F000BTTTFTT&amp;region=0&amp;element=45&amp;mxmz=false&amp;barbs=false&amp;subl=TFFFF&amp;units=english&amp;wunits=nautical&amp;coords=latlon&amp;tunits=localt">Experimental FRET</a><br />
+                                                    </p>
+                              			</div>
+            				<div class="footer-column" style="padding:10px 10px;">
+                                            <p>
+                            <span class="footer-column-head">
+                                <a href="http://water.weather.gov/ahps2/index.php?wfo=cae">Hydrology</a>
+                            </span><br />
+                                                        <a href=" https://forecast.weather.gov/product.php?site=CRH&amp;product=RVD&amp;issuedby=CAE">River Forecast </a><br />
+                                                            <a href=" http://water.weather.gov/ahps2/index.php?wfo=cae">River and Lakes AHPS </a><br />
+                                                            <a href=" http://waterwatch.usgs.gov/?m=real&amp;r=sc&amp;w=map">SC Streamflow </a><br />
+                                                            <a href=" http://waterwatch.usgs.gov/?m=real&amp;r=ga&amp;w=map">GA Streamflow </a><br />
+                                                            <a href=" http://www.weather.gov/cae/drought.html">Drought Info </a><br />
+                                                            <a href=" http://www.weather.gov/cae/past_conditions.html">Past Conditions </a><br />
+                                                    </p>
+                                                <p>
+                            <span class="footer-column-head">
+                                <a href=" http://www.nws.noaa.gov/climate/index.php?wfo=cae">Climate</a>
+                            </span><br />
+                                                        <a href="https://w2.weather.gov/climate/index.php?wfo=cae">Local </a><br />
+                                                            <a href="http://www.weather.gov/cae/cliplots">Climate Plots </a><br />
+                                                            <a href="https://w2.weather.gov/climate/">National </a><br />
+                                                            <a href="https://w2.weather.gov/climate/local_data.php?wfo=cae">More Climo </a><br />
+                                                            <a href=" http://www.weather.gov/cae/cocorahs.html">CoCoRaHs </a><br />
+                                                            <a href="http://www.weather.gov/cae/TodayinWeatherHistory">Weather History Calendar</a><br />
+                                                    </p>
+                              			</div>
+            				<div class="footer-column" style="padding:10px 10px;">
+                                            <p>
+                            <span class="footer-column-head">
+                                <a href=" http://www.weather.gov/cae/office.html">Office Programs</a>
+                            </span><br />
+                                                        <a href="http://www.weather.gov/cae/wrn">WeatherReady Nation</a><br />
+                                                            <a href="http://www.weather.gov/cae/skywarn.html">Skywarn </a><br />
+                                                            <a href=" http://www.weather.gov/cae/office.html">Office Information </a><br />
+                                                            <a href=" http://www.weather.gov/careers">Careers </a><br />
+                                                            <a href=" http://www.weather.gov/cae/outreach.html">Outreach </a><br />
+                                                            <a href=" http://www.weather.gov/cae/computer_models.html">Models </a><br />
+                                                            <a href=" http://www.weather.gov/cae/newsletter">Office Newsletters</a><br />
+                                                            <a href=" http://www.weather.gov/cae/local_research.html">Local Research </a><br />
+                                                            <a href="http://www.weather.gov/cae/CSTAR.html">C-Star Project</a><br />
+                                                    </p>
+                              			</div>
+            				<div class="footer-column" style="padding:10px 10px;">
+                                            <p>
+                            <span class="footer-column-head">
+                                <a href=" http://www.weather.gov/cae/EventArchive.html">Weather Events</a>
+                            </span><br />
+                                                        <a href=" http://www.weather.gov/cae/EventArchive.html">Event Archive </a><br />
+                                                            <a href=" https://nwschat.weather.gov/vtec/">Search Warnings </a><br />
+                                                            <a href=" https://nwschat.weather.gov/lsr/">Preliminary LSRs </a><br />
+                                                            <a href="http://www.sercc.com/climateinfo/monthly/lsr/se_lsr">LSR Archive </a><br />
+                                                            <a href=" http://www.ncdc.noaa.gov/stormevents/">Storm Database </a><br />
+                                                            <a href="https://weather.gov/cae/TropicalEventSummary">Tropical Cyclone Reports</a><br />
+                                                    </p>
+                                                <p>
+                            <span class="footer-column-head">
+                                <a href=" http://www.stormready.noaa.gov/">Weather Safety</a>
+                            </span><br />
+                                                        <a href="https://www.weather.gov/stormready/">Storm Ready </a><br />
+                                                            <a href=" http://www.weather.gov/safety">Safety Info </a><br />
+                                                            <a href="https://www.weather.gov/safety/heat">Heat Index </a><br />
+                                                            <a href="https://www.weather.gov/safety/winter">Wind Chill </a><br />
+                                                            <a href=" http://www.weather.gov/cae/nwr.html">NOAA Weather Radio </a><br />
+                                                            <a href=" http://www.weather.gov/learning">Education </a><br />
+                                                            <a href="https://www.weather.gov/owlie/publication_brochures">Brochures</a><br />
+                                                    </p>
+                              			</div>
+            		</div>
+	
+        </div><!-- end of <div class="footer"> -->
+
+        <!-- legal footer area -->
+        <div class="footer-legal">
+                    <div class="footer-legal">
+            <div class="footer-legal-content">
+
+                <div class="one-sixth-first" id="footer_legal_gov">
+                    <a href="http://www.usa.gov"><img src="/css/images/usa_gov.png" alt="usa.gov" width="110" height="30" /></a>
+                </div>
+
+                <div class="one-half-first" id="footer_legal_info">
+                    <p> 
+                        <a href="http://www.commerce.gov">US Dept of Commerce</a><br />
+                        <a href="http://www.noaa.gov">National Oceanic and Atmospheric Administration</a><br />
+                        <a href="https://www.weather.gov" >National Weather Service</a><br />
+                        Columbia, SC<br>2909 Aviation Way<br />West Columbia, SC 29170-2102<br />(803) 822-8135<br /><br /><a href="mailto:NWS.Columbia@noaa.gov">Comments? Questions? Please Contact Us.</a>                    </p>
+                </div><!-- end of <div class="one-half-first" id="footer_legal_info"> -->
+
+                <div class="one-third-last" id="footer_required_links">
+                    <div class="div-half">
+                        <a href="https://www.weather.gov/disclaimer">Disclaimer</a><br />
+                        <a href="http://www.cio.noaa.gov/services_programs/info_quality.html">Information Quality</a><br />
+                        <a href="https://www.weather.gov/help">Help</a><br />
+                        <a href="http://www.weather.gov/glossary">Glossary</a>
+                    </div>
+
+                    <div class="div-half">
+                        <a href="https://www.weather.gov/privacy">Privacy Policy</a><br />
+                        <a href="https://www.noaa.gov/foia-freedom-of-information-act">Freedom of Information Act (FOIA)</a><br />
+                        <a href="https://www.weather.gov/about">About Us</a><br />
+                        <a href="https://www.weather.gov/careers">Career Opportunities</a>
+                    </div>
+                </div><!-- end of <div class="one-third-last" id="footer_required_links"> -->
+
+            </div><!-- end of <div class="footer-legal-content"> -->
+        </div><!-- end of <div class="footer-legal"> -->
+        
+        </div><!-- end of <div class="footer-legal"> -->
+
+        <script type="text/javascript" src="//www.weather.gov/js/govshutdown.js"></script>
+    </body>
+</html>

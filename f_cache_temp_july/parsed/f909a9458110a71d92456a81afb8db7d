@@ -1,0 +1,328 @@
+Go to Main Content (Accesskey 2)Go to Site Menu (Accesskey 3)
+
+
+
+
+National Aeronautics and Space Administration
+Goddard Institute for Space Studies
+
+Goddard Space Flight CenterSciences and Exploration DirectorateEarth Sciences Division
+
+
+
+
+GISTEMP v4 Figures
+Graphs
+
+
+Global Maps
+
+
+Station Data
+
+
+Zonal Means: Series or Seasonal Cycle
+
+
+Animations
+
+
+
+
+
+
+GISS Surface Temperature Analysis (GISTEMP v4)
+
+The GISS Surface Temperature Analysis version 4 (GISTEMP v4) is an estimate of global surface temperature change.
+Graphs and tables are updated around the middle of every month using current data files from NOAA GHCN
+v4 (meteorological stations) and ERSST v5 (ocean areas), combined as
+described in our publications
+Hansen et al. (2010) and
+Lenssen et al. (2019).
+These updated files incorporate reports for the previous month and also late reports
+and corrections for earlier months.
+
+News and Updates
+
+Feb. 8, 2024:
+3 stations in Northern Canada were discovered to have a discontinuity in their records that is not present in the any other station in that area. This was reported to NOAA/NCEI and the reports after the discontinuity were removed.
+
+Jan. 12, 2024:
+NASA has posted a news release 2023 annual global temperature anomaly.
+The NASA Earth Observatory website has also posted an explainer about causes of the record anomaly.
+
+Oct. 13, 2023:
+NASA has posted a short feature about the September 2023 global temperature anomaly.
+
+Sep. 14, 2023:
+NASA has posted a news release about the Summer (JJA) 2023 global temperature anomaly.
+See the
+GISTEMP News page for a list of announcements and NASA articles related to the GISTEMP analysis.
+Announcements when our monthly updates are released are posted to the NASA/GISS Twitter feed.
+See the
+Updates to Analysis page for detailed update information about GISTEMP v4.
+
+Contacts/Personnel
+
+Before contacting us, please check if your question about the GISTEMP analysis is already answered in
+the FAQ.
+
+
+If the FAQ does not answer your question,
+please address your inquiry to
+Dr. Reto Ruedy.
+
+Other researchers currently participating in the GISTEMP analysis include
+Michael Hendrickson,
+Maxwell Elling,
+Dr. Makiko Sato,
+and Dr. Nathan Lenssen.
+
+
+The GISTEMP analysis was initiated by Dr. James E. Hansen, now retired.
+It is currently led by Dr. Gavin Schmidt.
+
+Past members on the GISTEMP team have included
+Dr. Sergej Lebedeff,
+Dr. Helene Wilson,
+Jay Glascoe,
+Avraham Persin,
+Dr. Ken Lo, and others.
+We also thank Nick Barnes et al. at the Clear Climate Code project for their contributions.
+
+Citation
+
+When referencing the GISTEMP v4 data provided here,
+please cite both this webpage and also our most recent
+scholarly publication about the data.
+In citing the webpage, be sure to include the date of access.
+
+GISTEMP Team, 2024:
+GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies.
+Dataset accessed 20YY-MM-DD at https://data.giss.nasa.gov/gistemp/.
+Lenssen, N., G. Schmidt, J. Hansen, M. Menne, A. Persin, R. Ruedy, and D. Zyss, 2019: Improvements in the GISTEMP uncertainty model. J. Geophys. Res. Atmos., 124, no. 12, 6307-6326, doi:10.1029/2018JD029522.
+
+Graphics from these GISTEMP pages are subject to NASA
+Image and Media guidance.
+Per those guidelines, graphics you may create using the website tools here do not require
+permission for you to use elsewhere, but acknowledgment of their source should be given.
+Please credit "NASA's Goddard Institute for Space Studies" or, if space is limited,
+"NASA GISS/GISTEMP".
+
+Background, History and Updates
+
+The basic GISS temperature analysis scheme was defined in the late 1970s by James Hansen when a method
+of estimating global temperature change was needed for comparison with one-dimensional global climate
+models.
+The analysis method was fully documented in
+Hansen and Lebedeff (1987).
+Several papers describing updates to the analysis followed over the following decades,
+most recently that of
+Hansen et al. (2010),
+as well as the uncertainty quantification of 
+Lenssen et al. (2019).
+For further details, please see the GISTEMP
+Background,
+History, and
+References pages.
+We also maintain a running record of modifications made to the analysis on our
+Updates to Analysis page. 
+The GISTEMP analysis is updated regularly. Graphs and tables are posted around the
+middle of every month using the latest GHCN and ERSST data. The update incorporates reports
+for the previous month as well as late reports and corrections for earlier months.
+Source Code
+Programs used in the GISTEMP analysis and documentation on their use are
+available for download.
+The programs assume a Unix-like operating system and require familiarity with Python for installation and use.
+
+Tables of Global and Hemispheric Monthly Means and Zonal Annual Means
+Combined Land-Surface Air and Sea-Surface Water Temperature Anomalies
+(Land-Ocean Temperature Index, L-OTI)
+The following are plain-text files in tabular format of temperature anomalies, i.e. deviations from the corresponding 1951-1980 means.
+
+Global-mean monthly, seasonal, and annual means, 1880-present, updated through most recent
+    month:
+    TXT,
+    CSV
+Northern Hemisphere-mean monthly, seasonal, and annual means, 1880-present, updated through
+    most recent month:
+    TXT,
+    CSV
+
+Southern Hemisphere-mean monthly, seasonal, and annual means, 1880-present, updated through
+    most recent month:
+    TXT,
+    CSV
+
+Zonal annual means, 1880-present, updated through most recent complete year:
+    TXT,
+    CSV
+
+AIRS v6 and AIRS v7 Temperature Anomalies
+The following tables show anomalies based on AIRS data vs. 2007-2016. Corresponding L-OTI anomaly data are also provided.
+
+Global-mean monthly, seasonal, and annual means, 2002-present, updated through most recent
+    month:
+    TXT,
+    CSV
+
+Northern Hemisphere-mean monthly, seasonal, and annual means, 2002-present, updated through
+    most recent month:
+    TXT,
+    CSV
+
+Southern Hemisphere-mean monthly, seasonal, and annual means, 2002-present, updated through
+    most recent month:
+    TXT,
+    CSV
+
+Zonal annual means, 2002-present, updated through most recent complete year:
+    TXT,
+    CSV
+
+
+Gridded Monthly Temperature Anomaly Data
+
+Users interested in the entire gridded surface air temperature anomaly data may
+download netCDF files containing selected series on a regular 2°×2°
+grid or the basic SBBX binary files.
+Compressed NetCDF Files (regular 2°×2° grid)
+
+Land-Ocean Temperature Index, ERSSTv5, 1200km smoothing (23 MB)
+Surface air temperature (no ocean data), 250km smoothing (9 MB)
+Land Mask on a 2°×2° grid
+
+Compressed Zarr Directories (regular 2°×2° grid)
+
+Land-Ocean Temperature Index, ERSSTv5, 1200km smoothing (53 MB)
+Surface air temperature (no ocean data), 250km smoothing (27 MB)
+
+Compressed Basic Subbox Grid Series (equal-area grid)
+
+Surface air temperature, 1200km smoothing - GISTEMP v4 (27 MB)
+Surface air temperature, 250km smoothing - GISTEMP v4 (9 MB)
+Sea surface air temperature (ERSSTv5), currently used (30 MB)
+Sea surface air temperature (ERSSTv4), used until July 2017 (30 MB)
+Sea surface air temperature (ERSSTv3b),  used until June 2015 (30 MB)
+Sea surface air temperature (HadR2), used until Nov. 2012 (30 MB)
+
+
+Also available are various FORTRAN programs and instructions to create (time series of) regular gridded
+anomaly maps from the basic files. Be sure to read the README file for discussion of the files' binary
+format.
+
+
+README.txt
+mkTsMap.f
+SBBX_to_nc.f
+SBBX_to_1x1.f
+SBBX_to_txt.f
+
+
+
+
+
+References
+Please see the GISTEMP references page for citations to publications
+related to this research.
+Copies of many of our papers are available in the GISS publications database.
+
+
+
+
+Related Links
+
++ Frequently Asked Questions
++ GISTEMP History
++ Uncertainty Quantification
++ UN FAOSTAT Temperature Data
++ NOAA/NCEI State of the Climate
++ Update Release Schedule
+Data Sources:
++ Land data: GHCN v4
++ Ocean data: ERSST v5
++ El Niño data
++ AIRS Data v6
++ AIRS Data v7
+
+
+
+
+Site Menu
+
+GISS Home
+News & Features
+
+News & Features Overview
+Projects & Groups
+
+Projects Overview
+Global Climate Modeling
+Astrobiology / ROCKE-3D
+Climate Impacts
+ISCCPDatasets
+
+Datasets Overview
+GISTEMP Surface Temperature
+Model E Simulations
+Model Forcings
+ROCKE-3D Simulations
+ISCCP Data Products
+GACP Data Products
+Publications
+
+Publications Overview
+2024 Publications
+2023 Publications
+2022 Publications
+2021 Publications
+2020 Publications
+Accepted & In Press
+Author Bibliographies
+Annual Best
+Most Cited
+Dissertations
+Software
+
+Software Overview
+GCM Model E
+Panoply Data Viewer
+G.Projector
+Mars24 Sunclock
+Education
+
+Education Overview
+Graduate Study
+Postdoc Research
+Internships
+CCRI
+STEM Curriculum Modules
+Events
+
+Events Overview
+Lunch Seminars
+Past Events
+About GISS
+
+About GISS
+Management Staff
+Personnel Directory
+Visitors' Info
+Employment
+
+
+
+
+
+
+
+NASA Official:
+
+Gavin A. Schmidt
+Website Curator:
+
+Robert B. Schmunk
+Page updated: 2024-02-08 10:46
+
+NASA Privacy Policy & Important Notices
+Contact UsImage Use
