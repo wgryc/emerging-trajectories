@@ -1,8 +1,8 @@
 <!--
 ****************************************************************************
 * SERVER NAME: water.weather.gov
-* HOST NAME  : www10.mo.nids.noaa.gov
-* Date       : 2024/02/14 04:43:48 UTC
+* HOST NAME  : www6.mo.nids.noaa.gov
+* Date       : 2024/02/15 00:03:24 UTC
 ****************************************************************************
 -->
 
@@ -39,10 +39,10 @@
             var config = {
 'mapcache_url': '/ahps/gis.php',
 'analysis_date' : {
-'timestamp': '1707825600',
+'timestamp': '1707912000',
 'year': '2024',
 'month': '02',
-'day': '13'
+'day': '14'
 },
 'created': 'Created on: Not Available',
 'lat': '0',
@@ -64,7 +64,7 @@
 'newest_forecast': '12',
 'zoom': '0',
 'domain': 'current',
-'valid': 'Valid on: February 13, 2024 - 12:00 UTC'
+'valid': 'Valid on: February 14, 2024 - 12:00 UTC'
 };var conus = {
 'zoom': '4',
 'lat': '34.87',
@@ -1389,16 +1389,16 @@
 }
 };
 var today = {
+'timestamp': '1707912000',
+'year': '2024',
+'month': '02',
+'day': '14'
+};
+var yesterday = {
 'timestamp': '1707825600',
 'year': '2024',
 'month': '02',
 'day': '13'
-};
-var yesterday = {
-'timestamp': '1707739200',
-'year': '2024',
-'month': '02',
-'day': '12'
 };
 var leap_year = true;
 var base_url = 'https://water.weather.gov/precip/index.php';
@@ -1763,6 +1763,19 @@ var valid = {
 						<div class="toggle_day_view day_view_select">
 							<div style="font-weight: bold;">Time Range:</div>
 							<select class="timeframe tf_recent" id="today" name="timeframe" size="4" tabindex="4" style="margin: 2px 0px 0px 0px;display:none;"disabled>
+								<option value="1day" selected>February 14, 2024 - Today</option>
+<option value="last7days">February 14, 2024 - Last 7 Days</option>
+<option value="last14days">February 14, 2024 - Last 14 Days</option>
+<option value="last30days">February 14, 2024 - Last 30 Days</option>
+<option value="last60days">February 14, 2024 - Last 60 Days</option>
+<option value="last90days">February 14, 2024 - Last 90 Days</option>
+<option value="last180days">February 14, 2024 - Last 180 Days</option>
+<option value="last365days">February 14, 2024 - Last 365 Days</option>
+<option value="month2date">February 14, 2024 - Month to Date</option>
+<option value="year2date">February 14, 2024 - Year to Date</option>
+<option value="wateryear2date">February 14, 2024 - Water Year to Date (Oct. 1)</option>
+							</select>
+							<select class="timeframe tf_recent" id="yesterday" name="timeframe" size="4" tabindex="4" style="margin: 2px 0px 0px 0px;display:inline-block;">
 								<option value="1day" selected>February 13, 2024 - Today</option>
 <option value="last7days">February 13, 2024 - Last 7 Days</option>
 <option value="last14days">February 13, 2024 - Last 14 Days</option>
@@ -1774,19 +1787,6 @@ var valid = {
 <option value="month2date">February 13, 2024 - Month to Date</option>
 <option value="year2date">February 13, 2024 - Year to Date</option>
 <option value="wateryear2date">February 13, 2024 - Water Year to Date (Oct. 1)</option>
-							</select>
-							<select class="timeframe tf_recent" id="yesterday" name="timeframe" size="4" tabindex="4" style="margin: 2px 0px 0px 0px;display:inline-block;">
-								<option value="1day" selected>February 12, 2024 - Today</option>
-<option value="last7days">February 12, 2024 - Last 7 Days</option>
-<option value="last14days">February 12, 2024 - Last 14 Days</option>
-<option value="last30days">February 12, 2024 - Last 30 Days</option>
-<option value="last60days">February 12, 2024 - Last 60 Days</option>
-<option value="last90days">February 12, 2024 - Last 90 Days</option>
-<option value="last180days">February 12, 2024 - Last 180 Days</option>
-<option value="last365days">February 12, 2024 - Last 365 Days</option>
-<option value="month2date">February 12, 2024 - Month to Date</option>
-<option value="year2date">February 12, 2024 - Year to Date</option>
-<option value="wateryear2date">February 12, 2024 - Water Year to Date (Oct. 1)</option>
 							</select>
 						</div>
 						<div class="time_select" id="Y" style="display: none;">
@@ -1857,8 +1857,8 @@ var valid = {
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
-<option value="13" selected>13</option>
-<option value="14">14</option>
+<option value="13">13</option>
+<option value="14" selected>14</option>
 <option value="15">15</option>
 <option value="16">16</option>
 <option value="17">17</option>
@@ -1890,8 +1890,8 @@ var valid = {
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
-<option value="13" selected>13</option>
-<option value="14" disabled>14</option>
+<option value="13">13</option>
+<option value="14" selected>14</option>
 <option value="15" disabled>15</option>
 <option value="16" disabled>16</option>
 <option value="17" disabled>17</option>
@@ -1921,8 +1921,8 @@ var valid = {
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
-<option value="13" selected>13</option>
-<option value="14">14</option>
+<option value="13">13</option>
+<option value="14" selected>14</option>
 <option value="15">15</option>
 <option value="16">16</option>
 <option value="17">17</option>
@@ -1954,8 +1954,8 @@ var valid = {
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
-<option value="13" selected>13</option>
-<option value="14">14</option>
+<option value="13">13</option>
+<option value="14" selected>14</option>
 <option value="15">15</option>
 <option value="16">16</option>
 <option value="17">17</option>
@@ -1986,8 +1986,8 @@ var valid = {
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
-<option value="13" selected>13</option>
-<option value="14">14</option>
+<option value="13">13</option>
+<option value="14" selected>14</option>
 <option value="15">15</option>
 <option value="16">16</option>
 <option value="17">17</option>
@@ -2019,8 +2019,8 @@ var valid = {
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
-<option value="13" selected>13</option>
-<option value="14">14</option>
+<option value="13">13</option>
+<option value="14" selected>14</option>
 <option value="15">15</option>
 <option value="16">16</option>
 <option value="17">17</option>
@@ -2051,8 +2051,8 @@ var valid = {
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
-<option value="13" selected>13</option>
-<option value="14">14</option>
+<option value="13">13</option>
+<option value="14" selected>14</option>
 <option value="15">15</option>
 <option value="16">16</option>
 <option value="17">17</option>
@@ -2084,8 +2084,8 @@ var valid = {
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
-<option value="13" selected>13</option>
-<option value="14">14</option>
+<option value="13">13</option>
+<option value="14" selected>14</option>
 <option value="15">15</option>
 <option value="16">16</option>
 <option value="17">17</option>
@@ -2117,8 +2117,8 @@ var valid = {
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
-<option value="13" selected>13</option>
-<option value="14">14</option>
+<option value="13">13</option>
+<option value="14" selected>14</option>
 <option value="15">15</option>
 <option value="16">16</option>
 <option value="17">17</option>
@@ -2149,8 +2149,8 @@ var valid = {
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
-<option value="13" selected>13</option>
-<option value="14">14</option>
+<option value="13">13</option>
+<option value="14" selected>14</option>
 <option value="15">15</option>
 <option value="16">16</option>
 <option value="17">17</option>
@@ -2182,8 +2182,8 @@ var valid = {
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
-<option value="13" selected>13</option>
-<option value="14">14</option>
+<option value="13">13</option>
+<option value="14" selected>14</option>
 <option value="15">15</option>
 <option value="16">16</option>
 <option value="17">17</option>
@@ -2214,8 +2214,8 @@ var valid = {
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
-<option value="13" selected>13</option>
-<option value="14">14</option>
+<option value="13">13</option>
+<option value="14" selected>14</option>
 <option value="15">15</option>
 <option value="16">16</option>
 <option value="17">17</option>

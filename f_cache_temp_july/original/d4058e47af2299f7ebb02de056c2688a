@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <script src="https://www.google-analytics.com/analytics.js"></script>
+    <meta charset="utf-8" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1Q1BML6E5"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);ga("set", "hostname", "ncei.noaa.gov");gtag("config", "G-E1Q1BML6E5", {"groups":"default","page_placeholder":"PLACEHOLDER_page_location","link_attribution":true,"allow_ad_personalization_signals":false});</script>
+<meta name="description" content="Every February 2, we anxiously await groundhog Punxsutawney Phil’s prediction of spring’s arrival, but how accurate is he?" />
+<meta name="abstract" content="Every February 2, we anxiously await groundhog Punxsutawney Phil’s prediction of spring’s arrival, but how accurate is he?" />
+<meta name="keywords" content="climate,data,observations,weather,coasts,oceans,geophysics,satellites" />
+<link rel="canonical" href="https://www.ncei.noaa.gov/news/groundhog-day-forecasts-and-climate-history" />
+<link rel="shortlink" href="https://www.ncei.noaa.gov/node/103" />
+<meta name="generator" content="Drupal 8 (http://drupal.org)" />
+<link rel="icon" href="https://www.ncei.noaa.gov/themes/custom/ncei/favicon.ico" />
+<meta property="og:site_name" content="National Centers for Environmental Information (NCEI)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.ncei.noaa.gov/news/groundhog-day-forecasts-and-climate-history" />
+<meta property="og:title" content="Groundhog Day Forecasts and Climate History" />
+<meta property="og:description" content="Every February 2, we anxiously await groundhog Punxsutawney Phil’s prediction of spring’s arrival, but how accurate is he?" />
+<meta property="og:updated_time" content="2024-02-02T07:01:56-0500" />
+<meta property="article:published_time" content="2017-02-01T14:29:25-0500" />
+<meta property="article:modified_time" content="2024-02-02T07:01:56-0500" />
+<meta property="fb:app_id" content="348738721824427" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Every February 2, we anxiously await groundhog Punxsutawney Phil’s prediction of spring’s arrival, but how accurate is he?" />
+<meta name="twitter:title" content="Groundhog Day Forecasts and Climate History" />
+<meta name="twitter:url" content="https://www.ncei.noaa.gov/news/groundhog-day-forecasts-and-climate-history" />
+<meta name="twitter:image" content="https://www.ncei.noaa.gov/sites/g/files/anmtlf171/files/sites/default/files/Untitled%20design.png" />
+<meta name="twitter:image:alt" content="Every February 2, we anxiously await groundhog Punxsutawney Phil’s prediction of spring’s arrival, but how accurate is he?" />
+<link name="pullquote_css" rel="stylesheet" type="text/css" href="/modules/custom/pullquote/css/pullquote_style_1.css" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};
+</script>
+
+    <title>Groundhog Day Forecasts and Climate History | News | National Centers for Environmental Information (NCEI)</title>
+    <link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/ajax-progress.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/align.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/autocomplete-loading.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/fieldgroup.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/container-inline.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/clearfix.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/details.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/hidden.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/item-list.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/js.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/nowrap.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/position-container.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/progress.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/reset-appearance.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/resize.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/sticky-header.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/system-status-counter.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/system-status-report-counters.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/system-status-report-general-info.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/tabledrag.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/tablesort.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/tree-child.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/views/views.module.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/modules/contrib/addtoany/css/addtoany.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/modules/contrib/back_to_top/css/back_to_top.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/modules/contrib/extlink/extlink.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/libraries/uswds/css/uswds.min.css?s8gcja" />
+<link rel="stylesheet" media="all" href="/themes/custom/ncei/dist/style.css?s8gcja" />
+
+    
+    <script src="//search.usa.gov/javascripts/remote.loader.js"></script>
+  </head>
+  <body class="path-news-groundhog-day-forecasts-and-climate-history path-node page-node-type-article">
+    <a href="#main-content" class="visually-hidden focusable">Skip to main content</a>
+    
+          <div class="container-fluid main" >
+
+    <section class="usa-banner">
+     
+ <div class="usa-banner">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img class="usa-banner__header-flag" src="/libraries/uswds/img/us_flag_small.png" width="16px" height="10px" alt="U.S. flag">
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here's how you know</p>
+        </div>
+        <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
+          <span class="usa-banner__button-text">Here's how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden="">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/libraries/uswds/img/icon-dot-gov.svg" alt="Dot gov">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+              Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/libraries/uswds/img/icon-https.svg" alt="Https">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+              The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </section>
+    
+      <header role="banner">
+	<a name="pagetop"></a>
+
+  <nav class="navbar navbar-expand-sm navbar-dark header-dark container-fluid flex-row">
+    <div class="container">
+      <div class="system-branding">
+        <a href="/" class="branding" rel="home">
+          <img src="/themes/custom/ncei/logo.svg" class="logo" id="ncei-logo" title="National Centers for Environmental Information logo" alt="National Centers for Environmental Information logo"/>
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <!--<span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>-->
+        <span class="mobilemenubutton">MENU</span>
+      </button>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-sm navbar-dark header-dark container-fluid">
+    <div class="container">
+          <nav role="navigation" aria-labelledby="block-ncei-main-menu-menu" id="block-ncei-main-menu" class="block block-menu navigation menu--main navbar navbar-expand-lg">
+
+          
+    
+        
+<div class="collapse navbar-collapse order-1 order-md-0" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+        <a href="/" class="nav-link" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+              </li>
+          <li class="nav-item">
+        <a href="/products" class="nav-link" data-drupal-link-system-path="products">Products</a>
+              </li>
+          <li class="nav-item">
+        <a href="/services" class="nav-link" data-drupal-link-system-path="node/618">Services</a>
+                                <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+        <a href="/access" class="nav-link" data-drupal-link-system-path="node/723">Access</a>
+              </li>
+          <li class="nav-item">
+        <a href="/archive" class="nav-link" data-drupal-link-system-path="node/724">Archive</a>
+              </li>
+          <li class="nav-item">
+        <a href="/certification" class="nav-link" data-drupal-link-system-path="node/194">Certification</a>
+              </li>
+          <li class="nav-item">
+        <a href="/maps-and-geospatial-products" class="nav-link" data-drupal-link-system-path="node/469">Maps</a>
+              </li>
+          <li class="nav-item">
+        <a href="/monitoring" class="nav-link" data-drupal-link-system-path="node/1510">Monitoring</a>
+              </li>
+          <li class="nav-item">
+        <a href="/online-store" class="nav-link" data-drupal-link-system-path="node/1833">Online Store</a>
+              </li>
+          <li class="nav-item">
+        <a href="/regional" class="nav-link" data-drupal-link-system-path="node/3611">Regional</a>
+              </li>
+          <li class="nav-item">
+        <a href="/services/state-of-the-services" class="nav-link" data-drupal-link-system-path="node/4871">State of the Services</a>
+              </li>
+          <li class="nav-item">
+        <a href="/services/world-data-system" class="nav-link" data-drupal-link-system-path="node/1597">World Data System</a>
+              </li>
+        </ul>
+  
+              </li>
+          <li class="nav-item">
+        <a href="/resources" class="nav-link" data-drupal-link-system-path="node/627">Resources</a>
+                                <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+        <a href="/alerts" class="nav-link" data-drupal-link-system-path="alerts">Alerts</a>
+              </li>
+          <li class="nav-item">
+        <a href="https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes" class="nav-link">Change Notices</a>
+              </li>
+          <li class="nav-item">
+        <a href="/resources/education" class="nav-link" data-drupal-link-system-path="node/629">Education</a>
+              </li>
+          <li class="nav-item">
+        <a href="/resources/metadata" class="nav-link" data-drupal-link-system-path="node/630">Metadata</a>
+              </li>
+          <li class="nav-item">
+        <a href="/weather-climate-links" class="nav-link" data-drupal-link-system-path="node/1783">Quick Links</a>
+              </li>
+        </ul>
+  
+              </li>
+          <li class="nav-item">
+        <a href="/news" class="nav-link" data-drupal-link-system-path="node/53">News</a>
+                                <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+        <a href="/bams-state-of-climate" class="nav-link" data-drupal-link-system-path="node/1776">BAMS</a>
+              </li>
+          <li class="nav-item">
+        <a href="https://repository.library.noaa.gov/gsearch?terms=national%20centers%20for%20environmental%20information" target="_blank" class="nav-link">Publications</a>
+              </li>
+        </ul>
+  
+              </li>
+          <li class="nav-item">
+        <a href="/contact" class="nav-link" data-drupal-link-system-path="node/32">Contact</a>
+              </li>
+          <li class="nav-item">
+        <a href="/about-us" class="nav-link" data-drupal-link-system-path="node/3001">About</a>
+                                <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+        <a href="/about/locations" class="nav-link" data-drupal-link-system-path="node/1572">Locations</a>
+              </li>
+          <li class="nav-item">
+        <a href="https://www.ncei.noaa.gov/about/our-impact" class="nav-link">Our Impact</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+</div>
+
+
+  </nav>
+
+
+
+      <div class="collapse navbar-collapse order-1">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <form id="search_form" class="form-inline ncei-search" title="Search NCEI" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get">
+              <input type="hidden" name="utf8" value="&#x2713;" class="d-none" />
+              <input type="hidden" name="affiliate" id="affiliate" class="d-none" value="nceinoaa" />
+              <label class="d-none" for="query">Enter Search Term(s):</label>
+              <input type="text" name="query" id="query" autocomplete="off" class="usagov-search-autocomplete" placeholder="Search NCEI" tabindex="0" aria-label="Search" />
+              <button class="btn btn-sm btn-search" name="commit" type="submit">
+                <img src="/themes/custom/ncei/images/icons/src/search.svg" class="icon-search" alt="Click to run NCEI search">
+                Search
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+        </div>
+  </nav>
+</header>
+
+  
+  
+  
+  
+  
+  <a href="#content" id="main-content" tabindex="-1" class="sr-only sr-only-focusable"></a>
+  
+      <div class="layout-content col-md-12">
+  
+                <div class="alerts">
+                  <div class="block"  class="views-element-container" id="block-views-block-ncei-alert-block-1">
+  
+    
+      <div><div class="js-view-dom-id-3654290b517a4cd134b203eb69c31bb52a03c891f2882d26a584916f1c9795de">
+  
+  
+  
+
+  
+  
+  
+
+  
+<div class="site-alert">
+        
+        <div class="alert-container">
+    <div class="alert-rect severity-high"></div>
+    <div class="alert-wrapper severity-high" role="alert">
+      <div class="alert-body">
+        <div class="alert-text"> <p>Please note: Due to scheduled maintenance, many NCEI systems will be unavailable February 13th, 8:00 AM ET - February 14th, 10:00 PM ET. We apologize for any inconvenience.</p>
+ </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+              </div>
+      <div class="row bg-blue blue-section">
+        <div class="container">
+          <div class="text-white">
+                            <div class="block"  id="block-breadcrumbs">
+  
+    
+      
+  <nav role="navigation" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+                  <a class="breadcrumb-link" href="/">Home</a>
+              </li>
+          <li class="breadcrumb-item">
+                  <a class="breadcrumb-link" href="/news">News</a>
+              </li>
+          <li class="breadcrumb-item">
+                  Groundhog Day Forecasts and Climate History
+              </li>
+        </ol>
+  </nav>
+
+  </div>
+
+  
+                    </div>
+                                <h1 class=""><span property="schema:name">Groundhog Day Forecasts and Climate History</span>
+</h1>
+                    
+                    
+                            </div>
+      </div>
+          
+              <div class="container main-body">
+                      <div data-drupal-messages-fallback class="hidden"></div>
+<div class="block"  id="block-ncei-content">
+  
+    
+      
+<article data-history-node-id="103" about="/news/groundhog-day-forecasts-and-climate-history" typeof="schema:Article" class="node node--type-article node--view-mode-full">
+        <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="article--hero-image">
+
+
+            <div>    <img loading="eager" srcset="/sites/g/files/anmtlf171/files/styles/max_325x325/public/sites/default/files/Untitled%20design.png?itok=hC-TAKZJ 325w, /sites/g/files/anmtlf171/files/styles/max_650x650/public/sites/default/files/Untitled%20design.png?itok=801m51v5 650w, /sites/g/files/anmtlf171/files/styles/max_1300x1300/public/sites/default/files/Untitled%20design.png?itok=ThpEy12q 1200w" sizes="(min-width: 1290px) 1290px, 100vw" src="/sites/g/files/anmtlf171/files/styles/max_325x325/public/sites/default/files/Untitled%20design.png?itok=hC-TAKZJ" alt="Photo of a groundhog, Courtesy of Gettyimages" title="Photo of a groundhog, Courtesy of Gettyimages" typeof="foaf:Image" />
+
+
+</div>
+      </div>
+
+
+
+            <div>  <div class="article--hero-image--credit">
+    Courtesy of Gettyimages
+    </div>
+</div>
+      
+
+<div  class="row">
+      
+<div  class="col-md-8">
+      
+
+
+            <div property="schema:text" class="clearfix text-formatted"><p>Every February 2, a crowd of thousands gathers at Gobbler’s Knob in Punxsutawney, Pennsylvania, to await a special forecast from a groundhog named Phil. According to legend, if the 20-pound groundhog emerges and sees his shadow, the United States can expect six more weeks of winter weather. But, if Phil doesn’t see his shadow, we can expect warmer temperatures and the arrival of an early spring.</p><p>Even though he’s been forecasting since 1887, Phil’s track record for the entire country isn’t perfect. To determine just how accurate he is, we’ve compared <a href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/" rel="nofollow"><u>U.S. national temperatures</u></a> with Phil’s forecasts. On average, Phil has gotten it right 30% of the time over the past 10 years.</p><h2>Phil’s 2023 Forecast</h2><p>In 2023, Phil forecast a "long winter" when he saw his shadow and predicted an additional six weeks of wintry temperatures. In fact, the contiguous United States saw above average temperatures in February and slightly below average temperatures in March of last year. Phil was 50/50 on his forecast.</p><p>The <a href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/national/rankings/110/tavg/202302" rel="nofollow"><u>average contiguous U.S. temperature</u></a> during February 2023 was 36.5°F. It was 2.6°F above the 20th century average. 2023 was the 102nd-coldest February in the 128-year period of record.</p><p>February 2023 was above average across much of the eastern half of the contiguous U.S., including parts of the northern High Plains, with below-average temperatures from the central Rockies to the West Coast. The <a href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/statewide/rankings/50/tavg/202302" rel="nofollow">Alaska statewide February temperature</a> was 6.0°F, which is 1.2°F above the long-term average. </p><p>March 2023 was cooler than average in the contiguous U.S. The average temperature was <a href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/national/rankings/110/tavg/202303" rel="nofollow"><u>40.6°F, 0.9°F below the 20th-century average</u></a>. Generally, temperatures were above average from the southern Plains to New England and in parts of the Great Lakes, with below-average temperatures from the northern Plains to the West Coast. Alaska had an average temperature of <a href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/statewide/rankings/50/tavg/202303" rel="nofollow">13.5°F, which is 2.7°F above the long-term average</a>.</p><h2>Phil’s First Forecast</h2><p>In 1887, when he made his debut as the official groundhog forecaster for the entire country, Phil saw his shadow. His first prediction of six more weeks of winter was accurate for a few regions, but it came up short for several others.</p><p>According to the <a href="https://www.ncei.noaa.gov/sites/default/files/february-1887-monthly-weather-review-final.pdf" rel="nofollow"><u>February 1887 Monthly Weather Review</u></a>, the Northeast, Great Lakes region, and West saw temperatures well below normal. The Southeast and Gulf states saw temperatures well above normal during the month. And, according to the <a href="https://www.ncei.noaa.gov/sites/default/files/march-1887-monthly-weather-review-final.pdf" rel="nofollow"><u>March 1887 Monthly Weather Review</u></a>, the Northeast, Great Lakes region, Ohio Valley, and Southeast saw temperatures well below normal. Areas west of the Mississippi River valley saw temperatures above normal.</p><h2>Predicting the Arrival of Spring Is Difficult</h2><p>Predicting the arrival of springtime for an entire country—especially one with varied regional climates like the United States—isn’t easy! Phil’s track record is evidence of that. However, if you’re interested in doing your own analysis for your region, check out our <a href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/" rel="nofollow"><u>Climate at a Glance</u></a> tool to access historical U.S. monthly temperature data. More of <a href="https://data.ydr.com/punxsutawney-phil-groundhog-day-shadow-history/" rel="nofollow"><u>Phil’s past predictions</u></a> are also available from the Punxsutawney Groundhog Club.</p><p>For an overview of some fun facts about Groundhog Day and the accuracy of the furry forecaster, check out our infographic.</p><img src="/sites/g/files/anmtlf171/files/inline-images/groundhog2024-infographic_final.png" data-entity-uuid="69f934fc-b8a5-412f-baab-47da144bb914" data-entity-type="file" alt="Infographic showing a cartoon Punxsutawney Phil next to facts, figures, and a data table illustrating the level of accuracy of his predictions. " width="3300" height="2400" loading="lazy" /><p> </p><p>To see the latest climate outlooks, visit <a href="http://www.cpc.ncep.noaa.gov/" rel="nofollow">NOAA’s Climate Prediction Center</a>. For the current weather forecast in your area, check out your local <a href="https://www.weather.gov/" rel="nofollow">National Weather Service</a> forecast office. </p></div>
+      
+
+  </div>
+
+<div  class="col-md-4 article--sidebar">
+      
+<div  class="article--dates block">
+    <h3>Published</h3>
+      
+
+
+            <div>    February 2, 2017
+</div>
+      
+
+
+
+  <div>
+    <label>Updated Date</label>
+              <div>  <div datetime="2024-02-02T12:00:00Z" class="article--date-updated">
+    February 2, 2024
+    </div>
+</div>
+          </div>
+
+
+      <div><p>Now includes the latest analysis and climate information for 2023.</p></div>
+  
+  </div>
+
+<div  class="article--related-links block">
+    <h3>Related Links</h3>
+      
+
+
+      <div>
+                <div><a href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/national/rankings">U.S. Climatological Rankings</a></div>
+                <div><a href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/">Climate at a Glance</a></div>
+                <div><a href="https://www.ncei.noaa.gov/access/monitoring/monthly-report/national/202313">U.S. Monthly, Seasonal, and Annual Climate Reports</a></div>
+                <div><a href="https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals">U.S. Climate Normals</a></div>
+          </div>
+  
+
+  </div>
+
+<div  class="article--related-files block">
+    <h3>Related Files</h3>
+      
+
+
+      <div>
+                <div><span class="file file--mime-application-pdf file--application-pdf"><a href="/sites/g/files/anmtlf171/files/february-1887-monthly-weather-review-final.pdf" type="application/pdf" title="february-1887-monthly-weather-review-final.pdf">February 1887 Monthly Weather Review Form</a></span>
+</div>
+                <div><span class="file file--mime-application-pdf file--application-pdf"><a href="/sites/g/files/anmtlf171/files/march-1887-monthly-weather-review-final.pdf" type="application/pdf" title="march-1887-monthly-weather-review-final.pdf">March 1887 Monthly Weather Review Form</a></span>
+</div>
+          </div>
+  
+
+  </div>
+
+<div  class="article--tags block">
+    <h3>Article Tags</h3>
+      
+
+
+      <div>
+                <div>  <div class="article--tag">
+    <a href="/taxonomy/tags/educationoutreach" property="schema:about" class="article--tag" hreflang="en">Education/Outreach</a>
+    </div>
+</div>
+                <div>  <div class="article--tag">
+    <a href="/taxonomy/tags/air-temperature" property="schema:about" class="article--tag" hreflang="en">Air Temperature</a>
+    </div>
+</div>
+                <div>  <div class="article--tag">
+    <a href="/taxonomy/tags/holidays" property="schema:about" class="article--tag" hreflang="en">Holidays</a>
+    </div>
+</div>
+                <div>  <div class="article--tag">
+    <a href="/taxonomy/tags/animals" property="schema:about" class="article--tag" hreflang="en">Animals</a>
+    </div>
+</div>
+                <div>  <div class="article--tag">
+    <a href="/taxonomy/tags/historyfolklore" property="schema:about" class="article--tag" hreflang="en">History/Folklore</a>
+    </div>
+</div>
+          </div>
+  
+
+
+
+      <div>
+                <div>  <div class="article--tag">
+    <a href="/taxonomy/tags/north-america" class="article--tag" hreflang="en">North America</a>
+    </div>
+</div>
+          </div>
+  
+
+  </div>
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  </div>
+<div class="block"  id="block-addtoanybuttons">
+  
+    
+      <div class="addtoany--block">
+  
+  <span class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-url="https://www.ncei.noaa.gov/news/groundhog-day-forecasts-and-climate-history" data-a2a-title="Groundhog Day Forecasts and Climate History">
+          
+    
+          <a class="a2a_button_email"></a>
+<a class="a2a_button_print"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_linkedin"></a>
+    
+      </span>
+</div>
+
+  </div>
+<div class="block"  class="views-element-container" id="block-views-block-related-news-new-block">
+  
+      <h2>Related News</h2>
+    
+      <div><div class="js-view-dom-id-9155f0ac78454e99e76ca069c4d9f3bf9aa59a7c51c5c9536c67fe6e2adf7cd9">
+  
+  
+  
+
+  
+  
+  
+
+  
+<div class="row">
+       
+
+
+<div class="col-lg-4 front-news col-md-12">
+  <div class="card-body">
+    <div class="card_img">
+      <a href="/news/us-drought-weekly-report-february-6-2024
+" aria-hidden="true" tabindex="-1">
+        <img loading="lazy" src="/sites/g/files/anmtlf171/files/styles/600x300/public/2.6.24%20USDM%20480x480.png?itok=KgZWxj_W" alt="Furry brown rodent that resembles a groundhog in a field of yellow and purple flowers." title="Furry brown rodent that resembles a groundhog in a field of yellow and purple flowers." typeof="foaf:Image" class="image-style-_00x300" />
+
+
+
+
+            </a>
+    </div>
+    <div class="card-block">
+       <p class="card-date">
+      February 9, 2024
+
+
+  </p>
+
+      <h3 class="card-title card-title--featured-news-title">
+      <a href="/news/us-drought-weekly-report-february-6-2024" hreflang="en">U.S. Drought: Weekly Report for February 6, 2024</a>
+
+  </h3>
+
+       <p class="">
+      
+  </p>
+      <a class="card_link" href="/news/us-drought-weekly-report-february-6-2024
+" aria-hidden="true" tabindex="-1">Read More</a>
+    </div>
+  </div>
+</div>
+
+       
+
+
+<div class="col-lg-4 front-news col-md-12">
+  <div class="card-body">
+    <div class="card_img">
+      <a href="/news/groundhog-day-forecasts-and-climate-history
+" aria-hidden="true" tabindex="-1">
+        <img loading="lazy" src="/sites/g/files/anmtlf171/files/styles/600x300/public/field/image/480%20by%20480%20teaser.png?itok=f07N2t2C" alt="Photo of a groundhog, Courtesy of Gettyimages" title="Photo of a groundhog, Courtesy of Gettyimages" typeof="foaf:Image" class="image-style-_00x300" />
+
+
+
+
+            </a>
+    </div>
+    <div class="card-block">
+       <p class="card-date">
+      February 2, 2024
+
+
+  </p>
+
+      <h3 class="card-title card-title--featured-news-title">
+      <a href="/news/groundhog-day-forecasts-and-climate-history" hreflang="und">Groundhog Day Forecasts and Climate History</a>
+
+  </h3>
+
+       <p class="">
+      
+  </p>
+      <a class="card_link" href="/news/groundhog-day-forecasts-and-climate-history
+" aria-hidden="true" tabindex="-1">Read More</a>
+    </div>
+  </div>
+</div>
+
+       
+
+
+<div class="col-lg-4 front-news col-md-12">
+  <div class="card-body">
+    <div class="card_img">
+      <a href="/news/us-drought-weekly-report-january-30-2024
+" aria-hidden="true" tabindex="-1">
+        <img loading="lazy" src="/sites/g/files/anmtlf171/files/styles/600x300/public/1.30.24%20USDM%20480x480.png?itok=g9z_MBPH" alt="Silhouette of a person in a cowboy hat riding a horse and leading another horse with the sunset casting orange colors against the clouds. " title="Silhouette of a person in a cowboy hat riding a horse and leading another horse with the sunset casting orange colors against the clouds. " typeof="foaf:Image" class="image-style-_00x300" />
+
+
+
+
+            </a>
+    </div>
+    <div class="card-block">
+       <p class="card-date">
+      February 1, 2024
+
+
+  </p>
+
+      <h3 class="card-title card-title--featured-news-title">
+      <a href="/news/us-drought-weekly-report-january-30-2024" hreflang="en">U.S. Drought: Weekly Report for January 30, 2024</a>
+
+  </h3>
+
+       <p class="">
+      
+  </p>
+      <a class="card_link" href="/news/us-drought-weekly-report-january-30-2024
+" aria-hidden="true" tabindex="-1">Read More</a>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+  
+      </div>
+    
+  </div>
+  
+</div>
+<footer class="container-fluid footer">
+  <div class="row">
+
+        <div class="container-fluid block--return-to-top return-to-top">
+      <div class="container">
+        <a href="#pagetop">Return to top</a>
+      </div>
+    </div>
+
+    <div class="container block" id="footerlinks-container">
+
+            <div class="row">
+        <div class="col-lg-12">
+          <div class="block"  id="block-hot-fix-launch">
+  
+    
+      
+
+            <div class="text-long"><style type="text/css">#block-ncei-page-title{ margin:32px 0px; }
+img{ max-width:100%; }
+</style></div>
+      
+  </div>
+<div class="block"  id="block-hackcsstohidelinkfarmatbottomofhomepage">
+  
+    
+      
+
+            <div class="text-long"><style type="text/css">.block-frontpage--link-farm{
+display:none !important;
+}
+</style></div>
+      
+  </div>
+
+
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+                    <a href="/" alt="Home" title="Home" rel="home" class="navbar-brand"><img src="/themes/custom/ncei/components/images/logo/logo.svg" alt="National Centers for Environmental Information" title="National Centers for Environmental Information logo" class="logo logo-footer" /></a>
+        </div>
+
+                <div class="col-lg-3 col-sm-12">
+                <nav role="navigation" aria-labelledby="block-followus-menu" id="block-followus" class="block block-menu menu--footer-menu-1">
+  
+  <h2 id="block-followus-menu">Follow Us</h2>
+  
+          <ul class="nav list-unstyled flex-column menu--footer-menu-1 menu--footer-menu">
+
+          <li class="menu-item nav-item">
+      <a href="https://www.facebook.com/NOAANCEI/" class="facebook" title="Link to @NOAANCEI Facebook">@NOAANCEI</a>
+    </li>
+          <li class="menu-item nav-item">
+      <a href="https://www.instagram.com/noaadata/" class="instagram" title="Link to @NOAAData Instagram">@NOAAData</a>
+    </li>
+          <li class="menu-item nav-item">
+      <a href="https://twitter.com/NOAANCEI" class="twitter" title="Link to @NOAANCEI Twitter">@NOAANCEI</a>
+    </li>
+          <li class="menu-item nav-item">
+      <a href="/news.xml" class="rss" title="Link to subscribe to NCEI News Feed" data-drupal-link-system-path="news.xml">News Feed</a>
+    </li>
+  
+  </ul>
+
+
+  </nav>
+
+  
+        </div>
+        
+                <div class="col-lg-3 col-sm-12">
+                <nav role="navigation" aria-labelledby="block-contactus-menu" id="block-contactus" class="block block-menu menu--footer-menu-2">
+  
+  <h2 id="block-contactus-menu">Contact Us</h2>
+  
+          <ul class="nav list-unstyled flex-column menu--footer-menu-2 menu--footer-menu menu--contact-us">
+                <li class="menu-item nav-item">
+        <a href="/contact" class="nav-link" title="Contact NCEI NOAA via email" data-drupal-link-system-path="node/32">Email by topic</a>
+      </li>
+                <li class="menu-item nav-item">
+        <a href="tel:18282714800" class="nav-link" title="Call NCEI NOAA 828-271-4800">Phone: (828) 271-4800</a>
+      </li>
+      </ul>
+
+  </nav>
+
+  
+        </div>
+        
+      </div>    </div>  </div>
+    <div class="block block-footer-nesdis-links" id="footer-nesdis-links-container">
+    <nav role="navigation" aria-labelledby="" id="block-footernesdislinks" class="block block-menu menu--footer-nesdis-links">
+      <div class="container">
+  <div class="col-lg-12">
+    <ul class="nav list-inline menu--footer-nesdis-links">
+                      <li class="menu-item nav-item list-inline-item">
+          <a href="/sitemap" class="nav-link" data-drupal-link-system-path="node/400">Sitemap</a>
+        </li>
+                      <li class="menu-item nav-item list-inline-item">
+          <a href="/privacy" class="nav-link" data-drupal-link-system-path="node/106">Privacy Policy</a>
+        </li>
+                      <li class="menu-item nav-item list-inline-item">
+          <a href="https://www.noaa.gov/information-technology/foia" class="nav-link">Freedom of Information Act</a>
+        </li>
+                      <li class="menu-item nav-item list-inline-item">
+          <a href="https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality" class="nav-link">Information Quality</a>
+        </li>
+                      <li class="menu-item nav-item list-inline-item">
+          <a href="https://www.ncei.noaa.gov/accessibility" class="nav-link">Accessibility</a>
+        </li>
+                      <li class="menu-item nav-item list-inline-item">
+          <a href="https://www.noaa.gov/disclaimer" class="nav-link">Disclaimer</a>
+        </li>
+                      <li class="menu-item nav-item list-inline-item">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYcbKOaK50do35QbgTprXAVSnBDC00eY22HPPA2aRdkbhujg/viewform" class="nav-link" title="NCEI Website Survey">Take Our Survey</a>
+        </li>
+                      <li class="menu-item nav-item list-inline-item">
+          <a href="https://www.commerce.gov/" class="nav-link">Department of Commerce</a>
+        </li>
+                      <li class="menu-item nav-item list-inline-item">
+          <a href="https://www.noaa.gov/" class="nav-link">NOAA</a>
+        </li>
+                      <li class="menu-item nav-item list-inline-item">
+          <a href="http://www.nesdis.noaa.gov/" class="nav-link">NESDIS</a>
+        </li>
+          </ul>
+  </div>
+</div>
+
+  </nav>
+
+
+  </div>
+
+
+</footer>
+
+  
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/103","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_prevent_on_mobile":true,"back_to_top_prevent_in_admin":false,"back_to_top_button_type":"image","back_to_top_button_text":"Back to top"},"google_analytics":{"account":"G-E1Q1BML6E5","trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackDomainMode":1},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"(arcgis\\.com)","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":true,"extAlertText":"You are exiting the NCEI website\r\n\r\nThank you for visiting our site. We have provided a link because it has information that may interest you. NCEI does not endorse the views expressed, the information presented, or any commercial products that may be advertised or available on that site.","mailtoClass":"mailto","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"statistics":{"data":{"nid":"103"},"url":"\/core\/modules\/statistics\/statistics.php"},"field_group":{"html_element":{"mode":"full","context":"view","settings":{"classes":"col-md-8","id":"","element":"div","show_label":false,"label_element":"h3","attributes":"","effect":"none","speed":"fast","label":"Published"}}},"user":{"uid":0,"permissionsHash":"f7cb639c17cf20da5f7ab0bbbb77f32e648bbc6392967b5fe5fefdb591a971d1"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.7.0"></script>
+<script src="/core/assets/vendor/once/once.min.js?v=1.0.1"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=10.1.6"></script>
+<script src="/core/misc/drupal.js?v=10.1.6"></script>
+<script src="/core/misc/drupal.init.js?v=10.1.6"></script>
+<script src="https://static.addtoany.com/menu/page.js" async></script>
+<script src="/modules/contrib/addtoany/js/addtoany.js?v=10.1.6"></script>
+<script src="/modules/contrib/back_to_top/js/back_to_top.js?v=10.1.6"></script>
+<script src="/modules/contrib/google_analytics/js/google_analytics.js?v=10.1.6"></script>
+<script src="/modules/custom/pullquote/js/pullquote.admin.js?v=1.x"></script>
+<script src="/modules/custom/pullquote/js/pullquote.styles.js?v=1.x"></script>
+<script src="/themes/custom/ncei/node_modules/bootstrap/dist/js/bootstrap.min.js?s8gcja"></script>
+<script src="/themes/custom/ncei/public/js/ncei.js?s8gcja"></script>
+<script src="/libraries/uswds/js/uswds-init.min.js?s8gcja"></script>
+<script src="/libraries/uswds/js/uswds.min.js?s8gcja"></script>
+<script src="/modules/contrib/extlink/extlink.js?v=10.1.6"></script>
+<script src="/core/modules/statistics/statistics.js?v=10.1.6"></script>
+
+  <script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+</html>

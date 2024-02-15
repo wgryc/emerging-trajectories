@@ -1,0 +1,2502 @@
+<!DOCTYPE HTML>
+
+
+
+
+
+<html lang="en">
+
+
+
+<head data-chartbeat-domain="austin.ynn.com"><title>Winter outlook for Texas 2023-2024</title>
+<meta charset="utf-8"/>
+<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+
+    <meta name="description" content="We could see significant improvements to our drought this winter."/>
+
+
+
+
+
+
+
+
+<meta name="tp:preferredRuntimes" content="HTML5,Flash"/>
+<meta name="tp:PreferredFormats" content="MPEG4"/>
+<meta name="x-client-id" content="spectrumlocalnews.com"/>
+
+
+
+
+<meta name="keywords" content="APP Weather Stories, APP Weather Tab 2, Meteorologist Megan Campbell, Dallas, Texas, Top Stories, Blog, San Antonio, APP  Top Stories, WX Tracking, El Paso, App - Primary, Austin, Weather Stories"/>
+<meta name="news_keywords" content="APP Weather Stories, APP Weather Tab 2, Meteorologist Megan Campbell, Dallas, Texas, Top Stories, Blog, San Antonio, APP  Top Stories, WX Tracking, El Paso, App - Primary, Austin, Weather Stories"/>
+
+
+
+<!--Preconnect and DNS-Prefetch to improve page load time.-->
+<link rel="preconnect" href="//dpm.demdex.net"/>
+<link rel="preconnect" href="//fast.roadrunner.demdex.net"/>
+<link rel="preconnect" href="//roadrunner.demdex.net"/>
+<link rel="preconnect" href="//cm.everesttech.net"/>
+<link rel="preconnect" href="//roadrunner.tt.omtrdc.net"/>
+<link rel="preconnect" href="//metrics.timewarnercable.com"/>
+<link rel="preconnect" href="//metric.timewarnercable.com"/>
+<link rel="preconnect" href="//fonts.gstatic.com"/> <!-- used by fonts.googleapis.com -->
+
+<link rel="dns-prefetch" href="//dpm.demdex.net"/>
+<link rel="dns-prefetch" href="//fast.roadrunner.demdex.net"/>
+<link rel="dns-prefetch" href="//roadrunner.demdex.net"/>
+<link rel="dns-prefetch" href="//cm.everesttech.net"/>
+<link rel="dns-prefetch" href="//roadrunner.tt.omtrdc.net"/>
+<link rel="dns-prefetch" href="//metrics.timewarnercable.com"/>
+<link rel="dns-prefetch" href="//metric.timewarnercable.com"/>
+<link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+
+<!--/Preconnect and DNS-Prefetch-->
+<!--Data Layer to enable rich data collection and targeting-->
+<script type="text/javascript">
+
+    var template = "\/apps\/news\/templates\/article";
+    var pageType, region, parentRegion, vodAuth = "", articleStorage = "";
+
+    switch (template) {
+        case '/apps/news/templates/article':
+            template = 'Article Template';
+            pageType = 'Article';
+            articleStorage = 'live'
+            break;
+        case '/apps/news/templates/full-width-page':
+            template = 'Standard Full Width Template';
+            pageType = 'Home';
+            break;
+        case '/apps/news/templates/event':
+            template = 'Calendar Event Template';
+            pageType = 'Event';
+        case '/apps/news/templates/archive':
+            template = 'Archive Article Template';
+            pageType = 'Archive';
+            articleStorage = 'archived';
+        default:
+            template = 'Standard Full Width Template';
+            pageType = 'Home';
+    }
+
+    window.digitalData = window.digitalData || {
+        event: {
+            eventName: "pageView"
+        },
+        user: {
+            isAuthenticated: "",
+            mvpd: "",
+            hhid: ""
+        },
+        page: {
+            adsOnPage: "",
+            appID: "AEM 6.4", // hardcoded
+            domain: window.location.hostname,
+            flow: "",
+            language: document.getElementsByTagName('html')[0].getAttribute('lang'),
+            pageID: "\/content\/news\/stories\/2023\/10\/29\/w\/winter\u002D2023\u002D2024\u002Doutlook\u002Dfor\u002Dtexas",
+            pageName: "winter\u002D2023\u002D2024\u002Doutlook\u002Dfor\u002Dtexas",
+            pageRegion: "South Texas \/ El Paso",
+            pageRegionParent: "TX",
+            pageTemplate: template,
+            pageTitle: "Winter 2023\u002D2024 Outlook for Texas",
+            pageFunction: pageType,
+            platformName: "web", // hardcoded
+            previousLink: "",
+            siteSection: "",
+            siteSubsection: "",
+            sourceMarketTag: "regions:tx/texas",
+            tags: "APP Weather Stories, APP Weather Tab 2, Meteorologist Megan Campbell, Dallas, Texas, Top Stories, Blog, San Antonio, APP  Top Stories, WX Tracking, El Paso, App \u002D Primary, Austin, Weather Stories",
+            url: window.location.href,
+            uxStyle: "empire",
+            vodAuth: "limitedFreeViews"
+        },
+        content: {
+            Article: {
+                articleGUID: "",
+                articleHeadline: "This winter could bring wetter conditions across the state",
+                articleTitle: "winter\u002D2023\u002D2024\u002Doutlook\u002Dfor\u002Dtexas",
+                author: "Meteorologist Megan Campbell",
+                publicationDate: "1699035300000",
+                articleViewedAge: "",
+                canonicalRegion: "",
+                articleSource: "",
+                articleStorage: articleStorage,
+                freeVODRemaining: "",
+                softwallViewsRemaining: ""
+            },
+            Page: {
+                pageContentNetwork: "",
+                pageContentShow: ""
+            },
+            Video: {
+                epgsDescription: "",
+                epgsTitle: "",
+                tmsProgramId: "",
+                tmsSeriesId: "",
+                videoBrand: "",
+                videoNetwork: "",
+                programType: ""
+            }
+        },
+        visit: {
+            visitId: "",
+            ab: "",
+            behindModem: "",
+            homeFlag: ""
+        },
+        errors: {
+            cmRuleName: "",
+            cmDisplayText: "",
+            errorType: "",
+            errorDescription: ""
+        },
+        search: {
+            searchNumResults: "",
+            searchResultsPages: "",
+            searchType: "",
+            searchKeyword: ""
+        },
+        siteTool: {
+            shareMethod: ""
+        }
+
+    }
+
+    window.addEventListener("userInteraction", function (event) {
+        if (event.detail.action === "loginSuccess") {
+            window.digitalData.user.hhid = event.detail.hhid;
+            window.digitalData.user.mvpd = event.detail.mvpd;
+            window.digitalData.user.isAuthenticated = event.detail.isAuthenticated;
+
+            window.analyticsDataLayer.hhid = event.detail.hhid;
+            News.App.QuantumAnalytics.firesQuantumLoginStopSuccess(event.detail.hhid, event.detail.mvpd);
+
+        }
+    });
+
+    /**
+     * workaround to get the hhid that is coming in late
+     * NEWS-1055
+     *
+     **/
+    var _interval = setInterval(fetchLateHHID, 3000);
+
+    function fetchLateHHID() {
+        try {
+            var auth = Cookies.get('authenticated')
+            if (typeof auth !== 'undefined' && auth === 'true') {
+                var retHhid = Cookies.get('player-hhid');
+                if (typeof retHhid === "undefined") {
+                    retHhid = "";
+                } else if (window.digitalData.user.hhid !== "" && window.analyticsDataLayer.hhid !== "") {
+                    clearInterval(_interval);
+                } else {
+                    $('#analyticsDataLayer').attr('data-hhid', retHhid);
+                    window.analyticsDataLayer.hhid = retHhid;
+                    window.analyticsDataLayer.mvpd = Cookies.get('player-mvpd');
+                    window.digitalData.user.hhid = retHhid;
+                    window.digitalData.user.isAuthenticated = 'Yes';
+                    window.digitalData.user.mvpd = Cookies.get('player-mvpd');
+                }
+            } else {
+                clearInterval(_interval);
+            }
+        } catch (e) {
+        }
+
+    }
+
+</script>
+<!--/Data Layer-->
+<!--jQuery or other helper libraries go here-->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!--  Helix -->
+<script>
+    // use the following to check for the events
+    // https://cdn.pi-charter.net/SpectrumLocal/Web/1.146.json
+    // run the following in IE console to get the visit ID
+    // JSON.parse(localStorage.getItem('library-state')).model.visit.visitId;
+    var helixSetting = {
+        domain: "video",
+        appName: "SpectrumLocal",
+        //appVersion: "3.0.2",
+        //requirementsVersion: "1.737",
+        appVersion: "4.25.0",// App Version to match code Release Version
+        requirementsVersion: "2.516",
+        msgTriggeredBy: "user",
+        startSession: "SpectrumLocal_Web_startSession",
+        logLevel: "critical",
+        endpoint: "video_prod",
+        appEnvName: "prod",
+        drmEnabled: true
+    };
+
+
+    localStorage.setItem(
+        "helix-library-settings",
+        JSON.stringify(helixSetting)
+    );
+</script>
+
+<!--prehiding snippet for Adobe Target with asynchronous Launch deployment-->
+<script>(function (g, b, d, f) {
+    (function (a, c, d) {
+        if (a) {
+            var e = b.createElement("style");
+            e.id = c;
+            e.innerHTML = d;
+            a.appendChild(e)
+        }
+    })(b.getElementsByTagName("head")[0], "at-body-style", d);
+    setTimeout(function () {
+        var a = b.getElementsByTagName("head")[0];
+        if (a) {
+            var c = b.getElementById("at-body-style");
+            c && a.removeChild(c)
+        }
+    }, f)
+})(window, document, "body {opacity: 0 !important}", 3E3);
+</script>
+<!--/prehiding snippet for Adobe Target with asynchronous Launch deployment-->
+<script>
+    /**
+    * sets the  quantum visitId in the 'digitalData'
+    * layer at: window.digitalData.visit.visitId
+    *
+    **/
+    var timeit = window.setInterval(setVisitId, 2000);
+    function setVisitId() {
+       if (window && window.Helix && window.Helix.track) {
+             window.digitalData.visit.visitId = window.Helix.get("visitId");
+             window.digitalData.visit.uuid = localStorage.getItem('deviceUUID')||"";
+             helixSetting.appIdentifier = window.digitalData.page.domain;
+             helixSetting.deviceUuid = window.digitalData.visit.uuid;
+             helixSetting.referrerAppVisitId = window.digitalData.visit.visitId ;
+       }
+       if(window.digitalData.visit.visitId && typeof window.digitalData.visit.visitId !=='undefined'){
+             clearInterval(timeit );
+       }
+    }
+</script>
+
+<script>
+    window.addEventListener("beforeunload", function (e) {
+        var auth = Cookies.get('authenticated')
+        if(typeof News !== 'undefined' && auth && auth === "true"){
+          	News.App.QuantumAnalytics.setQuantumLoginResumeCookie();
+        }
+    });
+ </script>
+
+
+
+
+
+
+
+
+<script src="//assets.adobedtm.com/c19d5759b404/bd5aea4c4170/launch-ccc23cfc1556.min.js" async></script>
+
+
+    
+<script>CQURLInfo={"requestPath":"/content/news/stories/2023/10/29/w/winter-2023-2024-outlook-for-texas","selectorString":"weather","extension":"html","selectors":["weather"],"systemId":"0244d7ea-7dde-487f-9a44-f19648bc4563","runModes":"prod,s7connect,crx3,production,nosamplecontent,publish,aem65,crx3tar"};</script>
+<script src="/etc/clientlibs/news/vendor/jquery-3-6-1.min.ACSHASH88b7ada45d73ce1600d55453fc301b3d.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/etc/designs/news/clientlibs/css/images/favicon-latest/favicon.svg"/>
+<link rel="alternate icon" type="image/vnd.microsoft.icon" href="https://images.spectrumnews1.com/is/image/TWCNews/news-favicon"/>
+<!-- IMA HTML5 SDK (for serving Client Side ads): -->
+<script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+ <!-- Loads Helix Library -->
+  
+      <script async="true" src='https://cdn.pi.spectrum.net/tools/video/HelixVideo4.7.2.js' charset="UTF-8" type="application/javascript"></script>
+  
+   <!--  END Helix -->
+
+
+
+
+    <meta name="robots" content="index, follow"/>
+
+
+
+    <link rel="canonical" href="https://spectrumlocalnews.com/tx/south-texas-el-paso/weather/2023/10/29/winter-2023-2024-outlook-for-texas"/>
+
+
+
+    <meta property="og:title" content="This winter could bring wetter conditions across the state"/>
+
+
+
+    <meta name="twitter:title" content="This winter could bring wetter conditions across the state"/>
+
+
+<meta property="og:type" content="article"/>
+
+
+<meta property="og:url" content="https://spectrumlocalnews.com/tx/south-texas-el-paso/weather/2023/10/29/winter-2023-2024-outlook-for-texas"/>
+
+
+
+    <meta property="og:description" content="We could see significant improvements to our drought."/>
+    <meta name="twitter:description" content="We could see significant improvements to our drought."/>
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+<meta name="twitter:url" content="https://spectrumlocalnews.com/tx/south-texas-el-paso/weather/2023/10/29/winter-2023-2024-outlook-for-texas"/>
+
+<meta name="story:headline" content="This winter could bring wetter conditions across the state"/>
+<meta name="story:description" content="We could see significant improvements to our drought this winter."/>
+
+
+
+
+     
+        <meta property="og:image" content="https://s7d2.scene7.com/is/image/TWCNews/Fall_Rain_NC_GaryStephenson_A_11152022"/>
+        <meta name="twitter:image" content="https://s7d2.scene7.com/is/image/TWCNews/Fall_Rain_NC_GaryStephenson_A_11152022"/>
+     
+    
+
+
+
+<script>
+    let dfpSiteId = "/6896/srnews";
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "legalName": "Spectrum News 1 South Texas / El Paso",
+  "url": "https://spectrumlocalnews.com",
+  "logo": {
+    "url": "https://s7d2.scene7.com/is/image/TWCNews/spectrum-news-1",
+    "@type": "ImageObject"
+  },
+  "sameAs": [
+    "https://www.facebook.com/spectrumnews1tx/",
+    "https://twitter.com/SpectrumNews1TX",
+    "https://www.instagram.com/spectrumnews1tx/"
+  ],
+  "@type": "Organization"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "name": "Spectrum News 1 South Texas / El Paso",
+  "url": "https://spectrumlocalnews.com",
+  "potentialAction": {
+    "target": "https://spectrumlocalnews.com/tx/austin/search#{search_term}",
+    "query-input": "required name=search_term",
+    "@type": "SearchAction"
+  },
+  "@type": "Website"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "mainEntityOfPage": {
+    "@id": "https://spectrumlocalnews.com/tx/south-texas-el-paso/weather/2023/10/29/winter-2023-2024-outlook-for-texas",
+    "@type": "WebPage"
+  },
+  "image": [
+    "https://s7d2.scene7.com/is/image/TWCNews/Fall_Rain_NC_GaryStephenson_A_11152022"
+  ],
+  "headline": "This winter could bring wetter conditions across the state",
+  "datePublished": "2023-11-03T13:15:00.000-05:00",
+  "dateModified": "2023-11-03T13:15:00.000-05:00",
+  "author": [
+    {
+      "name": "Meteorologist Megan Campbell",
+      "@type": "Person"
+    }
+  ],
+  "publisher": {
+    "name": "Spectrum News 1 South Texas / El Paso",
+    "logo": {
+      "url": "https://s7d2.scene7.com/is/image/TWCNews/spectrum-news-1",
+      "@type": "ImageObject"
+    },
+    "@type": "Organization"
+  },
+  "@type": "NewsArticle"
+}
+</script>
+
+
+
+
+
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" as="style" onload="this.rel='stylesheet'" crossorigin/>
+
+
+
+<!-- Load empire CSS library -->
+
+    
+<script>CQURLInfo={"requestPath":"/content/news/stories/2023/10/29/w/winter-2023-2024-outlook-for-texas","selectorString":"weather","extension":"html","selectors":["weather"],"systemId":"0244d7ea-7dde-487f-9a44-f19648bc4563","runModes":"prod,s7connect,crx3,production,nosamplecontent,publish,aem65,crx3tar"};</script>
+<link rel="stylesheet" href="/etc/designs/bootstrap-css/clientlibs/news-empire.min.ACSHASHbac4bc0d8b19861f0c7e9deaf64847d4.css" type="text/css">
+<link rel="stylesheet" href="/etc/designs/news-empire/clientlibs/css.min.ACSHASHa5959ababc16bc571c07816cafc8b1db.css" type="text/css">
+
+
+
+
+
+<!-- Manually include shared icons dependency before SSI -->
+
+    
+<link rel="stylesheet" href="/etc/designs/news/clientlibs/icons.min.ACSHASH71607690250f35d7dae38bdc1d9467af.css" type="text/css">
+
+
+
+
+<!-- Load empire icons library -->
+
+    
+<link rel="stylesheet" href="/etc/designs/news-empire/clientlibs/icons.min.ACSHASH229052a1290abae6040dd4771c394cae.css" type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<script src="/etc/designs/news/clientlibs/js/head-scripts.min.ACSHASH2b1e7fd517849cfdcaa58331670a2e29.js"></script>
+<script src="/etc/designs/news/clientlibs/js/ads.min.ACSHASHb21b82ad3b35139f992e66b9c4204b51.js"></script>
+<script src="/etc/clientlibs/news/vendor/simple-namespace-0-2-1.min.ACSHASH07f4ab70fa2c1e52b28c6ee763ff5a1f.js"></script>
+
+
+
+
+
+
+<!-- This code handles smartlink redirect logic to navigate user based on device -->
+<script type="text/javascript">
+    var smartRedirectLocations = {};
+
+        smartRedirectLocations.desktopLocation="",
+        smartRedirectLocations.iOSOutsideAppLocation="",
+        smartRedirectLocations.androidOutsideAppLocation="",
+        smartRedirectLocations.inAppLocation=""
+
+</script>
+
+    
+<script src="/etc/designs/news/clientlibs/js/smart-redirect.min.ACSHASH56dbcd932f4b442cbf01a8f74e63f5c8.js"></script>
+
+
+
+
+<!-- Chartbeat includes, see also chartbeat-head-script.js and chartbeat-analytics.js -->
+<!-- This code should only run when Chartbeat Headline Testing is activated in the Page Properties -->
+
+
+<!-- Adding critical css used by components above the fold for optimizing the Core Web Vitals-->
+<style type="text/css">
+    .image img{width: 100%;}
+    .aspect-ratio-container::before {content: ""; width: 1px; margin-left: -1px; float: left; height: 0; padding-bottom: 56.25%;}
+    .aspect-ratio-container::after {content: "";display: table;clear: both;}/* to clear float */
+    .aspect-ratio-container img {max-width: 100%;width: 100%; /* scale with content width */height: auto; /* compute a height that preserves the aspect ratio */}
+    .gallery-slide .img-responsive{width: auto;height: auto;}
+    .site-header header:not([data-ad-enable="true"]) .article-header .articleAdWrapper, .site-header .site-header-inner:not([data-ad-enable="true"]) .article-header .articleAdWrapper{display:none;}
+    .dfp-ad-tags-wrapper[data-position="x30"]{width:100%; min-height:107px;}
+    .dfp-ad-tags-wrapper > .dfp-ad-tags{ min-height:calc(100% - 17px);}
+    .articleAdWrapper{width:340px; min-height:290px}
+    .icon-advertisement {height: 5px; margin: 2px auto 10px;}
+    @media (max-width: 767px){
+        .dfp-ad-tags-wrapper[data-position="x30"]{min-height: 70px; }
+        .dfp-ad-tags[data-hidemobilead="true"],.dfp-ad-tags[data-hidemobilead="true"] + .icon-advertisement, .dfp-ad-tags-wrapper[data-hidemobilead="true"] {display: none}
+    }
+</style>
+</head>
+<body class="has-fixed-navbar design--empire" data-stationcode="News8" data-timezone-offset="-21600000" data-statename="TX" data-ravenid="5f68f99b310f6113d8b86c28" data-requestid="SPECTRUMNEWS" data-mediaanalyticsapi="https://twctsg.hb-api.omtrdc.net" data-softwarestatement="eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxZjYyNmUxOS0xZDhlLTRlODgtOTAxMi02NzY2YzUyZTNiYTciLCJuYmYiOjE2NTI3MjMzNTQsImlzcyI6ImF1dGguYWRvYmUuY29tIiwiaWF0IjoxNjUyNzIzMzU0fQ.Ob_grAySSYrMM-zuiW_4pLXFB30E73IHRxqn1I3ClioDngQ--PZtT5jGlJDklizczh3H0Y4CparDhnhbKgxoUCIZ4t9qipPVvz1kiUGxOt4EBEmBikEvBJFVQjXyF_NsAQEUM_2B6Af3JqSN5CUCvGZVHLRS0rG2zjyI90wlMY93occ02buK54rwcH0eftGsbbXCxoa7QAbGUFv9EWkXr5jpZYds5aPJ5Kbpy8Cyn_VvZCDQh7tLMvFXddHvhOKARPOrvTNfnj-13akz6ZS2UnXuYhF8SCuF4fbxDoemicKYyRvIlmcjzV-QwM8CRgTnfVr4mYleB5oqtRtKdam9Cg" data-pinxtendpoint="https://apis.spectrum.net" data-userprofileapi="https://apis.spectrum.net/userprofsvc/userprofileservice/subgraphs/query" data-userprofileswitch="false" data-hdcpenabler="true" data-onplantapi="https://apis.spectrum.net/id/services/v1/on-plant" data-chartbeat-domain="austin.ynn.com" data-chartbeat-section="tx/south-texas-el-paso" data-chartbeat-author="Spectrum News South Texas"><span id="analyticsDataLayer" data-author="Meteorologist Megan Campbell" data-content-type="article" data-headline="This winter could bring wetter conditions across the state" data-hhid="" data-is-internal="false" data-is-authenticated="false" data-language="English" data-page-category="29" data-publication-date="1699035300000" data-region="South Texas / El Paso" data-tags="TX Texas^TX Austin^TX San Antonio^TX Dallas^TX El Paso^App   Primary APP  Weather APP Weather Stories^News Weather Stories^Weather Blog^Weather WX Tracking^App   Primary APP  Weather APP Weather Tab 2^App   Primary APP  Top Stories^News Top Stories^App   Primary^Meteorologist Megan Campbell"></span>
+
+<div class="article-app-prompt">
+    <div class="title-bar">
+        <div class="title-bar-col">
+            <strong class="title">Open in Our App</strong>
+        </div>
+        <div class="title-bar-col">
+            <a href="#" class="continue-link">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAGKADAAQAAAABAAAAGAAAAADiNXWtAAAA0klEQVRIDe1U2w2DMAxEXaDsUTaDwdsuEc5VkMA6nZ0IvmgkK4p9j8SEDMN/9HSglDK28tIcABfEG/HKmhi2chbJAWisQEzlgwhNDFOxmH4be0Yme4I0ceISezDNEDOYg6hfKAFV8zpyzYRYTopERSJovbaR73mjSZP4IxK/vI7t+mt7XouIuJl5w/BnpF1QQqpGxXyyCnwx26C3Bfn9SQybOwmAE0KKbxsiJtNWozMI9tg1fURnYlz91AMwI3qf65nu3CdhoJ9cT8C6h0Nk7phaAVML8WWIJGM8AAAAAElFTkSuQmCC"/>
+            </a>
+        </div>
+    </div>
+
+    <p><p>Get the best experience and stay connected to your community with our Spectrum News app. <a href="https://spectrumlocalnews.com/app">Learn More</a></p>
+</p>
+    <hr/>
+    <div class="buttons">
+        <a class="btn btn-primary app-button" href="https://spectrumnews.smart.link/186a99z7m?cid=article_prompt&article=/south-texas-el-paso/weather/2023/10/29/winter-2023-2024-outlook-for-texas">
+            Open in Spectrum News App
+        </a>
+        <p>
+            <a class="continue-link" href="#">Continue in Browser</a>
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+    
+        
+        
+        <div class="site-header">
+
+
+<header class="header-ele" data-ad-preroll-disable="true">
+    <div class="header_logo">
+        <a href="/tx/south-texas-el-paso" class="header_logo__icon icon-SpectrumNews1Logo"></a>
+    </div>
+    <div class="navbar-default">
+        <div class="header_weather">
+            <a class="wx-icon" href="/tx/south-texas-el-paso/weather"></a>
+            <a class="tempF" href="/tx/south-texas-el-paso/weather"></a>
+        </div>
+        <button type="button" class="navbar-toggle collapsed open-menu" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="close"></span>
+        </button>
+    </div>
+    <div class="header_region-time-weather">
+        
+<span class="header_region">
+    <a href="//spectrumlocalnews.com/splash.html#tx">South Texas / El Paso</a>
+</span>
+        <span class="header_date"></span>
+<span class="header_time"></span>
+        <div>
+            <div class="header_weather">
+                <a class="wx-icon" href="/tx/south-texas-el-paso/weather"></a>
+                <a class="tempF" href="/tx/south-texas-el-paso/weather"></a>
+                <a class="city" href="/tx/south-texas-el-paso/weather"></a>
+                <a class="edit" href="javascript:void(0)">EDIT</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="header_social-media-login__wrapper">
+
+        <div class="header_login-watch">
+            <a class="btn header_watch hidden-xs" href="/tx/south-texas-el-paso/live-video/watch_spectrum_news_live">Watch Live</a>
+
+            
+
+            <nav class="empire-nav-wrapper">
+                <ul class="empire-nav-item-list header-profile-icon">
+                    <span class="profile-icon-separator">|</span>
+                   <li class="recent-activity-list">
+                       <a data-root=".empire-nav" href="#" class="profile-icon-container"><img class="profile-icon" src="/etc/designs/news/clientlibs/css/images/ki-account-sign-out.png"/><img/></a>
+                       <div class="empire-link-list list parbase ">
+                           <ul class="recent-activity-dropdown">
+                               <li>
+                                   <a href="/tx/south-texas-el-paso/recent-activity" class="recent-activity-list-span recent-activity-path">Recent Activity</a>
+                                   <span class="menu-item-divider"></span>
+                               </li>
+                               <li>
+                                   <a id="logout-button" data-logout-text="Log Out" data-login-text="Log In" href="#" class="recent-activity-list-span">Log Out</a>
+                                   <span class="menu-item-divider"></span>
+                               </li>
+                           </ul>
+                           <ul class="sign-in-dropdown">
+                            <li>
+                                <a href="/tx/south-texas-el-paso/recent-activity" class="recent-activity-list-span recent-activity-signed-out">Recent Activity</a>
+                                <span class="menu-item-divider"></span>
+                            </li>
+                            <li>
+                                <a id="login-button" class="sign-in-list-span" href="/tx/south-texas-el-paso/live-video/login" data-login-text="Log In" data-logout-text="Log Out">Log In</a>
+                                <span class="menu-item-divider"></span>
+                            </li>
+
+                        </ul>
+                       </div>
+
+
+                   </li>
+               </ul>
+           </nav>
+
+
+
+        </div>
+
+    </div>
+    <div class="searchNav">
+        
+            <input name="search" placeholder="Search" type="text" class="empire-header-search icon-search-gray empire-header-search-field" data-url="/tx/austin/search"/>
+        
+        <nav class="empire-nav-wrapper">
+            
+    
+    <ul class="empire-nav-item-list">
+        <li>
+           
+    
+        <a data-root=".empire-nav" data-target="#site-header-megamenu-f9201fc7-f285-3c61-f785-1e815a86c952" href="#">
+            Latest News
+        </a>
+    
+
+            
+                <div id="site-header-megamenu-f9201fc7-f285-3c61-f785-1e815a86c952">
+                        
+
+
+
+
+    
+    
+    <div class="empire-link-list list parbase">
+
+<ul>
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/news">
+            Headlines
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/news/health">
+            Health
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/news/sports">
+            Sports
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/lotto">
+            Lotto
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/news/exploring-your-health">
+            Exploring Your Health
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/news/scholar-athlete">
+            Scholar Athlete
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/news/beyond-the-sport-tx">
+            Beyond the Sport
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/austin/mental-health">
+            Your Mental Health
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/austin/black-history-2024">
+            Black History Month 2024
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+</ul>
+
+
+</div>
+
+
+
+                </div>
+            
+        </li>
+    
+        <li>
+           
+    
+        <a data-root=".empire-nav" data-target="#site-header-megamenu-f6cc1bdd-7388-1276-ab62-1406c8902005" href="#">
+            Weather
+        </a>
+    
+
+            
+                <div id="site-header-megamenu-f6cc1bdd-7388-1276-ab62-1406c8902005">
+                        
+
+
+
+
+    
+    
+    <div class="empire-link-list list parbase">
+
+<ul>
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather">
+            Today's Forecast
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/tropical">
+            Tropical Forecast
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/interactive-radar">
+            Interactive Radar
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/7-day-forecast">
+            7 Day Forecast
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/allergy-forecast">
+            Allergy Forecast
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/satellite-radar">
+            Satellite and Radar
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/current-conditions">
+            Current Conditions
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/Temps-Almanac">
+            Temperatures
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/weather-blogs">
+            Weather Blog
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/watches-warnings">
+            Watches and Warnings
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/storm-season">
+            Severe Weather
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/austin/weather/project-weather-texas">
+            Project Weather
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/climate-change">
+            Climate Change
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+</ul>
+
+
+</div>
+
+
+
+                </div>
+            
+        </li>
+    
+        <li>
+           
+    
+        <a data-root=".empire-nav" data-target="#site-header-megamenu-618c8b4d-b7c0-2082-40ce-d2317e72a7bf" href="#">
+            Politics
+        </a>
+    
+
+            
+                <div id="site-header-megamenu-618c8b4d-b7c0-2082-40ce-d2317e72a7bf">
+                        
+
+
+
+
+    
+    
+    <div class="empire-link-list list parbase">
+
+<ul>
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/politics">
+            Political News
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/politics/capital-tonight">
+            Capital Tonight
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/politics/tx-state-government">
+            Texas State Government
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/politics/washington-dc-bureau1">
+            Washington, D.C. Bureau
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/section/in-focus/regions/tx">
+            In Focus
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/section/national-election-results.html">
+            2024 Election Results
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+</ul>
+
+
+</div>
+
+
+
+                </div>
+            
+        </li>
+    
+        <li>
+           
+    
+        <a data-root=".empire-nav" data-target="#site-header-megamenu-e1878c6e-da7d-66ac-4fb5-95e06724a68b" href="#">
+            More
+        </a>
+    
+
+            
+                <div id="site-header-megamenu-e1878c6e-da7d-66ac-4fb5-95e06724a68b">
+                        
+
+
+
+
+    
+    
+    <div class="empire-link-list list parbase">
+
+<ul>
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/about-us/bios">
+            Our Journalists
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/calendar">
+            Community Calendar
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/about-us/contact-us">
+            Contact Us
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+</ul>
+
+
+</div>
+
+
+
+                </div>
+            
+        </li>
+    </ul>
+<div class="empire-full-mobile-menu">
+        
+                <input name="search" placeholder="Search" type="text" class="icon-search-gray mobile-search empire-header-search-field" data-url="/tx/austin/search"/>
+        
+        <ul class="empire-mobile-item-list mobile-recent-activity-dropdown">
+            <li>
+                <a href="#" data-root=".empire-nav">ACCOUNT</a>
+                <div class="empire-mobile-divider empire-type-megamenu-bar"></div>
+                <div class="empire-link-list list parbase">
+                    <ul style="flex-direction: column;">
+                        <li>
+                            <a id="sign-out-btn" class="sing-out-mobile sign-in-label" href="#">Sign Out</a>
+                            <span class="menu-item-divider"></span>
+                        </li>
+                        <li style="padding: 0;" class="signed-in-recent-activity">
+                            <a href="" class="recent-activity-mobile">Recent Activity</a>
+                            <span class="menu-item-divider"></span>
+                        </li>
+                    </ul>
+    
+                </div>
+    
+            </li>
+
+        </ul>
+        <ul class="empire-mobile-item-list mobile-sign-in-dropdown">
+            <li>
+                <a href="#" data-root=".empire-nav">ACCOUNT</a>
+                <div class="empire-mobile-divider empire-type-megamenu-bar"></div>
+                <div class="empire-link-list list parbase">
+                    <ul style="flex-direction: column;">
+                        <li>
+                            <a id="sign-in-btn" class="sign-in-mobile sign-in-label" href="">Sign In</a>
+                            <span class="menu-item-divider"></span>
+                        </li>
+                        <li style="padding: 0;" class="sign-out-recent-activity">
+                            <a href="" class="recent-activity-mobile">Recent Activity</a>
+                            <span class="menu-item-divider"></span>
+                        </li>
+                    </ul>
+    
+                </div>
+    
+            </li>
+
+        </ul>
+        <ul class="empire-mobile-item-list">
+        
+            <li>
+                
+    
+        <a data-root=".empire-nav" data-target="#site-header-megamenu-f9201fc7-f285-3c61-f785-1e815a86c952" href="#">
+            Latest News
+        </a>
+    
+
+                    <div class="empire-mobile-divider empire-type-megamenu-bar"></div>
+                    
+                        <div id="site-header-megamenu-f9201fc7-f285-3c61-f785-1e815a86c952">
+                                
+
+
+
+
+    
+    
+    <div class="empire-link-list list parbase">
+
+<ul>
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/news">
+            Headlines
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/news/health">
+            Health
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/news/sports">
+            Sports
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/lotto">
+            Lotto
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/news/exploring-your-health">
+            Exploring Your Health
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/news/scholar-athlete">
+            Scholar Athlete
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/news/beyond-the-sport-tx">
+            Beyond the Sport
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/austin/mental-health">
+            Your Mental Health
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/austin/black-history-2024">
+            Black History Month 2024
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+</ul>
+
+
+</div>
+
+
+
+                        </div>
+                    
+            </li>
+        
+        
+            <li>
+                
+    
+        <a data-root=".empire-nav" data-target="#site-header-megamenu-f6cc1bdd-7388-1276-ab62-1406c8902005" href="#">
+            Weather
+        </a>
+    
+
+                    <div class="empire-mobile-divider empire-type-megamenu-bar"></div>
+                    
+                        <div id="site-header-megamenu-f6cc1bdd-7388-1276-ab62-1406c8902005">
+                                
+
+
+
+
+    
+    
+    <div class="empire-link-list list parbase">
+
+<ul>
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather">
+            Today's Forecast
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/tropical">
+            Tropical Forecast
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/interactive-radar">
+            Interactive Radar
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/7-day-forecast">
+            7 Day Forecast
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/allergy-forecast">
+            Allergy Forecast
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/satellite-radar">
+            Satellite and Radar
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/current-conditions">
+            Current Conditions
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/Temps-Almanac">
+            Temperatures
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/weather-blogs">
+            Weather Blog
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/watches-warnings">
+            Watches and Warnings
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/weather/storm-season">
+            Severe Weather
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/austin/weather/project-weather-texas">
+            Project Weather
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/climate-change">
+            Climate Change
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+</ul>
+
+
+</div>
+
+
+
+                        </div>
+                    
+            </li>
+        
+        
+            <li>
+                
+    
+        <a data-root=".empire-nav" data-target="#site-header-megamenu-618c8b4d-b7c0-2082-40ce-d2317e72a7bf" href="#">
+            Politics
+        </a>
+    
+
+                    <div class="empire-mobile-divider empire-type-megamenu-bar"></div>
+                    
+                        <div id="site-header-megamenu-618c8b4d-b7c0-2082-40ce-d2317e72a7bf">
+                                
+
+
+
+
+    
+    
+    <div class="empire-link-list list parbase">
+
+<ul>
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/politics">
+            Political News
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/politics/capital-tonight">
+            Capital Tonight
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/politics/tx-state-government">
+            Texas State Government
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/politics/washington-dc-bureau1">
+            Washington, D.C. Bureau
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/section/in-focus/regions/tx">
+            In Focus
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/section/national-election-results.html">
+            2024 Election Results
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+</ul>
+
+
+</div>
+
+
+
+                        </div>
+                    
+            </li>
+        
+        
+            <li>
+                
+    
+        <a data-root=".empire-nav" data-target="#site-header-megamenu-e1878c6e-da7d-66ac-4fb5-95e06724a68b" href="#">
+            More
+        </a>
+    
+
+                    <div class="empire-mobile-divider empire-type-megamenu-bar"></div>
+                    
+                        <div id="site-header-megamenu-e1878c6e-da7d-66ac-4fb5-95e06724a68b">
+                                
+
+
+
+
+    
+    
+    <div class="empire-link-list list parbase">
+
+<ul>
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/about-us/bios">
+            Our Journalists
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/calendar">
+            Community Calendar
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+
+    <li>
+        
+    
+        <a href="/tx/south-texas-el-paso/about-us/contact-us">
+            Contact Us
+        </a>
+    
+
+        <span class="menu-item-divider"></span>
+    </li>
+</ul>
+
+
+</div>
+
+
+
+                        </div>
+                    
+            </li>
+        </ul>
+</div>
+        </nav>
+    </div>
+    <div id="edit-location-modal" class="location-modal">
+        <div class="modal-content">
+            <span class="edit-location-modal-close">&times;</span>
+            <span class="modal-title-text">Set Weather Location</span>
+            <p class="modal-desc-text">Get hyperlocal forecasts, radar and weather alerts.</p>
+            <input id="edit-location-zip" name="zip" type="text" maxlength="5" placeholder="Enter a 5-digit ZIP code" pattern="[0-9]+"/>
+            <p class="zip-error-message">Please enter a valid zipcode.</p>
+            <div class="edit-location-save">
+                <p class="save-button-text">Save</p>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="region-data" data-ravenid="5f68f99b310f6113d8b86c28" data-organization-name="Spectrum News 1 South Texas / El Paso" data-outoffreeviews="Stay connected to your community. Log in for unlimited access to Spectrum News video content." data-numofviews="5" data-softwallwelcome="Enjoy access to five videos from Spectrum. Log in for unlimited access." data-paywallmessage="This video is available exclusively to our customers">
+</div>
+</div>
+
+    
+        
+        
+        <div class="wxAlertBar">
+<div class="alert-bar">
+    <div class="alert-bar__displayed-alerts">
+        
+
+        
+            
+    <div class="ticker-item alert-bar__li alert-bar__li--custom" style="display: none; position: absolute">
+        <a href="https://spectrumnews.smart.link/84evq57f7?cid=id-app14_m-display_s-web_cmp-app_launch_august2020_k-alert_bar_po-organic">
+            <div>
+                <span class="alert-bar__text-box"><span class="alert-bar__title">GET OUR APP</span><span class="alert-bar__text">Our Spectrum News app is the most convenient way to get the stories that matter to you. Download it here.</span></span>
+            </div>
+        </a>
+    </div>
+
+        
+    </div>
+</div>
+
+<div>
+    <ul class="alert-bar__raven-alerts">
+        
+    <div class="ticker-item alert-bar__li alert-bar__li--weather" style="display: none; position: absolute">
+        <a href="/tx/south-texas-el-paso/weather/watches-warnings">
+            <div>
+                <span class="alert-bar__text-box"><span class="alert-bar__title">WEATHER ALERT</span><span class="alert-bar__text">View full list of weather alerts</span></span>
+            </div>
+        </a>
+    </div>
+
+        
+    
+
+    </ul>
+</div>
+
+<script>
+    ns("News.App").tickerConfig = {
+        effect : "slideUp",
+        interval : 5000,
+        duration : 800
+    }
+</script>
+
+    
+<script>CQURLInfo={"requestPath":"/content/news/tx/south-texas-el-paso/jcr:content/main-website-header/wx_alert_bar","extension":"html","selectors":[],"systemId":"0244d7ea-7dde-487f-9a44-f19648bc4563","runModes":"prod,s7connect,crx3,production,nosamplecontent,publish,aem65,crx3tar"};</script>
+<script src="/etc/designs/news/clientlibs/js/weather/alertBar.min.ACSHASHb4d4a8dd9cb4d26a1287d7093ef1c74c.js"></script>
+
+
+</div>
+
+    
+        
+        
+        <div class="newpar new section">
+
+</div>
+
+    
+        
+        
+        <div class="par iparys_inherited">
+
+    
+    
+    
+    
+
+</div>
+
+    
+
+
+
+
+
+<div>
+    
+        
+            <div id="x30" class="dfp-ad-tags" data-position="x30">
+            </div>
+            <div class="icon-advertisement hidden"></div>
+        
+    
+
+
+
+</div>
+<div class="header-player">
+    
+    
+
+
+</div>
+
+
+<div class="container body-container" data-pdfhost="https://ny1.com" data-pdfpath="/embedpdf/spectrum-news-pdf.html">
+    <div class="row">
+        <div class="col-sm-12">
+            
+            
+                
+
+
+
+
+    
+    <div class="flair-container">
+
+        <a href="/tx/south-texas-el-paso/weather/2023/10/29/winter-2023-2024-outlook-for-texas"><div class="flair flair--weather classic-visible" data-flair-text="WEATHER"></div></a>
+
+        
+    
+    <div class="image article-image">
+        
+
+
+
+    <div class="caption-container caption-bottom">        
+        
+            <img class="img-responsive" width="1250" height="703" alt="Wet Winter for Texas" data-src="https://s7d2.scene7.com/is/image/TWCNews/Fall_Rain_NC_GaryStephenson_A_11152022" data-sourcetype="scene7" src="https://images.spectrumnews1.com/is/image/SpectrumNews/1x1transparent"/>
+        
+
+        <div class="caption">
+            (Spectrum News/Gary Stephenson)
+            
+        </div>
+    </div>
+
+
+    </div>
+    
+
+    </div>
+
+    
+    
+
+
+
+            
+            
+    
+    
+
+
+
+
+
+
+
+            <article>
+    
+    <div class="article-header">
+        
+        
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+
+
+
+
+    
+    
+    <div class="image">
+
+
+
+    
+
+</div>
+
+
+</div>
+            </div>
+            <div class="col-xs-12 clearfix">
+                
+                <div class="flair-container story-page-flair">
+                    
+                    <div class="flair flair--weather empire-visible" data-flair-text="WEATHER"></div>
+                </div>
+                
+                <h1 class="article-headline">This winter could bring wetter conditions across the state</h1>
+                <div class="article-subheader small">
+                    
+                    
+                    <div class="article-information">
+                        
+                        <div class="article-byline-information">
+                            <span>By </span>
+                            <span class="article-byline-reporter-list">
+                                
+                                
+                                   
+                                    
+                                    Meteorologist Megan Campbell
+                                
+                            </span>
+                            
+                                <span class="article-location">Texas</span>
+                            
+
+                        </div>
+                        <div class="article-date-information">
+                            <span class="article-date-publish-updated"></span>
+                            <span class="article-date-publish empire-visible empire-byline noUpdatedDate">PUBLISHED 1:15 PM CT Nov. 03, 2023</span>
+                            <span class="classic-visible article-date-publish noUpdatedDate">PUBLISHED 1:15 PM CDT Nov. 03, 2023</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="share-text-article pull-left">SHARE</div>
+                <div class="share-bar-container">
+    <button class="share-bar-link icon-share-facebook desktop-uri mobile-uri" title="Share with Facebook" aria-label="Share with Facebook" href="https://www.facebook.com/sharer/sharer.php?u=URL_TO_SHARE?cid=share_fb" target="_blank" data-empire-order="10"></button>
+    <button class="share-bar-link icon-share-twitter desktop-uri mobile-uri" title="Share with Twitter" aria-label="Share with Twitter" href="https://twitter.com/intent/tweet?text=HEADLINE&url=URL_TO_SHARE?cid=share_twitter" target="_blank" data-empire-order="20"></button>
+    <!-- SMS for mobile only-->
+    <button class="share-bar-link icon-share-message mobile-uri os-not-ios" title="Share with SMS" aria-label="Share with SMS" href="sms:?body=URL_TO_SHARE?cid=share_sms" data-empire-order="25"></button>
+    <!-- Dedicated iOS button b/c URI syntax varies from what's used by Desktop and Android -->
+    <button class="share-bar-link icon-share-message mobile-uri os-ios" title="Share with SMS" aria-label="Share with SMS" href="sms:&body=URL_TO_SHARE%3Fcid%3Dshare_sms" data-urlencode="true" data-empire-order="25"></button>
+    <button class="share-bar-link icon-share-reddit" title="Share with Reddit" aria-label="Share with Reddit" href="https://www.reddit.com/submit/?title=HEADLINE&url=URL_TO_SHARE?cid=share_reddit" target="_blank" data-empire-order="0"></button>
+    <!-- messenger button start -->
+    <button class="share-bar-link icon-share-messenger desktop-uri" title="Share with Facebook Messenger" aria-label="Share with Facebook Messenger" href="https://www.facebook.com/dialog/send?app_id=FB_APP_ID&link=URL_TO_SHARE?cid=share_fbmsg&redirect_uri=REDIRECT_URL?cid=share_fbmsg" target="_blank" data-empire-order="60"></button>
+    <!-- messenger button has a mobile app URI -->
+    <button class="share-bar-link icon-share-messenger mobile-uri" title="Share with Facebook Messenger" aria-label="Share with Facebook Messenger" href="fb-messenger://share?link=URL_TO_SHARE%3Fcid%3Dshare_fbmsg&app_id=FB_APP_ID" data-urlencode="true" data-empire-order="60"></button>
+    <!-- messenger button end -->
+    <!-- whatsapp button start -->
+    <!-- URL encode the share url. Note that the CID for the share url is url encoded. -->
+    <button class="share-bar-link icon-share-whatsapp desktop-uri" title="Share with Whatsapp" aria-label="Share with Whatsapp" href="https://web.whatsapp.com/send?text=URL_TO_SHARE%3Fcid%3Dshare_whatsapp" target="_blank" data-urlencode="true" data-empire-order="50"></button>
+    <!-- whatsapp button has a mobile app URI -->
+    <button class="share-bar-link icon-share-whatsapp mobile-uri" title="Share with Whatsapp" aria-label="Share with Whatsapp" href="whatsapp://send?text=URL_TO_SHARE?cid=share_whatsapp" data-empire-order="50"></button>
+    <!-- whatsapp button end -->
+    <button class="share-bar-link icon-share-linkedin desktop-uri mobile-uri" title="Share with LinkedIn" aria-label="Share with LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=URL_TO_SHARE?share_linkedin&title=HEADLINE&source=WEBSITE_URL&summary=DESCRIPTION" target="_blank" data-empire-order="0"></button>
+    <button class="share-bar-link icon-share-email desktop-uri mobile-uri" title="Share with Email" aria-label="Share with Email" href="mailto:?subject=HEADLINE&body=URL_TO_SHARE?cid=share_email" data-empire-order="30"></button>
+    <!-- Copy to clipboard start -->
+    <!-- success icon shows for 5 sec. Shows on opposite side for mobile. -->
+    <div class="share-bar-link icon-clipboard-copied-mobile"></div>
+    <!-- this is a button not an anchor tag because anchor tag (link) will set the window.location to the href -->
+    <button class="share-bar-link icon-share-link desktop-uri mobile-uri" title="Copy article link" aria-label="Copy article link" href="URL_TO_SHARE?cid=share_clip" data-empire-order="40"></button>
+    <div class="share-bar-link icon-clipboard-copied-desktop"></div>
+    <!-- Copy to clipboard end -->
+</div>
+            </div>
+            <div class="col-xs-12">
+                <div class="article-body">
+                    <div class="articleAdWrapper">
+                        <div id="x35" class="dfp-ad-tags" data-position="x35"></div>
+                        <div class="icon-advertisement hidden"></div>
+                    </div>
+                    
+
+
+
+
+    
+    
+    <div class="text parbase"><p>The Climate Prediction Center (CPC) has released the <a href="https://spectrumnews1.com/oh/columbus/weather/2023/10/19/noaa-winter-2023-2024-outlook">2023-24 winter outlook</a> and keeps Texas under wetter than normal conditions with near-normal temperatures through February.</p>
+<div class="embedcode"><center><div class="keypointsbox" style="text-align: left; width: 95%;"><hr style="height: 2px; border-width: 0; background-color: #042d4d;">
+
+<h4 style="text-indent: 10px;"><b>What You Need To Know</b></h4>
+<h5><ul>
+<li>The CPC has released the 2023-24 winter outlook</li>
+<br>
+<li>The outlook covers meteorological winter, which is December through February</li>
+<br>
+<li>Wetter than average conditions are expected to continue across the Lone Star State</li>
+</ul>
+</h5>
+<hr style="height: 2px; border-width: 0; background-color: #042d4d;">
+
+</div>
+</center>
+</div>
+<p>Weâre getting closer to the end of the year and winter, and thanks to the winter outlook from the CPC, we have an even better idea of what winter weather will be like in Texas this season.</p>
+<p>First things first, <a href="https://spectrumnews1.com/ma/worcester/weather/2022/02/22/what-is-el-nino">El NiÃ±o</a> conditions have returned. Moderate to strong El NiÃ±o conditions are occurring in real-time. To be classified as an official El NiÃ±o period, five consecutive three-month periods within the Oceanic Nino Index show positive favor.</p>
+<p>By the end of October we met and exceeded those standards, therefore thereâs a high probability that El Nino conditions hold us through the winter months.</p>
+<p>An El NiÃ±o winter&nbsp;usually delivers wetter than average conditions across the southern U.S., including Texas.&nbsp;</p>
+<div class="data-image-wrapper img-hash-360700d3-ae5c-434a-b47d-34f4bb8028e8 hashed-image center percent-hundred" contenteditable="false" style="display: inline-block; position: relative;"><img src="https://s7d2.scene7.com/is/image/TWCNews/El Nino Winter PatternKY" alt="" class="hashed-image" img-data-alignment="center" img-data-width="percent-hundred"></div>
+<p>The new seasonal precipitation and temperature outlooks issued at the end of October by the CPC reflect the typical weather pattern during an&nbsp;El NiÃ±o winter.</p>
+<p>These outlooks cover <a href="https://spectrumlocalnews.com/nc/triangle-sandhills/news/2019/02/26/meteorological-seasons-vs--astronomical-seasons">meteorological winter,</a> which is December through February.&nbsp;</p>
+<div class="data-image-wrapper img-hash-fa0a6d82-96fd-43d4-984e-cd3318440d32 hashed-image center percent-hundred" contenteditable="false" style="display: inline-block; position: relative;"><img src="https://s7d2.scene7.com/is/image/TWCNews/CPC Three Month Precipitation Winter Outlook" alt="" class="hashed-image" img-data-alignment="center" img-data-width="percent-hundred"></div>
+<p>So with wetter than average conditions expected across Texas through Feb. 2024, itâs likely that drought conditions will improve.</p>
+<p>Our soils, vegetation, aquifers, rivers, creeks and lakes could use relief from our long-standing drought. This winter is being classified as a rainy one, so we could receive much needed support to lessen the strain on our hydrologic cycle.</p>
+<p>Weâve also been plagued by elevated fire weather the last few years, so a wetter than average season would me fewer available fuels and devastating wildfires.</p>
+<p>After recent historic snow and ice events, our natural inclination to hearing this news might come as fear, but extreme winter weather with frozen precipitation is not likely in Texas. This is because the Climate Prediction Center is not calling for a colder than normal season. They are calling for near-normal average temperatures through February.</p>
+<div class="data-image-wrapper img-hash-9263de1e-dde0-4792-b474-cf00c47095e3 hashed-image center percent-hundred" contenteditable="false" style="display: inline-block; position: relative;"><img src="https://s7d2.scene7.com/is/image/TWCNews/CPC Three Month Temperature Winter Outlook" alt="" class="hashed-image" img-data-alignment="center" img-data-width="percent-hundred"></div>
+<p>Even in our coldest viewing area of North Texas during the winter months average temperatures never dip down to freezing, they hold with highs in the upper 50s and lows in the upper 30s, so maintaining at this range ensures frozen precipitation predictions are not favored at this time.</p>
+<p>It is worth being noted that there remains low to medium uncertainty in our temperatures projections. Thatâs because of the present unknowns about our atmospheric steering flow and how it will evolve across the southwest U.S./northwest Mexico as we move deeper into early winter.</p>
+<p>Weâll continue to keep you informed if there are any shifts, though changes would be minor and not result in dramatic pattern alterations.</p>
+<p>Keep in mind, this is a long-range climate outlook. If there are any bursts of extreme cold in the forecast this winter, weâll know closer to the event.</p>
+<p>So itâs best to always be prepared, and up to date with the latest forecasts here on Spectrum News 1.&nbsp;</p>
+<p><i>Our team of meteorologists dives deep into the science of weather and breaks down timely weather data and information. To view more weather and climate stories,&nbsp;<a href="https://spectrumlocalnews.com/weatherblog" target="_blank">check out our weather blogs section</a>.</i></p>
+
+
+</div>
+
+
+    
+    
+    <div class="box-wrapper">
+
+
+
+    
+</div>
+
+
+
+                    <div>
+                        <div id="x33" class="dfp-ad-tags" data-position="x33"></div>
+                        <div class="icon-advertisement hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+            <div id="story-rail">
+                
+
+
+
+
+    
+        
+        
+        <div class="content-list related-stories">
+
+
+
+<div class="content-list-layout content-list-layout--4x1-single-column-mobile  ajax--true content-list__mode--tag-based-dynamic " data-limit="4" data-requiredtags="regions:tx/texas,regions:tx/austin,regions:tx/san-antonio,regions:tx/Dallas,regions:tx/el-paso,pageCategories:spectrum-news-primary-categories/weather/latest-weather-stories,pageCategories:news/weather-stories,pageCategories:weather/blog,pageCategories:weather/wx-tracking" data-pagePath="/content/news/stories/2023/10/29/w/winter-2023-2024-outlook-for-texas">
+    <h1></h1>
+    <div class="articles-container content-list__preview--false content-list__hide-flair--false content-list__hide-videoIndicator--false content-list__hide-image--false content-list__hide-location--false content-list__hide-date--false">
+        
+        
+    </div>
+
+    
+</div>
+
+</div>
+
+    
+        
+        
+        <div class="newpar new section">
+
+</div>
+
+    
+        
+        
+        <div class="par iparys_inherited">
+
+    
+    
+    
+    
+
+</div>
+
+    
+
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            
+
+
+
+
+
+            <div id="below-main-content-right">
+                
+
+
+
+
+    
+        
+        
+        <div class="newpar new section">
+
+</div>
+
+    
+        
+        
+        <div class="par iparys_inherited">
+
+    
+    
+    
+    
+
+</div>
+
+    
+
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            
+
+
+
+
+    
+        
+        
+        <div class="newpar new section">
+
+</div>
+
+    
+        
+        
+        <div class="par iparys_inherited">
+
+    
+    
+    
+    
+
+</div>
+
+    
+
+
+        </div>
+    </div>
+
+    <div>
+    
+        
+            <div id="x37" class="dfp-ad-tags" data-position="x37">
+            </div>
+            <div class="icon-advertisement hidden"></div>
+        
+    
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+    
+        
+        
+        <div class="site-footer">
+
+<footer class="news-empire">
+    <div class="social-gradient"></div>
+    <div id="footerLinks" class="container main-footer__body">
+        <div class="row">
+            <div class="col-xs-12">
+                
+                    <div class="footer-branding">
+                        <a href="/tx/south-texas-el-paso">
+                            <div class="logo icon-SpectrumNews1Logo-black"></div>
+                        </a>
+                    </div>
+                
+                <div class="footer__links text-uppercase ">
+
+<ul class="list-inline list-unstyled">
+    <li>
+    
+        <a href="/splash">
+            Spectrum News
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="/tx/south-texas-el-paso/about-us/contact-us">
+            Contact
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="/tx/south-texas-el-paso/about-us">
+            About
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="/tx/south-texas-el-paso/rss">
+            RSS
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="/tx/south-texas-el-paso/about-us/faq">
+            FAQ
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="https://go2.spectrumreach.com/texas_spectrumnews_tv" target="_blank">
+            ADVERTISE WITH US
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="https://jobs.spectrum.com/content-media-news" target="_blank">
+            Careers
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="/tx/south-texas-el-paso/sitemap">
+            Sitemap
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="/tx/south-texas-el-paso/email-signup" target="_blank">
+            Newsletter
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="https://www.spectrum.com/policies/residential-terms.html" target="_blank">
+            TERMS
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="https://www.spectrum.com/policies/your-privacy-rights" target="_blank">
+            Your Privacy Rights
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="https://www.spectrum.com/policies/california" target="_blank">
+            California Consumer Privacy Rights
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="https://www.spectrum.com/policies/your-privacy-rights-opt-out" target="_blank">
+            California Consumer Limit the Use of My Sensitive Personal Information
+        </a>
+    
+</li>
+
+    <li>
+    
+        <a href="https://spectrum.com/policies/your-privacy-rights-opt-out" target="_blank">
+            Do Not Sell or Share My Personal Information/Opt-Out of Targeted Advertising
+        </a>
+    
+</li>
+</ul>
+
+
+</div>
+                
+                    <div id="footerSocialLinks" class="social-icons">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/spectrumnews1tx/" class="icon--facebook-gray" data-provider="Facebook"></a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://twitter.com/SpectrumNews1TX" class="icon--twitter-gray" data-provider="Twitter"></a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://www.instagram.com/spectrumnews1tx/" class="icon--instagram-gray" data-provider="Instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+        </div>
+    <div class="legal-copy ">Â© 2024, Charter Communications, all rights reserved.</div>
+    </div>
+</footer>
+</div>
+
+    
+        
+        
+        <div class="newpar new section">
+
+</div>
+
+    
+        
+        
+        <div class="par iparys_inherited">
+
+    
+    
+    
+    
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Manually include shared clientlib dependencies outside of the SSI directives. -->
+
+
+    
+<script src="/etc/clientlibs/news/vendor/bowser.min.ACSHASH66fb5ded26b5d86decaa5cc59ba79320.js"></script>
+<script src="/etc/designs/news/clientlibs/js/adobe-authentication.min.ACSHASHcdf149dd49343cb14056c90d72f8017c.js"></script>
+<script src="/etc/designs/news/clientlibs/js/pinxt-authentication.min.ACSHASHdfb39e46d09ab787da7434a225348315.js"></script>
+<script src="/etc/designs/news/clientlibs/js.min.ACSHASH0408c87f6a2cf108f10625e0c846af43.js"></script>
+
+
+
+
+
+    
+<script src="/etc/designs/news/clientlibs/js/article-app-prompt.min.ACSHASHce40a79fa9e435394e8ada2c37b9c036.js"></script>
+
+
+
+
+
+
+
+
+
+<!-- Import design specific JS within SSI includes -->
+
+<!-- Load empire JS library -->
+
+    
+<script src="/etc/designs/news-empire/clientlibs/js.min.ACSHASH388e10572297de4f002acf5c1f7bf485.js"></script>
+
+
+
+
+
+
+
+
+
+<script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+
+
+
+
+
+
+<!--Open in App Component -->
+
+    
+
+
+
+
+
+
+
+    
+
+        
+        
+
+        
+
+        
+        
+
+        
+        
+            
+    
+<script src="/etc/designs/news/clientlibs/js/podcast.min.ACSHASH6ac3a30631d33c159578a08990c9da45.js"></script>
+
+
+
+        
+
+    
+
+        
+        
+
+        
+
+        
+        
+
+        
+        
+            
+    
+<script src="/etc/designs/news/clientlibs/js/article.min.ACSHASH9af893e73cc3c1e9aeec52ae96d55b34.js"></script>
+
+
+
+        
+
+    
+
+        
+        
+            <script type="text/javascript">
+(function($) {
+    if (!isMobile.any) {
+        /* By default the panels should be only be expanded on a desktop */
+        $('footer .panel-collapse.collapse').addClass('in');
+        /* Remove collapse functionality on desktop */
+        $('footer .panel-title').removeAttr('data-toggle');
+    }
+    if (isMobile.any) {
+        /* Only display the + sign on a mobile device */
+        $('footer .expand-control').removeClass('hidden');
+        /* BUGFIX: Include an empty onclick function on footer accordions to fix an iOS device bug with bootstrap collapse.
+        Sometimes iOS does not seem to treat divs as clickable elements, but adding a blank on-click handler allows
+        the rest of bootstrap collapse to function without side effects. */
+        $('footer .panel-title').on('click', function(){})
+    }
+})(jQuery);
+</script>
+        
+
+        
+
+        
+        
+
+        
+        
+
+    
+
+
+
+
+
+
+
+<script>
+    /**
+    * sets the  quantum visitId in the 'digitalData'
+    * layer at: window.digitalData.visit.visitId
+    *
+    **/
+    var timeit = window.setInterval(setVisitId, 2000);
+    function setVisitId() {
+       if (window && window.Helix && window.Helix.track) {
+             window.digitalData.visit.visitId = window.Helix.get("visitId");
+       }
+       if(window.digitalData.visit.visitId && typeof window.digitalData.visit.visitId !=='undefined'){
+             clearInterval(timeit );
+       }
+    }
+</script>
+
+
+
+
+<script type="text/javascript">
+   window.addEventListener("load", function (e) {
+        var auth       = localStorage.getItem('authenticated')
+        var docClicked = Cookies.get('clicked-resumed')
+        if((auth && auth === "true") && (!docClicked) ){
+         	 News.App.QuantumAnalytics.checkQuantumLoginResume();
+        }else if((auth && auth === "true") &&  docClicked ){
+           Cookies.remove('clicked-resumed')
+        }
+    });
+
+    $(document).ready(function(){
+       $(document).on('click',function(e){
+    	      var auth  = localStorage.getItem('authenticated')
+    	      if(auth && auth === "true"){
+        	     News.App.QuantumAnalytics.cookieGeneral("clicked-resumed");
+    	      }
+       });
+    });
+</script>
+
+</body>
+</html>

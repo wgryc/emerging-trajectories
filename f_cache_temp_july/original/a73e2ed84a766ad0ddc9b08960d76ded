@@ -1,0 +1,737 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<!-- 	Climate Prediction Center Home page 	v0.1 2015.12.02
+		Programmer: Jonathan Hoopingarner
+		
+		RZDM:	/home/www/cpc/htdocs/index.php
+		Modified: 	v01.2 	2015.12.04		JDH
+		Modified: 	v01.3 	2015.12.09		JDH		Changed link to United States Drought Monitor
+		Modified:	v01.4	2016.03.##		JDH		Changed to use of CPC_Top_Banner.php
+		Modified:	v01.5	2016.05.27		JDH		Changed to add GTH to blue-strips
+		Modified:	v01.6	2017.03.28		JDH		Changed redirect erroneous link
+		Modified:	v01.6	2017.08.02		JDH		Added subject.attribution metadata
+	-->
+	<head>
+		<title>Climate Prediction Center</title>
+		<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+		<meta name="DC.title" content="NOAA's Climate Prediction Center">
+		<meta name="DC.description" content="The starting point for the Climate Prediction Center, the home of the official U.S. climate outlooks. Popular products: El Nino/La Nina Advisories, U.S. Hazards Assessment and Drought Assessment.">
+		<meta name="DC.date.reviewed" scheme="ISO8601" content="2005-12-12">
+		<meta name="DC.date.created" scheme="ISO8601" content="2001-01-01">
+		<meta name="DC.subject" content="Climate,Climate Prediction Center,National Weather Service,National Oceanic &amp; Atmospheric Administration,NOAA,El Nino,La Nina,ENSO,climate outlooks,El Nino Advisory,La Nina Advisory,droughts,hurricanes,Threats Assessment,Drought Assessment,Drought Monitor,CLimate Diagnostics Bulletin,6-10 day outlook,8-14 day outlook,6-10 day forecast,8-14 day forecast,MRF,UV Index,North Atlantic Oscillation,NAO,Pacific Decadal Oscillation,PDO,sea surface temperatures,SST,Palmer Drought Severity Index,African Desk,outlooks,expert assessments,monitoring,advisories,stratosphere,temperature,precipitation,snow cover,snowfall,soil moisture,OLR,ozone,degree days,CLIMATE,CLIMATE PREDICTION CENTER,EL NINO,LA NINA,CLIMATE OUTLOOKS,HURRICANES,ASSESSMENTS,SNOW,STRATOSPHERE,DROUGHT,OZONE,DEGREE DAYS">
+		<meta name="DC.format" content="text/html; charset=iso-8859-1">
+		<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US">
+		<meta name="DC.Distribution" content="Global">
+		<meta name="DC.robot" content="all">
+		<meta name="DC.creator" content="NOAA's Climate Prediction Center">
+		<meta name="DC.contributor" content="CPC Internet Team">
+		<meta name="author" content="CPC Webmaster">
+		<meta name="subject.attribution" content="CPC_Webmaster">
+		<link rel="schema.DC" href="https://purl.org/dc/elements/1.1/">
+		<link rel="schema.DCTERMS" href="https://purl.org/dc/terms/">
+		<link rel="DC.rights" href="https://www.weather.gov/disclaimer.php">
+		<link rel="stylesheet" type="text/css" href="/main.css">
+		<link href="/favicon.ico" rel="shortcut icon">  
+		<link href="/nwscwi/main.css" type="text/css" rel="STYLESHEET">
+		
+		<script language="Javascript" type="text/javascript">
+			function show_tab(nam)
+			{
+				document.getElementById("TAB610dayToutlook").style.display= "none";
+				document.getElementById("TAB610dayPoutlook").style.display= "none";
+				
+				document.getElementById("TAB814dayToutlook").style.display= "none";
+				document.getElementById("TAB814dayPoutlook").style.display= "none";
+				
+				document.getElementById("TABWK34dayToutlook").style.display= "none";
+				document.getElementById("TABWK34dayPoutlook").style.display= "none";
+				
+				document.getElementById("TABdroughtmonitor").style.display= "none";
+				document.getElementById("TABmonthlydrought").style.display= "none";
+				document.getElementById("TABseasonaldrought").style.display= "none";
+								
+				document.getElementById("TAB30dayToutlook").style.display= "none";
+				document.getElementById("TAB30dayPoutlook").style.display= "none";
+				
+				document.getElementById("TAB90dayToutlook").style.display= "none";
+				document.getElementById("TAB90dayPoutlook").style.display= "none";
+				
+				document.getElementById("TABhazards37").style.display= "none";
+				document.getElementById("TABhazards814").style.display= "none";
+				document.getElementById("TABPhazards814").style.display= "none";
+                                document.getElementById("TABShazards814").style.display= "none";
+				document.getElementById("TABThazards814").style.display= "none";
+				document.getElementById("TABWhazards814").style.display= "none";
+				
+				document.getElementById("TABgthWK1").style.display= "none";
+				
+				document.getElementById(nam).style.display = "block";
+			}
+		</script>
+		
+	</head>
+
+	
+	<body leftMargin="0" background="/nwscwi/background-white.gif" topMargin="0" marginheight="0" marginwidth="0">
+	
+		<!-- CPC Top Banners, including NOAA, NWS logos
+
+		Programmer: Jonathan Hoopingarner
+		
+		RZDM:	/home/www/cpc/htdocs/cpc_common/CPC_Top_Banner.php
+		Modified:	v01.0	2016.03.16		JDH		Incept
+	-->
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0" background="/nwscwi/topbanner.jpg">
+	<tbody>
+		<tr>
+			<td align="right" height="19">
+				<a href="#contents"><img height="1" alt="Skip Navigation Links" src="/nwscwi/skipgraphic.gif" width="1" border="0"></a>
+				<a href="http://www.nws.noaa.gov/" class="homepagelinks"><span class="nwslink">www.nws.noaa.gov</span></a>&nbsp;
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- NOAA & NWS Logos and the banner headlines -->
+
+<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+	<tbody>
+		<tr>
+			<td rowSpan="2"><A href="http://www.noaa.gov/">
+				<img height="78" alt="NOAA logo - Click to go to the NOAA home page" src="/nwscwi/noaaleft.jpg" width="85" border="0"></A>
+			</td>
+			<td align="left">
+				<img height="20" alt="National Weather Service" src="/nwscwi/nws_title.jpg" width="500" border="0">
+			</td>
+			<td rowSpan="2" width="100%" background="/nwscwi/ncep_bkgrnd.jpg">
+				&nbsp;
+			</td>
+			<td rowSpan="2" align="right"><A href="http://www.nws.noaa.gov/">
+				<img height="78" alt="NWS logo - Click to go to the NWS home page" src="/nwscwi/nwsright.jpg" width="85" border="0"></A>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img height="58" alt="Climate Prediction Center" src="/nwscwi/cpc.jpg" width="500" border="0">
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- CPC Navigation Bar -->
+
+<table cellSpacing="0" cellPadding="0" width="100%" background="/nwscwi/navbkgrnd.gif" border="0">
+		<tbody>
+			<tr>
+				<td align="left" width="135">
+					<IMG height="23" alt="" src="/nwscwi/navbarleft.jpg" width="94" border="0">
+				</td>
+				<td class="nav" align="center" width="10%">
+					<A href="/" class="menu" title="to the Climate Prediction Center home page">Home</A>
+				</td>
+				<td class="nav" align="center" width="10%">
+					<A href="/products/site_index.shtml" class="menu" title="to Climate Prediction Center site map">Site Map</A>
+				</td> 
+				<td class="nav" align="right" width="7%">
+					<A href="https://www.weather.gov/news/" class="menu" title="to National Weather Service news page">News</A>
+				</td>
+				<td class="nav" align="right" width="15%">
+					<A href="http://www.weather.gov/organization.php" class="menu">Organization</A>
+				</td>
+				<td class="searchinput" align="right" width="37%">
+					<form method="get" action="http://search.usa.gov/search" style="margin-bottom:0; margin-top:0;" >
+						<label for="Search"> <span class="yellow"> Enter Search Term(s):</span>&nbsp;</label>
+						<input type="hidden" name="affiliate" value="nws.noaa.gov" />
+						<input type="hidden" name="v:project" value="firstgov" />
+						<input name="query" type="text" value="" size="20" maxlength="256" id="Search" />
+						<input type="submit" value="Search" />
+					</form>
+				</td>
+				<td align="right">
+					<IMG height="23" alt="" src="/nwscwi/navbarendcap.jpg" width="24" border="0">
+				</td>
+			</tr>
+		</tbody>
+	</table>		<!-- -->
+		<table cellSpacing="0" cellPadding="1" width="1000" border="0">
+			<tbody>
+				<tr vAlign="top">
+					<td width="137">
+						<br>
+						<table cellSpacing="0" cellPadding="2" width="137" border="0">
+							<tbody>
+								<tr>
+	<td class="searchinput" align="left">
+		<form method="get" action="http://search.usa.gov/search" style="margin-bottom:0; margin-top:0;">
+			<label for="Search">
+			<span class="yellow">Search&nbsp;the CPC</span></label>
+			<input type="hidden" name="affiliate" value="ncep.noaa.gov" />
+			<input type="hidden" name="v:sources" value="firstgov-affiliates-search" />
+			<input type="hidden" name="v:project" value="firstgov" />
+			<input type="hidden" name="query" value="site:www.cpc.ncep.noaa.gov" />
+			<input name="query" type="text" value="" size="10" maxlength="256" id="Search"/>
+			<input type="submit" value="Go"  />
+		</form>
+	</td>
+</tr>								<tr>
+	<td>
+		<br><span class="yellow"><a href="http://www.ncep.noaa.gov/newsletter/" class="menu">&nbsp;&nbsp;&nbsp;NCEP Quarterly<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Newsletter</a></span><br>
+	</td>
+</tr>								<tr>
+	<td class="white" colSpan="2">
+		<br><a href="/products/precip/CWlink/MJO/climwx.shtml" class="menu"><font color="#F0E68C"> Climate-Weather</font></a><br>
+		&nbsp;&nbsp;<a href="/products/precip/CWlink/MJO/enso.shtml" class="menu">El Ni&ntilde;o/La Ni&ntilde;a</a><br>
+		&nbsp;&nbsp;<a href="/products/precip/CWlink/MJO/mjo.shtml" class="menu" title="Madden Julian Oscillation">MJO</a><br>
+		&nbsp;&nbsp;<a href="/products/precip/CWlink/MJO/block.shtml" class="menu" title="Atmospheric Blocking">Blocking</a><br>
+		&nbsp;&nbsp;<a href="/products/precip/CWlink/daily_ao_index/teleconnections.shtml" class="menu">AAO, AO, NAO, PNA</a><br>
+		&nbsp;&nbsp;<a href="/products/precip/CWlink/climatology/" class="menu">Climatology</a><br>
+		&nbsp;&nbsp;<a href="/products/Global_Monsoons/Global-Monsoon.shtml" class="menu">Global Monsoons</a><br>
+	</td>
+</tr>								<tr>
+	<td class="white" colSpan="2">
+		<br><span class="yellow">Expert Assessments</span><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/EXP_ASS_index.shtml" class="menu" title="to Index of Expert Assessment products">Index</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/expert_assessment/" class="menu" title="to Expert Assessments products pages">Products</a>
+	</td>
+</tr>								<tr>
+	<td class="white" colSpan="2">
+		<br><span class="yellow">Outlooks (Forecasts)</span><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/OUTLOOKS_index.shtml" class="menu" title="to Index of Outlook products">Index</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/forecasts/" class="menu" title="to Outlooks products pages">Products</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/verification/summary/" class="menu" title="Verification">Verification</a>
+	</td>  
+</tr>								<tr>
+	<td class="white" colSpan="2">
+		<br><span class="yellow">Monitoring and Data</span><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/MD_index.shtml" class="menu" title="to Index of Monitoring and Data products">Index</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/monitoring_and_data/" class="menu" title="to Monitoring and Data products pages">Products</a>
+	</td>
+</tr>								<tr>
+	<td class="white" colSpan="2">
+		<br><span class="yellow">Crosscutting Themes</span><br>
+		&nbsp;&nbsp;&nbsp;<A href="/products/GODAS/" class="menu">Ocean Climate</a><br>
+		&nbsp;&nbsp;&nbsp;<A href="/products/stratosphere/" class="menu">Stratosphere</a><br>
+		&nbsp;&nbsp;&nbsp;<A href="/pacdir/HOME3.shtml" class="menu">Pacific Islands</a><br>
+		&nbsp;&nbsp;&nbsp;<A href="/products/international/index.shtml" class="menu">International<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desks</a><br>
+	</td>
+</tr>								<tr>
+	<td class="white" colSpan="2">
+		<br><span class="yellow">Partnerships</span><br>
+		&nbsp;&nbsp;&nbsp;<a href="https://www.climate.gov" class="menu" title="to climate.gov home page">Climate.gov</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="https://www.cpc.ncep.noaa.gov/products/CTB" class="menu" title="to Climate Test Bed home page">Climate Test Bed</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/partnerships/noaapart.shtml" class="menu" title="to National Oceanic and Atmospheric Administration home page">NOAA</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/partnerships/interpart.shtml" class="menu">Interagency</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/JAWF_Monitoring/" class="menu" title="to Joint Agricultural Weather Facility home page" >JAWF</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="https://www.usaid.gov/" class="menu">USAID</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/partnerships/alaska.php" class="menu">Alaska</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/partnerships/otherpart.shtml" class="menu">Others</a><br>
+	</td>
+</tr>
+								<tr>
+	<td class="white" colSpan="2">
+		<br><span class="yellow">Outreach</span><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/outreach/education.shtml" class="menu">Educational</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/outreach/glossary.shtml" class="menu" title="A glossary of frequently used terms in CPC's climate products.">Climate Glossary</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/outreach/meetings.shtml" class="menu">Meetings</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/outreach/seminars/" class="menu">CPC Seminars</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/products/outreach/publications.shtml" class="menu">Publications</a><br>
+	</td>
+</tr>								<tr>
+	<td class="white" colSpan="2">
+		<br><span class="yellow">About Us</span><br>
+		&nbsp;&nbsp;&nbsp;<a href="/information/who_we_are/mission.shtml" class="menu">Vision &amp; Mission</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/information/who_we_are/index.shtml" class="menu">Who We Are</a><br>
+	</td>
+</tr>								<tr>
+	<td class="white" colSpan="2">
+		<br><span class="yellow">Contact Us</span><br>
+		&nbsp;&nbsp;&nbsp;<a href="/information/personnel/contacts.shtml" class="menu">CPC Information</a><br>
+		&nbsp;&nbsp;&nbsp;<a href="/comment-form.html" class="menu">CPC Web Team</a><br>
+	</td>
+</tr>								<tr>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+	<td class="white" id="menuitem">
+		<a href="http://www.usa.gov/"><img src="/nwscwi/usagov_logo_color_110wb.gif" alt="USA.gov is the U.S. Government's official Web portal to all Federal, state and local government Web resources and services." width="110" height="30" border="0"></a>
+	</td>
+</tr>								<tr>
+	<td class="white" id="menuitem">
+		<a href="http://www.facebook.com/pages/NOAA-NWS-Climate-Prediction-Center/265208393507724">
+		<img src="/www_images/facebook_logo.gif" alt="Follow the Climate Prediction Center on Facebook" width="110" height="33" border="0"></a>
+	</td>
+</tr>							</tbody>
+						</table>		
+					</td>
+					<td vAlign="top" align="center" width="1000">
+						<A name="contents"></a>
+						<br><table cellSpacing="0" cellPadding="0" border="0" width="100%" style="margin-top:-15px;">
+	<tbody>
+		<tr bgcolor="#0A2390">
+			<td align="center" id="menuitem" class="homepagelinks" >
+				<a href="https://www.commerce.gov" title="Department of Commerce"><strong>DOC</strong></a>
+			</td>
+			<td align="center" id="menuitem" class="homepagelinks">
+				<a href="https://www.noaa.gov" title="National Oceanographic and Atmospheric Administration"><strong>NOAA</strong></a>
+			</td>
+			<td align="center" id="menuitem" class="homepagelinks" style="border-right: white medium solid;">
+				<a href="https://www.weather.gov" title="National Weather Service"><strong>NWS</strong></a>
+			</td>
+			<td align="left" id="menuitem" class="homepagelinks" style="padding-left: 3px;">
+				<a href="https://www.ncep.noaa.gov" title="National Centers for Environmental Prediction"><strong>NCEP Centers:</strong></a>
+			</td>
+			<td align="center" id="menuitem" class="homepagelinks">
+				<a href="https://www.aviationweather.gov" title="Aviation Weather Center"><strong>AWC</strong></a>
+			</td>
+			<td align="center" id="menuitem" class="homepagelinks">
+				<a href="https://www.cpc.ncep.noaa.gov" title="Climate Prediction Center"><strong>CPC</strong></a>
+			</td>
+			<td align="center" id="menuitem" class="homepagelinks">
+				<a href="https://www.emc.ncep.noaa.gov" title="Environmental Modeling Center"><strong>EMC</strong></a>
+			</td>
+			<td align="center" id="menuitem" class="homepagelinks">
+				<a href="https://www.nco.ncep.noaa.gov" title="NCEP Central Operations"><strong>NCO</strong></a>
+			</td>
+			<td align="center" id="menuitem" class="homepagelinks">
+				<a href="https://www.nhc.noaa.gov" title="National Hurricane Center"><strong>NHC</strong></a>
+			</td>
+			<td align="center" id="menuitem" class="homepagelinks">
+				<a href="https://ocean.weather.gov" title="Ocean Prediction Center"><strong>OPC</strong></a>
+			</td>
+			<td align="center" id="menuitem" class="homepagelinks">
+				<a href="https://www.spc.noaa.gov" title="Storm Prediction Center"><strong>SPC</strong></a>
+			</td>
+			<td align="center" id="menuitem" class="homepagelinks">
+				<a href="https://www.swpc.noaa.gov" title="Space Weather Prediction Center"><strong>SWPC</strong></a>
+			</td>
+			<td align="center" id="menuitem" class="homepagelinks">
+				<a href="https://www.wpc.ncep.noaa.gov" title="Weather Prediction Center"><strong>WPC</strong></a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+						<br><table cellSpacing="0" cellPadding="0" border="0">
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td width="95%">
+				<font face="verdana,arial,serif" size="3">
+				<strong>Climate News</strong>
+					<ul style="list-style-type:disc">
+															
+					<!--
+<li>
+	<strong>
+	  <a href="https://www.cpc.ncep.noaa.gov/products/outlooks/hurricane.shtml" style="text-decoration: none">NOAA Updated Atlantic Hurricane Outlook (10 Aug 2023)</a> 
+	</strong>
+</li>
+<li>
+	<strong>
+	  <a href="https://www.noaa.gov/news-release/noaa-forecasters-increase-atlantic-hurricane-season-prediction-to-above-normal" style="text-decoration: none">NOAA Updated Atlantic Hurricane Outlook Press Release (10 Aug 2023)</a> 
+	</strong>
+</li>
+commented out on Oct 13, 2023 - MR -->
+<!--
+<li>
+	<strong>
+	  <a href="https://www.noaa.gov/news-release/us-winter-outlook-wetter-south-warmer-north" style="text-decoration: none">NOAA Issues Winter Outlook (19 Oct 2023)</a> 
+	</strong>
+</li>
+commented out on Feb 9, 2024 -->
+<li>
+	<strong>
+	  <a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml" style="text-decoration: none">A transition from El Ni&ntilde;o to ENSO-neutral is likely by April-June 2024 (79% chance), with increasing odds of La Ni&ntilde;a developing in June-August 2024 (55% chance) (8 Feb 2024)</a> 
+	</strong>
+</li>
+<li>
+	<strong>
+		<a href="https://www.cpc.ncep.noaa.gov/products/outreach/CDPW/48/" style="text-decoration: none">48th Climate Diagnostics and Prediction Workshop Announcement (6 Apr 2023)</a> 
+	</strong>
+</li>
+					
+				</ul>
+				</font>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+						<table style="border-color: black; border-style: solid; border-width: thin;">
+							<tbody>
+								<tr>
+									<td align="center">
+										<font face="verdana,arial,serif" size="1">Click on product title to go to product page. Move cursor over product parameter name to display the graphic -- click to enlarge. Links to these same products are also available below.</font>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<table border="1" cellPadding="0" cellSpacing="0" width="100%">
+											<tbody>
+												<tr>
+													<td>
+														<table cellspacing="0" cellpadding="0" width="100%" border="0" align="center" name="Tabs">
+															<tbody>
+																<tr>
+																	<td class="nav" id="menuitem" align="center" bgcolor="#0A2390" colspan="4" width="270">
+																		 <a href="/products/predictions/610day/" title="to 6 to 10 Day Outlook page" class="homepagelinks"><font color="#F0E68C">6-10 Day Outlook</font></a>&nbsp;&nbsp;
+																		 <a href="/products/predictions/610day/interactive/index.php" title="to interactive 6 to 10 day display" class="homepagelinks"><font color="#F0E68C">(Interactive)</font></a><br />
+																		 <a href="/products/predictions/610day/610temp.new.gif" OnMouseOver="show_tab('TAB610dayToutlook')" title="Latest 6 to 10 Day Temperature Outlook graphic" class="homepagelinks">Temperature</a>
+																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+																		 <a href="/products/predictions/610day/610prcp.new.gif" OnMouseOver="show_tab('TAB610dayPoutlook')" title="Latest 6 to 10 Day Precipitation Outlook graphic" class="homepagelinks">Precipitation</a>
+																	</td>
+																	<td>&nbsp;</td>
+																	<td class="nav" id="menuitem" align="center" bgcolor="#0A2390" colspan="4" width="270">
+																		<a href="/products/predictions/long_range/lead14/" title="to 1 month Outlook page" class="homepagelinks"><font color="#F0E68C">One Month Outlook</font></a>&nbsp;&nbsp;
+																		<a href="/products/predictions/long_range/lead14/interactive/index.php" title='to interactive display for Monthly Outlooks' class="homepagelinks"><font color="#F0E68C">(Interactive)</font></a><br />
+																		<a href="/products/predictions/long_range/lead14/off15_temp.gif" OnMouseOver="show_tab('TAB30dayToutlook')" title="Latest 1 month Temperature Outlook graphic" class="homepagelinks">Temperature</a>
+																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+																		<a href="/products/predictions/long_range/lead14/off15_prcp.gif" OnMouseOver="show_tab('TAB30dayPoutlook')" title="Latest 1 month Precipitation Outlook graphic" class="homepagelinks">Precipitation</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>&nbsp;</td>
+																</tr>
+																<tr>
+																	<td class="nav" id="menuitem" align="center" bgcolor="#0A2390" colspan="4" width="270">
+																		 <a href="/products/predictions/814day/" title="to 8 to 14 Day Outlook page" class="homepagelinks"><font color="#F0E68C">8-14 Day Outlook</font></a>&nbsp;&nbsp;
+																		 <a href="/products/predictions/814day/interactive/index.php" title="to interactive 8 to 14 day display" class="homepagelinks"><font color="#F0E68C">(Interactive)</font></a><br />
+																		 <a href="/products/predictions/814day/814temp.new.gif" OnMouseOver="show_tab('TAB814dayToutlook')" title="Latest 8 to 14 Day Temperature Outlook graphic" class="homepagelinks">Temperature</a>
+																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+																		 <a href="/products/predictions/814day/814prcp.new.gif" OnMouseOver="show_tab('TAB814dayPoutlook')" title="Latest 8 to 14 Day Precipitation Outlook graphic" class="homepagelinks">Precipitation</a>
+																	</td>
+																	<td>&nbsp;</td>
+																	 <td class="nav" id="menuitem" align="center" bgcolor="#0A2390" colspan="4" width="270">
+																		<a href="/products/predictions/long_range/" title="to 3 month Outlook page" class="homepagelinks"><font color="#F0E68C">Three Month Outlook</font></a>&nbsp;&nbsp;
+																		<a href="/products/predictions/long_range/interactive/index.php" title='to interactive display for Seasonal Outlooks' class="homepagelinks"><font color="#F0E68C">(Interactive)</font></a><br />
+																		<a href="/products/predictions/long_range/lead01/off01_temp.gif" OnMouseOver="show_tab('TAB90dayToutlook')" title="Latest 3 month Temperature Outlook graphic" class="homepagelinks">Temperature</a>
+																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+																		<a href="/products/predictions/long_range/lead01/off01_prcp.gif" OnMouseOver="show_tab('TAB90dayPoutlook')" title="Latest 3 month Precipitation Outlook graphic" class="homepagelinks">Precipitation</a>
+																	 </td>
+																</tr>
+																<tr>
+																	<td>&nbsp;</td>
+																</tr>
+																<tr>
+																	<td class="nav" id="menuitem" align="center" bgcolor="#0A2390" colspan="4" width="270">
+																		 <a href="/products/predictions/WK34/" title="to Week 3-4 Outlook page" class="homepagelinks"><font color="#F0E68C">Week 3-4 Outlooks</font></a>&nbsp;&nbsp;<br>													 
+																		 <a href="/products/predictions/WK34/gifs/WK34temp.gif" OnMouseOver="show_tab('TABWK34dayToutlook')" title="Latest Week 3-4 Temperature Outlook graphic" class="homepagelinks">Temperature</a>
+																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+																		 <a href="/products/predictions/WK34/gifs/WK34prcp.gif" OnMouseOver="show_tab('TABWK34dayPoutlook')" title="Latest Week 3-4 Precipitation Outlook graphic" class="homepagelinks">Exp. Precipitation</a>
+																	</td>
+																	<td>&nbsp;</td>
+																	<td class="nav" id="menuitem" align="center" bgcolor="#0A2390" colspan="4" width="270">
+																		<a href="/products/predictions/threats/threats.php" title="to United States Hazards Assessment page" class="homepagelinks"><font color="#F0E68C">8-14 Day U.S. Hazards Outlook</font></a><br>
+																		<!-- <a href="/products/predictions/threats/hazards_d3_7_contours.png" OnMouseOver="show_tab('TABhazards37')" title="United States 3-7 Day Hazards graphic" class="homepagelinks">3-7 Day</a> &nbsp;&nbsp;&nbsp;&nbsp; -->
+																		<a href="/products/predictions/threats/hazards_d8_14_contours.png" OnMouseOver="show_tab('TABhazards814')" title="United States 8-14 Day Hazards composite graphic" class="homepagelinks">Composite</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+															Probabilistic:&nbsp;&nbsp;&nbsp;<a href="/products/predictions/threats/temp_probhazards_d8_14_contours.png" OnMouseOver="show_tab('TABThazards814')" title="United States 8-14 Day Probabilistic Temperature Hazards graphic" class="homepagelinks">Temp</a>&nbsp;&nbsp;&nbsp;
+																		<a href="/products/predictions/threats/precip_probhazards_d8_14_contours.png" OnMouseOver="show_tab('TABPhazards814')" title="United States 8-14 Day Probabilistic Precipitation Hazards graphic" class="homepagelinks">Precip</a>&nbsp;&nbsp;&nbsp;
+
+<a href="/products/predictions/threats/snow_probhazards_d8_14_contours.png" OnMouseOver="show_tab('TABShazards814')" title="United States 8-14 Day Probabilistic Snow Hazards graphic" class="homepagelinks">Snow</a>&nbsp;&nbsp;&nbsp;
+																		<a href="/products/predictions/threats/wind_probhazards_d8_14_contours.png" OnMouseOver="show_tab('TABWhazards814')" title="United States 8-14 Day Probabilistic Winds Hazards graphic" class="homepagelinks">Wind</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>&nbsp;</td>
+																 </tr>  
+																<tr>
+																	<td class="nav" id="menuitem" align="center" bgcolor="#0A2390" colspan="4" width="270">
+																		<a href="/products/Drought/" title="to United States Seasonal Drought Information page" class="homepagelinks">
+																		<font color="#F0E68C">U.S. Drought Information</font></a><br>
+																		<a href="https://droughtmonitor.unl.edu" OnMouseOver="show_tab('TABdroughtmonitor')" title="Latest Drought Monitor graphic" class="homepagelinks">Monitor</a>&nbsp;&nbsp; 
+																		<a href="/products/expert_assessment/month_drought.png" OnMouseOver="show_tab('TABmonthlydrought')" title="Latest Monthly Drought Outlook graphic" class="homepagelinks">Monthly Outlook</a> &nbsp;&nbsp;
+																		<a href="/products/expert_assessment/season_drought.png" OnMouseOver="show_tab('TABseasonaldrought')" title="Latest Seasonal Drought Outlook graphic" class="homepagelinks">Seasonal Outlook</a>
+																	</td>
+																	<td>&nbsp;</td>
+																	<td class="nav" id="menuitem" align="center" bgcolor="#0A2390" colspan="4" width="270">
+																		 <a href="/products/precip/CWlink/ghaz/index.php" title="Latest Global Tropics Hazards Outlook" class="homepagelinks"><font color="#F0E68C">Global Tropics Hazards Outlook</font></a>&nbsp;&nbsp;<br>													 
+																		 <a href="/products/precip/CWlink/ghaz/gth_full.png" OnMouseOver="show_tab('TABgthWK1')" title="Latest Global Tropics Hazards Outlook graphic" class="homepagelinks">Weeks 2 and 3</a>																		 
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<table width="540" cellpadding="0" cellspacing="0" align="center">
+											<tbody>
+												<tr>
+													<td>
+														<div id="TAB610dayToutlook" style="display:none;">
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																			<img src="/products/predictions/610day/610temp.new.gif" alt="Latest 6 to 10 Day Temperature Outlook" width="425">
+																		</td>
+																		<td>
+																			<img src="/products/predictions/610day/610prcp.new.gif" alt="Latest 6 to 10 Day Precipitation Outlook" width="425">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div id="TAB610dayPoutlook" style="display:none;">
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																			<img src="/products/predictions/610day/610temp.new.gif" alt="Latest 6 to 10 Day Temperature Outlook" width="425">
+																		</td>
+																		<td>
+																			<img src="/products/predictions/610day/610prcp.new.gif" alt="Latest 6 to 10 Day Precipitation Outlook" width="425">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div id="TAB814dayToutlook" style="display:block;">
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																			<img src="/products/predictions/814day/814temp.new.gif" alt="Latest 8 to 14 Day Temperature Outlook" width="425">
+																		</td>
+																		<td>
+																			<img src="/products/predictions/814day/814prcp.new.gif" alt="Latest 8 to 14 Day Precipitation Outlook" width="425">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div id="TAB814dayPoutlook" style="display:none;">
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																			<img src="/products/predictions/814day/814temp.new.gif" alt="Latest 8 to 14 Day Temperature Outlook" width="425">
+																		</td>
+																		<td>
+																			<img src="/products/predictions/814day/814prcp.new.gif" alt="Latest 8 to 14 Day Precipitation Outlook" width="425">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div id="TABWK34dayToutlook" style="display:none;">
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																			<img src="/products/predictions/WK34/gifs/WK34temp.gif" alt="Latest Week 3/4 Temperature Outlook" width="425">
+																		</td>
+																		<td>
+																			<img src="/products/predictions/WK34/gifs/WK34prcp.gif" alt="Latest Week 3/4 Precipitation Outlook" width="425">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div id="TABWK34dayPoutlook" style="display:none;">
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																			<img src="/products/predictions/WK34/gifs/WK34temp.gif" alt="Latest Week 3/4 Temperature Outlook" width="425">
+																		</td>
+																		<td>
+																			<img src="/products/predictions/WK34/gifs/WK34prcp.gif" alt="Latest Week 3/4 Precipitation Outlook" width="425">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div id="TAB30dayToutlook" style="display:none;">
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																			<img src="/products/predictions/long_range/lead14/off15_temp.gif" alt="Latest 30 Day Temperature Outlook" width="425">
+																		</td>
+																		<td>
+																			<img src="/products/predictions/long_range/lead14/off15_prcp.gif" alt="Latest 30 Day Precipitation Outlook" width="425">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div id="TAB30dayPoutlook" style="display:none;">
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																			<img src="/products/predictions/long_range/lead14/off15_temp.gif" alt="Latest 30 Day Temperature Outlook" width="425">
+																		</td>
+																		<td>
+																			<img src="/products/predictions/long_range/lead14/off15_prcp.gif" alt="Latest 30 Day Precipitation Outlook" width="425">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div id="TAB90dayToutlook" style="display:none;">
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																			<img src="/products/predictions/long_range/lead01/off01_temp.gif" alt="Latest 90 Day Temperature Outlook" width="425">
+																		</td>
+																		<td>
+																			<img src="/products/predictions/long_range/lead01/off01_prcp.gif" alt="Latest 90 Day Precipitation Outlook" width="425">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div id="TAB90dayPoutlook" style="display:none;">
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																			<img src="/products/predictions/long_range/lead01/off01_temp.gif" alt="Latest 90 Day Temperature Outlook" width="425">
+																		</td>
+																		<td>
+																			<img src="/products/predictions/long_range/lead01/off01_prcp.gif" alt="Latest 90 Day Precipitation Outlook" width="425">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>  
+														<div id="TABhazards37" style="display:none;">
+														<img src="/products/predictions/threats/hazards_d3_7_contours_home.png" alt="United States 3-7 Day Hazards Outlook" width="540">
+														</div>
+														<div id="TABhazards814" style="display:none;">
+														<img src="/products/predictions/threats/hazards_d8_14_contours_home.png" alt="United States 8-14 Day Hazards Outlook" width="540">
+														</div>
+														<div id="TABPhazards814" style="display:none;">
+														<img src="/products/predictions/threats/precip_probhazards_d8_14_contours.png" alt="United States 8-14 Day Probabilistic Precipitation Hazards Outlook" width="540">
+														</div>
+				                                                                                <div id="TABShazards814" style="display:none;">
+                                                                                                                <img src="/products/predictions/threats/snow_probhazards_d8_14_contours.png" alt="United States 8-14 Day Probabilistic Snow Hazards Outlook" width="540">
+                                                                                                                </div> 
+														<div id="TABThazards814" style="display:none;">
+														<img src="/products/predictions/threats/temp_probhazards_d8_14_contours.png" alt="United States 8-14 Day Probabilistic Temperature Hazards Outlook" width="540">
+														</div> 
+														<div id="TABWhazards814" style="display:none;">
+														<img src="/products/predictions/threats/wind_probhazards_d8_14_contours.png" alt="United States 8-14 Day Probabilistic Wind Hazards Outlook" width="540">
+														</div> 
+														<div id="TABdroughtmonitor" style="display:none;">
+														<img src="https://droughtmonitor.unl.edu/data/png/current/current_usdm.png" alt="United States Drought Monitor" width="540">
+														</div> 
+														<div id="TABmonthlydrought" style="display:none;">
+														<img src="/products/expert_assessment/mdohomeweb.png" alt="United States Monthly Drought Outlook" width="540">
+														</div> 
+														<div id="TABseasonaldrought" style="display:none;">
+														<img src="/products/expert_assessment/sdohomeweb.png" alt="United States Seasonal Drought Outlook" width="540">
+														</div> 
+														<div id="TABgthWK1" style="display:none;">
+														<img src="/products/precip/CWlink/ghaz/gth_full.png" alt="Latest Global Tropics Hazards Outlook" width="540">
+														</div> 
+													</td>
+												</tr>
+											</tbody>
+										</table>
+								
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					
+						<br><table cellSpacing="0" cellPadding="0" width="96%" border="0" align="center">
+	<tbody>
+		<tr>
+			<td colSpan="3">
+				<hr>
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="3" align="center">
+				<u>Local Climate, Water &amp; Weather Topics</u><br>
+			</td>
+		</tr>
+		<tr vAlign="top">
+			<td>
+				<br><a href="/products/predictions/threats/threats.php" class="homepagelinks" title="to United States Hazards Outlook">U.S. Hazards Outlook</a><br>
+				<a href="/products/Drought/" class="homepagelinks" title="to United States Drought Information">U.S. Drought Information</a><br>
+				<a href="/products/analysis_monitoring/enso_advisory/" class="homepagelinks">ENSO Diagnostic Discussion</a><br>
+				<a href="/products/precip/CWlink/MJO/climwx.shtml" class="homepagelinks">Climate-Weather</a><br>
+				<a href="/products/expert_assessment/" class="homepagelinks">Expert Assessments Products</a><br>
+				<a href="/products/EXP_ASS_index.shtml" class="homepagelinks">Expert Assessments Index</a><br>
+			</td>
+			<td>
+				<br><a href="/products/forecasts/" class="homepagelinks">Outlooks Products</a><br>
+				<a href="/products/OUTLOOKS_index.shtml" class="homepagelinks">Outlooks Index</a><br>
+				<a href="/products/monitoring_and_data/" class="homepagelinks">Monitoring and Data Products</a><br>
+				<a href="/products/MD_index.shtml" class="homepagelinks">Monitoring and Data Index</a><br>
+				<a href="/products/precip/CWlink/MJO/enso.shtml" class="homepagelinks">El Ni&ntilde;o/La Ni&ntilde;a</a><br>
+				<a href="/products/stratosphere/" class="homepagelinks">Stratosphere</a><br>
+			</td>
+			<td align="right">								
+				<br><a href="/pacdir/HOME3.shtml" class="homepagelinks">Pacific Islands</a><br>
+				<a href="/products/international/" class="homepagelinks">International</a><br>
+				<a href="/products/partnerships/" class="homepagelinks">Partnerships</a><br>
+				<a href="/products/outreach/" class="homepagelinks">Outreach</a><br>
+				<a href="/information/personnel/contacts.shtml" class="homepagelinks">CPC Information</a><br>
+				<a href="/comment-form.html" class="homepagelinks">Contact Us</a><br>
+			</td>
+		</tr>
+	</tbody>
+</table>					 
+						<!-- Gray_Box.php, usually included at the bottom of each page
+
+		Programmer: Jonathan Hoopingarner
+		
+		RZDM:	/home/www/cpc/htdocs/cpc_common/Gray_Box.php
+		Modified:	v01.0	2016.03.16		JDH		Incept
+	-->
+	
+<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+	<tbody>
+		<tr>
+			<td colSpan="3">
+				<br><HR>
+			</td>
+		</tr>
+		<tr vAlign="top">
+			<td class="gray">
+				<A href="http://www.noaa.gov/" class="homepagelinks"><span class="gray">NOAA/</span></A>
+				<A href="http://www.nws.noaa.gov/" class="homepagelinks"><span class="gray">National Weather Service</span></A><BR>
+				<A href="http://www.ncep.noaa.gov/" class="homepagelinks"><span class="gray">NOAA Center for Weather and Climate Prediction </span></a><BR>
+						Climate Prediction Center<BR>
+						5830 University Research Court <BR>
+						College Park, Maryland 20740 <BR>
+						Page Author:<A href="/comment-form.html" class="homepagelinks"><span class="gray"> Climate Prediction Center Internet Team</span></A><BR>
+						Page last modified: Oct 13 2023			</td>
+			<td>
+				<A href="http://www.weather.gov/disclaimer.php" class="homepagelinks">
+				<span class="gray">Disclaimer</span></A><br>
+				<A href="http://www.cio.noaa.gov/services_programs/info_quality.html" class="homepagelinks">
+				<span class="gray">Information Quality</span></A><br>
+				<A href="http://www.nws.noaa.gov/credits.php" class="homepagelinks">
+				<span class="gray">Credits</span></A><br>
+				<A href="http://www.nws.noaa.gov/glossary/" class="homepagelinks">
+				<span class="gray">Glossary</span></A><br>
+			</td>
+			<td align="right">
+				<A href="http://www.weather.gov/privacy.php" class="homepagelinks">
+				<span class="gray">Privacy Policy</span></A><br>
+				<A href="https://www.foia.gov/" class="homepagelinks">
+				<span class="gray">Freedom of Information Act (FOIA)</span></A><br>
+				<A href="http://www.nws.noaa.gov/admin.php" class="homepagelinks">
+				<span class="gray">About Us</span></A><br>
+				<A href="http://www.nws.noaa.gov/careers.php" class="homepagelinks">
+				<span class="gray">Career Opportunities</span></A><br>
+			</td>
+		</tr>
+	</tbody>	
+</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- -->
+	</body>
+</html>

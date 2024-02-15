@@ -550,9 +550,9 @@ function noCache(url) {
                             <span class="footer-column-head">
                                 <a href=" http://radar.weather.gov/radar.php?rid=cae&amp;product=N0R&amp;overlay=11101111&amp;loop=no">Radar</a>
                             </span><br />
-                                                        <a href=" http://radar.weather.gov/Conus/">Nationwide </a><br />
+                                                        <a href=" http://www.srh.noaa.gov/ridge2/ridgenew2/?rid=CLT&amp;pid=TZL&amp;lat=35.292176308987244&amp;lon=">Charlotte TDWR </a><br />
+                                                            <a href=" http://radar.weather.gov/Conus/">Nationwide </a><br />
                                                             <a href="https://radar.weather.gov/radar_lite.php?rid=cae&amp;product=NCR&amp;loop=yes">Columbia Radar </a><br />
-                                                            <a href=" http://www.srh.noaa.gov/ridge2/ridgenew2/?rid=CLT&amp;pid=TZL&amp;lat=35.292176308987244&amp;lon=">Charlotte TDWR </a><br />
                                                     </p>
                                                 <p>
                             <span class="footer-column-head">
