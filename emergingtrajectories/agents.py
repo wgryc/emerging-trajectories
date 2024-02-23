@@ -258,6 +258,7 @@ def ExtendScrapePredictAgent(
             "raw_forecast": filled_in_statement,
             "extracted_value": prediction,
         },
+        forecast_id,
     )
 
     for ar in accessed_resources:

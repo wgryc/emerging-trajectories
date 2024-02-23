@@ -271,7 +271,7 @@ def CiteExtendScrapePredictAgent(
     response = client.create_forecast(
         statement_id,
         prediction_title,
-        assistant_analysis,
+        assistant_analysis_sourced,
         prediction,
         prediction_agent,
         {
@@ -280,6 +280,7 @@ def CiteExtendScrapePredictAgent(
             "raw_forecast": filled_in_statement,
             "extracted_value": prediction,
         },
+        forecast_id,
     )
 
     for ar in accessed_resources:
