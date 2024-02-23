@@ -137,6 +137,9 @@ def CiteExtendScrapePredictAgent(
 
     added_new_content = False
 
+    # We store the accessed resources and log access only when we successfully submit a forecast. If anything fails, we'll review those resources again during the next forecasting attempt.
+    accessed_resources = []
+
     ctr = 0
     ctr_to_source = {}
 
@@ -145,7 +148,10 @@ def CiteExtendScrapePredictAgent(
             ctr += 1
             added_new_content = True
             page_content = knowledge_base.get(result.url)
-            knowledge_base.log_access(result.url)
+
+            accessed_resources.append(result.url)
+            # knowledge_base.log_access(result.url)
+
             scraped_content += (
                 f"{page_content}\n\n--- SOURCE: {ctr}-------------------\n\n"
             )
@@ -157,7 +163,10 @@ def CiteExtendScrapePredictAgent(
         added_new_content = True
         ctr += 1
         page_content = knowledge_base.get(ua)
-        knowledge_base.log_access(ua)
+
+        accessed_resources.append(ua)
+        # knowledge_base.log_access(ua)
+
         scraped_content += f"{page_content}\n\n--- SOURCE: {ctr}-------------------\n\n"
         ctr_to_source[ctr] = ua
 
@@ -272,6 +281,9 @@ def CiteExtendScrapePredictAgent(
             "extracted_value": prediction,
         },
     )
+
+    for ar in accessed_resources:
+        knowledge_base.log_access(ar)
 
     return response
 
@@ -434,6 +446,9 @@ def CitationScrapeAndPredictAgent(
 
     added_new_content = False
 
+    # We store the accessed resources and log access only when we successfully submit a forecast. If anything fails, we'll review those resources again during the next forecasting attempt.
+    accessed_resources = []
+
     ctr = 0
     ctr_to_source = {}
 
@@ -442,7 +457,10 @@ def CitationScrapeAndPredictAgent(
             ctr += 1
             added_new_content = True
             page_content = knowledge_base.get(result.url)
-            knowledge_base.log_access(result.url)
+
+            accessed_resources.append(result.url)
+            # knowledge_base.log_access(result.url)
+
             scraped_content += (
                 f"{page_content}\n\n--- SOURCE: {ctr}-------------------\n\n"
             )
@@ -454,7 +472,10 @@ def CitationScrapeAndPredictAgent(
         added_new_content = True
         ctr += 1
         page_content = knowledge_base.get(ua)
-        knowledge_base.log_access(ua)
+
+        accessed_resources.append(ua)
+        # knowledge_base.log_access(ua)
+
         scraped_content += f"{page_content}\n\n--- SOURCE: {ctr}-------------------\n\n"
         ctr_to_source[ctr] = ua
 
@@ -531,5 +552,8 @@ def CitationScrapeAndPredictAgent(
             "extracted_value": prediction,
         },
     )
+
+    for ar in accessed_resources:
+        knowledge_base.log_access(ar)
 
     return response

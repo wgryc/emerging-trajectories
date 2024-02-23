@@ -117,6 +117,13 @@ class KnowledgeBaseFileCache:
         self.cache_file = os.path.join(folder_path, cache_file)
         self.cache = self.load_cache()
 
+    def save_state(self) -> None:
+        """
+        Saves the in-memory changes to the knowledge base to the JSON cache file.
+        """
+        with open(self.cache_file, "w") as f:
+            json.dump(self.cache, f, cls=DjangoJSONEncoder)
+
     def load_cache(self) -> None:
         """
         Loads the cache from the cache file, or creates the relevant files and folders if one does not exist.
@@ -170,8 +177,7 @@ class KnowledgeBaseFileCache:
             "accessed": 0,
             "uri_md5": uri_md5,
         }
-        with open(self.cache_file, "w") as f:
-            json.dump(self.cache, f, cls=DjangoJSONEncoder)
+        self.save_state()
 
     def log_access(self, uri: str) -> None:
         """
@@ -182,8 +188,7 @@ class KnowledgeBaseFileCache:
         """
         self.cache[uri]["last_accessed"] = datetime.now()
         self.cache[uri]["accessed"] = 1
-        with open(self.cache_file, "w") as f:
-            json.dump(self.cache, f, cls=DjangoJSONEncoder)
+        self.save_state()
 
     def get_unaccessed_content(self) -> list[str]:
         """

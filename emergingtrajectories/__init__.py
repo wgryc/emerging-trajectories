@@ -77,6 +77,27 @@ class Client(object):
         else:
             raise Exception(response.text)
 
+    def get_most_recent_forecast(self, statement_id: int) -> int:
+        """
+        Returns the most recent forecast for a given statement. This is useful for creating a new forecast that is an extension of a prior forecast.
+
+        Args:
+            statement_id: the ID of the statement to retrieve the most recent forecast for
+
+        Returns:
+            int: the ID of the most recent forecast for the given statement
+        """
+        url = self.base_url + "get_most_recent_forecast/" + str(statement_id)
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        response = requests.post(url, headers=headers)
+        if response.status_code == 200:
+            return int(response.json()["forecast_id"])
+        else:
+            raise Exception(response.text)
+
     def get_forecast(self, forecast_id: int) -> dict:
         """
         Returns a specific forecast's details from the platform. This typically includes the forecast title, the value associated with the fill-in-the-blank component of a statement, and justificaiton for the forecast.

@@ -130,11 +130,17 @@ def ExtendScrapePredictAgent(
 
     added_new_content = False
 
+    # We store the accessed resources and log access only when we successfully submit a forecast. If anything fails, we'll review those resources again during the next forecasting attempt.
+    accessed_resources = []
+
     for result in results:
         if not knowledge_base.in_cache(result.url):
             added_new_content = True
             page_content = knowledge_base.get(result.url)
-            knowledge_base.log_access(result.url)
+
+            accessed_resources.append(result.url)
+            # knowledge_base.log_access(result.url)
+
             scraped_content += f"{page_content}\n\n----------------------\n\n"
 
     # We also check the knowledge base for content that was added manually.
@@ -142,7 +148,10 @@ def ExtendScrapePredictAgent(
     for ua in unaccessed_uris:
         added_new_content = True
         page_content = knowledge_base.get(ua)
-        knowledge_base.log_access(ua)
+
+        # knowledge_base.log_access(ua)
+        accessed_resources.append(ua)
+
         scraped_content += f"{page_content}\n\n----------------------\n\n"
 
     if not added_new_content:
@@ -251,6 +260,9 @@ def ExtendScrapePredictAgent(
         },
     )
 
+    for ar in accessed_resources:
+        knowledge_base.log_access(ar)
+
     return response
 
 
@@ -349,11 +361,17 @@ def ScrapeAndPredictAgent(
 
     added_new_content = False
 
+    # We store the accessed resources and log access only when we successfully submit a forecast. If anything fails, we'll review those resources again during the next forecasting attempt.
+    accessed_resources = []
+
     for result in results:
         if not knowledge_base.in_cache(result.url):
             added_new_content = True
             page_content = knowledge_base.get(result.url)
-            knowledge_base.log_access(result.url)
+
+            accessed_resources.append(result.url)
+            # knowledge_base.log_access(result.url)
+
             scraped_content += f"{page_content}\n\n----------------------\n\n"
 
     # We also check the knowledge base for content that was added manually.
@@ -361,7 +379,10 @@ def ScrapeAndPredictAgent(
     for ua in unaccessed_uris:
         added_new_content = True
         page_content = knowledge_base.get(ua)
-        knowledge_base.log_access(ua)
+
+        accessed_resources.append(ua)
+        # knowledge_base.log_access(ua)
+
         scraped_content += f"{page_content}\n\n----------------------\n\n"
 
     if not added_new_content:
@@ -431,5 +452,8 @@ def ScrapeAndPredictAgent(
             "extracted_value": prediction,
         },
     )
+
+    for ar in accessed_resources:
+        knowledge_base.log_access(ar)
 
     return response
