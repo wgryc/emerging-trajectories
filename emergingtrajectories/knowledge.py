@@ -27,6 +27,9 @@ from phasellm.agents import WebpageAgent
 
 from datetime import datetime
 
+from . import Client
+from phasellm.llms import OpenAIGPTWrapper, ChatBot
+
 """
 CACHE STRUCTURE IN JSON...
 
@@ -39,6 +42,49 @@ value: {
 }
 
 """
+
+
+def statement_to_search_queries(
+    statement_id: int, client: Client, openai_api_key: str, num_queries: int = 3
+) -> list[str]:
+    """
+    Given a specific statement ID, this will return a list of queries you can put into a search engine to get useful information.
+
+    Args:
+        statement_id (int): The ID of the statement to get search queries for.
+        client (Client): The Emerging Trajectories API client.
+        openai_api_key (str): The OpenAI API key.
+        num_queries (int, optional): The number of queries to return. Defaults to 3.
+
+    Returns:
+        list[str]: A list of search queries.
+
+    """
+
+    statement = client.get_statement(statement_id)
+    # print(statement)
+
+    llm = OpenAIGPTWrapper(openai_api_key, model="gpt-3.5-turbo")
+    chatbot = ChatBot(llm)
+
+    chatbot.messages = [
+        {
+            "role": "system",
+            "content": f"""I am working on a research project about this topic:\n{statement['title']}\n\n{statement['description']}\n\nHere is more information about what I am trying to do:\n{statement['description']}""",
+        },
+        {
+            "role": "user",
+            "content": "Could you please provide me with up to {num_queries} search queries that I can input into a search engine to find info about this topic? Please do not qualify your response... Simply provide one search query per line and nothing else.",
+        },
+    ]
+
+    response = chatbot.resend()
+    lines = response.strip().split("\n")
+
+    if len(lines) > num_queries:
+        lines = lines[:num_queries]
+
+    return lines
 
 
 def uri_to_local(uri: str) -> str:

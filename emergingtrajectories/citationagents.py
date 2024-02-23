@@ -251,11 +251,13 @@ def CiteExtendScrapePredictAgent(
     print("\n\n\n")
     print(filled_in_statement)
 
+    assistant_analysis_sourced = clean_citations(assistant_analysis, ctr_to_source)
+
+    print("\n\n\n*** ANALYSIS WITH CITATIONS***\n\n\n")
+    print(assistant_analysis_sourced)
+
     uh = UtilityHelper(openai_api_key)
     prediction = uh.extract_prediction(filled_in_statement, fill_in_the_blank)
-
-    # Add new sources.
-    assistant_analysis = clean_citations(assistant_analysis, ctr_to_source)
 
     response = client.create_forecast(
         statement_id,
@@ -264,7 +266,8 @@ def CiteExtendScrapePredictAgent(
         prediction,
         prediction_agent,
         {
-            "full_response_from_llm": assistant_analysis,
+            "full_response_from_llm_before_source_cleanup": assistant_analysis,
+            "full_response_from_llm": assistant_analysis_sourced,
             "raw_forecast": filled_in_statement,
             "extracted_value": prediction,
         },
@@ -507,19 +510,23 @@ def CitationScrapeAndPredictAgent(
     print("\n\n\n")
     print(filled_in_statement)
 
+    assistant_analysis_sourced = clean_citations(assistant_analysis, ctr_to_source)
+
+    print("\n\n\n*** ANALYSIS WITH CITATIONS***\n\n\n")
+    print(assistant_analysis_sourced)
+
     uh = UtilityHelper(openai_api_key)
     prediction = uh.extract_prediction(filled_in_statement, fill_in_the_blank)
-
-    assistant_analysis = clean_citations(assistant_analysis, ctr_to_source)
 
     response = client.create_forecast(
         statement_id,
         prediction_title,
-        assistant_analysis,
+        assistant_analysis_sourced,
         prediction,
         prediction_agent,
         {
-            "full_response_from_llm": assistant_analysis,
+            "full_response_from_llm_before_source_cleanup": assistant_analysis,
+            "full_response_from_llm": assistant_analysis_sourced,
             "raw_forecast": filled_in_statement,
             "extracted_value": prediction,
         },
