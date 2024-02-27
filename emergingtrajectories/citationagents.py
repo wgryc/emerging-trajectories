@@ -5,7 +5,7 @@ Agents for generating forecasts.
 from phasellm.llms import OpenAIGPTWrapper, ChatBot, ChatPrompt
 from phasellm.agents import WebpageAgent, WebSearchAgent
 
-from . import Client
+from . import Client, ForecastingAgent
 from .utils import UtilityHelper
 from .knowledge import KnowledgeBaseFileCache
 
@@ -73,6 +73,19 @@ ext_message_3 = """Thank you! Now please provide us with a forecast by repeating
 
 {statement_fill_in_the_blank}
 """
+
+
+class CiteExtendScrapePredictAgent(ForecastingAgent):
+
+    def __init__(self, google_api_key, google_search_id, google_search_querry, client, knowledge_base, chatbot):
+        pass 
+
+    def create_forecast(self, statement):
+        pass 
+
+    def extend_forecast(self, forecast):
+        pass 
+
 
 
 def CiteExtendScrapePredictAgent(

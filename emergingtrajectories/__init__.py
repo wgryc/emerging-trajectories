@@ -1,7 +1,7 @@
 import requests
 import json
 from datetime import datetime
-
+from abc import ABC, abstractmethod
 
 def hello() -> None:
     """
@@ -9,6 +9,53 @@ def hello() -> None:
     """
     print("Welcome to the Emerging Trajectories package! We've been expecting you. 😉")
 
+class Statement(object):
+    def __init__(self, title, fill_in_the_blank): 
+        self.id = -1
+        self.title = title 
+        self.fill_in_the_blank = fill_in_the_blank
+        self.description = ""
+        self.deadline = None
+        self.created_at = None 
+        self.updated_at = None 
+        self.created_by = None
+
+class Forecast(object):
+
+    def __init__(self, title, value, justification):
+        self.id = -1
+        self.title = title
+        self.value = value 
+        self.justification = justification 
+
+        self.statement = None 
+        self.created_at = None 
+        self.updated_at = None 
+        self.created_by = None
+        self.prediction_agent = None 
+        self.additional_data = {}
+        self.prior_forecast = None 
+        self.next_forecasts = []
+        self.is_human = False
+
+
+class Agent(ABC):
+
+    def __init__(self):
+        pass 
+
+    def setChatBot(self, chatbot):
+        self.chatbot = chatbot
+
+class ForecastingAgent(Agent):
+
+    @abstractmethod
+    def create_forecast(self, statement):
+        pass 
+
+    @abstractmethod
+    def extend_forecast(self, forecast):
+        pass 
 
 class Client(object):
 
