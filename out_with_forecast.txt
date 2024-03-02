@@ -1,0 +1,22 @@
+Based on the content provided and a careful review of the information, the following critical points have been extracted to inform the forecasting of oil prices by the end of the 2024 calendar year. 
+
+F1: The Brent crude oil price is expected to average $82 per barrel in 2024, close to the 2023 average [1].
+F2: Global oil supply and demand for petroleum liquids will be relatively balanced over the next two years [1].
+F3: OPEC+ production restraint is considered a key factor in keeping oil prices near current levels [1].
+F4: Non-OPEC+ production, especially from the US, is anticipated to outpace OPEC+ supply growth [1].
+F5: The US Energy Information Administration expects crude oil output to reach a record average of 13.1 million barrels a day in 2024 [3].
+F6: Goldman Sachs lowered its 2024 oil price forecast by 12% due to bumper US output [4].
+F7: Political events, such as the Israel-Hamas war, could cause short-term oil price volatility [12].
+F8: ISG at Goldman Sachs forecasts oil prices to trade between $70 and $100 a barrel in 2024 [12].
+
+Justification and Rationale:
+- The overarching theme from multiple sources suggests a market context where supply and demand are closely matched [1], minimizing drastic swings in oil prices and contributing to price stability. 
+- The balance between supply and demand is further enhanced by OPEC+'s strategic production controls [1] alongside significant contributions from non-OPEC+ production, particularly from the US, which is set to continue growing but at a moderated rate [1][3][6].
+- External factors contributing to the supply side, such as geopolitical tensions [12] and macroeconomic uncertainties [13], introduce potential for short-term price volatility but appear insufficient to fundamentally shift the supply-demand balance over the analysis period.
+- Market expectations reflect these dynamics with adjusted forecasts taking into account robust US production and potential economic headwinds [4][6]. The forecast range provided by ISG acknowledges underlying uncertainties while suggesting that medium-term prices will likely remain within the historical volatility bounds [12].
+
+Considering the identified factors and their implications on the oil market dynamics, adjustments in expected growth rates, production controls, and the potential for geopolitical events to affect short-term prices, the comprehensive analysis supports a forecast within the outlined range by ISG:
+
+**The price of oil by the end of the 2024 calendar year will be approximately $85 USD per barrel.** 
+
+This figure aligns with the median projection among top US banks, factors in expected supply and demand conditions, acknowledges the potential impact of geopolitical tensions without overestimating their lasting effect on the market, and considers the moderating influence of increasing non-OPEC+ production [1][4][8][12]. Given the broad array of influencing factors and inherent uncertainties in forecasting future market conditions, this estimate aims to represent a balanced expectation based on current information and trends.

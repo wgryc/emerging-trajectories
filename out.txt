@@ -1,0 +1,40 @@
+Based on the provided sources, here are the critical bullet points:
+
+F1: The EIA forecasts average annual crude oil prices in 2024 and 2025 to remain near their 2023 average due to expectations that global supply and demand for petroleum liquids will be relatively balanced [1].
+
+F2: Brent crude oil price is expected to average $82 per barrel in 2024 and $79 per barrel in 2025, compared with its 2023 average of $82 per barrel [1].
+
+F3: OPEC+ production cuts leading to global stock draws of 810,000 barrels per day (b/d) are expected to drive a price increase from $78/b in December 2023 to $85/b in March 2024 [1].
+
+F4: Crude oil prices are projected to gradually decrease after April 2024 with minor stock builds because global production increases more than consumption [1].
+
+F5: OPEC+ production is forecasted to drop from 37.1 million b/d in 2023 to 36.4 million b/d in 2024, with a slight increase expected in 2025 to 37.2 million b/d [1].
+
+F6: Non-OPEC+ production, led by U.S. production growth, is expected to average 53.0 million b/d in 2024 and 53.9 million b/d in 2025 [1].
+
+F7: Global petroleum consumption growth is forecasted to slow down, with an increase of 1.4 million b/d in 2024 and 1.2 million b/d in 2025 [1].
+
+F8: Goldman Sachs lowered its 2024 oil price forecast by 12% due to bumper US output, with Brent expected to average $81 a barrel in 2024 [4].
+
+F9: Oil prices are forecast to trade between $70 and $100 a barrel in 2024, reflecting slowing demand growth and robust non-OPEC production growth [6].
+
+F10: IEA reports a slowdown in global oil demand growth to 1.7 million barrels per day (mb/d) year-over-year in Q4 2023 [8].
+
+F11: IEA forecasts global oil supply to rise by 1.5 mb/d to a new high of 103.5 mb/d in 2024, fueled by record-setting output from the US, Brazil, Guyana, and Canada [8].
+
+F12: IEA projects oil demand growth to ease from 2.3 mb/d in 2023 to 1.2 mb/d in 2024 [8].
+
+---
+
+**Forecast Logic and Rationale:**
+
+Given the information from the sources, the forecast for the oil price by the end of the calendar year is synthesized from several key insights:
+
+- The relatively balanced global supply and demand for petroleum liquids suggest minor fluctuations in oil prices [F1].
+- While the initial months of 2024 might see a slight increase in Brent crude prices due to OPEC+ production cuts [F3], the general trend for the rest of the year points towards a gradual decrease or stabilization in prices [F4], supported by increasing global production, especially from non-OPEC+ countries [F6], and slowing demand growth [F7].
+- The specific forecasts from reputable financial and energy organizations such as the EIA [F2], Goldman Sachs [F8], and the IEA [F11, F12], despite slight variations, all converge around the idea of a tight range of oil prices with expected averages being influenced by robust non-OPEC+ output, particularly from the US [F8], and moderated demand growth [F9, F10].
+- The wide forecast range (~$70 to $100) mentioned [F9] accounts for unexpected geopolitical tensions or economic factors that might temporarily disrupt supply or influence demand.
+
+**Conclusion:**
+
+Considering the above factors and converging forecasts from multiple authoritative sources, a reasonable prediction for the price of oil by the end of the calendar year would place it within a moderately stable band. The expectation of an average price slightly lower than the peaks of the previous years is rational, especially considering the projected robust non-OPEC+ production and moderated demand growth. Thus, forecasting Brent crude oil to average around $80 to $85 per barrel by the end of the calendar year, with room for volatility within the mentioned bands, seems congruent with the provided data and analysis.

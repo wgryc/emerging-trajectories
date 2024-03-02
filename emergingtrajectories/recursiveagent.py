@@ -285,10 +285,22 @@ class RecursiveForecastingAgent(object):
         # chatbot = ChatBot(llm)
         chatbot = self.chatbot
 
+        first_user_message = base_user_prompt
+        if facts is not None:
+            fact_str = ""
+            for f in facts:
+                fact_str += "-- " + f + "\n"
+            first_user_message = (
+                "We know the following facts. These are fully correct and should be used to inform your forecast:"
+                + fact_str.strip()
+                + "\n\n"
+                + first_user_message
+            )
+
         prompt_template = ChatPrompt(
             [
                 {"role": "system", "content": base_system_prompt},
-                {"role": "user", "content": base_user_prompt},
+                {"role": "user", "content": first_user_message},
             ]
         )
 
@@ -308,7 +320,7 @@ class RecursiveForecastingAgent(object):
         prompt_template_2 = ChatPrompt(
             [
                 {"role": "system", "content": base_system_prompt},
-                {"role": "user", "content": base_user_prompt},
+                {"role": "user", "content": first_user_message},
                 {"role": "assistant", "content": "{assistant_analysis}"},
                 {"role": "user", "content": base_user_prompt_followup},
             ]
