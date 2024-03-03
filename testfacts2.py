@@ -27,7 +27,7 @@ from phasellm.llms import (
 
 from emergingtrajectories.facts import FactBaseFileCache
 
-fb = FactBaseFileCache("f_cache_test1")
+fb = FactBaseFileCache("f_cache_test_6")
 
 # Forecast
 

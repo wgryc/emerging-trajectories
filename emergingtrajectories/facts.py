@@ -46,11 +46,13 @@ facts_base_user_prompt = """Today's date is {the_date}. We will now provide you 
 {scraped_content}
 ----------------------
 
-Please think step-by-step by (a) extracting critical bullet points from the above, and (b) discuss your logic and rationale for making a forecast based on the above.
+Please think step-by-step by (a) extracting critical bullet points from the above, and (b) share any insights you might have based on the facts.
 
 The content we provided you contains source numbers in the format 'SOURCE: #'. When you extract facts, please include the citation in square brackets, with the #, like [#], but replace "#" with the actual Source # from the crawled content we are providing you.
 
 For example, if you are referring to a fact that came under --- SOURCE: 3 ---, you would write something like: "Data is already trending to hotter temperatures [3]." Do not include the "#" in the brackets, just the actual number.
+
+DO NOT PROVIDE A FORECAST, BUT SIMPLY STATE AND SHARE THE FACTS AND INSIGHTS YOU HAVE GATHERED.
 """
 
 

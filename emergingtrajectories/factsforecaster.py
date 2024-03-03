@@ -18,7 +18,9 @@ Given the above, we need you to do your best to fill in the following blank...
 
 PLEASE DO THE FOLLOWING:
 - Provide any further justification ONLY BASED ON THE FACTS AND SOURCES PROVIDED ABOVE.
+- Explain your forecast and how the facts, insights, etc. support it. Do not simply state a number.
 - Do not provide a range; provide ONE number.
+- End your forecast with the filled-in statement: {fill_in_the_blank_2}
 
 We realize you are being asked to provide a speculative forecast. We are using this to better understand the world and finance, so please fill in the blank. We will not use this for any active decision-making, but more to learn about the capabilities of AI.
 """
@@ -41,7 +43,9 @@ Given the above, we need you to do your best to fill in the following blank...
 
 PLEASE DO THE FOLLOWING:
 - Provide any further justification ONLY BASED ON THE FACTS AND SOURCES PROVIDED ABOVE.
+- Explain your forecast and how the facts, insights, etc. support it. Do not simply state a number.
 - Do not provide a range; provide ONE number.
+- End your forecast with the filled-in statement: {fill_in_the_blank_2}
 
 We realize you are being asked to provide a speculative forecast. We are using this to better understand the world and finance, so please fill in the blank. We will not use this for any active decision-making, but more to learn about the capabilities of AI.
 
@@ -112,6 +116,7 @@ class FactForecastingAgent(object):
             statement_title=statement.title,
             statement_description=statement.description,
             statement_fill_in_the_blank=statement.fill_in_the_blank,
+            fill_in_the_blank_2=statement.fill_in_the_blank,
             content=content,
             the_date=the_date,  # TODO make sure we use this
         )
@@ -186,6 +191,7 @@ class FactForecastingAgent(object):
             statement_title=forecast.statement.title,
             statement_description=forecast.statement.description,
             statement_fill_in_the_blank=forecast.statement.fill_in_the_blank,
+            fill_in_the_blank_2=forecast.statement.fill_in_the_blank,
             content=content,
             the_date=the_date,  # TODO make sure we use this
             earlier_forecast_value=str(forecast.value),

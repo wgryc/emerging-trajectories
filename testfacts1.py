@@ -24,7 +24,7 @@ from emergingtrajectories.recursiveagent import ETClient
 
 client = ETClient(et_api_key)
 
-kb = FactBaseFileCache("f_cache_test1")
+kb = FactBaseFileCache("f_cache_test_summary_2")
 
 statement = client.get_statement(5)
 # print(statement.title)
@@ -35,5 +35,5 @@ kb.summarize_new_info(
     google_api_key,
     google_search_id,
     "Oil price projections for 2024",
-    "out.txt",
+    "t1.txt",
 )

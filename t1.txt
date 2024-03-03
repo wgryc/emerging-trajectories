@@ -1,0 +1,33 @@
+F1: Brent crude oil price is expected to average $82 per barrel in 2024 and $79 per barrel in 2025, close to the 2023 average of $82 per barrel, based on expectations that global supply and demand will be relatively balanced [1].
+
+F2: OPEC+ production restraint, with half of the world's petroleum production in the last year coming from OPEC+ members, is seen as a key factor maintaining crude oil prices near current levels [1].
+
+F3: OPEC+ crude oil production is forecasted to average 36.4 million barrels per day (b/d) in 2024 and 37.2 million b/d in 2025, both below its pre-pandemic five-year average of 40.2 million b/d [1].
+
+F4: The U.S. Energy Information Administration (EIA) shortened the forecast of U.S. dry natural gas production in 2024 to an average of 104 billion cubic feet per day (Bcf/d), nearly 1 Bcf/d less than the previous forecast [2].
+
+F5: Goldman Sachs lowered its 2024 oil price forecast by 12% to an average of $81 a barrel for Brent crude oil due to ongoing gains in drilling speed and well completion intensity in the United States [2].
+
+F6: Global oil supply is forecasted to rise by 1.5 million barrels per day (mb/d) in 2024 to a new high of 103.5 mb/d, majorly driven by record-setting output from the U.S., Brazil, Guyana, and Canada [3].
+
+F7: Global oil demand growth is projected to slow from 2.3 mb/d in 2023 to 1.2 mb/d in 2024 due to macroeconomic headwinds, tighter efficiency standards, and an expanding electric vehicle fleet [3].
+
+F8: Asset & Wealth Management Investment Strategy Group (ISG) at Goldman Sachs forecasts that oil prices are likely to trade between $70 and $100 a barrel for most of 2024, influenced by slowing oil demand growth and robust non-OPEC production growth [4].
+
+F9: OPEC's production policy and compliance discipline are highlighted as key factors supporting oil prices in 2024, especially with major producers like Saudi Arabia and Russia committing to production cuts [4].
+
+F10: The IEA noted that at the beginning of 2024, the risk of global oil supply disruptions from the Middle East conflict remains elevated, especially regarding oil flows via the Red Sea and the Suez Canal [5].
+
+Insights:
+- The overall outlook for oil prices in 2024 appears to be of stability within a certain range, largely due to a balance between global supply and demand.
+- The influence of OPEC+ and its production restraint measures cannot be overstated as they play a crucial role in the stabilization of global oil prices.
+- Increased oil supply from non-OPEC+ countries, particularly the U.S., Brazil, Guyana, and Canada, is a significant factor contributing to the forecasted supply growth, potentially putting downward pressure on prices.
+- Geopolitical tensions in key oil transit areas such as the Red Sea and the Suez Canal pose a risk to oil supply disruptions, which could lead to price volatility.
+
+--- SOURCES ---
+
+1: https://www.eia.gov/outlooks/steo/report/BTL/2024/01-brentprice/article.php
+2: https://www.eia.gov/outlooks/steo/
+3: https://www.goldmansachs.com/intelligence/pages/oil-prices-are-forecast-to-trade-between-70-and-100-a-barrel-in-2024.html
+4: https://www.goldmansachs.com/intelligence/pages/oil-prices-may-be-soft-in-2024-amid-surprisingly-ample-supply.html
+5: https://www.goldmansachs.com/intelligence/pages/oil-prices-are-forecast-to-trade-between-70-and-100-a-barrel-in-2024.html
