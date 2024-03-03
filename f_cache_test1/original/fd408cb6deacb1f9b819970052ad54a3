@@ -79,9 +79,7 @@
 <link href="/global/survey/engine/css/layout.css" rel="stylesheet" type="text/css" media="screen" />
 <title>U.S. Energy Information Administration - EIA - Independent Statistics and Analysis</title>
 		<script type="text/javascript" src="/outlooks/steo//includes/scripts/steo.js"></script>
-        	
-                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"421524",ustr:"",originlat:"0",clientrtt:"75",ghostip:"23.56.236.47",ipv6:false,pct:"10",clientip:"130.250.240.22",requestid:"29dffed4",region:"40932",protocol:"",blver:14,akM:"dscb",akN:"ae",akTT:"O",akTX:"1",akTI:"29dffed4",ai:"269977",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
-                    </head>
+        	</head>
     <body>
 			<div id="outerX">
 				<div class="page-wrapper">

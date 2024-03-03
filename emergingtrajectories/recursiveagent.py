@@ -16,7 +16,7 @@ Note that this approach will *not* test new knowledge bases *yet*.
 from .knowledge import KnowledgeBaseFileCache
 from .utils import UtilityHelper
 
-from . import Client
+from . import Client, Statement, Forecast
 
 from phasellm.llms import OpenAIGPTWrapper, ChatBot, ChatPrompt
 from phasellm.agents import WebpageAgent, WebSearchAgent
@@ -25,39 +25,6 @@ import requests
 import dateparser
 import re
 import datetime
-
-
-# TODO: will be moved to main file eventually.
-class Statement(object):
-    def __init__(self, title, fill_in_the_blank):
-        self.id = -1
-        self.title = title
-        self.fill_in_the_blank = fill_in_the_blank
-        self.description = ""
-        self.deadline = None
-        self.created_at = None
-        self.updated_at = None
-        self.created_by = None
-
-
-# TODO: will be moved to main file eventually.
-class Forecast(object):
-
-    def __init__(self, title, value, justification):
-        self.id = -1
-        self.title = title
-        self.value = value
-        self.justification = justification
-
-        self.statement = None
-        self.created_at = None
-        self.updated_at = None
-        self.created_by = None
-        self.prediction_agent = None
-        self.additional_data = {}
-        self.prior_forecast = None
-        self.next_forecasts = []
-        self.is_human = False
 
 
 class ETClient(object):
@@ -76,7 +43,7 @@ class ETClient(object):
             statement_id: the ID of the statement to retrieve
 
         Returns:
-            dict: the statement from the platform
+            Statement: the statement from the platform
         """
         url = self.base_url + "get_statement" + "/" + str(statement_id)
         headers = {
@@ -94,6 +61,53 @@ class ETClient(object):
             s.updated_at = dateparser.parse(r_obj["updated_at"])
             s.created_by = r_obj["created_by"]
             return s
+        else:
+            raise Exception(response.text)
+
+    def get_forecast(self, forecast_id: int) -> Forecast:
+        """
+        Returns a given forecast from the platform.
+
+        Args:
+            forecast_id: the ID of the statement to retrieve
+
+        Returns:
+            Forecast: the forecast from the platform
+        """
+        url = self.base_url + "get_forecast" + "/" + str(forecast_id)
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        response = requests.post(url, headers=headers)
+        if response.status_code == 200:
+
+            r_obj = response.json()
+
+            f = Forecast(r_obj["title"], float(r_obj["value"]), r_obj["justification"])
+
+            f.id = int(r_obj["forecast_id"])
+
+            f.statement_id = int(r_obj["statement_id"])
+            f.statement = self.get_statement(int(r_obj["statement_id"]))
+
+            f.created_at = dateparser.parse(r_obj["created_at"])
+            f.updated_at = dateparser.parse(r_obj["updated_at"])
+            # f.created_by = r_obj["created_by"]
+            f.prediction_agent = r_obj["prediction_agent"]
+
+            f.additional_data = r_obj["additional_data"]
+
+            if "prior_forecast" in r_obj:
+                if r_obj["prior_forecast"] is not None:
+                    f.prior_forecast = int(r_obj["prior_forecast"])
+            f.is_human = bool(r_obj["is_human"])
+
+            if "next_forecasts" in r_obj:
+                if r_obj is not None:
+                    f.next_forecasts = r_obj["next_forecasts"]
+
+            return f
         else:
             raise Exception(response.text)
 

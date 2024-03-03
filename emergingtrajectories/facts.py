@@ -7,6 +7,7 @@ This abstracts away the fact generation from forecast creation, thus allowing us
 import os
 import json
 import hashlib
+import re
 
 # Using JSONEncoder to be consistent with the Emerging Trajectories website and platform.
 from django.core.serializers.json import DjangoJSONEncoder
@@ -224,6 +225,9 @@ class FactBaseFileCache:
         if fileout is not None:
             with open(fileout, "w") as w:
                 w.write(assistant_analysis_sourced)
+
+        for ar in accessed_resources:
+            self.log_access(ar)
 
         return assistant_analysis_sourced
 

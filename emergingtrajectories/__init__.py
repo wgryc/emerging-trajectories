@@ -10,6 +10,39 @@ def hello() -> None:
     print("Welcome to the Emerging Trajectories package! We've been expecting you. 😉")
 
 
+# TODO: document
+class Statement(object):
+    def __init__(self, title, fill_in_the_blank):
+        self.id = -1
+        self.title = title
+        self.fill_in_the_blank = fill_in_the_blank
+        self.description = ""
+        self.deadline = None
+        self.created_at = None
+        self.updated_at = None
+        self.created_by = None
+
+
+# TODO: document
+class Forecast(object):
+
+    def __init__(self, title, value, justification):
+        self.id = -1
+        self.title = title
+        self.value = value
+        self.justification = justification
+
+        self.statement = None
+        self.created_at = None
+        self.updated_at = None
+        self.created_by = None
+        self.prediction_agent = None
+        self.additional_data = {}
+        self.prior_forecast = None
+        self.next_forecasts = []
+        self.is_human = False
+
+
 class Client(object):
 
     # The base URL for the API, in case we need to change it or if someone wants to self-host anything.

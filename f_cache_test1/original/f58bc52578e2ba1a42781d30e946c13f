@@ -320,7 +320,7 @@
 						<table>
 															<tr class="change_up link_oilprice_row" data-hash="WTI-Crude" data-id="45" data-periods="2,3,4,5,7" data-spread="Crude Oil WTI">
 									<td class="mobile_graph"><img class="graph_up lozad opacity_0" alt="Graph up" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_green.svg?v=3"></td>
-									<td class="blend_name">WTI Crude <span class="dot">•</span><span class="last_updated">5 hours</span> 
+									<td class="blend_name">WTI Crude <span class="dot">•</span><span class="last_updated">1 day</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -330,7 +330,7 @@
 								</tr>
 																							<tr class="change_up link_oilprice_row" data-hash="Brent-Crude" data-id="46" data-periods="" data-spread="Crude Oil Brent">
 									<td class="mobile_graph"><img class="graph_up lozad opacity_0" alt="Graph up" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_green.svg?v=3"></td>
-									<td class="blend_name">Brent Crude <span class="dot">•</span><span class="last_updated">4 hours</span> 
+									<td class="blend_name">Brent Crude <span class="dot">•</span><span class="last_updated">1 day</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -350,7 +350,7 @@
 								</tr>
 																							<tr class="change_down link_oilprice_row" data-hash="Natural-Gas" data-id="51" data-periods="" data-spread="Natural Gas">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Natural Gas <span class="dot">•</span><span class="last_updated">5 hours</span> 
+									<td class="blend_name">Natural Gas <span class="dot">•</span><span class="last_updated">1 day</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -360,7 +360,7 @@
 								</tr>
 																							<tr class="change_up link_oilprice_row" data-hash="Gasoline" data-id="53" data-periods="" data-spread="Gasoline RBOB">
 									<td class="mobile_graph"><img class="graph_up lozad opacity_0" alt="Graph up" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_green.svg?v=3"></td>
-									<td class="blend_name">Gasoline <span class="dot">•</span><span class="last_updated">5 hours</span> 
+									<td class="blend_name">Gasoline <span class="dot">•</span><span class="last_updated">1 day</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -370,7 +370,7 @@
 								</tr>
 																							<tr class="change_up link_oilprice_row" data-hash="Louisiana-Light" data-id="76" data-periods="4,5" data-spread="Louisiana Light">
 									<td class="mobile_graph"><img class="graph_up lozad opacity_0" alt="Graph up" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_green.svg?v=3"></td>
-									<td class="blend_name">Louisiana Light <span class="dot">•</span><span class="last_updated">3 days</span> 
+									<td class="blend_name">Louisiana Light <span class="dot">•</span><span class="last_updated">4 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -392,7 +392,7 @@
 															<tr class="change_up link_oilprice_row" data-hash="Louisiana-Light" data-id="76" data-periods="4,5" data-spread="Louisiana Light">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Louisiana Light <span class="dot">•</span> <span class="last_updated">3 days</span></td>
+									<td class="blend_name">Louisiana Light <span class="dot">•</span> <span class="last_updated">4 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">81.79  <i class="fa fa-caret-up" aria-hidden="true"></i></td>
 									<td class="change_amount">+0.86</td>
@@ -401,7 +401,7 @@
 															<tr class="change_up link_oilprice_row" data-hash="Bonny-Light" data-id="4189" data-periods="4,5,7" data-spread="Bonny (Nigeria)">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Bonny Light <span class="dot">•</span> <span class="last_updated">21 hours</span></td>
+									<td class="blend_name">Bonny Light <span class="dot">•</span> <span class="last_updated">2 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">87.20  <i class="fa fa-caret-up" aria-hidden="true"></i></td>
 									<td class="change_amount">+1.87</td>
@@ -410,7 +410,7 @@
 															<tr class="change_down link_oilprice_row" data-hash="Opec-Basket" data-id="29" data-periods="4,5,7" data-spread="Opec Basket Price">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Opec Basket <span class="dot">•</span> <span class="last_updated">2 days</span></td>
+									<td class="blend_name">Opec Basket <span class="dot">•</span> <span class="last_updated">3 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">82.01  <i class="fa fa-caret-down" aria-hidden="true"></i></td>
 									<td class="change_amount">-0.01</td>
@@ -419,7 +419,7 @@
 															<tr class="change_down link_oilprice_row" data-hash="Mars-US" data-id="50" data-periods="4,5,7" data-spread="Gulf Sour Crude Oil">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Mars US <span class="dot">•</span> <span class="last_updated">119 days</span></td>
+									<td class="blend_name">Mars US <span class="dot">•</span> <span class="last_updated">120 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">78.07  <i class="fa fa-caret-down" aria-hidden="true"></i></td>
 									<td class="change_amount">-1.65</td>
@@ -428,7 +428,7 @@
 															<tr class="change_up link_oilprice_row" data-hash="Gasoline" data-id="53" data-periods="" data-spread="Gasoline RBOB">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Gasoline <span class="dot">•</span> <span class="last_updated">5 hours</span></td>
+									<td class="blend_name">Gasoline <span class="dot">•</span> <span class="last_updated">1 day</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">2.614  <i class="fa fa-caret-up" aria-hidden="true"></i></td>
 									<td class="change_amount">+0.033</td>
@@ -452,7 +452,7 @@
 						<table>
 															<tr class="change_down link_oilprice_row" data-hash="Marine" data-id="4184" data-periods="4,7" data-spread="Marin (Qatar Offshore Oil)">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Marine <span class="dot">•</span><span class="last_updated">21 hours</span> 
+									<td class="blend_name">Marine <span class="dot">•</span><span class="last_updated">2 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -462,7 +462,7 @@
 								</tr>
 																							<tr class="change_down link_oilprice_row" data-hash="Murban" data-id="4185" data-periods="4,5,7" data-spread="Murban (UAE)">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Murban <span class="dot">•</span><span class="last_updated">21 hours</span> 
+									<td class="blend_name">Murban <span class="dot">•</span><span class="last_updated">2 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -472,7 +472,7 @@
 								</tr>
 																							<tr class="change_up link_oilprice_row" data-hash="Iran-Heavy" data-id="4186" data-periods="4,5,7" data-spread="Iran Heavy Crude">
 									<td class="mobile_graph"><img class="graph_up lozad opacity_0" alt="Graph up" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_green.svg?v=3"></td>
-									<td class="blend_name">Iran Heavy <span class="dot">•</span><span class="last_updated">21 hours</span> 
+									<td class="blend_name">Iran Heavy <span class="dot">•</span><span class="last_updated">2 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -482,7 +482,7 @@
 								</tr>
 																							<tr class="change_down link_oilprice_row" data-hash="Basra-Light" data-id="4187" data-periods="4,5,7" data-spread="Basra Light (Iraq)">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Basra Light <span class="dot">•</span><span class="last_updated">823 days</span> 
+									<td class="blend_name">Basra Light <span class="dot">•</span><span class="last_updated">824 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -492,7 +492,7 @@
 								</tr>
 																							<tr class="change_up link_oilprice_row" data-hash="Saharan-Blend" data-id="4188" data-periods="4,5,7" data-spread="Saharan Blend (Algeria)">
 									<td class="mobile_graph"><img class="graph_up lozad opacity_0" alt="Graph up" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_green.svg?v=3"></td>
-									<td class="blend_name">Saharan Blend <span class="dot">•</span><span class="last_updated">21 hours</span> 
+									<td class="blend_name">Saharan Blend <span class="dot">•</span><span class="last_updated">2 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -502,7 +502,7 @@
 								</tr>
 																							<tr class="change_up link_oilprice_row" data-hash="Bonny-Light" data-id="4189" data-periods="4,5,7" data-spread="Bonny (Nigeria)">
 									<td class="mobile_graph"><img class="graph_up lozad opacity_0" alt="Graph up" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_green.svg?v=3"></td>
-									<td class="blend_name">Bonny Light <span class="dot">•</span><span class="last_updated">21 hours</span> 
+									<td class="blend_name">Bonny Light <span class="dot">•</span><span class="last_updated">2 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -524,7 +524,7 @@
 															<tr class="change_up link_oilprice_row" data-hash="Bonny-Light" data-id="4189" data-periods="4,5,7" data-spread="Bonny (Nigeria)">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Bonny Light <span class="dot">•</span> <span class="last_updated">21 hours</span></td>
+									<td class="blend_name">Bonny Light <span class="dot">•</span> <span class="last_updated">2 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">87.20  <i class="fa fa-caret-up" aria-hidden="true"></i></td>
 									<td class="change_amount">+1.87</td>
@@ -533,7 +533,7 @@
 															<tr class="change_up link_oilprice_row" data-hash="Girassol" data-id="4190" data-periods="4,5,7" data-spread="Girassol (Angola)">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Girassol <span class="dot">•</span> <span class="last_updated">21 hours</span></td>
+									<td class="blend_name">Girassol <span class="dot">•</span> <span class="last_updated">2 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">86.31  <i class="fa fa-caret-up" aria-hidden="true"></i></td>
 									<td class="change_amount">+2.11</td>
@@ -542,7 +542,7 @@
 															<tr class="change_down link_oilprice_row" data-hash="Opec-Basket" data-id="29" data-periods="4,5,7" data-spread="Opec Basket Price">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Opec Basket <span class="dot">•</span> <span class="last_updated">2 days</span></td>
+									<td class="blend_name">Opec Basket <span class="dot">•</span> <span class="last_updated">3 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">82.01  <i class="fa fa-caret-down" aria-hidden="true"></i></td>
 									<td class="change_amount">-0.01</td>
@@ -566,7 +566,7 @@
 						<table>
 															<tr class="change_down link_oilprice_row" data-hash="Canadian-Crude-Index" data-id="68" data-periods="2,4,5,7" data-spread="Canadian Crude Index">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Canadian Crude Index <span class="dot">•</span><span class="last_updated">276 days</span> 
+									<td class="blend_name">Canadian Crude Index <span class="dot">•</span><span class="last_updated">277 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -576,7 +576,7 @@
 								</tr>
 																							<tr class="change_down link_oilprice_row" data-hash="Western-Canadian-Select" data-id="257" data-periods="4,5,7" data-spread="WCS">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Western Canadian Select <span class="dot">•</span><span class="last_updated">19 hours</span> 
+									<td class="blend_name">Western Canadian Select <span class="dot">•</span><span class="last_updated">2 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -586,7 +586,7 @@
 								</tr>
 																							<tr class="change_down link_oilprice_row" data-hash="Canadian-Condensate" data-id="280" data-periods="4,5,7" data-spread="C5+">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Canadian Condensate <span class="dot">•</span><span class="last_updated">20 hours</span> 
+									<td class="blend_name">Canadian Condensate <span class="dot">•</span><span class="last_updated">2 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -596,7 +596,7 @@
 								</tr>
 																							<tr class="change_down link_oilprice_row" data-hash="Premium-Synthetic" data-id="287" data-periods="4,5,7" data-spread="PSY/SSP">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Premium Synthetic <span class="dot">•</span><span class="last_updated">20 hours</span> 
+									<td class="blend_name">Premium Synthetic <span class="dot">•</span><span class="last_updated">2 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -606,7 +606,7 @@
 								</tr>
 																							<tr class="change_down link_oilprice_row" data-hash="Sweet-Crude" data-id="278" data-periods="4,5,7" data-spread="SW">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Sweet Crude <span class="dot">•</span><span class="last_updated">19 hours</span> 
+									<td class="blend_name">Sweet Crude <span class="dot">•</span><span class="last_updated">2 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -616,7 +616,7 @@
 								</tr>
 																							<tr class="change_down link_oilprice_row" data-hash="Peace-Sour" data-id="276" data-periods="4,5,7" data-spread="PSO">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Peace Sour <span class="dot">•</span><span class="last_updated">19 hours</span> 
+									<td class="blend_name">Peace Sour <span class="dot">•</span><span class="last_updated">2 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -638,7 +638,7 @@
 															<tr class="change_down link_oilprice_row" data-hash="Peace-Sour" data-id="276" data-periods="4,5,7" data-spread="PSO">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Peace Sour <span class="dot">•</span> <span class="last_updated">19 hours</span></td>
+									<td class="blend_name">Peace Sour <span class="dot">•</span> <span class="last_updated">2 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">66.26  <i class="fa fa-caret-down" aria-hidden="true"></i></td>
 									<td class="change_amount">-0.28</td>
@@ -647,7 +647,7 @@
 															<tr class="change_down link_oilprice_row" data-hash="Light-Sour-Blend" data-id="275" data-periods="4,5,7" data-spread="LSB">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Light Sour Blend <span class="dot">•</span> <span class="last_updated">19 hours</span></td>
+									<td class="blend_name">Light Sour Blend <span class="dot">•</span> <span class="last_updated">2 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">68.26  <i class="fa fa-caret-down" aria-hidden="true"></i></td>
 									<td class="change_amount">-0.28</td>
@@ -656,7 +656,7 @@
 															<tr class="change_down link_oilprice_row" data-hash="Syncrude-Sweet-Premium" data-id="277" data-periods="4,5,7" data-spread="SSP">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Syncrude Sweet Premium <span class="dot">•</span> <span class="last_updated">19 hours</span></td>
+									<td class="blend_name">Syncrude Sweet Premium <span class="dot">•</span> <span class="last_updated">2 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">75.51  <i class="fa fa-caret-down" aria-hidden="true"></i></td>
 									<td class="change_amount">-0.28</td>
@@ -665,7 +665,7 @@
 															<tr class="change_down link_oilprice_row" data-hash="Central-Alberta" data-id="274" data-periods="4,5,7" data-spread="CAL">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Central Alberta <span class="dot">•</span> <span class="last_updated">19 hours</span></td>
+									<td class="blend_name">Central Alberta <span class="dot">•</span> <span class="last_updated">2 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">66.26  <i class="fa fa-caret-down" aria-hidden="true"></i></td>
 									<td class="change_amount">-0.28</td>
@@ -689,7 +689,7 @@
 						<table>
 															<tr class="change_up link_oilprice_row" data-hash="Louisiana-Light" data-id="76" data-periods="4,5" data-spread="Louisiana Light">
 									<td class="mobile_graph"><img class="graph_up lozad opacity_0" alt="Graph up" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_green.svg?v=3"></td>
-									<td class="blend_name">Louisiana Light <span class="dot">•</span><span class="last_updated">3 days</span> 
+									<td class="blend_name">Louisiana Light <span class="dot">•</span><span class="last_updated">4 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -699,7 +699,7 @@
 								</tr>
 																							<tr class="change_down link_oilprice_row" data-hash="Domestic-Swt-Cushing" data-id="26" data-periods="4,5,7" data-spread="Domestic Swt. @ Cushing">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Domestic Swt. @ Cushing <span class="dot">•</span><span class="last_updated">2 days</span> 
+									<td class="blend_name">Domestic Swt. @ Cushing <span class="dot">•</span><span class="last_updated">3 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -709,7 +709,7 @@
 								</tr>
 																							<tr class="change_down link_oilprice_row" data-hash="Giddings" data-id="27" data-periods="4,5,7" data-spread="Giddings">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Giddings <span class="dot">•</span><span class="last_updated">2 days</span> 
+									<td class="blend_name">Giddings <span class="dot">•</span><span class="last_updated">3 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -719,7 +719,7 @@
 								</tr>
 																							<tr class="change_up link_oilprice_row" data-hash="ANS-West-Coast" data-id="44" data-periods="4,5,7" data-spread="ANS West Coast">
 									<td class="mobile_graph"><img class="graph_up lozad opacity_0" alt="Graph up" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_green.svg?v=3"></td>
-									<td class="blend_name">ANS West Coast <span class="dot">•</span><span class="last_updated">10 days</span> 
+									<td class="blend_name">ANS West Coast <span class="dot">•</span><span class="last_updated">11 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -729,7 +729,7 @@
 								</tr>
 																							<tr class="change_down link_oilprice_row" data-hash="West-Texas-Sour" data-id="3" data-periods="4,5,7" data-spread="West Texas Sour">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">West Texas Sour <span class="dot">•</span><span class="last_updated">2 days</span> 
+									<td class="blend_name">West Texas Sour <span class="dot">•</span><span class="last_updated">3 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -739,7 +739,7 @@
 								</tr>
 																							<tr class="change_down link_oilprice_row" data-hash="Eagle-Ford" data-id="12" data-periods="4,5,7" data-spread="Eagle Ford">
 									<td class="mobile_graph"><img class="graph_down lozad opacity_0" alt="Graph down" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart_red_flip.svg?v=3"></td>
-									<td class="blend_name">Eagle Ford <span class="dot">•</span><span class="last_updated">2 days</span> 
+									<td class="blend_name">Eagle Ford <span class="dot">•</span><span class="last_updated">3 days</span> 
 									</td>
 																			<td class="empty_buy_sell"></td>
 										
@@ -761,7 +761,7 @@
 															<tr class="change_down link_oilprice_row" data-hash="Eagle-Ford" data-id="12" data-periods="4,5,7" data-spread="Eagle Ford">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Eagle Ford <span class="dot">•</span> <span class="last_updated">2 days</span></td>
+									<td class="blend_name">Eagle Ford <span class="dot">•</span> <span class="last_updated">3 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">74.74  <i class="fa fa-caret-down" aria-hidden="true"></i></td>
 									<td class="change_amount">-0.28</td>
@@ -770,7 +770,7 @@
 															<tr class="change_down link_oilprice_row" data-hash="Oklahoma-Sweet" data-id="1" data-periods="4,5,7" data-spread="Oklahoma Sweet">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Oklahoma Sweet <span class="dot">•</span> <span class="last_updated">2 days</span></td>
+									<td class="blend_name">Oklahoma Sweet <span class="dot">•</span> <span class="last_updated">3 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">74.75  <i class="fa fa-caret-down" aria-hidden="true"></i></td>
 									<td class="change_amount">-0.25</td>
@@ -779,7 +779,7 @@
 															<tr class="change_down link_oilprice_row" data-hash="Kansas-Common" data-id="77" data-periods="4,5,7" data-spread="Kansas Common">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Kansas Common <span class="dot">•</span> <span class="last_updated">3 days</span></td>
+									<td class="blend_name">Kansas Common <span class="dot">•</span> <span class="last_updated">4 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">68.75  <i class="fa fa-caret-down" aria-hidden="true"></i></td>
 									<td class="change_amount">-0.25</td>
@@ -788,7 +788,7 @@
 															<tr class="change_down link_oilprice_row" data-hash="Buena-Vista" data-id="136" data-periods="4,5,7" data-spread="Buena Vista">
 									<td class="mobile_graph"><img class="lozad opacity_0" data-src="https://d1o9e4un86hhpc.cloudfront.net/a/img/common/header/chart.svg" alt="Chart"></td>
 									<td class="spacer"></td>
-									<td class="blend_name">Buena Vista <span class="dot">•</span> <span class="last_updated">3 days</span></td>
+									<td class="blend_name">Buena Vista <span class="dot">•</span> <span class="last_updated">4 days</span></td>
 																			<td class="empty_buy_sell"></td>
 																		<td class="value">82.84  <i class="fa fa-caret-down" aria-hidden="true"></i></td>
 									<td class="change_amount">-0.33</td>
@@ -820,7 +820,7 @@
 				<a class="all_charts" href="https://oilprice.com/oil-price-charts/">All Charts</a>
 			</div>
 			<div class="graph_area" data-blend="45">
-				<img data-base="https://d32r1sh890xpii.cloudfront.net/header_graphs/blend_" class="lozad opacity_0" data-src="https://d32r1sh890xpii.cloudfront.net/header_graphs/blend_45_2.png?cb=1709347211">
+				<img data-base="https://d32r1sh890xpii.cloudfront.net/header_graphs/blend_" class="lozad opacity_0" data-src="https://d32r1sh890xpii.cloudfront.net/header_graphs/blend_45_2.png?cb=1709423110">
 			</div>
 		</div>
 		<div class="right_block">
@@ -838,119 +838,119 @@
 											<li>
 							<div class="headline_row" data-id="0">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/OPEC-Lifts-Production-in-February.html" class="full_parent"></a>
-								<span class="time_ago">7 hours</span>
+								<span class="time_ago">1 day</span>
 								<span class="article_name">OPEC Lifts Production in February</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="1">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Russias-Rosneft-Moves-to-Sell-its-German-Refinery-Assets.html" class="full_parent"></a>
-								<span class="time_ago">8 hours</span>
+								<span class="time_ago">1 day</span>
 								<span class="article_name">Russia’s Rosneft Moves to Sell its German Refinery Assets</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="2">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Cheap-Spot-Prices-Boost-Chinas-LNG-Imports-to-Record-High-for-February.html" class="full_parent"></a>
-								<span class="time_ago">9 hours</span>
+								<span class="time_ago">1 day</span>
 								<span class="article_name">Cheap Spot Prices Boost China’s LNG Imports to Record High for February</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="3">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Oil-Majors-Frustrated-by-Nigerias-Asset-Sale-Delays.html" class="full_parent"></a>
-								<span class="time_ago">10 hours</span>
+								<span class="time_ago">1 day</span>
 								<span class="article_name">Oil Majors Frustrated by Nigeria’s Asset Sale Delays</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="4">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/BP-to-Drill-First-Deep-Gas-Production-Well-at-Huge-Azeri-Field-in-H2.html" class="full_parent"></a>
-								<span class="time_ago">11 hours</span>
+								<span class="time_ago">1 day</span>
 								<span class="article_name">BP to Drill First Deep Gas Production Well at Huge Azeri Field in H2</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="5">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Likely-to-Keep-Oil-Prices-to-Asia-Unchanged.html" class="full_parent"></a>
-								<span class="time_ago">12 hours</span>
+								<span class="time_ago">1 day</span>
 								<span class="article_name">Saudi Arabia Likely to Keep Oil Prices to Asia Unchanged</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="6">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Energy-Related-Emissions-Hit-a-Record-High-Last-Year-Despite-Renewables-Surge.html" class="full_parent"></a>
-								<span class="time_ago">13 hours</span>
+								<span class="time_ago">1 day</span>
 								<span class="article_name">Energy-Related Emissions Hit a Record High Last Year Despite Renewables Surge</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="7">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Chinese-Oil-Product-Demand-Could-Peak-by-2025.html" class="full_parent"></a>
-								<span class="time_ago">14 hours</span>
+								<span class="time_ago">1 day</span>
 								<span class="article_name">Chinese Oil Product Demand Could Peak by 2025</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="8">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Canadian-Natural-Resources-Lifts-Dividend-After-Posting-Record-Production.html" class="full_parent"></a>
-								<span class="time_ago">16 hours</span>
+								<span class="time_ago">2 days</span>
 								<span class="article_name">Canadian Natural Resources Lifts Dividend After Posting Record Production</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="9">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Set-to-End-the-Week-With-a-Minor-Gain.html" class="full_parent"></a>
-								<span class="time_ago">19 hours</span>
+								<span class="time_ago">2 days</span>
 								<span class="article_name">Oil Prices Set to End the Week With a Minor Gain</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="10">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/EPA-Excludes-Existing-Gas-Fired-Power-Plants-From-New-Emissions-Rule.html" class="full_parent"></a>
-								<span class="time_ago">19 hours</span>
+								<span class="time_ago">2 days</span>
 								<span class="article_name">EPA Excludes Existing Gas-Fired Power Plants From New Emissions Rule</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="11">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Saipem-First-to-Call-Drop-in-Aramco-Orders-Over-Oil-Expansion-Plan-Scrapping.html" class="full_parent"></a>
-								<span class="time_ago">1 day</span>
+								<span class="time_ago">2 days</span>
 								<span class="article_name">Saipem First to Call Drop in Aramco Orders Over Oil Expansion Plan Scrapping</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="12">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Wood-Mac-Shaves-1-Million-BPD-off-Global-Oil-Demand-Forecast.html" class="full_parent"></a>
-								<span class="time_ago">1 day</span>
+								<span class="time_ago">2 days</span>
 								<span class="article_name">Wood Mac Shaves 1 Million BPD off Global Oil Demand Forecast</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="13">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Crescent-Point-Energy-Lifts-Base-Dividend-as-It-Turns-Profit-for-Q4.html" class="full_parent"></a>
-								<span class="time_ago">1 day</span>
+								<span class="time_ago">2 days</span>
 								<span class="article_name">Crescent Point Energy Lifts Base Dividend as It Turns Profit for Q4</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="14">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Utility-Scale-Solar-Installations-Saw-Largest-Jump-Ever-Last-Year.html" class="full_parent"></a>
-								<span class="time_ago">1 day</span>
+								<span class="time_ago">2 days</span>
 								<span class="article_name">Utility Scale Solar Installations Saw Largest Jump Ever Last Year</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="15">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Kuwaits-Fuel-Oil-Exports-Jump-to-Record-as-New-Refinery-Ramps-Up.html" class="full_parent"></a>
-								<span class="time_ago">1 day</span>
+								<span class="time_ago">2 days</span>
 								<span class="article_name">Kuwait’s Fuel Oil Exports Jump to Record as New Refinery Ramps Up</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="16">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Indias-Coal-Stocks-Soar-to-Seasonal-Record.html" class="full_parent"></a>
-								<span class="time_ago">1 day</span>
+								<span class="time_ago">2 days</span>
 								<span class="article_name">India’s Coal Stocks Soar to Seasonal Record</span>
 							</div>
 						</li>
@@ -978,70 +978,70 @@
 											<li>
 							<div class="headline_row" data-id="20">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/India-Could-Become-a-Key-Player-in-the-500-Billion-Green-Hydrogen-Market.html" class="full_parent"></a>
-								<span class="time_ago">2 days</span>
+								<span class="time_ago">3 days</span>
 								<span class="article_name">India Could Become a Key Player in the $500-Billion Green Hydrogen Market</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="21">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Shell-Puts-US-Solar-Assets-Up-for-Sale.html" class="full_parent"></a>
-								<span class="time_ago">2 days</span>
+								<span class="time_ago">3 days</span>
 								<span class="article_name">Shell Puts U.S. Solar Assets Up for Sale</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="22">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Are-Set-for-a-Second-Consecutive-Monthly-Gain.html" class="full_parent"></a>
-								<span class="time_ago">2 days</span>
+								<span class="time_ago">3 days</span>
 								<span class="article_name">Oil Prices Are Set for a Second Consecutive Monthly Gain</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="23">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Chinas-Utility-Scale-Solar-Growth-Surpassed-Residential-Additions-in-2023.html" class="full_parent"></a>
-								<span class="time_ago">2 days</span>
+								<span class="time_ago">3 days</span>
 								<span class="article_name">China’s Utility-Scale Solar Growth Surpassed Residential Additions in 2023</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="24">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/US-Has-Launched-230-Attacks-on-Houthis-Over-Red-Sea-Disruption.html" class="full_parent"></a>
-								<span class="time_ago">2 days</span>
+								<span class="time_ago">3 days</span>
 								<span class="article_name">U.S. Has Launched 230 Attacks on Houthis Over Red Sea Disruption</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="25">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/US-Natural-Gas-Prices-Gain-Over-3-After-Hitting-1997-Low.html" class="full_parent"></a>
-								<span class="time_ago">2 days</span>
+								<span class="time_ago">3 days</span>
 								<span class="article_name">U.S. Natural Gas Prices Gain Over 3% After Hitting 1997 Low</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="26">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Raging-Wildfire-Threatens-Texas-Oil-Rigs-Refinery.html" class="full_parent"></a>
-								<span class="time_ago">2 days</span>
+								<span class="time_ago">3 days</span>
 								<span class="article_name">Raging Wildfire Threatens Texas Oil Rigs, Refinery</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="27">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Progress-Stalls-On-Shell-Equinor-42-Billion-LNG-Project-in-Tanzania.html" class="full_parent"></a>
-								<span class="time_ago">2 days</span>
+								<span class="time_ago">3 days</span>
 								<span class="article_name">Progress Stalls On Shell-Equinor $42-Billion LNG Project in Tanzania</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="28">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Draft-WTO-Agreement-Shows-Deep-Divergences-on-Climate-Change.html" class="full_parent"></a>
-								<span class="time_ago">2 days</span>
+								<span class="time_ago">3 days</span>
 								<span class="article_name">Draft WTO Agreement Shows Deep Divergences on Climate Change</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="29">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Philippines-To-Explore-Other-Oil-and-Gas-Areas-amid-China-Tensions.html" class="full_parent"></a>
-								<span class="time_ago">2 days</span>
+								<span class="time_ago">3 days</span>
 								<span class="article_name">Philippines To Explore Other Oil and Gas Areas amid China Tensions</span>
 							</div>
 						</li>
@@ -1069,49 +1069,49 @@
 											<li>
 							<div class="headline_row" data-id="33">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Indias-Oil-Supply-From-Russia-Threatened-by-New-US-Sanctions.html" class="full_parent"></a>
-								<span class="time_ago">3 days</span>
+								<span class="time_ago">4 days</span>
 								<span class="article_name">India’s Oil Supply From Russia Threatened by New U.S. Sanctions</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="34">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/The-EU-Has-a-Chance-to-Reach-Its-2030-Wind-Power-Targets.html" class="full_parent"></a>
-								<span class="time_ago">3 days</span>
+								<span class="time_ago">4 days</span>
 								<span class="article_name">The EU Has a Chance to Reach Its 2030 Wind Power Targets</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="35">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/China-and-Europe-to-Drive-LNG-Demand-Growth-This-Year.html" class="full_parent"></a>
-								<span class="time_ago">3 days</span>
+								<span class="time_ago">4 days</span>
 								<span class="article_name">China and Europe to Drive LNG Demand Growth This Year</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="36">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Glencore-May-Snap-Up-Shell-Oil-Assets-in-Singapore.html" class="full_parent"></a>
-								<span class="time_ago">3 days</span>
+								<span class="time_ago">4 days</span>
 								<span class="article_name">Glencore May Snap Up Shell Oil Assets in Singapore</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="37">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/OPEC-Could-Extend-Output-Cuts-Through-Year-End.html" class="full_parent"></a>
-								<span class="time_ago">3 days</span>
+								<span class="time_ago">4 days</span>
 								<span class="article_name">OPEC+ Could Extend Output Cuts Through Year End</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="38">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Chile-Looks-to-New-Tech-to-Bolster-Natural-Gas-Production.html" class="full_parent"></a>
-								<span class="time_ago">3 days</span>
+								<span class="time_ago">4 days</span>
 								<span class="article_name">Chile Looks to New Tech to Bolster Natural Gas Production</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="39">
 								<a href="https://oilprice.com/Latest-Energy-News/World-News/Surprise-Crude-Build-Weighs-on-Oil.html" class="full_parent"></a>
-								<span class="time_ago">3 days</span>
+								<span class="time_ago">4 days</span>
 								<span class="article_name">Surprise Crude Build Weighs on Oil</span>
 							</div>
 						</li>
@@ -1143,64 +1143,64 @@
 											<li>
 							<div class="headline_row" data-id="3">
 								<a target="_blank" href="https://community.oilprice.com/topic/23356-green-new-deal-blizzard-of-lies/" class="full_parent"></a>
-								<span class="time_ago">40 mins</span>
+								<span class="time_ago">7 hours</span>
 								<span class="article_name">GREEN NEW DEAL = BLIZZARD OF LIES</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="4">
-								<a target="_blank" href="https://community.oilprice.com/topic/37203-does-toyota-know-something-that-we-don%E2%80%99t/" class="full_parent"></a>
-								<span class="time_ago">11 days</span>
-								<span class="article_name">Does Toyota Know Something That We Don’t?</span>
-							</div>
-						</li>
-											<li>
-							<div class="headline_row" data-id="5">
 								<a target="_blank" href="https://community.oilprice.com/topic/33390-what%E2%80%99s-in-store-for-europe-in-2023-by-the-cia-aka-rferl-as-a-ruse-to-deceive-readers/" class="full_parent"></a>
-								<span class="time_ago">11 hours</span>
+								<span class="time_ago">1 day</span>
 								<span class="article_name">"What’s In Store For Europe In 2023?" By the CIA (aka RFE/RL as a ruse to deceive readers)</span>
 							</div>
 						</li>
 											<li>
-							<div class="headline_row" data-id="6">
+							<div class="headline_row" data-id="5">
 								<a target="_blank" href="https://community.oilprice.com/topic/37248-america-should-go-after-china-but-it-should-be-done-in-a-wise-way/" class="full_parent"></a>
-								<span class="time_ago">5 days</span>
+								<span class="time_ago">6 days</span>
 								<span class="article_name">America should go after China but it should be done in a wise way.</span>
+							</div>
+						</li>
+											<li>
+							<div class="headline_row" data-id="6">
+								<a target="_blank" href="https://community.oilprice.com/topic/26012-how-far-have-we-really-gotten-with-alternative-energy/" class="full_parent"></a>
+								<span class="time_ago">1 day</span>
+								<span class="article_name">How Far Have We Really Gotten With Alternative Energy</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="7">
 								<a target="_blank" href="https://community.oilprice.com/topic/37243-world-could-get-rid-of-putin-and-russia-but-nobody-is-bold-enough/" class="full_parent"></a>
-								<span class="time_ago">14 hours</span>
+								<span class="time_ago">1 day</span>
 								<span class="article_name">World could get rid of Putin and Russia but nobody is bold enough</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="8">
-								<a target="_blank" href="https://community.oilprice.com/topic/26012-how-far-have-we-really-gotten-with-alternative-energy/" class="full_parent"></a>
-								<span class="time_ago">12 hours</span>
-								<span class="article_name">How Far Have We Really Gotten With Alternative Energy</span>
+								<a target="_blank" href="https://community.oilprice.com/topic/35462-even-shell-agrees-with-climate-change/" class="full_parent"></a>
+								<span class="time_ago">10 hours</span>
+								<span class="article_name">Even Shell Agrees with Climate Change!</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="9">
 								<a target="_blank" href="https://community.oilprice.com/topic/36261-the-european-union-is-exceptional-in-its-political-divide-examples-are-apparent-in-hungary-slovakia-sweden-netherlands-belarus-ireland-etc/" class="full_parent"></a>
-								<span class="time_ago">1 day</span>
+								<span class="time_ago">2 days</span>
 								<span class="article_name">The European Union is exceptional in its political divide. Examples are apparent in Hungary, Slovakia, Sweden, Netherlands, Belarus, Ireland, etc.</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="10">
-								<a target="_blank" href="https://community.oilprice.com/topic/35462-even-shell-agrees-with-climate-change/" class="full_parent"></a>
-								<span class="time_ago">2 days</span>
-								<span class="article_name">Even Shell Agrees with Climate Change!</span>
+								<a target="_blank" href="https://community.oilprice.com/topic/26216-oil-stocks-market-direction-bitcoin-minerals-gold-silver-technical-trading/" class="full_parent"></a>
+								<span class="time_ago">5 days</span>
+								<span class="article_name">Oil Stocks, Market Direction, Bitcoin, Minerals, Gold, Silver - Technical Trading <--- Chris Vermeulen & Gareth Soloway weigh in</span>
 							</div>
 						</li>
 											<li>
 							<div class="headline_row" data-id="11">
-								<a target="_blank" href="https://community.oilprice.com/topic/26216-oil-stocks-market-direction-bitcoin-minerals-gold-silver-technical-trading/" class="full_parent"></a>
-								<span class="time_ago">4 days</span>
-								<span class="article_name">Oil Stocks, Market Direction, Bitcoin, Minerals, Gold, Silver - Technical Trading <--- Chris Vermeulen & Gareth Soloway weigh in</span>
+								<a target="_blank" href="https://community.oilprice.com/topic/37203-does-toyota-know-something-that-we-don%E2%80%99t/" class="full_parent"></a>
+								<span class="time_ago">12 days</span>
+								<span class="article_name">Does Toyota Know Something That We Don’t?</span>
 							</div>
 						</li>
 									</ul>
@@ -1287,19 +1287,19 @@
 				<div class="tableGrid">
 
 											<div class="tableGrid__column">
-							<a class="articleOtherNews__imageHolder" href="https://oilprice.com/Energy/Oil-Prices/Traders-Cautiously-Optimistic-About-Crude.html" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABVCAIAAAD11EyaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3ZmExYzAwNC0zODdmLWEyNDktYWQ4MC1iNDJlNTNkZjU4NjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkYyN0M3QzYwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkYyN0M3QzUwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTg0MDRkYzEtNWU1YS1hYTRkLTgzYmUtM2ZkODlhNzk1MGE1IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZDAyNGY2ZDctMDI1NS0xMWU2LTgxODMt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);background-repeat:no-repeat"><img data-src="https://d32r1sh890xpii.cloudfront.net/article/115x85/2024-02-16_20kimvo4by.jpg" data-error_image="https://d1o9e4un86hhpc.cloudfront.net/a/img/content/115x85-default.png" alt="Traders Cautiously Optimistic About Crude" title="Traders Cautiously Optimistic About Crude" class="articleOtherNews__image lozad opacity_0"></a>
+							<a class="articleOtherNews__imageHolder" href="https://oilprice.com/Energy/Oil-Prices/Brent-Needs-To-Be-90-or-Higher-To-Reflect-Actual-Fundamentals.html" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABVCAIAAAD11EyaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3ZmExYzAwNC0zODdmLWEyNDktYWQ4MC1iNDJlNTNkZjU4NjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkYyN0M3QzYwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkYyN0M3QzUwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTg0MDRkYzEtNWU1YS1hYTRkLTgzYmUtM2ZkODlhNzk1MGE1IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZDAyNGY2ZDctMDI1NS0xMWU2LTgxODMt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);background-repeat:no-repeat"><img data-src="https://d32r1sh890xpii.cloudfront.net/article/115x85/2024-02-15_hvkr0ik7pj.jpg" data-error_image="https://d1o9e4un86hhpc.cloudfront.net/a/img/content/115x85-default.png" alt="Brent Needs To Be $90 or Higher To Reflect Actual Fundamentals" title="Brent Needs To Be $90 or Higher To Reflect Actual Fundamentals" class="articleOtherNews__image lozad opacity_0"></a>
 							<div class="articleOtherNews__text">
-								<h3 class="articleOtherNews__title"><a href="https://oilprice.com/Energy/Oil-Prices/Traders-Cautiously-Optimistic-About-Crude.html">Traders Cautiously Optimistic About Crude</a></h3>
-								<p class="articleOtherNews__excerpt">In the forthcoming week, traders&#8230;</p>
+								<h3 class="articleOtherNews__title"><a href="https://oilprice.com/Energy/Oil-Prices/Brent-Needs-To-Be-90-or-Higher-To-Reflect-Actual-Fundamentals.html">Brent Needs To Be $90 or Higher To Reflect Actual Fundamentals</a></h3>
+								<p class="articleOtherNews__excerpt">Oil prices, led by Brent,&#8230;</p>
 							</div>
 							<!-- /.articleOtherNewsText -->
 						</div>
 						<!-- /.tableGrid__column -->
 											<div class="tableGrid__column">
-							<a class="articleOtherNews__imageHolder" href="https://oilprice.com/Energy/Oil-Prices/Brent-Needs-To-Be-90-or-Higher-To-Reflect-Actual-Fundamentals.html" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABVCAIAAAD11EyaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3ZmExYzAwNC0zODdmLWEyNDktYWQ4MC1iNDJlNTNkZjU4NjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkYyN0M3QzYwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkYyN0M3QzUwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTg0MDRkYzEtNWU1YS1hYTRkLTgzYmUtM2ZkODlhNzk1MGE1IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZDAyNGY2ZDctMDI1NS0xMWU2LTgxODMt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);background-repeat:no-repeat"><img data-src="https://d32r1sh890xpii.cloudfront.net/article/115x85/2024-02-15_hvkr0ik7pj.jpg" data-error_image="https://d1o9e4un86hhpc.cloudfront.net/a/img/content/115x85-default.png" alt="Brent Needs To Be $90 or Higher To Reflect Actual Fundamentals" title="Brent Needs To Be $90 or Higher To Reflect Actual Fundamentals" class="articleOtherNews__image lozad opacity_0"></a>
+							<a class="articleOtherNews__imageHolder" href="https://oilprice.com/Energy/Oil-Prices/Traders-Cautiously-Optimistic-About-Crude.html" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABVCAIAAAD11EyaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3ZmExYzAwNC0zODdmLWEyNDktYWQ4MC1iNDJlNTNkZjU4NjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkYyN0M3QzYwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkYyN0M3QzUwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTg0MDRkYzEtNWU1YS1hYTRkLTgzYmUtM2ZkODlhNzk1MGE1IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZDAyNGY2ZDctMDI1NS0xMWU2LTgxODMt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);background-repeat:no-repeat"><img data-src="https://d32r1sh890xpii.cloudfront.net/article/115x85/2024-02-16_20kimvo4by.jpg" data-error_image="https://d1o9e4un86hhpc.cloudfront.net/a/img/content/115x85-default.png" alt="Traders Cautiously Optimistic About Crude" title="Traders Cautiously Optimistic About Crude" class="articleOtherNews__image lozad opacity_0"></a>
 							<div class="articleOtherNews__text">
-								<h3 class="articleOtherNews__title"><a href="https://oilprice.com/Energy/Oil-Prices/Brent-Needs-To-Be-90-or-Higher-To-Reflect-Actual-Fundamentals.html">Brent Needs To Be $90 or Higher To Reflect Actual Fundamentals</a></h3>
-								<p class="articleOtherNews__excerpt">Oil prices, led by Brent,&#8230;</p>
+								<h3 class="articleOtherNews__title"><a href="https://oilprice.com/Energy/Oil-Prices/Traders-Cautiously-Optimistic-About-Crude.html">Traders Cautiously Optimistic About Crude</a></h3>
+								<p class="articleOtherNews__excerpt">In the forthcoming week, traders&#8230;</p>
 							</div>
 							<!-- /.articleOtherNewsText -->
 						</div>
@@ -1651,16 +1651,16 @@ Crude oil prices are at lows not seen in months. There seem to be few factors ca
               <h3 class="articleRelatedPosts__articleTitle">WTI Soars Past $80 per Barrel as Oil Market Tightens</h3>
             </a>
             <!-- /.grid__col -->
-                      <a href="https://oilprice.com/Energy/Energy-General/Red-Sea-Disruptions-Push-OECD-Crude-Inventories-Lower.html" class="grid__col grid__3col articleRelatedPosts__article">
+                      <a href="https://oilprice.com/Energy/Energy-General/US-Seeks-Semiconductor-Supremacy-with-New-Funding-Initiatives.html" class="grid__col grid__3col articleRelatedPosts__article">
             	<div class="articleRelatedPosts__article__imageHolder" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAADICAIAAACWFZjvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQxOEJFOUE5MDI1NTExRTY4NkE0RjM4QzhCQUM0MDE1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQxOEJFOUFBMDI1NTExRTY4NkE0RjM4QzhCQUM0MDE1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDE4QkU5QTcwMjU1MTFFNjg2QTRGMzhDOEJBQzQwMTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDE4QkU5QTgwMjU1MTFFNjg2QTRGMzhDOEJBQzQwMTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5L8yBoAAAPz0lEQVR42uyd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)">
-					<picture class="lozad-picture articleRelatedPosts__image" style="min-height: 2px" data-iesrc="https://d32r1sh890xpii.cloudfront.net/article/270x200/2024-03-01_31rgi8se6l.jpg">
-						<source media="(max-width: 480px)" srcset="https://d32r1sh890xpii.cloudfront.net/article/420x175/2024-03-01_31rgi8se6l.jpg">
-						<source media="(min-width: 480px)" srcset="https://d32r1sh890xpii.cloudfront.net/article/270x200/2024-03-01_31rgi8se6l.jpg">
+					<picture class="lozad-picture articleRelatedPosts__image" style="min-height: 2px" data-iesrc="https://d32r1sh890xpii.cloudfront.net/article/270x200/2024-03-01_hnqbzx4oet.jpg">
+						<source media="(max-width: 480px)" srcset="https://d32r1sh890xpii.cloudfront.net/article/420x175/2024-03-01_hnqbzx4oet.jpg">
+						<source media="(min-width: 480px)" srcset="https://d32r1sh890xpii.cloudfront.net/article/270x200/2024-03-01_hnqbzx4oet.jpg">
 
-						<noscript><img data-src="https://d32r1sh890xpii.cloudfront.net/article/270x200/2024-03-01_31rgi8se6l.jpg" class="articleRelatedPosts__image" alt="Red Sea Disruptions Push OECD Crude Inventories Lower" title="Red Sea Disruptions Push OECD Crude Inventories Lower"></noscript>
+						<noscript><img data-src="https://d32r1sh890xpii.cloudfront.net/article/270x200/2024-03-01_hnqbzx4oet.jpg" class="articleRelatedPosts__image" alt="U.S. Seeks Semiconductor Supremacy with New Funding Initiatives" title="U.S. Seeks Semiconductor Supremacy with New Funding Initiatives"></noscript>
 					</picture>
 				</div>
-              <h3 class="articleRelatedPosts__articleTitle">Red Sea Disruptions Push OECD Crude Inventories Lower</h3>
+              <h3 class="articleRelatedPosts__articleTitle">U.S. Seeks Semiconductor Supremacy with New Funding Initiatives</h3>
             </a>
             <!-- /.grid__col -->
           
@@ -1708,7 +1708,7 @@ Global Energy Expert								</div>
 				</div>
 				
 			<form action="https://oilprice.com/Energy/Oil-Prices/Oil-Prices-Poised-to-Bounce-Back-in-2024.html#commentsform" id="commentsform" method="post" accept-charset="utf-8">
-                                                    <input type="hidden" name="op_csrf_token" value="97c896bd75bada024482475a373f3390"/>
+<input type="hidden" name="op_csrf_token" value="23a587c7d37728b11a956362118aa72f"/>                                                                                               
 
 				<h3>Leave a comment</h3>
 				<fieldset>
@@ -1793,26 +1793,19 @@ Global Energy Expert								</div>
         <!-- /.banner--articleSidebar -->
         <div class="sidebarTrendingArticles">
           <div class="sectionHeading"><h3 class="sectionHeading__title">Most Popular</h3></div>
-							<a href='https://oilprice.com/Geopolitics/International/Houthis-Knock-Out-Undersea-Internet-Connections-in-Red-Sea.html' class="sidebarTrendingArticles__article">
-					<div class="sidebarTrendingArticles__article__imageHolder" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABVCAIAAAD11EyaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3ZmExYzAwNC0zODdmLWEyNDktYWQ4MC1iNDJlNTNkZjU4NjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkYyN0M3QzYwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkYyN0M3QzUwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTg0MDRkYzEtNWU1YS1hYTRkLTgzYmUtM2ZkODlhNzk1MGE1IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZDAyNGY2ZDctMDI1NS0xMWU2LTgxODMtZTU1NWFjNjdmNjk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OSscawAABrpJREFUeNrsnYtT28oVxvesXn7gJw5vSAhJoZnbpv//v9FpbtPJDcUEAtj4bb13T89KNphcptPMpBO1Ph9CI4w8Y/909O23q7UMX2+utUIAEKwfJESUFtioRbPZZBw/VuPx2M63uGZ/bM3SWjKI/5KYLJNlsiwmy2SZLIvJMlkmy2KyTJbJspgsk2WyLCbLZJksi8kyWSbLYrJMlsmyvld2wV8fRqEOfYwCoTVYtkhTYduyVBGlMjguk/1+oCpVo76eDDGYCxRCKVmqWptbyd2lEKAFCAC5UYNmW7Y7TPY/Vdr/qga3mKaAOWYhkhTqntXqpFddoiykBRpxMsHxBG9v5O4+NFvss/+2VOMwPv81vbsSOVYUtDZz+UzNlskHwCtjsvhXtiAGgfrtN/3Pc4HIZJ+X9mfR+QcdzEEswC02lAbbkY02/WW1Nk3NLo4DmkmUCGar31d//5W8mMn+DmvoxxcfDUR8ipVWYWi3X0B1I9Fabm1b1RpGUfYkyOwC893EfK4/fChO5RaCLCqVdP8BiLmxwgpWEceWV7YOjwmriuNUWvar16C0SBWgyH8WU39pMwj0p09MdqXJurkwcWqJ9bFmCZ/SzpvTxHHSMCRTTchVmy3n5bEIIzRHYjmhelmpOBqRMzDZzAeCuR4PxLK9etwg04wi9/htUm9GsxmiJlF1h1SYh0f2zo7wg2+wLiq3e1kEw/35ZFXv6glWkVsBoh96By/T7d1gOjVUFS30izqO50Eo/nBqt1ro+9lTnlQuxTW86607WUwTPZ2semVuteSY7vaOOjqeEVYiRcWas9WKmigV+NM4hnfv7EaD9hRaGbgrlVsEQ/jJZPV0/FCtsOSLfuC2O3hyOplMdWT8VBmqCynDUSSTySRV8pdfnMMjkVvH6gGjWl7kh7WtWUqvDw1X/kgYObW6ePvH4XSaBn4WZ78VPUKJK5yMh2EoTl7b+3sYhWJpJJAtOJ2tt89SZS0dIO/FWrYt35wNgjCZzQifXrrA7xcQMB+NY+K4vw9eiZ776Lgo1r1mRZo89LjMEifO4auJZQeDARis1GY9s+Rowygsl0seFTWA8+c/QatJ4Vcsm0ET49aa7EMeQMPCqdfjRmty3yesOb9nRY+HYei57manM5vNvt7cYLVqHx0KXaChg5891iWtx45sksrdtq8x8QPHdVA9h4kigNZJkjSazU6nM51Ob29vpZTUfllRLFY/iGlZa012MXqdjVqZT6iWylFk+lr6YdjlG/NIjRFvb297pRIxHY1GBHNvb48oKkpauJIQPHe9yVaqOBgstgHQspI01Xn79KRSKVYZalXSxgbtc9e9DMPAdpzDw0PXdedRVPFKq8kLqtX1JltrCNEVj51a6pya9AoKnpoxndwW1Smd+Pf3977vE/uN2gZVKxH/+PHji4ODqr3yXjxPVCrrTbZUgnIV5z5kRE3qcr00SSTIp8MBZMhW4PtRHBNKx7bJZGu12nA47Pd6iVKulFnMWhwP6GyufQtGyLZ31edPuBxjrdRqd1lHC5Zo842UOgWZF1cqlWp2pncvuhS8bMtyy5UyHYnxWCzLFrZe8IiMgFaL3NZ0nBxH9Xp1KUv1ehQEi3iVJVhaUySgls2mfoSUo+Hw+uoqjiMq3jAIau2WG0XpbApZHoD9PeG6TDYLSK9PTFlKi9I/3N7t7u8nWsd04i/HuBbRFjGKotFwFEaRZdlUvwHls2p1p9XCiy5SgKN0US7DwX4R3lQxrtZ4njw5MSd7yUsvLupheHR2FgRhHEZ6SdesU0WpC7LrXvSXP59rS74+O3OurtPxEKhOAeTp24L0FIpyHQzabfnypQBJwUv99W/bACd/ea8kzGbTKIpNN1ctKpfgUgeM+ghuvf7u/fuN27v082fhlgTZxLszkwoK8o6ur68bjUZB7iODgyGenyN5gkD79DSo167v++P7QTifm0uHFHjNbYWsSr1O/drdZtO6/JJ0L4TjQa0m35yIUiGw0oscj8fFIpuPfunLL9jriSR2Njtidyd23IBIgxG5ADVSlAzk3McvV+l8Cl4Z9naNtxbmLeRkizdHhjz3zQluvcDbXtLvw/3ArVTcek1QP5hCq0oFmcN4ksQhJQr56hi2tgpSqoXLs8+bVL1Oi3h1hJOp8n2czUQwMYZAcD0Xjg5ktWJ2KPDNsIo9F9FxYLMtNtv/izcT4/mzTJbJspgsk2WyLCbLZJksi8kyWSbLYrJMlsmymCyTZbIsJstkmSyLyTJZJsv6Xi1mcmDBbsLy/0AWpDCf/eHvtPtxyr+H8V8CDADxqzo1yy67dgAAAABJRU5ErkJggg==)">
-						<img width="115" height="85" data-error_image="https://d1o9e4un86hhpc.cloudfront.net/a/img/content/115x85-default.png" data-src="https://d32r1sh890xpii.cloudfront.net/article/115x85/2024-02-28_afz45nvyqe.jpg" alt="Houthis Knock Out Undersea Internet Connections in Red Sea" title="Houthis Knock Out Undersea Internet Connections in Red Sea" class="sidebarTrendingArticles__articleImage lozad opacity_0">
-					</div>
-					<p class="sidebarTrendingArticles__articleTitle">Houthis Knock Out Undersea Internet Connections in Red Sea</p>
-				</a>
-								<!-- /.sidebarTrendingArticles__article -->
-									<div id="dianomiNewsBlock"></div>
-									<a href='https://oilprice.com/Energy/Energy-General/This-Could-Be-A-Gamechanger-For-Natural-Gas-In-Europe.html' class="sidebarTrendingArticles__article">
+							<a href='https://oilprice.com/Energy/Energy-General/This-Could-Be-A-Gamechanger-For-Natural-Gas-In-Europe.html' class="sidebarTrendingArticles__article">
 					<div class="sidebarTrendingArticles__article__imageHolder" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABVCAIAAAD11EyaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3ZmExYzAwNC0zODdmLWEyNDktYWQ4MC1iNDJlNTNkZjU4NjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkYyN0M3QzYwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkYyN0M3QzUwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTg0MDRkYzEtNWU1YS1hYTRkLTgzYmUtM2ZkODlhNzk1MGE1IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZDAyNGY2ZDctMDI1NS0xMWU2LTgxODMtZTU1NWFjNjdmNjk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OSscawAABrpJREFUeNrsnYtT28oVxvesXn7gJw5vSAhJoZnbpv//v9FpbtPJDcUEAtj4bb13T89KNphcptPMpBO1Ph9CI4w8Y/909O23q7UMX2+utUIAEKwfJESUFtioRbPZZBw/VuPx2M63uGZ/bM3SWjKI/5KYLJNlsiwmy2SZLIvJMlkmy2KyTJbJspgsk2WyLCbLZJksi8kyWSbLYrJMlsmyvld2wV8fRqEOfYwCoTVYtkhTYduyVBGlMjguk/1+oCpVo76eDDGYCxRCKVmqWptbyd2lEKAFCAC5UYNmW7Y7TPY/Vdr/qga3mKaAOWYhkhTqntXqpFddoiykBRpxMsHxBG9v5O4+NFvss/+2VOMwPv81vbsSOVYUtDZz+UzNlskHwCtjsvhXtiAGgfrtN/3Pc4HIZJ+X9mfR+QcdzEEswC02lAbbkY02/WW1Nk3NLo4DmkmUCGar31d//5W8mMn+DmvoxxcfDUR8ipVWYWi3X0B1I9Fabm1b1RpGUfYkyOwC893EfK4/fChO5RaCLCqVdP8BiLmxwgpWEceWV7YOjwmriuNUWvar16C0SBWgyH8WU39pMwj0p09MdqXJurkwcWqJ9bFmCZ/SzpvTxHHSMCRTTchVmy3n5bEIIzRHYjmhelmpOBqRMzDZzAeCuR4PxLK9etwg04wi9/htUm9GsxmiJlF1h1SYh0f2zo7wg2+wLiq3e1kEw/35ZFXv6glWkVsBoh96By/T7d1gOjVUFS30izqO50Eo/nBqt1ro+9lTnlQuxTW86607WUwTPZ2semVuteSY7vaOOjqeEVYiRcWas9WKmigV+NM4hnfv7EaD9hRaGbgrlVsEQ/jJZPV0/FCtsOSLfuC2O3hyOplMdWT8VBmqCynDUSSTySRV8pdfnMMjkVvH6gGjWl7kh7WtWUqvDw1X/kgYObW6ePvH4XSaBn4WZ78VPUKJK5yMh2EoTl7b+3sYhWJpJJAtOJ2tt89SZS0dIO/FWrYt35wNgjCZzQifXrrA7xcQMB+NY+K4vw9eiZ776Lgo1r1mRZo89LjMEifO4auJZQeDARis1GY9s+Rowygsl0seFTWA8+c/QatJ4Vcsm0ET49aa7EMeQMPCqdfjRmty3yesOb9nRY+HYei57manM5vNvt7cYLVqHx0KXaChg5891iWtx45sksrdtq8x8QPHdVA9h4kigNZJkjSazU6nM51Ob29vpZTUfllRLFY/iGlZa012MXqdjVqZT6iWylFk+lr6YdjlG/NIjRFvb297pRIxHY1GBHNvb48oKkpauJIQPHe9yVaqOBgstgHQspI01Xn79KRSKVYZalXSxgbtc9e9DMPAdpzDw0PXdedRVPFKq8kLqtX1JltrCNEVj51a6pya9AoKnpoxndwW1Smd+Pf3977vE/uN2gZVKxH/+PHji4ODqr3yXjxPVCrrTbZUgnIV5z5kRE3qcr00SSTIp8MBZMhW4PtRHBNKx7bJZGu12nA47Pd6iVKulFnMWhwP6GyufQtGyLZ31edPuBxjrdRqd1lHC5Zo842UOgWZF1cqlWp2pncvuhS8bMtyy5UyHYnxWCzLFrZe8IiMgFaL3NZ0nBxH9Xp1KUv1ehQEi3iVJVhaUySgls2mfoSUo+Hw+uoqjiMq3jAIau2WG0XpbApZHoD9PeG6TDYLSK9PTFlKi9I/3N7t7u8nWsd04i/HuBbRFjGKotFwFEaRZdlUvwHls2p1p9XCiy5SgKN0US7DwX4R3lQxrtZ4njw5MSd7yUsvLupheHR2FgRhHEZ6SdesU0WpC7LrXvSXP59rS74+O3OurtPxEKhOAeTp24L0FIpyHQzabfnypQBJwUv99W/bACd/ea8kzGbTKIpNN1ctKpfgUgeM+ghuvf7u/fuN27v082fhlgTZxLszkwoK8o6ur68bjUZB7iODgyGenyN5gkD79DSo167v++P7QTifm0uHFHjNbYWsSr1O/drdZtO6/JJ0L4TjQa0m35yIUiGw0oscj8fFIpuPfunLL9jriSR2Njtidyd23IBIgxG5ADVSlAzk3McvV+l8Cl4Z9naNtxbmLeRkizdHhjz3zQluvcDbXtLvw/3ArVTcek1QP5hCq0oFmcN4ksQhJQr56hi2tgpSqoXLs8+bVL1Oi3h1hJOp8n2czUQwMYZAcD0Xjg5ktWJ2KPDNsIo9F9FxYLMtNtv/izcT4/mzTJbJspgsk2WyLCbLZJksi8kyWSbLYrJMlsmymCyTZbIsJstkmSyLyTJZJsv6Xi1mcmDBbsLy/0AWpDCf/eHvtPtxyr+H8V8CDADxqzo1yy67dgAAAABJRU5ErkJggg==)">
 						<img width="115" height="85" data-error_image="https://d1o9e4un86hhpc.cloudfront.net/a/img/content/115x85-default.png" data-src="https://d32r1sh890xpii.cloudfront.net/article/115x85/2024-02-28_qds6a4fgmc.jpg" alt="This Could Be A Gamechanger For Natural Gas In Europe" title="This Could Be A Gamechanger For Natural Gas In Europe" class="sidebarTrendingArticles__articleImage lozad opacity_0">
 					</div>
 					<p class="sidebarTrendingArticles__articleTitle">This Could Be A Gamechanger For Natural Gas In Europe</p>
 				</a>
 								<!-- /.sidebarTrendingArticles__article -->
-								<a href='https://oilprice.com/Energy/Energy-General/California-Startup-Boasts-Breakthrough-in-Hydrogen-Storage.html' class="sidebarTrendingArticles__article">
+									<div id="dianomiNewsBlock"></div>
+									<a href='https://oilprice.com/Geopolitics/International/Houthis-Knock-Out-Undersea-Internet-Connections-in-Red-Sea.html' class="sidebarTrendingArticles__article">
 					<div class="sidebarTrendingArticles__article__imageHolder" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABVCAIAAAD11EyaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3ZmExYzAwNC0zODdmLWEyNDktYWQ4MC1iNDJlNTNkZjU4NjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkYyN0M3QzYwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkYyN0M3QzUwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTg0MDRkYzEtNWU1YS1hYTRkLTgzYmUtM2ZkODlhNzk1MGE1IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZDAyNGY2ZDctMDI1NS0xMWU2LTgxODMtZTU1NWFjNjdmNjk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OSscawAABrpJREFUeNrsnYtT28oVxvesXn7gJw5vSAhJoZnbpv//v9FpbtPJDcUEAtj4bb13T89KNphcptPMpBO1Ph9CI4w8Y/909O23q7UMX2+utUIAEKwfJESUFtioRbPZZBw/VuPx2M63uGZ/bM3SWjKI/5KYLJNlsiwmy2SZLIvJMlkmy2KyTJbJspgsk2WyLCbLZJksi8kyWSbLYrJMlsmyvld2wV8fRqEOfYwCoTVYtkhTYduyVBGlMjguk/1+oCpVo76eDDGYCxRCKVmqWptbyd2lEKAFCAC5UYNmW7Y7TPY/Vdr/qga3mKaAOWYhkhTqntXqpFddoiykBRpxMsHxBG9v5O4+NFvss/+2VOMwPv81vbsSOVYUtDZz+UzNlskHwCtjsvhXtiAGgfrtN/3Pc4HIZJ+X9mfR+QcdzEEswC02lAbbkY02/WW1Nk3NLo4DmkmUCGar31d//5W8mMn+DmvoxxcfDUR8ipVWYWi3X0B1I9Fabm1b1RpGUfYkyOwC893EfK4/fChO5RaCLCqVdP8BiLmxwgpWEceWV7YOjwmriuNUWvar16C0SBWgyH8WU39pMwj0p09MdqXJurkwcWqJ9bFmCZ/SzpvTxHHSMCRTTchVmy3n5bEIIzRHYjmhelmpOBqRMzDZzAeCuR4PxLK9etwg04wi9/htUm9GsxmiJlF1h1SYh0f2zo7wg2+wLiq3e1kEw/35ZFXv6glWkVsBoh96By/T7d1gOjVUFS30izqO50Eo/nBqt1ro+9lTnlQuxTW86607WUwTPZ2semVuteSY7vaOOjqeEVYiRcWas9WKmigV+NM4hnfv7EaD9hRaGbgrlVsEQ/jJZPV0/FCtsOSLfuC2O3hyOplMdWT8VBmqCynDUSSTySRV8pdfnMMjkVvH6gGjWl7kh7WtWUqvDw1X/kgYObW6ePvH4XSaBn4WZ78VPUKJK5yMh2EoTl7b+3sYhWJpJJAtOJ2tt89SZS0dIO/FWrYt35wNgjCZzQifXrrA7xcQMB+NY+K4vw9eiZ776Lgo1r1mRZo89LjMEifO4auJZQeDARis1GY9s+Rowygsl0seFTWA8+c/QatJ4Vcsm0ET49aa7EMeQMPCqdfjRmty3yesOb9nRY+HYei57manM5vNvt7cYLVqHx0KXaChg5891iWtx45sksrdtq8x8QPHdVA9h4kigNZJkjSazU6nM51Ob29vpZTUfllRLFY/iGlZa012MXqdjVqZT6iWylFk+lr6YdjlG/NIjRFvb297pRIxHY1GBHNvb48oKkpauJIQPHe9yVaqOBgstgHQspI01Xn79KRSKVYZalXSxgbtc9e9DMPAdpzDw0PXdedRVPFKq8kLqtX1JltrCNEVj51a6pya9AoKnpoxndwW1Smd+Pf3977vE/uN2gZVKxH/+PHji4ODqr3yXjxPVCrrTbZUgnIV5z5kRE3qcr00SSTIp8MBZMhW4PtRHBNKx7bJZGu12nA47Pd6iVKulFnMWhwP6GyufQtGyLZ31edPuBxjrdRqd1lHC5Zo842UOgWZF1cqlWp2pncvuhS8bMtyy5UyHYnxWCzLFrZe8IiMgFaL3NZ0nBxH9Xp1KUv1ehQEi3iVJVhaUySgls2mfoSUo+Hw+uoqjiMq3jAIau2WG0XpbApZHoD9PeG6TDYLSK9PTFlKi9I/3N7t7u8nWsd04i/HuBbRFjGKotFwFEaRZdlUvwHls2p1p9XCiy5SgKN0US7DwX4R3lQxrtZ4njw5MSd7yUsvLupheHR2FgRhHEZ6SdesU0WpC7LrXvSXP59rS74+O3OurtPxEKhOAeTp24L0FIpyHQzabfnypQBJwUv99W/bACd/ea8kzGbTKIpNN1ctKpfgUgeM+ghuvf7u/fuN27v082fhlgTZxLszkwoK8o6ur68bjUZB7iODgyGenyN5gkD79DSo167v++P7QTifm0uHFHjNbYWsSr1O/drdZtO6/JJ0L4TjQa0m35yIUiGw0oscj8fFIpuPfunLL9jriSR2Njtidyd23IBIgxG5ADVSlAzk3McvV+l8Cl4Z9naNtxbmLeRkizdHhjz3zQluvcDbXtLvw/3ArVTcek1QP5hCq0oFmcN4ksQhJQr56hi2tgpSqoXLs8+bVL1Oi3h1hJOp8n2czUQwMYZAcD0Xjg5ktWJ2KPDNsIo9F9FxYLMtNtv/izcT4/mzTJbJspgsk2WyLCbLZJksi8kyWSbLYrJMlsmymCyTZbIsJstkmSyLyTJZJsv6Xi1mcmDBbsLy/0AWpDCf/eHvtPtxyr+H8V8CDADxqzo1yy67dgAAAABJRU5ErkJggg==)">
-						<img width="115" height="85" data-error_image="https://d1o9e4un86hhpc.cloudfront.net/a/img/content/115x85-default.png" data-src="https://d32r1sh890xpii.cloudfront.net/article/115x85/2024-02-23_chsqjhieyf.jpg" alt="California Startup Boasts Breakthrough in Hydrogen Storage" title="California Startup Boasts Breakthrough in Hydrogen Storage" class="sidebarTrendingArticles__articleImage lozad opacity_0">
+						<img width="115" height="85" data-error_image="https://d1o9e4un86hhpc.cloudfront.net/a/img/content/115x85-default.png" data-src="https://d32r1sh890xpii.cloudfront.net/article/115x85/2024-02-28_afz45nvyqe.jpg" alt="Houthis Knock Out Undersea Internet Connections in Red Sea" title="Houthis Knock Out Undersea Internet Connections in Red Sea" class="sidebarTrendingArticles__articleImage lozad opacity_0">
 					</div>
-					<p class="sidebarTrendingArticles__articleTitle">California Startup Boasts Breakthrough in Hydrogen Storage</p>
+					<p class="sidebarTrendingArticles__articleTitle">Houthis Knock Out Undersea Internet Connections in Red Sea</p>
 				</a>
 								<!-- /.sidebarTrendingArticles__article -->
 								<a href='https://oilprice.com/Energy/Energy-General/This-Might-Be-The-Fastest-Way-to-Double-US-Grid-Capacity.html' class="sidebarTrendingArticles__article">
@@ -1827,6 +1820,13 @@ Global Energy Expert								</div>
 						<img width="115" height="85" data-error_image="https://d1o9e4un86hhpc.cloudfront.net/a/img/content/115x85-default.png" data-src="https://d32r1sh890xpii.cloudfront.net/article/115x85/2024-02-26_ujqptuasya.jpg" alt="Iran’s Syria Strategy Is Coming Unravelled" title="Iran’s Syria Strategy Is Coming Unravelled" class="sidebarTrendingArticles__articleImage lozad opacity_0">
 					</div>
 					<p class="sidebarTrendingArticles__articleTitle">Iran’s Syria Strategy Is Coming Unravelled</p>
+				</a>
+								<!-- /.sidebarTrendingArticles__article -->
+								<a href='https://oilprice.com/Energy/Crude-Oil/Canada-Oil-Faces-Fresh-Pipeline-Shortage.html' class="sidebarTrendingArticles__article">
+					<div class="sidebarTrendingArticles__article__imageHolder" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABVCAIAAAD11EyaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3ZmExYzAwNC0zODdmLWEyNDktYWQ4MC1iNDJlNTNkZjU4NjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkYyN0M3QzYwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkYyN0M3QzUwMjVFMTFFNjgzNDBBODA2QzU2MzU0NUMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTg0MDRkYzEtNWU1YS1hYTRkLTgzYmUtM2ZkODlhNzk1MGE1IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZDAyNGY2ZDctMDI1NS0xMWU2LTgxODMt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)">
+						<img width="115" height="85" data-error_image="https://d1o9e4un86hhpc.cloudfront.net/a/img/content/115x85-default.png" data-src="https://d32r1sh890xpii.cloudfront.net/article/115x85/2024-02-23_6mrhgua0l5.jpg" alt="Canada Oil Faces Fresh Pipeline Shortage" title="Canada Oil Faces Fresh Pipeline Shortage" class="sidebarTrendingArticles__articleImage lozad opacity_0">
+					</div>
+					<p class="sidebarTrendingArticles__articleTitle">Canada Oil Faces Fresh Pipeline Shortage</p>
 				</a>
 								<!-- /.sidebarTrendingArticles__article -->
 				
