@@ -7,12 +7,14 @@ from phasellm.llms import ChatBot, OpenAIGPTWrapper, ChatPrompt
 
 from datetime import datetime
 
-start_system_prompt = """You are a researcher helping with economics and politics research. We will give you a few facts and we need you to fill in a blank to the best of your knowledge, based on all the information provided to you."""
+start_system_prompt = """Today's date is {the_date}. You are a researcher helping with economics and politics research. We will give you a few facts and we need you to fill in a blank to the best of your knowledge, based on all the information provided to you."""
 
 start_user_prompt = """Here is the research:
 ---------------------
 {content}
 ---------------------
+{additional_facts}
+
 Given the above, we need you to do your best to fill in the following blank...
 {fill_in_the_blank}
 
@@ -29,6 +31,7 @@ extend_user_prompt = """Here is the research:
 ---------------------
 {content}
 ---------------------
+{additional_facts}
 
 In addition to the new content above, we want to UPDATE the forecast from before. Here is the earlier forecast...
 ---------------------
@@ -83,7 +86,7 @@ class FactForecastingAgent(object):
         google_api_key,
         google_search_id,
         google_search_query,
-        facts=None,  # TODO Will provide support later.
+        facts=None,
     ):
 
         fact_llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-0125-preview")
@@ -112,13 +115,23 @@ class FactForecastingAgent(object):
 
         the_date = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
+        additional_facts = ""
+        if facts is not None:
+            additional_facts = "Some additional facts for consideration are below...\n" 
+            afctr = 1
+            for f in facts:
+                additional_facts += f"AF{afctr}: {f}\n"
+                afctr += 1
+            additional_facts += "---------------------\n\n"
+
         chatbot.messages = prompt_template.fill(
             statement_title=statement.title,
             statement_description=statement.description,
             statement_fill_in_the_blank=statement.fill_in_the_blank,
             fill_in_the_blank_2=statement.fill_in_the_blank,
             content=content,
-            the_date=the_date,  # TODO make sure we use this
+            the_date=the_date,
+            additional_facts=additional_facts,
         )
 
         assistant_analysis = chatbot.resend()
@@ -187,13 +200,23 @@ class FactForecastingAgent(object):
 
         the_date = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
+        additional_facts = ""
+        if facts is not None:
+            additional_facts = "Some additional facts for consideration are below...\n" 
+            afctr = 1
+            for f in facts:
+                additional_facts += f"AF{afctr}: {f}\n"
+                afctr += 1
+            additional_facts += "---------------------\n\n"
+
         chatbot.messages = prompt_template.fill(
             statement_title=forecast.statement.title,
             statement_description=forecast.statement.description,
             statement_fill_in_the_blank=forecast.statement.fill_in_the_blank,
             fill_in_the_blank_2=forecast.statement.fill_in_the_blank,
             content=content,
-            the_date=the_date,  # TODO make sure we use this
+            the_date=the_date,
+            additional_facts=additional_facts,
             earlier_forecast_value=str(forecast.value),
             earlier_forecast=forecast.justification,
         )
