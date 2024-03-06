@@ -20,6 +20,8 @@ from datetime import datetime
 from . import Client
 from phasellm.llms import OpenAIGPTWrapper, ChatBot
 
+# Number of search results to return from web searche (default value).
+_DEFAULT_NUM_SEARCH_RESULTS = 10
 
 facts_base_system_prompt = """You are a researcher tasked with helping forecast economic and social trends. The title of our research project is: {statement_title}.
 
@@ -155,7 +157,7 @@ class FactBaseFileCache:
         results = webagent.search_google(
             query=self.google_search_query,
             custom_search_engine_id=self.google_search_id,
-            num=10,
+            num=_DEFAULT_NUM_SEARCH_RESULTS,
         )
 
         scraped_content = ""
