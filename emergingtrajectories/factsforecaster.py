@@ -87,6 +87,7 @@ class FactForecastingAgent(object):
         google_search_id,
         google_search_query,
         facts=None,
+        prediction_agent="Test Agent",
     ):
 
         fact_llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-0125-preview")
@@ -117,7 +118,7 @@ class FactForecastingAgent(object):
 
         additional_facts = ""
         if facts is not None:
-            additional_facts = "Some additional facts for consideration are below...\n" 
+            additional_facts = "Some additional facts for consideration are below...\n"
             afctr = 1
             for f in facts:
                 additional_facts += f"AF{afctr}: {f}\n"
@@ -153,7 +154,7 @@ class FactForecastingAgent(object):
             "Prediction",
             full_content,
             prediction,
-            "Test Agent",
+            prediction_agent,
             {
                 "full_response_from_llm_before_source_cleanup": content,
                 "full_response_from_llm": assistant_analysis,
@@ -171,7 +172,8 @@ class FactForecastingAgent(object):
         google_api_key,
         google_search_id,
         google_search_query,
-        facts=None,  # TODO Will provide support later.
+        facts=None,
+        prediction_agent="Test Agent",
     ):
 
         fact_llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-0125-preview")
@@ -202,7 +204,7 @@ class FactForecastingAgent(object):
 
         additional_facts = ""
         if facts is not None:
-            additional_facts = "Some additional facts for consideration are below...\n" 
+            additional_facts = "Some additional facts for consideration are below...\n"
             afctr = 1
             for f in facts:
                 additional_facts += f"AF{afctr}: {f}\n"
@@ -240,7 +242,7 @@ class FactForecastingAgent(object):
             "Prediction",
             full_content,
             prediction,
-            "Test Agent",
+            prediction_agent,
             {
                 "full_response_from_llm_before_source_cleanup": content,
                 "full_response_from_llm": assistant_analysis,
