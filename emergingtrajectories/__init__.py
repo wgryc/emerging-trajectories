@@ -110,12 +110,15 @@ class Client(object):
         else:
             raise Exception(response.text)
 
-    def get_most_recent_forecast(self, statement_id: int) -> int:
+    def get_most_recent_forecast(
+        self, statement_id: int, prediction_agent: str = None
+    ) -> int:
         """
         Returns the most recent forecast for a given statement. This is useful for creating a new forecast that is an extension of a prior forecast.
 
         Args:
             statement_id: the ID of the statement to retrieve the most recent forecast for
+            prediction_agent: the string for a prediction agent, if you want to further filter the most recent forecast
 
         Returns:
             int: the ID of the most recent forecast for the given statement
@@ -125,7 +128,10 @@ class Client(object):
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
         }
-        response = requests.post(url, headers=headers)
+        data = {}
+        if prediction_agent is not None:
+            data["prediction_agent"] = prediction_agent
+        response = requests.post(url, headers=headers, json=data)
         if response.status_code == 200:
             return int(response.json()["forecast_id"])
         else:
