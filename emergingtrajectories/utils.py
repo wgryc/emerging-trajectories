@@ -31,7 +31,6 @@ On the extremely rare occasion that the TEXT does not have a proper numerical pr
 # Error message used when the prediction cannot be extracted from the response.
 _extract_prediction_prompt_error = "UNCLEAR"
 
-
 def is_numeric(string: str) -> bool:
     """
     Checks whether the 'string' passed as an argument can be converted into a numeric value.
@@ -50,6 +49,23 @@ def is_numeric(string: str) -> bool:
     except ValueError:
         return False
 
+# TODO document
+def run_forecast(function_to_call, n, *args, **kwargs):
+
+    if n == 0:
+        return None
+
+    result = None 
+
+    try:
+        result = function_to_call(*args, **kwargs)
+    except Exception as e:
+        result = run_forecast(function_to_call, n - 1, *args, **kwargs)
+
+    if result is None:
+        print(f"Forecast failed after {n} attempts.")
+
+    return result 
 
 class UtilityHelper(object):
 

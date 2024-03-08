@@ -10,6 +10,39 @@ def hello() -> None:
     print("Welcome to the Emerging Trajectories package! We've been expecting you. 😉")
 
 
+# TODO: document
+class Statement(object):
+    def __init__(self, title, fill_in_the_blank):
+        self.id = -1
+        self.title = title
+        self.fill_in_the_blank = fill_in_the_blank
+        self.description = ""
+        self.deadline = None
+        self.created_at = None
+        self.updated_at = None
+        self.created_by = None
+
+
+# TODO: document
+class Forecast(object):
+
+    def __init__(self, title, value, justification):
+        self.id = -1
+        self.title = title
+        self.value = value
+        self.justification = justification
+
+        self.statement = None
+        self.created_at = None
+        self.updated_at = None
+        self.created_by = None
+        self.prediction_agent = None
+        self.additional_data = {}
+        self.prior_forecast = None
+        self.next_forecasts = []
+        self.is_human = False
+
+
 class Client(object):
 
     # The base URL for the API, in case we need to change it or if someone wants to self-host anything.
@@ -77,12 +110,15 @@ class Client(object):
         else:
             raise Exception(response.text)
 
-    def get_most_recent_forecast(self, statement_id: int) -> int:
+    def get_most_recent_forecast(
+        self, statement_id: int, prediction_agent: str = None
+    ) -> int:
         """
         Returns the most recent forecast for a given statement. This is useful for creating a new forecast that is an extension of a prior forecast.
 
         Args:
             statement_id: the ID of the statement to retrieve the most recent forecast for
+            prediction_agent: the string for a prediction agent, if you want to further filter the most recent forecast
 
         Returns:
             int: the ID of the most recent forecast for the given statement
@@ -92,7 +128,10 @@ class Client(object):
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
         }
-        response = requests.post(url, headers=headers)
+        data = {}
+        if prediction_agent is not None:
+            data["prediction_agent"] = prediction_agent
+        response = requests.post(url, headers=headers, json=data)
         if response.status_code == 200:
             return int(response.json()["forecast_id"])
         else:
