@@ -18,6 +18,7 @@ from phasellm.agents import WebpageAgent, WebSearchAgent
 from datetime import datetime
 
 from . import Client
+from .crawler import get_url_content
 from phasellm.llms import OpenAIGPTWrapper, ChatBot
 
 # Number of search results to return from web searche (default value).
@@ -336,19 +337,25 @@ class FactBaseFileCache:
             with open(os.path.join(self.root_parsed, uri_md5), "r") as f:
                 return f.read()
         else:
-            scraper = WebpageAgent()
+            # scraper = WebpageAgent()
 
-            content_raw = scraper.scrape(uri, text_only=False, body_only=False)
+            # content_raw = scraper.scrape(uri, text_only=False, body_only=False)
+            # with open(os.path.join(self.root_original, uri_md5), "w") as f:
+            #    f.write(content_raw)
+
+            # content_parsed = scraper.scrape(uri, text_only=True, body_only=True)
+            # with open(os.path.join(self.root_parsed, uri_md5), "w") as f:
+            #    f.write(content_parsed)
+
+            content, text = get_url_content(uri)
             with open(os.path.join(self.root_original, uri_md5), "w") as f:
-                f.write(content_raw)
-
-            content_parsed = scraper.scrape(uri, text_only=True, body_only=True)
+                f.write(content)
             with open(os.path.join(self.root_parsed, uri_md5), "w") as f:
-                f.write(content_parsed)
+                f.write(text)
 
             self.update_cache(uri, datetime.now(), datetime.now())
 
-            return content_parsed
+            return text
 
     def add_content(self, content: str, uri: str = None) -> None:
         """

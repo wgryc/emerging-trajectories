@@ -1,0 +1,1463 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+<!-- 
+<link rel="stylesheet" href="https://unpkg.com/orejime@2.2.1/dist/orejime.css" />
+<script src="https://unpkg.com/orejime@2.2.1/dist/orejime.js"></script>
+<script type="opt-in" data-type="application/javascript" data-name="RequiredTracker"></script>
+ 
+-->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/bootstrap-responsive.css">
+
+<link rel="stylesheet" href="/font-awesome/css/fontawesome.css">
+<link href="/font-awesome/css/solid.css" rel="stylesheet">
+<link href="/font-awesome/css/brands.css" rel="stylesheet">
+<link href="/font-awesome/css/v4-shims.css" rel="stylesheet" />
+
+
+<!-- <link rel="stylesheet" href="/css/animate.css"> -->
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/css/flexslider.css">
+<link rel="stylesheet" href="/css/extended_style.css">
+<link rel="stylesheet" href="/css/data_table_style.css">
+<link rel="stylesheet" href="/css/print_style.css">
+<script src="/js/vendor/jquery-1.8.3.min.js"></script>
+<script src="/js/flexslider_20170321.js" type="text/javascript"></script>
+<script src="/js/hs-global-parameters.js"></script>
+
+<meta name="GENERATOR" content="CodeCharge Studio 5.1.0.18530">
+<title>Federal Planning Bureau - Consumer price index & Inflation forecasts</title>
+<meta property="og:locale" content="en_GB"> 
+<meta property="og:title" content="Consumer Price Index - Inflation forecasts  [05/03/2024]" /> 
+<meta property="og:description" content="The inflation forecasts from March 2024 until the end of 2025 produced by the Federal Planning Bureau are based on observations until February 2024 from Statbel. These forecasts take into account the futures quotes of 26 February 2024. The oil price should amount to 81 dollars per barrel in 2024 and 76 dollars per barrel in 2025. The exchange rate of the euro should be 1.09 dollar per euro in 2024 and 1.11 dollar per euro in 2025." /> 
+<meta property="og:image" content="http://www.plan.be/img/themes/private_consumption.jpg" /> 
+<meta property="og:updated_time" content="2024-03-05T00:00:00+01:00" />
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Federal Planning Bureau">
+
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['disableCookies']);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://plan.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/plan.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+</head>
+ 
+<body class="body-background">
+<div id="app">
+<a name="Top"></a>
+<!--[if lt IE 7]>       <![endif]-->
+<!--[if IE 7]>          <![endif]-->
+<!--[if IE 8]>          <![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+<!--[if ie]>
+<META content=IE=8 http-equiv=X-UA-Compatible><![endif]-->
+<div class="topbar row-fluid">
+  <!-- Top Bar -->
+  <div class="container">
+    <div class="sitemap-holder span3">
+      <ul class="sitemap-menu clearfix">
+        <li><a href="/databases/17-fr-indice_des_prix_a_la_consommation_previsions_d_inflation" class="lang">FR</a> </li>
+ 
+        <li><a href="/databases/17-nl-indexcijfer_der_consumptieprijzen_inflatievooruitzichten" class="lang">NL</a> </li>
+ 
+        <li><span class="activelang2">EN</span> </li>
+ 
+      </ul>
+ 
+    </div>
+ 
+    <div class="span9 " style="text-align:right;">
+      <ul class="sitemap-menu clearfix">
+        <li><a href="/aboutus/distribution.php?lang=en" title="Distribution list" class="nosign"><i class="fa-regular fa-bell"></i></a></li>
+ 
+        <li><a href="https://www.linkedin.com/company/federaal-planbureau---bureau-f%C3%A9d%C3%A9ral-du-plan" class="nosign" title="Visit our Linkedin page"><i class="fa-brands fa-linkedin-in"></i></a></li>
+ <li><a href="https://www.youtube.com/channel/UCfFsVgk_1Vd1ur_qYDIiZIA" class="nosign" title="Follow us on Youtube"><i class="fa-brands fa-youtube"></i></a></li> 
+        <li></li>
+ 
+        <li><a href="/aboutus/contact.php?lang=en">Contact</a> </li>
+ 
+        <li><a href="/tools/map.php?lang=en">Site Map</a> </li>
+ 
+        <li class="belogo"><a href="https://www.belgium.be" title="Go to the Belgium.be portal" class="nosign"><img border="0" alt=".be" src="/img/logo_be_neg_basic_small.png" width="33" height="33"></a> </li>
+ 
+      </ul>
+ 
+    </div>
+ 
+  </div>
+</div>
+<!-- Close Top Bar -->
+<div class="boxed" id="wrapper" >
+  <!-- Page Wrapper: Boxed class for boxed layout - Fullwidth class for fullwidth page -->
+  <div class="header-background">
+    <!-- Header Background -->
+    <div class="clearfix" id="header-container">
+      <!-- Header Container, contains logo and contact button -->
+      <header class="clearfix">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span12 logo">
+            <span><img title="BfP- FPB" alt="BfP- FPB" src="/img/bfp_logo_white.png" width="82" height="59">&nbsp;Federal Planning Bureau</span> 
+          </div>
+ 
+        </div>
+ 
+      </div>
+ </header>
+ 
+    </div>
+ 
+    <div class="header-wrap">
+      <!-- Header Wrapper, contains Mene and Slider -->
+      <div class="header-menu">
+        <!-- Main Menu -->
+        <div class="container">
+          <div class="row-fluid">
+            <nav class="nav-menu">
+            <div class="menu-mobile-wrapper">
+              <!-- Menu Mobile Wrapper -->
+<a id="menu-mobile-trigger"></a> 
+            </div>
+ <span class="menu-slider hidden-phone">&nbsp;</span> 
+            <!-- Menu Slider -->
+            <ul id="header-menu" class="menu">
+<li><a href="/index.php?lang=en" >Home page</a></li>
+<li><a href="/press/newsmedia.php?lang=en" >News</a><div class="submenu-big news-menu"><div class="row-fluid"><div class="widget-box widget-category span6"><p class="widget-title" style="color: #F5F5F5;">News</p>
+<ul><li><a href="/databases/17-en-consumer_price_index_inflation_forecasts" class="SublevelItem">Consumer Price Index & Inflation forecasts<br>05-03-2024</a></li>
+<li><a href="/publications/publication-2466-en-administrative_burden_in_belgium_in_2022">Administrative burden in Belgium in 2022<br>27-02-2024&nbsp;-&nbsp;Working Papers</a></li>
+<li><a href="/publications/publication-2452-en-sustainable_development_indicators_2024">Sustainable Development Indicators 2024<br>20-02-2024&nbsp;-&nbsp;Reports</a></li>
+<li><a href="/publications/publication-2434-en-minimum_regulations_pension_credits_the_gender_pension_gap">Minimum regulations, pension credits and the gender pension gap<br>30-01-2024&nbsp;-&nbsp;Reports</a></li>
+<li><a href="/publications/publication-2425-en-columns_g_h_of_the_supplementary_table_on_pension_schemes_in_social_insurance_table_29">Columns G and H of the supplementary table on pension schemes in social insurance (Table 29)<br>22-12-2023&nbsp;-&nbsp;Reports</a></li>
+</ul>
+</div>
+<div class="widget-box widget-blogposts span6"><p class="widget-title"><a class="news-menu" href="/press/press.php?lang=en">Press releases</a></p>
+<ul><li class="clearfix"><div class="widget-blogpost-avatar"><img src="/img/themes/tfdd_model_01.jpg" alt="[[Illustration_Picture]]"  width="80" height="80"></div>
+<div class="widget-blogpost-content"><div class="widget-blogpost-title "><a href="/press/communique-2463-fr-bilan_insuffisant_de_la_belgique_pour_ses_indicateurs_de_developpement_durable_l_indicateur_de_bien_etre" class="SublevelItem">Bilan insuffisant de la Belgique pour ses indicateurs de développement durable. L'indicateur de bien-être proche de son niveau le plus bas</a>&nbsp;-&nbsp;<a href="/press/communique-2463-nl-belgie_scoort_onvoldoende_voor_duurzaamheidsrapport_en_welzijnsindicator_nadert_dieptepunt" class="SublevelItem">België scoort onvoldoende voor duurzaamheidsrapport en welzijnsindicator nadert dieptepunt</a></div>
+<li class="clearfix"><div class="widget-blogpost-avatar"><img src="/img/themes/marche_travail_01.jpg" alt="[[Illustration_Picture]]"  width="80" height="80"></div>
+<div class="widget-blogpost-content"><div class="widget-blogpost-title "><a href="/press/communique-2457-fr-perspectives_economiques_2024_2029_pour_la_belgique_la_croissance_est_stable_mais_le_deficit_public_se" class="SublevelItem">Perspectives économiques 2024-2029 pour la Belgique : la croissance est stable mais le déficit public se creuse</a>&nbsp;-&nbsp;<a href="/press/communique-2457-nl-economische_vooruitzichten_2024_2029_voor_belgie_stabiele_groei_maar_het_overheidstekort_wordt_groter" class="SublevelItem">Economische vooruitzichten 2024-2029 voor België: stabiele groei, maar het overheidstekort wordt groter</a></div>
+<li class="clearfix"><div class="widget-blogpost-avatar"><img src="/img/themes/demographie_01.jpg" alt="[[Illustration_Picture]]"  width="80" height="80"></div>
+<div class="widget-blogpost-content"><div class="widget-blogpost-title "><a href="/press/communique-2453-fr-perspectives_demographiques_en_belgique_a_partir_de_la_fin_des_annees_2040_seule_la_flandre_voit_encore" class="SublevelItem">Perspectives démographiques en Belgique : à partir de la fin des années 2040, seule la Flandre voit encore sa population augmenter</a>&nbsp;-&nbsp;<a href="/press/communique-2453-nl-bevolkingsvooruitzichten_belgie_vanaf_het_einde_van_de_jaren_2040_neemt_de_bevolking_enkel_in_vlaanderen" class="SublevelItem">Bevolkingsvooruitzichten België: vanaf het einde van de jaren 2040 neemt de bevolking enkel in Vlaanderen nog toe</a></div>
+<li class="clearfix"><div class="widget-blogpost-avatar"><img src="/img/themes/press_default.jpg" alt="[[Illustration_Picture]]" width="80" height="80"></div>
+<div class="widget-blogpost-content"><div class="widget-blogpost-title "><a href="/press/communique-2447-fr-le_bureau_federal_du_plan_publie_sa_note_de_lancement_pour_le_chiffrage_des_propositions_electorales" class="SublevelItem">Le Bureau fédéral du Plan publie sa note de lancement pour le chiffrage des propositions électorales 2024</a>&nbsp;-&nbsp;<a href="/press/communique-2447-nl-federaal_planbureau_publiceert_zijn_startnota_voor_de_doorrekening_van_de_verkiezingsvoorstellen_2024" class="SublevelItem">Federaal Planbureau publiceert zijn startnota voor de doorrekening van de verkiezingsvoorstellen 2024</a></div>
+</ul>
+</div></div><div class="row-fluid"><div class="widget-box widget-blogposts span12"><p class="widget-title"><a class="news-menu" href="/press/events.php?lang=en">Events</a></p><div class="row-fluid"><div class="span4"><a href="/press/event-64-en-17th_belgian_day_for_labour_economists" class="SublevelItem">17th Belgian Day for Labour Economists<br>07-10-2022 - Workshop</a></div>
+<div class="span4"><a href="/press/event-27-en-cmtea_workshop_revival_of_the_medium_term_outlook_in_times_of_crisis" class="SublevelItem">CMTEA Workshop “Revival of the medium-term outlook in times of crisis”<br>01-02-2013 - Workshop</a></div>
+<div class="span4"><a href="/press/event-20-en-simulating_policy_alternatives_for_public_pension_in_japan" class="SublevelItem">Simulating policy alternatives for public pension in Japan<br>01-12-2011 - Workshop</a></div>
+</div>
+<br></div></div></div></li>
+<li><a href="/aboutus/overview.php?lang=en" >Themes</a></li>
+<li><a href="/indicators/indicators_list.php?lang=en" >Indicators</a></li>
+<li><a href="/publications/publication.php?lang=en" >Publications</a><div class="submenu-big publications-menu"><div class="row-fluid"><div class="widget-box widget-category span6"><form method="post" action="/publications/publication.php?lang=en"><input type="hidden" name="s_Type" value="3,4,5,6,21,22"><input type = "submit" class="news-menu widget-title" value="Publications">
+</form><ul><li><a href="/publications/publication-2466-en-administrative_burden_in_belgium_in_2022" class="SublevelItem">Administrative burden in Belgium in 2022<br>27-02-2024 - Working Papers</a></li><li><a href="/publications/publication-2452-en-sustainable_development_indicators_2024" class="SublevelItem">Sustainable development indicators 2024<br>20-02-2024 - Reports</a></li><li><a href="/publications/publication-2458-fr-budget_economique_2024_perspectives_economiques_2025_2029_de_fevrier_2024" class="SublevelItem">Budget économique 2024 – Perspectives économiques 2025-2029 de février 2024</a>&nbsp;-&nbsp;<a href="/publications/publication-2458-nl-economische_begroting_2024_economische_vooruitzichten_2025_2029_van_februari_2024" class="SublevelItem">Economische begroting 2024 – Economische vooruitzichten 2025-2029 van februari 2024</a></li><li><a href="/publications/publication-2450-fr-a_partir_de_la_fin_des_annees_2040_la_croissance_de_la_population_reste_positive_seulement_en_region" class="SublevelItem">À partir de la fin des années 2040, la croissance de la population reste positive seulement en région flamande</a>&nbsp;-&nbsp;<a href="/publications/publication-2450-nl-vanaf_het_einde_van_de_jaren_2040_blijft_de_bevolkingsgroei_alleen_nog_in_het_vlaams_gewest_positief" class="SublevelItem">Vanaf  het einde van de jaren 2040 blijft de bevolkingsgroei alleen nog in het Vlaams Gewest positief</a></li><li><a href="/publications/publication-2441-fr-description_et_utilisation_du_modele_hermes" class="SublevelItem">Description et utilisation du modèle HERMES</a>&nbsp;-&nbsp;<a href="/publications/publication-2441-nl-beschrijving_en_gebruik_van_het_hermes_model" class="SublevelItem">Beschrijving en gebruik van het HERMES-model</a></li></ul>
+</div>
+<div class="widget-box widget-category span6"><form method="post" action="/publications/publication.php?lang=en"><input type="hidden" name="s_Type" value="20,36"><input type = "submit" class="news-menu widget-title" value="Articles & Fact Sheets">
+</form><ul><li><a href="/publications/article-2451-fr-revision_a_la_baisse_de_l_hypothese_de_fecondite_a_long_terme" class="SublevelItem">Révision à la baisse de l’hypothèse de fécondité à long terme</a> <a href="/publications/article-2451-nl-vruchtbaarheidshypothese_op_lange_termijn_neerwaarts_herzien" class="SublevelItem">Vruchtbaarheidshypothese op lange termijn neerwaarts herzien</a> </li><li><a href="/publications/article-2413-fr-l_empreinte_carbone_des_regions_de_la_belgique_une_decomposition_en_domaines_de_consommation" class="SublevelItem">L’empreinte carbone des régions de la Belgique : une décomposition en domaines de consommation</a> <a href="/publications/article-2413-nl-de_koolstofvoetafdruk_van_de_belgische_gewesten_een_opsplitsing_in_consumptiedomeinen" class="SublevelItem">De koolstofvoetafdruk van de Belgische gewesten: een opsplitsing in consumptiedomeinen</a> </li><li><a href="/publications/article-2396-fr-plus_de_periurbanisation_partir_un_jour_pour_revenir_tous_les_jours" class="SublevelItem">Plus de périurbanisation : partir un jour pour revenir tous les jours</a> <a href="/publications/article-2396-nl-meer_peri_urbanisatie_wegtrekken_om_elke_dag_terug_te_keren" class="SublevelItem">Meer peri-urbanisatie: wegtrekken om elke dag terug te keren</a> </li><li><a href="/publications/article-2339-en-use_of_artificial_intelligence_by_companies_in_belgium" class="SublevelItem">Use of Artificial Intelligence by companies in Belgium<br>21-03-2023 - Articles</a></li><li><a href="/publications/article-2326-en-how_strong_does_competition_play_in_belgian_industries" class="SublevelItem">How strong does competition play in Belgian industries?<br>09-02-2023 - Articles</a></li></ul>
+</div>
+</div></li>
+<li class="active"><a href="/databases/databases.php?lang=en" >Data</a><div class="submenu-big databases-menu"><div class="row-fluid"><div class="widget-box widget-category span12"><p class="widget-title" style="color: #F5F5F5;">The last five databases</p>
+<ul><li><a href="/databases/17-en-consumer_price_index_inflation_forecasts" class="SublevelItem">Consumer Price Index - Inflation forecasts<br>05-03-2024 - INDPRIX</a></li><li><a href="/databases/data-29-en-the_administrative_burden_in_belgium" class="SublevelItem">The administrative burden in Belgium<br>27-02-2024 - ASA</a></li><li><a href="/databases/data-46-en-sustainable_development_indicators" class="SublevelItem">Sustainable development indicators<br>20-02-2024 - INDIC_SD</a></li><li><a href="/databases/data-64-en-economic_outlook_2024_2029_february_2024_statistical_annex" class="SublevelItem">Economic Outlook (2024-2029), February 2024 - Statistical annex<br>15-02-2024 - MLT</a></li><li><a href="/databases/data-35-en-population_projections_2023_2070" class="SublevelItem">Population projections 2023-2070<br>13-02-2024 - DEMOG</a></li></ul>
+</div>
+</div></li>
+<li><a href="/aboutus/institution.php?lang=en" >The Institution</a>
+<ul class="sub-menu">
+<li><a href="/aboutus/institution_desc.php?lang=en">Presentation</a></li>
+<li><a href="/aboutus/staff.php?lang=en">Staff</a></li>
+<li><a href="/aboutus/contact.php?lang=en">Contact</a></li>
+<li><a href="/aboutus/jobs.php?lang=en">Job Opportunities</a></li>
+<li><a href="/aboutus/distribution.php?lang=en">Distribution list</a></li>
+<li><a href="/aboutus/laws.php?lang=en">Legal basis</a></li>
+<li><a href="/aboutus/emas.php?lang=en">EMAS - Environmental certification</a></li>
+<li><a href="/aboutus/stages.php?lang=en">Trainee jobs</a></li>
+</ul>
+</li>
+<li><a href="/tools/findtools.php?lang=en" >Find & tools</a>
+<ul class="sub-menu">
+<li><a href="/tools/search.php?lang=en">Search tool</a></li>
+<li><a href="/tools/map.php?lang=en">Site Map</a></li>
+<li><a href="/tools/jelbrowse.php?lang=en">JEL classification</a></li>
+<li><a href="/tools/keywords.php?lang=en">Keywords</a></li>
+<li><a href="/tools/privacy.php?lang=en">Use of personal data</a></li>
+<li><a href="/tools/charter.php?lang=en">User Charter</a></li>
+<li><a href="/tools/complaint.php?lang=en">Complaint</a></li>
+</ul>
+</li>
+
+</ul>
+ </nav>
+ 
+            <div class="searchform">
+              <!-- Menu Search Form -->
+              <form class="clearfix" id="searchform" action="/tools/search.php?lang=en" method="post">
+                <input type="hidden" name="lang" value="en"> 
+                <input name="Button1" type="submit" alt="Search button" id="Button1" value="Search" class="btn btn-small btn-search" style="float: right;"></button><input name="s_Title" id="s" onfocus="if(this.value=='Search..')this.value='';" onblur="if(this.value=='')this.value='Search..';" placeholder="Search.." value="" maxlength="30" title="Search input">
+              </form>
+ 
+            </div>
+ 
+            <!-- Close Menu Search Form -->
+          </div>
+ 
+        </div>
+ 
+      </div>
+ 
+      <!-- Close Main Menu -->
+       
+      
+      <div class="page-title">
+        <div class="container">
+          <div class="page-title-avatar">
+            <img alt="Page Title" src="/img/placeholder/datas.png" width="80" height="80">
+          </div>
+ 
+          <div class="page-title-content">
+            <p class="page-family">Data</p>
+ 
+            <p class="page-description">The FPB not only publishes the results of its research, but also a set of databases. These databases can contain either historical data or forecasts.</p>
+ 
+          </div>
+ 
+        </div>
+ 
+      </div>
+ 
+    </div>
+ 
+    <!-- Close Header Menu -->
+  </div>
+ 
+  <!-- Close Header Wrapper -->
+  <div class="page-top-stripes">
+  </div>
+ 
+  <!-- Page Background Stripes -->
+  <div class="page">
+    <!-- Page -->
+    
+    <div class="breadscrumbs">
+      <div class="container">
+        <ul class="inlinebreadcrumb">
+          <li>&nbsp;<a href='/index.php?lang=en'>Home page</a></li><li>&nbsp;<a href='/databases/databases.php?lang=en'>Data</a></li><li class="active">&nbsp;&nbsp;Consumer Price Index</li> 
+        </ul>
+ 
+      </div>
+ 
+    </div>
+ 
+    <div class="main fullwidth">
+      <section class="content">
+      <div class="container">
+        
+<script language="JavaScript" src="../fusioncharts/js/fusioncharts.js"></script><script type="text/javascript" src="/fusioncharts/js/themes/fusioncharts.theme.bfp.js"></script>
+<div class="content-title">
+  <h2>Consumer Price Index - Inflation forecasts  <small>[05/03/2024]</small></h2>
+</div>
+
+
+<div class="row-fluid">
+	<div class="span6">
+
+<P>The inflation forecasts from March 2024 until the end of 2025 produced by the Federal Planning Bureau are based on observations until February 2024 from <a href="https://statbel.fgov.be/en/themes/consumer-prices/consumer-price-index" target="_blank">Statbel</a>. These forecasts take into account the futures quotes of 26 February 2024. The oil price should amount to 81 dollars per barrel in 2024 and 76 dollars per barrel in 2025. The exchange rate of the euro should be 1.09 dollar per euro in 2024 and 1.11 dollar per euro in 2025.</P>
+
+<P>On the basis of these inflation forecasts, average consumer price inflation should be 3.0% in 2024 and 1.8% in 2025, compared to 4.06% in 2023 and 9.59% in 2022. The average growth rate of the so-called 'health price index', which is used for the price indexation of wages, social benefits and house-rent, should be 3.1% in 2024 and 1.9% in 2025, compared to 4.33% in 2023 and 9.25% in 2022.</P>
+
+<P>In October 2023, the pivotal index for social benefits and public sector wages was last reached. According to our monthly forecasts for the 'health price index', the two following pivotal indices should be exceeded in 2024 and 2025.</P>
+<ul class="liste_caret">
+<li>Pivotal index 128.11 should be reached in <b>April 2024</b>. As a result, social benefits should be adjusted (by 2%) to the higher cost of living in May 2024 and public sector wages should follow suit in June 2024.</li>
+<li>The next pivotal index (130.67) should be reached in <b>March 2025</b>. As a result, social benefits should be adjusted (by 2%) to the higher cost of living in April 2025 and public sector wages should follow suit in May 2025.</li>
+</ul>
+
+<P>Next update: <b>2 April 2024 at 2 p.m.</b></P>
+
+	</div>
+	
+<div class="span6">
+<script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<div id="container"></div>
+
+<script type="text/javascript">
+      const simulatedMonths = (2025-"2024M3".substr(0,4))*12 + (12-"2024M3".split('M')[1]) + 1;
+      Highcharts.chart("container", {
+        chart: {
+          type: "line",
+          plotBorderColor: "grey",
+          plotBorderWidth: 1.3,
+          borderWidth: 1,
+          backgroundColor: "rgba(0, 0, 0, 0.02)",
+          borderColor: "grey",
+        },
+        exporting: {
+		chartOptions: {
+    chart: {
+      backgroundColor: '#FFFFFF'
+    }
+  },
+          buttons: {
+            contextButton: {
+        //["printChart",
+        //"separator",
+        //"downloadPNG",
+        //"downloadJPEG",
+        //"downloadPDF",
+        //"downloadSVG",
+        //"separator",
+        //"downloadCSV",
+        //"downloadXLS",
+        //"viewData",
+        //"openInCloud"]
+              menuItems: ["downloadPNG", "downloadJPEG", "downloadPDF", "downloadSVG", "separator", "downloadCSV","downloadXLS"]
+            }
+          }
+        },
+        credits: {
+          enabled: false,
+          text: "plan.be",
+          href: "https://plan.be"
+        },
+        title: {
+          text: 
+"Monthly evolution of inflation",
+          align: "left",
+          style : {
+            //fontSize: 18px,
+            font: "Verdana",
+            fontSize: "16px"}
+        },
+
+        subtitle: {
+          text:
+"yoy growth rates in %, the values in the grey area are forecasts",
+          align: "left",
+          style : {
+            font: "Verdana",
+            fontSize: "11px"
+            }
+        },
+        yAxis: {
+          title: {
+            text: ""
+          },
+          minorGridLineWidth: 0,
+          gridLineWidth: "1",
+          gridLineColor: "grey",
+          gridLineDashStyle: "Dot",
+          alternateGridColor: "rgba(0, 0, 0, 0.05)",
+
+        },
+        plotOptions: {
+          series: {
+            marker: {
+              enabled: true,
+              fillColor: "#ffffff"
+            },
+          },
+        },
+        xAxis: {
+          title: {
+            text: ""
+          },
+          labels: {
+            autoRotation: [-90],
+          },
+          lineWidth: 0,
+          categories: [
+'J 24',
+'F 24',
+'M 24',
+'A 24',
+'M 24',
+'J 24',
+'J 24',
+'A 24',
+'S 24',
+'O 24',
+'N 24',
+'D 24',
+'J 25',
+'F 25',
+'M 25',
+'A 25',
+'M 25',
+'J 25',
+'J 25',
+'A 25',
+'S 25',
+'O 25',
+'N 25',
+'D 25',
+
+]
+          ,
+          plotLines: [
+            {
+              color: "grey", // Color value
+              dashStyle: "dash", // Style of the plot line. Default to solid
+              value: 12, // Value of where the line will appear
+              width: 1, // Width of the line
+            },
+                        {
+              width: 0,
+              value: 5,
+              label: {
+                text: "2024",
+                verticalAlign: "top",
+                y: 20,
+                rotation: 0,
+                style: {
+                  fontWeight: "bold"
+                },
+              },
+            },
+            {
+              width: 0,
+              value: 17,
+              label: {
+                text: "2025",
+                verticalAlign: "top",
+                y: 20,
+                rotation: 0,
+                style: {
+                  fontWeight: "bold"
+                },
+              },
+            },
+          ],
+          plotBands: [
+            {  
+              from: 24 - simulatedMonths,
+              to: 24,
+              color: "rgba(0, 0, 0, 0.1)"
+            },
+          ],
+        },
+
+        legend: {
+          layout: "horizontal",
+          align: "center",
+          verticalAlign: "bottom",
+          itemStyle: {
+            fontWeight: "normal",
+            font: "Verdana",
+            fontSize: "11px"
+          }
+        },
+        colors: ["#F58220", "#2D687E", "#A5B1BE", "#FFC73B", "#6DC3D2"],
+        plotOptions: {
+          series: {
+                        states: {
+              hover: {
+                enabled: false,
+              },
+              inactive: {
+                enabled: false,
+              },
+            },
+            label: {
+              connectorAllowed: false,
+            },
+          },
+        },
+
+        series: [
+          {
+            marker: {
+              enabled: true,
+              fillColor: "#ffffff",
+              lineColor: null,
+              lineWidth: 1,
+              symbol: "circle"
+            },
+            label: {
+              style: {
+                fontWeight: "normal",
+                fontSize: "11px",
+                font: "Verdana"
+              }
+            },
+            name: "National consumer price index",
+            data: [
+
+1.75,
+3.20,
+2.88,
+3.78,
+3.55,
+3.80,
+3.27,
+2.66,
+3.13,
+2.95,
+3.03,
+2.59,
+2.71,
+2.11,
+1.90,
+1.84,
+1.71,
+1.65,
+1.59,
+1.62,
+1.63,
+1.61,
+1.60,
+1.59,
+
+            ],
+          },
+          {
+            marker: {
+              enabled: true,
+              fillColor: "#ffffff",
+              lineColor: null,
+              lineWidth: 1
+            },
+            label: {
+              style: {
+                fontWeight: "normal",
+                fontSize: "11px",
+                font: "Verdana"
+              }
+            },
+            name: "Health index",
+            data: [
+
+1.71,
+3.22,
+2.80,
+3.85,
+3.43,
+3.79,
+3.25,
+2.92,
+3.54,
+3.33,
+3.22,
+2.58,
+2.66,
+2.17,
+1.97,
+1.95,
+1.84,
+1.77,
+1.73,
+1.75,
+1.76,
+1.74,
+1.72,
+1.72,
+
+            ],
+          },
+        ],
+      });
+</script>
+</div>
+
+</div>
+  
+
+
+<div class="content-title">
+	<h3>Conversion coefficients</h3>
+</div>
+
+<div class="row-fluid">
+
+	<div class="span6">	
+	<blockquote>
+	<h3>National consumer price index</h3>
+	<p>To convert an index with <B> base year 2013</B> to base year <B>2004</B>, the starting value has to be multiplied by <B>1.2240</B>.<BR>To convert an index with <B> base year 2004</B> to base year <B>2013</B>, the starting value has to be multiplied by <B>0.8170</B>.</p>
+	</blockquote>
+	</div>
+	<div class="span6">	
+	<blockquote class="blockquote-left">
+	<h3>Health index</h3>
+	<p>To convert an index with <B> base year 2013</B> to base year <B>2004</B>, the starting value has to be multiplied by <B>1.2077</B>.<BR>To convert an index with <B> base year 2004</B> to base year <B>2013</B>, the starting value has to be multiplied by <B>0.8280</B>.</p>
+	</blockquote>
+	</div>
+</div>
+
+
+
+
+<div class="content-title">
+	<h3>National consumer price index (2025)</h3>
+</div>
+<div class="row-fluid">
+	<div class="span12">	
+	
+<div style="overflow-x: auto;">
+<table class='table table-condensed table_database'>
+<thead> <tr>
+<th class='first_column'>2025</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+</tr></thead>
+
+
+
+<tr>
+<td class='first_column'>Index (base year 2013)</td>
+<td class='Estimated numeric'>133.61</td>
+<td class='Estimated numeric'>133.77</td>
+<td class='Estimated numeric'>133.85</td>
+<td class='Estimated numeric'>134.03</td>
+<td class='Estimated numeric'>134.08</td>
+<td class='Estimated numeric'>134.12</td>
+<td class='Estimated numeric'>134.44</td>
+<td class='Estimated numeric'>134.71</td>
+<td class='Estimated numeric'>134.40</td>
+<td class='Estimated numeric'>134.60</td>
+<td class='Estimated numeric'>134.91</td>
+<td class='Estimated numeric'>134.91</td>
+</tr>
+
+
+
+<tr>
+<td class='first_column'>Growth rates (%) (1)</td>
+<td class='Estimated numeric'>2.71</td>
+<td class='Estimated numeric'>2.11</td>
+<td class='Estimated numeric'>1.90</td>
+<td class='Estimated numeric'>1.84</td>
+<td class='Estimated numeric'>1.71</td>
+<td class='Estimated numeric'>1.65</td>
+<td class='Estimated numeric'>1.59</td>
+<td class='Estimated numeric'>1.62</td>
+<td class='Estimated numeric'>1.63</td>
+<td class='Estimated numeric'>1.61</td>
+<td class='Estimated numeric'>1.60</td>
+<td class='Estimated numeric'>1.59</td>
+</tr>
+
+
+</table>
+</div>
+
+<p>(1) Change (%) compared to same month of previous year.
+Orange labels are forecasting estimations by the Federal Planning Bureau.
+</p>
+
+
+	</div>
+</div>
+
+<div class="content-title">
+	<h3>Health index and smoothed health index (2025)</h3>
+</div>
+
+<div class="row-fluid">
+	<div class="span12">	
+
+<div style="overflow-x: auto;">
+<table class='table table-condensed table_database'>
+<thead> <tr>
+<th class='first_column'>2025</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+</tr></thead>
+
+
+
+<tr>
+<td class='first_column'>Health index (base year 2013)</td>
+<td class='Estimated numeric'>133.65</td>
+<td class='Estimated numeric'>133.79</td>
+<td class='Estimated numeric'>133.97</td>
+<td class='Estimated numeric'>134.15</td>
+<td class='Estimated numeric'>134.15</td>
+<td class='Estimated numeric'>134.25</td>
+<td class='Estimated numeric'>134.68</td>
+<td class='Estimated numeric'>134.90</td>
+<td class='Estimated numeric'>134.35</td>
+<td class='Estimated numeric'>134.88</td>
+<td class='Estimated numeric'>134.97</td>
+<td class='Estimated numeric'>135.15</td>
+</tr>
+
+
+
+<tr>
+<td class='first_column'>Growth rates (%) (1)</td>
+<td class='Estimated numeric'>2.66</td>
+<td class='Estimated numeric'>2.17</td>
+<td class='Estimated numeric'>1.97</td>
+<td class='Estimated numeric'>1.95</td>
+<td class='Estimated numeric'>1.84</td>
+<td class='Estimated numeric'>1.77</td>
+<td class='Estimated numeric'>1.73</td>
+<td class='Estimated numeric'>1.75</td>
+<td class='Estimated numeric'>1.76</td>
+<td class='Estimated numeric'>1.74</td>
+<td class='Estimated numeric'>1.72</td>
+<td class='Estimated numeric'>1.72</td>
+</tr>
+
+
+
+<tr>
+<td class='first_column'>Smoothed health index (2)</td>
+<td class='Estimated numeric'>130.29</td>
+<td class='Estimated numeric'>130.59</td>
+<td class='Estimated numeric'>130.90</td>
+<td class='Estimated numeric'>131.21</td>
+<td class='Estimated numeric'>131.33</td>
+<td class='Estimated numeric'>131.45</td>
+<td class='Estimated numeric'>131.62</td>
+<td class='Estimated numeric'>131.81</td>
+<td class='Estimated numeric'>131.85</td>
+<td class='Estimated numeric'>132.01</td>
+<td class='Estimated numeric'>132.08</td>
+<td class='Estimated numeric'>132.14</td>
+</tr>
+
+
+</table>
+</div>
+
+<p>(1) Change (%) compared to same month of previous year.
+Orange labels are forecasting estimations by the Federal Planning Bureau.
+<BR>(2) The smoothed health index is calculated as the four-month moving average of the health index multiplied by 0.98.
+</p>
+
+
+
+<div class="divider-top divider-right">
+	<span>
+	<a href="#"></a>
+	</span>
+</div>
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="content-title">
+	<h3>National consumer price index (2024)</h3>
+</div>
+<div class="row-fluid">
+	<div class="span12">	
+	
+<div style="overflow-x: auto;">
+<table class='table table-condensed table_database'>
+<thead> <tr>
+<th class='first_column'>2024</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+</tr></thead>
+
+
+
+<tr>
+<td class='first_column'>Index (base year 2013)</td>
+<td class='Observed numeric'>130.08</td>
+<td class='Observed numeric'>131.01</td>
+<td class='Estimated numeric'>131.35</td>
+<td class='Estimated numeric'>131.61</td>
+<td class='Estimated numeric'>131.82</td>
+<td class='Estimated numeric'>131.94</td>
+<td class='Estimated numeric'>132.33</td>
+<td class='Estimated numeric'>132.56</td>
+<td class='Estimated numeric'>132.25</td>
+<td class='Estimated numeric'>132.47</td>
+<td class='Estimated numeric'>132.79</td>
+<td class='Estimated numeric'>132.80</td>
+</tr>
+
+
+
+<tr>
+<td class='first_column'>Growth rates (%) (1)</td>
+<td class='Observed numeric'>1.75</td>
+<td class='Observed numeric'>3.20</td>
+<td class='Estimated numeric'>2.88</td>
+<td class='Estimated numeric'>3.78</td>
+<td class='Estimated numeric'>3.55</td>
+<td class='Estimated numeric'>3.80</td>
+<td class='Estimated numeric'>3.27</td>
+<td class='Estimated numeric'>2.66</td>
+<td class='Estimated numeric'>3.13</td>
+<td class='Estimated numeric'>2.95</td>
+<td class='Estimated numeric'>3.03</td>
+<td class='Estimated numeric'>2.59</td>
+</tr>
+
+
+</table>
+</div>
+
+<p>(1) Change (%) compared to same month of previous year.
+Orange labels are forecasting estimations by the Federal Planning Bureau.
+</p>
+
+
+	</div>
+</div>
+
+<div class="content-title">
+	<h3>Health index and smoothed health index (2024)</h3>
+</div>
+
+<div class="row-fluid">
+	<div class="span12">	
+
+<div style="overflow-x: auto;">
+<table class='table table-condensed table_database'>
+<thead> <tr>
+<th class='first_column'>2024</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+</tr></thead>
+
+
+
+<tr>
+<td class='first_column'>Health index (base year 2013)</td>
+<td class='Observed numeric'>130.19</td>
+<td class='Observed numeric'>130.95</td>
+<td class='Estimated numeric'>131.38</td>
+<td class='Estimated numeric'>131.58</td>
+<td class='Estimated numeric'>131.72</td>
+<td class='Estimated numeric'>131.91</td>
+<td class='Estimated numeric'>132.39</td>
+<td class='Estimated numeric'>132.58</td>
+<td class='Estimated numeric'>132.03</td>
+<td class='Estimated numeric'>132.57</td>
+<td class='Estimated numeric'>132.69</td>
+<td class='Estimated numeric'>132.87</td>
+</tr>
+
+
+
+<tr>
+<td class='first_column'>Growth rates (%) (1)</td>
+<td class='Observed numeric'>1.71</td>
+<td class='Observed numeric'>3.22</td>
+<td class='Estimated numeric'>2.80</td>
+<td class='Estimated numeric'>3.85</td>
+<td class='Estimated numeric'>3.43</td>
+<td class='Estimated numeric'>3.79</td>
+<td class='Estimated numeric'>3.25</td>
+<td class='Estimated numeric'>2.92</td>
+<td class='Estimated numeric'>3.54</td>
+<td class='Estimated numeric'>3.33</td>
+<td class='Estimated numeric'>3.22</td>
+<td class='Estimated numeric'>2.58</td>
+</tr>
+
+
+
+<tr>
+<td class='first_column'>Smoothed health index (2)</td>
+<td class='Observed numeric'>126.56</td>
+<td class='Observed numeric'>127.21</td>
+<td class='Estimated numeric'>127.90</td>
+<td class='Estimated numeric'>128.40</td>
+<td class='Estimated numeric'>128.78</td>
+<td class='Estimated numeric'>129.01</td>
+<td class='Estimated numeric'>129.26</td>
+<td class='Estimated numeric'>129.51</td>
+<td class='Estimated numeric'>129.58</td>
+<td class='Estimated numeric'>129.74</td>
+<td class='Estimated numeric'>129.82</td>
+<td class='Estimated numeric'>129.89</td>
+</tr>
+
+
+</table>
+</div>
+
+<p>(1) Change (%) compared to same month of previous year.
+Orange labels are forecasting estimations by the Federal Planning Bureau.
+<BR>(2) The smoothed health index is calculated as the four-month moving average of the health index multiplied by 0.98.
+</p>
+
+
+
+<div class="divider-top divider-right">
+	<span>
+	<a href="#"></a>
+	</span>
+</div>
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="content-title">
+	<h3>National consumer price index (2023)</h3>
+</div>
+<div class="row-fluid">
+	<div class="span12">	
+	
+<div style="overflow-x: auto;">
+<table class='table table-condensed table_database'>
+<thead> <tr>
+<th class='first_column'>2023</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+</tr></thead>
+
+
+
+<tr>
+<td class='first_column'>Index (base year 2013)</td>
+<td class='Observed numeric'>127.84</td>
+<td class='Observed numeric'>126.95</td>
+<td class='Observed numeric'>127.67</td>
+<td class='Observed numeric'>126.82</td>
+<td class='Observed numeric'>127.30</td>
+<td class='Observed numeric'>127.11</td>
+<td class='Observed numeric'>128.14</td>
+<td class='Observed numeric'>129.12</td>
+<td class='Observed numeric'>128.23</td>
+<td class='Observed numeric'>128.67</td>
+<td class='Observed numeric'>128.89</td>
+<td class='Observed numeric'>129.45</td>
+</tr>
+
+
+
+<tr>
+<td class='first_column'>Growth rates (%) (1)</td>
+<td class='Observed numeric'>8.05</td>
+<td class='Observed numeric'>6.62</td>
+<td class='Observed numeric'>6.67</td>
+<td class='Observed numeric'>5.60</td>
+<td class='Observed numeric'>5.20</td>
+<td class='Observed numeric'>4.15</td>
+<td class='Observed numeric'>4.14</td>
+<td class='Observed numeric'>4.09</td>
+<td class='Observed numeric'>2.39</td>
+<td class='Observed numeric'>0.36</td>
+<td class='Observed numeric'>0.76</td>
+<td class='Observed numeric'>1.35</td>
+</tr>
+
+
+</table>
+</div>
+
+<p>(1) Change (%) compared to same month of previous year.
+</p>
+
+
+	</div>
+</div>
+
+<div class="content-title">
+	<h3>Health index and smoothed health index (2023)</h3>
+</div>
+
+<div class="row-fluid">
+	<div class="span12">	
+
+<div style="overflow-x: auto;">
+<table class='table table-condensed table_database'>
+<thead> <tr>
+<th class='first_column'>2023</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+</tr></thead>
+
+
+
+<tr>
+<td class='first_column'>Health index (base year 2013)</td>
+<td class='Observed numeric'>128.00</td>
+<td class='Observed numeric'>126.86</td>
+<td class='Observed numeric'>127.80</td>
+<td class='Observed numeric'>126.70</td>
+<td class='Observed numeric'>127.35</td>
+<td class='Observed numeric'>127.09</td>
+<td class='Observed numeric'>128.22</td>
+<td class='Observed numeric'>128.82</td>
+<td class='Observed numeric'>127.52</td>
+<td class='Observed numeric'>128.30</td>
+<td class='Observed numeric'>128.55</td>
+<td class='Observed numeric'>129.53</td>
+</tr>
+
+
+
+<tr>
+<td class='first_column'>Growth rates (%) (1)</td>
+<td class='Observed numeric'>8.28</td>
+<td class='Observed numeric'>6.84</td>
+<td class='Observed numeric'>7.35</td>
+<td class='Observed numeric'>5.95</td>
+<td class='Observed numeric'>5.90</td>
+<td class='Observed numeric'>5.02</td>
+<td class='Observed numeric'>4.80</td>
+<td class='Observed numeric'>4.16</td>
+<td class='Observed numeric'>2.08</td>
+<td class='Observed numeric'>0.30</td>
+<td class='Observed numeric'>0.87</td>
+<td class='Observed numeric'>1.28</td>
+</tr>
+
+
+
+<tr>
+<td class='first_column'>Smoothed health index (2)</td>
+<td class='Observed numeric'>125.26</td>
+<td class='Observed numeric'>125.00</td>
+<td class='Observed numeric'>125.08</td>
+<td class='Observed numeric'>124.79</td>
+<td class='Observed numeric'>124.63</td>
+<td class='Observed numeric'>124.69</td>
+<td class='Observed numeric'>124.79</td>
+<td class='Observed numeric'>125.31</td>
+<td class='Observed numeric'>125.35</td>
+<td class='Observed numeric'>125.65</td>
+<td class='Observed numeric'>125.73</td>
+<td class='Observed numeric'>125.91</td>
+</tr>
+
+
+</table>
+</div>
+
+<p>(1) Change (%) compared to same month of previous year.
+<BR>(2) The smoothed health index is calculated as the four-month moving average of the health index multiplied by 0.98.
+</p>
+
+
+
+<div class="divider-top divider-right">
+	<span>
+	<a href="#"></a>
+	</span>
+</div>
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="content-title">
+	<h3>National consumer price index (2022)</h3>
+</div>
+<div class="row-fluid">
+	<div class="span12">	
+	
+<div style="overflow-x: auto;">
+<table class='table table-condensed table_database'>
+<thead> <tr>
+<th class='first_column'>2022</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+</tr></thead>
+
+
+
+<tr>
+<td class='first_column'>Index (base year 2013)</td>
+<td class='Observed numeric'>118.32</td>
+<td class='Observed numeric'>119.07</td>
+<td class='Observed numeric'>119.69</td>
+<td class='Observed numeric'>120.09</td>
+<td class='Observed numeric'>121.01</td>
+<td class='Observed numeric'>122.04</td>
+<td class='Observed numeric'>123.05</td>
+<td class='Observed numeric'>124.05</td>
+<td class='Observed numeric'>125.24</td>
+<td class='Observed numeric'>128.21</td>
+<td class='Observed numeric'>127.92</td>
+<td class='Observed numeric'>127.72</td>
+</tr>
+
+
+
+<tr>
+<td class='first_column'>Growth rates (%) (1)</td>
+<td class='Observed numeric'>7.59</td>
+<td class='Observed numeric'>8.04</td>
+<td class='Observed numeric'>8.31</td>
+<td class='Observed numeric'>8.31</td>
+<td class='Observed numeric'>8.97</td>
+<td class='Observed numeric'>9.65</td>
+<td class='Observed numeric'>9.62</td>
+<td class='Observed numeric'>9.94</td>
+<td class='Observed numeric'>11.27</td>
+<td class='Observed numeric'>12.27</td>
+<td class='Observed numeric'>10.63</td>
+<td class='Observed numeric'>10.35</td>
+</tr>
+
+
+</table>
+</div>
+
+<p>(1) Change (%) compared to same month of previous year.
+</p>
+
+
+	</div>
+</div>
+
+<div class="content-title">
+	<h3>Health index and smoothed health index (2022)</h3>
+</div>
+
+<div class="row-fluid">
+	<div class="span12">	
+
+<div style="overflow-x: auto;">
+<table class='table table-condensed table_database'>
+<thead> <tr>
+<th class='first_column'>2022</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+</tr></thead>
+
+
+
+<tr>
+<td class='first_column'>Health index (base year 2013)</td>
+<td class='Observed numeric'>118.21</td>
+<td class='Observed numeric'>118.74</td>
+<td class='Observed numeric'>119.05</td>
+<td class='Observed numeric'>119.59</td>
+<td class='Observed numeric'>120.25</td>
+<td class='Observed numeric'>121.02</td>
+<td class='Observed numeric'>122.35</td>
+<td class='Observed numeric'>123.68</td>
+<td class='Observed numeric'>124.92</td>
+<td class='Observed numeric'>127.92</td>
+<td class='Observed numeric'>127.44</td>
+<td class='Observed numeric'>127.89</td>
+</tr>
+
+
+
+<tr>
+<td class='first_column'>Growth rates (%) (1)</td>
+<td class='Observed numeric'>7.12</td>
+<td class='Observed numeric'>7.56</td>
+<td class='Observed numeric'>7.68</td>
+<td class='Observed numeric'>7.81</td>
+<td class='Observed numeric'>8.34</td>
+<td class='Observed numeric'>8.72</td>
+<td class='Observed numeric'>9.07</td>
+<td class='Observed numeric'>9.70</td>
+<td class='Observed numeric'>11.25</td>
+<td class='Observed numeric'>12.27</td>
+<td class='Observed numeric'>10.63</td>
+<td class='Observed numeric'>10.63</td>
+</tr>
+
+
+
+<tr>
+<td class='first_column'>Smoothed health index (2)</td>
+<td class='Observed numeric'>113.42</td>
+<td class='Observed numeric'>114.60</td>
+<td class='Observed numeric'>115.54</td>
+<td class='Observed numeric'>116.52</td>
+<td class='Observed numeric'>117.02</td>
+<td class='Observed numeric'>117.58</td>
+<td class='Observed numeric'>118.39</td>
+<td class='Observed numeric'>119.39</td>
+<td class='Observed numeric'>120.53</td>
+<td class='Observed numeric'>122.22</td>
+<td class='Observed numeric'>123.47</td>
+<td class='Observed numeric'>124.50</td>
+</tr>
+
+
+</table>
+</div>
+
+<p>(1) Change (%) compared to same month of previous year.
+<BR>(2) The smoothed health index is calculated as the four-month moving average of the health index multiplied by 0.98.
+</p>
+
+
+
+<div class="divider-top divider-right">
+	<span>
+	<a href="#"></a>
+	</span>
+</div>
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+      </div>
+ </section>
+ 
+    </div>
+  
+    <footer>
+    <!-- Footer -->
+    <div class="page-out clearfix">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="footer-logo span5">
+            <img alt="BfP" src="/img/footer_bfp_logo_white.png" width="55" height="40">&nbsp;<b>Federal Planning Bureau</b> 
+          </div>
+ 
+          <div class="top-off-page span1 offset6">
+<a href="#Top" alt="Top of page" title="Top of page"><i class="fa-solid fa-arrow-up fa-lg"></i></a> 
+          </div>
+ 
+        </div>
+ 
+      </div>
+ 
+    </div>
+ 
+    <div class="footer-widgets">
+      <!-- Footer Widgets Area -->
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span3">
+            <p class="widget-title">About the FPB</p>
+ 
+            <div class="span6">
+              <a href="/aboutus/institution.php?lang=en">The Institution</a><br>
+              <a href="/aboutus/staff.php?lang=en">Staff</a><br>
+              <a href="/aboutus/distribution.php?lang=en">Distribution list</a><br>
+              <a href="/aboutus/jobs.php?lang=en">Job Opportunities</a> 
+            </div>
+ 
+          </div>
+ 
+          <div class="span5">
+            <p class="widget-title">Quick access</p>
+ 
+            <div class="span5">
+              <a href="/databases/17-en-consumer_price_index_inflation_forecasts">Consumer Price Index</a><br>
+              <a href="/indicators/indicators_list.php?lang=en">Indicators</a><br>
+              <a href="/press/press.php?lang=en">Press releases</a><br>
+              <a href="/publications/publication.php?lang=en">Publications</a> 
+            </div>
+ 
+            <div class="span5 offset1">
+              <a href="/tools/map.php?lang=en">Site Map</a><br>
+              <a href="/tools/complaint.php?lang=en">Complaint</a><br>
+              <a href="/tools/privacy.php?lang=en">Use of personal data</a><br>
+              <a href="/aboutus/contact.php?lang=en">Contact</a><br>
+            </div>
+ 
+          </div>
+ 
+          <div class="span2">
+            <p class="widget-title">Follow us</p>
+ 
+            <div class="span7">
+              <br>
+<a href="https://www.linkedin.com/company/federaal-planbureau---bureau-f%C3%A9d%C3%A9ral-du-plan" class="nosign" title="Visit our Linkedin page" style="padding-right: 0px;"><i class="fa-brands fa-linkedin LinkedIn"></i>&nbsp;LinkedIn page</a><br>
+               
+            </div>
+ 
+          </div>
+ 
+          <div class="span2">
+            <p class="widget-title">Our address</p>
+ 
+            <p itemscope itemtype="https://schema.org/GovernmentOrganization"><span itemprop="name">Federal Planning Bureau</span><br>
+            <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="streetAddress">Rue Belliard - Belliardstraat, 14-18</span><br>
+            <span itemprop="postalCode">1040</span> - <span itemprop="addressLocality">Brussel</span></span><br>
+            <i class="fa-solid fa-phone"></i> <span itemprop="telephone">(32) 02/507.73.11</span> </p>
+ 
+          </div>
+ 
+        </div>
+ 
+      </div>
+ 
+    </div>
+ 
+    <!-- Close Footer Widgets Area -->
+    <div class="footer-meta">
+      <!-- Footer meta -->
+      <div class="container">
+        <div class="row-fluid">
+          <div class="sitemap-holder span7">
+          </div>
+ 
+          <div class="copyright span4 offset1">
+            <p>&copy; Copyright 2024 - CIC Team</p>
+ 
+          </div>
+ 
+        </div>
+ 
+      </div>
+ 
+    </div>
+ 
+    <!-- Close Footer meta -->
+    </footer>
+ 
+    <!-- Close Footer -->
+  </div>
+ 
+  <!-- Close Page -->
+</div>
+</div>
+<!-- Close wrapper -->
+<!-- Trap for bots. Human visitors please do not visit this adress -->
+<a href="/bot_trap/index.php"><img src="/img/1_by_1pixel.png" border="0" alt="Please do not visit, its a trap for bots" width="1" height="1" /></a><!-- End of Trap -->
+<!-- You should make sure that the file cookiechoices.js is available
+and accessible from the root directory of your site.  -->
+
+
+<script src="/js/cookiechoices/cookiechoices.js"></script><script>document.addEventListener('DOMContentLoaded', function(event) {cookieChoices.showCookieConsentBar("By consulting our website, you accept the cookies which are necessary for navigation.","Close", "More...", "/tools/privacy.php?lang=en");});</script> 
+
+
+<!-- Load all Javascript Files -->
+<script src="/js/vendor/bootstrap.min.js"></script>
+<script src="/js/jquery.hoverdir.js"></script>
+<script src="/js/superfish.js"></script>
+<script src="/js/jquery.isotope.min.js"></script>
+<!-- <script src="/js/retina.js"></script> -->
+<script src="/js/jquery.flexslider.js"></script>
+<script src="/js/custom.js"></script>
+<!-- <script src="/js/orejime.js"></script> -->
+</body>
+</html>

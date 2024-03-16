@@ -27,8 +27,7 @@ from emergingtrajectories.facts import FactBaseFileCache
 from emergingtrajectories.recursiveagent import ETClient
 from emergingtrajectories.factsforecaster import FactForecastingAgent
 from emergingtrajectories.utils import run_forecast
-
-from phasellm.llms import ChatBot, OpenAIGPTWrapper
+from emergingtrajectories import Client
 
 
 def run_forecast_with_llm(factbase_loc, llm, statement_id, prediction_agent):
@@ -49,19 +48,61 @@ def run_forecast_with_llm(factbase_loc, llm, statement_id, prediction_agent):
     )
 
 
+def extend_forecast_with_llm(factbase_loc, llm, forecast_id, prediction_agent):
+    etc = ETClient(et_api_key)
+    fb = FactBaseFileCache(factbase_loc)
+    chatbot = ChatBot(llm)
+    ffa = FactForecastingAgent(etc, chatbot, fb)
+    run_forecast(
+        ffa.extend_forecast,
+        3,
+        etc.get_forecast(forecast_id),
+        openai_api_key,
+        et_api_key,
+        google_api_key,
+        google_search_id,
+        "CPI predictions for March 2024",
+        prediction_agent=prediction_agent,
+    )
+
+
+client = Client(et_api_key)
+
 # llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-0125-preview")
 # run_forecast_with_llm("factbase_cpi_mar_gpt4", llm, 28, "GPT-4")
+# forecast_id = client.get_most_recent_forecast(28, "GPT-4")
+# extend_forecast_with_llm("factbase_cpi_mar_gpt4", llm, forecast_id, "GPT-4")
 
 # llm = ClaudeWrapper(anthropic_api_key, "claude-2.1")
 # run_forecast_with_llm("factbase_cpi_mar_claude2", llm, 28, "Claude 2.1")
+# forecast_id = client.get_most_recent_forecast(28, "Claude 2.1")
+# extend_forecast_with_llm("factbase_cpi_mar_claude2", llm, forecast_id, "Claude 2.1")
+
+"""etc = ETClient(et_api_key)
+fb = FactBaseFileCache("factbase_cpi_mar_claude2")
+chatbot = ChatBot(llm)
+ffa = FactForecastingAgent(etc, chatbot, fb)
+ffa.extend_forecast(
+    etc.get_forecast(forecast_id),
+    openai_api_key,
+    et_api_key,
+    google_api_key,
+    google_search_id,
+    "CPI predictions for March 2024",
+    prediction_agent="Claude 2.1",
+)"""
 
 # from google.cloud import aiplatform
 # aiplatform.init(project="phasellm-gemini-testing")
 # llm = VertexAIWrapper("gemini-1.0-pro")
 # run_forecast_with_llm("factbase_cpi_mar_gemini", llm, 28, "Gemini 1.0 Pro")
+# forecast_id = client.get_most_recent_forecast(28, "Gemini 1.0 Pro")
+# extend_forecast_with_llm("factbase_cpi_mar_gemini", llm, forecast_id, "Gemini 1.0 Pro")
 
-# llm = ReplicateLlama2Wrapper(replicate_api_key, "meta/llama-2-70b-chat")
+llm = ReplicateLlama2Wrapper(replicate_api_key, "meta/llama-2-70b-chat")
 # run_forecast_with_llm("factbase_cpi_mar_llama2", llm, 28, "Llama 2 70B")
+forecast_id = client.get_most_recent_forecast(28, "Llama 2 70B")
+extend_forecast_with_llm("factbase_cpi_mar_llama2", llm, forecast_id, "Llama 2 70B")
 
 """
 llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-0125-preview")
