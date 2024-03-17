@@ -174,7 +174,13 @@ class FactBaseFileCache:
             if not self.in_cache(result.url):
                 ctr += 1
                 added_new_content = True
-                page_content = self.get(result.url)
+
+                try:
+                    page_content = self.get(result.url)
+                    print(page_content)
+                except Exception as e:
+                    print(f"Failed to get content from {result.url}\n{e}")
+                    page_content = ""
 
                 accessed_resources.append(result.url)
                 # knowledge_base.log_access(result.url)
