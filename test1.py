@@ -99,10 +99,10 @@ ffa.extend_forecast(
 # forecast_id = client.get_most_recent_forecast(28, "Gemini 1.0 Pro")
 # extend_forecast_with_llm("factbase_cpi_mar_gemini", llm, forecast_id, "Gemini 1.0 Pro")
 
-llm = ReplicateLlama2Wrapper(replicate_api_key, "meta/llama-2-70b-chat")
+# llm = ReplicateLlama2Wrapper(replicate_api_key, "meta/llama-2-70b-chat")
 # run_forecast_with_llm("factbase_cpi_mar_llama2", llm, 28, "Llama 2 70B")
-forecast_id = client.get_most_recent_forecast(28, "Llama 2 70B")
-extend_forecast_with_llm("factbase_cpi_mar_llama2", llm, forecast_id, "Llama 2 70B")
+# forecast_id = client.get_most_recent_forecast(28, "Llama 2 70B")
+# extend_forecast_with_llm("factbase_cpi_mar_llama2", llm, forecast_id, "Llama 2 70B")
 
 """
 llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-0125-preview")
