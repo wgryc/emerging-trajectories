@@ -1,0 +1,833 @@
+<!DOCTYPE html><html lang="en" dir="ltr" class=" js"><head>
+    <meta charset="utf-8">
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-0623JYSC1Q&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-5VLYKQRXY5&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-326294125&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-NQ5ZN114SB&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-18660041-1"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "UA-18660041-1", {"groups":"default","anonymize_ip":true,"page_placeholder":"PLACEHOLDER_page_path"});gtag("config", "G-326294125", {"groups":"default","page_placeholder":"PLACEHOLDER_page_location"});gtag("config", "G-5VLYKQRXY5", {"groups":"default","page_placeholder":"PLACEHOLDER_page_location"});gtag("config", "G-0623JYSC1Q", {"groups":"default","page_placeholder":"PLACEHOLDER_page_location"});//gtag('config', 'UA-33523145-1');</script>
+<meta name="description" content="LNG takes up 1/600th&nbsp;of the volume of the gaseous state of natural gas, but retains all of the energy potential.&nbsp; Thus, the energy potential of a specific volume of LNG is significantly greater than the same volume of natural gas in its gaseous state.&nbsp; The safety of LNG">
+<link rel="canonical" href="https://www.phmsa.dot.gov/pipeline/liquified-natural-gas/lng-safety">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="LNG takes up 1/600th&nbsp;of the volume of the gaseous state of natural gas, but retains all of the energy potential.&nbsp; Thus, the energy potential of a specific volume of LNG is significantly greater than the same volume of natural gas in its gaseous state.&nbsp; The safety of LNG">
+<meta name="twitter:site" content="@USDOT">
+<meta name="twitter:title" content="LNG Safety">
+<meta name="twitter:creator" content="@USDOT">
+<meta name="twitter:image" content="https://www.phmsa.dot.gov/themes/custom/dot_cms/images/seal_dot.png">
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="icon" href="/themes/custom/dot_cms/favicon_dot.png" type="image/png">
+
+    <title>LNG Safety | PHMSA</title>
+    <link rel="stylesheet" media="all" href="/sites/phmsa.dot.gov/files/css/css_uK0MejD-4RIuvaFvMkgmhsLXFEnWydwKEVgP4h27cgQ.css?delta=0&amp;language=en&amp;theme=phmsa&amp;include=eJxtkVFuAyEMRC9Elp-q10EGvCyKwciGpHv7ombTqNv8GM3DNqMBv7qAWzNSdBE1SG49c7X4nrugahJzInRQgfaeg9ozMA0EkkDb1CXJ0Z704pm7zgfah9FdOxbrQdEUjkA2EXugi_adck0HXLl2uKNyQfd5MG5YnUJVF2I1kbsLRc_jT_x3wa8B50Ek83mqbUXhDGcm87zaKKMBLYc0gYmgafbE4WoDC87OBjW642YmQ2Qf7PJk_y1Ujm-oF4QYZBRvBvVcsI7H5-hLb1D8kITyQryuAeoNdNEAhLmaW8a72p-6zPwG4TeiYchS">
+<link rel="stylesheet" media="all" href="/sites/phmsa.dot.gov/files/css/css_-rkmMdjRqacXbt2RMi84sPa3ebqZhR0nYDk5F5kAUYQ.css?delta=1&amp;language=en&amp;theme=phmsa&amp;include=eJxtkVFuAyEMRC9Elp-q10EGvCyKwciGpHv7ombTqNv8GM3DNqMBv7qAWzNSdBE1SG49c7X4nrugahJzInRQgfaeg9ozMA0EkkDb1CXJ0Z704pm7zgfah9FdOxbrQdEUjkA2EXugi_adck0HXLl2uKNyQfd5MG5YnUJVF2I1kbsLRc_jT_x3wa8B50Ek83mqbUXhDGcm87zaKKMBLYc0gYmgafbE4WoDC87OBjW642YmQ2Qf7PJk_y1Ujm-oF4QYZBRvBvVcsI7H5-hLb1D8kITyQryuAeoNdNEAhLmaW8a72p-6zPwG4TeiYchS">
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap">
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&amp;display=swap">
+<link rel="stylesheet" media="all" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==">
+<link rel="stylesheet" media="all" href="/sites/phmsa.dot.gov/files/css/css_gUW0KiFsQvz6dBO7QJFxZHwh_llOmFMhcHCgNRb1zEY.css?delta=6&amp;language=en&amp;theme=phmsa&amp;include=eJxtkVFuAyEMRC9Elp-q10EGvCyKwciGpHv7ombTqNv8GM3DNqMBv7qAWzNSdBE1SG49c7X4nrugahJzInRQgfaeg9ozMA0EkkDb1CXJ0Z704pm7zgfah9FdOxbrQdEUjkA2EXugi_adck0HXLl2uKNyQfd5MG5YnUJVF2I1kbsLRc_jT_x3wa8B50Ek83mqbUXhDGcm87zaKKMBLYc0gYmgafbE4WoDC87OBjW642YmQ2Qf7PJk_y1Ujm-oF4QYZBRvBvVcsI7H5-hLb1D8kITyQryuAeoNdNEAhLmaW8a72p-6zPwG4TeiYchS">
+
+    
+    <!-- DAP Implementation -->
+    <script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOT"></script>
+  <script>bazadebezolkohpepadr="1578552753"</script><script type="text/javascript" src="https://www.phmsa.dot.gov/akam/13/5e16ccf9" defer=""></script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+  <body class="is-ultimenu-canvas is-ultimenu-canvas--hover layout-no-sidebars page-node-29716 path-pipeline-liquified-natural-gas-lng-safety path-node node--type-article">
+  <noscript>Please enable JavaScript to use this site.</noscript>
+    <a href="#main" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    <div id="page-wrapper" class="page-wrapper">
+  <div id="page" class="page">
+
+    
+ <section class="usa-banner">
+  <h1 class="sr-only">USA Banner</h1>
+  <div class="usa-banner-inner container">
+    <div class="row">
+      <div class="usa-accordion col" id="accordion">
+        <header class="usa-banner-header" id="headingOne">
+          <div aria-controls="collapseOne" aria-expanded="false" class="collapsed small row" data-target="#collapseOne" data-toggle="collapse" role="complementary">
+            <div class="usa-banner-guidance-gov usa-width-one-full col-sm d-flex">
+              <div class="usa-media_block-icon">
+                <img class="usa-banner-flag" src="/themes/custom/dot_cms/images/assets/us_flag_small.svg" alt="U.S. flag">
+              </div>
+              <div class="usa-media_block-body">
+                <p>An official website of the United States government <button class="usa-accordion-button usa-banner-button"><span class="usa-banner-button-text">Here's how you know</span></button></p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="usa-banner-content container">
+          <div aria-labelledby="headingOne" class="collapse row" data-parent="#accordion" id="collapseOne">
+            <div class="usa-banner-guidance-gov usa-width-one-half col-sm d-flex">
+              <div class="usa-media_block-icon">
+                <img class="usa-banner-icon" src="/themes/custom/dot_cms/images/assets/icon-dot-gov.svg" alt="Official US Government Icon">
+              </div>
+              <div class="usa-media_block-body">
+                <p><small><strong>Official websites use .gov</strong><br>A <strong>.gov</strong> website belongs to an official government organization in the United States.</small></p>
+              </div>
+            </div>
+            <div class="usa-banner-guidance-ssl usa-width-one-half col-sm d-flex">
+              <div class="usa-media_block-icon">
+                <img class="usa-banner-icon" src="/themes/custom/dot_cms/images/assets/icon-https.svg" alt="Secure Site Icon">
+              </div>
+              <div class="usa-media_block-body">
+                <p><small><strong>Secure .gov websites use HTTPS</strong><br>
+                  A <strong>lock</strong> ( <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description"><title id="banner-lock-title">Lock</title><desc id="banner-lock-description">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"></path></svg></span> ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+    <div class="row region region-site-notification">
+    
+    <div class="block block--site-notification block--emergency block-views block-views-blocksite-notification-block-notification-emergency w-100 clearfix">
+    
+
+
+  </div>
+  
+          <div class="block block--site-notification block--warning block-views block-views-blocksite-notification-block-notification-warning w-100 clearfix">
+      
+
+
+    </div>
+  
+  </div>
+
+ <style>
+.dot-ribbon {
+	background: #15396c;
+	color: white;
+	height: 1.75rem;
+	display: flex;
+	align-items: center;
+	font-size: .8rem;
+}
+.dot-ribbon svg {
+	width: 17px;
+	opacity: .5;
+	margin-right: 6px;
+}
+.dot-ribbon a:link,
+.dot-ribbon a:hover,
+.dot-ribbon a:visited,
+.dot-ribbon a:active {
+	color: white;
+}
+</style>
+<div class="dot-ribbon">
+	<div class="container">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.82 37.1" role="img">
+			<title>U.S. Department of Transportation</title>
+			<desc>U.S. Department of Transportation Icon</desc>
+			<defs><style>.cls-1{fill:#FFFFFF;}</style></defs><title>United States Department of Transportation</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M4.46,6.35a8.38,8.38,0,0,1,8.15-2.94c2.71.55,4.26,2.77,4.78,5.43a6.31,6.31,0,0,1-2.75,6.79c-3.68,2.1-8,3.74-8.86,8.5A13.42,13.42,0,0,0,8.47,34.4C3.81,31.8,1.13,26.6.25,21.23A18,18,0,0,1,4.46,6.35"></path><path class="cls-1" d="M14.41,36.71A8.65,8.65,0,0,1,7.85,30.9a6.51,6.51,0,0,1,2.13-7,5.85,5.85,0,0,1,7.05-1c3.61,2.23,7.17,5.31,11.56,3.64A12.82,12.82,0,0,0,35.81,19C36,24.49,33,29.5,29,33a16.57,16.57,0,0,1-14.55,3.72"></path><path class="cls-1" d="M34.73,12.39a9.12,9.12,0,0,1-1.53,8.8c-1.79,2.17-4.42,2.47-6.91,1.63A6.18,6.18,0,0,1,21.92,17c0-4.35.81-9.1-2.8-12.17A12.51,12.51,0,0,0,9.05,2.33c4.47-2.92,10.27-2.89,15.22-1A17.36,17.36,0,0,1,34.73,12.39"></path></g></g>
+		</svg>
+		<a href="https://www.transportation.gov">United States Department of Transportation</a>
+</div>
+</div>
+
+ <header id="header" class="header site-header site-masthead bg-primary" role="banner" aria-label="Site header">
+  <div class="container">
+    <div class="row">
+              <nav class="navbar navbar-dark navbar-expand-lg" id="navbar-main">
+                <a href="/" title="Home" rel="home" class="navbar-brand">
+              <img src="/themes/custom/phmsa/images/usdot_triskelion_phmsa.svg" alt="Home" class="img-fluid d-inline-block align-top">
+            
+    </a>
+    
+
+                  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                      <div class="form-inline navbar-form">
+                <section class="region region-header-form">
+      <nav aria-labelledby="block-utilitymenu-menu" id="block-utilitymenu" class="block block-menu navigation menu--utility-menu">
+            
+  <h2 class="sr-only" id="block-utilitymenu-menu">Utility Menu</h2>
+  
+
+        
+              <ul block="block-utilitymenu" class="clearfix nav">
+                    <li class="nav-item">
+                <a href="https://service.govdelivery.com/accounts/USDOTPHMSA/subscriber/new" class="nav-link nav-link-https--servicegovdeliverycom-accounts-usdotphmsa-subscriber-new">Sign-up for Email Alerts</a>
+              </li>
+                <li class="nav-item">
+                <a href="/newsroom" class="nav-link nav-link--newsroom" data-drupal-link-system-path="node/30316">Newsroom</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-customphmsaheadersearch" class="block block-fixed-block-content block-fixed-block-contentcustom-phmsa-header-search">
+  
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="usasearch-search-block-form block block-usasearch block-usasearch-search-form-block" data-drupal-selector="usasearch-search-block-form" id="block-usasearchform">
+   <div class="search__wrapper">
+      <form block="block-usasearchform" action="https://search.usa.gov/search" method="GET" id="usasearch-search-block-form" accept-charset="UTF-8">
+         <fieldset class="js-form-item js-form-type-search form-type-search js-form-item-query form-item-query form-no-label form-group" aria-labelledby="headerquery">
+            <legend class="d-none">Search DOT</legend>
+            <legend class="d-none">Search DOT</legend><label for="query" class="sr-only">Search</label>
+            <input id="query" title="Enter the terms you wish to search for." placeholder="Search" class="usagov-search-autocomplete form-search form-control ui-autocomplete-input" autocomplete="off" aria-autocomplete="list" aria-haspopup="" data-drupal-selector="edit-query" type="search" name="query" value="" size="60" maxlength="128">
+         </fieldset>
+         <input data-drupal-selector="edit-affiliate" type="hidden" name="affiliate" value="dot-phmsa-2" class="form-control">
+         <input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit btn btn-primary form-control">
+      </form>
+   </div>
+</div></div>
+      
+    </div>
+  </div>
+
+  </section>
+
+            </div>
+                    <div class="collapse navbar-collapse" id="CollapsingNavbar">
+              <div id="block-ultimenumainnavigation" class="block block-ultimenu block-ultimenu-blockultimenu-main">
+  
+    
+      <div class="content">
+      <ul id="ultimenu-main" data-ultimenu="main" class="ultimenu ultimenu--hover ultimenu--main ultimenu--htb ultimenu--horizontal ultimenu--on"><li class="ultimenu__item uitem has-ultimenu"><a href="/about-phmsa/phmsas-mission" data-drupal-link-system-path="node/29826" class="ultimenu__link">About PHMSA<span class="caret is-caret" aria-hidden="true"></span></a><section class="ultimenu__flyout is-htb">
+              <section class="ultimenu__region region region--count-2 row region-ultimenu-main-about-phmsa">
+      <nav aria-labelledby="block-mainabout1-menu" id="block-mainabout1" class="block block-menu navigation menu--main---about-1">
+      
+  <h2 id="block-mainabout1-menu">Get to Know Us</h2>
+  
+
+        
+              <ul block="block-mainabout1" class="clearfix nav">
+                    <li class="nav-item">
+                <a href="/about-phmsa/phmsas-mission" class="nav-link nav-link--about-phmsa-phmsas-mission" data-drupal-link-system-path="node/29826">Who We Are</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/offices" class="nav-link nav-link--about-phmsa-offices" data-drupal-link-system-path="node/30026">Organization</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/leadership" class="nav-link nav-link--about-phmsa-leadership" data-drupal-link-system-path="node/29986">Leadership</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/phmsa-faqs" class="nav-link nav-link--about-phmsa-phmsa-faqs" data-drupal-link-system-path="node/28976">PHMSA FAQs</a>
+              </li>
+                <li class="nav-item">
+                <a href="/careers" class="nav-link nav-link--careers" data-drupal-link-system-path="node/26296">Careers</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/working-phmsa" class="nav-link nav-link--about-phmsa-working-phmsa" data-drupal-link-system-path="node/26351">Working with PHMSA</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+  <nav aria-labelledby="block-mainabout2-menu" id="block-mainabout2" class="block block-menu navigation menu--main---about-2">
+      
+  <h2 id="block-mainabout2-menu">PHMSA Offices</h2>
+  
+
+        
+              <ul block="block-mainabout2" class="clearfix nav">
+                    <li class="nav-item">
+                <a href="/about-phmsa/offices/office-administration" class="nav-link nav-link--about-phmsa-offices-office-administration" data-drupal-link-system-path="node/25291">Office of Administration</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/offices/office-chief-counsel" class="nav-link nav-link--about-phmsa-offices-office-chief-counsel" data-drupal-link-system-path="node/24811">Office of Chief Counsel</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/offices/office-chief-financial-officer" class="nav-link nav-link--about-phmsa-offices-office-chief-financial-officer" data-drupal-link-system-path="node/25271">Office of the Chief Financial Officer</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/offices/office-civil-rights" class="nav-link nav-link--about-phmsa-offices-office-civil-rights" data-drupal-link-system-path="node/25171">Office of Civil Rights</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/offices/office-governmental-international-and-public-affairs" class="nav-link nav-link--about-phmsa-offices-office-governmental-international-and-public-affairs" data-drupal-link-system-path="node/25076">Office of Governmental, International, and Public Affairs</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/offices/office-hazardous-materials-safety" class="nav-link nav-link--about-phmsa-offices-office-hazardous-materials-safety" data-drupal-link-system-path="node/25111">Office of Hazardous Materials Safety</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/offices/office-pipeline-safety" class="nav-link nav-link--about-phmsa-offices-office-pipeline-safety" data-drupal-link-system-path="node/25121">Office of Pipeline Safety</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/offices/office-planning-analytics" class="nav-link nav-link--about-phmsa-offices-office-planning-analytics" data-drupal-link-system-path="node/25211">Office of Planning &amp; Analytics</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </section>
+
+          </section></li><li class="ultimenu__item uitem has-ultimenu"><a href="/safety" data-drupal-link-system-path="node/25901" class="ultimenu__link">Safety<span class="caret is-caret" aria-hidden="true"></span></a><section class="ultimenu__flyout is-htb">
+              <section class="ultimenu__region region region--count-1 row region-ultimenu-main-safety">
+      <nav aria-labelledby="block-mainsafety-menu" id="block-mainsafety" class="block block-menu navigation menu--main---safety">
+      
+  <h2 id="block-mainsafety-menu">Safety Programs</h2>
+  
+
+        
+              <ul block="block-mainsafety" class="clearfix nav">
+                    <li class="nav-item">
+                <a href="/about-phmsa/working-phmsa/grants" class="nav-link nav-link--about-phmsa-working-phmsa-grants" data-drupal-link-system-path="node/26341">Grants</a>
+              </li>
+                <li class="nav-item">
+                <a href="/training/hazmat/hazardous-materials-outreach-engagement" class="nav-link nav-link--training-hazmat-hazardous-materials-outreach-engagement" data-drupal-link-system-path="node/29651">Hazardous Materials Outreach &amp; Training</a>
+              </li>
+                <li class="nav-item">
+                <a href="/hazmat-safety-enhancement-program/hazardous-materials-safety-enhancement-program-overview" class="nav-link nav-link--hazmat-safety-enhancement-program-hazardous-materials-safety-enhancement-program-overview" data-drupal-link-system-path="node/29166">Hazardous Materials Safety Enhancement Program</a>
+              </li>
+                <li class="nav-item">
+                <a href="/international-program/international-program-overview" class="nav-link nav-link--international-program-international-program-overview" data-drupal-link-system-path="node/27001">International Program</a>
+              </li>
+                <li class="nav-item">
+                <a href="/safety-awareness/pipeline/safety-awareness-overview" class="nav-link nav-link--safety-awareness-pipeline-safety-awareness-overview" data-drupal-link-system-path="node/29811">Pipeline Safety Awareness and Outreach</a>
+              </li>
+                <li class="nav-item">
+                <a href="/training/phmsa-training" class="nav-link nav-link--training-phmsa-training" data-drupal-link-system-path="node/29871">Pipeline Safety Training</a>
+              </li>
+                <li class="nav-item">
+                <a href="/working-phmsa/state-programs/state-programs-overview" class="nav-link nav-link--working-phmsa-state-programs-state-programs-overview" data-drupal-link-system-path="node/26521">Pipeline State Programs</a>
+              </li>
+                <li class="nav-item">
+                <a href="/research-and-development/phmsa-research-and-development" class="nav-link nav-link--research-and-development-phmsa-research-and-development" data-drupal-link-system-path="node/29866">Research and Development</a>
+              </li>
+                <li class="nav-item">
+                <a href="/rural/rural-safety" class="nav-link nav-link--rural-rural-safety" data-drupal-link-system-path="node/36131">Rural Safety</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </section>
+
+          </section></li><li class="ultimenu__item uitem has-ultimenu"><a href="/regulations-and-compliance" data-drupal-link-system-path="node/25911" class="ultimenu__link">Regulations and Compliance<span class="caret is-caret" aria-hidden="true"></span></a><section class="ultimenu__flyout is-htb">
+              <section class="ultimenu__region region region--count-1 row region-ultimenu-main-regulations-and-compliance">
+      <nav aria-labelledby="block-mainregulationsandcompliance-menu" id="block-mainregulationsandcompliance" class="block block-menu navigation menu--main---regulations-and-comp">
+      
+  <h2 id="block-mainregulationsandcompliance-menu">Regulatory Compliance</h2>
+  
+
+        
+              <ul block="block-mainregulationsandcompliance" class="clearfix nav">
+                    <li class="nav-item">
+                <a href="/approvals-and-permits/phmsa-approvals-and-permits" class="nav-link nav-link--approvals-and-permits-phmsa-approvals-and-permits">Approvals and Permits</a>
+              </li>
+                <li class="nav-item">
+                <a href="/regulatory-compliance/phmsa-enforcement" class="nav-link nav-link--regulatory-compliance-phmsa-enforcement" data-drupal-link-system-path="node/29891">Enforcement</a>
+              </li>
+                <li class="nav-item">
+                <a href="/standards-rulemaking/hazmat/preemption-determinations" class="nav-link nav-link--standards-rulemaking-hazmat-preemption-determinations" data-drupal-link-system-path="node/26966">Preemption Determinations</a>
+              </li>
+                <li class="nav-item">
+                <a href="/standards-rulemaking/hazmat/inconsistency-rulings" class="nav-link nav-link--standards-rulemaking-hazmat-inconsistency-rulings" data-drupal-link-system-path="node/28121">Inconsistency Rulings</a>
+              </li>
+                <li class="nav-item">
+                <a href="/field-operations" class="nav-link nav-link--field-operations" data-drupal-link-system-path="node/25906">Field Operations</a>
+              </li>
+                <li class="nav-item">
+                <a href="/registration/registration-overview" class="nav-link nav-link--registration-registration-overview" data-drupal-link-system-path="node/28691">Hazardous Materials Registration</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.phmsa.dot.gov/regulations/title49/b/2/1" class="nav-link nav-link-https--wwwphmsadotgov-regulations-title49-b-2-1">Interpretations</a>
+              </li>
+                <li class="nav-item">
+                <a href="/legislative-mandates/mandates-overview" class="nav-link nav-link--legislative-mandates-mandates-overview" data-drupal-link-system-path="node/25851">Legislative Mandates</a>
+              </li>
+                <li class="nav-item">
+                <a href="/phmsa-ntsb-recommendations" class="nav-link nav-link--phmsa-ntsb-recommendations">NTSB Recommendations</a>
+              </li>
+                <li class="nav-item">
+                <a href="/standards-rulemaking/notices-and-advisory-bulletins" class="nav-link nav-link--standards-rulemaking-notices-and-advisory-bulletins" data-drupal-link-system-path="node/29881">Notices and Advisory Bulletins</a>
+              </li>
+                <li class="nav-item">
+                <a href="/guidance" class="nav-link nav-link--guidance" data-drupal-link-system-path="guidance">PHMSA Guidance</a>
+              </li>
+                <li class="nav-item">
+                <a href="/pipeline/drug-and-alcohol/drug-and-alcohol-testing-program-overview" class="nav-link nav-link--pipeline-drug-and-alcohol-drug-and-alcohol-testing-program-overview" data-drupal-link-system-path="node/28021">Pipeline Drug and Alcohol</a>
+              </li>
+                <li class="nav-item">
+                <a href="/phmsa-regulations" class="nav-link nav-link--phmsa-regulations">Regulations</a>
+              </li>
+                <li class="nav-item">
+                <a href="/standards-rulemaking/phmsa-standards-and-rulemaking" class="nav-link nav-link--standards-rulemaking-phmsa-standards-and-rulemaking" data-drupal-link-system-path="node/29906">Standards and Rulemaking</a>
+              </li>
+                <li class="nav-item">
+                <a href="/rulemaking-implementation/pipeline-rulemaking-implementation" class="nav-link nav-link--rulemaking-implementation-pipeline-rulemaking-implementation" data-drupal-link-system-path="node/37806">Pipeline Rulemaking Implementation</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </section>
+
+          </section></li><li class="ultimenu__item uitem has-ultimenu"><a href="/resources" data-drupal-link-system-path="node/25916" class="ultimenu__link">Resources<span class="caret is-caret" aria-hidden="true"></span></a><section class="ultimenu__flyout is-htb">
+              <section class="ultimenu__region region region--count-2 row region-ultimenu-main-resources">
+      <nav aria-labelledby="block-mainresources1-menu" id="block-mainresources1" class="block block-menu navigation menu--main---resources-1">
+      
+  <h2 id="block-mainresources1-menu">Data and Information</h2>
+  
+
+        
+              <ul block="block-mainresources1" class="clearfix nav">
+                    <li class="nav-item">
+                <a href="/data-and-statistics/phmsa-data-and-statistics" class="nav-link nav-link--data-and-statistics-phmsa-data-and-statistics" data-drupal-link-system-path="node/25631">Data and Statistics</a>
+              </li>
+                <li class="nav-item">
+                <a href="/incident-reporting" class="nav-link nav-link--incident-reporting" data-drupal-link-system-path="node/28211">Incident Reporting</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.npms.phmsa.dot.gov/" class="nav-link nav-link-https--wwwnpmsphmsadotgov-">National Pipeline Mapping System (NPMS)</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://portal.phmsa.dot.gov/" class="nav-link nav-link-https--portalphmsadotgov-">PHMSA Portal</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/offices/office-planning-analytics" class="nav-link nav-link--about-phmsa-offices-office-planning-analytics" data-drupal-link-system-path="node/25211">Planning and Analytics</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+  <nav aria-labelledby="block-mainresources2-menu" id="block-mainresources2" class="block block-menu navigation menu--main---resources-2">
+      
+  <h2 id="block-mainresources2-menu">Resource Library</h2>
+  
+
+        
+              <ul block="block-mainresources2" class="clearfix nav">
+                    <li class="nav-item">
+                <a href="/hazmat/erg/emergency-response-guidebook-erg" class="nav-link nav-link--hazmat-erg-emergency-response-guidebook-erg">Emergency Response Guidebook</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/civil-rights/environmental-justice" class="nav-link nav-link--about-phmsa-civil-rights-environmental-justice" data-drupal-link-system-path="node/25521">Environmental Justice</a>
+              </li>
+                <li class="nav-item">
+                <a href="/forms" class="nav-link nav-link--forms" data-drupal-link-system-path="node/25921">Forms</a>
+              </li>
+                <li class="nav-item">
+                <a href="/standards-rulemaking/hazmat/hazardous-materials-information-center" class="nav-link nav-link--standards-rulemaking-hazmat-hazardous-materials-information-center" data-drupal-link-system-path="node/27051">Hazardous Materials Information Center</a>
+              </li>
+                <li class="nav-item">
+                <a href="/national-preparedness/national-preparedness-response-exercise-program-prep" class="nav-link nav-link--national-preparedness-national-preparedness-response-exercise-program-prep" data-drupal-link-system-path="node/37336">National Preparedness for Response Exercise Program (PREP)</a>
+              </li>
+                <li class="nav-item">
+                <a href="/operator-resources/operator-resources-overview" class="nav-link nav-link--operator-resources-operator-resources-overview" data-drupal-link-system-path="node/28631">Operator Resources</a>
+              </li>
+                <li class="nav-item">
+                <a href="/standards-rulemaking/hazmat/phmsas-online-cfr-ocfr" class="nav-link nav-link--standards-rulemaking-hazmat-phmsas-online-cfr-ocfr" data-drupal-link-system-path="node/26976">PHMSA oCFR</a>
+              </li>
+                <li class="nav-item">
+                <a href="/technical-resources/pipeline/pipeline-technical-resources-overview" class="nav-link nav-link--technical-resources-pipeline-pipeline-technical-resources-overview" data-drupal-link-system-path="node/29691">Technical Resources</a>
+              </li>
+                <li class="nav-item">
+                <a href="/technical-resources/hazmat-technical-resources/technical-reports" class="nav-link nav-link--technical-resources-hazmat-technical-resources-technical-reports" data-drupal-link-system-path="node/27986">Technical Reports</a>
+              </li>
+                <li class="nav-item">
+                <a href="/transporting-infectious-substances/transporting-infectious-substances-overview" class="nav-link nav-link--transporting-infectious-substances-transporting-infectious-substances-overview" data-drupal-link-system-path="node/29131">Transporting Infectious Substances</a>
+              </li>
+                <li class="nav-item">
+                <a href="/lithiumbatteries" class="nav-link nav-link--lithiumbatteries" data-drupal-link-system-path="node/37051">Transporting Lithium Batteries</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </section>
+
+          </section></li></ul>
+    </div>
+  </div>
+
+
+          </div>
+                      </nav>
+      </div><!-- row -->
+</div><!-- container -->
+</header>
+
+    
+    <main id="main" class="main" role="main" aria-label="Site main">
+
+      
+      
+      
+      
+      <div id="main-wrapper" class="layout-main-wrapper clearfix">
+                  <div id="main-content" class="container">
+
+                            <div id="block-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+  
+    
+      <div class="content">
+      
+
+  <nav role="navigation" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+          <a href="/">Home</a>
+        </li>
+                        <li class="breadcrumb-item">
+          <a href="/technical-resources/pipeline/pipeline-technical-resources-overview">Technical Resources</a>
+        </li>
+                        <li class="breadcrumb-item">
+          <a href="/technical-resources/pipeline/pipeline-technical-resources-overview">Pipeline Technical Resources</a>
+        </li>
+                        <li class="breadcrumb-item">
+          <a href="/pipeline/liquified-natural-gas/liquefied-natural-gas-overview">Liquefied Natural Gas</a>
+        </li>
+              </ol>
+  </nav>
+
+    </div>
+  </div>
+
+
+            
+            <div class="row row-offcanvas row-offcanvas-left clearfix">
+
+                              <!-- Sidebar First Region -->
+                <div class="sidebar col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 order-first">
+                  <aside class="sidebar_first section" role="complementary">
+                    
+  <aside id="dot-region-view-mode--article" class="dot-region-view-mode dot-region-view-mode--article sidebar_first section" role="complementary">
+    <!-- Editorial Category Menu Starts -->
+          <div id="sidenav" class="sidenav">
+        <h1 class="sidenav-header text-white" id="nav-header">In This Section</h1>
+        <nav class="wrapper__sidenav dot_left_nav" role="navigation" aria-labelledby="nav-header">
+          
+            <div class="field field--name-field-editorial-category field--type-entity-reference field--label-hidden field__item">
+
+            <div class="field field--name-field-left-nav-menu field--type-entity-reference field--label-hidden field__item">
+              <ul class="clearfix nav">
+                    <li class="nav-item">
+                <a href="/technical-resources/pipeline/pipeline-technical-resources-overview" class="nav-link" data-drupal-link-system-path="node/29691">Pipeline Technical Resources</a>
+              </li>
+                <li class="nav-item">
+                <a href="/pipeline/liquified-natural-gas/liquefied-natural-gas-overview" class="nav-link" data-drupal-link-system-path="node/29696">Liquefied Natural Gas Overview</a>
+              </li>
+                <li class="nav-item">
+                <a href="/pipeline/liquified-natural-gas/lng-facility-siting" class="nav-link" data-drupal-link-system-path="node/29706">LNG Facility Siting</a>
+              </li>
+                <li class="nav-item">
+                <a href="/pipeline/liquified-natural-gas/lng-regulatory-documents" class="nav-link" data-drupal-link-system-path="node/29726">LNG Regulatory Documents</a>
+              </li>
+                <li class="nav-item">
+                <a href="/pipeline/liquified-natural-gas/lng-data-and-maps" class="nav-link" data-drupal-link-system-path="node/29736">LNG Data and Maps</a>
+              </li>
+                <li class="nav-item">
+                <a href="/pipeline/liquified-natural-gas/lng-community-awareness" class="nav-link" data-drupal-link-system-path="node/29741">LNG Community Awareness</a>
+              </li>
+                <li class="nav-item">
+                <a href="/pipeline/liquified-natural-gas/lng-operator-resources" class="nav-link" data-drupal-link-system-path="node/29746">LNG Operator Resources</a>
+              </li>
+        </ul>
+  
+
+</div>
+      
+</div>
+      
+        </nav>
+      </div>
+      <!-- Editorial Category Menu Ends -->
+   <div id="sidecontent" class="sidecontent js-complete">
+     <!-- Related Content Starts -->
+     <div class="wrapper__related_links">
+     
+        
+        
+        
+        
+        
+              </div>
+      <!-- Related Content Ends -->
+      <!-- Contact Info Block Starts -->
+      
+        <div class="card mb-5 clearfix">
+          <div class="card-body">
+                          <div class="wrapper__contact_info">
+                
+
+<div data-history-node-id="166" class="node node--type-contact-info node--view-mode-contact-block clearfix">
+  <address class="node__content clearfix">
+      <h2 class="sidebar__title pt-0">
+            <div class="field field--name-field-header field--type-string field--label-hidden field__item">Contact Us</div>
+      </h2>
+      <p>
+                          
+            </p><div class="field field--name-field-division field--type-string field--label-hidden field__item">Office of Pipeline Safety</div>
+      
+                    
+            <div class="field field--name-field-address field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="address-line1">U.S. Department of Transportation, Pipeline and Hazardous Materials Safety Administration</span><br>
+<span class="address-line2">1200 New Jersey Avenue, SE</span><br>
+<span class="locality">Washington</span>, <span class="administrative-area">DC</span> <span class="postal-code">20590</span><br>
+<span class="country">United States</span></p></div>
+      
+          <p></p>
+    <p>
+              <strong>Email:</strong><br><a href="mailto:phmsa.pipelinesafety@dot.gov" class="mailto" data-extlink="">phmsa.pipelinesafety@dot.gov<svg focusable="false" class="mailto" role="img" aria-label="(link sends email)" xmlns="http://www.w3.org/2000/svg" viewBox="0 10 70 20"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link sends email)</title><path d="M56 14H8c-1.1 0-2 0.9-2 2v32c0 1.1 0.9 2 2 2h48c1.1 0 2-0.9 2-2V16C58 14.9 57.1 14 56 14zM50.5 18L32 33.4 13.5 18H50.5zM10 46V20.3l20.7 17.3C31.1 37.8 31.5 38 32 38s0.9-0.2 1.3-0.5L54 20.3V46H10z"></path></svg></a><br>
+                    <strong>Phone:</strong> <a href="tel:202-366-4595" class="tel">202-366-4595<i class="fas fa-phone" title="(link calls phone number)"></i></a><br>
+                          <strong>Fax:</strong> <a href="fax:202-366-4566" class="fax">202-366-4566<i class="fas fa-fax" title="(link sends fax)"></i></a><br>
+                    <strong>Business Hours:</strong><br>9:00am-5:00pm ET, M-F<br>
+          </p>
+    <p>If you are deaf, hard of hearing, or have a speech disability, please dial 7-1-1 to access telecommunications relay services.</p>
+          </address>
+</div>
+
+              </div>
+            
+                      </div>
+        </div>
+
+            <!-- Contact Info Block Ends -->
+    </div>
+  </aside>
+
+
+                  </aside>
+                </div>
+                <!-- Main Content Region -->
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="content" role="main">
+                  <section class="section">
+                    <a id="main-content" tabindex="-1"></a>
+                      <div data-drupal-messages-fallback="" class="hidden"></div><div id="block-mainpagecontent" class="block block-system block-system-main-block">
+  
+    
+      <div class="content">
+      
+
+<article data-history-node-id="29716" class="node node--type-article node--view-mode-full content__core clearfix">
+  <div class="node__content mt-0 clearfix">
+        
+    
+
+    
+      <h1 class="page__title node__title mt-0"><span class="field field--name-title field--type-string field--label-hidden">LNG Safety</span>
+</h1>
+    
+
+    
+    
+          <div class="mb-4 clearfix">
+        
+        <p>LNG takes up 1/600<sup>th</sup>&nbsp;of the volume of the gaseous state of natural gas, but retains all of the energy potential.&nbsp; Thus, the energy potential of a specific volume of LNG is significantly greater than the same volume of natural gas in its gaseous state.&nbsp; The safety of LNG facilities is addressed through the inherent characteristics of LNG and through the design and operation of LNG facilities and transportation modes.</p><p>In land-based LNG facilities, impoundment structures around LNG tanks and pipelines are designed to control the spread of LNG if a release occurs. &nbsp;Fire and vapor suppression systems are installed to mitigate the consequences of a release. &nbsp;Gas detectors, fire detectors, and temperature sensors automatically activate firefighting and vapor suppression systems. In the event of a fire, water spray may be used for heat affected exposures, or high expansion foam may be used to reduce radiant heat impact on exposures. &nbsp;At some facilities vapor fences are installed to prevent vapors from extending onto adjacent properties. Vacuum jacketed pipe also provides an additional layer of protection in the event of a release of the inner pipe. Emergency shutdown devices activate when operational parameters extend beyond the normal range. The LNG facility operator must develop and follow detailed maintenance procedures to ensure the integrity of various safety systems.</p><p>Prior to commencing operations, the LNG facility operator must establish detailed procedures that specify the normal operating parameters for all equipment. When a piece of equipment is modified or replaced, all procedures must be reviewed and modified if necessary to assure the integrity of the system. All personnel must complete training in operations &amp; maintenance, security, and firefighting. The operator must coordinate with local officials and apprise them of the types of fire control equipment available within the facility. Additionally, Federal regulations require tight security for the facility, including controlled access, communications systems, enclosure monitoring, and patrols.</p><h2 class="ckeditor"><b>LNG SAFETY RESEARCH AND STUDIES</b></h2><p>PHMSA funds LNG research through PHMSA's Pipeline Safety Research and Development grants. LNG projects include:</p><ul><li><a href="http://primis.phmsa.dot.gov/matrix/PrjHome.rdm?prj=150" target="_self">DTRS56-04-T-0005, Modeling and Assessing a Spectrum of Accidental Fires and Risks in a LNG Facility</a></li><li><a href="http://primis.phmsa.dot.gov/matrix/PrjHome.rdm?prj=640" target="_self">DTPH5615T00005, Comparison of Exclusion Zone Calculations and Vapor Dispersion Modeling Tools</a></li><li><a href="http://primis.phmsa.dot.gov/matrix/PrjHome.rdm?prj=642" target="_self">DTPH5615T00008, Statistical Review and Gap Analysis of LNG Failure Rate Table</a></li></ul><p>To view all of PHMSA’s R&amp;D projects go to&nbsp;<a href="http://primis.phmsa.dot.gov/matrix/" target="_self">http://primis.phmsa.dot.gov/matrix/</a>.</p><h2 class="ckeditor"><b>Historical Review of Vapor Cloud Explosions (VCE)</b></h2><p>Due to the recent abundance of domestic shale gas, LNG export terminals are now being constructed that liquefy vast volumes of natural gas. These facilities require significantly greater quantities of refrigerants to liquefy the natural gas than the amount typically used at a peak shavers or small scale facilities. Most refrigerants gases and blends used at the export facilities contain ethane, propane, ethylene, and iso-butane and are referred to as heavy hydrocarbons. These gases are similar to gases that have resulted in VCEs at petrochemical facilities. However, PHMSA is not aware of any reliable reports of explosions of outdoor vapor clouds of natural gas and does not believe that there is a risk of vapor cloud explosions (VCEs) due to a release of methane in an open area.</p><p>PHMSA sponsored the&nbsp;<i>Review of Vapour Cloud Explosion Incidents</i>&nbsp;report with the primary objective to improve the scientific understanding of vapor cloud development and explosion in order to more reliably assess hazards at large Liquid Natural Gas (LNG) export facilities. It is important to note that today’s LNG export facilities have many layers of protection that were not in place at the facilities in the report. Many lessons learned from these events have resulted in safety measures that are required in LNG facilities today. The aim of reviewing the particular incidents in this report is the extensive forensic evidence available that provides the information needed to study how the vapor cloud formed and ignited, the amount of overpressure exerted, and other information about the mechanism of VCE.</p><h2 class="ckeditor"><b>Other Studies</b></h2><p>Multiple studies have been performed over time regarding the safety and risks of LNG.&nbsp; Many of these focused on the safety of LNG tankers (ocean going ships) since they transport large volumes of LNG and enter ocean ports that may be in close proximity to populated areas. &nbsp;One example of such a study is found in the&nbsp;<a href="http://energy.gov/sites/prod/files/2013/03/f0/DOE_LNG_Safety_Research_Report_To_Congre.pdf" target="_self">U.S. Department of Energy (DOE) Report to Congress in 2012 on Liquefied Natural Gas Safety Research</a>. &nbsp;Others, such as the&nbsp;<a href="http://research.policyarchive.org/19859.pdf" target="_blank" class="ext" data-extlink="" rel="noopener">Liquefied Natural Gas (LNG) Import Terminals: Siting, Safety, and Regulation<svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg></a>&nbsp;study from the Congressional Research Service, focus attention on the safety of LNG terminals and infrastructure.&nbsp; These and other reports address the physical hazards of LNG, such as pool fires, flammable vapor clouds, fire, and cryogenic impacts. Some reports also address ship safety, terminal safety, liquefaction facility safety, and security.&nbsp;&nbsp;<b>&nbsp;</b></p>
+      </div>
+      
+    
+    
+    <aside class="subcontent section w-100 clearfix" role="complementary">
+      <!-- This block where the sidecontent is located @media (max-width:800px) -->
+    </aside>
+
+  </div>
+</article>
+
+    </div>
+  </div>
+
+
+                  </section>
+                  <section class="post-content container">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              
+              <!-- Sub Content Region -->
+                          </div>
+          </div>
+              </div>
+
+      
+          </main>
+
+     <footer class="site-footer">
+      <div class="container">
+              <div class="site-footer__top">
+            <section class="region region-footer-left">
+    <div id="block-footercontactinfo" class="block block-fixed-block-content block-fixed-block-contentfooter-contact-info">
+  
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>U.S. DEPARTMENT OF TRANSPORTATION</p>
+
+<p><strong>Pipeline and Hazardous Materials Safety Administration</strong></p>
+
+<p>1200 NEW JERSEY AVENUE, SE</p>
+
+<p>WASHINGTON, DC 20590</p>
+
+<p><a href="tel:202-366-4433">202-366-4433</a></p>
+
+<p>HAZMAT Registration Help Desk:&nbsp;<a href="tel:202-366-4109">202-366-4109</a></p>
+
+<p>Hazardous Materials Information Center: <a href="tel:1-800-467-4922">1-800-467-4922</a></p>
+</div>
+      
+    </div>
+  </div>
+
+  </section>
+
+            <section class="region region-footer-right">
+    <div id="block-phmsa-footer-social" class="block block-fixed-block-content block-fixed-block-contentphmsa-footer-social">
+  
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a class="subscribe-button" href="https://service.govdelivery.com/accounts/USDOTPHMSA/subscriber/new">Subscribe to email updates</a></p>
+
+<ul class="footer-social">
+	<li><a href="https://twitter.com/PHMSA_DOT"><span class="fontawesome-icon-inline"><i class="fa-brands fa-x-twitter"></i></span></a></li>
+	<li><a href="https://www.youtube.com/user/PHMSADOT"><span class="fontawesome-icon-inline"><i class="fa-brands fa-youtube"></i></span></a></li>
+	<li><a href="https://www.linkedin.com/company/pipeline-and-hazardous-materials-safety-administration"><span class="fontawesome-icon-inline"><i class="fa-brands fa-linkedin-in" aria-label="linkedin"></i></span></a></li>
+</ul>
+</div>
+      
+    </div>
+  </div>
+
+  </section>
+
+        </div>
+                    <div class="site-footer__bottom">
+            <section class="region region-footer-first">
+      <nav aria-labelledby="block-footernav1-menu" id="block-footernav1" class="block block-menu navigation menu--footer-nav-1">
+      
+  <h2 id="block-footernav1-menu">About</h2>
+  
+
+        
+              <ul block="block-footernav1" class="clearfix nav">
+                    <li class="nav-item">
+                <a href="/about-phmsa/phmsas-mission" class="nav-link nav-link--about-phmsa-phmsas-mission" data-drupal-link-system-path="node/29826">About PHMSA</a>
+              </li>
+                <li class="nav-item">
+                <a href="/regulations-and-compliance" class="nav-link nav-link--regulations-and-compliance" data-drupal-link-system-path="node/25911">Regulations and Compliance</a>
+              </li>
+                <li class="nav-item">
+                <a href="/resources" class="nav-link nav-link--resources" data-drupal-link-system-path="node/25916">Resources</a>
+              </li>
+                <li class="nav-item">
+                <a href="/safety" class="nav-link nav-link--safety" data-drupal-link-system-path="node/25901">Safety</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </section>
+
+            <section class="region region-footer-second">
+      <nav aria-labelledby="block-footernav2-menu" id="block-footernav2" class="block block-menu navigation menu--footer-nav-2">
+      
+  <h2 id="block-footernav2-menu">PHMSA Resources</h2>
+  
+
+        
+              <ul block="block-footernav2" class="clearfix nav">
+                    <li class="nav-item">
+                <a href="/about-phmsa/offices/office-civil-rights" class="nav-link nav-link--about-phmsa-offices-office-civil-rights" data-drupal-link-system-path="node/25171">PHMSA Civil Rights</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/web-policies" class="nav-link nav-link--about-phmsa-web-policies" data-drupal-link-system-path="node/28971">PHMSA Web Policies</a>
+              </li>
+                <li class="nav-item">
+                <a href="/about-phmsa/accessibility" class="nav-link nav-link--about-phmsa-accessibility" data-drupal-link-system-path="node/28686">Accessibility</a>
+              </li>
+                <li class="nav-item">
+                <a href="/careers" class="nav-link nav-link--careers" data-drupal-link-system-path="node/26296">Careers</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </section>
+
+            <section class="region region-footer-third">
+      <nav aria-labelledby="block-footernav3-menu" id="block-footernav3" class="block block-menu navigation menu--footer-nav-3">
+      
+  <h2 id="block-footernav3-menu">Policies, Rights, Legal</h2>
+  
+
+        
+              <ul block="block-footernav3" class="clearfix nav">
+                    <li class="nav-item">
+                <a href="https://www.transportation.gov/about" class="nav-link nav-link-https--wwwtransportationgov-about">About DOT</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.transportation.gov/budget/dot-budget-and-performance" class="nav-link nav-link-https--wwwtransportationgov-budget-dot-budget-and-performance">Budget and Performance</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.civilrights.dot.gov/" class="nav-link nav-link-https--wwwcivilrightsdotgov-">Civil Rights</a>
+              </li>
+                <li class="nav-item">
+                <a href="/foia" class="nav-link nav-link--foia" data-drupal-link-system-path="node/26576">FOIA</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.transportation.gov/dot-information-dissemination-quality-guidelines" class="nav-link nav-link-https--wwwtransportationgov-dot-information-dissemination-quality-guidelines">Information Quality</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.civilrights.dot.gov/civil-rights-awareness-enforcement/employment-related/affirmative-employment/no-fear-act" class="nav-link nav-link-https--wwwcivilrightsdotgov-civil-rights-awareness-enforcement-employment-related-affirmative-employment-no-fear-act">No FEAR Act</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.oig.dot.gov/" class="nav-link nav-link-https--wwwoigdotgov-">Office of Inspector General</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.usa.gov/" class="nav-link nav-link-https--wwwusagov-">USA.gov</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.transportation.gov/web-policies" class="nav-link nav-link-https--wwwtransportationgov-web-policies">Web Policies and Notices</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.transportation.gov/web-standards" class="nav-link nav-link-https--wwwtransportationgov-web-standards">Web Standards</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </section>
+
+          
+          
+        </div>
+          </div>
+  </footer>
+
+  </div>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/29716","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"account":"UA-18660041-1","trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"(.\\gov)|(.\\mil)|(addthis.com)|(usmma.edu)|(medium.com)|(facebook.com)|(twitter.com)|(flickr.com)|(linkedin.com)|(youtube.com)|(instagram.com)|(medium.com)|(greatlakes-seaway.com)|(afloatjobs.vet)","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"collapsiblock":{"active_pages":false,"slide_speed":200,"cookie_lifetime":null},"user":{"uid":0,"permissionsHash":"a7be7cb2140db60c8e9f6ab5429a804a8659654498ccb19a8ba0058fe8d3f24c"}}</script>
+<script src="/sites/phmsa.dot.gov/files/js/js_NiRG7obTkjOTSmR5d6xpDVm7Up-6OshTsNUA38FIRDU.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=phmsa&amp;include=eJxtkVFuAyEMRC9Elp-q10EGvCyKwciGpHv7ombTqNv8GM3DNqMBv7qAWzNSdBE1SG49c7X4nrugahJzInRQgfaeg9ozMA0EkkDb1CXJ0Z704pm7zgfah9FdOxbrQdEUjkA2EXugi_adck0HXLl2uKNyQfd5MG5YnUJVF2I1kbsLRc_jT_x3wa8B50Ek83mqbUXhDGcm87zaKKMBLYc0gYmgafbE4WoDC87OBjW642YmQ2Qf7PJk_y1Ujm-oF4QYZBRvBvVcsI7H5-hLb1D8kITyQryuAeoNdNEAhLmaW8a72p-6zPwG4TeiYchS"></script>
+<script src="https://unpkg.com/slide-element@2.3.1/dist/index.umd.js"></script>
+<script src="/sites/phmsa.dot.gov/files/js/js_OuSty8HUmYWwKBPDLnICzjYjvZ_TEJ97oWqav3JTpxw.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=phmsa&amp;include=eJxtkVFuAyEMRC9Elp-q10EGvCyKwciGpHv7ombTqNv8GM3DNqMBv7qAWzNSdBE1SG49c7X4nrugahJzInRQgfaeg9ozMA0EkkDb1CXJ0Z704pm7zgfah9FdOxbrQdEUjkA2EXugi_adck0HXLl2uKNyQfd5MG5YnUJVF2I1kbsLRc_jT_x3wa8B50Ek83mqbUXhDGcm87zaKKMBLYc0gYmgafbE4WoDC87OBjW642YmQ2Qf7PJk_y1Ujm-oF4QYZBRvBvVcsI7H5-hLb1D8kITyQryuAeoNdNEAhLmaW8a72p-6zPwG4TeiYchS"></script>
+
+  <noscript><img src="https://www.phmsa.dot.gov/akam/13/pixel_5e16ccf9?a=dD02ZDU0MGU0MDA2NmRmMmNhZWE0Nzg5ODZkYTVjNGIxNDUxZDgyYTFiJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript>
+
+<button data-ultimenu-button="#ultimenu-main" class="button button--ultimenu" aria-label="Menu" value="Menu"><span class="bars">Menu</span></button></body></html>

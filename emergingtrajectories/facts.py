@@ -140,6 +140,114 @@ class FactBaseFileCache:
         self.cache = self.load_cache()
 
     # TODO: this function is a new one compared to the KnowledgeBaseFileCache
+    # TODO: refactor this + code where we run one query
+    def summarize_new_info_multiple_queries(
+        self,
+        statement,
+        chatbot,
+        google_api_key,
+        google_search_id,
+        google_search_queries,
+        fileout=None,
+    ) -> str:
+
+        self.google_api_key = google_api_key
+        self.google_search_id = google_search_id
+        self.google_search_queries = google_search_queries
+
+        webagent = WebSearchAgent(api_key=self.google_api_key)
+
+        scraped_content = ""
+        added_new_content = False
+
+        # We store the accessed resources and log access only when we successfully submit a forecast. If anything fails, we'll review those resources again during the next forecasting attempt.
+        accessed_resources = []
+
+        ctr = 0
+        ctr_to_source = {}
+
+        for google_search_query in self.google_search_queries:
+
+            results = webagent.search_google(
+                query=google_search_query,
+                custom_search_engine_id=self.google_search_id,
+                num=_DEFAULT_NUM_SEARCH_RESULTS,
+            )
+
+            added_new_content = False
+
+            for result in results:
+                if not self.in_cache(result.url):
+                    ctr += 1
+                    added_new_content = True
+
+                    try:
+                        page_content = self.get(result.url)
+                        print(page_content)
+                    except Exception as e:
+                        print(f"Failed to get content from {result.url}\n{e}")
+                        page_content = ""
+
+                    accessed_resources.append(result.url)
+                    # knowledge_base.log_access(result.url)
+
+                    scraped_content += (
+                        f"{page_content}\n\n--- SOURCE: {ctr}-------------------\n\n"
+                    )
+                    ctr_to_source[ctr] = result.url
+
+        # We also check the knowledge base for content that was added manually.
+        unaccessed_uris = self.get_unaccessed_content()
+        for ua in unaccessed_uris:
+            added_new_content = True
+            ctr += 1
+            page_content = self.get(ua)
+
+            accessed_resources.append(ua)
+            # knowledge_base.log_access(ua)
+
+            scraped_content += (
+                f"{page_content}\n\n--- SOURCE: {ctr}-------------------\n\n"
+            )
+            ctr_to_source[ctr] = ua
+
+        if not added_new_content:
+            print("No new content added to the forecast.")
+            return None
+
+        the_date = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+
+        prompt_template = ChatPrompt(
+            [
+                {"role": "system", "content": facts_base_system_prompt},
+                {"role": "user", "content": facts_base_user_prompt},
+            ]
+        )
+
+        chatbot.messages = prompt_template.fill(
+            statement_title=statement.title,
+            statement_description=statement.description,
+            statement_fill_in_the_blank=statement.fill_in_the_blank,
+            scraped_content=scraped_content,
+            the_date=the_date,
+        )
+
+        assistant_analysis = chatbot.resend()
+        assistant_analysis_sourced = clean_citations(assistant_analysis, ctr_to_source)
+
+        print("\n\n\n")
+        print(assistant_analysis_sourced)
+
+        if fileout is not None:
+            with open(fileout, "w") as w:
+                w.write(assistant_analysis_sourced)
+
+        for ar in accessed_resources:
+            self.log_access(ar)
+
+        return assistant_analysis_sourced
+
+    # TODO: this function is a new one compared to the KnowledgeBaseFileCache
     def summarize_new_info(
         self,
         statement,

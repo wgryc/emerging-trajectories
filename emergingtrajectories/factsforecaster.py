@@ -78,6 +78,7 @@ class FactForecastingAgent(object):
         return self.chatbot
 
     # TODO: we can do much better at disaggregating all these functions. Currently just want this to work.
+    # TODO: Google query can be a list of queries, not just a single query.
     def create_forecast(
         self,
         statement: Statement,
@@ -93,13 +94,26 @@ class FactForecastingAgent(object):
         fact_llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-0125-preview")
         fact_chatbot = ChatBot(fact_llm)
 
-        content = self.factbase.summarize_new_info(
-            statement,
-            fact_chatbot,
-            google_api_key,
-            google_search_id,
-            google_search_query,
-        )
+        if isinstance(google_search_query, str):
+            content = self.factbase.summarize_new_info(
+                statement,
+                fact_chatbot,
+                google_api_key,
+                google_search_id,
+                google_search_query,
+            )
+        elif isinstance(google_search_query, list):
+            content = self.factbase.summarize_new_info_multiple_queries(
+                statement,
+                fact_chatbot,
+                google_api_key,
+                google_search_id,
+                google_search_query,
+            )
+        else:
+            raise ValueError(
+                "google_search_query must be a string or a list of strings"
+            )
 
         if content is None:
             print("No new content added to the forecast.")
@@ -179,13 +193,26 @@ class FactForecastingAgent(object):
         fact_llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-0125-preview")
         fact_chatbot = ChatBot(fact_llm)
 
-        content = self.factbase.summarize_new_info(
-            forecast.statement,
-            fact_chatbot,
-            google_api_key,
-            google_search_id,
-            google_search_query,
-        )
+        if isinstance(google_search_query, str):
+            content = self.factbase.summarize_new_info(
+                forecast.statement,
+                fact_chatbot,
+                google_api_key,
+                google_search_id,
+                google_search_query,
+            )
+        elif isinstance(google_search_query, list):
+            content = self.factbase.summarize_new_info_multiple_queries(
+                forecast.statement,
+                fact_chatbot,
+                google_api_key,
+                google_search_id,
+                google_search_query,
+            )
+        else:
+            raise ValueError(
+                "google_search_query must be a string or a list of strings"
+            )
 
         if content is None:
             print("No new content added to the forecast.")

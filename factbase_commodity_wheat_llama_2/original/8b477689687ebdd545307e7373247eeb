@@ -1,0 +1,1226 @@
+<!DOCTYPE html><html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#" class=" js"><head class="at-element-marker">
+    <meta charset="utf-8"><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-KLFZ2BW1XE&amp;cx=c&amp;_slc=1"></script><script src="https://connect.facebook.net/signals/config/1458892451075570?v=2.9.150&amp;r=stable&amp;domain=blogs.worldbank.org&amp;hme=8b8eb2472f555e54a8b57f2b720f9bd3b1bc6aed031525376dd772ba51107995&amp;ex_m=63%2C107%2C95%2C99%2C54%2C3%2C89%2C62%2C14%2C87%2C80%2C45%2C47%2C153%2C156%2C167%2C163%2C164%2C166%2C26%2C90%2C46%2C69%2C165%2C148%2C151%2C160%2C161%2C168%2C116%2C13%2C44%2C172%2C171%2C118%2C16%2C30%2C33%2C1%2C37%2C58%2C59%2C60%2C64%2C84%2C15%2C12%2C86%2C83%2C82%2C96%2C98%2C32%2C97%2C27%2C23%2C149%2C152%2C125%2C25%2C9%2C10%2C11%2C5%2C6%2C22%2C19%2C20%2C50%2C55%2C57%2C67%2C91%2C24%2C68%2C8%2C7%2C72%2C42%2C18%2C93%2C92%2C17%2C74%2C79%2C41%2C40%2C78%2C34%2C36%2C77%2C49%2C75%2C29%2C38%2C66%2C0%2C85%2C4%2C81%2C73%2C76%2C2%2C31%2C56%2C35%2C94%2C39%2C71%2C61%2C100%2C53%2C52%2C28%2C88%2C51%2C48%2C43%2C70%2C65%2C21%2C101" async=""></script><script src="https://connect.facebook.net/en_US/sdk.js?hash=7ac0451526ace53baff140aa2fe560e2" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-NW7137DMB8&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://static.ads-twitter.com/uwt.js"></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.6"></script><script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.Oh6mNxd5OYM.O/m=client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-goHQwcBQdTSfIcaYi5vOvnb-P8g/cb=gapi.loaded_0?le=scs" async=""></script><script src="/libraries/lazysizes/lazysizes.min.js" async=""></script><script src="https://www.googletagmanager.com/gtm.js?id=GTM-WPKQQ38" async=""></script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1120185930",accountID:"3920901",trustKey:"66686",xpid:"Vw8FUV9TCRABVFJVAQcFU1IF",licenseKey:"NRJS-5604b32d0fc3bba7cc4",applicationID:"1037662564"};;/*! For license information please see nr-loader-spa-1.253.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>x,OP:()=>N,lF:()=>C,Yu:()=>w,Dg:()=>v,CX:()=>c,GE:()=>E,sU:()=>O});var n=r(8632),o=r(9567);const i={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,o.D)(t,i);const r=(0,n.ek)(e);r&&(r.info=a[e])}const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:u.oD,inactiveMs:u.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,o.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),o=0;o<n.length-1;o++)if("object"!=typeof(r=r[n[o]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function x(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function E(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,o.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const w=(0,n.mF)().o;var _=r(385),S=r(6818);const T={buildEnv:S.Re,customTransaction:void 0,disabled:!1,distMethod:S.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(_._A?.performance?.timeOrigin||_._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+_._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof _._A.XMLHttpRequest?.prototype?.addEventListener,version:S.q4,denyList:void 0},R={};function N(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!R[e])throw new Error("Runtime for ".concat(e," was never set"));return R[e]}function O(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");R[e]=(0,o.D)(t,T);const r=(0,n.ek)(e);r&&(r.runtime=R[e])}function C(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>o});var n=r(50);function o(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),i=0===Object.keys(r).length?e:r;for(let a in i)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=o(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>o,gF:()=>i,lF:()=>a,q4:()=>n});const n="1.253.0",o="PROD",i="CDN",a="2.0.0-alpha.11"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>c,IF:()=>l,LW:()=>a,Nk:()=>h,Tt:()=>d,_A:()=>i,cv:()=>p,iS:()=>s,il:()=>n,ux:()=>u,v6:()=>o,w1:()=>f});const n="undefined"!=typeof window&&!!window.document,o="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),i=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a="complete"===i?.document?.readyState,s=Boolean("hidden"===i?.document?.visibilityState),c=""+i?.location,d=/iPad|iPhone|iPod/.test(i.navigator?.userAgent),u=d&&"undefined"==typeof SharedWorker,l=(()=>{const e=i.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Boolean(n&&window.document.documentMode),h=!!i.navigator?.sendBeacon,p=Math.floor(i?.performance?.timeOrigin||i?.performance?.timing?.navigationStart||Date.now())},9907:(e,t,r)=>{"use strict";r.d(t,{A:()=>n});class n{constructor(e){this.contextId=e}}},4938:(e,t,r)=>{"use strict";r.d(t,{v:()=>a});var n=r(8632),o=r(3117),i=r(9907);class a{static contextId="nr@context:".concat(o.a);static contextOriginalId="nr@original:".concat(o.a);static contextWrappedId="nr@wrapped:".concat(a.contextId);static getObservationContextByAgentIdentifier(e){const t=(0,n.fP)();return Object.keys(t?.initializedAgents||{}).indexOf(e)>-1?t.initializedAgents[e].observationContext:void 0}#e=new WeakMap;getCreateContext(e){return this.#e.has(e)||this.#e.set(e,new i.A),this.#e.get(e)}setContext(e,t){return this.#e.set(e,t),this.#e.get(e)}}},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>i});var n=r(50);const o={agentIdentifier:"",ee:void 0};class i{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,o),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(o).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>u,R:()=>c});var n=r(2177),o=r(1284),i=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(d(e),!e||!s[e].get(t)||r)return c(t);s[e].get(t).staged=!0;const a=[...s[e]];function c(t){const r=e?n.ee.get(e):n.ee,a=i.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,o.D)(c,(function(e,t){(0,o.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}a.every((e=>{let[t,r]=e;return r.staged}))&&(a.sort(((e,t)=>e[1].priority-t[1].priority)),a.forEach((t=>{let[r]=t;s[e].delete(r),c(r)})))}function l(e,t){var r=e[1];(0,o.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var o=r[1],i=e[3],a=e[2];o.apply(i,a)}}))}},2177:(e,t,r)=>{"use strict";r.d(t,{ee:()=>c});var n=r(8632),o=r(2210),i=r(234),a=r(9907),s=r(4938);const c=function e(t,r){var n={},d={},l={},f=!1;try{f=16===r.length&&(0,i.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var o=0;o<r.length;o++)r[o]===t&&r.splice(o,1)},emit:function(e,r,n,o,i){!1!==i&&(i=!0);if(c.aborted&&!o)return;t&&i&&t.emit(e,r,n);for(var a=p(n),s=m(e),u=s.length,l=0;l<u;l++)s[l].apply(a,r);var f=b()[d[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,o]=e;d[o]=t,t in r||(r[t]=[])}))},abort:u,aborted:!1,isBuffering:function(e){return!!b()[d[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{},observationContextManager:null};return h;function p(e){return e&&e instanceof a.A?e:e?(0,o.X)(e,s.v.contextId,(()=>h.observationContextManager?h.observationContextManager.getCreateContext(e):new a.A(s.v.contextId))):h.observationContextManager?h.observationContextManager.getCreateContext({}):new a.A(s.v.contextId)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){const r=l[t]=l[t]||e(h,t);return!r.observationContextManager&&h.observationContextManager&&(r.observationContextManager=h.observationContextManager),r}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function u(){c.aborted=!0,Object.keys(c.backlog).forEach((e=>{delete c.backlog[e]}))}d.ee||(d.ee=c)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>o});var n=r(2177).ee.get("handle");function o(e,t,r,o,i){i?(i.buffer([e],o),i.emit(e,t,r)):(n.buffer([e],o),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=r(5546);i.on=a;var o=i.handlers={};function i(e,t,r,i){a(i||n.E,o,e,t,r)}function a(e,t,r,o,i){i||(i="feature"),e||(e=n.E);var a=t[i]=t[i]||{};(a[r]=a[r]||[]).push([e,o])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let o=!1,i=!1;try{const e={get passive(){return o=!0,!1},get signal(){return i=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return o||i?{capture:!!e,passive:o,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>d,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),o.split("").map((e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,o=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(i(r,o++).toString(16));return a.join("")}function c(){return s(16)}function d(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>a,IK:()=>d,K4:()=>o,oD:()=>i,uT:()=>c,wO:()=>s});const n="NRBA",o="SESSION",i=144e5,a=18e5,s={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>o});var n=r(385);function o(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>u,T:()=>l});var n=r(2177),o=r(5546),i=r(3325),a=r(385);const s="newrelic";const c={stn:[i.D.sessionTrace],err:[i.D.jserrors,i.D.metrics],ins:[i.D.pageAction],spa:[i.D.spa,i.D.softNav],sr:[i.D.sessionReplay,i.D.sessionTrace]},d=new Set;function u(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(d.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,o.p)("feat-"+t,[],void 0,e,r):(0,o.p)("block-"+t,[],void 0,e,r),(0,o.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,o.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,o.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),d.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=Object.prototype.hasOwnProperty;function o(e,t,r){if(n.call(e,t))return e[t];var o=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:o,writable:!0,enumerable:!1}),o}catch(e){}return e[t]=o,o}},7872:(e,t,r)=>{"use strict";function n(e){var t=this;let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:500,n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};const o=n?.leading||!1;let i;return function(){for(var n=arguments.length,a=new Array(n),s=0;s<n;s++)a[s]=arguments[s];o&&void 0===i&&(e.apply(t,a),i=setTimeout((()=>{i=clearTimeout(i)}),r)),o||(clearTimeout(i),i=setTimeout((()=>{e.apply(t,a)}),r))}}function o(e){var t=this;let r=!1;return function(){if(!r){r=!0;for(var n=arguments.length,o=new Array(n),i=0;i<n;i++)o[i]=arguments[i];e.apply(t,o)}}}r.d(t,{D:()=>n,Z:()=>o})},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>i});var n=r(2177);const o=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function i(e){try{return JSON.stringify(e,o())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>i});var n=r(3239);function o(){return"undefined"==typeof document||"complete"===document.readyState}function i(e,t){if(o())return e();(0,n.bP)("load",e,t)}function a(e){if(o())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>u,ce:()=>i,ek:()=>d,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),o=r(385);const i={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return o._A.NREUM||(o._A.NREUM={}),void 0===o._A.newrelic&&(o._A.newrelic=o._A.NREUM),o._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:o._A.setTimeout,SI:o._A.setImmediate,CT:o._A.clearTimeout,XHR:o._A.XMLHttpRequest,REQ:o._A.Request,EV:o._A.Event,PR:o._A.Promise,MO:o._A.MutationObserver,FETCH:o._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function d(e){let t=a();return t.initializedAgents?.[e]}function u(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:i.beacon,errorBeacon:i.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>o});var n=r(3239);function o(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,o=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,o)}},7806:(e,t,r)=>{"use strict";r.d(t,{em:()=>m,u5:()=>S,QU:()=>N,_L:()=>I,Gm:()=>j,Lg:()=>M,BV:()=>V,Kf:()=>K});var n=r(2177),o=r(4938),i=Object.prototype.hasOwnProperty,a=!1;function s(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,o,i){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,o,c,i))}},r.flag=o.v.contextOriginalId,r;function r(t,r,n,a,u){return d(t)?t:(r||(r=""),nrWrapper[o.v.contextOriginalId]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){c([e],r)}for(var n in e)i.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,i,d,l;try{i=this,o=[...arguments],d="function"==typeof n?n(o,i):n||{}}catch(t){c([t,"",[o,i,a],d],e)}s(r+"start",[o,i,a],d,u);try{return l=t.apply(i,o)}catch(e){throw s(r+"err",[o,i,e],d,u),e}finally{s(r+"end",[o,i,l],d,u)}}}function s(r,n,o,i){if(!a||t){var s=a;a=!0;try{e.emit(r,n,o,t,i)}catch(t){c([t,r,n,o],e)}a=s}}}function c(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o.v.contextOriginalId])}var u=r(2210),l=r(385);const f={},h=l._A.XMLHttpRequest,p="addEventListener",g="removeEventListener";function m(e){var t=function(e){return(e||n.ee).get("events")}(e);if(f[t.debugId]++)return t;f[t.debugId]=1;var r=s(t,!0);function i(e){r.inPlace(e,[p,g],"-",a)}function a(e,t){return e[1]}return"getPrototypeOf"in Object&&(l.il&&v(document,i),v(l._A,i),v(h.prototype,i)),t.on(p+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,u.X)(n,o.v.contextWrappedId,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(g+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function v(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,p);)r=Object.getPrototypeOf(r);for(var n=arguments.length,o=new Array(n>2?n-2:0),i=2;i<n;i++)o[i-2]=arguments[i];r&&t(r,...o)}var b="fetch-",y=b+"body-",A=["arrayBuffer","blob","json","text","formData"],x=l._A.Request,E=l._A.Response,w="prototype";const _={};function S(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(x&&E&&l._A.fetch))return t;if(_[t.debugId]++)return t;function r(e,r,n){var i=e[r];"function"==typeof i&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(n+"before-start",[r],a),a[o.v.contextId]&&a[o.v.contextId].dt&&(e=a[o.v.contextId].dt);var s=i.apply(this,r);return t.emit(n+"start",[r,e],s),s.then((function(e){return t.emit(n+"end",[null,e],s),e}),(function(e){throw t.emit(n+"end",[e],s),e}))})}return _[t.debugId]=1,A.forEach((e=>{r(x[w],e,y),r(E[w],e,y)})),r(l._A,"fetch",b),t.on(b+"end",(function(e,r){var n=this;if(r){var o=r.headers.get("content-length");null!==o&&(n.rxSize=o),t.emit(b+"done",[null,r],n)}else t.emit(b+"done",[e],n)})),t}const T={},R=["pushState","replaceState"];function N(e){const t=function(e){return(e||n.ee).get("history")}(e);return!l.il||T[t.debugId]++||(T[t.debugId]=1,s(t).inPlace(window.history,R,"-")),t}var O=r(3239);const C={},D=["appendChild","insertBefore","replaceChild"];function I(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!l.il||C[t.debugId])return t;C[t.debugId]=!0;var r=s(t),o=/[?&](?:callback|cb)=([^&#]+)/,i=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function c(e,t){if(!e)return t;const r=e.match(a),n=r[1];return c(r[3],t[n])}return r.inPlace(Node.prototype,D,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,s=a.match(o),s?s[1]:null);var a,s;if(!n)return;var d=function(e){var t=e.match(i);if(t&&t.length>=3)return{key:t[2],parent:c(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof d.parent[d.key])return;var u={};function l(){t.emit("jsonp-end",[],u),e.removeEventListener("load",l,(0,O.m$)(!1)),e.removeEventListener("error",f,(0,O.m$)(!1))}function f(){t.emit("jsonp-error",[],u),t.emit("jsonp-end",[],u),e.removeEventListener("load",l,(0,O.m$)(!1)),e.removeEventListener("error",f,(0,O.m$)(!1))}r.inPlace(d.parent,[d.key],"cb-",u),e.addEventListener("load",l,(0,O.m$)(!1)),e.addEventListener("error",f,(0,O.m$)(!1)),t.emit("new-jsonp",[e.src],u)}(e[0])})),t}const P={};function j(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!l.il||P[t.debugId])return t;P[t.debugId]=!0;var r=s(t),o=l._A.MutationObserver;return o&&(window.MutationObserver=function(e){return this instanceof o?new o(r(e,"fn-")):o.apply(this,arguments)},MutationObserver.prototype=o.prototype),t}const k={};function M(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(k[t.debugId])return t;k[t.debugId]=!0;var r=t.context,i=s(t),a=l._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}l._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let o=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const i=n.apply(this,arguments);return i;function a(e){return function(){t.emit("propagate",[null,!o],i,!1,!1),o=o||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const d=n.apply(this,s);return o.nextPromise=d,t.emit("propagate",[e,!0],d,!1,!1),d},a.prototype.then[o.v.contextOriginalId]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const H={},L="setTimeout",z="setInterval",U="clearTimeout",F="-start",B="-",q=[L,"setImmediate",z,U,"clearImmediate"];function V(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(H[t.debugId]++)return t;H[t.debugId]=1;var r=s(t);return r.inPlace(l._A,q.slice(0,2),L+B),r.inPlace(l._A,q.slice(2,3),z+B),r.inPlace(l._A,q.slice(3),U+B),t.on(z+F,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(L+F,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var G=r(50);const Z={},W=["open","send"];function K(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(Z[r.debugId]++)return r;Z[r.debugId]=1,m(t);var o=s(r),i=l._A.XMLHttpRequest,a=l._A.MutationObserver,c=l._A.Promise,d=l._A.setInterval,u="readystatechange",f=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=l._A.XMLHttpRequest=function(e){const t=new i(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(u,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),o.inPlace(e,f,"fn-",x)}),(0,O.m$)(!1))}catch(e){(0,G.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){o.inPlace(t,["onreadystatechange"],"fn-",x)}if(function(e,t){for(var r in e)t[r]=e[r]}(i,p),p.prototype=i.prototype,o.inPlace(p.prototype,W,"-xhr-",x),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(v?v.then(A):d?d(A):(b=-b,y.data=b))}(t)})),r.on("open-xhr-start",g),a){var v=c&&c.resolve();if(!d&&!c){var b=1,y=document.createTextNode(b);new a(A).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===u||A()}));function A(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function x(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>i,mY:()=>o,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,o="sm",i="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{Ef:()=>i,J0:()=>f,Mi:()=>l,Vb:()=>a,Ye:()=>c,fm:()=>d,i9:()=>s,t9:()=>o,u0:()=>u});var n=r(7056);const o=r(3325).D.sessionReplay,i={RECORD:"recordReplay",PAUSE:"pauseReplay"},a=.12,s={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},c=1e6,d=64e3,u={[n.IK.ERROR]:15e3,[n.IK.FULL]:3e5,[n.IK.OFF]:0},l={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},f=5e3},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>o,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>d,FN_START:()=>c,PUSH_STATE:()=>u,RESOURCE:()=>i,START:()=>a});const n=r(3325).D.sessionTrace,o="bstResource",i="resource",a="-start",s="-end",c="fn"+a,d="fn"+s,u="pushState"},6216:(e,t,r)=>{"use strict";r.d(t,{K8:()=>s,QZ:()=>c,cS:()=>i,sE:()=>o,t9:()=>a,vh:()=>d});var n=r(3325);const o=["click","keydown","submit"],i="api",a=n.D.softNav,s={INITIAL_PAGE_LOAD:"",ROUTE_CHANGE:1,UNSPECIFIED:2},c={INTERACTION:1,AJAX:2,CUSTOM_END:3,CUSTOM_TRACER:4},d={IP:"in progress",FIN:"finished",CAN:"cancelled"}},7836:(e,t,r)=>{"use strict";r.d(t,{BODY:()=>E,CB_END:()=>w,CB_START:()=>d,END:()=>x,FEATURE_NAME:()=>o,FETCH:()=>S,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>u,INTERACTION_EVENTS:()=>i,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>_,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>A,originalSetTimeout:()=>y});var n=r(234);const o=r(3325).D.spa,i=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",d="cb-start",u="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,A="-start",x="-end",E="-body",w="cb"+x,_="jsTime",S="fetch"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>o});var n=r(2177);class o{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},8862:(e,t,r)=>{"use strict";r.d(t,{j:()=>x});var n=r(3325),o=r(234),i=r(5546),a=r(2177),s=r(7894),c=r(8e3),d=r(3960),u=r(385),l=r(50),f=r(3081),h=r(8632),p=r(7144);const g=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay",p.Ef.RECORD,p.Ef.PAUSE],m=["setErrorHandler","finished","addToTrace","addRelease"];function v(){const e=(0,h.gG)();g.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),o=0;o<r;o++)n[o]=arguments[o];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),o=1;o<r;o++)n[o-1]=arguments[o];let i=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&i.push(e.api[t](...n))})),i.length>1?i:i[0]}(t,...n)}}))}var b=r(2825);const y=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let A=!1;function x(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},g=arguments.length>2?arguments[2]:void 0,x=arguments.length>3?arguments[3]:void 0,{init:E,info:w,loader_config:_,runtime:S={loaderType:g},exposed:T=!0}=t;const R=(0,h.gG)();w||(E=R.init,w=R.info,_=R.loader_config),(0,o.Dg)(e.agentIdentifier,E||{}),(0,o.GE)(e.agentIdentifier,_||{}),w.jsAttributes??={},u.v6&&(w.jsAttributes.isWorker=!0),(0,o.CX)(e.agentIdentifier,w);const N=(0,o.P_)(e.agentIdentifier),O=[w.beacon,w.errorBeacon];A||(N.proxy.assets&&(y(N.proxy.assets),O.push(N.proxy.assets)),N.proxy.beacon&&O.push(N.proxy.beacon),v(),(0,h.EZ)("activatedFeatures",b.T),e.runSoftNavOverSpa&&=!0===N.soft_navigations.enabled&&N.feature_flags.includes("soft_nav")),S.denyList=[...N.ajax.deny_list||[],...N.ajax.block_internal?O:[]],(0,o.sU)(e.agentIdentifier,S),void 0===e.api&&(e.api=function(e,t){let h=arguments.length>2&&void 0!==arguments[2]&&arguments[2];t||(0,c.R)(e,"api");const g={};var v=a.ee.get(e),b=v.get("tracer"),y="api-",A=y+"ixn-";function x(t,r,n,i){const a=(0,o.C5)(e);return null===r?delete a.jsAttributes[t]:(0,o.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),_(y,n,!0,i||null===r?"session":void 0)(t,r)}function E(){}m.forEach((e=>{g[e]=_(y,e,!0,"api")})),g.addPageAction=_(y,"addPageAction",!0,n.D.pageAction),g.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,o.OP)(e).customTransaction=(r||"http://custom.transaction")+t,_(y,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return x(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return x("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return x("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,i.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,v);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{v.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g[p.Ef.RECORD]=function(){(0,i.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,v),(0,i.p)(p.Ef.RECORD,[],void 0,n.D.sessionReplay,v)},g[p.Ef.PAUSE]=function(){(0,i.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,v),(0,i.p)(p.Ef.PAUSE,[],void 0,n.D.sessionReplay,v)},g.interaction=function(e){return(new E).get("object"==typeof e?e:{})};const w=E.prototype={createTracer:function(e,t){var r={},o=this,a="function"==typeof t;return(0,i.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,v),h||(0,i.p)(A+"tracer",[(0,s.z)(),e,r],o,n.D.spa,v),function(){if(b.emit((a?"":"no-")+"fn-start",[(0,s.z)(),o,a],r),a)try{return t.apply(this,arguments)}catch(e){throw b.emit("fn-err",[arguments,this,e],r),e}finally{b.emit("fn-end",[(0,s.z)()],r)}}}};function _(e,t,r,o){return function(){return(0,i.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,v),o&&(0,i.p)(e+t,[(0,s.z)(),...arguments],r?null:this,o,v),r?void 0:this}}function S(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>{(0,l.Z)("Downloading runtime APIs failed..."),(0,c.L)(e,"api",!0)}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=_(A,e,void 0,h?n.D.softNav:n.D.spa)})),g.setCurrentRouteName=h?_(A,"routeName",void 0,n.D.softNav):_(y,"routeName",!0,n.D.spa),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,i.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,v),(0,i.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,v)},u.il?(0,d.b2)((()=>S()),!0):S(),g}(e.agentIdentifier,x,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=T),A=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>o});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},o={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.softNav]:9,[n.sessionReplay]:10}}},n={};function o(e){var t=n[e];if(void 0!==t)return t.exports;var i=n[e]={exports:{}};return r[e](i,i.exports,o),i.exports}o.m=r,o.d=(e,t)=>{for(var r in t)o.o(t,r)&&!o.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},o.f={},o.e=e=>Promise.all(Object.keys(o.f).reduce(((t,r)=>(o.f[r](e,t),t)),[])),o.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.253.0.min.js"),o.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.253.0.PROD:",o.l=(r,n,i,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==i)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+i){s=l;break}}if(!s){c=!0;var f={111:"sha512-9q9mF25YixUzOl0h6A+kYg30MKv1nk2a0Fx09kyCfgOxt8ksjOW/9w2tJczXB75fpHty83UGhg16QZYqH5xGUA==",433:"sha512-XC5+mpqQ2tnT7qrjy10Au+hbjKZi4K7pKsvdzhKOe/fgoYKm7g9W52e22ufe22D4Fsb1Cq7JOEOPkUh+b8tcHA==",164:"sha512-nLe65dhs+GlSH+tKGdqn9vp9IbVkpOl4OifRjps2BSizmhkjfLxjYISHdBIgnzzk0wNwOFpTdheU8TRIq4FPXA=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,o.nc&&s.setAttribute("nonce",o.nc),s.setAttribute("data-webpack",t+i),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var o=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),o&&o.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},o.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},o.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};o.f.j=(t,r)=>{var n=o.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var i=new Promise(((r,o)=>n=e[t]=[r,o]));r.push(n[2]=i);var a=o.p+o.u(t),s=new Error;o.l(a,(r=>{if(o.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var i=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+i+": "+a+")",s.name="ChunkLoadError",s.type=i,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,i,[a,s,c]=r,d=0;if(a.some((t=>0!==e[t]))){for(n in s)o.o(s,n)&&(o.m[n]=s[n]);if(c)c(o)}for(t&&t(r);d<a.length;d++)i=a[d],o.o(e,i)&&e[i]&&e[i][0](),e[i]=0},r=self["webpackChunk:NRBA-1.253.0.PROD"]=self["webpackChunk:NRBA-1.253.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";o(1926);var e=o(50),t=o(7144),r=o(4938),n=o(4402),i=o(2177);class a{agentIdentifier;observationContext=new r.v;constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:(0,n.ky)(16);this.agentIdentifier=e;i.ee.get(e).observationContext=this.observationContext}#t(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),o=1;o<r;o++)n[o-1]=arguments[o];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#t("addPageAction",e,t)}setPageViewName(e,t){return this.#t("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#t("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#t("noticeError",e,t)}setUserId(e){return this.#t("setUserId",e)}setApplicationVersion(e){return this.#t("setApplicationVersion",e)}setErrorHandler(e){return this.#t("setErrorHandler",e)}finished(e){return this.#t("finished",e)}addRelease(e,t){return this.#t("addRelease",e,t)}start(e){return this.#t("start",e)}recordReplay(){return this.#t(t.Ef.RECORD)}pauseReplay(){return this.#t(t.Ef.PAUSE)}addToTrace(e){return this.#t("addToTrace",e)}setCurrentRouteName(e){return this.#t("setCurrentRouteName",e)}interaction(){return this.#t("interaction")}}var s=o(3325),c=o(234);const d=Object.values(s.D);function u(e){const t={};return d.forEach((r=>{t[r]=function(e,t){return!0===(0,c.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var l=o(8862);var f=o(8e3),h=o(5938),p=o(3960),g=o(385);const m=e=>g.il&&!0===(0,c.Mt)(e,"privacy.cookies_enabled");function v(e){return c.Yu.MO&&m&&!0===(0,c.Mt)(e,"session_trace.enabled")}function b(e){return!0===(0,c.Mt)(e,"session_replay.preload")&&v(e)}class y extends h.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,c.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,f.R)(e,r)}importAggregator(){let t,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,f.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));this.onAggregateImported=new Promise((e=>{t=e}));const n=async()=>{let n;try{if(m(this.agentIdentifier)){const{setupAgentSession:e}=await o.e(111).then(o.bind(o,1656));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t),this.featureName===s.D.sessionReplay&&this.abortHandler?.()}try{if(!this.#r(this.featureName,n))return(0,f.L)(this.agentIdentifier,this.featureName),void t(!1);const{lazyFeatureLoader:e}=await o.e(111).then(o.bind(o,8582)),{Aggregate:i}=await e(this.featureName,"aggregate");this.featAggregate=new i(this.agentIdentifier,this.aggregator,r),t(!0)}catch(r){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),r),this.abortHandler?.(),(0,f.L)(this.agentIdentifier,this.featureName,!0),t(!1)}};g.il?(0,p.b2)((()=>n()),!0):n()}#r(e,t){return e!==s.D.sessionReplay||(r=this.agentIdentifier,n=t,!(!v(r)||!n?.isNew&&!n?.state.sessionReplayMode));var r,n}}var A=o(7633);class x extends y{static featureName=A.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,A.t,r),this.importAggregator()}}var E=o(1117),w=o(1284);class _ extends E.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,o){var i=this.getBucket(e,t,r,o);return i.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,w.D)(e,(function(e,r){t[e]=S(r,t[e])})),t}(n,i.metrics),i}merge(e,t,r,n,o){var i=this.getBucket(e,t,n,o);if(i.metrics){var a=i.metrics;a.count+=r.count,(0,w.D)(r,(function(e,t){if("count"!==e){var n=a[e],o=r[e];o&&!o.c?a[e]=S(o.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=T(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(o,a[e])}}))}else i.metrics=r}storeMetric(e,t,r,n){var o=this.getBucket(e,t,r);return o.stats=S(n,o.stats),o}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var o=this.aggregatedData[e][t];return o||(o=this.aggregatedData[e][t]={params:r||{}},n&&(o.custom=n)),o}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,o=0;o<e.length;o++)t[r=e[o]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function S(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=T(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function T(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var R=o(8632),N=o(4351);var O=o(5546),C=o(7956),D=o(3239),I=o(7894),P=o(9251);class j extends y{static featureName=P.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t,r),g.il&&((0,C.N)((()=>(0,O.p)("docHidden",[(0,I.z)()],void 0,P.t,this.ee)),!0),(0,D.bP)("pagehide",(()=>(0,O.p)("winPagehide",[(0,I.z)()],void 0,P.t,this.ee))),this.importAggregator())}}var k=o(3081);class M extends y{static featureName=k.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,k.t9,r),this.importAggregator()}}var H=o(6660);class L{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class z extends y{static featureName=H.t;#n=new Set;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,H.t,r);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,r)=>{this.abortHandler&&!this.#n.has(r)&&(this.#n.add(r),(0,O.p)("err",[this.#o(r),(0,I.z)()],void 0,s.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,O.p)("ierr",[this.#o(e),(0,I.z)(),!0],void 0,s.D.jserrors,this.ee)})),g._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,O.p)("err",[this.#i(e),(0,I.z)(),!1,{unhandledPromiseRejection:1}],void 0,s.D.jserrors,this.ee)}),(0,D.m$)(!1,this.removeOnAbort?.signal)),g._A.addEventListener("error",(e=>{this.abortHandler&&(this.#n.has(e.error)?this.#n.delete(e.error):(0,O.p)("err",[this.#a(e),(0,I.z)()],void 0,s.D.jserrors,this.ee))}),(0,D.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#s,this.importAggregator()}#s(){this.removeOnAbort?.abort(),this.#n.clear(),this.abortHandler=void 0}#o(e){return e instanceof Error?e:void 0!==e?.message?new L(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new L("string"==typeof e?e:(0,N.P)(e))}#i(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new L(t);const r=this.#o(e.reason);return r.message=t+r.message,r}#a(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new L(e.message,e.filename,e.lineno,e.colno);return t.name=SyntaxError.name,t}return e.error instanceof Error?e.error:new L(e.message,e.filename,e.lineno,e.colno)}}var U=o(2210);let F=1;const B="nr@id";function q(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===g._A?0:(0,U.X)(e,B,(function(){return F++}))}function V(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,N.P)(e).length}catch(e){return}}}var G=o(7806),Z=o(7243);class W{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,c.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,o=(t.agentID||"").toString()||null,i=(t.trustKey||"").toString()||null;if(!r||!o)return null;var a=(0,n.M)(),s=(0,n.Ht)(),d=Date.now(),u={spanId:a,traceId:s,timestamp:d};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,d,r,o,i)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,d,r,o,i)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,o){return o+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,o,i){if(!("function"==typeof g._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:o,id:e,tr:t,ti:r}};return i&&n!==i&&(a.d.tk=i),btoa((0,N.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,c.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,c.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var n=0;n<r.allowed_origins.length;n++){var o=(0,Z.e)(r.allowed_origins[n]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,c.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,c.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,c.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,c.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var K=o(7825),X=["load","error","abort","timeout"],Y=X.length,J=c.Yu.REQ,Q=c.Yu.XHR;class ee extends y{static featureName=K.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,K.t,r),(0,c.OP)(e).xhrWrappable){this.dt=new W(e),this.handler=(e,t,r,n)=>(0,O.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};g._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const r={status:t.responseStatus},n={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};te(r,t.name),this.handler("xhr",[r,n,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,s.D.ajax)}}))}catch(e){}(0,G.u5)(this.ee),(0,G.Kf)(this.ee),function(e,t,r,n){function o(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=E,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){w(t,e)}),(0,D.m$)(!1)),g.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,D.m$)(!1))}function i(e){this.params={method:e[0]},te(this,e[1]),this.metrics={}}function a(t,r){var o=(0,c.DL)(e);o.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",o.xpid);var i=n.generateTracePayload(this.parsedOrigin);if(i){var a=!1;i.newrelicHeader&&(r.setRequestHeader("newrelic",i.newrelicHeader),a=!0),i.traceContextParentHeader&&(r.setRequestHeader("traceparent",i.traceContextParentHeader),i.traceContextStateHeader&&r.setRequestHeader("tracestate",i.traceContextStateHeader),a=!0),a&&(this.dt=i)}}function d(e,r){var n=this.metrics,o=e[0],i=this;if(n&&o){var a=V(o);a&&(n.txSize=a)}this.startTime=(0,I.z)(),this.body=o,this.listener=function(e){try{"abort"!==e.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==e.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof i.end)&&i.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<Y;s++)r.addEventListener(X[s],this.listener,(0,D.m$)(!1))}function u(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function l(e,t){var r=""+q(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function f(e,t){var r=""+q(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function h(){this.endTime=(0,I.z)()}function p(e,r){r instanceof Q&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof Q&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof Q&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,I.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,I.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&g.il&&(t=""+g._A.location.href):e[0]&&e[0].url?t=e[0].url:g._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,Z.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=n.generateTracePayload(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,o)&&(this.dt=o);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,o)&&(this.dt=o),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function A(e,t){this.params={},this.metrics={},this.startTime=(0,I.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},o=this.target;"string"==typeof o?r=o:"object"==typeof o&&o instanceof J?r=o.url:g._A?.URL&&"object"==typeof o&&o instanceof URL&&(r=o.href),te(this,r);var i=(""+(o&&o instanceof J&&o.method||n.method||"GET")).toUpperCase();this.params.method=i,this.body=n.body,this.txSize=V(n.body)||0}function x(e,t){var n;this.endTime=(0,I.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,I.z)()-this.startTime};r("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,s.D.ajax)}function E(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<Y;o++)e.removeEventListener(X[o],this.listener,!1);t.aborted||(n.duration=(0,I.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):w(this,e),n.cbTime=this.cbTime,r("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,s.D.ajax))}}function w(e,r){e.params.status=r.status;var n=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?V(e.response):"text"===r||""===r||void 0===r?V(e.responseText):void 0}(r,e.lastSize);if(n&&(e.metrics.rxSize=n),e.sameOrigin){var o=r.getResponseHeader("X-NewRelic-App-Data");o&&((0,O.p)(k.mY,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,s.D.metrics,t),e.params.cat=o.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",o),t.on("open-xhr-start",i),t.on("open-xhr-end",a),t.on("send-xhr-start",d),t.on("xhr-cb-time",u),t.on("xhr-load-added",l),t.on("xhr-load-removed",f),t.on("xhr-resolved",h),t.on("addEventListener-end",p),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",A),t.on("fn-start",v),t.on("fetch-done",x)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function te(e,t){var r=(0,Z.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var re=o(3614);const{BST_RESOURCE:ne,RESOURCE:oe,START:ie,END:ae,FEATURE_NAME:se,FN_END:ce,FN_START:de,PUSH_STATE:ue}=re;var le=o(7056);class fe extends y{static featureName=t.t9;constructor(e,r){let n,o=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,r,t.t9,o);try{n=JSON.parse(localStorage.getItem("".concat(le.Bq,"_").concat(le.K4)))}catch(e){}this.#c(n)?this.#d(n?.sessionReplayMode):this.importAggregator()}#c(e){return e&&(e.sessionReplayMode===le.IK.FULL||e.sessionReplayMode===le.IK.ERROR)||b(this.agentIdentifier)}async#d(e){const{Recorder:t}=await Promise.all([o.e(111),o.e(433)]).then(o.bind(o,4136));this.recorder=new t({mode:e,agentIdentifier:this.agentIdentifier}),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording,this.importAggregator({recorder:this.recorder})}}var he=o(7872),pe=o(6216);class ge extends y{static featureName=pe.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,pe.t9,r),!g.il||!c.Yu.MO)return;const n=(0,G.QU)(this.ee),o=(0,G.em)(this.ee),i=()=>(0,O.p)("newURL",[(0,I.z)(),""+window.location],void 0,this.featureName,this.ee);n.on("pushState-end",i),n.on("replaceState-end",i);try{this.removeOnAbort=new AbortController}catch(e){}(0,D.bP)("popstate",(e=>(0,O.p)("newURL",[e.timeStamp,""+window.location],void 0,this.featureName,this.ee)),!0,this.removeOnAbort?.signal);let a=!1;const s=new c.Yu.MO(((e,t)=>{a||(a=!0,requestAnimationFrame((()=>{(0,O.p)("newDom",[(0,I.z)()],void 0,this.featureName,this.ee),a=!1})))})),d=(0,he.D)((e=>{(0,O.p)("newUIEvent",[e],void 0,this.featureName,this.ee),s.observe(document.body,{attributes:!0,childList:!0,subtree:!0,characterData:!0})}),100,{leading:!0});o.on("fn-start",(e=>{let[t]=e;pe.sE.includes(t?.type)&&d(t)}));for(let e of pe.sE)document.addEventListener(e,(()=>{}));this.abortHandler=function(){this.removeOnAbort?.abort(),s.disconnect(),this.abortHandler=void 0},this.importAggregator({domObserver:s})}}var me=o(7836);const{FEATURE_NAME:ve,START:be,END:ye,BODY:Ae,CB_END:xe,JS_TIME:Ee,FETCH:we,FN_START:_e,CB_START:Se,FN_END:Te}=me;var Re=o(4649);class Ne extends y{static featureName=Re.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,Re.t,r),this.importAggregator()}}new class extends a{constructor(t,r){super(r),g._A?(this.sharedAggregator=new _({agentIdentifier:this.agentIdentifier}),this.features={},(0,R.h5)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(x),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===s.D.softNav)),(0,l.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=u(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>s.p[e.featureName]-s.p[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==s.D.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===s.D.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===s.D.softNav)return;const n=function(e){switch(e){case s.D.ajax:return[s.D.jserrors];case s.D.sessionTrace:return[s.D.ajax,s.D.pageViewEvent];case s.D.sessionReplay:return[s.D.sessionTrace];case s.D.pageViewTiming:return[s.D.pageViewEvent];default:return[]}}(r.featureName);n.every((e=>e in this.features))||(0,e.Z)("".concat(r.featureName," is enabled but one or more dependent features has not been initialized (").concat((0,N.P)(n),"). This may cause unintended consequences or missing data...")),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,R.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[ee,x,j,class extends y{static featureName=se;constructor(e,t){if(super(e,t,se,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!g.il)return;const r=this.ee;let n;(0,G.QU)(r),this.eventsEE=(0,G.em)(r),this.eventsEE.on(de,(function(e,t){this.bstStart=(0,I.z)()})),this.eventsEE.on(ce,(function(e,t){(0,O.p)("bst",[e[0],t,this.bstStart,(0,I.z)()],void 0,s.D.sessionTrace,r)})),r.on(ue+ie,(function(e){this.time=(0,I.z)(),this.startPath=location.pathname+location.hash})),r.on(ue+ae,(function(e){(0,O.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,s.D.sessionTrace,r)}));try{n=new PerformanceObserver((e=>{const t=e.getEntries();(0,O.p)(ne,[t],void 0,s.D.sessionTrace,r)})),n.observe({type:oe,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:n})}},fe,M,Ne,z,ge,class extends y{static featureName=ve;constructor(e,t){if(super(e,t,ve,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!g.il)return;if(!(0,c.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,n=0;const o=this.ee.get("tracer"),i=(0,G._L)(this.ee),a=(0,G.Lg)(this.ee),s=(0,G.BV)(this.ee),d=(0,G.Kf)(this.ee),u=this.ee.get("events"),l=(0,G.u5)(this.ee),f=(0,G.QU)(this.ee),h=(0,G.Gm)(this.ee);function p(e,t){f.emit("newURL",[""+window.location,t])}function m(){n++,r=window.location.hash,this[_e]=(0,I.z)()}function v(){n--,window.location.hash!==r&&p(0,!0);var e=(0,I.z)();this[Ee]=~~this[Ee]+e-this[_e],this[Te]=e}function b(e,t){e.on(t,(function(){this[t]=(0,I.z)()}))}this.ee.on(_e,m),a.on(Se,m),i.on(Se,m),this.ee.on(Te,v),a.on(xe,v),i.on(xe,v),this.ee.buffer([_e,Te,"xhr-resolved"],this.featureName),u.buffer([_e],this.featureName),s.buffer(["setTimeout"+ye,"clearTimeout"+be,_e],this.featureName),d.buffer([_e,"new-xhr","send-xhr"+be],this.featureName),l.buffer([we+be,we+"-done",we+Ae+be,we+Ae+ye],this.featureName),f.buffer(["newURL"],this.featureName),h.buffer([_e],this.featureName),a.buffer(["propagate",Se,xe,"executor-err","resolve"+be],this.featureName),o.buffer([_e,"no-"+_e],this.featureName),i.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(l,we+be),b(l,we+"-done"),b(i,"new-jsonp"),b(i,"jsonp-end"),b(i,"cb-start"),f.on("pushState-end",p),f.on("replaceState-end",p),window.addEventListener("hashchange",p,(0,D.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",p,(0,D.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){p(0,n>1)}),(0,D.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#s,this.importAggregator()}#s(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+<noscript><style>form.antibot * :not(.antibot-message) { display: none !important; }</style>
+</noscript><style>/* @see https://github.com/aFarkas/lazysizes#broken-image-symbol */.js img.lazyload:not([src]) { visibility: hidden; }/* @see https://github.com/aFarkas/lazysizes#automatically-setting-the-sizes-attribute */.js img.lazyloaded[data-sizes=auto] { display: block; width: 100%; }</style>
+<meta name="description" content="The nine charts in this Commodity Markets Outlook highlight commodity price developments with a focus on oil prices, natural gas purchases, fertilizer affordability, food prices, and precious metals, among other indicators.">
+<link rel="canonical" href="https://blogs.worldbank.org/developmenttalk/commodity-markets-outlook-nine-charts">
+<link rel="image_src" href="/media/93131">
+<meta property="og:site_name" content="World Bank Blogs">
+<meta property="og:type" content="blog">
+<meta property="og:url" content="https://blogs.worldbank.org/developmenttalk/commodity-markets-outlook-nine-charts">
+<meta property="og:title" content="The Commodity Markets Outlook in nine charts">
+<meta property="og:description" content="The nine charts in this Commodity Markets Outlook highlight commodity price developments with a focus on oil prices, natural gas purchases, fertilizer affordability, food prices, and precious metals, among other indicators.">
+<meta property="og:image" content="https://blogs.worldbank.org/sites/default/files/styles/share/public/2022-10/26.10_cmo.october_hero.png?itok=P2l4NgZU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="The nine charts in this Commodity Markets Outlook highlight commodity price developments with a focus on oil prices, natural gas purchases, fertilizer affordability, food prices, and precious metals, among other indicators.">
+<meta name="twitter:title" content="The Commodity Markets Outlook in nine charts">
+<meta name="twitter:site" content="@worldbank">
+<meta name="twitter:site:id" content="27860681">
+<meta name="twitter:creator" content="@worldbank">
+<meta name="twitter:creator:id" content="27860681">
+<meta name="twitter:url" content="https://blogs.worldbank.org/developmenttalk/commodity-markets-outlook-nine-charts">
+<meta name="twitter:image" content="https://blogs.worldbank.org/sites/default/files/styles/share/public/2022-10/26.10_cmo.october_hero.png?itok=P2l4NgZU">
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="//assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/launch-7bc0cdc67098.min.js"></script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/27bbaa2328d5/EX5efa2909f6ef4e828d9629f4646c14d3-libraryCode_source.min.js" async=""></script>
+<script>
+          var wbgData = wbgData || {};
+
+          wbgData.page = {
+              pageInfo: {
+                  pageName: "The Commodity Markets Outlook in nine charts",
+                  pageCategory: "content",
+                  pageUid: "74211",
+                  pageFirstPub: "10-26-2022",
+                  pageLastMod: "10-02-2023",
+                  author: "John Baffes, Peter Nagle",
+                  topicTag: "Agriculture and Food : Competitiveness : Energy : Extractive Industries : Financial Sector : Jobs &amp; Development : Macroeconomics and Fiscal Management : Trade",
+                  subtopicTag: "",
+                  contentType: "blog",
+                  channel: "EXT Blog Let's Talk Development en EXT",
+                  webpackage: ""
+              },
+              sectionInfo: {
+                  siteSection: "Blog Post",
+                  subsectionP2: "",
+                  subsectionP3: "",
+                  subsectionP4: "",
+                  subsectionP5: "",
+              },
+              packageinfo: {
+                webpackage: "",
+              }
+          }
+          wbgData.site = {
+              siteInfo: {
+                  siteLanguage: "en",
+                  siteCountry: "",
+                  siteEnv: "prod",
+                  siteType: "blogs",
+                  siteRegion: "The World Region",
+                  userIpaddressType: "50.255.60.105",
+              },
+              techInfo: {
+                  cmsType: "Drupal",
+                  bussVPUnit: "",
+                  bussUnit: "DEC",
+                  bussUserGroup: "External",
+                  bussAgency: "ibrd",
+              },
+          }
+          
+          wbgData.misc = {
+            blogTitle: "The Commodity Markets Outlook in nine charts",
+            blogComnts: 1,
+          }
+          </script>
+<script>var ct_check_js_val = 'a220fce4585f402033a53ca9f82eaa74';var drupal_ac_antibot_cookie_value = '784b6c395a7ac04fd268dc7b02ab4c6a46f62bf4cebf9f42a9f50a72e3a31b40';var ct_use_cookies = 1;var ct_use_alt_cookies = 0;var ct_capture_buffer = 0;</script>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BlogPosting",
+            "headline": "The Commodity Markets Outlook in nine charts",
+            "name": "The Commodity Markets Outlook in nine charts",
+            "about": [
+                "Commodity Markets Outlook",
+                "The World Region"
+            ],
+            "description": "The nine charts in this Commodity Markets Outlook highlight commodity price developments with a focus on oil prices, natural gas purchases, fertilizer affordability, food prices, and precious metals, among other indicators.",
+            "image": {
+                "@type": "ImageObject",
+                "representativeOfPage": "True",
+                "url": "https://blogs.worldbank.org/sites/default/files/styles/card/public/2022-10/26.10_cmo.october_hero.png.webp?itok=ta2a7h-r"
+            },
+            "datePublished": "Wed, 10/26/2022 - 12:00",
+            "dateModified": "10-02-2023",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "John Baffes, Peter Nagle,",
+                    "url": "https://blogs.worldbank.org/team/john-baffes"
+                },
+                {
+                    "@type": "Person",
+                    "name": "John Baffes, Peter Nagle,",
+                    "url": "https://blogs.worldbank.org/team/peter-nagle"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "@id": "https://www.worldbank.org",
+                "name": "World Bank Group",
+                "url": "https://www.worldbank.org",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://blogs.worldbank.org/sites/default/files/logos/logo-wb-header-en.png"
+                }
+            },
+            "mainEntityOfPage": "https://blogs.worldbank.org/developmenttalk/commodity-markets-outlook-nine-charts"
+        }
+    ]
+}</script>
+<link rel="icon" href="/themes/blogstheme/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="alternate" hreflang="en" href="https://blogs.worldbank.org/developmenttalk/commodity-markets-outlook-nine-charts">
+<script src="/sites/default/files/google_tag/primary/google_tag.script.js?sagrkf" defer=""></script>
+
+    <title>The Commodity Markets Outlook in nine charts</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_Gbuv_qkg_J17IjyUCI0F_ZzAMZgymJnB0NqtaDG3NYI.css">
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_oe_8pd2TTP4h38-Y4Fim2k9cHwf9P9WAfI74qFMAWpM.css">
+
+    
+  <style id="at-makers-style" class="at-flicker-control">
+.mboxDefault {visibility: hidden;}
+</style><script src="https://az416426.vo.msecnd.net/scripts/a/ai.0.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/972661263/?random=1710711432205&amp;cv=11&amp;fst=1710711432205&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be43d0za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fblogs.worldbank.org%2Fdevelopmenttalk%2Fcommodity-markets-outlook-nine-charts&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=The%20Commodity%20Markets%20Outlook%20in%20nine%20charts&amp;npa=0&amp;pscdl=noapi&amp;auid=1764158895.1710711432&amp;fdr=QA&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A4oIpR6f5aUXFRMbL6t6qaMk4lrHWxcV3DcrzORsA9sEsIk1FBRMFzzhfMNLuUpokZH40FV8s7iiXtt/729v8A4AAACFeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiQXR0cmlidXRpb25SZXBvcnRpbmdDcm9zc0FwcFdlYiIsImV4cGlyeSI6MTcxNDUyMTU5OSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script attributionsrc="" type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion/972661263/?random=1710711432213&amp;cv=11&amp;fst=1710711432213&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be43d0za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fblogs.worldbank.org%2Fdevelopmenttalk%2Fcommodity-markets-outlook-nine-charts&amp;label=7mAwCLfa2vwBEI_E5s8D&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=The%20Commodity%20Markets%20Outlook%20in%20nine%20charts&amp;gtm_ee=1&amp;npa=0&amp;pscdl=noapi&amp;auid=1764158895.1710711432&amp;fdr=QA&amp;data=event%3Dconversion&amp;rfmt=3&amp;fmt=4"></script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/27bbaa2328d5/RC52c6abb5395a4b91b22b7ed5b8df0167-source.min.js" async=""></script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/27bbaa2328d5/RCb3929508fb31432496e845f770d4d38f-source.min.js" async=""></script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/27bbaa2328d5/RC5bee9bde6f5c406c948030bdb0554466-source.min.js" async=""></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script charset="utf-8" data-webpack="NRBA-1.253.0.PROD:chunk-111" src="https://js-agent.newrelic.com/nr-spa-1.253.0.min.js" crossorigin="anonymous" integrity="sha512-9q9mF25YixUzOl0h6A+kYg30MKv1nk2a0Fx09kyCfgOxt8ksjOW/9w2tJczXB75fpHty83UGhg16QZYqH5xGUA=="></script><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+  <body class="path-developmenttalk-commodity-markets-outlook-nine-charts node-published path-node page-node-type-blog-entry has-glyphicons">
+    <div id="wbg-aem-target" class="wbg-aem-target"></div>
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPKQQ38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+              <header class="header">
+    <nav class="navbar navbar-default">
+              <div class="container">
+      
+                  <a href="http://www.worldbank.org/" target="_blank" class="toplink">worldbank.org</a>
+        
+        <div class="navbar-header">
+                      <a class="logo navbar-btn pull-left" href="/" title="Home" rel="home">
+              <img src="/themes/blogstheme/images/logos/logo-en.png" alt="Home" title="Home">
+            </a>
+                  </div>
+        
+                
+                  <div class="toggle-box">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button><!-- End menu dropdown Section -->
+          </div>
+        
+                          <div id="navbar-collapse" class="navbar-collapse collapse">
+              <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-blogstheme-main-menu-menu" id="block-blogstheme-main-menu">
+            <h2 class="sr-only" id="block-blogstheme-main-menu-menu">Main navigation</h2>
+
+      
+      <ul class="menu menu--main nav navbar-nav">
+                      <li class="first">
+                                        <a href="/" data-drupal-link-system-path="<front>">Home</a>
+              </li>
+                      <li>
+                                        <a href="/blogs" data-drupal-link-system-path="blogs">All Blogs</a>
+              </li>
+                      <li>
+                                        <a href="/topics" data-drupal-link-system-path="topics">Topics</a>
+              </li>
+                      <li>
+                                        <a href="mailto:voicesen@worldbank.org">Contact</a>
+              </li>
+                      <li>
+                                        <a href="https://live.worldbank.org/?intcid=wbw_nav_WBL_en_ext" class="highlighted wblive" target="_blank">WBLive</a>
+              </li>
+                      <li class="last">
+                                        <a href="/search" data-drupal-link-system-path="search">Search</a>
+              <section class="views-exposed-form search-form block block-views block-views-exposed-filter-blocksearch-blogs-page-1 clearfix" data-drupal-selector="views-exposed-form-search-blogs-page-1" id="block-exposedformsearch-blogspage-1">
+  
+    
+
+      <form data-action="/search" class="antibot" action="/antibot" method="get" id="views-exposed-form-search-blogs-page-1" accept-charset="UTF-8">
+  <div class="form--inline form-inline clearfix">
+  <noscript>
+  <div class="antibot-no-js antibot-message antibot-message-warning">You must have JavaScript enabled to use this form.</div>
+</noscript>
+<div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-keyword js-form-item-keyword form-group">
+      <label for="edit-keyword" class="control-label">Search</label>
+  
+  
+  <input data-drupal-selector="edit-keyword" class="form-text form-control" type="text" id="edit-keyword" name="keyword" value="" size="30" maxlength="128">
+
+  
+  
+  </div>
+<input data-drupal-selector="edit-antibot-key" type="hidden" name="antibot_key" value=""><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit-search-blogs" class="button js-form-submit form-submit btn-primary btn" type="submit" id="edit-submit-search-blogs" value="Submit">Submit</button></div>
+
+</div>
+
+</form>
+
+  </section></li>
+        </ul>
+  
+
+  </nav>
+
+
+
+  </div>
+
+          </div>
+        
+
+              </div>
+          </nav>
+    </header>
+  
+
+        <div class="region region-banner">
+    <section class="views-element-container block block-views block-views-blockchannel-banner-block-1 clearfix" id="block-views-block-channel-banner-block-1">
+  
+    
+
+      <div class="form-group"><div class="channelbanner view view-channel-banner view-id-channel_banner view-display-id-block_1 js-view-dom-id-2fbf7d1cb8f8a666faf723666dc4f156927813bf2cab48d082b87c0e5c4abb46">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row"><div class="banner color-03B9D0" style="background-color:#03B9D0">
+  <span class="banneroverlay crystal"></span>
+  <div class="inner">
+        <div class="views-field-field-channel-description"><h4>Published on <a href="/developmenttalk" hreflang="en">Let's Talk Development</a></h4></div>          </div>
+</div>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+  
+
+<div class="l-page" style="clear:both;">
+  <main class="loop-main-content" id="main-content">
+  <div role="main" class="main-container js-quickedit-main-content">
+
+
+                              <div class="col-sm-12" role="heading">
+              <div class="region region-header">
+    <div data-drupal-messages-fallback="" class="hidden"></div>
+
+  </div>
+
+          </div>
+              
+            
+                  <section class="mainsection">
+
+                
+                
+                
+                
+                                    <div class="titlearea">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="region region-titlearea">
+    <section class="views-element-container block block-views block-views-blockblog-title-area-block-1 clearfix" id="block-views-block-blog-title-area-block-1">
+  
+    
+
+      <div class="form-group"><div class="testclass view view-blog-title-area view-id-blog_title_area view-display-id-block_1 js-view-dom-id-bd95828966800973039ab0f5a5ebcfcbf6c6decc6bb652d47337cdbed4622649">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row"><div class="views-field views-field-title"><h1 class="field-content">The Commodity Markets Outlook in nine charts</h1></div><span class="views-field views-field-field-authors"><span class="field-content"><ul><li><a href="/team/john-baffes" hreflang="en">John Baffes</a></li><li><a href="/team/peter-nagle" hreflang="en">Peter Nagle</a></li></ul></span></span>|<span class="views-field views-field-field-date"><span class="field-content"><time datetime="2022-10-26T12:00:00Z">October 26, 2022</time>
+</span></span></div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+<section class="views-element-container langswitcher block block-views block-views-blockalso-available-in-block-1 clearfix" id="block-views-block-also-available-in-block-1-2">
+  
+      <h2 class="block-title">This page in:</h2>
+    
+
+      <div class="form-group"><div class="langswitcher view view-also-available-in view-id-also_available_in view-display-id-block_1 js-view-dom-id-c87f54c74fb9dffdf50cac5299cda00da16ddd18bb7226244e4b3835b3564d24">
+  
+    
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul class="l_tinynav1">
+
+          <li class="is-active"><div class="views-field views-field-langcode"><span class="field-content"><a href="/developmenttalk/commodity-markets-outlook-nine-charts" hreflang="en" class="active">English</a></span></div></li>
+    
+  </ul><div class="selectwrap"><select id="tinynav1" class="tinynav tinynav1"><option value="/developmenttalk/commodity-markets-outlook-nine-charts" selected="selected">English</option></select></div>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+                          <a id="main-content"></a>
+            <div class="region region-content">
+      
+  
+            <div class="field field--name-field-hero-image field--type-entity-reference field--label-hidden field--item"><div class="heroimg">
+  <div class="container">
+    <div class="f03v1_pagetools sharebar parbase section">
+
+    <div class=" clearfix">
+        <div id="f03v1-social-sharing" class="pagetools" style=";">
+            <div class="btn-group" style="width: 100%;">
+                <ul>
+                    <div class="fixed-meida-share">
+                      <li class="btn-mailto social-btn" title="Email" id="wbrmailto">
+                        <a href="mailto:?body=https%3A%2F%2Fblogs.worldbank.org%2Fdevelopmenttalk%2Fcommodity-markets-outlook-nine-charts%3Fcid%3DSHR_BlogSiteEmail_EN_EXT&amp;subject=The%20Commodity%20Markets%20Outlook%20in%20nine%20charts" id="wbgmailto" data-customlink="sw:left icons" data-text="Email">
+                            <i class="fa fa-envelope"></i><span class="screen-reader-text">Email</span>
+                        </a>
+                      </li>
+                      <li class="btn-facebook social-btn" title="Facebook" id="wbrfb">
+                          <a href="#" id="wbgfb" data-customlink="sw:left icons" data-text="Facebook"><i class="fa fa-facebook"></i><span class="social-btn-text">Share</span></a>
+                      </li><li class="btn-twitter social-btn" title="Post" id="wbrtwt">
+                            <a href="#" id="wbgtwt" data-customlink="sw:left icons" data-text="Post"><i class="fa fa-x-twitter"></i><span class="social-btn-text">Tweet</span></a>
+                        </li><li class="btn-linkedin social-btn" title="Linkedin" id="wbrld">
+                            <a href="#" id="wbgld" data-customlink="sw:left icons" data-text="Linkedin"><i class="fa fa-linkedin"></i><span class="social-btn-text">Share</span></a>
+                        </li>
+                        <li class="btn-comments social-btn" title="Comments" id="wbrld">
+                            <a href="#comments" id="wbcomments" data-customlink="sw:left icons" data-text="Comment"><i class="fa fa-comment"></i><span class="comment-count">
+      1
+    </span><span class="social-btn-text">Comment</span></a>
+                        </li>
+                    </div>
+                    <div class="pull-right fixed-meida-share">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="row"><div class="col-sm-12">
+      <figure class="image">
+        
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field--label sr-only">Image</div>
+              <div class="field--item">  <img loading="lazy" width="1140" height="500" alt="Most commodity prices have retreated from their peaks in the aftermath of the post-pandemic demand surge and war in Ukraine" class="img-responsive lazyloaded" data-src="/sites/default/files/styles/hero/public/2022-10/26.10_cmo.october_hero.png.webp?itok=du7XNhxR" title="Most commodity prices have retreated from their peaks in the aftermath of the post-pandemic demand surge and war in Ukraine" src="/sites/default/files/styles/hero/public/2022-10/26.10_cmo.october_hero.png.webp?itok=du7XNhxR"><figcaption>Most commodity prices have retreated from their peaks in the aftermath of the post-pandemic demand surge and war in Ukraine</figcaption>
+
+
+</div>
+          </div>
+
+              </figure>
+    </div></div>
+  </div>
+</div>
+<div class="hero-copyright">
+  <div class="container">
+    <div class="row"><div class="col-sm-10 col-sm-offset-1">
+      <div class="body__inner">
+        
+      </div>
+    </div></div>
+  </div>
+</div>
+
+</div>
+      
+
+  <div class="section">
+    <div class="container"><div class="row"><div class="col-sm-10 col-sm-offset-1">
+      <div class="body__inner padded-bot">
+                
+        <div class="paragraph paragraph--type--html-area paragraph--view-mode--default">
+          
+            <div class="field field--name-field-html-area field--type-text-long field--label-hidden field--item"><h4>The Fall 2022 edition of the&nbsp;<a href="https://openknowledge.worldbank.org/handle/10986/38160#:~:text=After%20registering%20more%20than%2048,to%20broadly%20stabilize%20in%202022."><em>Commodity Markets Outlook</em></a>&nbsp;highlights how shrinking value of the currencies of most developing economies is driving up food and fuel prices in ways that could deepen the food and energy crises that many of them already face.</h4>
+
+<p>&nbsp;</p>
+
+<h3 paraeid="{3a81e6ba-978c-42e4-b8da-6872b7c61d6f}{211}" paraid="1892200396">Commodity price developments&nbsp;</h3>
+
+<p paraeid="{3a81e6ba-978c-42e4-b8da-6872b7c61d6f}{221}" paraid="617773046"><span class="shareable-quote"><a data-customlink="tl" class="use-ajax" target="_blank" href="https://twitter.com/intent/tweet?text=Most+commodity+prices+have+retreated+from+their+peaks+in+the+aftermath+of+the+post-pandemic+demand+surge+and+war+in+Ukraine.+The+decline+has+been+driven+by+a+sharp+global+growth+slowdown&amp;url=https://blogs.worldbank.org/developmenttalk/commodity-markets-outlook-nine-charts/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank">Most commodity prices have retreated from their peaks in the aftermath of the post-pandemic demand surge and war in Ukraine. The decline has been driven by a sharp global growth slowdown&nbsp;<i class="fa fa-x-twitter icon"></i></a></span> and concerns about an impending global recession. However, individual commodities have seen divergent trends amid differences in supply conditions and their response to softening demand.&nbsp;</p>
+
+<p><iframe aria-label="Interactive line chart" frameborder="0" height="400" id="datawrapper-chart-FfMkV" scrolling="no" src="https://datawrapper.dwcdn.net/FfMkV/1/" style="width: 0px; border: none; min-width: 100% !important; height: 390px;" title="Commodity price indexes, monthly"></iframe><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+<!--//--><![CDATA[// ><!--
+!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+//--><!]]]]><![CDATA[>
+
+//--><!]]>
+</script></p>
+
+<h3 paraeid="{9fe37c92-097d-4ee7-bb14-ac4bde64a69d}{3}" paraid="12225147">Commodity prices remain elevated in domestic currency terms&nbsp;</h3>
+
+<p paraeid="{9fe37c92-097d-4ee7-bb14-ac4bde64a69d}{17}" paraid="1374861218"><span class="shareable-quote"><a data-customlink="tl" class="use-ajax" target="_blank" href="https://twitter.com/intent/tweet?text=Commodity+prices+remain+elevated+in+many+countries+in+domestic+currency+terms+as+their+currencies+have+depreciated&amp;url=https://blogs.worldbank.org/developmenttalk/commodity-markets-outlook-nine-charts/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank">Commodity prices remain elevated in many countries in domestic currency terms as their currencies have depreciated&nbsp;<i class="fa fa-x-twitter icon"></i></a></span>. For example, from February 2022 to September 2022, the price of Brent crude oil in U.S. dollars fell nearly 6 percent. Yet, because of currency depreciations, almost 60 percent of oil-importing emerging market and developing economies saw an increase in domestic-currency oil prices during this period. Nearly 90 percent of these economies also saw a larger increase in wheat prices in local currency terms compared to the rise in U.S. dollars.&nbsp;</p>
+
+<p><iframe aria-label="Grouped Column Chart" frameborder="0" height="400" id="datawrapper-chart-luNeu" scrolling="no" src="https://datawrapper.dwcdn.net/luNeu/2/" style="width: 0px; border: none; min-width: 100% !important; height: 390px;" title="Oil and wheat price changes in local currencies"></iframe><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+<!--//--><![CDATA[// ><!--
+!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+//--><!]]]]><![CDATA[>
+
+//--><!]]>
+</script></p>
+
+<h3 paraeid="{9fe37c92-097d-4ee7-bb14-ac4bde64a69d}{54}" paraid="1650977711">Oil prices retreat from their June highs&nbsp;</h3>
+
+<p paraeid="{9fe37c92-097d-4ee7-bb14-ac4bde64a69d}{66}" paraid="771204267"><span class="shareable-quote"><a data-customlink="tl" class="use-ajax" target="_blank" href="https://twitter.com/intent/tweet?text=Brent+crude+oil+prices+fell+sharply+during+2022Q3%2C+with+prices+in+September+2022+averaging+25+percent+below+their+June+highs.+The+fall+reflects+concerns+about+an+impending+global+recession&amp;url=https://blogs.worldbank.org/developmenttalk/commodity-markets-outlook-nine-charts/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank">Brent crude oil prices fell sharply during 2022Q3, with prices in September 2022 averaging 25 percent below their June highs. The fall reflects concerns about an impending global recession&nbsp;<i class="fa fa-x-twitter icon"></i></a></span>, continued pandemic restrictions in China, and substantial releases from strategic reserves. Oil prices saw a partial rebound in October as OPEC+ members agreed to cut their production targets by 2 million barrels per day. Oil prices are expected to average $92/bbl in 2023, close to current levels. The main downside risk is a global economic recession, which could lead to weaker demand. Upside risks relate to supply issues, including weaker-than-expected U.S. production or lower production among OPEC+.&nbsp;</p>
+
+<p><iframe aria-label="Interactive line chart" frameborder="0" height="400" id="datawrapper-chart-V7P2t" scrolling="no" src="https://datawrapper.dwcdn.net/V7P2t/1/" style="width: 0; min-width: 100% !important; border: none;" title="Brent crude oil price"></iframe><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+<!--//--><![CDATA[// ><!--
+!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+//--><!]]]]><![CDATA[>
+
+//--><!]]>
+</script></p>
+
+<h3 paraeid="{9fe37c92-097d-4ee7-bb14-ac4bde64a69d}{107}" paraid="121755974">Aggressive natural gas purchases keep prices high&nbsp;</h3>
+
+<p paraeid="{9fe37c92-097d-4ee7-bb14-ac4bde64a69d}{121}" paraid="1408286164"><span class="shareable-quote"><a data-customlink="tl" class="use-ajax" target="_blank" href="https://twitter.com/intent/tweet?text=European+natural+gas+reached+an+all-time+high+of+%2470%2Fmmbtu+in+August+2022+due+to+aggressive+actions+by+several+European+countries+to+import+liquefied+natural+gas+to+rebuild+inventories+and+compensate+for+reduced+flows+of+gas+from+Russia&amp;url=https://blogs.worldbank.org/developmenttalk/commodity-markets-outlook-nine-charts/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank">European natural gas reached an all-time high of $70/mmbtu in August 2022 due to aggressive actions by several European countries to import liquefied natural gas to rebuild inventories and compensate for reduced flows of gas from Russia&nbsp;<i class="fa fa-x-twitter icon"></i></a></span>. Prices in Japan and the U.S. also saw large increases. European prices subsequently dropped as inventories filled and consumers reduced their consumption in response to higher prices and warmer-than-usual weather. Natural gas prices are expected to ease in 2023 as demand weakens. However, the outlook will depend on the severity of the winter in Europe. A colder-than-expected winter could result in very low inventory levels by the end of the winter and would prove difficult to refill in 2023.&nbsp;</p>
+
+<p><iframe aria-label="Interactive line chart" frameborder="0" height="400" id="datawrapper-chart-MlSi8" scrolling="no" src="https://datawrapper.dwcdn.net/MlSi8/1/" style="width: 0px; border: none; min-width: 100% !important; height: 376px;" title="Natural gas prices"></iframe><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+<!--//--><![CDATA[// ><!--
+!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+//--><!]]]]><![CDATA[>
+
+//--><!]]>
+</script></p>
+
+<h3 paraeid="{9fe37c92-097d-4ee7-bb14-ac4bde64a69d}{184}" paraid="977583242">Coal markets have been influenced by natural gas prices&nbsp;</h3>
+
+<p paraeid="{9fe37c92-097d-4ee7-bb14-ac4bde64a69d}{196}" paraid="68929204"><span class="shareable-quote"><a data-customlink="tl" class="use-ajax" target="_blank" href="https://twitter.com/intent/tweet?text=Developments+in+coal+markets+have+been+heavily+influenced+by+high+natural+gas+prices%2C+which+encouraged+many+countries+to+switch+from+natural+gas+to+coal+in+power+generation&amp;url=https://blogs.worldbank.org/developmenttalk/commodity-markets-outlook-nine-charts/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank">Developments in coal markets have been heavily influenced by high natural gas prices, which encouraged many countries to switch from natural gas to coal in power generation&nbsp;<i class="fa fa-x-twitter icon"></i></a></span>. In addition, the EU’s ban on Russian coal imports in August has altered trade flows. Europe has imported more coal from Colombia, South Africa, the United States, and even Australia. Meanwhile, Russia has rerouted cargoes that would typically have gone to the European Union to other countries, including India and Türkiye. These diversions have resulted in a significant increase in transport distances and therefore higher transport costs since coal is bulky and expensive to transport.&nbsp;</p>
+
+<p><iframe aria-label="Stacked Column Chart" frameborder="0" height="285" id="datawrapper-chart-YV6L5" scrolling="no" src="https://datawrapper.dwcdn.net/YV6L5/1/" style="width: 0px; border: none; min-width: 100% !important; height: 275px;" title="EU coal import growth, select countries"></iframe><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+<!--//--><![CDATA[// ><!--
+!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+//--><!]]]]><![CDATA[>
+
+//--><!]]>
+</script></p>
+
+<h3 paraeid="{9fe37c92-097d-4ee7-bb14-ac4bde64a69d}{237}" paraid="2102273754">Food price retreat from their April highs&nbsp;</h3>
+
+<p paraeid="{9fe37c92-097d-4ee7-bb14-ac4bde64a69d}{247}" paraid="833413670">Food commodity prices declined in 2022Q3 from their all-time highs in April. The decline has been caused by larger-than-expected edible and oilseed global supplies during the ongoing season, the UN-brokered agreement that allowed Ukrainian grains to reach global markets, and deteriorating global growth prospects. Grain supplies will be lower this season, however, due to a projected decline in maize supplies, in response weather-related lower yields in the United States and the European Union.&nbsp;</p>
+
+<p paraeid="{9fe37c92-097d-4ee7-bb14-ac4bde64a69d}{247}" paraid="833413670"><img alt="Grain and edible oil supply growth" data-entity-type="image" data-entity-uuid="0" class="lazyload" data-src="https://blogs.worldbank.org/sites/default/files/users/user163666/8A%20and%20B.png" title="Grain and edible oil supply growth"></p>
+
+<h3 paraeid="{a81defcd-64a3-46ef-b5b6-904ed6c24a30}{59}" paraid="558477725">Fertilizer affordability at its lowest since 2008-09&nbsp;</h3>
+
+<p paraeid="{a81defcd-64a3-46ef-b5b6-904ed6c24a30}{71}" paraid="590320493"><span class="shareable-quote"><a data-customlink="tl" class="use-ajax" target="_blank" href="https://twitter.com/intent/tweet?text=Fertilizer+prices+fell+in+the+third+quarter+of+2022+but+remain+at+historically+elevated+levels&amp;url=https://blogs.worldbank.org/developmenttalk/commodity-markets-outlook-nine-charts/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank">Fertilizer prices fell in the third quarter of 2022 but remain at historically elevated levels&nbsp;<i class="fa fa-x-twitter icon"></i></a></span>. The pullback in prices reflects weak demand as farmers cut back fertilizer field applications due to problems associated with affordability—fertilizer affordability is at its lowest level since 2008-09. High input costs, especially energy, additional sanctions on Belarus and Russia, and extended export restrictions by China pose upside price risks.&nbsp;</p>
+
+<p><iframe aria-label="Interactive line chart" frameborder="0" height="450" id="datawrapper-chart-OGEoN" scrolling="no" src="https://datawrapper.dwcdn.net/OGEoN/1/" style="width: 0px; border: none; min-width: 100% !important; height: 440px;" title="Fertilizer affordability"></iframe><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+<!--//--><![CDATA[// ><!--
+!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+//--><!]]]]><![CDATA[>
+
+//--><!]]>
+</script></p>
+
+<h3 paraeid="{a81defcd-64a3-46ef-b5b6-904ed6c24a30}{104}" paraid="156764519">Weak demand, especially by China, weigh on metal markets&nbsp;</h3>
+
+<p paraeid="{a81defcd-64a3-46ef-b5b6-904ed6c24a30}{114}" paraid="292383058"><span class="shareable-quote"><a data-customlink="tl" class="use-ajax" target="_blank" href="https://twitter.com/intent/tweet?text=Metal+prices+fell+20+percent+in+the+third+quarter+of+2022Q3+%28q%2Fq%29+and+were+more+than+30+percent+lower+in+September+than+their+March+peak&amp;url=https://blogs.worldbank.org/developmenttalk/commodity-markets-outlook-nine-charts/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank">Metal prices fell 20 percent in the third quarter of 2022Q3 (q/q) and were more than 30 percent lower in September than their March peak&nbsp;<i class="fa fa-x-twitter icon"></i></a></span>. The decline primarily reflects deteriorating global economic activity and concerns about a possible global recession. Global industrial commodity demand continued to weaken following its post-pandemic surge. Demand also remained weak in China, the world’s largest metal consumer, amid COVID-19-related restrictions and property sector stress.&nbsp;</p>
+
+<p><iframe aria-label="Stacked Column Chart" frameborder="0" height="500" id="datawrapper-chart-kjHlA" scrolling="no" src="https://datawrapper.dwcdn.net/kjHlA/1/" style="width: 0px; border: none; min-width: 100% !important; height: 476px;" title="Metals demand growth"></iframe><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+<!--//--><![CDATA[// ><!--
+!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+//--><!]]]]><![CDATA[>
+
+//--><!]]>
+</script></p>
+
+<h3 paraeid="{a81defcd-64a3-46ef-b5b6-904ed6c24a30}{151}" paraid="1149452222">Precious metal prices retreat despite rising inflation and geopolitical tensions&nbsp;</h3>
+
+<p paraeid="{a81defcd-64a3-46ef-b5b6-904ed6c24a30}{161}" paraid="2050041625">Most precious metal prices have fallen since March in response to weak investment and physical demand owing to the strength of the U.S. dollar and higher interest rates. These factors have outweighed the positive impact of safe-haven demand related to the war in Ukraine and rising inflation.&nbsp;</p>
+
+<p paraeid="{a81defcd-64a3-46ef-b5b6-904ed6c24a30}{161}" paraid="2050041625"><img alt="Gold prices and interest rates" data-entity-type="image" data-entity-uuid="0" class="lazyload" data-src="https://blogs.worldbank.org/sites/default/files/users/user163666/17.B_1.png" title="Gold prices and interest rates"></p>
+
+<p paraeid="{a81defcd-64a3-46ef-b5b6-904ed6c24a30}{161}" paraid="2050041625">&nbsp;</p>
+</div>
+      
+      </div>
+
+  
+                  <div class="blogtags">
+	
+
+<div class="field field--name-field-topic field--type-entity-reference field--label-above">
+	<div class="field--label">Topics</div>
+	<div class="field--items">
+															
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+						</div>
+</div>
+
+
+      
+
+	
+
+<div class="field field--name-field-topic field--type-entity-reference field--label-above">
+	<div class="field--label">Regions</div>
+	<div class="field--items">
+															
+						</div>
+</div>
+
+
+      
+
+	
+
+<div class="field field--name-field-topic field--type-entity-reference field--label-above">
+	<div class="field--label">Series</div>
+	<div class="field--items">
+															
+						</div>
+</div>
+
+
+      
+<div class="field--item"><a href="/search?f[0]=topic:310&amp;f[1]=language:en">Agriculture and Food</a></div><div class="field--item"><a href="/search?f[0]=topic:283&amp;f[1]=language:en">Competitiveness</a></div><div class="field--item"><a href="/search?f[0]=topic:288&amp;f[1]=language:en">Energy</a></div><div class="field--item"><a href="/search?f[0]=topic:289&amp;f[1]=language:en">Extractive Industries</a></div><div class="field--item"><a href="/search?f[0]=topic:293&amp;f[1]=language:en">Financial Sector</a></div><div class="field--item"><a href="/search?f[0]=topic:300&amp;f[1]=language:en">Jobs &amp; Development</a></div><div class="field--item"><a href="/search?f[0]=topic:302&amp;f[1]=language:en">Macroeconomics and Fiscal Management</a></div><div class="field--item"><a href="/search?f[0]=topic:306&amp;f[1]=language:en">Trade</a></div><div class="field--item"><a href="/search?f[0]=regions:280&amp;f[1]=language:en">The World Region</a></div><div class="field--item"><a href="/search?f[0]=series:731&amp;f[1]=language:en">Commodity Markets Outlook</a></div></div>
+              </div>
+    </div></div></div>
+  </div>
+
+  <div class="section lightgreybg padded">
+    <div class="container"><div class="row"><div class="col-sm-10 col-sm-offset-1">
+      <div class="body__inner"><div class="views-element-container form-group"><div class="view view-eva view-authors view-id-authors view-display-id-entity_view_1 js-view-dom-id-c7ccbb6683e0971f0c23465a92b9c1a16325e9f4f0c824982e7e897b58834532">
+  
+    
+
+      <header>
+      <h2>Authors</h2>
+    </header>
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-field-authors"><div class="field-content">  <div data-history-node-id="5643" class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      <div class="views-element-container form-group"><div class="view view-eva view-blogger-teaser-display view-id-blogger_teaser_display view-display-id-entity_view_1 js-view-dom-id-4a39819da82a7d7721d09e1499384a8de40828086cb85ebb1697cf8692288f00">
+  
+    
+
+  
+  
+
+      <div class="views-row"><div class="author">
+  <div class="author__inner clearfix">
+    <div class="author__image">        <a href="/team/john-baffes" hreflang="en"><a href="/team/john-baffes"><img loading="lazy" src="/sites/default/files/styles/blogger_profile_image/public/2019-11/John%20Baffes.png.webp?itok=Levcm6gU" width="172" height="172" alt="John Baffes" class="img-responsive" title="John Baffes"></a>
+
+</a>
+
+      <a href="https://www.linkedin.com/in/johnbaffes/" class="social linkedin" target="_blank">https://www.linkedin.com/in/johnbaffes/</a>
+      
+	
+
+  </div>    <div class="author__caption">
+      <h3><a href="/team/john-baffes" hreflang="en">John Baffes</a></h3>
+      <p>Senior Agriculture Economist, Development Economics Prospects Group</p>
+      <div class="author__link"><a href="/team/john-baffes">More Blogs By John</a></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  
+  
+
+  
+  
+
+  
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-authors"><div class="field-content">  <div data-history-node-id="443" class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      <div class="views-element-container form-group"><div class="view view-eva view-blogger-teaser-display view-id-blogger_teaser_display view-display-id-entity_view_1 js-view-dom-id-e634388468b7a7a53cb20e50b60debccb06f691d8aac8541d493f21f4d7afc69">
+  
+    
+
+  
+  
+
+      <div class="views-row"><div class="author">
+  <div class="author__inner clearfix">
+    <div class="author__image">        <a href="/team/peter-nagle" hreflang="en"><a href="/team/peter-nagle"><img loading="lazy" src="/sites/default/files/styles/blogger_profile_image/public/2020-05/peter%20nagle.png.webp?itok=hDVZ0zVa" width="172" height="172" alt="photo: Peter Nagle" class="img-responsive" title="photo: Peter Nagle"></a>
+
+</a>
+
+      <a href="https://www.linkedin.com/in/peter-nagle-27388149/" class="social linkedin" target="_blank">https://www.linkedin.com/in/peter-nagle-27388149/</a>
+      
+	
+
+  </div>    <div class="author__caption">
+      <h3><a href="/team/peter-nagle" hreflang="en">Peter Nagle</a></h3>
+      <p>Senior Economist, Prospects Group</p>
+      <div class="author__link"><a href="/team/peter-nagle">More Blogs By Peter</a></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  
+  
+
+  
+  
+
+  
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div></div></div>
+
+  
+  
+
+  
+  
+
+  
+  </div>
+</div>
+</div>
+    </div></div></div>
+  </div>
+
+  <div id="comments" class="section greybg padded">
+    <div class="container"><div class="row"><div class="col-sm-10 col-sm-offset-1">
+      <div class="body__inner"><div class="views-element-container form-group"><div class="commentcount hidden view view-eva view-total-comments view-id-total_comments view-display-id-entity_view_1 js-view-dom-id-10b3305440201bbb25e7710795f47b390d5e7e50058ac1749ec79b8f587a9298">
+  
+    
+
+      <header>
+      1
+    </header>
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"></span></div></div>
+
+  
+  
+
+  
+  
+
+  
+  </div>
+</div>
+<section>
+  
+      <h2>Join the Conversation</h2>
+    <form class="comment-comment-form comment-form antibot" data-form="The Commodity Markets Outlook in nine charts::blogcomment" data-drupal-selector="comment-form" data-action="/comment/reply/node/74211/field_comments" action="/antibot" method="post" id="comment-form" accept-charset="UTF-8">
+  <noscript>
+  <div class="antibot-no-js antibot-message antibot-message-warning">You must have JavaScript enabled to use this form.</div>
+</noscript>
+<div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-name js-form-item-name form-group">
+      <label for="edit-name" class="control-label js-form-required form-required">Your name</label>
+  
+  
+  <input data-drupal-default-value="Anonymous" placeholder="Your name" data-drupal-selector="edit-name" class="form-text required form-control" type="text" id="edit-name" name="name" value="" size="30" maxlength="60" required="required" aria-required="true">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-lkvrjsfs-kahwjncqny2kheqdyukui1sd0m3gefkq4w" type="hidden" name="form_build_id" value="form-LkvRjsfs_kAhWJnCqnY2KHeQdYuKUi1sd0m3GeFKQ4w"><input data-drupal-selector="edit-comment-comment-form" type="hidden" name="form_id" value="comment_comment_form"><input data-drupal-selector="edit-antibot-key" type="hidden" name="antibot_key" value=""><div class="field--type-string field--name-field-email field--widget-string-textfield form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-field-email-wrapper" id="edit-field-email-wrapper">      <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-field-email-0-value js-form-item-field-email-0-value form-group">
+      <label for="edit-field-email-0-value" class="control-label">Email</label>
+  
+  
+  <input class="js-text-full text-full form-text form-control" data-drupal-selector="edit-field-email-0-value" type="text" id="edit-field-email-0-value" name="field_email[0][value]" value="" size="128" placeholder="Your Email">
+
+  
+  
+  </div>
+
+  </div>
+<div class="email-hint-wrapper">The content of this field is kept private and will not be shown publicly</div><div class="field--type-text-long field--name-comment-body field--widget-text-textarea form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-comment-body-wrapper" id="edit-comment-body-wrapper">      <div class="js-text-format-wrapper text-format-wrapper js-form-item form-item">
+  <div class="form-item js-form-item form-type-textarea js-form-type-textarea form-item-comment-body-0-value js-form-item-comment-body-0-value">
+      <label for="edit-comment-body-0-value" class="control-label js-form-required form-required">Comment</label>
+  
+  
+  <div class="form-textarea-wrapper">
+  <textarea class="js-text-full text-full maxlength form-textarea required form-control resize-vertical" data-entity_embed-host-entity-langcode="en" data-maxlength="1000" maxlength_js_label="Remaining characters: <strong>@remaining</strong>" data-media-embed-host-entity-langcode="en" data-drupal-selector="edit-comment-body-0-value" id="edit-comment-body-0-value" name="comment_body[0][value]" rows="5" cols="60" placeholder="Write a response..." required="required" aria-required="true" data-once="maxlength"></textarea><div id="edit-comment-body-0-value-counter" class="counter">Remaining characters: <strong>1000</strong></div>
+</div>
+
+
+  
+  
+  </div>
+<div class="js-filter-wrapper filter-wrapper form-inline form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-comment-body-0-format" id="edit-comment-body-0-format"><div class="filter-help form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-comment-body-0-format-help" id="edit-comment-body-0-format-help"><a href="/filter/tips" target="_blank" title="" data-toggle="tooltip" data-drupal-selector="edit-comment-body-0-format-help-about" class="icon-before" id="edit-comment-body-0-format-help-about" data-original-title="Opens in new window"><span class="icon glyphicon glyphicon-question-sign" aria-hidden="true"></span>About text formats</a></div>
+</div>
+
+  </div>
+
+  </div>
+<div class="form-item js-form-item form-type-checkbox js-form-type-checkbox form-item-one-trust-disclaimer js-form-item-one-trust-disclaimer checkbox">
+  
+  
+  
+
+      <label for="edit-one-trust-disclaimer" class="control-label option js-form-required form-required"><input data-drupal-selector="edit-one-trust-disclaimer" class="form-checkbox required" type="checkbox" id="edit-one-trust-disclaimer" name="one_trust_disclaimer" value="1" required="required" aria-required="true">I have read the <a href="https://www.worldbank.org/en/about/legal/privacy-notice" target="_blank">Privacy Notice</a> and consent to my personal data being processed, to the extent necessary, to submit my comment for moderation. I also consent to having my name published.</label>
+  
+  
+  </div>
+<div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions--2"><button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn icon-before" type="submit" id="edit-submit" name="op" value="Save"><span class="icon glyphicon glyphicon-ok" aria-hidden="true"></span>
+Save</button></div>
+
+</form>
+
+  
+  <div id="comment-487291" class="comment">
+  
+            <div class="field field--name-comment-author field--type-ds field--label-hidden field--item">  Stefan Robertsson
+</div>
+      
+            <div class="field field--name-comment-changed-date field--type-ds field--label-hidden field--item">January 03, 2023</div>
+      
+            <div class="field field--name-comment-body field--type-text-long field--label-hidden field--item">In previous years WB has published [very] long term forecast/outlook for key energy prices (as well as a range of commodity prices), going out more than 10 years.  We have found these WB long-term forecasts to be very good reference points.  However, it seems that there s not much (anything) for long-term forecasts published by WB for overa...</div><div class="original hidden">In previous years WB has published [very] long term forecast/outlook for key energy prices (as well as a range of commodity prices), going out more than 10 years.  We have found these WB long-term forecasts to be very good reference points.  However, it seems that there s not much (anything) for long-term forecasts published by WB for overa year.  Does WB still produce long-term forecasts that can be shared?  Again, we are primarily interested in energy prices, and maybe specifically coal, Henry Hub, and Brent, but a broader set of price forecasts would be very interesting.
+</div><a href="#" class="read-less hidden">Read less</a><a href="#" class="read-more">Read more...</a>
+      <ul class="links inline list-inline"><li class="comment-reply"><a href="/comment/reply/node/74211/field_comments/487291">Reply</a></li></ul>
+</div>
+
+
+
+</section>
+</div>
+    </div></div></div>
+  </div>
+
+  <div class="section greybg padded">
+    <div class="container"><div class="row"><div class="col-sm-10 col-sm-offset-1">
+      <div class="body__inner">
+            <div class="field field--name-dynamic-block-fieldnode-newsletter-form field--type-ds field--label-hidden field--item"><form data-drupal-selector="wb-subscribe-form" action="/developmenttalk/commodity-markets-outlook-nine-charts" method="post" id="wb-subscribe-form" accept-charset="UTF-8">
+  <input autocomplete="off" data-drupal-selector="form-xms6cywk9i1uibchqwatlhmrphza3yt938unpiwq-xg" type="hidden" name="form_build_id" value="form-xMs6CywK9I1UIbcHqwAtlHMRpHzA3YT938uNpiWQ_Xg"><input data-drupal-selector="edit-wb-subscribe-form" type="hidden" name="form_id" value="wb_subscribe_form">
+</form>
+</div>
+      </div>
+    </div></div></div>
+  </div>
+
+
+
+
+  </div>
+
+              </section>
+
+              </div>
+</main>
+</div>
+
+
+    <div class="prefooter padded">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+              <div class="region region-footer">
+    <section id="block-cookiedisclaimer" class="block block-block-content block-block-contentab094f8d-2fa4-4f7d-830b-bfd0a4af071f clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><div id="cookiedisc" style="display: block;"><a id="cookieclose" onclick="cookieClose()">x</a>
+ <p>This site uses cookies to optimize functionality and give you the best possible experience. If you continue to navigate this website beyond this page, cookies will be placed on your browser. To learn more about cookies, <a href="https://www.worldbank.org/en/about/legal/privacy-notice">click here. </a> </p>
+</div>
+<style>
+<!--/*--><![CDATA[/* ><!--*/
+
+#cookiedisc{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight:regular;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  z-index: 999;
+  padding: 20px 20px 10px 20px;
+  text-align:center;
+}
+#cookiedisc a{
+  color: white;
+  text-decoration: underline;
+}
+#cookiedisc a#cookieclose{
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-weight: bold;
+  text-decoration:none;
+}
+
+/*--><!]]>*/
+</style><script>
+<!--//--><![CDATA[// ><!--
+
+function wb_consent_setcookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expiration = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + "; " + expiration;
+}       
+var consent_note = document.cookie.replace(/(?:(?:^|.*;\s*)consent_cookie\s*\=\s*([^;]*).*$)|^.*$/, '$1');
+if(consent_note.indexOf("1")<0) {                                            
+  document.getElementById("cookiedisc").style.display = "block";
+} else{
+  document.getElementById("cookiedisc").style.display = "none";
+}
+function cookieClose() {
+  wb_consent_setcookie('consent_cookie','1',365);                   
+  document.getElementById("cookiedisc").style.display = "none";
+};
+
+
+//--><!]]>
+</script></div>
+      
+  </section>
+
+<section id="block-tempcss" class="block block-block-content block-block-contente598ce11-2a44-4d56-9dd7-b2ab640371f0 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><style>
+<!--/*--><![CDATA[/* ><!--*/
+
+.page-node-type-blog-entry .field--name-field-topic{
+word-spacing: 3px;
+}
+[dir="rtl"] .langswitcher{
+text-align: left !important;
+}
+
+.blogger-text a.twitter::before {
+    background-image: url(/themes/blogstheme/images/icons/x-twitter-32x32.png);
+    background-position: center top;
+    background-size: 100% auto;
+    content: '';
+}
+
+/*--><!]]>*/
+</style></div>
+      
+  </section>
+
+
+  </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+  <footer>
+    <div class="full-row-footer-components">
+        <div class="container">
+            <div class="footer">
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="list-inline">
+                                <ul>
+                                    <li>
+                                        <a class="disclaimer" href="http://www.worldbank.org/legalinfo">Legal</a>
+                                        <a class="disclaimer" href="https://www.worldbank.org/en/about/legal/privacy-notice">Privacy Notice</a>
+                                        <a class="disclaimer" href="http://www.worldbank.org/en/access-to-information">Access to Information</a>
+                                        <a class="disclaimer" href="http://www.worldbank.org/jobs">Jobs</a>
+                                        <a class="disclaimer" href="http://www.worldbank.org/en/about/contacts">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End disclaimer-->
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-fraud"><a href="http://www.worldbank.org/fraudandcorruption">REPORT FRAUD OR CORRUPTION</a></div>
+                        </div>
+                        <!-- End disclaimer and copy right -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End footer Bottom row -->
+    <div class="full-row-footer-black-components">
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <div class="footer-bottom-left">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <ul>
+                                <li>
+                                    <a href="http://www.worldbank.org/">
+                                        <img src="/themes/blogstheme/images/logo-wbg-footer-en.svg" title="The World Bank Working for a World Free of Poverty" alt="The World Bank Working for a World Free of Poverty"></a>
+                                </li>
+                                <li>
+                                    <a class="wbg-partnership" title="International Bank for Reconstruction and Development" href="http://www.worldbank.org/en/who-we-are/ibrd">IBRD</a>
+                                    <a class="wbg-partnership" title="International Development Association" href="http://www.worldbank.org/ida">IDA</a>
+                                    <a class="wbg-partnership" title="International Finance Corporation" href="http://www.ifc.org/">IFC</a>
+                                    <a class="wbg-partnership" title="Multilateral Investment Guarantee Agency" href="http://www.miga.org/">MIGA</a>
+                                    <a class="wbg-partnership" title="International Centre for Settlement of Investment Disputes" href="http://icsid.worldbank.org/">ICSID</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End logo and Wbg partnership -->
+                    <div class="footer-bottom-right">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="footer-copy-right">
+                                ©
+                                <script language="JavaScript">
+                                    <!-- Begin
+                                    var time = new Date();
+                                    var year = time.getYear();
+                                    if (year < 2000)
+                                        year = year + 1900;
+                                    document.write(year); // End -->
+                                </script>2024
+                                The World Bank Group, All Rights Reserved.
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End dropdown and fraud  -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  </div><script>_satellite["_runScript1"](function(event, target, Promise) {
+document.addEventListener('mousemove', function detectMouseMove() {
+ document.removeEventListener('mousemove', detectMouseMove, false);
+ if (!/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-||o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) {
+   _satellite.track('websiteBot')
+      }
+   })
+
+});</script>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/74211","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":[]},"placeholderSrc":"","preferNative":false,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"multiselect":{"widths":250},"instrumentationKey":"3f50b04a-7268-4041-ad39-01aff17ed368","custom_links":[],"channelTweetAccount":"worldbank","bootstrap":{"forms_has_error_value_toggle":1,"popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/search":true,"\/comment\/reply\/node\/74211\/field_comments":true},"antibot":{"forms":{"views-exposed-form-search-blogs-page-1":{"id":"views-exposed-form-search-blogs-page-1","key":"gUZuIo32mrCqvyEhP75Xo-VuFG4gAhdKBN8J7pTnK3k"},"comment-form":{"id":"comment-form","key":"QwJDW34_w0xMMXJoVh7Rzta8yYG8mXfZ3vPTc0izDIT"}}},"wb_overlay_banner":{"activeTheme":"blogstheme"},"user":{"uid":0,"permissionsHash":"9bacc350f4220a2d4c7149840def5ebb3c3eb80307a5fde1ee62a692c2299039"}}</script>
+<script src="/sites/default/files/js/js_HKXo3nfCN5QU8OM2z8_3SgNar8DzexH5_Onn7fE8aQ8.js"></script>
+<iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_worldbank_0" name="destination_publishing_iframe_worldbank_0_name" src="https://worldbank.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fblogs.worldbank.org" class="aamIframeLoaded" style="display: none; width: 0px; height: 0px;"></iframe><script src="/modules/custom/wb_overlay_banner/js/jquery.countdown.min.js?sagrkf"></script>
+<script src="/modules/custom/wb_overlay_banner/js/script.js?sagrkf"></script>
+<script src="/sites/default/files/js/js_SYLcA3eJw8kJci7PQi2BP-8Q6Q9U5dCNlo5cCS6_C-0.js"></script>
+
+    <script type="text/javascript">
+    if (_satellite) {
+      _satellite.pageBottom();
+    }
+    </script><!-- Global site tag (gtag.js) - Google Ads: 972661263 -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-972661263"></script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-5604b32d0fc3bba7cc4","applicationID":"1037662564","transactionName":"MgNTNhQDWhBRWkMLXgtJcAESC1sNH0lWBVQ6BVABDgc=","queueTime":0,"applicationTime":56,"atts":"HkRQQFwZSR4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<script src="https://apis.google.com/js/client.js?onload=init" gapi_processed="true"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-972661263');
+</script>
+
+<!-- Old Global site tag (gtag.js) - Google AdWords: 857807178 
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-857807178"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-857807178');
+</script>
+--><script>
+  //if(_satellite.getVar("ChannelInfo").includes('blog planet')){
+  gtag('event', 'conversion', {'send_to': 'AW-972661263/7mAwCLfa2vwBEI_E5s8D'});
+  //}
+</script><script>_satellite["_runScript2"](function(event, target, Promise) {
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+});</script><script>_satellite["_runScript3"](function(event, target, Promise) {
+if (typeof kWidget !== "undefined") {
+	kWidget.addReadyCallback(function (playerId) {
+	var kdp = document.getElementById(playerId);
+
+	//console.log("player "+kdp);
+	//console.log("Name "+kdp.evaluate('{mediaProxy.entry.name}'));
+	//console.log("Duration "+kdp.evaluate('{duration}'));
+	//console.log("Current Time "+kdp.evaluate('{video.player.currentTime}'));
+	/*
+	kdp.kBind('playerStateChange', function (event) {
+		console.log("event "+event);
+		kulturaPlayerHandler("playing", kdp.evaluate('{mediaProxy.entry.name}'), kdp.evaluate('{duration}'), kdp.evaluate('{video.player.currentTime}'));
+		});*/
+	kdp.kBind("playerPlayed", function (MediaPlayerState) {
+			kulturaPlayerHandler("playing", kdp.evaluate('{mediaProxy.entry.name}'), kdp.evaluate('{duration}'), kdp.evaluate('{video.player.currentTime}'));
+		});
+		kdp.kBind("seek", function (MediaPlayerState) {
+			kulturaPlayerHandler("seeking", kdp.evaluate('{mediaProxy.entry.name}'), kdp.evaluate('{duration}'), kdp.evaluate('{video.player.currentTime}'));
+		});
+		kdp.kBind("seeked", function (MediaPlayerState) {
+			kulturaPlayerHandler("seeked", kdp.evaluate('{mediaProxy.entry.name}'), kdp.evaluate('{duration}'), kdp.evaluate('{video.player.currentTime}'));
+		});
+		kdp.kBind("playerPaused", function (MediaPlayerState) {
+			kulturaPlayerHandler("paused", kdp.evaluate('{mediaProxy.entry.name}'), kdp.evaluate('{duration}'), kdp.evaluate('{video.player.currentTime}'));
+		});
+		kdp.kBind("playerPlayEnd", function (MediaPlayerState) {
+			kulturaPlayerHandler("ended", kdp.evaluate('{mediaProxy.entry.name}'), kdp.evaluate('{duration}'), kdp.evaluate('{video.player.currentTime}'));
+		});
+	});
+}
+
+function kulturaPlayerHandler(playerState,mediaName,videoDuration,videoCurrentTime){
+	var videoPlayer = "Kaltura";
+	var mediaOffset = videoCurrentTime>0?Math.floor(videoCurrentTime):0;
+	var mediaLength = Math.floor(videoDuration);
+
+	s.Media.playerName = videoPlayer;
+
+	//console.log("mediaOffset - "+mediaOffset);
+	//console.log("mediaLength - "+mediaLength);
+	//console.log("playerState - "+playerState);
+
+	if(playerState == "playing" && mediaLength == 0){
+	videoContentType = "live:kaltura video";
+	s.Media.trackSeconds = 60;
+	s.Media.open(mediaName, mediaLength, videoPlayer);
+	//s.Media.play(mediaName, mediaOffset);*/
+	}
+
+	if(playerState == "playing"){
+		if (mediaOffset == 0 && mediaLength > 0){
+			videoContentType = "replay:kaltura video";
+			s.Media.segmentByMilestones = true;
+			s.Media.trackMilestones = '25,50,75';
+			//console.log("milestone tracking set");
+			s.Media.open(mediaName, mediaLength, videoPlayer);
+			s.Media.play(mediaName, mediaOffset);
+			_satellite.getVar('FBPixelVideoReplay');
+      _satellite.getVar('TwitterPixelVideoReplay');
+      _satellite.getVar('GAdwordsTagVideoReplay');
+		}else{
+			s.Media.play(mediaName, mediaOffset);
+		}
+	}else if(playerState == "seeking"){
+		s.Media.stop(mediaName, mediaOffset);
+	}else if(playerState == "seeked"){
+		s.Media.play(mediaName, mediaOffset);
+	}else if(playerState == "paused"){
+		s.Media.stop(mediaName, mediaOffset);
+	}else if(playerState == "ended"){
+		s.Media.stop(mediaName, mediaOffset);
+		s.Media.close(mediaName);
+		mediaOffset = 0;
+	}
+}
+});</script><script>_satellite["_runScript4"](function(event, target, Promise) {
+_linkedin_partner_id = "1113290";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+});</script><script>_satellite["_runScript5"](function(event, target, Promise) {
+_linkedin_partner_id = "1113290";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+
+});</script><script>_satellite["_runScript6"](function(event, target, Promise) {
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1458892451075570'); 
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+});</script><noscript></noscript><script>_satellite["_runScript7"](function(event, target, Promise) {
+/*<!-- Twitter universal website tag code -->*/
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('config','nwaxc');
+/*<!-- End Twitter universal website tag code -->*/
+});</script><script>_satellite["_runScript8"](function(event, target, Promise) {
+/*<!-- Twitter conversion tracking base code -->*/
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','ny9zz');
+/*<!-- End Twitter conversion tracking base code -->*/
+});</script><script>_satellite["_runScript9"](function(event, target, Promise) {
+/*<!-- Twitter conversion tracking base code -->*/
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','nya03');
+/*<!-- End Twitter conversion tracking base code -->*/
+});</script><script>_satellite["_runScript10"](function(event, target, Promise) {
+/*<!-- Twitter conversion tracking base code -->*/
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','nyz9o');
+/*<!-- End Twitter conversion tracking base code -->*/
+});</script><script>_satellite["_runScript11"](function(event, target, Promise) {
+var n=0;if("undefined"!=typeof JQuery)jQuery("iframe").each((function(){var e=jQuery(this).attr("src");e&&(e.indexOf("video.ibm.com")>-1||e.indexOf("ustream.tv")>-1)&&(jQuery(this).attr("src",e),jQuery(this).attr("id","UstreamIframe"+n),n++)}));else{var iFrames=document.getElementsByTagName("iframe");for(i=0;i<iFrames.length;i++){var src=iFrames[i].getAttribute("src");src&&(src.indexOf("video.ibm.com")>-1||src.indexOf("ustream.tv")>-1)&&(iFrames[i].setAttribute("src",src),iFrames[i].setAttribute("id","UstreamIframe"+n),n++)}}if(n>0){var UstreamEmbed=function(){function e(e){return t(e)}function t(e){var t=i(e),l=function(e){function t(t){if("socialstream"!==t){if(!w)return M||(M=[]),void M.push(arguments);var n=d(arguments).slice(1);n[0]&&"function"==typeof n[0]&&(b[t]||(b[t]=[]),b[t].push(n[0])),o(e,h,{cmd:t,args:n})}else if(f(window,"message",m),T=i(arguments[1]),E=s(T.getAttribute("src")),O=!0,x.length)for(var r=0,v=x.length;v>r;r++)a(x[r])}function l(){if(M){for(;M.length;)t.apply(this,M.shift());M=null}}function m(e){var t=T;(t&&t.contentWindow&&t.contentWindow===e.source||e.source===T.id)&&g.onmessage(e)}function u(e){var i,n=JSON.parse(e.data);return n.cmd&&"ready"==n.cmd?void o(T,E,{cmd:"ready"}):(i=(i=[n.cmd]).concat(n.args),void t.apply(this,i))}function p(){w=!0,l()}function y(){t.apply(this,arguments)}var g,h,E,T,w=!1,O=!1,M=[],b={},L={},x=[];return h=s(e.getAttribute("src")),g={host:h,callMethod:y,getProperty:function(){y.apply(this,arguments)},addListener:function(e,t){L[e]||(L[e]=[]),L[e].push(t)},removeListener:function(e,t){if(t)for(var i=0,n=L[e].length;n>i;i++)L[e][i]===t&&L[e].splice(i,1);else L[e]=null},onmessage:function(e){var t;if(h||E||x.push({origin:e.origin,data:e.data}),e.origin==h){try{t=JSON.parse(e.data)}catch(e){return}if(t.sstream)return void u(e);if(t.event&&t.event.ready&&(p(),n(L,"ready")),t.event&&!0===t.event.live)return void n(L,"live");if(t.event&&!1===t.event.live)return void n(L,"offline");if(t.event&&!t.event.ready)if(v)Object.keys(t.event).forEach((function(e){n(L,e,t.event[e])}));else for(var i in t.event)t.event.hasOwnProperty(i)&&n(L,i,t.event[i]);if(t.property)if(v)Object.keys(t.property).forEach((function(e){r(b,e,t.property[e])}));else for(var i in t.property)t.property.hasOwnProperty(i)&&r(b,i,t.property[i])}else if(O&&e.origin==E)return void u(e)},destroy:function(){w=!1,h="",O=!1,E="",T=null,M=[],b={},L={},x=[],c[e.id]&&(c[e.id]=null),e=null}}}(t);return t.id||(t.id="UstreamEmbed"+Math.ceil(1e5*Math.random())),l.id=t.id,c[t.id]=l,l}function i(e){return"string"==typeof e&&(e=document.getElementById(e)),e}function n(e,t,i){for(var n in e[t])e[t].hasOwnProperty(n)&&e[t][n].call(window,t,i)}function r(e,t,i){if(e[t]){for(var n in e[t])e[t].hasOwnProperty(n)&&e[t][n].call(window,i);e[t]=null,delete e[t]}}function a(e){var t,i;for(t in c)c.hasOwnProperty(t)&&c[t]&&((i=document.getElementById(t))&&i.contentWindow?i.contentWindow===e.source&&c[t].onmessage(e):"string"==typeof e.source&&e.source==t&&c[t].onmessage(e))}function o(e,t,i){e.contentWindow.postMessage(JSON.stringify(i),t)}function s(e){return e.indexOf("http")<0&&(e=location.protocol+e),e.match(l)[1].toString()}function d(e){return Array.prototype.slice.call(e,0)}function f(e,t,i){e.addEventListener?e.addEventListener(t,i,!1):e.attachEvent("on"+t,i)}var v=void 0!==Object.keys,c={},l=new RegExp("^(http(?:s)?://[^/]+)","im");return f(window,"message",a),window.UstreamEmbed=e}();if(document.getElementsByTagName("iframe"))for(i=0;i<document.getElementsByTagName("iframe").length;i++)if(document.getElementsByTagName("iframe")[i].id.indexOf("UstreamIframe")>-1){var videoTitle,mediaLength,iFrame=document.getElementsByTagName("iframe")[i].id,viewer=UstreamEmbed(document.getElementsByTagName("iframe")[i].id),videoType="channels",mediaOffset=0;viewer.getProperty("content",(function(e){"recorded"===e[0]?videoType="videos":"channels"===e[0]&&(videoType="channels");var t=e[1];videoTitle=getVideoTitle(t,videoType)[0],mediaLength=getVideoTitle(t,videoType)[1]})),viewer.addListener("playing",onEmbedEvent),viewer.addListener("finished",onEmbedEvent),viewer.addListener("offline",onEmbedEvent)}var prevEvent="",startTime=0;function onEmbedEvent(e,t){var i="ustream tv";t&&"playing"===e&&prevEvent!=e?("paused"!==prevEvent?("channels"===videoType?(videoContentType="live:ustream video",s.Media.trackSeconds=60,_satellite.getVar("FBPixelVideoLive")):"videos"===videoType&&(videoContentType="replay:ustream video",s.Media.segmentByMilestones=!0,s.Media.trackMilestones="25,50,75",_satellite.getVar("FBPixelVideoReplay"),_satellite.getVar("TwitterPixelVideoReplay"),_satellite.getVar("GAdwordsTagVideoReplay")),s.Media.open(videoTitle,mediaLength,i),s.Media.play(videoTitle,mediaOffset),startTime=new Date):"paused"===prevEvent&&(s.Media.play(videoTitle,mediaOffset),startTime=new Date),prevEvent=e):t||"playing"!==e||"paused"==prevEvent?!t||"finished"!==e&&"offline"!==e||(mediaOffset+=Math.round((new Date-startTime)/1e3),s.Media.stop(videoTitle,mediaOffset),s.Media.close(videoTitle),mediaOffset=0,prevEvent=e):(mediaOffset+=Math.round((new Date-startTime)/1e3),s.Media.stop(videoTitle,mediaOffset),prevEvent="paused")}function getVideoTitle(e,t){var i=e,n=0,r=new XMLHttpRequest;return r.onreadystatechange=function(){if(4==this.readyState&&200==this.status){var e=JSON.parse(r.responseText);"videos"===t?(i=e.video.title,n=Math.round(e.video.length)):"channels"===t&&(i=e.channel.title)}},r.open("GET","https://api.ustream.tv/"+t+"/"+e+".json",!1),r.send(),[i,n]}}
+});</script><script>_satellite["_runScript12"](function(event, target, Promise) {
+var n=0;if("undefined"!=typeof JQuery)jQuery("iframe").each((function(){var e=jQuery(this).attr("src");e&&e.indexOf("youtube.com")>-1&&(e.indexOf("?")>-1?-1==e.indexOf("enablejsapi")&&(e+="&enablejsapi=1"):e+="?enablejsapi=1",jQuery(this).attr("src",e),jQuery(this).attr("id","ytplayer"+n),n++)}));else{var iFrames=document.getElementsByTagName("iframe");for(i=0;i<iFrames.length;i++){var src=iFrames[i].getAttribute("src");src&&src.indexOf("youtube.com")>-1&&(src.indexOf("?")>-1?-1==src.indexOf("enablejsapi")&&(src+="&enablejsapi=1"):src+="?enablejsapi=1",iFrames[i].setAttribute("src",src),iFrames[i].setAttribute("id","ytplayer"+n),n++)}}if(n>0){var tag=document.createElement("script");tag.src="https://www.youtube.com/iframe_api";var firstScriptTag=document.getElementsByTagName("script")[0];firstScriptTag.parentNode.insertBefore(tag,firstScriptTag);var playerInfoList=new Array;if(document.getElementsByTagName("iframe"))for(i=0;i<document.getElementsByTagName("iframe").length;i++)document.getElementsByTagName("iframe")[i].id.indexOf("ytplayer")>-1&&playerInfoList.push(document.getElementsByTagName("iframe")[i]);var players=new Array;function onPlayerStateChange(e){var a="YouTube",t=Math.floor(e.target.getCurrentTime()),i=Math.floor(e.target.getDuration());console.log("event: "+e.data),console.log("YT.PlayerState.PLAYING: "+YT.PlayerState.PLAYING),console.log("YT.PlayerState.PAUSED: "+YT.PlayerState.PAUSED),console.log("mediaOffset: "+t),console.log("media length: "+i);var r=e.target.getVideoData().title;3==e.data&&0==t&&0==i&&(videoContentType="live:youtube video",s.Media.trackSeconds=60,s.Media.open(r,i,a),s.Media.play(r,t),_satellite.getVar("FBPixelVideoLive")),e.data==YT.PlayerState.PLAYING?0==t&&i>0?(videoContentType="replay:youtube video",s.Media.segmentByMilestones=!0,s.Media.trackMilestones="25,50,75",s.Media.open(r,i,a),s.Media.play(r,t),_satellite.getVar("FBPixelVideoReplay"),_satellite.getVar("TwitterPixelVideoReplay"),_satellite.getVar("GAdwordsTagVideoReplay")):s.Media.play(r,t):e.data==YT.PlayerState.PAUSED||e.data==YT.PlayerState.BUFFERING?s.Media.stop(r,t):e.data==YT.PlayerState.ENDED&&(s.Media.stop(r,t),s.Media.close(r),t=0)}window.playersaem=players,window.onYouTubeIframeAPIReady=function(){for(x=0;x<playerInfoList.length;x++)players[x]=new YT.Player(playerInfoList[x],{events:{onStateChange:onPlayerStateChange}})}}
+});</script><!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+<script type="text/javascript">
+(function(){var g=function(e,h,f,g){
+this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
+this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
+this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g+ "&t=" + (new Date()).getTime();document.body&&document.body.appendChild(a)}};
+this.start=function(){var a=this;window.addEventListener?window.addEventListener("load",function(){a.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){a.go()})}};
+try{(new g(100,"r","QSI_S_ZN_ahoepSezTqpB2GV","https://znahoepseztqpb2gv-wbgwebvisitor.siteintercept.qualtrics.com/WRSiteInterceptEngine/?Q_ZID=ZN_ahoepSezTqpB2GV")).start()}catch(i){}})();
+</script><div id="ZN_ahoepSezTqpB2GV"><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+<!--END WEBSITE FEEDBACK SNIPPET--><img src="https://t.co/1/i/adsct?bci=4&amp;eci=3&amp;event=%7B%7D&amp;event_id=abd94cd4-01f5-4de3-831d-fcacd239df16&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=97e3e999-c79b-48cc-bb66-804e654f78cd&amp;tw_document_href=https%3A%2F%2Fblogs.worldbank.org%2Fdevelopmenttalk%2Fcommodity-markets-outlook-nine-charts&amp;tw_iframe_status=0&amp;txn_id=nwaxc&amp;type=javascript&amp;version=2.3.29" height="1" width="1" style="display: none;"><img src="https://analytics.twitter.com/1/i/adsct?bci=4&amp;eci=3&amp;event=%7B%7D&amp;event_id=abd94cd4-01f5-4de3-831d-fcacd239df16&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=97e3e999-c79b-48cc-bb66-804e654f78cd&amp;tw_document_href=https%3A%2F%2Fblogs.worldbank.org%2Fdevelopmenttalk%2Fcommodity-markets-outlook-nine-charts&amp;tw_iframe_status=0&amp;txn_id=nwaxc&amp;type=javascript&amp;version=2.3.29" height="1" width="1" style="display: none;"><img src="https://t.co/1/i/adsct?bci=4&amp;eci=3&amp;event=%7B%7D&amp;event_id=a64bff9c-fe00-4dd5-bb99-2b3b5129bd16&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=97e3e999-c79b-48cc-bb66-804e654f78cd&amp;tw_document_href=https%3A%2F%2Fblogs.worldbank.org%2Fdevelopmenttalk%2Fcommodity-markets-outlook-nine-charts&amp;tw_iframe_status=0&amp;txn_id=ny9zz&amp;type=javascript&amp;version=2.3.29" height="1" width="1" style="display: none;"><img src="https://analytics.twitter.com/1/i/adsct?bci=4&amp;eci=3&amp;event=%7B%7D&amp;event_id=a64bff9c-fe00-4dd5-bb99-2b3b5129bd16&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=97e3e999-c79b-48cc-bb66-804e654f78cd&amp;tw_document_href=https%3A%2F%2Fblogs.worldbank.org%2Fdevelopmenttalk%2Fcommodity-markets-outlook-nine-charts&amp;tw_iframe_status=0&amp;txn_id=ny9zz&amp;type=javascript&amp;version=2.3.29" height="1" width="1" style="display: none;"><img src="https://t.co/1/i/adsct?bci=4&amp;eci=3&amp;event=%7B%7D&amp;event_id=d7181282-2804-4f0b-9b63-5ea72f3d4373&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=97e3e999-c79b-48cc-bb66-804e654f78cd&amp;tw_document_href=https%3A%2F%2Fblogs.worldbank.org%2Fdevelopmenttalk%2Fcommodity-markets-outlook-nine-charts&amp;tw_iframe_status=0&amp;txn_id=nya03&amp;type=javascript&amp;version=2.3.29" height="1" width="1" style="display: none;"><img src="https://analytics.twitter.com/1/i/adsct?bci=4&amp;eci=3&amp;event=%7B%7D&amp;event_id=d7181282-2804-4f0b-9b63-5ea72f3d4373&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=97e3e999-c79b-48cc-bb66-804e654f78cd&amp;tw_document_href=https%3A%2F%2Fblogs.worldbank.org%2Fdevelopmenttalk%2Fcommodity-markets-outlook-nine-charts&amp;tw_iframe_status=0&amp;txn_id=nya03&amp;type=javascript&amp;version=2.3.29" height="1" width="1" style="display: none;"><img src="https://t.co/1/i/adsct?bci=4&amp;eci=3&amp;event=%7B%7D&amp;event_id=4eaa1ab2-7543-476c-82ae-87049c969aad&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=97e3e999-c79b-48cc-bb66-804e654f78cd&amp;tw_document_href=https%3A%2F%2Fblogs.worldbank.org%2Fdevelopmenttalk%2Fcommodity-markets-outlook-nine-charts&amp;tw_iframe_status=0&amp;txn_id=nyz9o&amp;type=javascript&amp;version=2.3.29" height="1" width="1" style="display: none;"><img src="https://analytics.twitter.com/1/i/adsct?bci=4&amp;eci=3&amp;event=%7B%7D&amp;event_id=4eaa1ab2-7543-476c-82ae-87049c969aad&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=97e3e999-c79b-48cc-bb66-804e654f78cd&amp;tw_document_href=https%3A%2F%2Fblogs.worldbank.org%2Fdevelopmenttalk%2Fcommodity-markets-outlook-nine-charts&amp;tw_iframe_status=0&amp;txn_id=nyz9o&amp;type=javascript&amp;version=2.3.29" height="1" width="1" style="display: none;"><script type="text/javascript" src="https://znahoepseztqpb2gv-wbgwebvisitor.siteintercept.qualtrics.com/WRSiteInterceptEngine/?Q_ZID=ZN_ahoepSezTqpB2GV&amp;t=1710711434602"></script><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div></body></html>

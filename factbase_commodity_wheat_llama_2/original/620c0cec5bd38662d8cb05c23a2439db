@@ -1,0 +1,1072 @@
+<!DOCTYPE html><html lang="en" class="jsfouc "><!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="gWMZ-j8KBKzSJytO2xaxEcmizd4UT6Ng04GlyACWD-c">
+    <meta name="google-site-verification" content="vW4R0mbBZfOa9XhRQjJEGWGIiJaawR9gL275wgTH_DA">
+    
+
+        <title>USDA ERS - Merits of an Aggregate Futures Price Forecasting Model for the All Wheat U.S. Season-Average Farm Price</title>
+
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style type="text/css">
+        .jsfouc .prevent-fouc {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-B5FWKETJ0B&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+        // This adds a class "jsfouc" to the <html> element
+        document.documentElement.className = 'jsfouc';
+    </script>
+    <link rel="icon" type="image/png" href="/css/images/icons/favicon.png">
+
+    <script defer="" src="/scripts/theme.min.js?v=4c25e4717079acf1409a8f3c8dc54f6be2c16a26995e31a4e34bd834215dae4e"></script>
+    
+    <script>
+        const docElem = window.document.documentElement, loadingClass = "usa-js-loading"; function addLoadingClass() { docElem.className += ` ${loadingClass}` } function revertClass() { docElem.className = docElem.className.replace(loadingClass, "") } if ("querySelector" in window.document && "addEventListener" in window) { addLoadingClass(); const e = setTimeout(revertClass, 8e3); let s = 100; const n = () => { setTimeout(() => { s += 1, "undefined" != typeof uswdsPresent ? (clearTimeout(e), setTimeout(revertClass, 100)) : s > 0 && n() }, 100) }; n() }
+    </script>
+
+    
+    <link rel="stylesheet" href="/css/styles.css?v=1315c2aade2ce9dd503fc95aa32d4f8dc60f041e2a37e3f5f25c007461df027c">
+    
+
+    
+    
+        <style>
+    @charset "UTF-8";html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}[hidden],template{display:none}a{background-color:transparent}b,strong{font-weight:700}h1{font-size:2em;margin:.67em 0}img{border:0}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}input{line-height:normal}*,:after,:before{box-sizing:border-box}button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7}img{vertical-align:middle}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}.h1,.h2,.h3,h1,h2,h3{margin-top:20px;margin-bottom:10px}.h4,.h5,.h6,h4,h5,h6{margin-top:10px;margin-bottom:10px}.h1,h1{font-size:36px}.h6,h6{font-size:12px}p{margin:0 0 10px}.small,small{font-size:85%}ol,ul{margin-top:0;margin-bottom:10px}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-right:-15px;margin-left:-15px}.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{position:relative;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:left}.col-sm-4{width:33.33333333%}.col-sm-2{width:16.66666667%}}@media (min-width:992px){.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{float:left}.col-md-12{width:100%}.col-md-4{width:33.33333333%}}.dropdown{position:relative}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:160px;padding:5px 0;margin:2px 0 0;font-size:14px;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);border-radius:4px;box-shadow:0 6px 12px rgba(0,0,0,.175)}.nav{padding-left:0;margin-bottom:0;list-style:none}.nav>li,.nav>li>a{position:relative;display:block}.nav>li>a{padding:10px 15px}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}@media (min-width:768px){.navbar{border-radius:4px}}@media (min-width:768px){.navbar-header{float:left}}.navbar-brand{float:left;height:50px;padding:15px;font-size:18px;line-height:20px}.navbar-brand>img{display:block}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media (min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-left-radius:0;border-top-right-radius:0}.btn-group-vertical>.btn-group:after,.btn-group-vertical>.btn-group:before,.btn-toolbar:after,.btn-toolbar:before,.clearfix:after,.clearfix:before,.container-fluid:after,.container-fluid:before,.container:after,.container:before,.dl-horizontal dd:after,.dl-horizontal dd:before,.form-horizontal .form-group:after,.form-horizontal .form-group:before,.modal-footer:after,.modal-footer:before,.modal-header:after,.modal-header:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.pager:after,.pager:before,.panel-body:after,.panel-body:before,.row:after,.row:before{display:table;content:" "}.btn-group-vertical>.btn-group:after,.btn-toolbar:after,.clearfix:after,.container-fluid:after,.container:after,.dl-horizontal dd:after,.form-horizontal .form-group:after,.modal-footer:after,.modal-header:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after{clear:both}hr{height:0;box-sizing:content-box;margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.h3,h3{font-size:24px}.h4,h4{font-size:18px}@media (min-width:992px){.col-md-9{width:75%}.col-md-3{width:25%}}.breadcrumb{margin-bottom:20px;background-color:#f5f5f5;border-radius:4px}.breadcrumb>li{display:inline-block}.breadcrumb>li+li:before{padding:0 5px;color:#ccc;content:"/ "}.breadcrumb>.active{color:#333}.hamburger{padding:15px;display:inline-block;transition-property:opacity,filter;transition-duration:.15s;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;overflow:visible}@font-face{font-family:Public Sans;src:url(/css/fonts/PublicSans-Regular.woff2) format("woff2"),url(/css/fonts/PublicSans-Regular.woff) format("woff"),url(/css/fonts/PublicSans-Regular.ttf) format("truetype")}@font-face{font-family:Public Sans Bold;src:url(/css/fonts/PublicSans-Bold.woff2) format("woff2"),url(/css/fonts/PublicSans-Bold.woff) format("woff"),url(/css/fonts/PublicSans-Bold.ttf) format("truetype")}.pager li>a,.pager li>span{display:inline-block;padding:5px 14px;background-color:#6d9abb;border:1px solid #6d9abb;border-radius:15px;color:#fff}.pager li>a a,.pager li>span a{text-decoration:none;color:#fff}.pager li>a a:visited,.pager li>span a:visited{color:#5b616b}.pager li>a .pager li>a:focus,.pager li>a:focus,.pager li>a:hover,.pager li>span .pager li>a:focus,.pager li>span:hover{text-decoration:none;background-color:#6d9abb;color:#fff}.scrollable-menu{height:auto;max-height:250px;overflow-x:hidden}.scrollable-menu::-webkit-scrollbar-thumb{border-radius:3px;background-color:#527fa6;-webkit-box-shadow:0 0 1px hsla(0,0%,100%,.75)}.scrollable-menu::-webkit-scrollbar{-webkit-appearance:none;width:7px!important}footer,header[role=banner]{box-sizing:border-box}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-angle-down:before{content:""}body,html{height:100%}body{position:relative;margin:0 auto;text-rendering:optimizeLegibility;min-width:100%;-webkit-animation-duration:.1s;-webkit-animation-name:fontfix;-webkit-animation-iteration-count:1;-webkit-animation-timing-function:linear;-webkit-animation-delay:.1s}h1{font-size:25px;line-height:34px;padding-bottom:6px;margin:0;font-weight:700}h1,h6{font-family:Public Sans,sans-serif}h6{font-size:16px;line-height:24px}.h1,.h2,.h3,h1,h2,h3{margin-top:0;margin-bottom:0}p{font-weight:400;font-size:16px;line-height:1.375;color:#000;text-rendering:optimizeLegibility;margin:0 0 15px}ul{padding-left:40px;padding-right:16px;margin-bottom:1.5em;line-height:1.4em;list-style-type:disc}ol ol,ol ol ol,ol ol ol ol,ol ul,ul ol,ul ul,ul ul ul,ul ul ul ul{margin-bottom:27px;margin-top:.5em;line-height:1.618}a{text-decoration:none;font-weight:500}a,a:visited{color:#0b4778}img{max-width:100%;height:auto}.page{background-color:#fff;padding:20px;box-sizing:border-box}@media (max-width:800px){.page{padding-top:0}}.skip-link-mobile{display:none}@media (max-width:991px){.skip-link-mobile{display:inline-block}}.skip-link-desktop{display:inline-block}@media (max-width:991px){.skip-link-desktop{display:none}}.hamburger{overflow:hidden;position:absolute;cursor:pointer;right:23px;top:27px;margin:0;padding:0;z-index:10;display:none}@media (max-width:991px){.hamburger{display:block}}#usda-mobile-menu{background-color:#dedbd9;display:none;height:0;width:100%;position:fixed;top:0;left:0;z-index:52;overflow:scroll;overflow-x:hidden;overflow-y:auto;margin-top:91px;animation-duration:.3s}#usda-mobile-menu #mobileSearch{padding:0 25px 21px 15px;border-bottom:1px solid #acacac;display:-ms-flexbox;display:flex;justify-content:flex-start}#usda-mobile-menu #mobileSearch form.searchBox{width:100%}.bg-tint{display:none}header[role=banner]{position:relative;z-index:99;background-color:#153554}header[role=banner] a,header[role=banner] a:hover,header[role=banner] a:visited{color:#fff;text-decoration:none}.logo,header[role=banner]>.container{position:relative}.logo{margin-top:5px;padding:10px 0;font-size:15px;font-weight:400}@media (max-width:600px){.logo{padding:13px 0 25px}}.logo a.logo-img{float:left;margin-right:15px;width:72px}@media (max-width:480px){.logo img.logo-mark{margin-right:5px}}.logo .logo-text{float:left}@media (max-width:800px){.logo .logo-text{font-size:80%}}.logo span.logo-org{display:block;margin-top:8px;margin-bottom:0;font-size:17px;font-weight:700}@media (max-width:800px){.logo span.logo-org{font-size:100%}}@media (max-width:480px){.logo span.logo-org{font-size:80%}}#headerSearch{position:absolute;right:0;top:16px}#headerSearch .searchBox{transition:width .3s;display:inline-block;width:0}#headerSearch .searchBox input.search-block-header{color:#535353;font-weight:700;background:#fff;border:none;border-radius:3px;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:none;outline:0;padding:.5em .75em;width:100%}@media (max-width:600px){#headerSearch .searchBox input.search-block-header{width:55%;position:absolute;top:47px;right:0}}#headerSearch .searchAction{display:inline-block}@media (max-width:480px){#headerSearch .searchAction{display:block;position:absolute;right:-54px;top:45px}}#headerSearch .searchAction input.mag-submit{margin:.333333em .75em;width:32px;height:32px;vertical-align:middle;cursor:pointer}@media (max-width:991px){#headerSearch{display:none}}footer{position:relative;padding:.5em;line-height:2em;z-index:7}@media (max-width:991px){footer{padding:1em 0}}footer ul{list-style-type:none;margin:0;padding:0}footer h6{color:#fff;text-transform:uppercase;padding-bottom:8px;font-size:15px;letter-spacing:1px}footer .lined-right{border-right:1px solid #30506b}@media (max-width:768px){footer .lined-right{border-right:0}}.footer-distributed{width:100%;text-align:left;padding:10px 2px 40px;margin-top:30px}@media (max-width:768px){.footer-distributed{text-align:center}}.footer-distributed a,.footer-distributed a:focus,.footer-distributed a:focus:hover,.footer-distributed a:hover,.footer-distributed a:visited,.footer-distributed a:visited:hover{color:#fff;font-size:15px;line-height:19px;padding-bottom:6px}.footer-distributed .blue-button{background-color:#125a99;padding:7px 14px;margin-top:14px;text-transform:uppercase;display:inline-block;font-weight:700;font-size:14px;letter-spacing:1px;border-radius:6px}.padown{margin-bottom:20px}ul.footerSocial{margin:0;padding:0;padding-bottom:15px;text-align:right}ul.footerSocial li{margin:0 6px;display:inline-block}ul.footerSocial li img{max-width:100%}@media (max-width:768px){ul.footerSocial{text-align:center}}.usdaNav{background-color:#540a13;border:0;border-radius:0;margin-top:20px}.usdaNav img.ie-font-fallback{display:none}.usdaNav img.ie-font-fallback.home{display:block;margin:7px 0 0 4px;width:21px}.usdaNav ul,.usdaNav ul li{list-style-type:none}.usdaNav.navbar{margin-bottom:0}@media (max-width:991px){.usdaNav{padding:0 0 11px}}.usdaNav .navbar-header{width:6%}@media (max-width:991px){.usdaNav .navbar-header{display:none}}.usdaNav li.root-level-li{display:-ms-flexbox;display:flex;display:-webkit-flex;-ms-flex-pack:justify;justify-content:space-between;-webkit-justify-content:space-between;align-items:stretch;flex-grow:1}.usdaNav li.root-level-li span.sub-indicator.root-level-indicator{color:#f5f5f5;border-left:1px solid #a37278;border-right:1px solid #a37278;padding:15px 10px}@media (min-width:991px) and (max-width:1200px){.usdaNav li.root-level-li span.sub-indicator.root-level-indicator{padding:15px 8px;line-height:1.4}}.usdaNav li.root-level-li:last-child span.sub-indicator.root-level-indicator{border-right:0}.usdaNav .navbar-nav>li>a.top-label{padding:15px;color:#f5f5f5;font-weight:600;white-space:nowrap;text-align:center;width:100%}@media (min-width:991px) and (max-width:1200px){.usdaNav .navbar-nav>li>a.top-label{font-size:.7em}}.usdaNav .navbar-nav>li>a.top-label.emptylink{pointer-events:none}.usdaNav .navbar-nav>li>a.top-label.emptylink span{pointer-events:auto}.usdaNav .navbar-nav{padding:0;padding-right:0;padding-bottom:0;display:-ms-flexbox;display:flex;display:-webkit-flex;-ms-flex-pack:justify;justify-content:space-between;-webkit-justify-content:space-between;align-items:stretch;width:94%}.usdaNav .navbar-nav .dropdown-menu.fatNav{position:absolute;top:100%;left:0;z-index:1000;float:left;width:100%;min-height:355px;padding:5px 0;font-size:15px;text-align:left;list-style:none;border:none;border-radius:0;box-shadow:none;background-color:#e4e2e0;opacity:1!important}@media (max-width:768px){.usdaNav .navbar-nav .dropdown-menu.fatNav{position:static;float:none}}@media (max-width:991px){.usdaNav .navbar-nav{display:none}}.usdaNav a.navbar-brand{padding:8px 20px;color:#f5f5f5;background-color:#7f4a50;width:100%}.usdaNav a.navbar-brand.active{background-color:#7f4a50;color:#fff}@media (max-width:1200px){.usdaNav a.navbar-brand{padding:8px 13px}}.usdaNav span.sub-indicator{border-left:1px solid #cecece;height:100%;right:0;top:0;position:absolute;line-height:1.2em;display:block;cursor:pointer;font-size:1em;font-weight:300;z-index:1}.usdaNav .mobilePageTitle{display:none}@media (max-width:991px){.usdaNav .mobilePageTitle{display:block;width:100%;padding:14px 60px 14px 14px;color:#fff;text-align:center}.usdaNav .mobilePageTitle i.fa{font-size:31px;margin-top:-4px}}.usdaNav .hamburger{display:none}a.backToTop{color:#fff;border-radius:100px;background-color:#c3c3c3;mix-blend-mode:exclusion;height:45px;width:45px;position:fixed;right:40px;bottom:40px;text-decoration:none;text-align:center;z-index:10;opacity:0;transition:all .8s ease-in}a.backToTop span{position:absolute;top:-25px;left:7px;color:#fff;font-size:1.2em;display:block}a.backToTop img{display:block;margin:10px auto 0}@media (max-width:768px){a.backToTop{display:none}}.yamm .collapse,.yamm .dropdown,.yamm .dropup,.yamm .nav{position:static}.yamm .dropdown-menu{left:auto}.yamm .dropdown.yamm-fw .dropdown-menu{left:0;right:0}div.clear{clear:both}h3{font-size:20px;line-height:28px;margin:0 0 4px}h3,h4{font-family:Public Sans,sans-serif;font-weight:700}h4{line-height:24px;margin:0}a[href*=".pdf"],a[href*=".PDF"]{background-image:url(/css/images/pdf.gif);background-position-y:.75px!important}a[href*=".pdf"],a[href*=".PDF"],a[href*=".zip"],a[href*=".ZIP"]{background-repeat:no-repeat;background-position:100%;padding-right:23px}a[href*=".zip"],a[href*=".ZIP"]{background-image:url(/css/images/zip.gif);background-position-y:.75px!important}a[href*=".doc"],a[href*=".DOC"]{background-image:url(/css/images/word.gif);background-repeat:no-repeat;background-position:100%;padding-right:23px;background-position-y:.75px!important}a[href*=".xls"],a[href*=".XLS"],a[href*=".XLSX"],a[href*=".xlx"]{background-image:url(/css/images/xls.gif);background-repeat:no-repeat;background-position:100%;padding-right:23px;background-position-y:.75px!important}a[href*=".csv"],a[href*=".CSV"]{background-image:url(/css/images/CSV.png);background-repeat:no-repeat;background-position:100%;padding-right:23px;background-position-y:.75px!important}a[href*=".txt"],a[href*=".TXT"]{background-image:url(/css/images/icons/text.gif);background-repeat:no-repeat;background-position:100%;padding-right:22px;background-position-y:.75px!important}a[href$=".mp4"],a[href$=".MP4"]{background-image:url(/css/images/icons/multimedia_icons/webinar-mp4.png);background-repeat:no-repeat;background-position:100%;padding-right:47px;background-position-y:.5px!important}a[href$=".mp3"],a[href$=".MP3"]{background-image:url(/css/images/icons/multimedia_icons/podcast-mp3.png);background-repeat:no-repeat;background-position:100%;padding-right:40px;background-position-y:.25px!important}a[href$=".wma"],a[href$=".WMA"]{background-image:url(/css/images/icons/multimedia_icons/podcast-wma.png);background-repeat:no-repeat;background-position:100%;padding-right:45px;background-position-y:.75px!important}a[href*="https://youtu.be"],a[href*="www.youtube"],a[href*="WWW.YOUTUBE"]{background-image:url(/css/images/icons/multimedia_icons/youtube.png);background-repeat:no-repeat;background-position:100%;padding-right:27px}a[href$=".swf"],a[href*="/5923/20111128230929/"],a[href*="/slideShow/"]{background-image:url(/css/images/icons/multimedia_icons/slideshow.png);background-repeat:no-repeat;background-position:100%;padding-right:27px;background-position-y:.5px!important}hr{margin:0 0 10px}.file_list li{padding-left:0;line-height:26px}ul.file_list{list-style-type:disc;padding-left:26px}#content{display:block;position:relative;background:#fff;padding-bottom:10px;z-index:6;clear:both}#content:after,#content:before{content:"";display:table}#content:after{clear:both}.content-footer{text-align:center;padding:30px 0;clear:both}div.UpdateContact p:first-child{padding-bottom:0}@media (max-width:991px){div.UpdateContact p:first-child{padding-left:15px;padding-right:15px}}div.UpdateContact p:nth-child(2){padding-top:8px}@media (max-width:991px){div.UpdateContact p:nth-child(2){padding-left:15px;padding-right:15px}}.breadcrumb{background-color:#e4e2e0;width:100%;display:inline-block;border-radius:0;padding:8px 15px;list-style:none;margin:0;vertical-align:middle;font-size:14px}@media (max-width:991px){.breadcrumb{display:none}}.breadcrumb li{display:inline-block}.breadcrumb li:before{content:">"!important;padding:0 2px 0 0;color:#9e9e9e!important;font-weight:400}.breadcrumb li:first-child:before{content:"";display:none}.breadcrumb li a,.breadcrumb li a:hover,.breadcrumb li a:visited{color:#000}.breadcrumb>.active{color:#71323d;font-weight:700}.animated{animation-duration:1s;animation-fill-mode:both}.fadeInDown{animation-name:fadeInDown}.col-md-3{padding-left:0;padding-right:0}@media (max-width:1199px){.col-md-3{width:28%}}@media (max-width:991px){.col-md-3{width:260px;padding-top:20px}}@media (max-width:480px){.col-md-3{margin:auto}}.col-md-9{padding-left:0;padding-right:0}@media (max-width:1199px){.col-md-9{width:72%}}@media (max-width:991px){.col-md-9{width:100%}}h4{font-weight:500;font-size:16px}hr{margin:0 0 5px}p{padding:0 15px 15px 0}@media (max-width:991px){p{padding-right:0}}#pubmeta{padding:10px 0;overflow:auto;vertical-align:baseline;background:#fff;border-bottom:1px solid #dedede}#sidebar{font-family:Public Sans,sans-serif;background:#fff;border:1px solid #dedede;border-radius:4px;margin-top:-1px}@media (min-width:991px) and ((max-width:1200px)){#sidebar{float:none;width:auto;max-width:640px;margin:0 auto;padding-right:0;margin-top:-1px}}#sidebar h3{text-align:center;padding-left:14px;padding-right:14px}.header{background-color:#333132;color:#fff;font-size:.75em;font-weight:400;letter-spacing:.1em;padding:9px 20px}@media (max-width:1199px){.header{padding:9px 17px}}.pubs_sidebar>.inner{font-size:.95em;font-weight:500;letter-spacing:.1em;padding:15px;font-family:Public Sans,sans-serif}.pubs_sidebar .with-posts{padding-top:20px}.pubs_sidebar .inner{padding:10px 0 0 10px}ol,ul{list-style:none}.pubs_sidebar li,.pubs_sidebar p{font-size:1em;line-height:110%;list-style:none outside none}ul li{list-style-type:square}.post{color:#000;display:block;font-family:Public Sans,sans-serif}.pubs_sidebar .meta{padding-bottom:4px;padding-top:10px}.right-seperator{border-right:1px solid #dadbdb;padding-right:.7em;margin-right:.7em}#pubmeta p{font-family:Public Sans,sans-serif;color:#585858;display:inline;padding-bottom:0;overflow:hidden}body #content .meta,body #lowercontent .meta,body #sidebar .meta,body #special-projects .meta{font-size:.85em;letter-spacing:.1em;font-family:Public Sans,sans-serif;color:#585858;line-height:1.5}#content .date{line-height:1.7;margin-top:10px;font-size:.85em}#content .byline{font-family:Public Sans,sans-serif;font-size:.9em;font-weight:500;margin:0;padding-top:6px}.file_list li,.file_list ul{padding-left:20px;list-style-type:none;line-height:1.25em;padding-bottom:10px}.dropdown-menu{min-width:220px}footer{z-index:0}footer ul li{list-style-type:none}.footer-distributed{z-index:0}.UpdateContact{z-index:-2}button{position:relative}
+/*# sourceMappingURL=publicationDetail.critical.min.css.map */
+
+    </style>
+
+
+
+
+    
+    
+        <link rel="stylesheet" as="style" type="text/css" media="screen" href="/css/publicationDetail.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/publicationDetail.min.css"></noscript>
+
+
+
+
+    
+    
+        <meta name="description" content="ERS developed an aggregate wheat futures price-based forecast model that better reflects the diverse wheat market.">
+            <meta name="keywords" content="Hard red winter wheat, soft red winter wheat, hard red spring wheat, all wheat season-average farm price (SAFP) forecasts, HRW-only futures-adjusted forecast model, aggregate wheat futures-adjusted forecast model, futures prices, basis, marketing weights">
+
+    <!-- Open-graph-meta-tags -->
+    <meta property="og:title" content="Merits of an Aggregate Futures Price Forecasting Model for the All Wheat U.S. Season-Average Farm Price">
+    <meta property="og:description" content="ERS developed an aggregate wheat futures price-based forecast model that better reflects the diverse wheat market.">
+    <meta property="og:url" content="http://www.ers.usda.gov/publications/pub-details/?pubid=100978">
+
+
+
+
+    <script src="/scripts/libs/jquery-3.6.0.min.js"></script>
+    <script src="/scripts/ResponsiveBase.min.js"></script>
+
+    <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=USDA&amp;subagency=ERS" type="text/javascript"></script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L"></script>
+    <script>/*loadCSS 2017 Filament Group MIT License*/!function (n) { "use strict"; n.loadCSS || (n.loadCSS = function () { }); var o = loadCSS.relpreload = {}; if (o.support = function () { var e; try { e = n.document.createElement("link").relList.supports("preload") } catch (t) { e = !1 } return function () { return e } }(), o.bindMediaToggle = function (t) { setTimeout(function () { t.onload = null; t.rel = "stylesheet" }) }, o.poly = function () { if (!o.support()) for (var t = n.document.getElementsByTagName("link"), e = 0; e < t.length; e++) { var a = t[e]; "preload" !== a.rel || "style" !== a.getAttribute("as") || a.getAttribute("data-loadcss") || (a.setAttribute("data-loadcss", !0), o.bindMediaToggle(a)) } }, !o.support()) { o.poly(); var t = n.setInterval(o.poly, 500); n.addEventListener ? n.addEventListener("load", function () { o.poly(), n.clearInterval(t) }) : n.attachEvent && n.attachEvent("onload", function () { o.poly(), n.clearInterval(t) }) } n.loadCSS = loadCSS }("undefined" != typeof global ? global : this);</script>
+<script type="text/javascript" src="https://search.usa.gov/assets/sayt_loader.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body id="pageTop" class="PublicationDetail">
+    
+
+    
+
+<!-- SiteCatalyst code version: H.24.2.
+    Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+    More info available at http://www.omniture.com -->
+<script type="text/javascript" src="/scripts/AppMeasurement.js"></script>
+<script type="text/javascript" src="/scripts/VisitorAPI.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+    /* You may give each page an identifying name, server, and channel on
+    the next lines. */
+    s.pageName="Publications: Wheat Outlook: Merits of an Aggregate Futures Price Forecasting Model for the All Wheat U.S. Season-Average Farm Price"
+    s.server=window.location.hostname;
+    s.channel="Publications"
+    s.pageType=""
+    s.prop1="Publications: Wheat Outlook"
+    s.prop2="Publications: Wheat Outlook: Merits of an Aggregate Futures Price Forecasting Model for the All Wheat U.S. Season-Average Farm Price"
+    s.prop3="Publications: Wheat Outlook: Merits of an Aggregate Futures Price Forecasting Model for the All Wheat U.S. Season-Average Farm Price"
+    s.prop4=""
+    s.prop5=""
+    s.prop11=""
+    s.prop12=""
+    s.prop14=""
+    s.prop15=""
+    s.prop19=""
+    s.prop24=""
+    /* Conversion Variables */
+    s.campaign=""
+    s.state=""
+    s.zip=""
+    s.events=""
+    s.products=""
+    s.purchaseID=""
+    s.eVar1=""
+    s.eVar2=""
+    s.eVar3=""
+    s.eVar4=""
+    s.eVar5=""
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+    if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+    //--></script><noscript>
+        <img src="https://ers.122.2o7.net/b/ss/erscms/1/H.24.2--NS/0"
+             height="1" width="1" border="0" alt="" />
+    </noscript><!--/DO NOT REMOVE/-->
+    <!-- End SiteCatalyst code version: H.24.2. -->
+
+
+
+
+
+
+
+
+
+    
+
+    <div role="navigation">
+        <a href="#usdaNav" class="usa-skipnav sr-only sr-only-focusable sr-skip-navigation skip-link-desktop" aria-label="Skip to Navigation">Skip to navigation</a>
+        <a href="#content" class="usa-skipnav sr-only sr-only-focusable sr-skip-content" aria-label="Skip to Main Content">Skip to main content</a>
+    </div>
+
+
+    
+
+<section class="usa-banner" aria-label="Official government website">
+    <div class="usa-accordion">
+        <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+                <div class="grid-col-auto">
+                    <img class="usa-banner__header-flag" src="/img/us_flag_small.png" role="img" alt="U.S. flag">
+                </div>
+                <div class="grid-col-fill tablet:grid-col-auto">
+                    <p class="usa-banner__header-text">An official website of the United States government</p>
+                    <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+                </div>
+                <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
+                    <span class="usa-banner__button-text">Here’s how you know</span>
+                </button>
+            </div>
+        </header>
+        <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden="">
+            <div class="grid-row grid-gap-lg">
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="/img/icon-dot-gov.svg" role="img" alt="" aria-hidden="true">
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>
+                                Official websites use .gov
+                            </strong>
+                            <br>
+                            A <strong>.gov</strong> website belongs to an official government organization in the United States.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="/img/icon-https.svg" role="img" alt="" aria-hidden="true">
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>
+                                Secure .gov websites use HTTPS
+                            </strong>
+                            <br>
+                            A <strong>lock</strong> (
+                            <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description"><title id="banner-lock-title">Lock</title><desc id="banner-lock-description">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"></path></svg></span>
+                            ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <div class="usa-overlay"></div>
+    
+    <header class="usa-header ers-header usa-header--extended">
+            <div class="usa-navbar">
+        <div class="usa-logo" id="extended-logo">
+            <div class="usda-logo-text">
+                <a title="Home" href="/" aria-label="Economic Research Service" rel="home" class="usda-logo">
+                    <img src="/img/usda-symbol.svg" alt="U.S. Department of Agriculture logo" class="usda-logo-img">
+                </a>
+                <a class="sitename" href="/" title="Home" aria-label="Economic Research Service" rel="home">Economic Research Service</a>
+                <a class="tagline" href="https://www.usda.gov/" title="USDA.gov" aria-label="U.S. Department of Agriculture" rel="USDA">U.S. Department of Agriculture</a>
+            </div>
+        </div>
+        <button class="usa-menu-btn">Menu</button>      
+    </div>
+   
+
+
+
+    <nav aria-label="Primary navigation" class="usa-nav" id="usdaNav">
+        <div class="usa-nav__inner">
+            <button class="usa-nav__close"><img src="/img/close-white.svg" role="img" alt="close" aria-label="close navigation"></button>
+            <div>
+                <div class="region region-primary-menu">
+                    <ul class="usa-nav__primary usa-accordion">
+                        <li class="usa-nav__primary-item">
+                            <a class="usa-nav__link " href="/"><span>Home</span></a>
+                        </li>
+                        
+                            <li class="usa-nav__primary-item">
+                                <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="extended-nav-section-topics"><span>Topics</span></button>
+                                    <ul id="extended-nav-section-topics" class="usa-nav__submenu" hidden="">
+                                        <li class="ers-subnav-mainlink">
+                                            <a href="/topics/" class="" aria-label="Topics">Topics</a>
+                                        </li>
+                                                                                    <li class="usa-nav__submenu-item">
+                                                <a href="/topics/animal-products/" class="" aria-label="Animal Products in Topics">Animal Products</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/crops/" class="" aria-label="Crops in Topics">Crops</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/farm-bill/" class="" aria-label="Farm Bill in Topics">Farm Bill</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/farm-economy/" class="" aria-label="Farm Economy in Topics">Farm Economy</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/farm-practices-management/" class="" aria-label="Farm Practices &amp; Management in Topics">Farm Practices &amp; Management</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/food-nutrition-assistance/" class="" aria-label="Food &amp; Nutrition Assistance in Topics">Food &amp; Nutrition Assistance</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/food-choices-health/" class="" aria-label="Food Choices &amp; Health in Topics">Food Choices &amp; Health</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/food-markets-prices/" class="" aria-label="Food Markets &amp; Prices in Topics">Food Markets &amp; Prices</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/food-safety/" class="" aria-label="Food Safety in Topics">Food Safety</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/international-markets-u-s-trade/" class="" aria-label="International Markets &amp; U.S. Trade in Topics">International Markets &amp; U.S. Trade</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/natural-resources-environment/" class="" aria-label="Natural Resources &amp; Environment in Topics">Natural Resources &amp; Environment</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/rural-economy-population/" class="" aria-label="Rural Economy &amp; Population in Topics">Rural Economy &amp; Population</a>
+                                            </li>
+                                    </ul>                        
+                            </li>
+                            <li class="usa-nav__primary-item">
+                                <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="extended-nav-section-data-products"><span>Data Products</span></button>
+                                    <ul id="extended-nav-section-data-products" class="usa-nav__submenu" hidden="">
+                                        <li class="ers-subnav-mainlink">
+                                            <a href="/data-products/" class="" aria-label="Data Products">Data Products</a>
+                                        </li>
+                                            <div class="usa-nav_submenu_heading">View by Topic:</div>
+                                                                                    <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14828&amp;subtopicid=" class="" aria-label="Animal Products in Data Products">Animal Products</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14829&amp;subtopicid=" class="" aria-label="Crops in Data Products">Crops</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14830&amp;subtopicid=" class="" aria-label="Farm Economy in Data Products">Farm Economy</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14831&amp;subtopicid=" class="" aria-label="Farm Practices &amp; Management in Data Products">Farm Practices &amp; Management</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14832&amp;subtopicid=" class="" aria-label="Food &amp; Nutrition Assistance in Data Products">Food &amp; Nutrition Assistance</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14833&amp;subtopicid=" class="" aria-label="Food Choices &amp; Health in Data Products">Food Choices &amp; Health</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14834&amp;subtopicid=" class="" aria-label="Food Markets &amp; Prices in Data Products">Food Markets &amp; Prices</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14835&amp;subtopicid=" class="" aria-label="Food Safety in Data Products">Food Safety</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14836&amp;subtopicid=" class="" aria-label="International Markets &amp; U.S. Trade in Data Products">International Markets &amp; U.S. Trade</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14837&amp;subtopicid=" class="" aria-label="Natural Resources &amp; Environment in Data Products">Natural Resources &amp; Environment</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14838&amp;subtopicid=" class="" aria-label="Rural Economy &amp; Population in Data Products">Rural Economy &amp; Population</a>
+                                            </li>
+                                    </ul>                        
+                            </li>
+                            <li class="usa-nav__primary-item">
+                                <button class="usa-accordion__button usa-nav__link usa-current" aria-expanded="false" aria-controls="extended-nav-section-publications"><span>Publications</span></button>
+                                    <ul id="extended-nav-section-publications" class="usa-nav__submenu" hidden="">
+                                        <li class="ers-subnav-mainlink">
+                                            <a href="/publications/" class="usa-current" aria-label="Publications">Publications</a>
+                                        </li>
+                                            <div class="usa-nav_submenu_heading">View by Topic:</div>
+                                                                                    <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=8858ec26-742a-405e-8904-7133752b9062&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Animal Products in Publications">Animal Products</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=27fdeed8-34de-4ae9-919a-94d86a3ab31a&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Crops in Publications">Crops</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=200f8d13-a25a-420e-a682-dfd0358a8723&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Farm Economy in Publications">Farm Economy</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=2ec0f701-8196-42d5-8a71-06c736731759&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Farm Practices &amp; Management in Publications">Farm Practices &amp; Management</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=d7627f77-6cee-4ab9-bbb9-8c74d4778941&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Food &amp; Nutrition Assistance in Publications">Food &amp; Nutrition Assistance</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=54b4c7ae-36a3-4e79-a07f-dd4773e73d7a&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Food Choices &amp; Health in Publications">Food Choices &amp; Health</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=d2934def-c016-4011-9244-2db57d3714c1&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Food Markets &amp; Prices in Publications">Food Markets &amp; Prices</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=c8b9267c-b12f-42fe-9e04-80fd2c2510ac&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Food Safety in Publications">Food Safety</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=4fe002a3-9baf-48e7-9e03-a9ed03d960b6&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="International Markets &amp; U.S. Trade in Publications">International Markets &amp; U.S. Trade</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=e99110de-ed98-415e-8e19-be9bfae3196d&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Natural Resources &amp; Environment in Publications">Natural Resources &amp; Environment</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=2d26875b-d523-4e2c-bf40-5281a376d38d&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Rural Economy &amp; Population in Publications">Rural Economy &amp; Population</a>
+                                            </li>
+                                    </ul>                        
+                            </li>
+                            <li class="usa-nav__primary-item">
+                                <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="extended-nav-section-newsroom"><span>Newsroom</span></button>
+                                    <ul id="extended-nav-section-newsroom" class="usa-nav__submenu" hidden="">
+                                        <li class="ers-subnav-mainlink">
+                                            <a href="/newsroom/" class="" aria-label="Newsroom">Newsroom</a>
+                                        </li>
+                                                                                    <li class="usa-nav__submenu-item">
+                                                <a href="/newsroom/contact-ers-press-office/" class="" aria-label="Contact ERS Press Office in Newsroom">Contact ERS Press Office</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/newsroom/trending-topics/" class="" aria-label="Trending Topics in Newsroom">Trending Topics</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/multimedia/" class="" aria-label="Multimedia in Newsroom">Multimedia</a>
+                                            </li>
+                                    </ul>                        
+                            </li>
+                            <li class="usa-nav__primary-item">
+                                <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="extended-nav-section-calendar"><span>Calendar</span></button>
+                                    <ul id="extended-nav-section-calendar" class="usa-nav__submenu" hidden="">
+                                        <li class="ers-subnav-mainlink">
+                                            <a href="/calendar/" class="" aria-label="Calendar">Calendar</a>
+                                        </li>
+                                                                                    <li class="usa-nav__submenu-item">
+                                                <a href="/calendar/#!sortfield=ReleaseDate&amp;sortdirection=asc&amp;selectedday=17&amp;selectedmonth=3&amp;selectedyear=2024" class="" aria-label="Today's Releases in Calendar">Today's Releases</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/calendar/#!sortfield=ReleaseDate&amp;sortdirection=asc&amp;selectedmonth=3&amp;selectedyear=2024" class="" aria-label="This Month's Releases in Calendar">This Month's Releases</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/calendar/#!sortfield=ReleaseDate&amp;sortdirection=asc&amp;selectedmonth=4&amp;selectedyear=2024" class="" aria-label="Next Month's Releases in Calendar">Next Month's Releases</a>
+                                            </li>
+                                    </ul>                        
+                            </li>
+                            <li class="usa-nav__primary-item">
+                                <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="extended-nav-section-amber-waves-magazine"><span>Amber Waves Magazine</span></button>
+                                    <ul id="extended-nav-section-amber-waves-magazine" class="usa-nav__submenu" hidden="">
+                                        <li class="ers-subnav-mainlink">
+                                            <a href="/amber-waves/" class="" aria-label="Amber Waves Magazine">Amber Waves Magazine</a>
+                                        </li>
+                                                                                    <li class="usa-nav__submenu-item">
+                                                <a href="/amber-waves/" class="" aria-label="Amber Waves Home in Amber Waves Magazine">Amber Waves Home</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/amber-waves/all-articles/" class="" aria-label="All Articles in Amber Waves Magazine">All Articles</a>
+                                            </li>
+                                    </ul>                        
+                            </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="usa-nav__secondary">
+                <ul class="usa-nav__secondary-links">
+                            <li class="usa-nav__secondary-item">
+                                <a href="/about-ers/" class="">About ERS</a>
+                            </li>
+                            <li class="usa-nav__secondary-item">
+                                <a href="/about-ers/careers-at-ers/" class="">Careers at ERS</a>
+                            </li>
+                            <li class="usa-nav__secondary-item">
+                                <a href="/faqs/" class="">FAQs</a>
+                            </li>
+                            <li class="usa-nav__secondary-item">
+                                <a href="/contact-us/" class="">Contact Us</a>
+                            </li>
+                </ul>
+                <form class="usa-search usa-search--small " role="search" method="GET" action="https://search.ers.usda.gov/search">
+                    <input name="affiliate" class="ersSearchAffiliate" type="hidden" value="ers" aria-hidden="true">
+                    <label class="usa-sr-only" for="extended-search-field-small">Search small</label>
+                    <input class="usa-input" id="extended-search-field-small" type="search" name="query">
+                    <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+    </header>
+
+
+    
+
+    <div class="container">
+        <div class="bg-tint"></div>
+        <div id="content-wrapper" tabindex="0">
+            
+<main id="content" role="main">
+    
+
+    <ul class="breadcrumb">
+        
+                <li>
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/publications/">
+                        Publications
+                    </a>
+                </li>
+        
+            <li class="active">
+                Pub Details
+            </li>
+    </ul>
+
+    <div class="page">
+        <div class="row">
+            <section id="primary" class="col-md-12">
+                
+
+
+
+
+
+<div id="pubmeta">
+    <p id="meta">
+        Wheat Outlook No. (WHS-21c-01) 48 pp
+    </p>
+</div>
+
+<div class="col-md-9">
+    <div class="meta">
+        <div class="date">
+            April 2021
+
+        </div>
+    </div>
+    <h1 role="heading" aria-level="1">Merits of an Aggregate Futures Price Forecasting Model for the All Wheat U.S. Season-Average Farm Price</h1>
+    <p class="byline">by Linwood Hoffman, <a href="/authors/ers-staff-directory/jennifer-bond/">Jennifer K. Bond</a>, and Mariana Matias</p>
+    <p></p><p>This report presents an alternative, aggregate futures-based forecasting model that utilizes the three available wheat futures contract prices, which represent the majority of U.S. wheat production. Results show that this model tends to provide forecasts with a lower mean absolute percent error and a more accurate prediction of positive directional movement.</p><p><strong>Errata:</strong> On May 23, this report was reposted to correct formatting errors throughout. Figure 4’s title was changed to revise winter wheat to wheat. Table 4’s title was corrected, as were the in-text references to figure 5 on page 7 and appendix 2, figure 13 on page 22. A superscript error was corrected in equation 5. In table 2, the average number of years was changed to 3 years, and a date was updated to 2018 in two places on page 10.</p><p></p>
+    <p><strong>Keywords:</strong> Hard red winter wheat, soft red winter wheat, hard red spring wheat, all wheat season-average farm price (SAFP) forecasts, HRW-only futures-adjusted forecast model, aggregate wheat futures-adjusted forecast model, futures prices, basis, marketing weights</p>
+    <p><strong>In this publication...</strong></p>
+    <!-- Code to build components here, couldn't put it in a helper because needed to get items once from above and use in multiple places -->
+    <ul class="file_list">
+            <li>
+                <a href="/webdocs/outlooks/100979/whs-21c-01.pdf?v=115">Merits of an Aggregate Futures Price Forecasting Model for the All Wheat U.S. Season-Average Farm Price</a>
+            </li>
+    </ul>
+    <h2>Latest Release:</h2>
+    <p>
+            <a href="/publications/pub-details/?pubid=108772">Wheat Outlook: March 2024</a>
+    </p>
+
+    <h2>All Releases:</h2>
+    <p>Select a decade or year to expand/collapse. Click on the link to view the report.</p>
+
+
+        <div class="filetree">
+            <ul class="main-tree">
+                <li class="tree-title">2020</li>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2024</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=108772">Wheat Outlook: March 2024</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=108536">Wheat Outlook: February 2024</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=108278">Wheat Outlook: January 2024</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2023</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=108097">Wheat Outlook: December 2023</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=107859">Wheat Outlook: November 2023</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=107621">Wheat Outlook: October 2023</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=107405">Wheat Outlook: September 2023</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=107152">Wheat Outlook: August 2023</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=106894">Wheat Outlook: July 2023</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=106712">Wheat Outlook: June 2023</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=106543">Wheat Outlook: May 2023</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=106318">Wheat Outlook: April 2023</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=106067">Wheat Outlook: March 2023</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=105802">Wheat Outlook: February 2023</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=105618">Wheat Outlook: January 2023</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2022</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=105461">Wheat Outlook: December 2022</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=105169">Wheat Outlook: November 2022</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=104960">Wheat Outlook: October 2022</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=104730">Wheat Outlook: September 2022</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=104469">Wheat Outlook: August 2022</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=104281">Wheat Outlook: July 2022</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=104089">Wheat Outlook: June 2022</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=103926">Wheat Outlook: May 2022</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=103719">Wheat Outlook: April 2022</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=103489">Wheat Outlook: March 2022</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=103244">Wheat Outlook: February 2022</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=103032">Wheat Outlook: January 2022</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2021</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=102849">Wheat Outlook: December 2021</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=102535">Wheat Outlook: November 2021</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=102369">Wheat Outlook: October 2021</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=102129">Wheat Outlook: September 2021</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=101877">Wheat Outlook: August 2021</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=101640">Wheat Outlook: July 2021</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=101446">Wheat Outlook: June 2021</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=101182">Wheat Outlook: May 2021</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=100978">Merits of an Aggregate Futures Price Forecasting Model for the All Wheat U.S. Season-Average Farm Price</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=100926">Wheat Outlook: April 2021</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=100701">Wheat Outlook: March 2021</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=100491">Wheat Outlook: February 2021</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=100226">Wheat Outlook: January 2021</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2020</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=100057">Wheat Outlook: December 2020</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=99840">Wheat Outlook: November 2020</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=99587">Wheat Outlook: October 2020</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=99372">Wheat Outlook: September 2020</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=99147">Wheat Outlook: August 2020</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=98814">Wheat Outlook: July 2020</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=98619">Wheat Outlook: June 2020</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=98438">Wheat Outlook: May 2020</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=98242">Wheat Outlook: April 2020</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=98054">Wheat Outlook: March 2020</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=95890">Wheat Outlook: February 2020</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=95678">Wheat Outlook: January 2020</a></li>
+                    </ul>
+            </ul>
+        </div>
+        <div class="filetree">
+            <ul class="main-tree">
+                <li class="tree-title">2010</li>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2019</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=95551">Wheat Outlook: December 2019</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=95336">Wheat Outlook: November 2019</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=95183">Wheat Outlook: October 2019</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=94943">Wheat Outlook: September 2019</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=93714">Wheat Outlook: August 2019</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=93496">Wheat Outlook: July 2019</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=93303">Wheat Outlook: June 2019</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=93089">Wheat Outlook: May 2019</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=92847">Wheat Outlook: April 2019</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=92582">Wheat Outlook: March 2019</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=91212">Wheat Outlook: February 2019</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2018</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=91007">Wheat Outlook: December 2018</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=90603">Wheat Outlook: November 2018</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=90337">Wheat Outlook: October 2018</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=90108">Wheat Outlook: September 2018</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=89837">Wheat Outlook: August 2018</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=89581">Wheat Outlook: July 2018</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=89230">Wheat Outlook: June 2018</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=88971">Wheat Outlook: May 2018</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=88416">Wheat Outlook: April 2018</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=87973">Wheat Outlook: March 2018</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=87376">Wheat Outlook:  February 2018</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=86773">Wheat Outlook: January 2018</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2017</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=86209">Wheat Outlook: December 2017</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=85716">Wheat Outlook: November 2017</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=85419">Wheat Outlook: October 2017</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=85130">Wheat Outlook: September 2017</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=84717">Wheat Outlook: August 2017</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=84312">Wheat Outlook: July 2017</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=83864">Wheat Outlook:  June 2017</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=83504">Wheat Outlook: May 2017</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=83178">Wheat Outlook: April 2017</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=82784">Wheat Outlook: March 2017</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=82470">Wheat Outlook: February 2017</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=82130">Wheat Outlook: January 2017</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2016</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=81628">Wheat Outlook: December 2016</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=80974">Wheat Outlook: November 2016</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=80242">Wheat Outlook: October 2016</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=79576">Wheat Outlook: September 2016</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=74655">Wheat Outlook: August 2016</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40289">Wheat Outlook: July 2016</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40278">Wheat Outlook:  June 2016</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40266">Wheat Outlook: May 2016</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40254">Wheat Outlook: April 2016</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40242">Wheat Outlook: March 2016</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40240">Wheat Outlook: February 2016</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40228">Wheat Outlook: January 2016</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2015</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40206">Wheat Outlook: December 2015</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40194">Wheat Outlook:  November 2015</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40192">Wheat Outlook: October 2015</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40170">Wheat Outlook: September 2015</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40158">Wheat Outlook: August 2015</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40146">Wheat Outlook: July 2015</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40144">Wheat Outlook: June 2015</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40122">Wheat Outlook: May 2015</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40110">Wheat Outlook: April 2015</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40098">Wheat Outlook: March 2015</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40096">Wheat Outlook: February 2015</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40074">Wheat Outlook: January 2015</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40302">U.S. 2013/14 Wheat Year in Review: Smaller Supplies and Higher Exports Lower Ending Stocks</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2014</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40062">Wheat Outlook: December 2014</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40050">Wheat Outlook: November 2014</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40048">Wheat Outlook: October  2014</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40036">Wheat Outlook: September 2014</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40014">Wheat Outlook: August 2014</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40012">Wheat Outlook: July 2014</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=40000">Wheat Outlook: June 2014</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39988">Wheat Outlook: May 2014</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39966">Wheat Outlook: April 2014</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39964">Wheat Outlook: March 2014</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39952">Wheat Outlook: February 2014</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39930">Wheat Outlook: January 2014</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2013</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39928">Wheat Outlook: December 2013</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39916">Wheat Outlook: November 2013</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39903">Afghanistan's Wheat Flour Market: Policies and Prospects</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39900">Wheat Outlook: September 2013</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39889">Wheat Outlook: August 2013</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39867">Wheat Outlook: July 2013</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39865">Wheat Outlook: June 2013</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39843">Wheat Outlook: May 2013</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39841">Wheat Outlook: April 2013</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39819">Wheat Outlook: March 2013</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39817">Wheat Outlook: February 2013</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39805">Rising Grain Exports by the Former Soviet Union Region</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39803">Wheat Outlook: January 2013</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2012</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39782">Wheat Outlook: December 2012</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39770">Wheat Outlook: November 2012</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39758">Wheat Outlook: October 2012</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39746">Wheat Outlook: September 2012</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39734">Wheat Outlook: August 2012</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39722">Wheat Outlook: July 2012</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39720">Wheat Outlook: June 2012</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39688">Wheat Outlook: May 2012</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39676">Wheat Outlook: April 2012</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39664">Wheat Outlook: March 2012</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39662">Wheat Outlook: February 2012</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39660">Wheat Outlook: January 2012</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2011</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39648">Wheat Outlook: December 2011</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2010</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39644">Wheat Outlook: August 2010</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39642">Wheat Outlook: May 2010</a></li>
+                    </ul>
+            </ul>
+        </div>
+        <div class="filetree">
+            <ul class="main-tree">
+                <li class="tree-title">2000</li>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2009</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39640">Wheat Outlook: March 2009</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2005</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39636">Wheat Backgrounder</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2004</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39634">Hard White Wheat At A Crossroads</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39632">Wheat and Barley Policies in Japan</a></li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39630">China's Wheat Economy: Current Trends and Prospects for Imports</a></li>
+                    </ul>
+                    <ul class="tree" style="display: none;">
+                        <li class="tree-title">2001</li>
+                            <li class="tree-item"><a href="/publications/pub-details/?pubid=39638">Wheat: Background and Issues for Farm Legislation</a></li>
+                    </ul>
+            </ul>
+        </div>
+</div>
+
+<div class="col-md-3">
+    <div id="sidebar" role="complementary">
+        <div class="inner filter">
+
+            
+            
+                <div class="pubs_sidebar">
+                <h3 class="header">Related</h3>
+        <div class="inner with-posts">
+                <p class="meta">
+                    <span class="right-seperator">Topic</span>
+                    <span>2/28/2024</span>
+                </p>
+                <h4><a class="post" href="/topics/farm-economy/agricultural-baseline/">Agricultural Baseline</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Topic</span>
+                    <span>2/7/2024</span>
+                </p>
+                <h4><a class="post" href="/topics/farm-economy/farm-sector-income-finances/">Farm Sector Income &amp; Finances</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Topic</span>
+                    <span>12/21/2023</span>
+                </p>
+                <h4><a class="post" href="/topics/crops/corn-and-other-feed-grains/">Corn and Other Feed Grains</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Topic</span>
+                    <span>10/27/2023</span>
+                </p>
+                <h4><a class="post" href="/topics/crops/wheat/">Wheat</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Topic</span>
+                    <span>10/23/2023</span>
+                </p>
+                <h4><a class="post" href="/topics/crops/soybeans-and-oil-crops/">Soybeans and Oil Crops</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Topic</span>
+                    <span>9/27/2023</span>
+                </p>
+                <h4><a class="post" href="/topics/crops/rice/">Rice</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Topic</span>
+                    <span>9/8/2023</span>
+                </p>
+                <h4><a class="post" href="/topics/farm-economy/">Farm Economy</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Topic</span>
+                    <span>2/28/2023</span>
+                </p>
+                <h4><a class="post" href="/topics/farm-economy/farm-commodity-policy/">Farm &amp; Commodity Policy</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Topic</span>
+                    <span>11/15/2022</span>
+                </p>
+                <h4><a class="post" href="/topics/crops/cotton-and-wool/">Cotton and Wool</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Topic</span>
+                    <span>2/10/2022</span>
+                </p>
+                <h4><a class="post" href="/topics/farm-economy/commodity-outlook/">Commodity Outlook</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Topic</span>
+                    <span>1/24/2022</span>
+                </p>
+                <h4><a class="post" href="/topics/crops/">Crops</a></h4>
+                <hr>
+        </div>
+    </div>
+
+                <div class="pubs_sidebar">
+        <div class="inner with-posts">
+                <p class="meta">
+                    <span class="right-seperator">Data</span>
+                    <span>3/11/2024</span>
+                </p>
+                <h4><a class="post" href="/data-products/season-average-price-forecasts/">Season-Average Price Forecasts</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Data</span>
+                    <span>3/11/2024</span>
+                </p>
+                <h4><a class="post" href="/data-products/wheat-data/">Wheat Data</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Data</span>
+                    <span>3/11/2024</span>
+                </p>
+                <h4><a class="post" href="/data-products/feed-grains-database/">Feed Grains Database</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Data</span>
+                    <span>3/4/2024</span>
+                </p>
+                <h4><a class="post" href="/data-products/oil-crops-yearbook/">Oil Crops Yearbook</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Data</span>
+                    <span>2/7/2024</span>
+                </p>
+                <h4><a class="post" href="/data-products/farm-income-and-wealth-statistics/">Farm Income and Wealth Statistics</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Data</span>
+                    <span>11/15/2023</span>
+                </p>
+                <h4><a class="post" href="/data-products/commodity-costs-and-returns/">Commodity Costs and Returns</a></h4>
+                <hr>
+                <p class="meta">
+                    <span class="right-seperator">Data</span>
+                    <span>3/21/2022</span>
+                </p>
+                <h4><a class="post" href="/data-products/cotton-wool-and-textile-data/">Cotton, Wool, and Textile Data</a></h4>
+                <hr>
+        </div>
+    </div>
+
+            
+
+        </div>
+    </div>
+</div>
+
+
+<!-- End of component code -->
+
+
+
+
+
+
+<!-- END: All layout work needs to exist between these lines -->
+
+
+
+
+
+            </section>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <footer class="content-footer">
+        <div class="UpdateContact">
+
+    <p><strong>Last updated:</strong> Tuesday, April 20, 2021</p>
+    <p><strong>For more information, contact:</strong> Linwood Hoffman, <a href="/authors/ers-staff-directory/jennifer-bond/">Jennifer K. Bond</a>, and Mariana Matias</p>
+        </div>
+    </footer>
+</main>
+
+
+
+
+        </div>
+    </div><!--/container-->
+    
+    <footer class="usa-footer usa-footer--slim ers-custom-footer">
+    <div class="grid-container usa-footer__return-to-top">
+        <a href="#">Return to top</a>
+    </div>
+    <div class="usa-footer usa-footer--big">
+        <div class="usa-footer__primary-section">
+            <div class="grid-container">
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col-8">
+                        <nav class="usa-footer__nav" aria-label="Footer navigation">
+                            <div class="grid-row grid-gap-4">
+
+                                <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                    <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                                        <h4 class="usa-footer__primary-link">ERS Links</h4>
+                                        <ul class="usa-list usa-list--unstyled">
+                                                <li class="usa-footer__secondary-link"><a href="/" target="_self">ERS Home</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/help/accessibility/" target="_self">Accessibility</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/about-ers/careers-at-ers/" target="_self">Careers</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/contact-us/" target="_self">Contact Us</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=fnrkbelab&amp;p=oi&amp;m=1111458399653" target="_blank">E-Mail Updates</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/help/" target="_self">Help</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/about-ers/policies-and-standards/information-quality/" target="_self">Information Quality</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/sitemap/" target="_self">Site Map</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/privacy/" target="_self">Privacy Policy &amp; Non-Discrimination Statement</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                    <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                                        <h4 class="usa-footer__primary-link">USDA Links</h4>
+                                        <ul class="usa-list usa-list--unstyled">
+                                                <li class="usa-footer__secondary-link"><a href="/freedom-of-information-act/" target="_self">FOIA</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="https://www.usda.gov/plain-writing" target="_blank">Plain Writing</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="https://www.usda.gov/oig/forms/contractor-fraud" target="_blank">Report Fraud</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="http://www.USDA.gov" target="_blank">USDA.gov</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="http://www.usa.gov" target="_blank">USA.gov</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="http://www.WhiteHouse.gov" target="_blank">White House.gov</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="tablet:grid-col-4">
+                        <div class="usa-sign-up">
+                            <div class="usa-sign-up__heading">Sign Up for Updates</div>
+                            <form class="usa-form">
+
+                                <div class="usa-button" type="submit"><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=fnrkbelab&amp;p=oi&amp;m=1111458399653" target="_blank">Subscribe</a></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="usa-footer__secondary-section">
+            <div class="grid-container">
+                <div class="grid-row grid-gap flex-justify-center tablet-lg:flex-justify">
+                    <div class="usa-footer__logo grid-row grid-gap-2 tablet-lg:grid-col-6 flex-justify-center tablet-lg:flex-justify-start">
+                        <div class="grid-col-auto">
+                            <a title="Home" href="/" aria-label="Economic Research Service" rel="home" class="usda-logo">
+                                <img src="/img/usda-symbol.svg" alt="U.S. Department of Agriculture logo" class="usda-logo-img">
+                            </a>
+                        </div>
+                        <div class="grid-col-auto">
+                            <a class="footer-sitename" href="/" title="Home" aria-label="Economic Research Service" rel="home">Economic Research Service</a>
+                            <a class="footer-tagline" href="https://www.usda.gov/" title="USDA.gov" aria-label="U.S. Department of Agriculture" rel="USDA">U.S. Department of Agriculture</a>
+                        </div>
+                    </div>
+                            <div class="usa-footer__contact-links tablet-lg:grid-col-6">
+            <div class="usa-footer__social-links grid-row grid-gap-1 flex-justify-center">
+                            <div class="grid-col-auto">
+                                <a class="ers-social-link-img" href="http://twitter.com/USDA_ERS" target="_blank">
+                                    <picture>
+                                        <source type="image/webp" srcset="/media/2qdcdmfm/x-logo.png?format=webp&amp;quality=75">
+                                        <img src="/media/2qdcdmfm/x-logo.png?format=png&amp;quality=85" alt="X (formerly Twitter) icon" title="X (formerly Twitter) icon">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="grid-col-auto">
+                                <a class="ers-social-link-img" href="https://www.linkedin.com/company/usda-economic-research-service/" target="_blank">
+                                    <picture>
+                                        <source type="image/webp" srcset="/media/ig4dzqiu/linkedin-logo.png?format=webp&amp;quality=75">
+                                        <img src="/media/ig4dzqiu/linkedin-logo.png?format=png&amp;quality=85" alt="LinkedIn icon" title="LinkedIn icon">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="grid-col-auto">
+                                <a class="ers-social-link-img" href="http://visitor.r20.constantcontact.com/d.jsp?llr=fnrkbelab&amp;p=oi&amp;m=1111458399653" target="_blank">
+                                    <picture>
+                                        <source type="image/webp" srcset="/media/5yig5dpq/mail-icon.png?format=webp&amp;quality=75">
+                                        <img src="/media/5yig5dpq/mail-icon.png?format=png&amp;quality=85" alt="Email Icon" title="Email Icon">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="grid-col-auto">
+                                <a class="ers-social-link-img" href="/multimedia/">
+                                    <picture>
+                                        <source type="image/webp" srcset="/media/eh3hgzud/multimedia-icon.png?format=webp&amp;quality=75">
+                                        <img src="/media/eh3hgzud/multimedia-icon.png?format=png&amp;quality=85" alt="Multimedia Icon" title="Multimedia Icon">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="grid-col-auto">
+                                <a class="ers-social-link-img" href="https://www.usda.gov/media/blog/tag/economic-research-service" target="_blank">
+                                    <picture>
+                                        <source type="image/webp" srcset="/media/zg3mzyfk/blog-icon.png?format=webp&amp;quality=75">
+                                        <img src="/media/zg3mzyfk/blog-icon.png?format=png&amp;quality=85" alt="Blog Icon" title="Blog Icon">
+                                    </picture>
+                                </a>
+                            </div>
+            </div>
+        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+
+    <script type="text/javascript">
+        var foucEls = document.getElementsByClassName("prevent-fouc");
+        for (var i = 0; i < foucEls.length; i++) {
+            foucEls[i].classList.remove("prevent-fouc");
+        }
+    </script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var usasearch_config = { siteHandle: "ers" };
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://search.usa.gov/assets/sayt_loader.js";
+        document.getElementsByTagName("head")[0].appendChild(script);
+        //]]>
+    </script>
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-27627304-10', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+    <script type="text/javascript">
+        (function () {
+            var g = function (e, h, f, g) {
+                this.get = function (a) { for (var a = a + "=", c = document.cookie.split(";"), b = 0, e = c.length; b < e; b++) { for (var d = c[b]; " " == d.charAt(0);)d = d.substring(1, d.length); if (0 == d.indexOf(a)) return d.substring(a.length, d.length) } return null };
+                this.set = function (a, c) { var b = "", b = new Date; b.setTime(b.getTime() + 6048E5); b = "; expires=" + b.toGMTString(); document.cookie = a + "=" + c + b + "; path=/; " };
+                this.check = function () { var a = this.get(f); if (a) a = a.split(":"); else if (100 != e) "v" == h && (e = Math.random() >= e / 100 ? 0 : 100), a = [h, e, 0], this.set(f, a.join(":")); else return !0; var c = a[1]; if (100 == c) return !0; switch (a[0]) { case "v": return !1; case "r": return c = a[2] % Math.floor(100 / c), a[2]++, this.set(f, a.join(":")), !c }return !0 };
+                this.go = function () { if (this.check()) { var a = document.createElement("script"); a.type = "text/javascript"; a.src = g; document.body && document.body.appendChild(a) } };
+                this.start = function () { var t = this; "complete" !== document.readyState ? window.addEventListener ? window.addEventListener("load", function () { t.go() }, !1) : window.attachEvent && window.attachEvent("onload", function () { t.go() }) : t.go() };
+            };
+            try { (new g(100, "r", "QSI_S_ZN_7TH4rRQTkc03Ua2", "https://zn7th4rrqtkc03ua2-usdaers.gov1.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_7TH4rRQTkc03Ua2")).start() } catch (i) { }
+        })();
+    </script><div id="ZN_7TH4rRQTkc03Ua2"><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+    <!--END WEBSITE FEEDBACK SNIPPET-->
+
+    
+    
+    <!-- JS References should exist in this section -->
+            <script src="/scripts/libs/filetree.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/javascript" src="https://zn7th4rrqtkc03ua2-usdaers.gov1.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_7TH4rRQTkc03Ua2"></script></body></html>

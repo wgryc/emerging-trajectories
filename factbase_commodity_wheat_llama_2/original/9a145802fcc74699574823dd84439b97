@@ -1,0 +1,1095 @@
+<!DOCTYPE html><html lang="en" class="jsfouc "><!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="gWMZ-j8KBKzSJytO2xaxEcmizd4UT6Ng04GlyACWD-c">
+    <meta name="google-site-verification" content="vW4R0mbBZfOa9XhRQjJEGWGIiJaawR9gL275wgTH_DA">
+    
+        <title>USDA ERS - Commodity Price Spike</title>
+
+
+        <meta name="description" content="Food prices jumped in 2010-11, the second price spike within 3 years. Longer term financial, agricultural, and demographic trends, exacerbated by short-term production shortfalls, set up conditions for the increases.">
+            <meta name="keywords" content="food commodity prices, food security, price surge, weather, food prices ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style type="text/css">
+        .jsfouc .prevent-fouc {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-B5FWKETJ0B&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+        // This adds a class "jsfouc" to the <html> element
+        document.documentElement.className = 'jsfouc';
+    </script>
+    <link rel="icon" type="image/png" href="/css/images/icons/favicon.png">
+
+    <script defer="" src="/scripts/theme.min.js?v=4c25e4717079acf1409a8f3c8dc54f6be2c16a26995e31a4e34bd834215dae4e"></script>
+    
+    <script>
+        const docElem = window.document.documentElement, loadingClass = "usa-js-loading"; function addLoadingClass() { docElem.className += ` ${loadingClass}` } function revertClass() { docElem.className = docElem.className.replace(loadingClass, "") } if ("querySelector" in window.document && "addEventListener" in window) { addLoadingClass(); const e = setTimeout(revertClass, 8e3); let s = 100; const n = () => { setTimeout(() => { s += 1, "undefined" != typeof uswdsPresent ? (clearTimeout(e), setTimeout(revertClass, 100)) : s > 0 && n() }, 100) }; n() }
+    </script>
+
+    
+    <link rel="stylesheet" href="/css/styles.css?v=1315c2aade2ce9dd503fc95aa32d4f8dc60f041e2a37e3f5f25c007461df027c">
+    
+
+    
+    
+    <style>
+    @charset "UTF-8";html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}[hidden],template{display:none}a{background-color:transparent}b,strong{font-weight:700}h1{font-size:2em;margin:.67em 0}img{border:0}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}input{line-height:normal}*,:after,:before{box-sizing:border-box}button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7}img{vertical-align:middle}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}.h1,.h2,.h3,h1,h2,h3{margin-top:20px;margin-bottom:10px}.h1,h1{font-size:36px}.h6,h6{font-size:12px}p{margin:0 0 10px}.small,small{font-size:85%}ol,ul{margin-top:0;margin-bottom:10px}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-right:-15px;margin-left:-15px}.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{position:relative;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:left}.col-sm-4{width:33.33333333%}.col-sm-2{width:16.66666667%}}@media (min-width:992px){.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{float:left}.col-md-12{width:100%}.col-md-4{width:33.33333333%}}.dropdown{position:relative}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:160px;padding:5px 0;margin:2px 0 0;font-size:14px;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);border-radius:4px;box-shadow:0 6px 12px rgba(0,0,0,.175)}.nav{padding-left:0;margin-bottom:0;list-style:none}.nav>li,.nav>li>a{position:relative;display:block}.nav>li>a{padding:10px 15px}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}@media (min-width:768px){.navbar{border-radius:4px}}@media (min-width:768px){.navbar-header{float:left}}.navbar-brand{float:left;height:50px;padding:15px;font-size:18px;line-height:20px}.navbar-brand>img{display:block}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media (min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-left-radius:0;border-top-right-radius:0}.btn-group-vertical>.btn-group:after,.btn-group-vertical>.btn-group:before,.btn-toolbar:after,.btn-toolbar:before,.clearfix:after,.clearfix:before,.container-fluid:after,.container-fluid:before,.container:after,.container:before,.dl-horizontal dd:after,.dl-horizontal dd:before,.form-horizontal .form-group:after,.form-horizontal .form-group:before,.modal-footer:after,.modal-footer:before,.modal-header:after,.modal-header:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.pager:after,.pager:before,.panel-body:after,.panel-body:before,.row:after,.row:before{display:table;content:" "}.btn-group-vertical>.btn-group:after,.btn-toolbar:after,.clearfix:after,.container-fluid:after,.container:after,.dl-horizontal dd:after,.form-horizontal .form-group:after,.modal-footer:after,.modal-header:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after{clear:both}table{border-spacing:0;border-collapse:collapse}td,th{padding:0}.carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive,.thumbnail>img,.thumbnail a>img{display:block;max-width:100%;height:auto}.h4,.h5,.h6,h4,h5,h6{margin-top:10px;margin-bottom:10px}.h2,h2{font-size:30px}table{background-color:transparent}caption{padding-top:8px;padding-bottom:8px;color:#777}caption,th{text-align:left}.breadcrumb{margin-bottom:20px;background-color:#f5f5f5;border-radius:4px}.breadcrumb>li{display:inline-block}.breadcrumb>li+li:before{padding:0 5px;color:#ccc;content:"/ "}.breadcrumb>.active{color:#333}.alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert-success{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}.hamburger{padding:15px;display:inline-block;transition-property:opacity,filter;transition-duration:.15s;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;overflow:visible}@font-face{font-family:Public Sans;src:url(/css/fonts/PublicSans-Regular.woff2) format("woff2"),url(/css/fonts/PublicSans-Regular.woff) format("woff"),url(/css/fonts/PublicSans-Regular.ttf) format("truetype")}@font-face{font-family:Public Sans Bold;src:url(/css/fonts/PublicSans-Bold.woff2) format("woff2"),url(/css/fonts/PublicSans-Bold.woff) format("woff"),url(/css/fonts/PublicSans-Bold.ttf) format("truetype")}.pager li>a,.pager li>span{display:inline-block;padding:5px 14px;background-color:#6d9abb;border:1px solid #6d9abb;border-radius:15px;color:#fff}.pager li>a a,.pager li>span a{text-decoration:none;color:#fff}.pager li>a a:visited,.pager li>span a:visited{color:#5b616b}.pager li>a .pager li>a:focus,.pager li>a:focus,.pager li>a:hover,.pager li>span .pager li>a:focus,.pager li>span:hover{text-decoration:none;background-color:#6d9abb;color:#fff}.scrollable-menu{height:auto;max-height:250px;overflow-x:hidden}.scrollable-menu::-webkit-scrollbar-thumb{border-radius:3px;background-color:#527fa6;-webkit-box-shadow:0 0 1px hsla(0,0%,100%,.75)}.scrollable-menu::-webkit-scrollbar{-webkit-appearance:none;width:7px!important}footer,header[role=banner]{box-sizing:border-box}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-angle-down:before{content:""}body,html{height:100%}body{position:relative;margin:0 auto;text-rendering:optimizeLegibility;min-width:100%;-webkit-animation-duration:.1s;-webkit-animation-name:fontfix;-webkit-animation-iteration-count:1;-webkit-animation-timing-function:linear;-webkit-animation-delay:.1s}h1{font-size:25px;line-height:34px;padding-bottom:6px;margin:0;font-weight:700}h1,h6{font-family:Public Sans,sans-serif}h6{font-size:16px;line-height:24px}.h1,.h2,.h3,h1,h2,h3{margin-top:0;margin-bottom:0}p{font-weight:400;font-size:16px;line-height:1.375;color:#000;text-rendering:optimizeLegibility;margin:0 0 15px}ul{padding-left:40px;padding-right:16px;margin-bottom:1.5em;line-height:1.4em;list-style-type:disc}ol ol,ol ol ol,ol ol ol ol,ol ul,ul ol,ul ul,ul ul ul,ul ul ul ul{margin-bottom:27px;margin-top:.5em;line-height:1.618}a{text-decoration:none;font-weight:500}a,a:visited{color:#0b4778}img{max-width:100%;height:auto}.page{background-color:#fff;padding:20px;box-sizing:border-box}@media (max-width:800px){.page{padding-top:0}}.skip-link-mobile{display:none}@media (max-width:991px){.skip-link-mobile{display:inline-block}}.skip-link-desktop{display:inline-block}@media (max-width:991px){.skip-link-desktop{display:none}}.hamburger{overflow:hidden;position:absolute;cursor:pointer;right:23px;top:27px;margin:0;padding:0;z-index:10;display:none}@media (max-width:991px){.hamburger{display:block}}#usda-mobile-menu{background-color:#dedbd9;display:none;height:0;width:100%;position:fixed;top:0;left:0;z-index:52;overflow:scroll;overflow-x:hidden;overflow-y:auto;margin-top:91px;animation-duration:.3s}#usda-mobile-menu #mobileSearch{padding:0 25px 21px 15px;border-bottom:1px solid #acacac;display:-ms-flexbox;display:flex;justify-content:flex-start}#usda-mobile-menu #mobileSearch form.searchBox{width:100%}.bg-tint{display:none}header[role=banner]{position:relative;z-index:99;background-color:#153554}header[role=banner] a,header[role=banner] a:hover,header[role=banner] a:visited{color:#fff;text-decoration:none}.logo,header[role=banner]>.container{position:relative}.logo{margin-top:5px;padding:10px 0;font-size:15px;font-weight:400}@media (max-width:600px){.logo{padding:13px 0 25px}}.logo a.logo-img{float:left;margin-right:15px;width:72px}@media (max-width:480px){.logo img.logo-mark{margin-right:5px}}.logo .logo-text{float:left}@media (max-width:800px){.logo .logo-text{font-size:80%}}.logo span.logo-org{display:block;margin-top:8px;margin-bottom:0;font-size:17px;font-weight:700}@media (max-width:800px){.logo span.logo-org{font-size:100%}}@media (max-width:480px){.logo span.logo-org{font-size:80%}}#headerSearch{position:absolute;right:0;top:16px}#headerSearch .searchBox{transition:width .3s;display:inline-block;width:0}#headerSearch .searchBox input.search-block-header{color:#535353;font-weight:700;background:#fff;border:none;border-radius:3px;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:none;outline:0;padding:.5em .75em;width:100%}@media (max-width:600px){#headerSearch .searchBox input.search-block-header{width:55%;position:absolute;top:47px;right:0}}#headerSearch .searchAction{display:inline-block}@media (max-width:480px){#headerSearch .searchAction{display:block;position:absolute;right:-54px;top:45px}}#headerSearch .searchAction input.mag-submit{margin:.333333em .75em;width:32px;height:32px;vertical-align:middle;cursor:pointer}@media (max-width:991px){#headerSearch{display:none}}footer{position:relative;padding:.5em;line-height:2em;z-index:7}@media (max-width:991px){footer{padding:1em 0}}footer ul{list-style-type:none;margin:0;padding:0}footer h6{color:#fff;text-transform:uppercase;padding-bottom:8px;font-size:15px;letter-spacing:1px}footer .lined-right{border-right:1px solid #30506b}@media (max-width:768px){footer .lined-right{border-right:0}}.footer-distributed{width:100%;text-align:left;padding:10px 2px 40px;margin-top:30px}@media (max-width:768px){.footer-distributed{text-align:center}}.footer-distributed a,.footer-distributed a:focus,.footer-distributed a:focus:hover,.footer-distributed a:hover,.footer-distributed a:visited,.footer-distributed a:visited:hover{color:#fff;font-size:15px;line-height:19px;padding-bottom:6px}.footer-distributed .blue-button{background-color:#125a99;padding:7px 14px;margin-top:14px;text-transform:uppercase;display:inline-block;font-weight:700;font-size:14px;letter-spacing:1px;border-radius:6px}.padown{margin-bottom:20px}ul.footerSocial{margin:0;padding:0;padding-bottom:15px;text-align:right}ul.footerSocial li{margin:0 6px;display:inline-block}ul.footerSocial li img{max-width:100%}@media (max-width:768px){ul.footerSocial{text-align:center}}.usdaNav{background-color:#540a13;border:0;border-radius:0;margin-top:20px}.usdaNav img.ie-font-fallback{display:none}.usdaNav img.ie-font-fallback.home{display:block;margin:7px 0 0 4px;width:21px}.usdaNav ul,.usdaNav ul li{list-style-type:none}.usdaNav.navbar{margin-bottom:0}@media (max-width:991px){.usdaNav{padding:0 0 11px}}.usdaNav .navbar-header{width:6%}@media (max-width:991px){.usdaNav .navbar-header{display:none}}.usdaNav li.root-level-li{display:-ms-flexbox;display:flex;display:-webkit-flex;-ms-flex-pack:justify;justify-content:space-between;-webkit-justify-content:space-between;align-items:stretch;flex-grow:1}.usdaNav li.root-level-li span.sub-indicator.root-level-indicator{color:#f5f5f5;border-left:1px solid #a37278;border-right:1px solid #a37278;padding:15px 10px}@media (min-width:991px) and (max-width:1200px){.usdaNav li.root-level-li span.sub-indicator.root-level-indicator{padding:15px 8px;line-height:1.4}}.usdaNav li.root-level-li:last-child span.sub-indicator.root-level-indicator{border-right:0}.usdaNav .navbar-nav>li>a.top-label{padding:15px;color:#f5f5f5;font-weight:600;white-space:nowrap;text-align:center;width:100%}@media (min-width:991px) and (max-width:1200px){.usdaNav .navbar-nav>li>a.top-label{font-size:.7em}}.usdaNav .navbar-nav>li>a.top-label.emptylink{pointer-events:none}.usdaNav .navbar-nav>li>a.top-label.emptylink span{pointer-events:auto}.usdaNav .navbar-nav{padding:0;padding-right:0;padding-bottom:0;display:-ms-flexbox;display:flex;display:-webkit-flex;-ms-flex-pack:justify;justify-content:space-between;-webkit-justify-content:space-between;align-items:stretch;width:94%}.usdaNav .navbar-nav .dropdown-menu.fatNav{position:absolute;top:100%;left:0;z-index:1000;float:left;width:100%;min-height:355px;padding:5px 0;font-size:15px;text-align:left;list-style:none;border:none;border-radius:0;box-shadow:none;background-color:#e4e2e0;opacity:1!important}@media (max-width:768px){.usdaNav .navbar-nav .dropdown-menu.fatNav{position:static;float:none}}@media (max-width:991px){.usdaNav .navbar-nav{display:none}}.usdaNav a.navbar-brand{padding:8px 20px;color:#f5f5f5;background-color:#7f4a50;width:100%}.usdaNav a.navbar-brand.active{background-color:#7f4a50;color:#fff}@media (max-width:1200px){.usdaNav a.navbar-brand{padding:8px 13px}}.usdaNav span.sub-indicator{border-left:1px solid #cecece;height:100%;right:0;top:0;position:absolute;line-height:1.2em;display:block;cursor:pointer;font-size:1em;font-weight:300;z-index:1}.usdaNav .mobilePageTitle{display:none}@media (max-width:991px){.usdaNav .mobilePageTitle{display:block;width:100%;padding:14px 60px 14px 14px;color:#fff;text-align:center}.usdaNav .mobilePageTitle i.fa{font-size:31px;margin-top:-4px}}.usdaNav .hamburger{display:none}a.backToTop{color:#fff;border-radius:100px;background-color:#c3c3c3;mix-blend-mode:exclusion;height:45px;width:45px;position:fixed;right:40px;bottom:40px;text-decoration:none;text-align:center;z-index:10;opacity:0;transition:all .8s ease-in}a.backToTop span{position:absolute;top:-25px;left:7px;color:#fff;font-size:1.2em;display:block}a.backToTop img{display:block;margin:10px auto 0}@media (max-width:768px){a.backToTop{display:none}}.yamm .collapse,.yamm .dropdown,.yamm .dropup,.yamm .nav{position:static}.yamm .dropdown-menu{left:auto}.yamm .dropdown.yamm-fw .dropdown-menu{left:0;right:0}div.clear{clear:both}.aw-maintable,.aw-responsivetable,.ers_tables{width:65%;margin:0 auto 24px}h2{font-size:22px;line-height:30px;padding-bottom:6px;margin:0;font-weight:700}.pseudo-h3,h2{font-family:Public Sans,sans-serif}.pseudo-h3{font-size:18px;line-height:1.5}.pseudo-h2,.pseudo-h3,.pseudo-h4,.pseudo-h5,.pseudo-h6{padding-bottom:18px;margin:0}br{line-height:1.618em}table{-ms-hyphens:none;-webkit-hyphens:auto;hyphens:auto}.aw-maintable,.aw-responsivetable{border-collapse:collapse;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}@media (max-width:768px){.aw-maintable,.aw-responsivetable{width:100%}}@media (max-width:768px){.aw-responsivetable,.responsivetable{border:0}}.aw-responsivetable caption,.responsivetable caption{text-align:left;font-weight:700;font-size:large;color:#333;padding:0 0 10px 6px;background-color:#fff}@media (max-width:768px){.aw-responsivetable caption,.responsivetable caption{padding:0 0 10px}}.aw-responsivetable th:first-child,.responsivetable th:first-child{border-left:1px solid #ccc}@media (max-width:768px){.aw-responsivetable th:first-child,.responsivetable th:first-child{font-weight:700;font-size:1.5}}.aw-responsivetable th:last-child,.responsivetable th:last-child{border-right:1px solid #ccc}.aw-responsivetable td,.responsivetable td{border:1px solid #ccc;padding:6px;line-height:1.2em;vertical-align:top;background-color:#fff}@media (max-width:768px){.aw-responsivetable td,.responsivetable td{display:block;text-align:left;border-bottom:1px solid #ddd;border-left:none;border-right:none;border-top:none;padding:8px 3px 8px 8px}}@media (max-width:768px){.aw-responsivetable tbody tr th:before,.aw-responsivetable td:before,.responsivetable tbody tr th:before,.responsivetable td:before{content:attr(data-label) ":  ";float:left;font-weight:700}}@media (max-width:768px){.aw-responsivetable td.nocolon:before,.aw-responsivetable th.nocolon:before,.responsivetable td.nocolon:before,.responsivetable th.nocolon:before{content:attr(data-label) ""}}@media (max-width:768px){.aw-responsivetable tr,.responsivetable tr{display:block;border-top:2px solid #000}}@media (max-width:768px){.aw-responsivetable thead,.responsivetable thead{display:none}}.aw-responsivetable thead tr th,.responsivetable thead tr th{border:1px solid #ccc;padding:6px;line-height:1.2em;background-color:#fff;text-align:center;background:#fff;color:#333;font-weight:700;border-bottom:1.8px solid #b0aead;vertical-align:top}@media (max-width:768px){.aw-responsivetable thead tr th,.responsivetable thead tr th{border:none;text-align:center;background:transparent;color:#fff;font-weight:700}}.aw-responsivetable tbody tr th,.responsivetable tbody tr th{border:1px solid #ccc;padding:6px;line-height:1.2em;background-color:#fff;text-align:left;background:#fff;color:#333;font-weight:400;vertical-align:top}@media (max-width:768px){.aw-responsivetable tbody tr th,.responsivetable tbody tr th{display:block;border-bottom:1px solid #b5b5b5;border-top:none;border-right:none;background:#e6e6e6}}@media (max-width:768px){.aw-responsivetable tbody tr td:last-child,.responsivetable tbody tr td:last-child{padding-bottom:20px}}@media (max-width:768px){.aw-responsivetable tbody th:first-child,.responsivetable tbody th:first-child{vertical-align:middle}}@media (max-width:768px){.aw-responsivetable tbody td.tablecaps,.aw-responsivetable tbody th.tablecaps,.responsivetable tbody td.tablecaps,.responsivetable tbody th.tablecaps{text-transform:uppercase}}.aw-responsivetable tfoot td,.responsivetable tfoot td{line-height:1.25em}@media (max-width:768px){.aw-responsivetable tfoot tr,.responsivetable tfoot tr{border-bottom:2px solid #000}}#content{display:block;position:relative;background:#fff;padding-bottom:10px;z-index:6;clear:both}#content:after,#content:before{content:"";display:table}#content:after{clear:both}.breadcrumb{background-color:#e4e2e0;width:100%;display:inline-block;border-radius:0;padding:8px 15px;list-style:none;margin:0;vertical-align:middle;font-size:14px}@media (max-width:991px){.breadcrumb{display:none}}.breadcrumb li{display:inline-block}.breadcrumb li:before{content:">"!important;padding:0 2px 0 0;color:#9e9e9e!important;font-weight:400}.breadcrumb li:first-child:before{content:"";display:none}.ie7 .breadcrumb li{display:inline}.breadcrumb li a,.breadcrumb li a:hover,.breadcrumb li a:visited{color:#000}.breadcrumb>.active{color:#71323d;font-weight:700}.animated{animation-duration:1s;animation-fill-mode:both}.fadeInDown{animation-name:fadeInDown}#search_Container{border-bottom:1px solid #dacd85;border-top:1px solid #dacd85;padding:15px 0 0 5px;margin:5px 0}#search_Container .aw_searchbar{width:185px;padding:7px 10px;line-height:14px}#search_Container .aw_search_submit{padding:7px 10px;height:auto;display:inline-block;margin-left:10px}.AmberWavesArticle p:first-child{margin-top:10px}.AmberWavesArticle h2,.AmberWavesArticle h3{padding:8px 0;font-size:18px}#localnav ul,#topics_Container ul{margin:0;padding:0;list-style:none}#localnav ul li,#topics_Container ul li{border-bottom:1px solid #dacd85;display:block;margin:0;padding:5px 0}.aw_contentContainer{position:relative;min-height:750px;line-height:1.6em;padding-top:10px}.aw_contentContainer table p a{z-index:1001!important}.aw_contentContainer ul{list-style-type:disc}.aw_contentContainer ol,.aw_contentContainer ul{padding-left:40px;padding-right:16px;margin-bottom:1.5em;line-height:1.4em}.aw_contentContainer ol{list-style-type:decimal}.aw_contentContainer .date{float:left;font-size:14px;padding:0 20px;line-height:1.875em}#sm_logo_Container{border-bottom:2px solid #dacd85;height:125px;background:url(/css/images/logo-aw-sm.png) no-repeat 0 0}.aw_contentContainer #localnav{margin:15px 0}.aw_contentContainer #localnav a{padding-left:7px}.aw_contentContainer #localnav ul>li.home{padding-top:0}.sidebar-right{float:right;height:440px;margin:0 10px 50px 20px;padding:0 0 25px;width:250px;position:relative;display:none}@media (min-width:1200px){.sidebar-right{display:block}}.this-article-drawn-from{color:#333;font-size:16px;line-height:20px;margin:10px 8px 15px;padding:30px 20px 20px;background:#f7f5e6;width:auto;clear:both}.this-article-drawn-from .pseudo-h3{font-family:Public Sans,sans-serif;font-size:18px;color:#333;margin:0 0 0 8px;padding-bottom:8px;line-height:.5em}.this-article-drawn-from p{padding:0;margin:0 0 8px}.amber-waves-wrapper h1.article-title{border-bottom:1px solid #dacd85;padding:10px 0 10px 5px;height:auto;word-wrap:normal;font-size:25px;line-height:30px;font-weight:700}.amber-waves-wrapper p{font-family:inherit;font-size:16px;line-height:1.425;margin-left:8px;margin:0 0 20px}.amber-waves-wrapper.article-authors,.amber-waves-wrapper .article-tags,.amber-waves-wrapper h1.article-title{max-width:786px}.amber-waves-wrapper .article-tags{border-left:1px solid #dacd85;border-top:1px solid #dacd85;padding:3px 0;overflow:hidden}.amber-waves-wrapper .article-tags .type{color:#5f5106;font-style:italic;padding:0 10px;float:left}.amber-waves-wrapper .article-tags .controls{float:right}.amber-waves-wrapper .img-responsive{padding-left:8px;padding-bottom:18px}.amber-waves-wrapper ol,.amber-waves-wrapper ul{margin:0 0 0 .5em}.amber-waves-wrapper .article-authors{margin:5px 0 10px 8px}
+/*# sourceMappingURL=awMaster.critical.min.css.map */
+
+    </style>
+
+
+    
+    
+    <link rel="stylesheet" as="style" type="text/css" media="screen" href="/css/awMaster.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/awMaster.min.css"></noscript>
+
+
+    
+    
+
+
+    <script src="/scripts/libs/jquery-3.6.0.min.js"></script>
+    <script src="/scripts/ResponsiveBase.min.js"></script>
+
+    <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=USDA&amp;subagency=ERS" type="text/javascript"></script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L"></script>
+    <script>/*loadCSS 2017 Filament Group MIT License*/!function (n) { "use strict"; n.loadCSS || (n.loadCSS = function () { }); var o = loadCSS.relpreload = {}; if (o.support = function () { var e; try { e = n.document.createElement("link").relList.supports("preload") } catch (t) { e = !1 } return function () { return e } }(), o.bindMediaToggle = function (t) { setTimeout(function () { t.onload = null; t.rel = "stylesheet" }) }, o.poly = function () { if (!o.support()) for (var t = n.document.getElementsByTagName("link"), e = 0; e < t.length; e++) { var a = t[e]; "preload" !== a.rel || "style" !== a.getAttribute("as") || a.getAttribute("data-loadcss") || (a.setAttribute("data-loadcss", !0), o.bindMediaToggle(a)) } }, !o.support()) { o.poly(); var t = n.setInterval(o.poly, 500); n.addEventListener ? n.addEventListener("load", function () { o.poly(), n.clearInterval(t) }) : n.attachEvent && n.attachEvent("onload", function () { o.poly(), n.clearInterval(t) }) } n.loadCSS = loadCSS }("undefined" != typeof global ? global : this);</script>
+<script type="text/javascript" src="https://search.usa.gov/assets/sayt_loader.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body id="pageTop" class="AmberWavesArticle">
+    
+    
+
+<!-- SiteCatalyst code version: H.24.2.
+    Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+    More info available at http://www.omniture.com -->
+<script type="text/javascript" src="/scripts/AppMeasurement.js"></script>
+<script type="text/javascript" src="/scripts/VisitorAPI.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+    /* You may give each page an identifying name, server, and channel on
+    the next lines. */
+    s.pageName="Amber Waves:2011:September:Commodity Price Spike"
+    s.server=window.location.hostname;
+    s.channel="Amber Waves"
+    s.pageType=""
+    s.prop1="Amber Waves:2011:September:Commodity Price Spike"
+    s.prop2="Amber Waves:2011:September:Commodity Price Spike"
+    s.prop3="Amber Waves:2011:September:Commodity Price Spike"
+    s.prop4=""
+    s.prop5=""
+    s.prop11=""
+    s.prop12=""
+    s.prop14=""
+    s.prop15=""
+    s.prop19="Amber Waves:2011:September:Commodity Price Spike"
+    s.prop24=""
+    /* Conversion Variables */
+    s.campaign=""
+    s.state=""
+    s.zip=""
+    s.events=""
+    s.products=""
+    s.purchaseID=""
+    s.eVar1=""
+    s.eVar2=""
+    s.eVar3=""
+    s.eVar4=""
+    s.eVar5=""
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+    if (navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+        //--></script><noscript>
+    <img src="https://ers.122.2o7.net/b/ss/erscms/1/H.24.2--NS/0"
+         height="1" width="1" border="0" alt="" />
+</noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.24.2. -->
+
+
+
+
+
+
+    
+
+    <div role="navigation">
+        <a href="#usdaNav" class="usa-skipnav sr-only sr-only-focusable sr-skip-navigation skip-link-desktop" aria-label="Skip to Navigation">Skip to navigation</a>
+        <a href="#content" class="usa-skipnav sr-only sr-only-focusable sr-skip-content" aria-label="Skip to Main Content">Skip to main content</a>
+    </div>
+
+
+    
+
+<section class="usa-banner" aria-label="Official government website">
+    <div class="usa-accordion">
+        <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+                <div class="grid-col-auto">
+                    <img class="usa-banner__header-flag" src="/img/us_flag_small.png" role="img" alt="U.S. flag">
+                </div>
+                <div class="grid-col-fill tablet:grid-col-auto">
+                    <p class="usa-banner__header-text">An official website of the United States government</p>
+                    <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+                </div>
+                <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
+                    <span class="usa-banner__button-text">Here’s how you know</span>
+                </button>
+            </div>
+        </header>
+        <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden="">
+            <div class="grid-row grid-gap-lg">
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="/img/icon-dot-gov.svg" role="img" alt="" aria-hidden="true">
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>
+                                Official websites use .gov
+                            </strong>
+                            <br>
+                            A <strong>.gov</strong> website belongs to an official government organization in the United States.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="/img/icon-https.svg" role="img" alt="" aria-hidden="true">
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>
+                                Secure .gov websites use HTTPS
+                            </strong>
+                            <br>
+                            A <strong>lock</strong> (
+                            <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description"><title id="banner-lock-title">Lock</title><desc id="banner-lock-description">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"></path></svg></span>
+                            ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <div class="usa-overlay"></div>
+    
+    <header class="usa-header ers-header usa-header--extended">
+            <div class="usa-navbar">
+        <div class="usa-logo" id="extended-logo">
+            <div class="usda-logo-text">
+                <a title="Home" href="/" aria-label="Economic Research Service" rel="home" class="usda-logo">
+                    <img src="/img/usda-symbol.svg" alt="U.S. Department of Agriculture logo" class="usda-logo-img">
+                </a>
+                <a class="sitename" href="/" title="Home" aria-label="Economic Research Service" rel="home">Economic Research Service</a>
+                <a class="tagline" href="https://www.usda.gov/" title="USDA.gov" aria-label="U.S. Department of Agriculture" rel="USDA">U.S. Department of Agriculture</a>
+            </div>
+        </div>
+        <button class="usa-menu-btn">Menu</button>      
+    </div>
+   
+
+
+
+    <nav aria-label="Primary navigation" class="usa-nav" id="usdaNav">
+        <div class="usa-nav__inner">
+            <button class="usa-nav__close"><img src="/img/close-white.svg" role="img" alt="close" aria-label="close navigation"></button>
+            <div>
+                <div class="region region-primary-menu">
+                    <ul class="usa-nav__primary usa-accordion">
+                        <li class="usa-nav__primary-item">
+                            <a class="usa-nav__link " href="/"><span>Home</span></a>
+                        </li>
+                        
+                            <li class="usa-nav__primary-item">
+                                <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="extended-nav-section-topics"><span>Topics</span></button>
+                                    <ul id="extended-nav-section-topics" class="usa-nav__submenu" hidden="">
+                                        <li class="ers-subnav-mainlink">
+                                            <a href="/topics/" class="" aria-label="Topics">Topics</a>
+                                        </li>
+                                                                                    <li class="usa-nav__submenu-item">
+                                                <a href="/topics/animal-products/" class="" aria-label="Animal Products in Topics">Animal Products</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/crops/" class="" aria-label="Crops in Topics">Crops</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/farm-bill/" class="" aria-label="Farm Bill in Topics">Farm Bill</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/farm-economy/" class="" aria-label="Farm Economy in Topics">Farm Economy</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/farm-practices-management/" class="" aria-label="Farm Practices &amp; Management in Topics">Farm Practices &amp; Management</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/food-nutrition-assistance/" class="" aria-label="Food &amp; Nutrition Assistance in Topics">Food &amp; Nutrition Assistance</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/food-choices-health/" class="" aria-label="Food Choices &amp; Health in Topics">Food Choices &amp; Health</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/food-markets-prices/" class="" aria-label="Food Markets &amp; Prices in Topics">Food Markets &amp; Prices</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/food-safety/" class="" aria-label="Food Safety in Topics">Food Safety</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/international-markets-u-s-trade/" class="" aria-label="International Markets &amp; U.S. Trade in Topics">International Markets &amp; U.S. Trade</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/natural-resources-environment/" class="" aria-label="Natural Resources &amp; Environment in Topics">Natural Resources &amp; Environment</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/topics/rural-economy-population/" class="" aria-label="Rural Economy &amp; Population in Topics">Rural Economy &amp; Population</a>
+                                            </li>
+                                    </ul>                        
+                            </li>
+                            <li class="usa-nav__primary-item">
+                                <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="extended-nav-section-data-products"><span>Data Products</span></button>
+                                    <ul id="extended-nav-section-data-products" class="usa-nav__submenu" hidden="">
+                                        <li class="ers-subnav-mainlink">
+                                            <a href="/data-products/" class="" aria-label="Data Products">Data Products</a>
+                                        </li>
+                                            <div class="usa-nav_submenu_heading">View by Topic:</div>
+                                                                                    <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14828&amp;subtopicid=" class="" aria-label="Animal Products in Data Products">Animal Products</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14829&amp;subtopicid=" class="" aria-label="Crops in Data Products">Crops</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14830&amp;subtopicid=" class="" aria-label="Farm Economy in Data Products">Farm Economy</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14831&amp;subtopicid=" class="" aria-label="Farm Practices &amp; Management in Data Products">Farm Practices &amp; Management</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14832&amp;subtopicid=" class="" aria-label="Food &amp; Nutrition Assistance in Data Products">Food &amp; Nutrition Assistance</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14833&amp;subtopicid=" class="" aria-label="Food Choices &amp; Health in Data Products">Food Choices &amp; Health</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14834&amp;subtopicid=" class="" aria-label="Food Markets &amp; Prices in Data Products">Food Markets &amp; Prices</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14835&amp;subtopicid=" class="" aria-label="Food Safety in Data Products">Food Safety</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14836&amp;subtopicid=" class="" aria-label="International Markets &amp; U.S. Trade in Data Products">International Markets &amp; U.S. Trade</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14837&amp;subtopicid=" class="" aria-label="Natural Resources &amp; Environment in Data Products">Natural Resources &amp; Environment</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/data-products/#!topicid=14838&amp;subtopicid=" class="" aria-label="Rural Economy &amp; Population in Data Products">Rural Economy &amp; Population</a>
+                                            </li>
+                                    </ul>                        
+                            </li>
+                            <li class="usa-nav__primary-item">
+                                <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="extended-nav-section-publications"><span>Publications</span></button>
+                                    <ul id="extended-nav-section-publications" class="usa-nav__submenu" hidden="">
+                                        <li class="ers-subnav-mainlink">
+                                            <a href="/publications/" class="" aria-label="Publications">Publications</a>
+                                        </li>
+                                            <div class="usa-nav_submenu_heading">View by Topic:</div>
+                                                                                    <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=8858ec26-742a-405e-8904-7133752b9062&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Animal Products in Publications">Animal Products</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=27fdeed8-34de-4ae9-919a-94d86a3ab31a&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Crops in Publications">Crops</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=200f8d13-a25a-420e-a682-dfd0358a8723&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Farm Economy in Publications">Farm Economy</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=2ec0f701-8196-42d5-8a71-06c736731759&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Farm Practices &amp; Management in Publications">Farm Practices &amp; Management</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=d7627f77-6cee-4ab9-bbb9-8c74d4778941&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Food &amp; Nutrition Assistance in Publications">Food &amp; Nutrition Assistance</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=54b4c7ae-36a3-4e79-a07f-dd4773e73d7a&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Food Choices &amp; Health in Publications">Food Choices &amp; Health</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=d2934def-c016-4011-9244-2db57d3714c1&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Food Markets &amp; Prices in Publications">Food Markets &amp; Prices</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=c8b9267c-b12f-42fe-9e04-80fd2c2510ac&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Food Safety in Publications">Food Safety</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=4fe002a3-9baf-48e7-9e03-a9ed03d960b6&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="International Markets &amp; U.S. Trade in Publications">International Markets &amp; U.S. Trade</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=e99110de-ed98-415e-8e19-be9bfae3196d&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Natural Resources &amp; Environment in Publications">Natural Resources &amp; Environment</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/publications/#!topicid=2d26875b-d523-4e2c-bf40-5281a376d38d&amp;subtopicid=&amp;series=&amp;authorid=&amp;page=1&amp;sortfield=date&amp;sortascending=false" class="" aria-label="Rural Economy &amp; Population in Publications">Rural Economy &amp; Population</a>
+                                            </li>
+                                    </ul>                        
+                            </li>
+                            <li class="usa-nav__primary-item">
+                                <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="extended-nav-section-newsroom"><span>Newsroom</span></button>
+                                    <ul id="extended-nav-section-newsroom" class="usa-nav__submenu" hidden="">
+                                        <li class="ers-subnav-mainlink">
+                                            <a href="/newsroom/" class="" aria-label="Newsroom">Newsroom</a>
+                                        </li>
+                                                                                    <li class="usa-nav__submenu-item">
+                                                <a href="/newsroom/contact-ers-press-office/" class="" aria-label="Contact ERS Press Office in Newsroom">Contact ERS Press Office</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/newsroom/trending-topics/" class="" aria-label="Trending Topics in Newsroom">Trending Topics</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/multimedia/" class="" aria-label="Multimedia in Newsroom">Multimedia</a>
+                                            </li>
+                                    </ul>                        
+                            </li>
+                            <li class="usa-nav__primary-item">
+                                <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="extended-nav-section-calendar"><span>Calendar</span></button>
+                                    <ul id="extended-nav-section-calendar" class="usa-nav__submenu" hidden="">
+                                        <li class="ers-subnav-mainlink">
+                                            <a href="/calendar/" class="" aria-label="Calendar">Calendar</a>
+                                        </li>
+                                                                                    <li class="usa-nav__submenu-item">
+                                                <a href="/calendar/#!sortfield=ReleaseDate&amp;sortdirection=asc&amp;selectedday=17&amp;selectedmonth=3&amp;selectedyear=2024" class="" aria-label="Today's Releases in Calendar">Today's Releases</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/calendar/#!sortfield=ReleaseDate&amp;sortdirection=asc&amp;selectedmonth=3&amp;selectedyear=2024" class="" aria-label="This Month's Releases in Calendar">This Month's Releases</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/calendar/#!sortfield=ReleaseDate&amp;sortdirection=asc&amp;selectedmonth=4&amp;selectedyear=2024" class="" aria-label="Next Month's Releases in Calendar">Next Month's Releases</a>
+                                            </li>
+                                    </ul>                        
+                            </li>
+                            <li class="usa-nav__primary-item">
+                                <button class="usa-accordion__button usa-nav__link usa-current" aria-expanded="false" aria-controls="extended-nav-section-amber-waves-magazine"><span>Amber Waves Magazine</span></button>
+                                    <ul id="extended-nav-section-amber-waves-magazine" class="usa-nav__submenu" hidden="">
+                                        <li class="ers-subnav-mainlink">
+                                            <a href="/amber-waves/" class="usa-current" aria-label="Amber Waves Magazine">Amber Waves Magazine</a>
+                                        </li>
+                                                                                    <li class="usa-nav__submenu-item">
+                                                <a href="/amber-waves/" class="" aria-label="Amber Waves Home in Amber Waves Magazine">Amber Waves Home</a>
+                                            </li>
+                                            <li class="usa-nav__submenu-item">
+                                                <a href="/amber-waves/all-articles/" class="" aria-label="All Articles in Amber Waves Magazine">All Articles</a>
+                                            </li>
+                                    </ul>                        
+                            </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="usa-nav__secondary">
+                <ul class="usa-nav__secondary-links">
+                            <li class="usa-nav__secondary-item">
+                                <a href="/about-ers/" class="">About ERS</a>
+                            </li>
+                            <li class="usa-nav__secondary-item">
+                                <a href="/about-ers/careers-at-ers/" class="">Careers at ERS</a>
+                            </li>
+                            <li class="usa-nav__secondary-item">
+                                <a href="/faqs/" class="">FAQs</a>
+                            </li>
+                            <li class="usa-nav__secondary-item">
+                                <a href="/contact-us/" class="">Contact Us</a>
+                            </li>
+                </ul>
+                <form class="usa-search usa-search--small " role="search" method="GET" action="https://search.ers.usda.gov/search">
+                    <input name="affiliate" class="ersSearchAffiliate" type="hidden" value="ers" aria-hidden="true">
+                    <label class="usa-sr-only" for="extended-search-field-small">Search small</label>
+                    <input class="usa-input" id="extended-search-field-small" type="search" name="query">
+                    <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+    </header>
+
+
+    
+
+    <div class="container">
+        <div class="bg-tint"></div>
+        <div id="content-wrapper" tabindex="0">
+            
+<main id="content" role="main">
+            <ul class="breadcrumb">
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/amber-waves/">Amber Waves</a>
+        </li>
+        <li>
+            <a href="/amber-waves/2011/">2011</a>
+        </li>
+        <li>
+            <a href="/amber-waves/2011/september/">September</a>
+        </li>
+        <li class="active">Why Another Food Commodity Price Spike?</li>
+        </ul>
+
+
+
+    <div class="page">
+        
+<div class="row">
+    <div class="col-md-12 amber-waves-wrapper">
+        <div class="aw_contentContainer">
+            <div class="sidebar-right">
+                <a href="/amber-waves.aspx" title="Amber Waves home">
+                    <div id="sm_logo_Container" alt="Amber Waves logo">
+                        <div class="AWMasthead"></div>
+                    </div>
+                </a>
+                <div id="localnav">
+                    <ul>
+                        <li class="home"><a href="/amber-waves/">Amber Waves Home</a></li>
+                        <li><a href="/amber-waves/all-articles/">All Articles</a></li>
+                        <li><a href="/amber-waves/about/">About Amber Waves</a></li>
+                    </ul>
+                </div>  <!--end localnav -->
+            </div>
+
+            <div class="article-tags">
+                <div class="type">
+                    Feature: Commodity Outlook
+                </div>
+                <div class="controls">
+                    <div class="date">
+                        September 01, 2011
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="article-title displayTitle">Why Another Food Commodity Price Spike?</h1>
+            <div class="article-authors">
+                <!-- BEGIN Author Citation Rendering -->
+                by Ronald Trostle
+                <!-- END Author Citation Rendering -->
+            </div>
+            <!-- BEGIN Header Image Rendering -->
+                        <picture>
+                <source type="image/webp" src="/media/7477/feature2_new.jpg?format=webp&amp;quality=75">
+                <img class="img-responsive" src="/media/7477/feature2_new.jpg?format=jpg&amp;quality=85" width="786" alt="">
+            </picture>
+
+            <!-- END Header Image Rendering -->
+
+            <!-- BEGIN InThisArticle Grid -->
+                    <div class="highlights" role="complementary" aria-labelledby="aw-highlights">
+            <!--known as in this article to AW staff-->
+            <h2 id="aw-highlights">Highlights:</h2>
+            <div class="content">
+                
+
+
+                <ul>
+            <li>
+                        
+        <!-- BEGIN Textblock -->
+    <p>Large and rapid increases have occurred for many food commodity prices during 2010-11.</p>
+    <!-- END Textblock -->
+
+
+            </li>
+            <li>
+                        
+        <!-- BEGIN Textblock -->
+    <p>Long-term production and consumption trends underlay rising food commodity prices, but worldwide production shortfalls and changes in trade policies and practices in a number of countries sparked the sharp surge in prices after June 2010.</p>
+    <!-- END Textblock -->
+
+
+            </li>
+            <li>
+                        
+        <!-- BEGIN Textblock -->
+    <p>Many of the long-term trends and short-run shocks contributing to the current price surge also played a role in previous price spikes.</p>
+    <!-- END Textblock -->
+
+
+            </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+
+            <!-- END InThisArticle Grid -->
+
+            <!-- BEGIN Content Grid -->
+            
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>With the 2008 food commodity price spike still on the minds of consumers, livestock producers, agribusinesses, and governments, prices began increasing again in January 2009, and by February 2011, many food commodity prices had climbed above 2008 peaks. Sharp increases in agricultural prices are not uncommon, but it is rare for two price spikes to occur within 3 years.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>The short period between the last two price surges raises concerns and questions.  Higher food commodity prices increased food insecurity among lower income consumers and in food-deficit countries. What are the causes of the increase in world agricultural prices and what are the prospects for future price movements? Will the current period of high prices end with a sharp reversal as in previous price spikes, or have there been fundamental changes in global agricultural supply and demand relationships that may bring about a different outcome?</p>
+    <!-- END Textblock -->
+
+
+                                
+    
+    
+        <h2>A Decade of Large Price Swings</h2>
+    
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>In 2002, world food commodity prices began increasing, reversing a 20-year downward trend. In early 2007, price increases accelerated, and by June 2008, the monthly food commodity price index compiled by the International Monetary Fund was up 130 percent from January 2002. Over the following 6 months, the index dropped by a third.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>A similar price pattern emerged in early 2009 when the food commodity price index slowly began to climb. After June 2010, prices shot up, and by January 2011, the index exceeded the previous 2008 price peak. By April 2011, the monthly index had risen 60 percent over the preceding 2 years. Although there have been wide swings in food commodity prices in the past, they usually occurred 6-8 years apart.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Chart Reference -->
+                <div class="center-block">
+                    <img class="img-responsive center-block" src="/webdocs/charts/55253/feature2_fig01_1__450px.gif?v=4999" alt="World food commodity price index rose 60 perent between December 2008 and April 2011">
+                    <div class="text-center"><!-- Embed the chart feature, pass the ChartID to the ChartWidget -->
+<div class="embed"><a href="/developer/embed-chart-widget/?chartId=55254" target="_blank" alt="World food commodity price index rose 60 perent between December 2008 and April 2011" title="World food commodity price index rose 60 perent between December 2008 and April 2011" &quality="70">Embed this chart</a></div>
+       <br>
+       <a href="/webdocs/charts/55253\feature2_fig01_1_.gif?v=4999" target="_blank" onclick="var s = s_gi(s_account);
+    s.linkTrackVars = 'prop16,prop17,prop18,eVar15,eVar16,eVar17,events';
+    s.linkTrackEvents = 'event4';
+    s.prop16 = '/webdocs/charts/55253\feature2_fig01_1_.gif?v=4999';
+    s.prop17 = 'Chart Detail: World food commodity price index rose 60 perent between December 2008 and April 2011';
+    s.prop18 = 'Chart';
+    s.eVar15 = '/webdocs/charts/55253\feature2_fig01_1_.gif?v=4999';
+    s.eVar16 = 'Chart Detail: World food commodity price index rose 60 perent between December 2008 and April 2011';
+    s.eVar17 = 'Chart';
+    s.events = 'event4';
+    s.tl(this, 'd', 'Chart Detail: World food commodity price index rose 60 perent between December 2008 and April 2011');">
+    Download  larger size  chart (497 pixels by 346, 96 dpi)</a>
+</div>
+                    </div>
+    <!-- END Chart Reference -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>For four basic crops (wheat, rice, corn, and soybeans), however, price fluctuations were greater than for the total food commodity index. Between January 2002 and June 2008, an index of monthly-average world prices for these crops rose 226 percent, compared with 130 percent for the overall food commodity index. During the next 6 months, the four-crop index declined 40 percent, while the food commodity index fell 33 percent. By June 2010, the four-crop index had fallen another 11 percent, while the food commodity index rose. During this latter period of December 2008 to June 2010, lower prices for the four crops were offset by increasing prices for sugar, vegetable oils, meats, and other commodities.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Chart Reference -->
+                <div class="center-block">
+                    <img class="img-responsive center-block" src="/webdocs/charts/55255/feature2_fig02_1__450px.gif?v=8902.7" alt="Basic crops had bigger price swings than total food commodities">
+                    <div class="text-center"><!-- Embed the chart feature, pass the ChartID to the ChartWidget -->
+<div class="embed"><a href="/developer/embed-chart-widget/?chartId=55256" target="_blank" alt="Basic crops had bigger price swings than total food commodities" title="Basic crops had bigger price swings than total food commodities" &quality="70">Embed this chart</a></div>
+       <br>
+       <a href="/webdocs/charts/55255\feature2_fig02_1_.gif?v=8902.7" target="_blank" onclick="var s = s_gi(s_account);
+    s.linkTrackVars = 'prop16,prop17,prop18,eVar15,eVar16,eVar17,events';
+    s.linkTrackEvents = 'event4';
+    s.prop16 = '/webdocs/charts/55255\feature2_fig02_1_.gif?v=8902.7';
+    s.prop17 = 'Chart Detail: Basic crops had bigger price swings than total food commodities';
+    s.prop18 = 'Chart';
+    s.eVar15 = '/webdocs/charts/55255\feature2_fig02_1_.gif?v=8902.7';
+    s.eVar16 = 'Chart Detail: Basic crops had bigger price swings than total food commodities';
+    s.eVar17 = 'Chart';
+    s.events = 'event4';
+    s.tl(this, 'd', 'Chart Detail: Basic crops had bigger price swings than total food commodities');">
+    Download  larger size  chart (499 pixels by 333, 96 dpi)</a>
+</div>
+                    </div>
+    <!-- END Chart Reference -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>Between June 2010 and March 2011, the four-crop index rose 70 percent, compared with 39 percent for the food commodity index. Bread-quality wheat, corn, sugar, and vegetable oils saw the largest price increases. Rice prices rose very little, whereas in 2007-08, rice prices rose more than prices for any other commodity.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>Nonagricultural prices increased even more than food commodity prices. Energy, metals, beverages, and agricultural raw materials prices rose during 2002-08 and then declined sharply after peaking in mid-2008. Since the low points, prices for these nonfood commodities have risen more than the food commodity index, and all commodities but crude oil surpassed their 2008 peaks. The simultaneous swings in agricultural and nonagricultural prices suggest that global, economy-wide factors contributed to the surge in prices in both periods.</p>
+    <!-- END Textblock -->
+
+
+                                
+    
+    
+        <h2>The 2010-11 Price Surge: Sixth Spike in Four Decades</h2>
+    
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>While the current price surge is still evolving, in each of the first five price spikes since 1970, large increases in agricultural prices were followed by sharp declines. Sometimes, prices rose to record highs before dropping. Usually, prices fell as much as they had risen after the conditions that prompted the increase were reversed. In the 1975 and 2008 spikes, prices only declined to a new plateau above historical average levels.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>Most price spikes resulted from unusually large changes in supply and/or demand. In some cases, unexpected production shortfalls reduced available supplies; in others, production simply stagnated while demand rose. Based on the five historical price spikes, prices rose more than typical variations until supply and demand adjusted and prices subsequently declined. It may have taken several months or several years for the markets to adjust, but eventually they did so. Historical patterns suggest that the current surge in prices will also eventually reverse directions.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>A number of common factors contributed to each of the six price spikes. The relative importance of each factor, however, as well as the magnitude and duration of price movements, generally differed.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Chart Reference -->
+                <div class="center-block">
+                    <img class="img-responsive center-block" src="/webdocs/charts/55257/feature2_fig03_1__450px.gif?v=8030.7" alt="World crop prices have spiked six times since 1970*">
+                    <div class="text-center"><!-- Embed the chart feature, pass the ChartID to the ChartWidget -->
+<div class="embed"><a href="/developer/embed-chart-widget/?chartId=55258" target="_blank" alt="World crop prices have spiked six times since 1970*" title="World crop prices have spiked six times since 1970*" &quality="70">Embed this chart</a></div>
+       <br>
+       <a href="/webdocs/charts/55257\feature2_fig03_1_.gif?v=8030.7" target="_blank" onclick="var s = s_gi(s_account);
+    s.linkTrackVars = 'prop16,prop17,prop18,eVar15,eVar16,eVar17,events';
+    s.linkTrackEvents = 'event4';
+    s.prop16 = '/webdocs/charts/55257\feature2_fig03_1_.gif?v=8030.7';
+    s.prop17 = 'Chart Detail: World crop prices have spiked six times since 1970*';
+    s.prop18 = 'Chart';
+    s.eVar15 = '/webdocs/charts/55257\feature2_fig03_1_.gif?v=8030.7';
+    s.eVar16 = 'Chart Detail: World crop prices have spiked six times since 1970*';
+    s.eVar17 = 'Chart';
+    s.events = 'event4';
+    s.tl(this, 'd', 'Chart Detail: World crop prices have spiked six times since 1970*');">
+    Download  larger size  chart (500 pixels by 339, 96 dpi)</a>
+</div>
+                    </div>
+    <!-- END Chart Reference -->
+
+
+                                
+    
+    
+        <h2>Longer Term Trends Create Conditions for a Price Spike</h2>
+    
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>A number of long-term trends in agricultural production and consumption laid the groundwork for a gradual upward trend in food commodity prices between 2002 and 2006, setting the stage for the sharp 2007-08 spike. Most of these same long-term factors underlie the 2010-11 price surge, including global population and per capita income growth, declining value of the U.S. dollar, increasing world per capita consumption of animal products, slower growth in world crop yields, rising energy prices, and growing global biofuel production.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>Over the past decade, the world's population increased by more than 77 million people a year. A large portion of this increase occurred in developing countries, which also have seen a rapid growth in per capita incomes. As their incomes increase, consumers in developing countries increase per capita consumption of staple foods and diversify their diets to include more meats and dairy products, increasing the demand for grains and oilseeds used for feed.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>The U.S. dollar's depreciation in 2002-08 facilitated growth in U.S. exports and put upward pressure on world commodity prices. Then, the dollar's appreciation, combined with the world economic recession, coincided with declining world prices in 2008-09, followed by renewed depreciation, economic growth, and rising prices after 2009.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>The increase in biofuel production--ethanol in the United States and Brazil and biodiesel production in the EU, Argentina, and Brazil--has played a role in raising prices for corn, sugar, rapeseeds, and soybeans, as well as for other crops. Attributing most of the 2002-08 rise in food commodity prices to biofuel production, however, seems unrealistic. Crop prices dropped more than 30 percent during the last half of 2008, even though biofuel production continued to increase. Further, nonagricultural prices rose more than agricultural prices, and the price of corn (an ethanol feedstock) rose less than the prices of rice and wheat (not biofuel feedstocks).</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>Growth in global biofuel production has slowed considerably from rates exceeding 30 percent per year in 2005-08. Nevertheless, production continues to increase, and the shares of grain used for ethanol and vegetable oils used for biodiesel, relative to total use, continue to climb. While the expansion of biofuels was an important factor underlying the general rise of food commodity prices in 2002-08 and their movement to a higher plane, it is less clear how much impact biofuels production have had in the 2010-11 surge in prices.</p>
+    <!-- END Textblock -->
+
+
+                                
+    
+    
+        <h2>Short-Term Shocks Exacerbate Already Tight World Market Conditions</h2>
+    
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>Probably the most significant factor contributing to the increase in staple food prices in 2010 and 2011 was a series of adverse weather events. A severe drought in Russia and parts of Ukraine and Kazakhstan reduced production of all 2010 crops, particularly wheat. In late summer 2010, dryness and high temperatures during the grain- filling period reduced yield prospects for U.S. corn. About the same time, rain on nearly mature wheat crops in Canada and northwestern Europe reduced the quality of much of the crop to feed grade.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>Adverse weather conditions continued, threatening 2011 production. Drought in Russia significantly reduced winter wheat plantings for the 2011 crop. In November 2010, drought and high temperatures associated with a La Niña weather pattern spread across Argentina, reducing prospects for corn and soybean crops. Dry fall, winter, and spring weather for the U.S. hard red winter wheat crop lowered 2011 production expectations in the southwestern Great Plains. Additionally, rains in Australia in late 2010/early 2011 downgraded much of eastern Australia's wheat crop to feed quality, further reducing global supplies of food-quality wheat. In early February 2011, a rare freeze destroyed some of Mexico's standing corn crop. Heavy and persistent spring rains in the U.S. Corn Belt and the Northern Plains in the United States and Canada delayed planting of 2011 corn and wheat crops, reducing expected production. By April 2011, estimated global aggregate grain and oilseed stocks had fallen and the stocks-to-use ratio was almost down to the 2007-08 level and close to the 40-year low.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Chart Reference -->
+                <div class="center-block">
+                    <img class="img-responsive center-block" src="/webdocs/charts/55259/feature2_fig04_1__450px.gif?v=1934.4" alt="Adverse weather events were a major factor contributing to crop price increases">
+                    <div class="text-center"><!-- Embed the chart feature, pass the ChartID to the ChartWidget -->
+<div class="embed"><a href="/developer/embed-chart-widget/?chartId=55260" target="_blank" alt="Adverse weather events were a major factor contributing to crop price increases" title="Adverse weather events were a major factor contributing to crop price increases" &quality="70">Embed this chart</a></div>
+       <br>
+       <a href="/webdocs/charts/55259\feature2_fig04_1_.gif?v=1934.4" target="_blank" onclick="var s = s_gi(s_account);
+    s.linkTrackVars = 'prop16,prop17,prop18,eVar15,eVar16,eVar17,events';
+    s.linkTrackEvents = 'event4';
+    s.prop16 = '/webdocs/charts/55259\feature2_fig04_1_.gif?v=1934.4';
+    s.prop17 = 'Chart Detail: Adverse weather events were a major factor contributing to crop price increases';
+    s.prop18 = 'Chart';
+    s.eVar15 = '/webdocs/charts/55259\feature2_fig04_1_.gif?v=1934.4';
+    s.eVar16 = 'Chart Detail: Adverse weather events were a major factor contributing to crop price increases';
+    s.eVar17 = 'Chart';
+    s.events = 'event4';
+    s.tl(this, 'd', 'Chart Detail: Adverse weather events were a major factor contributing to crop price increases');">
+    Download  larger size  chart (498 pixels by 371, 96 dpi)</a>
+</div>
+                    </div>
+    <!-- END Chart Reference -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>ERS has found that the ratio of global ending stocks to total use can be a reliable indicator of market prices (the lower the ratio, the tighter the market and the higher the price.) Currently, the stocks-to-use ratios for corn and soybeans are near record lows. The stocks-to-use ratios for wheat and rice suggest reasonably comfortable stock levels, but the shortage of milling-quality wheat has put strong upward pressure on wheat prices. Stock-to-use ratios for cotton, total oilseeds, total coarse grains, and sugar are also low. These low ratios suggest strong worldwide competition among crops for acreage in the 2011 planting season.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Chart Reference -->
+                <div class="center-block">
+                    <img class="img-responsive center-block" src="/webdocs/charts/55261/feature2_fig05_1__450px.gif?v=1062.3" alt="Stocks-to-use ratio for total world grains and oilseeds near record lows in 2011">
+                    <div class="text-center"><!-- Embed the chart feature, pass the ChartID to the ChartWidget -->
+<div class="embed"><a href="/developer/embed-chart-widget/?chartId=55262" target="_blank" alt="Stocks-to-use ratio for total world grains and oilseeds near record lows in 2011" title="Stocks-to-use ratio for total world grains and oilseeds near record lows in 2011" &quality="70">Embed this chart</a></div>
+       <br>
+       <a href="/webdocs/charts/55261\feature2_fig05_1_.gif?v=1062.3" target="_blank" onclick="var s = s_gi(s_account);
+    s.linkTrackVars = 'prop16,prop17,prop18,eVar15,eVar16,eVar17,events';
+    s.linkTrackEvents = 'event4';
+    s.prop16 = '/webdocs/charts/55261\feature2_fig05_1_.gif?v=1062.3';
+    s.prop17 = 'Chart Detail: Stocks-to-use ratio for total world grains and oilseeds near record lows in 2011';
+    s.prop18 = 'Chart';
+    s.eVar15 = '/webdocs/charts/55261\feature2_fig05_1_.gif?v=1062.3';
+    s.eVar16 = 'Chart Detail: Stocks-to-use ratio for total world grains and oilseeds near record lows in 2011';
+    s.eVar17 = 'Chart';
+    s.events = 'event4';
+    s.tl(this, 'd', 'Chart Detail: Stocks-to-use ratio for total world grains and oilseeds near record lows in 2011');">
+    Download  larger size  chart (500 pixels by 341, 96 dpi)</a>
+</div>
+                    </div>
+    <!-- END Chart Reference -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>Meat prices, which did not contribute to higher 2002-08 food prices, did play a role in the recent increase. When feed costs increased in 2002-08, livestock producers responded by slowing production. As world economic growth rebounded in 2009 and 2010, consumers demanded more meat and prices began to rise. Beef and pork production could not respond in the short run because of multiyear cattle and hog production cycles. Thus, meat prices began to increase nearly a year before crop prices renewed their upward trend.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>Just as in 2008, a number of countries imposed export restrictions or relaxed import controls in an attempt to shield their consumers from higher world food commodity prices. In August 2010, Russia imposed a wheat export ban after realizing the extent of its wheat shortfall. Some countries also restricted crop exports. A number of importing countries reduced or suspended import tariffs. A few countries increased subsidies to reduce consumers' food costs. By restricting or relaxing controls, countries reduced exportable supplies and increased import demand at a time when world markets were already tightening because of production shortfalls and expanded demand arising from renewed income growth.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>In late 2010, after world stocks of food commodities declined and prices increased, some importers began to contract aggressively for additional imports--first for wheat, then later for other food commodities. Countries that usually import sufficient quantities of grain to meet their needs for 2-3 months began to contract with suppliers for imports to meet their needs for 4-6 months.</p>
+    <!-- END Textblock -->
+
+
+                                
+    
+    
+        <h2>Impacts of High Food Prices Are Extensive</h2>
+    
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>Rising food prices can cause food insecurity rates to rise. Higher prices tend to negatively affect lower income consumers more than those with higher incomes. Lower income consumers spend a larger share of their income on food, and staple food commodities, such as corn, wheat, rice, and vegetable oils, account for a larger share of food expenditures for low-income families. Consumers in some low-income, food-deficit countries also tend to rely on imported food, usually purchased at higher world prices, making them more vulnerable to rising world prices. Compounding the situation, food aid donations shrink as prices increase because donors' fixed budgets purchase smaller quantities. Government trade and domestic food policies can affect how much of an increase in world prices gets passed on to consumers.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>This time, however, the short-term impact of higher 2010-11 prices on food-deficit, developing countries may be limited. Some countries in Sub-Saharan Africa, such as Nigeria and Ethiopia, harvested large crops in 2010 and actually have more domestically produced food available than they did in 2008. As a result, local prices have remained low. Also, imports contribute a small share of overall food supplies for many of these countries, so factors affecting domestic production, such as weather, play a more critical role in food security. There is little price transmission from the international market to many of these local markets, as a result of limited integration into global markets, poor market infrastructure, and subsidies provided by these governments.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>The 2007-08 price spike gave rise to public demonstrations in several dozen countries protesting the higher cost of food. Many were peaceful, some were violent. Public protests and demonstrations in at least a half dozen countries can be indirectly associated with rising food prices.</p>
+    <!-- END Textblock -->
+
+
+                                
+    
+    
+        <h2>Where Will Prices Go?</h2>
+    
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>Periods of rising and falling prices for agricultural products are not uncommon. Historically, during each price spike period, rising commodity prices constrained demand and increased production, which in turn, led to declining prices.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>High 2011 crop prices are expected to stimulate increased plantings and more intensive use of other production inputs. Farmers around the world will have incentives to increase area planted to all crops, and assuming average weather over the next year or so, world food production would be expected to increase. High prices will also limit grain and oilseed use by consumers, livestock producers, and industrial users.</p>
+    <!-- END Textblock -->
+
+
+                                
+        <!-- BEGIN Textblock -->
+    <p>On balance, higher production and lower use would raise global stocks of grains and oilseeds. Prices would be expected to peak and then to begin to decline, following the historical pattern of price movements. How quickly and how far prices fall will depend on many factors, including weather and its impact on production and stocks and future changes in trade policies and practices.</p>
+    <!-- END Textblock -->
+
+
+
+
+
+            <!-- END Content Grid -->
+
+            <!-- BEGIN SidebarContent Grid -->
+            
+            <!-- END SidebarContent Grid -->
+
+            <!-- BEGIN ArticleDrawnFrom Grid -->
+                    <div class="this-article-drawn-from" role="complementary" aria-labelledby="aw-drawn-from">
+            <!--known as this artcle is drawn from to AW staff-->
+            <div class="pseudo-h3" id="aw-drawn-from">This article is drawn from...</div>
+            <div class="content">
+                
+
+
+                                
+                <!-- BEGIN Publication Reference -->
+<p>
+<strong><a href="/publications/pub-details/?pubid=40482"><cite>Why Have Food Commodity Prices Risen Again?</cite></a></strong>, by Ronald Trostle, Daniel Marti, Stacey Rosen, and Paul Westcott, USDA, Economic Research Service, June 2011
+</p>
+            <!-- END Publication Reference -->
+
+
+                                
+                <!-- BEGIN Publication Reference -->
+<p>
+<strong><a href="/publications/pub-details/?pubid=40464"><cite>Global Agricultural Supply and Demand: Factors Contributing to the Recent Increase in Food Commodity Prices</cite></a></strong>, by Ronald Trostle, USDA, Economic Research Service, July 2008
+</p>
+            <!-- END Publication Reference -->
+
+
+
+
+
+            </div>
+        </div>
+
+            <!-- END ArticleDrawnFrom Grid -->
+
+            <!-- BEGIN AlsoInterestedIn Grid -->
+            
+            <!-- END AlsoInterestedIn Grid -->
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</main>
+
+
+
+        </div>
+    </div><!--/container-->
+    
+    <footer class="usa-footer usa-footer--slim ers-custom-footer">
+    <div class="grid-container usa-footer__return-to-top">
+        <a href="#">Return to top</a>
+    </div>
+    <div class="usa-footer usa-footer--big">
+        <div class="usa-footer__primary-section">
+            <div class="grid-container">
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col-8">
+                        <nav class="usa-footer__nav" aria-label="Footer navigation">
+                            <div class="grid-row grid-gap-4">
+
+                                <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                    <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                                        <h4 class="usa-footer__primary-link">ERS Links</h4>
+                                        <ul class="usa-list usa-list--unstyled">
+                                                <li class="usa-footer__secondary-link"><a href="/" target="_self">ERS Home</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/help/accessibility/" target="_self">Accessibility</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/about-ers/careers-at-ers/" target="_self">Careers</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/contact-us/" target="_self">Contact Us</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=fnrkbelab&amp;p=oi&amp;m=1111458399653" target="_blank">E-Mail Updates</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/help/" target="_self">Help</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/about-ers/policies-and-standards/information-quality/" target="_self">Information Quality</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/sitemap/" target="_self">Site Map</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="/privacy/" target="_self">Privacy Policy &amp; Non-Discrimination Statement</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                    <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                                        <h4 class="usa-footer__primary-link">USDA Links</h4>
+                                        <ul class="usa-list usa-list--unstyled">
+                                                <li class="usa-footer__secondary-link"><a href="/freedom-of-information-act/" target="_self">FOIA</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="https://www.usda.gov/plain-writing" target="_blank">Plain Writing</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="https://www.usda.gov/oig/forms/contractor-fraud" target="_blank">Report Fraud</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="http://www.USDA.gov" target="_blank">USDA.gov</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="http://www.usa.gov" target="_blank">USA.gov</a></li>
+                                                <li class="usa-footer__secondary-link"><a href="http://www.WhiteHouse.gov" target="_blank">White House.gov</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="tablet:grid-col-4">
+                        <div class="usa-sign-up">
+                            <div class="usa-sign-up__heading">Sign Up for Updates</div>
+                            <form class="usa-form">
+
+                                <div class="usa-button" type="submit"><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=fnrkbelab&amp;p=oi&amp;m=1111458399653" target="_blank">Subscribe</a></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="usa-footer__secondary-section">
+            <div class="grid-container">
+                <div class="grid-row grid-gap flex-justify-center tablet-lg:flex-justify">
+                    <div class="usa-footer__logo grid-row grid-gap-2 tablet-lg:grid-col-6 flex-justify-center tablet-lg:flex-justify-start">
+                        <div class="grid-col-auto">
+                            <a title="Home" href="/" aria-label="Economic Research Service" rel="home" class="usda-logo">
+                                <img src="/img/usda-symbol.svg" alt="U.S. Department of Agriculture logo" class="usda-logo-img">
+                            </a>
+                        </div>
+                        <div class="grid-col-auto">
+                            <a class="footer-sitename" href="/" title="Home" aria-label="Economic Research Service" rel="home">Economic Research Service</a>
+                            <a class="footer-tagline" href="https://www.usda.gov/" title="USDA.gov" aria-label="U.S. Department of Agriculture" rel="USDA">U.S. Department of Agriculture</a>
+                        </div>
+                    </div>
+                            <div class="usa-footer__contact-links tablet-lg:grid-col-6">
+            <div class="usa-footer__social-links grid-row grid-gap-1 flex-justify-center">
+                            <div class="grid-col-auto">
+                                <a class="ers-social-link-img" href="http://twitter.com/USDA_ERS" target="_blank">
+                                    <picture>
+                                        <source type="image/webp" srcset="/media/2qdcdmfm/x-logo.png?format=webp&amp;quality=75">
+                                        <img src="/media/2qdcdmfm/x-logo.png?format=png&amp;quality=85" alt="X (formerly Twitter) icon" title="X (formerly Twitter) icon">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="grid-col-auto">
+                                <a class="ers-social-link-img" href="https://www.linkedin.com/company/usda-economic-research-service/" target="_blank">
+                                    <picture>
+                                        <source type="image/webp" srcset="/media/ig4dzqiu/linkedin-logo.png?format=webp&amp;quality=75">
+                                        <img src="/media/ig4dzqiu/linkedin-logo.png?format=png&amp;quality=85" alt="LinkedIn icon" title="LinkedIn icon">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="grid-col-auto">
+                                <a class="ers-social-link-img" href="http://visitor.r20.constantcontact.com/d.jsp?llr=fnrkbelab&amp;p=oi&amp;m=1111458399653" target="_blank">
+                                    <picture>
+                                        <source type="image/webp" srcset="/media/5yig5dpq/mail-icon.png?format=webp&amp;quality=75">
+                                        <img src="/media/5yig5dpq/mail-icon.png?format=png&amp;quality=85" alt="Email Icon" title="Email Icon">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="grid-col-auto">
+                                <a class="ers-social-link-img" href="/multimedia/">
+                                    <picture>
+                                        <source type="image/webp" srcset="/media/eh3hgzud/multimedia-icon.png?format=webp&amp;quality=75">
+                                        <img src="/media/eh3hgzud/multimedia-icon.png?format=png&amp;quality=85" alt="Multimedia Icon" title="Multimedia Icon">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="grid-col-auto">
+                                <a class="ers-social-link-img" href="https://www.usda.gov/media/blog/tag/economic-research-service" target="_blank">
+                                    <picture>
+                                        <source type="image/webp" srcset="/media/zg3mzyfk/blog-icon.png?format=webp&amp;quality=75">
+                                        <img src="/media/zg3mzyfk/blog-icon.png?format=png&amp;quality=85" alt="Blog Icon" title="Blog Icon">
+                                    </picture>
+                                </a>
+                            </div>
+            </div>
+        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+
+    <script type="text/javascript">
+        var foucEls = document.getElementsByClassName("prevent-fouc");
+        for (var i = 0; i < foucEls.length; i++) {
+            foucEls[i].classList.remove("prevent-fouc");
+        }
+    </script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var usasearch_config = { siteHandle: "ers" };
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://search.usa.gov/assets/sayt_loader.js";
+        document.getElementsByTagName("head")[0].appendChild(script);
+        //]]>
+    </script>
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-27627304-10', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+    <script type="text/javascript">
+        (function () {
+            var g = function (e, h, f, g) {
+                this.get = function (a) { for (var a = a + "=", c = document.cookie.split(";"), b = 0, e = c.length; b < e; b++) { for (var d = c[b]; " " == d.charAt(0);)d = d.substring(1, d.length); if (0 == d.indexOf(a)) return d.substring(a.length, d.length) } return null };
+                this.set = function (a, c) { var b = "", b = new Date; b.setTime(b.getTime() + 6048E5); b = "; expires=" + b.toGMTString(); document.cookie = a + "=" + c + b + "; path=/; " };
+                this.check = function () { var a = this.get(f); if (a) a = a.split(":"); else if (100 != e) "v" == h && (e = Math.random() >= e / 100 ? 0 : 100), a = [h, e, 0], this.set(f, a.join(":")); else return !0; var c = a[1]; if (100 == c) return !0; switch (a[0]) { case "v": return !1; case "r": return c = a[2] % Math.floor(100 / c), a[2]++, this.set(f, a.join(":")), !c }return !0 };
+                this.go = function () { if (this.check()) { var a = document.createElement("script"); a.type = "text/javascript"; a.src = g; document.body && document.body.appendChild(a) } };
+                this.start = function () { var t = this; "complete" !== document.readyState ? window.addEventListener ? window.addEventListener("load", function () { t.go() }, !1) : window.attachEvent && window.attachEvent("onload", function () { t.go() }) : t.go() };
+            };
+            try { (new g(100, "r", "QSI_S_ZN_7TH4rRQTkc03Ua2", "https://zn7th4rrqtkc03ua2-usdaers.gov1.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_7TH4rRQTkc03Ua2")).start() } catch (i) { }
+        })();
+    </script><div id="ZN_7TH4rRQTkc03Ua2"><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+    <!--END WEBSITE FEEDBACK SNIPPET-->
+
+    
+    
+
+
+
+
+<script type="text/javascript" src="https://zn7th4rrqtkc03ua2-usdaers.gov1.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_7TH4rRQTkc03Ua2"></script></body></html>
