@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">        
+        <link rel="preload" href="/shared/dist/fonts/opensans_fixed/OpenSans-Regular.woff2" as="font" crossorigin>
+        <link rel="preload" href="/shared/dist/fonts/opensans_fixed/OpenSans-SemiBold.woff2" as="font" crossorigin>
+        <link rel="preload" href="/shared/dist/fonts/opensans_fixed/OpenSans-Bold.woff2" as="font" crossorigin> 
+        <link rel="preload" href="/shared/dist/fonts/ecb-iconset/ECB-icon-set.woff2" as="font" crossorigin> 
+        <link rel="icon" href="/fav.ico" sizes="16x16">
+        <link rel="icon" href="/favicon-16.png" sizes="16x16">
+        <link rel="icon" href="/favicon-32.png" sizes="32x32">
+        <link rel="icon" href="/favicon-64.png" sizes="64x64">
+        <link rel="icon" href="/favicon-128.png" sizes="128x128">
+        <link rel="icon" href="/favicon-192.png" sizes="192x192">
+        <link rel="icon" href="/favicon-256.png" sizes="256x256">
+
+        <link rel="shortcut icon" href="/favicon-196.png" sizes="196x196">
+        <link rel="apple-touch-icon" href="/favicon-152.png" sizes="152x152">
+        <link rel="apple-touch-icon" href="/favicon-180.png" sizes="180x180">
+
+        
+    
+        <title>Macroeconomic projections</title>
+                 <meta name = "citation_title" content="Macroeconomic projections">
+<meta name = "citation_online_date" content="7 March 2024">
+<meta property="article:published_time"  content="2024-03-07">
+<link rel="canonical" href="https://www.ecb.europa.eu/pub/projections/html/index.en.html">
+    
+        <meta name="author" content="European Central Bank">
+        <meta name="description" content="The European Central Bank (ECB) is the central bank of the European Union countries which have adopted the euro. Our main task is to maintain price stability in the euro area and so preserve the purchasing power of the single currency.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+        
+        <script>
+            var ECB = {};
+            ECB.currentLanguage = 'en';
+            ECB.isoLocalLanguageName = 'English';
+            ECB.isLive = true;
+            ECB.version = '1765099';
+            ECB.navigationVersion = '1709731446';
+            ECB.clientTimeError = 1709846998 - (new Date().getTime());
+
+            
+
+            ECB.availableLanguages = [{"bg": "Български"},{"cs": "Čeština"},{"da": "Dansk"},{"de": "Deutsch"},{"el": "Eλληνικά"},{"en": "English"},{"es": "Español"},{"et": "Eesti keel"},{"fi": "Suomi"},{"fr": "Français"},{"ga": "Gaeilge"},{"hr": "Hrvatski"},{"hu": "Magyar"},{"it": "Italiano"},{"lt": "Lietuvių"},{"lv": "Latviešu"},{"mt": "Malti"},{"nl": "Nederlands"},{"pl": "Polski"},{"pt": "Português"},{"ro": "Română"},{"sk": "Slovenčina"},{"sl": "Slovenščina"},{"sv": "Svenska"}];            
+             if(window.localStorage.cookieChoice && window.localStorage.cookieChoice.indexOf("accepted")!==-1){                    
+                     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+                     g.type='text/javascript'; g.async=true; g.src='https://www.googleoptimize.com/optimize.js?id=GTM-P5Z5N4Q'; s.parentNode.insertBefore(g,s);
+            }
+
+        </script>
+            
+        <link rel="stylesheet" href="/shared/dist/css/main-ecb.min.css?1765099" media="all">         
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@ecb">
+   
+            <meta name="explainerDate" content="1 January 1970">
+        	    	<meta property="og:type" content="article">
+	            <meta property="og:type" content="website">
+        <meta property="og:title" content="Macroeconomic projections">
+        <meta property="og:url" content="https://www.ecb.europa.eu/pub/projections/html/index.en.html">
+        <meta property="og:image:secure_url" content="https://www.ecb.europa.eu/pub/shared/img/socialmedia/social-default.jpg?3136c21846b77fd118cdbb98079cd548">
+        <meta property="og:image" content="https://www.ecb.europa.eu/pub/shared/img/socialmedia/social-default.jpg?3136c21846b77fd118cdbb98079cd548" >
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="600">
+        <meta property="og:site_name" content="European Central Bank">
+    
+        <noscript>
+            <style>            
+                .accordion .content-box {
+                    display: block;
+                }
+            </style>
+        </noscript>        
+    <script type="text/javascript">
+        /*! ecb - v2.0.0 - European Central Bank */
+
+
+var ECB=window.ECB||{};ECB.fast=ECB.fast||{},ECB.slow=ECB.slow||{},ECB.supports=ECB.supports||{},ECB.fast.annexSwap=function(){var t,e,n=document.querySelector(".section-press .address-box + .definition-list");n&&(t=(e=(t=(e=(t=n.previousElementSibling).previousElementSibling)&&e.classList.contains("related-topics")?e:t).previousElementSibling)&&e.classList.contains("footnotes")?e:t).parentNode.insertBefore(n,t)},ECB.fast.attribution=function(n){var t=n.style.backgroundImage||n.src;t=(t=t.replace('url("',"")).replace('")',""),n.src&&(n=n.closest("picture"));t&&!function(t){t=t.replace('url("',"");var e=document.location.protocol+"//"+document.location.hostname;return(-1!==t.indexOf("http")||-1!==t.indexOf('url("//'))&&!t.startsWith(e)}(t)&&ECB.fast.exif.getArtist(t,function(t){var e;0<t.length&&!n.classList.contains("-attribution")&&(n.classList.add("-attribution"),n.insertAdjacentHTML("beforeend",'<span class="attribution"><span class="attribution-details">'+(t.startsWith("©")?"":"© ")+t+'</span> <button aria-label="Photographer"></button></span>'),(e=n.querySelector(".attribution button")).addEventListener("click",function(t){return e.parentElement.classList.toggle("-active"),t.preventDefault(),t.stopPropagation(),!1}))})},ECB.fast.authorMove=function(){let t=document.getElementById("side-authors");var e;t&&(e=Array.from(document.querySelectorAll("aside > *")).reduce(function(t,e){return t+e.clientHeight},0),t.style.marginTop=Math.max(110,e)+50+"px")},ECB.fast.connector=function(t){function e(t){t.classList.contains("-gradient-upper")&&(i="-gradient-upper"),t.classList.contains("-dark-grey")&&(o="-dark-grey"),t.classList.contains("-light-grey-blue")&&(i="-transparent-light-grey",o="-transparent-blue");var e="<div class='upper-connection "+i+"'></div> <div class='lower-connection "+o+"'></div>";t.insertAdjacentHTML("afterend",e)}function a(t,e){return t.classList.contains(e)}function n(t,e){for(var n=0;n<e.length;n++)if(a(t,e[n]))return 1}var r=(t=t||document).querySelectorAll(".connector"),i="-transparent-blue",o="-light-blue";if(0<r.length)e(r[r.length-1]);else{var s=Array.from(t.querySelectorAll(".contact-box, .see-also-boxes, .carousel, .promo-box, .contact-box, .explainer-box"));if(s.length){var l=s[0],c=l.previousElementSibling;if(c&&"DIV"==c.tagName&&!a(c,"title")){for(var u=l.nextElementSibling,g=!1;null!=u;)a(u,"in-this-section")||"SCRIPT"==u.tagName||"STYLE"==u.tagName||(-1==s.indexOf(u)?g=!0:g&&(c=(l=u).previousElementSibling,g=!1)),u=u.nextElementSibling;g||(c.classList.add("connector"),n(c,["section","intro","boxes","accordion","definition-list","tags"])&&c.classList.add("-gradient-upper"),n(c,["jumbo-box"])&&a(c,"-dark-blue")&&c.classList.add("-light-grey-blue"),a(l,".carousel")||c.classList.add("-dark-grey"),e(c))}}}},ECB.fast.exif=function(){function i(t,e,n){return function(t,e,n){var a,r,i,o="";for(n=e+n;e<n;)switch((a=t.getUint8(e++))>>4){case 0:case 1:case 2:case 3:case 4:case 5:case 6:case 7:o+=String.fromCharCode(a);break;case 12:case 13:r=t.getUint8(e++),o+=String.fromCharCode((31&a)<<6|63&r);break;case 14:r=t.getUint8(e++),i=t.getUint8(e++),o+=String.fromCharCode((15&a)<<12|(63&r)<<6|(63&i)<<0)}return o}(t,e,n)}function o(t,e,n){if("exif"!=i(t,e,4).toLowerCase())return!1;var a,e=e+(n?8:6);if(18761==t.getUint16(e))a=!1;else{if(19789!=t.getUint16(e))return!1;a=!0}return 42==t.getUint16(e+2,!a)&&(!((n=t.getUint32(e+4,!a))<8)&&function(t,e,n,a){for(var r,i=t.getUint16(n,!a),o=0;o<i;o++)if(315===t.getUint16(r=n+12*o+2,!a))return s(t,r,e,a);return""}(t,e,e+n,a))}var s=function(t,e,n,a){var r=t.getUint32(e+4,!a),n=t.getUint32(e+8,!a)+n;return i(t,4<r?n:e+8,r-1)};return{getArtist:function(t,e){function n(t){t=function(t){var e=new DataView(t),n=!1;if(1380533830==e.getUint32(0)&&1464156752==e.getUint32(8)&&1448097880==e.getUint32(12)){if(!(e.getUint8(20)&8))return!1;n=!0}else if(255!=e.getUint8(0)||216!=e.getUint8(1))return!1;var a=2,r=t.byteLength;if(n)for(a=16;a<r;){if(a+=e.getUint32(a,!0)+4,"EXIF"==i(e,a,4))return o(e,a,!0,e.getUint32(a,!0));a+=4}else for(;a<r;){if(255!=e.getUint8(a))return!1;if(225==e.getUint8(a+1))return o(e,a+4,!1,e.getUint16(a+2));a+=2+e.getUint16(a+2)}}(t);e.call(window,t||"")}var a=new XMLHttpRequest;a.onload=function(){200!=this.status&&0!==this.status||n(a.response),a=null},a.open("GET",t,!0),a.responseType="arraybuffer",a.send(null)}}}(),ECB.fast.isLoading=function(){for(var t=document.querySelectorAll(".-is-loading"),e=0;e<t.length;e++)t[e].insertAdjacentHTML("afterbegin","<div class='is-busy'> Loading ... </div>")},ECB.fast.langLinks=function(){if(ECB.fast.isEuLanguage=!!document.querySelector("#language-values a[lang="+ECB.currentLanguage+"]:not([specialLang])"),ECB.fast.isEuLanguage&&"en"!=ECB.currentLanguage)for(var t=document.querySelectorAll("a:not([lang]"),n=/\.[a-z]{2,3}(\.(html|pdf)([\?#].*)?)$/,e=0;e<t.length;e++){var a=t[e];a.hasAttribute("href")&&-1===a.getAttribute("href").indexOf(":")&&function(t){let e=t.getAttribute("href").match(n);return!!(e&&0<e.length)&&"en"==e[0].substr(1,2)}(a)&&a.setAttribute("href",a.getAttribute("href").replace(n,"."+ECB.currentLanguage+"$1"))}},ECB.fast.langSwitch=function(){var e,n;ECB.isLive&&(e=localStorage.getItem("lastLanguage"),(n=function(t){if(t&&ECB.currentLanguage!=t){t=document.querySelector("#language-values>a[lang="+t+"]");return t&&(document.location.href=t.href),!0}return!1})(e)||window.addEventListener("storage",function(t){"lastLanguage"==t.key&&t.newValue!=e&&n(t.newValue)}))},ECB.fast.loadImages=function(t){var n,e=t;t||(e=document);var a=function(t){var e=ECB.supports.webp&&t.getAttribute("data-image-webp")?t.getAttribute("data-image-webp"):t.getAttribute("data-image"),n=t;n.style.backgroundImage="url('"+e+"')",t.classList.contains("-inner")||ECB.fast.attribution(n),n.classList.add("loaded")};window.IntersectionObserver&&(n=new IntersectionObserver(function(t){for(var e=0;e<t.length;e++)t[e].isIntersecting&&(a(t[e].target),n.unobserve(t[e].target))},{rootMargin:"50%"}));for(var r=e.querySelectorAll("[data-image]"),i=0;i<r.length;i++)r[i].classList.contains("fast")||r[i].classList.contains("coin-cropper")||!n?a(r[i]):n.observe(r[i]);for(var o=e.querySelectorAll("picture img"),i=0;i<o.length;i++)ECB.fast.attribution(o[i])},ECB.fast.pageTitle=function(){var t=document.querySelector("main>.title h1");t&&0<t.innerText.length&&(document.title=t.innerText)},ECB.fast.random=function(t){Element.prototype.matches||(Element.prototype.matches=Element.prototype.msMatchesSelector||Element.prototype.webkitMatchesSelector);for(var e=(!t?document:t).querySelectorAll(".random"),n=0;n<e.length;n++){e[n].querySelectorAll(".random-item");var a=[];Array.prototype.slice.call(e[n].children).map(function(t){t.matches(".random-item")&&a.push(t)});var r=Math.floor(Math.random()*a.length);e[n].classList.contains("-daily")&&(r=(new Date).getDate()%a.length),a[r].classList.add("active");for(var i=0;i<a.length;i++)i!=r&&e[n].removeChild(a[i])}},ECB.fast.supportCheck=function(e){var n=new Image;n.onload=function(t){"load"==t.type&&1==n.width&&(document.documentElement.classList.add("webp"),ECB.supports.webp=!0),e&&e()},n.onerror=function(){e&&e()},n.src="data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA="},ECB.fast.tempFixes=function(){!function(t,e){for(var n=document.querySelectorAll(t),a=0;a<n.length;a++)e(n[a])}(".table .wrapper h3",function(t){var e=t.parentElement.parentElement,n=document.createElement("div");n.classList.add("header"),n.innerHTML='<div class="title">'+t.innerHTML+"</div>",t.parentElement.removeChild(t),e.prepend(n)})},ECB.fast.supportCheck(function(){function t(){ECB.jsForContentOnly||ECB.fast.pageTitle(),ECB.fast.tempFixes(),ECB.fast.random(),ECB.fast.loadImages(),ECB.fast.langLinks(),ECB.fast.connector(),ECB.fast.annexSwap(),ECB.fast.isLoading(),ECB.fast.authorMove()}"loading"!==document.readyState?t():window.addEventListener("DOMContentLoaded",t)});    </script>
+    <script type="text/javascript" async src="/shared/dist/js/slow.min.js?v=1765099"></script>
+    
+    </head>
+
+<body class="project-ecb section-pub sub-projections	">
+
+	<header id="ecb-doc-header">
+	<div class="headerHolder">
+		<div class="logo-name">
+			
+				<img src="/shared/img/logo/logo_name.en.svg" alt="European Central Bank - eurosystem">				
+			
+		</div>
+		<div class="logo-name-mobile">
+			<div style="background-image:url(/shared/img/logo/logo_name_mobile.en.svg)"></div>			
+		</div>
+		<div id="language-selector-holder" role="button">
+			<div id="language-selector">LANGUAGE:</div>
+			<div id="language-selected"><span class="ecb-full">EN</span></div>			
+			<div id="language-values">				
+				<a href="index.bg.html" class="available" lang="bg" title="Български"><span class="ecb-full">Български</span></a><a href="index.cs.html" class="available" lang="cs" title="Čeština"><span class="ecb-full">Čeština</span></a><a href="index.da.html" class="available" lang="da" title="Dansk"><span class="ecb-full">Dansk</span></a><a href="index.de.html" class="available" lang="de" title="Deutsch"><span class="ecb-full">Deutsch</span></a><a href="index.el.html" class="available" lang="el" title="Eλληνικά"><span class="ecb-full">Eλληνικά</span></a><a href="index.en.html" class="selected available" lang="en" title="English"><span class="ecb-full">English</span></a><a href="index.es.html" class="available" lang="es" title="Español"><span class="ecb-full">Español</span></a><a href="index.et.html" class="available" lang="et" title="Eesti keel"><span class="ecb-full">Eesti keel</span></a><a href="index.fi.html" class="available" lang="fi" title="Suomi"><span class="ecb-full">Suomi</span></a><a href="index.fr.html" class="available" lang="fr" title="Français"><span class="ecb-full">Français</span></a><a href="index.ga.html" class="available" lang="ga" title="Gaeilge"><span class="ecb-full">Gaeilge</span></a><a href="index.hr.html" class="available" lang="hr" title="Hrvatski"><span class="ecb-full">Hrvatski</span></a><a href="index.hu.html" class="available" lang="hu" title="Magyar"><span class="ecb-full">Magyar</span></a><a href="index.it.html" class="available" lang="it" title="Italiano"><span class="ecb-full">Italiano</span></a><a href="index.lt.html" class="available" lang="lt" title="Lietuvių"><span class="ecb-full">Lietuvių</span></a><a href="index.lv.html" class="available" lang="lv" title="Latviešu"><span class="ecb-full">Latviešu</span></a><a href="index.mt.html" class="available" lang="mt" title="Malti"><span class="ecb-full">Malti</span></a><a href="index.nl.html" class="available" lang="nl" title="Nederlands"><span class="ecb-full">Nederlands</span></a><a href="index.pl.html" class="available" lang="pl" title="Polski"><span class="ecb-full">Polski</span></a><a href="index.pt.html" class="available" lang="pt" title="Português"><span class="ecb-full">Português</span></a><a href="index.ro.html" class="available" lang="ro" title="Română"><span class="ecb-full">Română</span></a><a href="index.sk.html" class="available" lang="sk" title="Slovenčina"><span class="ecb-full">Slovenčina</span></a><a href="index.sl.html" class="available" lang="sl" title="Slovenščina"><span class="ecb-full">Slovenščina</span></a><a href="index.sv.html" class="available" lang="sv" title="Svenska"><span class="ecb-full">Svenska</span></a>			</div>
+		</div>
+		
+		<button id="hamburger" aria-haspopup="true" >
+			Menu
+			<div class="icon">
+				<div class="line-outer">
+			    	<div class="line-inner"></div>
+			  	</div>
+				<div class="line-outer">
+			    	<div class="line-inner"></div>
+				</div>
+				<div class="line-outer">
+			    	<div class="line-inner"></div>
+				</div>		
+			</div>			
+					</button>
+		<div class="logo">
+			<a href="/home/html/index.en.html" alt="Go to our homepage">
+				<img src="/shared/img/logo/logo_only.svg" alt="our logo, a yellow Euro sign surrounded by yellow stars centered in a dark blue circle resting on a dark blue base">			
+			</a>
+		</div>	
+		<div id="ecb-mainnavwrapper"><a class="" href="/ecb/html/index.en.html">About</a>
+<a class="" href="/press/html/index.en.html">Media</a>
+<a class="active" href="/pub/html/index.en.html">Research &amp; Publications</a>
+<a class="" href="/stats/html/index.en.html">Statistics</a>
+<a class="" href="/mopo/html/index.en.html">Monetary Policy</a>
+<a class="" href="/euro/html/index.en.html">The euro</a>
+<a class="" href="/paym/html/index.en.html">Payments &amp; Markets</a>
+<a class="" href="/careers/html/index.en.html">Careers</a>
+<a class="-ssm"  href="https://www.bankingsupervision.europa.eu/home/html/index.en.html">Banking Supervision</a>
+
+</div>	
+		
+
+		<div id="page-actions">			
+			<div class="ecb-quickSearch" style="width:100%;">
+				<form role="search" method="get" style="width:100%;display:flex" onsubmit="return false">
+					<input type="text" name="search" class="addsearch" id="searchInput" maxlength="300" aria-label="Search" alt="Search" autocomplete="off" />				
+					<a href="#" id="searchButton">Search</a>
+				</form>
+			</div>
+		</div>
+
+		
+					<div id="ecb-breadcrumbwrapper"><nav id="ecb-breadcrumbs"></nav></div>
+				
+	</div>
+	
+</header>
+<div id="addSearch-container-full">
+    <div class="blue-bg">
+        <div class="arrow-top"></div>
+        <div class="section filter-radio">
+            <div class="tabs-container -white-blue">
+
+                <input id="searchAll" name="search-tab-group" type="radio" checked="" onClick="ECB.slow.addSearchApi.filterDate(this.value);" value="all">
+                <label for="searchAll" class="count-hits-all">ANYTIME <span class="count-hits"></span></label>
+                <div class="spacer"></div>
+                <input id="searchMonth" name="search-tab-group" type="radio" onClick="ECB.slow.addSearchApi.filterDate(this.value);" value="month">
+                <label for="searchMonth" class="count-hits-month">PAST MONTH <span class="count-hits"></span></label>
+                <div class="spacer"></div>
+                <input id="searchYear" name="search-tab-group" type="radio" onClick="ECB.slow.addSearchApi.filterDate(this.value);" value="year">
+                <label for="searchYear" class="count-hits-year">PAST YEAR <span class="count-hits"></span></label>
+
+            </div>
+            <div class="tabs-search-options-head">
+                <div id="text-search-options" class="title-option">Search Options</div>
+                <div id="text-image-preview" class="title-option hidden">Image Preview</div>
+            </div>
+        </div>
+        <div class="arrow-bottom"></div>
+        <div class="filter-selection form">
+            <div class="form-content">
+                <form>
+
+                    <div>
+                        <label for="dropdownSuggestions">Sort by</label>
+                        <div id="dropdownFilter" class="dropdown">
+                            <span class="icon"></span>
+                            <select onchange="ECB.slow.addSearchApi.filterDate(this.value)" id="searchFilterDate">
+                                <option value="all" class="count-hits-all">ANYTIME </option>
+                                <option value="month" class="count-hits-month">PAST MONTH </option>
+                                <option value="year" class="count-hits-year">PAST YEAR </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="dropdownSuggestions" class="space-top">Suggestions</label>
+                        <div id="dropdownSuggestions" class="dropdown">
+                            <span class="icon"></span>
+                            <select onchange="ECB.slow.addSearchApi.initSearch(this.value)" id="searchSuggestion">
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="white-bg">
+        <div class="section">
+            <div class="result-main-panel">
+                <!--<h1 class="ecb0 title-stick">Search Results</h1>-->
+                <div id="addsearch-api-results"></div>
+                <div class="addsearch-legends-categories">
+                    <span id="adcat_home">Home</span>
+                    <span id="adcat_press">Media</span>
+                    <span id="adcat_explainers">Explainers</span>
+                    <span id="adcat_pub">Research &amp; Publications</span>
+                    <span id="adcat_stats">Statistics</span>
+                    <span id="adcat_mopo">Monetary Policy</span>
+                    <span id="adcat_euro">The &euro;uro</span>
+                    <span id="adcat_paym">Payments &amp; Markets</span>
+                    <span id="adcat_career">Careers</span>
+                </div>
+            </div>
+            <div class="result-side-panel">
+                <div id="addsearch-sidemenu">
+                    <div id="result-suggestions">
+                        <span>Suggestions</span>
+                        <div id="suggestions-container">
+                        </div>
+                    </div>
+                    <div id="result-sortBy">
+                        <span>Sort by</span>
+                        <div id="sortby-radio-container">
+                            <div class="addsearch-sortby-radiogroup">
+                                <label>
+                                    <input id="sort-by-relevance" type="radio" name="sortby-radio-container" onclick="ECB.slow.addSearchApi.sortBy('relevance')" data-field="relevance" data-order="desc" value="" checked="">Relevance
+                                </label>
+                                <label>
+                                    <input id="sort-by-date" type="radio" name="sortby-radio-container" onclick="ECB.slow.addSearchApi.sortBy('date')" data-field="date" data-order="desc" value="">Date
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="addsearch-image-container" aria-hidden="true"><img src="" id="addsearch-image" alt="" /></div>
+            </div>
+        </div>
+    </div>
+</div>
+	<div id="main-wrapper" >
+				<div class="header fast image-attribution  -small" data-image-webp="/pub/shared/img/header.webp" 			data-image="/pub/shared/img/header.jpg">
+			<div data-image="/pub/shared/img/header.jpg" data-image-webp="/pub/shared/img/header.webp" ></div>		</div>
+		
+				<aside aria-label="Social media sharing and related content (if available)">
+					
+					<div id="ecb-social-sharing" class="" tab-index="2">
+						
+<ul class="-links">
+<li class="-print"><a href="javascript:window.print()" title="Print page"></a></li>
+
+</ul>
+<div class="-separator"></div>
+<ul class="-links">
+<li class="-twitter"><a href="javascript:window.open('https://twitter.com/intent/tweet?url='+location.protocol + '//' + location.host + location.pathname+((document.location.search.search(/\?youtubeID=[a-zA-Z0-9_-]+$/)!=-1&&document.location.search)||''),'_blank','width=600,height=400,menubar=no')" title="Share on X"></a></li>
+<li class="-facebook"><a href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u='+location.protocol + '//' + location.host + location.pathname+((document.location.search.search(/\?youtubeID=[a-zA-Z0-9_-]+$/)!=-1&&document.location.search)||''),'_blank','width=600,height=400,menubar=no')" title="Share on Facebook"></a></li>
+<li class="-linkedin"><a href="javascript:window.open('https://www.linkedin.com/shareArticle?url='+location.protocol + '//' + location.host + location.pathname+((document.location.search.search(/\?youtubeID=[a-zA-Z0-9_-]+$/)!=-1&&document.location.search)||''),'_blank','width=600,height=400,menubar=no')" title="Share on LinkedIn"></a></li>
+<li class="-email"><a href="javascript:window.open('mailto:?subject=I would like to share this link with you&body=Link to the website of the European Central Bank: '+location.protocol + '//' + location.host + location.pathname+((document.location.search.search(/\?youtubeID=[a-zA-Z0-9_-]+$/)!=-1&&document.location.search)||''))" title="Share by Email"></a></li>
+</ul>
+
+
+					</div>
+					
+									</aside>
+						
+						<main >
+			<!-- block-conversion -->
+    
+        
+ 
+          
+      <div class="title">
+        <h1>Macroeconomic projections</h1>
+      </div> 
+          
+        <div class="section">
+           
+          
+        
+            <p>Macroeconomic projections aim to predict and understand the future state of the economy on a broad scale. They
+    include information related to economic growth, inflation, wages, unemployment and trade.</p><p>Eurosystem and ECB staff produce macroeconomic projections that cover the outlook for the euro area and the wider
+    global economy. These contribute to the ECB Governing Council’s assessment of economic developments and risks to
+    price stability.</p><p>They are published four times a year (in March, June, September and December).</p>
+        
+         
+          
+        </div>
+       
+          
+      <div class="teasers -two-columns -upper-blue -small">
+        <div class="upper" data-image="index/AnnualReportBG.jpg" data-image-webp="index/AnnualReportBG.webp">
+          
+          <h2><div><strong>March 2024</strong></div>At a glance</h2>
+          
+        </div>
+        <div class="lower">
+          
+          <div class="container">
+              
+               
+              
+              
+          <div class="box">
+              
+              
+          <div class="header">
+            
+            <div class="title">Inflation outlook</div>
+            <div class="icon -chart-1"></div>
+          </div>
+          <div class="content-box">
+              
+                
+                
+                
+                
+                
+                <p>Inflation should decline over the next few years, but more slowly than in 2023. Owing to fading cost pressures and the impact of the ECB’s monetary policy, headline inflation should fall from 5.4% in 2023 to 2.3% in 2024 and then to 2.0% in 2025, reaching 1.9% in 2026.   </p>
+              
+              
+              
+              
+              
+               
+              <a href="/pub/projections/html/ecb.projections202403_ecbstaff~f2f2d34d5a.en.html#toc7">More</a>
+          </div>
+       
+              
+              
+               
+              
+          </div>
+          
+          <div class="box">
+              
+              
+          <div class="header">
+            
+            <div class="title">Gross domestic product outlook</div>
+            <div class="icon -monetary-policy"></div>
+          </div>
+          <div class="content-box">
+              
+                
+                
+                
+                
+                
+                <p>Economic growth will remain weak in the short term, owing to tight financing conditions and subdued confidence. As inflation falls, household income recovers and foreign demand strengthens, real GDP should increase by 0.6% in 2024, by 1.5% in 2025 and by 1.6% in 2026.  </p>
+              
+              
+              
+              
+              
+               
+              <a href="/pub/projections/html/ecb.projections202403_ecbstaff~f2f2d34d5a.en.html#toc2">More</a>
+          </div>
+       
+              
+              
+               
+              
+          </div>
+          
+               
+              
+          </div>
+          
+        </div>
+      </div>
+     
+          <div class="boxes"> 
+          
+          <div class="box">
+              
+              
+        
+        <div data-image="index/cover.png" data-image-webp="index/cover.webp"></div> 
+        <div class="content-box">
+          <h3>Full report</h3>
+          <p>The full report contains a detailed assessment of the outlook for the euro area economy.</p>
+          <a href="/pub/projections/html/ecb.projections202403_ecbstaff~f2f2d34d5a.en.html">Read the report</a>
+        </div>
+       
+              
+              
+               
+              
+          </div>
+          
+          <div class="box">
+              
+              
+        
+        <div data-image="index/fsrvideo.jpg" data-image-webp="index/fsrvideo.webp"></div> 
+        <div class="content-box">
+          <h3>Current and past projections</h3>
+          <p>
+        Compare our historical projections of inflation and economic growth. Past projections for the euro area and euro area countries are available for download.
+      </p>
+          <a href="/mopo/strategy/ecana/html/table.en.html">All our macroeconomic projections</a>
+        </div>
+       
+              
+              
+               
+              
+          </div>
+          </div> 
+          
+      <div class="cards -three-columns -overlay">
+        <div class="container">
+          <div class="main-header">
+            <h2>Analyse the results</h2>
+          </div>
+          
+          
+          <div class="wrapper">
+              
+               
+              
+              
+          <div class="box">
+              
+              
+        
+        <div class="content-box"> 
+          <div data-image="index/download_all_data.jpg" data-image-webp="index/download_all_data.webp"></div>
+          
+          
+          
+          <a href="/pub/pdf/other/ecb.projections202403_ecbstaff_annex~2daff60c0d.en.xlsx">Download all data</a>
+        </div>
+       
+              
+              
+               
+              
+          </div>
+          
+          <div class="box">
+              
+              
+        
+        <div class="content-box"> 
+          <div data-image="index/survey_background.jpg" data-image-webp="index/survey_background.webp"></div>
+          
+          
+          
+          <a href="details.en.html">About the projections</a>
+        </div>
+       
+              
+              
+               
+              
+          </div>
+          
+               
+              
+          </div>
+          
+        </div>
+      </div>
+     
+          
+      <div class="carousel">
+        <h3>WANT TO LEARN MORE?</h3>
+        <p>CHECK OUT OUR PREVIOUS RELEASES</p>
+        <div class="arrow-left"></div>
+        <div class="items">
+
+          <div class="item"><a href="/pub/projections/html/ecb.projections202403_ecbstaff~f2f2d34d5a.en.html"  >
+                        <p class="date">7 March 2024</p>
+                        <p class="title">ECB staff macroeconomic projections for the euro area, March 2024</p></a></div><div class="item"><a href="/pub/projections/html/ecb.projections202312_eurosystemstaff~9a39ab5088.en.html"  >
+                        <p class="date">14 December 2023</p>
+                        <p class="title">Eurosystem staff macroeconomic projections for the euro area, December 2023</p></a></div><div class="item"><a href="/pub/projections/html/ecb.projections202309_ecbstaff~4eb3c5960e.en.html"  >
+                        <p class="date">14 September 2023</p>
+                        <p class="title">ECB staff macroeconomic projections for the euro area, September 2023</p></a></div><div class="item"><a href="/pub/projections/html/ecb.projections202306_eurosystemstaff~6625228e9f.en.html"  >
+                        <p class="date">15 June 2023</p>
+                        <p class="title">Eurosystem staff macroeconomic projections for the euro area, June 2023</p></a></div><div class="item"><a href="/pub/projections/html/ecb.projections202303_ecbstaff~77c0227058.en.html"  >
+                        <p class="date">16 March 2023</p>
+                        <p class="title">ECB staff macroeconomic projections for the euro area, March 2023</p></a></div></div>
+        <div class="arrow-right"></div>
+        <div class="click-for-more">
+            <a href="all-releases.en.html">SHOW ALL RELEASES</a>
+        </div>
+      </div>
+       
+          
+			
+			<div class="in-this-section" id="pages-in-section-holder">
+    <h3>All pages in this section</h3>
+    <div class="content-box">
+        
+    </div>
+</div>
+		</main>
+	</div>
+	<div id="feedback" class="hidden">
+	<div class="content-box">
+		<div class="initial">
+			<div class="title">Are you happy with this page?</div>        
+			<a class="button -inverted-color" id="feedback-yes">Yes</a>
+			<a class="button -inverted-color" id="feedback-no">No</a>
+		</div>
+		<div class="second hidden">
+			<div class="title">What made you unhappy?</div>
+			<a class="button -inverted-color" id="feedback-broken">Page not working</a>   
+			<a class="button -inverted-color" id="feedback-content">Information not useful</a>
+			<a class="button -inverted-color" id="feedback-design">Design not attractive</a> 
+			<a class="button -inverted-color" id="feedback-other">Something else</a> 
+		</div>
+		<div class="final hidden">
+			<div class="title">Thank you for letting us know!</div>
+		</div>
+	</div>
+</div>	<footer id="ecb-doc-footer">
+    <div class="ecb-footerTop">
+	<div class="sitemap">
+		<a href="/home/sitedir/html/index.en.html" title="Site Directory">Site directory</a>
+	</div>
+	<div class="socialLinks">
+		<a class="inline-link" href="/home/socialmedia/html/index.en.html" title="Official social media channels">FOLLOW US</a> 
+		<a href="http://twitter.com/ecb" class="twitter" title="X"></a>
+        <a href="https://www.linkedin.com/company/european-central-bank" class="linkedin" title="LinkedIn"></a>
+        <a href="https://www.instagram.com/europeancentralbank/" class="instagram" title="Instagram"></a>
+        <a href="https://www.youtube.com/user/ecbeuro" class="youtube" title="YouTube"></a>
+        <a href="https://www.flickr.com/photos/europeancentralbank/sets/" class="flickr" title="Flickr"></a>
+        <a href="https://soundcloud.com/europeancentralbank" class="soundcloud" title="Soundcloud"></a>
+        <a href="/rss" class="rss" title="RSS news feeds"></a>
+	</div>
+</div><div class="ecb-footerBottom">
+        
+	<p><span>Copyright 2024, </span>European Central Bank</p>
+	
+	<div class="ecb-serviceNavigation">
+		<div class="ecb-serviceNavigationBox">
+			<div class="ecb-serviceNavigationBoxTitle">Useful links</div>
+			<div class="ecb-serviceNavigationBoxLinks">
+				<ul>
+					<li><a href="/careers/vacancies/html/index.en.html">Work with us</a></li>
+					<li><a href="/services/glossary/html/index.en.html">Glossary</a></li>
+					<li><a href="/services/links/html/index.en.html">Other institutions</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="ecb-serviceNavigationBox">
+			<div class="ecb-serviceNavigationBoxTitle">Using our site</div>
+			<div class="ecb-serviceNavigationBoxLinks">
+				<ul>
+					<li><a href="/services/disclaimer/html/index.en.html">Disclaimer &amp; Copyright</a></li>
+					<li><a href="/services/data-protection/privacy-statements/website/html/index.en.html">Privacy statement</a></li>
+					<li><a href="/services/languagepolicy/html/index.en.html">Language policy</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="ecb-serviceNavigationBox">
+			<div class="ecb-serviceNavigationBoxTitle">Corporate Policies</div>
+			<div class="ecb-serviceNavigationBoxLinks">
+				<ul>
+					<li><a href="/services/data-protection/html/index.en.html">Data Protection</a></li>
+					<li><a href="/ecb/access_to_documents/html/index.en.html">Access to documents</a></li>
+					<li><a href="/services/responsible-disclosure/html/index.en.html">Responsible disclosure</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="ecb-serviceNavigationBox">
+			<div class="ecb-serviceNavigationBoxTitle">Contact</div>
+			<div class="ecb-serviceNavigationBoxLinks">
+				<ul>
+					<li><a href="/services/contacts/html/index.en.html">Contacts</a></li>
+					<li><a href="/services/contacts/address/html/index.en.html">Address</a></li>
+					<li><a href="/services/contacts/working-hours/html/index.en.html">Working hours</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>    <!-- <button id='back-to-top' class='fa fa-angle-up'>Back to top</button> -->
+</footer>
+
+
+
+<style>
+[data-count]{
+	position: relative;
+}
+[data-count]::after{
+	position: absolute;
+    right: -20px;
+    bottom: 0px;
+    display: block;
+    content: attr(data-count);
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 8px black;
+    font-size: 11px;
+}
+
+body.hideCount [data-count]::after{
+	display: none;
+}
+</style>
+
+<script>
+	(function(){
+		let addedCount = false;
+		let addCount = function(){
+			let list = document.querySelectorAll("h2,h3,h4,p,a");
+			for(var i = 0; i < list.length; i++){
+				let item = list[i];
+				item.setAttribute("data-count",item.textContent.length);
+			}	
+		}
+
+		document.onkeypress = function(e){			
+			if(e.ctrlKey && e.code == "KeyM"){
+				if(addedCount){	
+					document.body.classList.add('hideCount');
+					addedCount = false;
+				}else{				
+					document.body.classList.remove('hideCount');
+					addCount();
+					addedCount = true;
+				}	
+			}
+		}	
+	})();
+	
+	
+</script>
+<link rel="stylesheet" href="/shared/dist/css/print.min.css?1765099" media="print">
+
+<div class="ecb-cookieConsent hidden" id="cookieConsent">
+	<div class="initial">
+		<h2>Our website uses cookies</h2>
+		<p>We are always working to improve this website for our users. To do this, we use the anonymous data provided by cookies.<br>
+			<a href="/home/data-protection/privacy-statements/website/html/index.en.html" class="arrow">Learn more about how we use cookies</a></p>	
+		<div class="consentButtons initial cf">
+				<a class="check linkButton linkButtonLarge floatLeft highlight-medium">I understand and I accept the use of cookies</a>
+				<a class="cross linkButton linkButtonLarge floatRight highlight-extra-light">I do not accept the use of cookies</a>
+		</div>
+	</div>
+	<div class="accepted hidden">
+    	<div style="background-image:url(/shared/nav/svg/cookies_accepted.svg);width:100px;height:100px;margin:auto" class="img"></div>
+		<h2>Thank you!</h2>			
+	</div>
+	<div class="refused hidden">
+		<div style="background-image:url(/shared/nav/svg/cookies_refused.svg);width:100px;height:100px;margin:auto" class="img"></div>   	
+		<h2>Thank you!</h2>
+	</div>
+	<div class="updated hidden">
+		<h2>We have updated our privacy policy</h2>
+		<p>We are always working to improve this website for our users. To do this, we use the anonymous data provided by cookies.<br>
+			<a href="/home/data-protection/privacy-statements/website/html/index.en.html" class="arrow">See what has changed in our privacy policy</a></p>	
+		<div class="consentButtons updated cf">
+				<a class="check linkButton linkButtonLarge floatLeft highlight-medium">I understand and I accept the use of cookies</a>
+				<a class="cross linkButton linkButtonLarge floatRight highlight-extra-light">I do not accept the use of cookies</a>
+		</div>
+	</div>
+	<div class="expired hidden">
+		<h2>Your cookie preference has expired</h2>
+		<p>We are always working to improve this website for our users. To do this, we use the anonymous data provided by cookies.<br>
+			<a href="/home/data-protection/privacy-statements/website/html/index.en.html" class="arrow">Learn more about how we use cookies</a></p>	
+		<div class="consentButtons expired cf">
+				<a class="check linkButton linkButtonLarge floatLeft highlight-medium">I understand and I accept the use of cookies</a>
+				<a class="cross linkButton linkButtonLarge floatRight highlight-extra-light">I do not accept the use of cookies</a>
+		</div>
+	</div>
+</div>
+<div class="cookieBlockedMessage template hidden">
+	<div class="cookieBlockedContentHolder">
+		<div class="mainCookieBlockedMessage">This feature requires cookies.</div>
+		<a href="/home/data-protection/privacy-statements/website/html/index.en.html" class="button">Privacy statement</a>
+	</div>
+</div>
+ 
+
+<script src="/shared/dist/js/ieBlock.min.js" defer></script>
+		
+</body>
+
+</html>
