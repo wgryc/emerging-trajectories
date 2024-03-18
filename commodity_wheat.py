@@ -49,6 +49,9 @@ def run_forecast_with_llm(factbase_loc, llm, statement_id, prediction_agent):
             "Wheat supply and demand risks",
         ],
         prediction_agent=prediction_agent,
+        facts=[
+            "Today's date is March 18, 2024 and today's spot price is about 5.42 per bushel."
+        ],
     )
 
 

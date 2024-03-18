@@ -49,6 +49,7 @@ def run_forecast_with_llm(factbase_loc, llm, statement_id, prediction_agent):
             "Liquid Natural Gas politics and risks",
         ],
         prediction_agent=prediction_agent,
+        facts=["Today's date is March 18, 2024 and today's spot price is about $1.57."],
     )
 
 
@@ -81,7 +82,7 @@ client = Client(et_api_key)
 # forecast_id = client.get_most_recent_forecast(37, "GPT-4")
 # extend_forecast_with_llm("factbase_commodity_lng_gpt_4", llm, forecast_id, "GPT-4")
 
-llm = ReplicateLlama2Wrapper(replicate_api_key, "meta/llama-2-70b-chat")
-run_forecast_with_llm("factbase_commodity_lng_llama_2", llm, 37, "Llama 2 70B")
+# llm = ReplicateLlama2Wrapper(replicate_api_key, "meta/llama-2-70b-chat")
+# run_forecast_with_llm("factbase_commodity_lng_llama_2", llm, 37, "Llama 2 70B")
 # forecast_id = client.get_most_recent_forecast(37, "Llama 2 70B")
 # extend_forecast_with_llm("factbase_commodity_lng_llama_2", llm, forecast_id, "Llama 2 70B")

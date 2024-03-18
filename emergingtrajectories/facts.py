@@ -18,7 +18,7 @@ from phasellm.agents import WebpageAgent, WebSearchAgent
 from datetime import datetime
 
 from . import Client
-from .crawler import get_url_content
+from .crawlers import crawlerPlaywright
 from phasellm.llms import OpenAIGPTWrapper, ChatBot
 
 # Number of search results to return from web searche (default value).
@@ -125,7 +125,9 @@ def clean_citations(assistant_analysis: str, ctr_to_source: dict) -> str:
 # TODO If this works, it should be an agent with setllm() supported, etc.
 class FactBaseFileCache:
 
-    def __init__(self, folder_path: str, cache_file: str = "cache.json") -> None:
+    def __init__(
+        self, folder_path: str, cache_file: str = "cache.json", crawler=None
+    ) -> None:
         """
         The KnowledgeBaseFileCache is a simple file-based cache for web content and local files. The cache stores the original HTML, PDF, or TXT content and tracks when (if ever) an agent actually accessed the content.
 
@@ -138,6 +140,11 @@ class FactBaseFileCache:
         self.root_original = os.path.join(folder_path, "original")
         self.cache_file = os.path.join(folder_path, cache_file)
         self.cache = self.load_cache()
+
+        if crawler is None:
+            self.crawler = crawlerPlaywright()
+        else:
+            self.crawler = crawler
 
     # TODO: this function is a new one compared to the KnowledgeBaseFileCache
     # TODO: refactor this + code where we run one query
@@ -461,7 +468,7 @@ class FactBaseFileCache:
             # with open(os.path.join(self.root_parsed, uri_md5), "w") as f:
             #    f.write(content_parsed)
 
-            content, text = get_url_content(uri)
+            content, text = self.crawler.get_content(uri)
             with open(os.path.join(self.root_original, uri_md5), "w") as f:
                 f.write(content)
             with open(os.path.join(self.root_parsed, uri_md5), "w") as f:
