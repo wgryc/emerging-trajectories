@@ -1,10 +1,25 @@
+"""
+Crawlers provide a standardized approach to interacting with with web pages and extracting information. We have a number of crawlers based on PhaseLLM (Python requests) and ones using Playwright (headlessly and with a front-end) to enable flexible scraping.
+
+All scraping agents return the raw HTML content and the extracted text content.
+"""
+
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
 from phasellm.agents import WebpageAgent
 
 
-def _bs4_childtraversal(html):
+def _bs4_childtraversal(html: str) -> str:
+    """
+    Recursively travserse the DOM to extract content.
+
+    Args:
+        html (str): HTML content
+
+    Returns:
+        str: Extracted content
+    """
 
     if len(str(html).strip()) < 2:
         return ""
@@ -31,7 +46,16 @@ def _bs4_childtraversal(html):
     return new_html
 
 
-def _get_text_bs4(html):
+def _get_text_bs4(html: str) -> str:
+    """
+    Extract text content from HTML using BeautifulSoup.
+
+    Args:
+        html (str): HTML content
+
+    Returns:
+        str: Extracted text content
+    """
 
     new_html = "<html><body>"
 
@@ -55,10 +79,25 @@ def _get_text_bs4(html):
 
 class crawlerPlaywright:
 
-    def __init__(self, headless=True):
+    def __init__(self, headless: bool = True) -> None:
+        """
+        Crawler that uses Playwright to scrape web pages.
+
+        Args:
+            headless (bool, optional): Run the browser in headless mode. Defaults to True.
+        """
         self.headless = headless
 
-    def get_content(self, url):
+    def get_content(self, url: str) -> tuple[str, str]:
+        """
+        Gets content for a specific URL.
+
+        Args:
+            url (str): URL to scrape
+
+        Returns:
+            tuple[str, str]: Raw HTML content and extracted text content (in this order)
+        """
 
         content = ""
         text = ""
@@ -84,9 +123,21 @@ class crawlerPlaywright:
 class crawlerPhaseLLM:
 
     def __init__(self):
+        """
+        PhaseLLM scraper. Uses Python requests and does not execute JS.
+        """
         self.scraper = WebpageAgent()
 
     def get_content(self, url):
+        """
+        Gets content for a specific URL.
+
+        Args:
+            url (str): URL to scrape
+
+        Returns:
+            tuple[str, str]: Raw HTML content and extracted text content (in this order)
+        """
         content_raw = self.scraper.scrape(url, text_only=False, body_only=False)
         content_parsed = self.scraper.scrape(url, text_only=True, body_only=True)
         return content_raw, content_parsed
