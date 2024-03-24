@@ -99,7 +99,7 @@ class FactRAGFileCache:
         openai_api_key: str,
         cache_file: str = "cache.json",
         sources_file: str = "sources.json",
-        facts_fike: str = "facts.json",
+        facts_file: str = "facts.json",
         rag_db_folder="cdb",
         crawler=None,
     ) -> None:
@@ -120,6 +120,7 @@ class FactRAGFileCache:
         self.root_original = os.path.join(folder_path, "original")
         self.cache_file = os.path.join(folder_path, cache_file)
         self.sources_file = os.path.join(folder_path, sources_file)
+        self.facts_file = os.path.join(folder_path, facts_file)
         self.rag_db_folder = os.path.join(folder_path, rag_db_folder)
         self.openai_api_key = openai_api_key
 
@@ -134,11 +135,9 @@ class FactRAGFileCache:
         openai_ef = embedding_functions.OpenAIEmbeddingFunction(
             api_key=self.openai_api_key, model_name="text-embedding-3-small"
         )
-        self.chromadb_client = chromadb.PersistentClient(
-            path=self.rag_db_folder, embedding_function=openai_ef
-        )
+        self.chromadb_client = chromadb.PersistentClient(path=self.rag_db_folder)
         self.facts_rag_collection = self.chromadb_client.get_or_create_collection(
-            name="facts"
+            name="facts", embedding_function=openai_ef
         )
 
         # Set up / load cache
@@ -150,7 +149,16 @@ class FactRAGFileCache:
 
         # Set up / load sources dictionary
         # TODO Eventually, move this to a database or table or something.
-        self.facts = self.load_sources()
+        self.sources = self.load_sources()
+
+    def save_facts_and_sources(self) -> None:
+        """
+        Saves facts and sources to their respective files.
+        """
+        with open(self.facts_file, "w") as f:
+            json.dump(self.facts, f, indent=4, cls=DjangoJSONEncoder)
+        with open(self.sources_file, "w") as f:
+            json.dump(self.sources, f, indent=4, cls=DjangoJSONEncoder)
 
     def facts_from_url(self, url: str, topic: str) -> list[str]:
         """
@@ -181,7 +189,7 @@ class FactRAGFileCache:
 
         lines = response.split("\n")
 
-        fact_id_start = self.self.facts_rag_collection.count() + 1
+        fact_id_start = self.facts_rag_collection.count() + 1
 
         for line in lines:
             if line[0:4] == "--- ":
@@ -199,6 +207,8 @@ class FactRAGFileCache:
                 }
 
                 fact_id_start += 1
+
+        self.save_facts_and_sources()
 
     # TODO: this function is a new one compared to the KnowledgeBaseFileCache
     # TODO: refactor this + code where we run one query
@@ -340,11 +350,13 @@ class FactRAGFileCache:
         Loads the facts from the facts file.
         """
         if not os.path.exists(self.facts_file):
-            with open(self.sources_file, "w") as f:
+            with open(self.facts_file, "w") as f:
                 f.write("{}")
 
         with open(self.facts_file, "r") as f:
-            self.facts = json.load(f, indent=4, cls=DjangoJSONEncoder)
+            self.facts = json.load(f)
+
+        return self.facts
 
     def load_sources(self) -> dict:
         """
@@ -355,7 +367,9 @@ class FactRAGFileCache:
                 f.write("{}")
 
         with open(self.sources_file, "r") as f:
-            self.sources = json.load(f, indent=4, cls=DjangoJSONEncoder)
+            self.sources = json.load(f)
+
+        return self.sources
 
     def load_cache(self) -> None:
         """
