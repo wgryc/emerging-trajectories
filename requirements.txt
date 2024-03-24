@@ -4,3 +4,4 @@ python-dotenv>=1.0.0
 dateparser>=1.2.0
 pytest-playwright
 beautifulsoup4
+chromadb
