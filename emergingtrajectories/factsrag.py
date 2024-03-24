@@ -23,6 +23,7 @@ from datetime import datetime
 from . import Client
 from .crawlers import crawlerPlaywright
 from phasellm.llms import OpenAIGPTWrapper, ChatBot
+from .prompts import *
 
 import chromadb
 import chromadb.utils.embedding_functions as embedding_functions
@@ -150,6 +151,14 @@ class FactRAGFileCache:
         # Set up / load sources dictionary
         # TODO Eventually, move this to a database or table or something.
         self.sources = self.load_sources()
+
+    def query_to_fact_content(self, query: str) -> dict:
+        r = self.facts_rag_collection.query(query_texts=[query])
+        fact_content = """--- START FACTS ---------------------------\n"""
+        for item in r["ids"][0]:
+            fact_content += item + ": " + self.facts[item]["content"] + "\n"
+        fact_content += """--- END FACTS ---------------------------\n"""
+        return fact_content
 
     def save_facts_and_sources(self) -> None:
         """
@@ -511,3 +520,34 @@ class FactRAGFileCache:
         with open(filepath, "r") as f:
             content = f.read()
         self.add_content(content, uri)
+
+
+class FactBot:
+
+    def __init__(
+        self, knowledge_db: FactRAGFileCache, openai_api_key: str = None, chatbot=None
+    ) -> None:
+        if openai_api_key is None and chatbot is None:
+            raise ValueError("One of openai_api_key or chatbot must be provided.")
+
+        if chatbot is not None:
+            self.chatbot = chatbot
+        else:
+            llm = OpenAIGPTWrapper(openai_api_key, model="gpt-4-turbo-preview")
+            self.chatbot = ChatBot(llm)
+            self.chatbot.messages = [
+                {"role": "system", "content": system_prompt_question_continuous}
+            ]
+
+        self.knowledge_db = knowledge_db
+
+    def ask(self, question: str) -> str:
+        message = self.knowledge_db.query_to_fact_content(question) + "\n\n" + question
+        response = self.chatbot.chat(message)
+        return response
+
+    def source(self, fact_id: str) -> str:
+        if fact_id in self.knowledge_db.facts:
+            return self.knowledge_db.facts[fact_id]["source"]
+        else:
+            raise ValueError(f"Fact ID {fact_id} not found in the knowledge database.")

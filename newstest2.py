@@ -16,27 +16,9 @@ news_api_key = os.getenv("NEWS_API_KEY")
 
 from emergingtrajectories.news import NewsAPIAgent
 from emergingtrajectories.crawlers import crawlerPlaywright
-
-"""
-na = NewsAPIAgent(news_api_key)
-
-r = na.get_news("lng")
-r = na.get_news("covid")
-
-for result in r['articles']:
-    print("")
-    print(result['title'])
-    print(result['url'])
-    print(result['publishedAt'])
-    print("\n\n")
-"""
-
-from emergingtrajectories.factsrag import FactRAGFileCache
+from emergingtrajectories.factsrag import FactRAGFileCache, FactBot
 
 topic = "Liquefied Natural Gas (LNG) futures + commodity prices"
-
 crawler = crawlerPlaywright(False)
 fr = FactRAGFileCache("test_rag", openai_api_key, crawler=crawler)
-# fr.facts_from_url("https://www.bbc.com/news/business-63585732", topic=topic)
-
-print(fr.query_to_fact_content("What is LNG?"))
+bot = FactBot(fr, openai_api_key)
