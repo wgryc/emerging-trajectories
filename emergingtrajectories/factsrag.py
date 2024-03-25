@@ -228,6 +228,7 @@ class FactRAGFileCache:
         google_api_key,
         google_search_id,
         google_search_queries,
+        topic,
         fileout=None,
     ) -> str:
 
@@ -263,6 +264,7 @@ class FactRAGFileCache:
 
                     try:
                         page_content = self.get(result.url)
+                        self.facts_from_url(result.url, topic)
                         print(page_content)
                     except Exception as e:
                         print(f"Failed to get content from {result.url}\n{e}")
@@ -313,7 +315,9 @@ class FactRAGFileCache:
         )
 
         assistant_analysis = chatbot.resend()
-        assistant_analysis_sourced = clean_citations(assistant_analysis, ctr_to_source)
+        assistant_analysis_sourced = (
+            assistant_analysis  # clean_citations(assistant_analysis, ctr_to_source)
+        )
 
         print("\n\n\n")
         print(assistant_analysis_sourced)
@@ -335,6 +339,7 @@ class FactRAGFileCache:
         google_api_key,
         google_search_id,
         google_search_query,
+        topic,
         fileout=None,
     ) -> str:
 
@@ -344,6 +349,7 @@ class FactRAGFileCache:
             google_api_key,
             google_search_id,
             [google_search_query],
+            topic,
             fileout,
         )
 
