@@ -54,3 +54,6 @@ google_search_queries = [
         "What is LNG?", n_results=3, since_date=datetime(2023, 1, 1)
     )
 )"""
+
+# text = "abcd [f1], [f3, f6] and so on [f4]"
+# print(clean_fact_citations(fr, text))

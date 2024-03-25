@@ -1,5 +1,5 @@
 from .recursiveagent import ETClient
-from .facts import FactBaseFileCache
+from .factsrag import FactRAGFileCache, FactBot, clean_fact_citations
 from .utils import UtilityHelper
 from . import Client, Statement, Forecast
 
@@ -7,13 +7,23 @@ from phasellm.llms import ChatBot, OpenAIGPTWrapper, ChatPrompt
 
 from datetime import datetime
 
-start_system_prompt = """Today's date is {the_date}. You are a researcher helping with economics and politics research. We will give you a few facts and we need you to fill in a blank to the best of your knowledge, based on all the information provided to you."""
+start_system_prompt = """Today's date is {the_date}. You are a researcher helping with economics and politics research. We will give you a few facts and we need you to fill in a blank to the best of your knowledge, based on all the information provided to you. All your answers should be absed on these facts ONLY.
+
+For example, suppose we ask, 'Who is the President of the USA?' and have the following facts...
+
+F1: The President of the USA is Joe Biden.
+F2: The Vice President of the USA is Kamala Harris.
+
+... your answers hould be something like this:
+
+The President of th USA is Joe Biden [F1].
+
+We will give you a list of facts for every question. You can reference those facts, or you can also reference earlier facts from the conversatio chain. YOU CANNOT USE OTHER INFORMATION."""
 
 start_user_prompt = """Here is the research:
----------------------
 {content}
----------------------
 {additional_facts}
+------------
 
 Given the above, we need you to do your best to fill in the following blank...
 {fill_in_the_blank}
@@ -28,10 +38,9 @@ We realize you are being asked to provide a speculative forecast. We are using t
 """
 
 extend_user_prompt = """Here is the research:
----------------------
 {content}
----------------------
 {additional_facts}
+---------------------
 
 In addition to the new content above, we want to UPDATE the forecast from before. Here is the earlier forecast...
 ---------------------
@@ -50,9 +59,7 @@ PLEASE DO THE FOLLOWING:
 - Do not provide a range; provide ONE number.
 - End your forecast with the filled-in statement: {fill_in_the_blank_2}
 
-We realize you are being asked to provide a speculative forecast. We are using this to better understand the world and finance, so please fill in the blank. We will not use this for any active decision-making, but more to learn about the capabilities of AI.
-
-"""
+We realize you are being asked to provide a speculative forecast. We are using this to better understand the world and finance, so please fill in the blank. We will not use this for any active decision-making, but more to learn about the capabilities of AI."""
 
 
 class FactsRAGForecastingAgent(object):
@@ -62,7 +69,7 @@ class FactsRAGForecastingAgent(object):
         self,
         client: ETClient,
         chatbot: ChatBot,
-        factbase: FactBaseFileCache,
+        factbase: FactRAGFileCache,
     ):
 
         self.client = client
@@ -78,46 +85,34 @@ class FactsRAGForecastingAgent(object):
         return self.chatbot
 
     # TODO: we can do much better at disaggregating all these functions. Currently just want this to work.
-    # TODO: Google query can be a list of queries, not just a single query.
     def create_forecast(
         self,
         statement: Statement,
         openai_api_key,
         et_api_key,
-        google_api_key,
-        google_search_id,
-        google_search_query,
         facts=None,
         prediction_agent="Test Agent",
     ):
 
-        fact_llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-0125-preview")
-        fact_chatbot = ChatBot(fact_llm)
+        # factbot = FactBot(self.factbase, openai_api_key)
+        query1 = self.factbase.query_to_fact_content(
+            statement.fill_in_the_blank, n_results=25, skip_separator=True
+        )
+        query2 = self.factbase.query_to_fact_content(
+            statement.description, n_results=25, skip_separator=True
+        )
 
-        if isinstance(google_search_query, str):
-            content = self.factbase.summarize_new_info(
-                statement,
-                fact_chatbot,
-                google_api_key,
-                google_search_id,
-                google_search_query,
-            )
-        elif isinstance(google_search_query, list):
-            content = self.factbase.summarize_new_info_multiple_queries(
-                statement,
-                fact_chatbot,
-                google_api_key,
-                google_search_id,
-                google_search_query,
-            )
-        else:
-            raise ValueError(
-                "google_search_query must be a string or a list of strings"
-            )
-
-        if content is None:
+        if len(query1) == 0 and len(query2) == 0:
             print("No new content added to the forecast.")
             return None
+
+        facts_to_use = (
+            """--- START FACTS ---------------------------\n"""
+            + query1.strip()
+            + "\n"
+            + query2.strip()
+            + """--- END FACTS ---------------------------\n"""
+        )
 
         chatbot_messages = [
             {"role": "system", "content": start_system_prompt},
@@ -144,12 +139,13 @@ class FactsRAGForecastingAgent(object):
             statement_description=statement.description,
             statement_fill_in_the_blank=statement.fill_in_the_blank,
             fill_in_the_blank_2=statement.fill_in_the_blank,
-            content=content,
+            content=facts_to_use,
             the_date=the_date,
             additional_facts=additional_facts,
         )
 
         assistant_analysis = chatbot.resend()
+        full_content = clean_fact_citations(self.factbase, assistant_analysis)
 
         print("\n\n\n")
         print(assistant_analysis)
@@ -161,7 +157,7 @@ class FactsRAGForecastingAgent(object):
 
         client = Client(et_api_key)
 
-        full_content = content + "\n\n-----------------\n\n" + assistant_analysis
+        # full_content = content + "\n\n-----------------\n\n" + assistant_analysis
 
         response = client.create_forecast(
             statement.id,
@@ -170,7 +166,7 @@ class FactsRAGForecastingAgent(object):
             prediction,
             prediction_agent,
             {
-                "full_response_from_llm_before_source_cleanup": content,
+                # "full_response_from_llm_before_source_cleanup": content,
                 "full_response_from_llm": assistant_analysis,
                 "extracted_value": prediction,
             },
@@ -183,40 +179,36 @@ class FactsRAGForecastingAgent(object):
         forecast: Forecast,
         openai_api_key,
         et_api_key,
-        google_api_key,
-        google_search_id,
-        google_search_query,
         facts=None,
         prediction_agent="Test Agent",
     ):
 
-        fact_llm = OpenAIGPTWrapper(openai_api_key, "gpt-4-0125-preview")
-        fact_chatbot = ChatBot(fact_llm)
+        # Note: we only update the forecast with data/info we added since the last forecast.
 
-        if isinstance(google_search_query, str):
-            content = self.factbase.summarize_new_info(
-                forecast.statement,
-                fact_chatbot,
-                google_api_key,
-                google_search_id,
-                google_search_query,
-            )
-        elif isinstance(google_search_query, list):
-            content = self.factbase.summarize_new_info_multiple_queries(
-                forecast.statement,
-                fact_chatbot,
-                google_api_key,
-                google_search_id,
-                google_search_query,
-            )
-        else:
-            raise ValueError(
-                "google_search_query must be a string or a list of strings"
-            )
+        query1 = self.factbase.query_to_fact_content(
+            forecast.statement.fill_in_the_blank,
+            n_results=25,
+            skip_separator=True,
+            # since_date=forecast.created_at,
+        )
+        query2 = self.factbase.query_to_fact_content(
+            forecast.statement.description,
+            n_results=25,
+            skip_separator=True,
+            # since_date=forecast.created_at,
+        )
 
-        if content is None:
+        if len(query1) == 0 and len(query2) == 0:
             print("No new content added to the forecast.")
             return None
+
+        facts_to_use = (
+            """--- START FACTS ---------------------------\n"""
+            + query1.strip()
+            + "\n"
+            + query2.strip()
+            + """--- END FACTS ---------------------------\n"""
+        )
 
         chatbot_messages = [
             {"role": "system", "content": start_system_prompt},
@@ -243,7 +235,7 @@ class FactsRAGForecastingAgent(object):
             statement_description=forecast.statement.description,
             statement_fill_in_the_blank=forecast.statement.fill_in_the_blank,
             fill_in_the_blank_2=forecast.statement.fill_in_the_blank,
-            content=content,
+            content=facts_to_use,
             the_date=the_date,
             additional_facts=additional_facts,
             earlier_forecast_value=str(forecast.value),
@@ -252,8 +244,11 @@ class FactsRAGForecastingAgent(object):
 
         assistant_analysis = chatbot.resend()
 
-        print("\n\n\n")
-        print(assistant_analysis)
+        # print("\n\n\n")
+        # print(assistant_analysis)
+
+        full_content = clean_fact_citations(self.factbase, assistant_analysis)
+        print(full_content)
 
         uh = UtilityHelper(openai_api_key)
         prediction = uh.extract_prediction(
@@ -262,8 +257,6 @@ class FactsRAGForecastingAgent(object):
 
         client = Client(et_api_key)
 
-        full_content = content + "\n\n-----------------\n\n" + assistant_analysis
-
         response = client.create_forecast(
             forecast.statement.id,
             "Prediction",
@@ -271,7 +264,6 @@ class FactsRAGForecastingAgent(object):
             prediction,
             prediction_agent,
             {
-                "full_response_from_llm_before_source_cleanup": content,
                 "full_response_from_llm": assistant_analysis,
                 "extracted_value": prediction,
             },

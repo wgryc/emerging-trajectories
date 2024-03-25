@@ -153,7 +153,7 @@ class FactRAGFileCache:
         self.sources = self.load_sources()
 
     def query_to_fact_content(
-        self, query: str, n_results: int = 10, since_date=None
+        self, query: str, n_results: int = 10, since_date=None, skip_separator=False
     ) -> dict:
 
         r = []
@@ -171,10 +171,16 @@ class FactRAGFileCache:
         if len(r) == 0:
             return ""
 
-        fact_content = """--- START FACTS ---------------------------\n"""
+        fact_content = ""
+        if not skip_separator:
+            fact_content = """--- START FACTS ---------------------------\n"""
+
         for item in r["ids"][0]:
             fact_content += item + ": " + self.facts[item]["content"] + "\n"
-        fact_content += """--- END FACTS ---------------------------\n"""
+
+        if not skip_separator:
+            fact_content += """--- END FACTS ---------------------------\n"""
+
         return fact_content
 
     def save_facts_and_sources(self) -> None:
@@ -634,17 +640,30 @@ class FactBot:
 
 def clean_fact_citations(knowledge_db: FactRAGFileCache, text_to_clean: str) -> str:
     bot = FactBot(knowledge_db, knowledge_db.openai_api_key)
-    pattern = r"\[f(\d+)\]"
+    pattern = r"\[f[\d\s\,f]+\]"
     new_text = ""
     ref_ctr = 0
     last_index = 0
     sources_list = ""
     for match in re.finditer(pattern, text_to_clean):
-        ref_ctr += 1
-        new_text += text_to_clean[last_index : match.start()]
-        new_text += f"[{ref_ctr}]"
-        sources_list += f"{ref_ctr} :: " + bot.source(f"f{match.group(1)}") + "\n"
-        last_index = match.end()
+        if match.group(0).find(",") == -1:
+            ref_ctr += 1
+            ref = match.group(0)[1:-1].strip()
+            new_text += text_to_clean[last_index : match.start()]
+            new_text += f"[{ref_ctr}]"
+            sources_list += f"{ref_ctr} :: " + bot.source(f"{ref}") + "\n"
+            last_index = match.end()
+        else:
+            refs = match.group(0)[1:-1].split(",")
+            ref_arr = []
+            for ref in refs:
+                ref = ref.strip()
+                ref_ctr += 1
+                ref_arr.append(str(ref_ctr))
+                sources_list += f"{ref_ctr} :: " + bot.source(f"{ref}") + "\n"
+            ref_str = "[" + ", ".join(ref_arr) + "]"
+            new_text += text_to_clean[last_index : match.start()] + ref_str
+            last_index = match.end()
 
     new_text += text_to_clean[last_index:]
 
