@@ -22,8 +22,8 @@ from datetime import datetime
 
 from . import Client
 from .crawlers import crawlerPlaywright
-from phasellm.llms import OpenAIGPTWrapper, ChatBot
 from .prompts import *
+from .news import NewsAPIAgent
 
 import chromadb
 import chromadb.utils.embedding_functions as embedding_functions
@@ -152,8 +152,25 @@ class FactRAGFileCache:
         # TODO Eventually, move this to a database or table or something.
         self.sources = self.load_sources()
 
-    def query_to_fact_content(self, query: str) -> dict:
-        r = self.facts_rag_collection.query(query_texts=[query])
+    def query_to_fact_content(
+        self, query: str, n_results: int = 10, since_date=None
+    ) -> dict:
+
+        r = []
+        if since_date is None:
+            r = self.facts_rag_collection.query(
+                query_texts=[query], n_results=n_results
+            )
+        else:
+            r = self.facts_rag_collection.query(
+                query_texts=[query],
+                n_results=n_results,
+                where={"added_on_timestamp": {"$gt": since_date.timestamp()}},
+            )
+
+        if len(r) == 0:
+            return ""
+
         fact_content = """--- START FACTS ---------------------------\n"""
         for item in r["ids"][0]:
             fact_content += item + ": " + self.facts[item]["content"] + "\n"
@@ -206,6 +223,7 @@ class FactRAGFileCache:
                 self.facts_rag_collection.add(
                     documents=[fact],
                     ids=[f"f{fact_id_start}"],
+                    metadatas=[{"added_on_timestamp": datetime.now().timestamp()}],
                 )
 
                 self.facts[f"f{fact_id_start}"] = {
@@ -218,6 +236,58 @@ class FactRAGFileCache:
                 fact_id_start += 1
 
         self.save_facts_and_sources()
+
+    # This builds facts based on news articles.
+    def new_get_new_info_news(
+        self,
+        newsapi_api_key,
+        topic,
+        queries,
+        top_headlines=False,
+    ) -> None:
+
+        news_agent = NewsAPIAgent(
+            newsapi_api_key, top_headlines=top_headlines, crawler=self.crawler
+        )
+
+        for q in queries:
+            results = news_agent.get_news_as_list(q)
+            for result in results["articles"]:
+                print("NEWS RESULT: " + result["url"])
+                self.facts_from_url(result["url"], topic)
+
+    # This builds facts based on all the google searches.
+    def new_get_new_info_google(
+        self,
+        google_api_key,
+        google_search_id,
+        google_search_queries,
+        topic,
+    ) -> None:
+
+        self.google_api_key = google_api_key
+        self.google_search_id = google_search_id
+        self.google_search_queries = google_search_queries
+
+        webagent = WebSearchAgent(api_key=self.google_api_key)
+
+        for google_search_query in self.google_search_queries:
+
+            results = webagent.search_google(
+                query=google_search_query,
+                custom_search_engine_id=self.google_search_id,
+                num=_DEFAULT_NUM_SEARCH_RESULTS,
+            )
+
+            for result in results:
+                if not self.in_cache(result.url):
+                    try:
+                        print("SEARCH RESULT: " + result.url)
+                        page_content = self.get(result.url)
+                        self.facts_from_url(result.url, topic)
+                        # print(page_content)
+                    except Exception as e:
+                        print(f"Failed to get content from {result.url}\n{e}")
 
     # TODO: this function is a new one compared to the KnowledgeBaseFileCache
     # TODO: refactor this + code where we run one query
@@ -547,13 +617,38 @@ class FactBot:
 
         self.knowledge_db = knowledge_db
 
-    def ask(self, question: str) -> str:
+    def ask(self, question: str, clean_sources: bool = True) -> str:
         message = self.knowledge_db.query_to_fact_content(question) + "\n\n" + question
         response = self.chatbot.chat(message)
-        return response
+        if clean_sources:
+            return clean_fact_citations(self.knowledge_db, response)
+        else:
+            return response
 
     def source(self, fact_id: str) -> str:
         if fact_id in self.knowledge_db.facts:
             return self.knowledge_db.facts[fact_id]["source"]
         else:
             raise ValueError(f"Fact ID {fact_id} not found in the knowledge database.")
+
+
+def clean_fact_citations(knowledge_db: FactRAGFileCache, text_to_clean: str) -> str:
+    bot = FactBot(knowledge_db, knowledge_db.openai_api_key)
+    pattern = r"\[f(\d+)\]"
+    new_text = ""
+    ref_ctr = 0
+    last_index = 0
+    sources_list = ""
+    for match in re.finditer(pattern, text_to_clean):
+        ref_ctr += 1
+        new_text += text_to_clean[last_index : match.start()]
+        new_text += f"[{ref_ctr}]"
+        sources_list += f"{ref_ctr} :: " + bot.source(f"f{match.group(1)}") + "\n"
+        last_index = match.end()
+
+    new_text += text_to_clean[last_index:]
+
+    if ref_ctr == 0:
+        return text_to_clean
+    else:
+        return new_text + "\n\nSources:\n" + sources_list
