@@ -154,7 +154,20 @@ class FactRAGFileCache:
 
     def query_to_fact_content(
         self, query: str, n_results: int = 10, since_date=None, skip_separator=False
-    ) -> dict:
+    ) -> str:
+        """
+        Takes a query and finds the closest semantic matches to the query in the knowledge base.
+
+        Args:
+            query (str): The query to search for.
+            n_results (int, optional): The number of results to return. Defaults to 10.
+            since_date ([type], optional): The date to search from. Defaults to None, in which case all dates are searched.
+            skip_separator (bool, optional): Whether to prepend and append a note horizontal line and title to the string being returned. Defaults to False.
+
+        Returns:
+            str: The content of the facts found, along with the fact IDs.
+
+        """
 
         r = []
         if since_date is None:
@@ -251,6 +264,15 @@ class FactRAGFileCache:
         queries,
         top_headlines=False,
     ) -> None:
+        """
+        Uses the News API to find new information and extract facts from it.
+
+        Args:
+            newsapi_api_key (str): The News API key.
+            topic (str): a brief description of the research you are undertaking.
+            queries (list[str]): A list of queries to search for.
+            top_headlines (bool, optional): Whether to search for top headlines. Defaults to False.
+        """
 
         news_agent = NewsAPIAgent(
             newsapi_api_key, top_headlines=top_headlines, crawler=self.crawler
@@ -270,6 +292,15 @@ class FactRAGFileCache:
         google_search_queries,
         topic,
     ) -> None:
+        """
+        Uses Google search to find new information and extract facts from it.
+
+        Args:
+            google_api_key (str): The Google API key.
+            google_search_id (str): The Google search ID.
+            google_search_queries (list[str]): A list of queries to search for.
+            topic (str): a brief description of the research you are undertaking.
+        """
 
         self.google_api_key = google_api_key
         self.google_search_id = google_search_id
@@ -294,140 +325,6 @@ class FactRAGFileCache:
                         # print(page_content)
                     except Exception as e:
                         print(f"Failed to get content from {result.url}\n{e}")
-
-    # TODO: this function is a new one compared to the KnowledgeBaseFileCache
-    # TODO: refactor this + code where we run one query
-    def summarize_new_info_multiple_queries(
-        self,
-        statement,
-        chatbot,
-        google_api_key,
-        google_search_id,
-        google_search_queries,
-        topic,
-        fileout=None,
-    ) -> str:
-
-        self.google_api_key = google_api_key
-        self.google_search_id = google_search_id
-        self.google_search_queries = google_search_queries
-
-        webagent = WebSearchAgent(api_key=self.google_api_key)
-
-        scraped_content = ""
-        added_new_content = False
-
-        # We store the accessed resources and log access only when we successfully submit a forecast. If anything fails, we'll review those resources again during the next forecasting attempt.
-        accessed_resources = []
-
-        ctr = 0
-        ctr_to_source = {}
-
-        for google_search_query in self.google_search_queries:
-
-            results = webagent.search_google(
-                query=google_search_query,
-                custom_search_engine_id=self.google_search_id,
-                num=_DEFAULT_NUM_SEARCH_RESULTS,
-            )
-
-            added_new_content = False
-
-            for result in results:
-                if not self.in_cache(result.url):
-                    ctr += 1
-                    added_new_content = True
-
-                    try:
-                        page_content = self.get(result.url)
-                        self.facts_from_url(result.url, topic)
-                        print(page_content)
-                    except Exception as e:
-                        print(f"Failed to get content from {result.url}\n{e}")
-                        page_content = ""
-
-                    accessed_resources.append(result.url)
-                    # knowledge_base.log_access(result.url)
-
-                    scraped_content += (
-                        f"{page_content}\n\n--- SOURCE: {ctr}-------------------\n\n"
-                    )
-                    ctr_to_source[ctr] = result.url
-
-        # We also check the knowledge base for content that was added manually.
-        unaccessed_uris = self.get_unaccessed_content()
-        for ua in unaccessed_uris:
-            added_new_content = True
-            ctr += 1
-            page_content = self.get(ua)
-
-            accessed_resources.append(ua)
-            # knowledge_base.log_access(ua)
-
-            scraped_content += (
-                f"{page_content}\n\n--- SOURCE: {ctr}-------------------\n\n"
-            )
-            ctr_to_source[ctr] = ua
-
-        if not added_new_content:
-            print("No new content added to the forecast.")
-            return None
-
-        the_date = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
-
-        prompt_template = ChatPrompt(
-            [
-                {"role": "system", "content": facts_base_system_prompt},
-                {"role": "user", "content": facts_base_user_prompt},
-            ]
-        )
-
-        chatbot.messages = prompt_template.fill(
-            statement_title=statement.title,
-            statement_description=statement.description,
-            statement_fill_in_the_blank=statement.fill_in_the_blank,
-            scraped_content=scraped_content,
-            the_date=the_date,
-        )
-
-        assistant_analysis = chatbot.resend()
-        assistant_analysis_sourced = (
-            assistant_analysis  # clean_citations(assistant_analysis, ctr_to_source)
-        )
-
-        print("\n\n\n")
-        print(assistant_analysis_sourced)
-
-        if fileout is not None:
-            with open(fileout, "w") as w:
-                w.write(assistant_analysis_sourced)
-
-        for ar in accessed_resources:
-            self.log_access(ar)
-
-        return assistant_analysis_sourced
-
-    # TODO: this function is a new one compared to the KnowledgeBaseFileCache
-    def summarize_new_info(
-        self,
-        statement,
-        chatbot,
-        google_api_key,
-        google_search_id,
-        google_search_query,
-        topic,
-        fileout=None,
-    ) -> str:
-
-        return self.summarize_new_info_multiple_queries(
-            statement,
-            chatbot,
-            google_api_key,
-            google_search_id,
-            [google_search_query],
-            topic,
-            fileout,
-        )
 
     def save_state(self) -> None:
         """
@@ -607,8 +504,19 @@ class FactRAGFileCache:
 class FactBot:
 
     def __init__(
-        self, knowledge_db: FactRAGFileCache, openai_api_key: str = None, chatbot=None
+        self,
+        knowledge_db: FactRAGFileCache,
+        openai_api_key: str = None,
+        chatbot: ChatBot = None,
     ) -> None:
+        """
+        The FactBot is like a ChatBot but enables you to ask questions that reference an underlying RAG database (KnowledgeBaseFileCache), which then enables the chatbot to cite sourcable facts.
+
+        Args:
+            knowledge_db (FactRAGFileCache): The knowledge database to use.
+            openai_api_key (str, optional): The OpenAI API key. Defaults to None.
+            chatbot (ChatBot, optional): The PhaseLLB chatbot to use. Defaults to None, in which case an OpenAI chatbot is used (and the OpenAI API key must be provided).
+        """
         if openai_api_key is None and chatbot is None:
             raise ValueError("One of openai_api_key or chatbot must be provided.")
 
@@ -624,6 +532,16 @@ class FactBot:
         self.knowledge_db = knowledge_db
 
     def ask(self, question: str, clean_sources: bool = True) -> str:
+        """
+        Ask a question to the FactBot. This will query the underlying knowledge database and use the returned facts to answer the question.
+
+        Args:
+            question (str): The question to ask.
+            clean_sources (bool, optional): Whether to clean the sources in the response. Defaults to True; in this case, it will replace fact IDs with relevant source links at the end of the response.
+
+        Returns:
+            str: The response to the question.
+        """
         message = self.knowledge_db.query_to_fact_content(question) + "\n\n" + question
         response = self.chatbot.chat(message)
         if clean_sources:
@@ -632,6 +550,15 @@ class FactBot:
             return response
 
     def source(self, fact_id: str) -> str:
+        """
+        Returns the URL source for a given fact ID.
+
+        Args:
+            fact_id (str): The fact ID to get the source for.
+
+        Returns:
+            str: The URL source for the given fact ID.
+        """
         if fact_id in self.knowledge_db.facts:
             return self.knowledge_db.facts[fact_id]["source"]
         else:
@@ -639,6 +566,16 @@ class FactBot:
 
 
 def clean_fact_citations(knowledge_db: FactRAGFileCache, text_to_clean: str) -> str:
+    """
+    Converts fact IDs referenced in a piece of text to relevant source links, appending sources as end notes in the document/text.
+
+    Args:
+        knowledge_db (FactRAGFileCache): The knowledge database to use for fact lookups.
+        text_to_clean (str): The text to clean.
+
+    Returns:
+        str: The cleaned text.
+    """
     bot = FactBot(knowledge_db, knowledge_db.openai_api_key)
     pattern = r"\[f[\d\s\,f]+\]"
     new_text = ""
