@@ -2,7 +2,7 @@ NAME = "emergingtrajectories"
 
 AUTHOR = "Wojciech Gryc"
 
-VERSION = "0.2.9"
+VERSION = "0.2.10"
 
 DESCRIPTION = "Open source library for tracking and saving forecasts of political, economic, and social events."
 

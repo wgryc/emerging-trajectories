@@ -238,15 +238,20 @@ class FactRAGFileCache:
 
         for line in lines:
             if line[0:4] == "--- ":
+
+                added_now = datetime.now()
+                added_now_timestamp = added_now.timestamp()
+
                 fact = line[4:]
                 self.facts_rag_collection.add(
                     documents=[fact],
                     ids=[f"f{fact_id_start}"],
-                    metadatas=[{"added_on_timestamp": datetime.now().timestamp()}],
+                    metadatas=[{"added_on_timestamp": added_now_timestamp}],
                 )
 
                 self.facts[f"f{fact_id_start}"] = {
-                    "added": datetime.now(),
+                    "added": added_now,
+                    "added_timestamp": added_now_timestamp,
                     "source": url,
                     "content": fact,
                     "cid": f"f{fact_id_start}",

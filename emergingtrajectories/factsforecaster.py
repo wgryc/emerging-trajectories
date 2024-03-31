@@ -95,6 +95,7 @@ class FactForecastingAgent(object):
         fact_chatbot = ChatBot(fact_llm)
 
         if isinstance(google_search_query, str):
+            print("CALLING SINGLE QUERY...")
             content = self.factbase.summarize_new_info(
                 statement,
                 fact_chatbot,

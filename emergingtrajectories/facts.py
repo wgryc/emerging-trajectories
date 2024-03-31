@@ -193,6 +193,7 @@ class FactBaseFileCache:
                         print(page_content)
                     except Exception as e:
                         print(f"Failed to get content from {result.url}\n{e}")
+                        self.force_empty(result.url)
                         page_content = ""
 
                     accessed_resources.append(result.url)
@@ -296,6 +297,7 @@ class FactBaseFileCache:
                     print(page_content)
                 except Exception as e:
                     print(f"Failed to get content from {result.url}\n{e}")
+                    self.force_empty(result.url)
                     page_content = ""
 
                 accessed_resources.append(result.url)
@@ -442,6 +444,22 @@ class FactBaseFileCache:
             if self.cache[uri]["accessed"] == 0:
                 unaccessed.append(uri)
         return unaccessed
+
+    def force_empty(self, uri: str) -> None:
+        """
+        Saves an empty file for a given URI. Used when the page is erroring out.
+
+        Args:
+            uri (str): The URI to empty the cache for.
+        """
+        uri_md5 = uri_to_local(uri)
+
+        with open(os.path.join(self.root_original, uri_md5), "w") as f:
+            f.write("")
+        with open(os.path.join(self.root_parsed, uri_md5), "w") as f:
+            f.write("")
+
+        self.update_cache(uri, datetime.now(), datetime.now())
 
     def get(self, uri: str) -> str:
         """
