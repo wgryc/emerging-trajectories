@@ -23,7 +23,7 @@ from datetime import datetime
 from . import Client
 from .crawlers import crawlerPlaywright
 from .prompts import *
-from .news import NewsAPIAgent
+from .news import NewsAPIAgent, RSSAgent
 
 import chromadb
 import chromadb.utils.embedding_functions as embedding_functions
@@ -260,6 +260,23 @@ class FactRAGFileCache:
                 fact_id_start += 1
 
         self.save_facts_and_sources()
+
+    # This builds facts based on RSS feeds.
+    def new_get_rss_links(self, rss_url, topic) -> None:
+        """
+        Crawls an RSS feed and its posts.
+
+        Args:
+            rss_url (str): The URL of the RSS feed.
+            topic (str): a brief description of the research you are undertaking.
+        """
+
+        rss_agent = RSSAgent(rss_url, crawler=self.crawler)
+        urls = rss_agent.get_news_as_list()
+
+        for url in urls:
+            print("RSS RESULT: " + url)
+            self.facts_from_url(url, topic)
 
     # This builds facts based on news articles.
     def new_get_new_info_news(

@@ -1,6 +1,38 @@
 import requests
 
+import feedparser
+
 from .crawlers import crawlerPlaywright
+
+
+class RSSAgent:
+
+    def __init__(self, rss_url, crawler=None) -> None:
+        """
+        A simple wrapper for an RSS feed, so we can query it for URLs.
+
+        Args:
+            rss_url (str): The URL of the RSS feed.
+            crawler (Crawler, optional): The crawler to use. Defaults to None, in which case we will use crawlerPlaywright in headless mode.
+        """
+        self.rss_url = rss_url
+        if crawler is None:
+            self.crawler = crawlerPlaywright()
+        else:
+            self.crawler = crawler
+
+    def get_news_as_list(self) -> list:
+        """
+        Query the RSS feed for news articles, and return them as a list of dictionaries.
+
+        Returns:
+            list: A list of URLs.
+        """
+        urls = []
+        feed = feedparser.parse(self.rss_url)
+        for entry in feed.entries:
+            urls.append(entry.link)
+        return urls
 
 
 class NewsAPIAgent:
