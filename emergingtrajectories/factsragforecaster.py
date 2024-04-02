@@ -189,13 +189,13 @@ class FactsRAGForecastingAgent(object):
             forecast.statement.fill_in_the_blank,
             n_results=25,
             skip_separator=True,
-            # since_date=forecast.created_at,
+            since_date=forecast.created_at,
         )
         query2 = self.factbase.query_to_fact_content(
             forecast.statement.description,
             n_results=25,
             skip_separator=True,
-            # since_date=forecast.created_at,
+            since_date=forecast.created_at,
         )
 
         if len(query1) == 0 and len(query2) == 0:
