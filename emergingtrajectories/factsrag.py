@@ -205,7 +205,7 @@ class FactRAGFileCache:
         with open(self.sources_file, "w") as f:
             json.dump(self.sources, f, indent=4, cls=DjangoJSONEncoder)
 
-    def facts_from_url(self, url: str, topic: str) -> list[str]:
+    def facts_from_url(self, url: str, topic: str) -> None:
         """
         Given a URL, extract facts from it and save them to ChromaDB and the facts dictionary. Also returns the facts in an array, in case one wants to analyze new facts.
 
@@ -485,7 +485,13 @@ class FactRAGFileCache:
             # with open(os.path.join(self.root_parsed, uri_md5), "w") as f:
             #    f.write(content_parsed)
 
-            content, text = self.crawler.get_content(uri)
+            try:
+                content, text = self.crawler.get_content(uri)
+            except Exception as e:
+                print(f"Failed to get content from {uri}\n{e}")
+                content = ""
+                text = ""
+
             with open(os.path.join(self.root_original, uri_md5), "w") as f:
                 f.write(content)
             with open(os.path.join(self.root_parsed, uri_md5), "w") as f:

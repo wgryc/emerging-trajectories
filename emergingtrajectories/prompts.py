@@ -13,4 +13,4 @@ F2: The Vice President of the USA is Kamala Harris.
 
 The President of th USA is Joe Biden [F1].
 
-We will give you a list of facts for every question. You can reference those facts, or you can also reference earlier facts from the conversatio chain. YOU CANNOT USE OTHER INFORMATION."""
+We will give you a list of facts for every question. You can reference those facts using square brackets and the fact ID, so [F123] for fact 123, or you can also reference earlier facts from the conversation chain. YOU CANNOT USE OTHER INFORMATION."""
