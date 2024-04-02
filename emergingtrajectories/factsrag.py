@@ -211,9 +211,8 @@ class FactRAGFileCache:
 
         Args:
             url (str): Location of the content.
+            topic (str): a brief description of the research you are undertaking.
 
-        Returns:
-            list[str]: A list of facts extracted from the content.
         """
 
         content = self.get(url)
@@ -275,8 +274,9 @@ class FactRAGFileCache:
         urls = rss_agent.get_news_as_list()
 
         for url in urls:
-            print("RSS RESULT: " + url)
-            self.facts_from_url(url, topic)
+            if not self.in_cache(url):
+                print("RSS RESULT: " + url)
+                self.facts_from_url(url, topic)
 
     # This builds facts based on news articles.
     def new_get_new_info_news(
@@ -303,8 +303,10 @@ class FactRAGFileCache:
         for q in queries:
             results = news_agent.get_news_as_list(q)
             for result in results["articles"]:
-                print("NEWS RESULT: " + result["url"])
-                self.facts_from_url(result["url"], topic)
+                url = result["url"]
+                if not self.in_cache(url):
+                    print("NEWS RESULT: " + url)
+                    self.facts_from_url(url, topic)
 
     # This builds facts based on all the google searches.
     def new_get_new_info_google(
@@ -342,7 +344,7 @@ class FactRAGFileCache:
                 if not self.in_cache(result.url):
                     try:
                         print("SEARCH RESULT: " + result.url)
-                        page_content = self.get(result.url)
+                        # page_content = self.get(result.url)
                         self.facts_from_url(result.url, topic)
                         # print(page_content)
                     except Exception as e:
