@@ -18,7 +18,7 @@ from django.core.serializers.json import DjangoJSONEncoder
 from phasellm.llms import OpenAIGPTWrapper, ChatBot, ChatPrompt
 from phasellm.agents import WebpageAgent, WebSearchAgent
 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from . import Client
 from .crawlers import crawlerPlaywright
@@ -71,7 +71,7 @@ fact_system_prompt = """You are a researcher helping extract facts about {topic}
 --- Here is a second fact.
 --- And a third fact.
 
-Please do not include new lines between bullet points.
+Please do not include new lines between bullet points. Make sure you write your facts in ENGLISH. Translate any foreign language content/facts/observations into ENGLISH.
 
 We will simply provide you with content and you will just provide facts."""
 
@@ -190,6 +190,33 @@ class FactRAGFileCache:
 
         for item in r["ids"][0]:
             fact_content += item + ": " + self.facts[item]["content"] + "\n"
+
+        if not skip_separator:
+            fact_content += """--- END FACTS ---------------------------\n"""
+
+        return fact_content
+
+    def get_all_recent_facts(self, days: float = 1, skip_separator=False) -> str:
+        """
+        Returns a list of all facts and sources added in the last n days.
+
+        Args:
+            days (float, optional): The number of days to search back. Defaults to 1. Can be fractional as well.
+            skip_separator (bool, optional): Whether to prepend and append a note horizontal line and title to the string being returned. Defaults to False.
+
+        Returns:
+            str: The content of the facts found, along with the fact IDs.
+        """
+
+        fact_content = ""
+
+        if not skip_separator:
+            fact_content = """--- START FACTS ---------------------------\n"""
+
+        min_date = datetime.now() - timedelta(days=days)
+        for key, fact in self.facts.items():
+            if fact["added"] > min_date:
+                fact_content += key + ": " + fact["content"] + "\n"
 
         if not skip_separator:
             fact_content += """--- END FACTS ---------------------------\n"""
@@ -461,6 +488,24 @@ class FactRAGFileCache:
             if self.cache[uri]["accessed"] == 0:
                 unaccessed.append(uri)
         return unaccessed
+
+    def force_content(self, uri: str, content: str) -> None:
+        """
+        Forces a specific URI to have specific content (both HTML and text content). Used to fill old links that we don't actually want to crawl.
+
+        Args:
+            uri (str): The URI to force content for.
+            content (str): The content to force.
+        """
+
+        uri_md5 = uri_to_local(uri)
+        with open(os.path.join(self.root_original, uri_md5), "w") as f:
+            f.write(content)
+        with open(os.path.join(self.root_parsed, uri_md5), "w") as f:
+            f.write(content)
+
+        self.update_cache(uri, datetime.now(), datetime.now())
+        self.log_access(uri)
 
     def get(self, uri: str) -> str:
         """

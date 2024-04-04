@@ -5,6 +5,22 @@ import feedparser
 from .crawlers import crawlerPlaywright
 
 
+def force_empty_content(rss_url: str, content, cache_function) -> None:
+    """
+    Force the crawler to visit every URL in the RSS feed and save it as a blank content file. We do this because some RSS feeds have a lot of old URLs we do not need to crawl, and only want to crawl the delta over some period.
+
+    Args:
+        rss_url (str): The URL of the RSS feed.
+        content: the content string to save.
+        cache_function: the specific function to call the rss_url and content to save.
+    """
+
+    agent = RSSAgent(rss_url)
+    all_urls = agent.get_news_as_list()
+    for u in all_urls:
+        cache_function(u, content)
+
+
 class RSSAgent:
 
     def __init__(self, rss_url, crawler=None) -> None:

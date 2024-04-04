@@ -122,7 +122,8 @@ class UtilityHelper(object):
         if output[0] == "$":
             output = output[1:]
 
-        # print(output)
+        # Remove commas...
+        output = output.replace(",", "")
 
         if not is_numeric(output):
             raise Exception(f"Prediction does not appear to be numeric:\n{output}")
