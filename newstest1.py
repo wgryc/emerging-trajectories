@@ -31,7 +31,7 @@ for result in r['articles']:
     print("\n\n")
 """
 
-from emergingtrajectories.factsrag import FactRAGFileCache
+"""from emergingtrajectories.factsrag import FactRAGFileCache
 
 topic = "Liquefied Natural Gas (LNG) futures + commodity prices"
 
@@ -40,3 +40,15 @@ fr = FactRAGFileCache("test_rag", openai_api_key, crawler=crawler)
 # fr.facts_from_url("https://www.bbc.com/news/business-63585732", topic=topic)
 
 print(fr.query_to_fact_content("What is LNG?"))
+"""
+
+na = NewsAPIAgent(news_api_key)
+
+r = na.get_news_as_list("autonomous trucking")
+
+for result in r["articles"]:
+    print("")
+    print(result["title"])
+    print(result["url"])
+    print(result["publishedAt"])
+    print("\n\n")

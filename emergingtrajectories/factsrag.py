@@ -213,9 +213,9 @@ class FactRAGFileCache:
         if not skip_separator:
             fact_content = """--- START FACTS ---------------------------\n"""
 
-        min_date = datetime.now() - timedelta(days=days)
+        min_date_timestamp = (datetime.now() - timedelta(days=days)).timestamp()
         for key, fact in self.facts.items():
-            if fact["added"] > min_date:
+            if fact["added_timestamp"] > min_date_timestamp:
                 fact_content += key + ": " + fact["content"] + "\n"
 
         if not skip_separator:

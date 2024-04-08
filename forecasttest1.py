@@ -1,3 +1,5 @@
+# See forecast1.py instead!!
+
 import os
 from dotenv import load_dotenv
 
