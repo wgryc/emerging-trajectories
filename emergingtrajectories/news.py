@@ -2,7 +2,11 @@ import requests
 
 import feedparser
 
-from .crawlers import crawlerPlaywright
+import time
+
+from .crawlers import crawlerPlaywright, _get_text_bs4
+
+from playwright.sync_api import sync_playwright
 
 
 def force_empty_content(rss_url: str, content, cache_function) -> None:
@@ -86,3 +90,97 @@ class NewsAPIAgent:
             )
         response = requests.get(url)
         return response.json()
+
+
+class FinancialTimesAgent:
+
+    # The RSS feed URLs for the Financial Times.
+    ft_rss_feed_urls = [
+        "https://www.ft.com/rss/home",
+        "https://www.ft.com/rss/home/",
+    ]
+
+    ft_login_url = "https://ft.com/login"
+    ft_main_url = "https://ft.com/"
+
+    def __init__(self, user_email, user_password) -> None:
+        """
+        This is a POC agent that uses Playwright to crawl the Financial Times articles you are interested in. Note that you *NEED* to be a subscriber to the FT to make this work, and thus need to provide your FT user name and password.
+
+        Args:
+            user_email (str): Your FT email.
+            user_password (str): Your FT password.
+        """
+        self.user_email = user_email
+        self.user_password = user_password
+
+    def get_news(self):
+        """
+        Get the news from the Financial Times as a list of tuples, where each tuple contains the URL and the extracted text content.
+
+        Returns:
+            A list of lists -- urls, html, and text content
+        """
+
+        urls = []
+        for rss_url in self.ft_rss_feed_urls:
+            agent = RSSAgent(rss_url)
+            urls = urls + agent.get_news_as_list()
+
+        html_content_array = []
+        text_content_array = []
+
+        with sync_playwright() as playwright:
+
+            browser = playwright.firefox.launch(headless=False)
+            page = browser.new_page()
+
+            # Navigate to the webpage
+            page.goto(self.ft_main_url)
+
+            print("Accepting Cookies")
+            page.frame_locator('*[title="SP Consent Message"]').get_by_text(
+                "Accept Cookies"
+            ).click()
+
+            time.sleep(2)
+
+            page.goto(self.ft_login_url)
+
+            time.sleep(2)
+
+            print("Entering user name + hitting enter")
+
+            page.locator("#enter-email").fill(self.user_email)
+            page.keyboard.press("Enter")
+
+            time.sleep(5)
+
+            page.locator("#enter-password").fill(self.user_password)
+            page.keyboard.press("Enter")
+
+            time.sleep(5)
+
+            url_ctr = 1
+            for url in urls:
+                print(f"Getting content for URL {url_ctr} of {len(urls)}")
+
+                page.goto(url)
+                html_content = page.content()
+                text_content = _get_text_bs4(html_content)
+
+                html_content_array.append(html_content)
+                text_content_array.append(text_content)
+
+                print(url)
+
+                print(text_content)
+
+                url_ctr += 1
+
+                time.sleep(2)
+
+            # Close the browser
+            browser.close()
+
+        return urls, html_content_array, text_content_array

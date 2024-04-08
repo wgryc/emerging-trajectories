@@ -23,7 +23,7 @@ from datetime import datetime, timedelta
 from . import Client
 from .crawlers import crawlerPlaywright
 from .prompts import *
-from .news import NewsAPIAgent, RSSAgent
+from .news import NewsAPIAgent, RSSAgent, FinancialTimesAgent
 
 import chromadb
 import chromadb.utils.embedding_functions as embedding_functions
@@ -334,6 +334,32 @@ class FactRAGFileCache:
                 if not self.in_cache(url):
                     print("NEWS RESULT: " + url)
                     self.facts_from_url(url, topic)
+
+    # POC for FT
+    def get_ft_news(self, ft_user, ft_pass, topic) -> None:
+        """
+        Uses the Financial Times Agent to find new information and extract facts from it.
+
+        Args:
+            ft_user (str): The Financial Times username.
+            ft_pass (str): The Financial Times password.
+            topic (str): a brief description of the research you are undertaking.
+        """
+
+        fta = FinancialTimesAgent(ft_user, ft_pass)
+        urls, html_content, text_content = fta.get_news()
+
+        if len(urls) != len(text_content):
+            raise ValueError("URLs and text content are not the same length.")
+
+        for i in range(0, len(urls)):
+            url = urls[i]
+            content = text_content[i]
+
+            if not self.in_cache(url):
+                print("FT RESULT: " + url)
+                self.force_content(url, content)
+                self.facts_from_url(url, topic)
 
     # This builds facts based on all the google searches.
     def new_get_new_info_google(
