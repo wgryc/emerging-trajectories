@@ -239,7 +239,6 @@ class FactRAGFileCache:
         Args:
             url (str): Location of the content.
             topic (str): a brief description of the research you are undertaking.
-
         """
 
         content = self.get(url)

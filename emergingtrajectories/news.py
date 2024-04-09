@@ -1,8 +1,7 @@
 import requests
-
 import feedparser
-
 import time
+import random
 
 from .crawlers import crawlerPlaywright, _get_text_bs4
 
@@ -97,7 +96,10 @@ class FinancialTimesAgent:
     # The RSS feed URLs for the Financial Times.
     ft_rss_feed_urls = [
         "https://www.ft.com/rss/home",
-        "https://www.ft.com/rss/home/",
+        "https://www.ft.com/world?format=rss",
+        "https://www.ft.com/global-economy?format=rss",
+        "https://www.ft.com/companies?format=rss",
+        "https://www.ft.com/opinion?format=rss",
     ]
 
     ft_login_url = "https://ft.com/login"
@@ -122,10 +124,14 @@ class FinancialTimesAgent:
             A list of lists -- urls, html, and text content
         """
 
-        urls = []
+        urls = set()
         for rss_url in self.ft_rss_feed_urls:
             agent = RSSAgent(rss_url)
-            urls = urls + agent.get_news_as_list()
+            rss_url_list = agent.get_news_as_list()
+            for r in rss_url_list:
+                urls.add(r)
+
+        urls = list(urls)
 
         html_content_array = []
         text_content_array = []
@@ -165,20 +171,27 @@ class FinancialTimesAgent:
             for url in urls:
                 print(f"Getting content for URL {url_ctr} of {len(urls)}")
 
-                page.goto(url)
-                html_content = page.content()
-                text_content = _get_text_bs4(html_content)
+                html_content = ""
+                text_content = ""
+
+                try:
+                    page.goto(url)
+                    html_content = page.content()
+                    text_content = _get_text_bs4(html_content)
+
+                    print(url)
+                    print(text_content)
+
+                except:
+                    print(url)
+                    print(f"Error getting content for URL {url_ctr} of {len(urls)}")
 
                 html_content_array.append(html_content)
                 text_content_array.append(text_content)
 
-                print(url)
-
-                print(text_content)
-
                 url_ctr += 1
 
-                time.sleep(2)
+                time.sleep(2 + random.randint(0, 5))
 
             # Close the browser
             browser.close()
