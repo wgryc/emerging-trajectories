@@ -111,6 +111,39 @@ class ETClient(object):
         else:
             raise Exception(response.text)
 
+    def add_content_to_factbase(
+        self, fact_db_slug: str, url: str, content: str, topic: str
+    ) -> bool:
+        """
+        Sends content to the Emerging Trajectories website and extract facts from it.
+
+        Args:
+            fact_db_slug: the slug of the fact database to add the content to.
+            url: the URL of the content. Note: we do not actually crawl this, we assume the content passed is the right conent.
+            content: the content to extract facts from.
+            topic: the topic of the content.
+
+        Returns:
+            bool: True if successful, False otherwise.
+        """
+
+        url = self + "add_content_to_factbase/" + fact_db_slug
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        j = {
+            "content": content,
+            "url": url,
+            "topic": topic,
+        }
+        response = requests.post(url, headers=headers, json=j)
+
+        if response.status_code == 200 or response.status_code == 201:
+            return True
+        print(response)
+        return False
+
 
 # TODO Move to Utils.py, or elsewhere.
 def clean_citations(assistant_analysis: str, ctr_to_source: dict) -> str:
