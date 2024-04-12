@@ -664,6 +664,66 @@ class FactBot:
         else:
             raise ValueError(f"Fact ID {fact_id} not found in the knowledge database.")
 
+    def clean_and_source_to_html(
+        self, text_to_clean: str, start_count: int = 0
+    ) -> list:
+        """
+        Returns a formatted response with sourced HTML. This is used for emergingtrajectories.com and acts as a base for anyone else wanting to build similar features.
+
+        Args:
+            text_to_clean: The text to clean/cite/source.
+            start_count: The starting count for the sources.
+
+        Returns:
+            list: two strings -- the actual response in the first case, and the sources in the second case, and an integer representing the new source count.
+        """
+
+        pattern = r"\[f[\d\s\,f]+\]"
+        new_text = ""
+        sources_text = ""
+        ref_ctr = start_count
+        last_index = 0
+
+        for match in re.finditer(pattern, text_to_clean):
+
+            if match.group(0).find(",") == -1:
+                ref_ctr += 1
+                ref = match.group(0)[1:-1].strip()
+
+                new_text += text_to_clean[last_index : match.start()]
+                new_text += f"""<a class='source_link' target='_blank' href='{self.source(ref)}'>{ref_ctr}</a>"""
+
+                # Save the source
+                fact_text = self.knowledge_db.facts[ref]["content"]
+                new_source_text = f"""<span class='fact_span'><b>{ref_ctr}:</b> {fact_text} <a href='self.source(ref)' target='_blank'>View Source</a></span>"""
+                sources_text += new_source_text + "\n"
+
+                last_index = match.end()
+            else:
+                refs = match.group(0)[1:-1].split(",")
+                ref_arr = []
+                ref_str = ""
+                for ref in refs:
+                    ref = ref.strip()
+                    ref_ctr += 1
+                    ref_arr.append(str(ref_ctr))
+
+                    # Add the source to the text
+                    new_text_source_num = f"""<a class='source_link' target='_blank' href='{self.source(ref)}'>{ref_ctr}</a>"""
+                    ref_str += " " + new_text_source_num
+
+                    # Save the source
+                    fact_text = self.knowledge_db.facts[ref]["content"]
+                    new_source_text = f"""<span class='fact_span'><b>{ref_ctr}:</b> ${fact_text} <a href='self.source(ref)' target='_blank'>View Source</a></span>"""
+                    sources_text += new_source_text + "\n"
+
+                new_text += text_to_clean[last_index : match.start()] + ref_str
+                last_index = match.end()
+
+        new_text += text_to_clean[last_index:]
+
+        return new_text, sources_text, ref_ctr
+
 
 def clean_fact_citations(knowledge_db: FactRAGFileCache, text_to_clean: str) -> str:
     """
