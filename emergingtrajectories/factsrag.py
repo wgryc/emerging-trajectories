@@ -514,14 +514,22 @@ class FactRAGFileCache:
                 unaccessed.append(uri)
         return unaccessed
 
-    def force_content(self, uri: str, content: str) -> None:
+    def force_content(self, uri: str, content: str, check_exists: bool = True) -> bool:
         """
         Forces a specific URI to have specific content (both HTML and text content). Used to fill old links that we don't actually want to crawl.
 
         Args:
             uri (str): The URI to force content for.
             content (str): The content to force.
+            check_exists (bool): checks if content has already been included in the cache before forcing the new content.
+
+        Returns:
+            bool: True if the content was forced, False otherwise.
         """
+
+        # If the content already exists and we avoid overwrites, then we don't want to overwrite it.
+        if check_exists and self.in_cache(uri):
+            return False
 
         uri_md5 = uri_to_local(uri)
         with open(os.path.join(self.root_original, uri_md5), "w") as f:
@@ -531,6 +539,8 @@ class FactRAGFileCache:
 
         self.update_cache(uri, datetime.now(), datetime.now())
         self.log_access(uri)
+
+        return True
 
     def get(self, uri: str) -> str:
         """
@@ -684,7 +694,7 @@ class FactBot:
         ref_ctr = start_count
         last_index = 0
 
-        for match in re.finditer(pattern, text_to_clean):
+        for match in re.finditer(pattern, text_to_clean, flags=re.IGNORECASE):
 
             if match.group(0).find(",") == -1:
                 ref_ctr += 1

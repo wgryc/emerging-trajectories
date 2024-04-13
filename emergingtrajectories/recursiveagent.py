@@ -127,7 +127,7 @@ class ETClient(object):
             bool: True if successful, False otherwise.
         """
 
-        url = self + "add_content_to_factbase/" + fact_db_slug
+        url = self.base_url + "add_content_to_factbase/" + fact_db_slug
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
