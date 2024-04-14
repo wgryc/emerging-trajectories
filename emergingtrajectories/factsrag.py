@@ -671,8 +671,13 @@ class FactBot:
         """
         if fact_id in self.knowledge_db.facts:
             return self.knowledge_db.facts[fact_id]["source"]
-        else:
-            raise ValueError(f"Fact ID {fact_id} not found in the knowledge database.")
+
+        if fact_id.lower() in self.knowledge_db.facts:
+            return self.knowledge_db.facts[fact_id.lower()]["source"]
+
+        raise ValueError(
+            f"Fact ID " + str(fact_id) + " not found in the knowledge database."
+        )
 
     def clean_and_source_to_html(
         self, text_to_clean: str, start_count: int = 0
@@ -705,7 +710,7 @@ class FactBot:
 
                 # Save the source
                 fact_text = self.knowledge_db.facts[ref]["content"]
-                new_source_text = f"""<span class='fact_span'><b>{ref_ctr}:</b> {fact_text} <a href='self.source(ref)' target='_blank'>View Source</a></span>"""
+                new_source_text = f"""<span class='fact_span'><b>{ref_ctr}:</b> {fact_text} <a href='{self.source(ref)}' target='_blank'>View Source</a></span>"""
                 sources_text += new_source_text + "\n"
 
                 last_index = match.end()
@@ -724,7 +729,7 @@ class FactBot:
 
                     # Save the source
                     fact_text = self.knowledge_db.facts[ref]["content"]
-                    new_source_text = f"""<span class='fact_span'><b>{ref_ctr}:</b> ${fact_text} <a href='self.source(ref)' target='_blank'>View Source</a></span>"""
+                    new_source_text = f"""<span class='fact_span'><b>{ref_ctr}:</b> ${fact_text} <a href='{self.source(ref)}' target='_blank'>View Source</a></span>"""
                     sources_text += new_source_text + "\n"
 
                 new_text += text_to_clean[last_index : match.start()] + ref_str
