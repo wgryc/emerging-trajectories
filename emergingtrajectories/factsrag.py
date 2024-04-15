@@ -263,6 +263,8 @@ class FactRAGFileCache:
             "cid": f"f{fact_id_start}",
         }
 
+        self.save_facts_and_sources()
+
         return True
 
     def facts_from_url(self, url: str, topic: str) -> None:

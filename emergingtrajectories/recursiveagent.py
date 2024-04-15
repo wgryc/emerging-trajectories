@@ -123,7 +123,7 @@ class ETClient(object):
         Reutnr:
             bool: True if successful, False otherwise.
         """
-        url = self.base_url + "add_fact/" + fact_db_slug
+        api_url = self.base_url + "add_fact/" + fact_db_slug
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
@@ -132,7 +132,7 @@ class ETClient(object):
             "fact": fact,
             "url": url,
         }
-        response = requests.post(url, headers=headers, json=j)
+        response = requests.post(api_url, headers=headers, json=j)
 
         if response.status_code == 200 or response.status_code == 201:
             return True
@@ -155,7 +155,7 @@ class ETClient(object):
             bool: True if successful, False otherwise.
         """
 
-        url = self.base_url + "add_content_to_factbase/" + fact_db_slug
+        api_url = self.base_url + "add_content_to_factbase/" + fact_db_slug
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
@@ -165,7 +165,7 @@ class ETClient(object):
             "url": url,
             "topic": topic,
         }
-        response = requests.post(url, headers=headers, json=j)
+        response = requests.post(api_url, headers=headers, json=j)
 
         if response.status_code == 200 or response.status_code == 201:
             return True
