@@ -232,6 +232,39 @@ class FactRAGFileCache:
         with open(self.sources_file, "w") as f:
             json.dump(self.sources, f, indent=4, cls=DjangoJSONEncoder)
 
+    def add_fact(self, fact: str, url: str) -> bool:
+        """
+        Adds a fact to the knowledge base.
+
+        Args:
+            fact (str): The fact to add.
+            url (str): The URL source of the fact.
+
+        Returns:
+            bool: True if the fact was added, False otherwise.
+        """
+
+        fact_id_start = self.facts_rag_collection.count() + 1
+
+        added_now = datetime.now()
+        added_now_timestamp = added_now.timestamp()
+
+        self.facts_rag_collection.add(
+            documents=[fact],
+            ids=[f"f{fact_id_start}"],
+            metadatas=[{"added_on_timestamp": added_now_timestamp}],
+        )
+
+        self.facts[f"f{fact_id_start}"] = {
+            "added": added_now,
+            "added_timestamp": added_now_timestamp,
+            "source": url,
+            "content": fact,
+            "cid": f"f{fact_id_start}",
+        }
+
+        return True
+
     def facts_from_url(self, url: str, topic: str) -> None:
         """
         Given a URL, extract facts from it and save them to ChromaDB and the facts dictionary. Also returns the facts in an array, in case one wants to analyze new facts.
@@ -259,30 +292,10 @@ class FactRAGFileCache:
 
         lines = response.split("\n")
 
-        fact_id_start = self.facts_rag_collection.count() + 1
-
         for line in lines:
             if line[0:4] == "--- ":
-
-                added_now = datetime.now()
-                added_now_timestamp = added_now.timestamp()
-
                 fact = line[4:]
-                self.facts_rag_collection.add(
-                    documents=[fact],
-                    ids=[f"f{fact_id_start}"],
-                    metadatas=[{"added_on_timestamp": added_now_timestamp}],
-                )
-
-                self.facts[f"f{fact_id_start}"] = {
-                    "added": added_now,
-                    "added_timestamp": added_now_timestamp,
-                    "source": url,
-                    "content": fact,
-                    "cid": f"f{fact_id_start}",
-                }
-
-                fact_id_start += 1
+                self.add_fact(fact, url)
 
         self.save_facts_and_sources()
 
@@ -704,6 +717,7 @@ class FactBot:
             if match.group(0).find(",") == -1:
                 ref_ctr += 1
                 ref = match.group(0)[1:-1].strip()
+                ref = ref.lower()
 
                 new_text += text_to_clean[last_index : match.start()]
                 new_text += f"""<a class='source_link' target='_blank' href='{self.source(ref)}'>{ref_ctr}</a>"""
@@ -720,6 +734,7 @@ class FactBot:
                 ref_str = ""
                 for ref in refs:
                     ref = ref.strip()
+                    ref = ref.lower()
                     ref_ctr += 1
                     ref_arr.append(str(ref_ctr))
 
