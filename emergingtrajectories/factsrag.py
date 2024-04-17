@@ -152,6 +152,43 @@ class FactRAGFileCache:
         # TODO Eventually, move this to a database or table or something.
         self.sources = self.load_sources()
 
+    def query_to_fact_list(
+        self, query: str, n_results: int = 10, since_date: datetime = None
+    ) -> dict:
+        """
+        Takes a query and finds the closest semantic matches to the query in the knowledge base.
+
+        Args:
+            query (str): The query to search for.
+            n_results (int, optional): The number of results to return. Defaults to 10.
+            since_date (datetime, optional): The date to search from. Defaults to None, in which case all dates are searched.
+
+        Returns:
+            dict: A list of the facts found, with the key being the fact ID and each fact having its source, add date, and content info.
+        """
+
+        r = []
+        if since_date is None:
+            r = self.facts_rag_collection.query(
+                query_texts=[query], n_results=n_results
+            )
+        else:
+            r = self.facts_rag_collection.query(
+                query_texts=[query],
+                n_results=n_results,
+                where={"added_on_timestamp": {"$gt": since_date.timestamp()}},
+            )
+
+        facts = {}
+        for item in r["ids"][0]:
+            facts[item] = {
+                "content": self.facts[item]["content"],
+                "source": self.facts[item]["source"],
+                "added": self.facts[item]["added"],
+            }
+
+        return facts
+
     def query_to_fact_content(
         self, query: str, n_results: int = 10, since_date=None, skip_separator=False
     ) -> str:
@@ -169,27 +206,17 @@ class FactRAGFileCache:
 
         """
 
-        r = []
-        if since_date is None:
-            r = self.facts_rag_collection.query(
-                query_texts=[query], n_results=n_results
-            )
-        else:
-            r = self.facts_rag_collection.query(
-                query_texts=[query],
-                n_results=n_results,
-                where={"added_on_timestamp": {"$gt": since_date.timestamp()}},
-            )
+        facts = self.query_to_fact_list(query, n_results, since_date)
 
-        if len(r) == 0:
+        if len(facts) == 0:
             return ""
 
         fact_content = ""
         if not skip_separator:
             fact_content = """--- START FACTS ---------------------------\n"""
 
-        for item in r["ids"][0]:
-            fact_content += item + ": " + self.facts[item]["content"] + "\n"
+        for key, fact in facts.items():
+            fact_content += key + ": " + fact["content"] + "\n"
 
         if not skip_separator:
             fact_content += """--- END FACTS ---------------------------\n"""

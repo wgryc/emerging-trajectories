@@ -111,6 +111,37 @@ class ETClient(object):
         else:
             raise Exception(response.text)
 
+    def add_facts_to_factbase(
+        self, fact_db_slug: str, url: str, facts: list[str]
+    ) -> bool:
+        """
+        Adds a list of facts to a factbase on the Emerging Trajectories website.
+
+        Args:
+            fact_db_slug: the slug of the fact database to add the fact to.
+            url: the URL of the fact.
+            facts: the facts to add (a list of strings).
+
+        Reutnr:
+            bool: True if successful, False otherwise.
+        """
+
+        api_url = self.base_url + "add_facts/" + fact_db_slug
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        j = {
+            "facts": facts,
+            "url": url,
+        }
+        response = requests.post(api_url, headers=headers, json=j)
+
+        if response.status_code == 200 or response.status_code == 201:
+            return True
+        print(response)
+        return False
+
     def add_fact_to_factbase(self, fact_db_slug: str, url: str, fact: str) -> bool:
         """
         Adds a fact to a factbase on the Emerging Trajectories website.

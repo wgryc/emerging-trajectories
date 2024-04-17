@@ -6,3 +6,4 @@ pytest-playwright
 beautifulsoup4
 chromadb
 feedparser
+pypdf
