@@ -344,7 +344,10 @@ class FactRAGFileCache:
         for url in urls:
             if not self.in_cache(url):
                 print("RSS RESULT: " + url)
-                self.facts_from_url(url, topic)
+                try:
+                    self.facts_from_url(url, topic)
+                except:
+                    print("Error; failed to get content from " + url)
 
     # This builds facts based on news articles.
     def new_get_new_info_news(

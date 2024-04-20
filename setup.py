@@ -12,14 +12,16 @@ setup(
     license="MIT",
     packages=find_packages(),
     install_requires=[
-        "phasellm>=0.0.21", 
-        "Django>=5.0.0", 
-        "python-dotenv>=1.0.0", 
+        "phasellm>=0.0.21",
+        "Django>=5.0.0",
+        "python-dotenv>=1.0.0",
         "dateparser>=1.2.0",
         "pytest-playwright",
         "beautifulsoup4",
-        "chromadb"
-        ],
+        "chromadb",
+        "feedparser",
+        "pypdf",
+    ],
     extras_require={
         "docs": [
             "furo",

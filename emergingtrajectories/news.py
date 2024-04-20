@@ -116,22 +116,25 @@ class FinancialTimesAgent:
         self.user_email = user_email
         self.user_password = user_password
 
-    def get_news(self):
+    def get_news(self, urls: list[str] = None) -> list:
         """
         Get the news from the Financial Times as a list of tuples, where each tuple contains the URL and the extracted text content.
+
+        Args:
+            urls: a list of URLs to get content for.
 
         Returns:
             A list of lists -- urls, html, and text content
         """
 
-        urls = set()
-        for rss_url in self.ft_rss_feed_urls:
-            agent = RSSAgent(rss_url)
-            rss_url_list = agent.get_news_as_list()
-            for r in rss_url_list:
-                urls.add(r)
-
-        urls = list(urls)
+        if urls is None:
+            urls = set()
+            for rss_url in self.ft_rss_feed_urls:
+                agent = RSSAgent(rss_url)
+                rss_url_list = agent.get_news_as_list()
+                for r in rss_url_list:
+                    urls.add(r)
+            urls = list(urls)
 
         html_content_array = []
         text_content_array = []

@@ -7,6 +7,42 @@ import requests
 import io
 
 
+def get_PDF_content_from_file_by_page(file_path: str) -> list:
+    """
+    Loads a PDF file and extracts the text into a list of strings, one for each page.
+
+    Args:
+        file_path (str): The path to the PDF file.
+
+    Returns:
+        list: A list of strings, one for each page.
+    """
+    reader = PdfReader(file_path)
+    content = []
+    for page in reader.pages:
+        content.append(page.extract_text())
+    return content
+
+
+def get_PDF_content_from_url_by_page(url: str) -> list:
+    """
+    Loads a PDF file from a URL and extracts the text into a list of strings, one for each page.
+
+    Args:
+        url (str): The URL to the PDF file.
+
+    Returns:
+        list: A list of strings, one for each page.
+    """
+    response = requests.get(url=url, timeout=120)
+    pdf_file = io.BytesIO(response.content)
+    reader = PdfReader(pdf_file)
+    content = []
+    for page in reader.pages:
+        content.append(page.extract_text())
+    return content
+
+
 def get_PDF_content_by_page_from_file(file_path: str) -> str:
     """
     Loads a PDF file and extracts the text into one big string.
