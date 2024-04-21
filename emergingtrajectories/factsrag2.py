@@ -138,6 +138,34 @@ class FactRAGFileCache:
         # Set up / load cache
         self.cache = self.load_cache()
 
+    def get_facts_as_dict(self, n_results=-1) -> list:
+        """
+        Get all facts as a list.
+
+        Args:
+            n_results (int, optional): The number of results to return. Defaults to -1, in which case all results are returned.
+
+        Returns:
+            list: A list of fact dictionaries containing content, source, and added (the date string for when the fact was added).
+        """
+
+        all_facts_raw = self.facts_rag_collection.peek(n_results)
+
+        facts = {}
+        for i in range(0, len(all_facts_raw["documents"])):
+            fact_id = all_facts_raw["ids"][i]
+            fact_content = all_facts_raw["documents"][i]
+            fact_source = all_facts_raw["metadatas"][i]["source"]
+            fact_datetime = all_facts_raw["metadatas"][i]["datetime_string"]
+
+            facts[fact_id] = {
+                "content": fact_content,
+                "source": fact_source,
+                "added": fact_datetime,
+            }
+
+        return facts
+
     def get_facts_as_list(self) -> list:
         """
         Get all facts as a list.
