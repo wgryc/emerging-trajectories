@@ -99,8 +99,6 @@ class FactRAGFileCache:
         folder_path: str,
         openai_api_key: str,
         cache_file: str = "cache.json",
-        sources_file: str = "sources.json",
-        facts_file: str = "facts.json",
         rag_db_folder="cdb",
         crawler=None,
     ) -> None:
@@ -140,6 +138,36 @@ class FactRAGFileCache:
         # Set up / load cache
         self.cache = self.load_cache()
 
+    def get_facts_as_list(self) -> list:
+        """
+        Get all facts as a list.
+
+        Args:
+            None
+
+        Returns:
+            list: A list of facts (as strings).
+        """
+
+        all_facts_raw = self.facts_rag_collection.peek(
+            self.facts_rag_collection.count()
+        )
+
+        facts = []
+        for d in all_facts_raw["documents"]:
+            facts.append(d)
+
+        return facts
+
+    def count_facts(self) -> int:
+        """
+        Returns the number of facts in the knowledge database.
+
+        Returns:
+            int: The number of facts in the knowledge database.
+        """
+        return self.facts_rag_collection.count()
+
     def query_to_fact_list(
         self, query: str, n_results: int = 10, since_date: datetime = None
     ) -> dict:
@@ -168,11 +196,19 @@ class FactRAGFileCache:
             )
 
         facts = {}
-        for item in r["ids"][0]:
-            facts[item] = {
-                "content": self.facts[item]["content"],
-                "source": self.facts[item]["source"],
-                "added": self.facts[item]["added"],
+
+        print(r["metadatas"][0])
+
+        for i in range(0, len(r["ids"][0])):
+            fact_id = r["ids"][0][i]
+            fact_content = r["documents"][0][i]
+            fact_source = r["metadatas"][0][i]["source"]
+            fact_datetime = r["metadatas"][0][i]["datetime_string"]
+
+            facts[fact_id] = {
+                "content": fact_content,
+                "source": fact_source,
+                "added": fact_datetime,
             }
 
         return facts
@@ -324,10 +360,9 @@ class FactRAGFileCache:
                 {
                     "added_on_timestamp": added_now_timestamp,
                     "datetime_string": added_now_string,
+                    "source": sources[i],
                 }
             )
-
-        metadatas = []
 
         self.facts_rag_collection.add(
             documents=facts, ids=fact_ids, metadatas=metadatas
