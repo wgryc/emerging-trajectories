@@ -150,7 +150,9 @@ class FactRAGFileCache:
         """
 
         if n_results == -1:
-            all_facts_raw = self.facts_rag_collection.peek()
+            all_facts_raw = self.facts_rag_collection.peek(
+                limit=self.facts_rag_collection.count()
+            )
         else:
             all_facts_raw = self.facts_rag_collection.peek(n_results)
 
