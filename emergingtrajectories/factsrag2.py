@@ -149,7 +149,10 @@ class FactRAGFileCache:
             list: A list of fact dictionaries containing content, source, and added (the date string for when the fact was added).
         """
 
-        all_facts_raw = self.facts_rag_collection.peek(n_results)
+        if n_results == -1:
+            all_facts_raw = self.facts_rag_collection.peek(n_results)
+        else:
+            all_facts_raw = self.facts_rag_collection.peek()
 
         facts = {}
         for i in range(0, len(all_facts_raw["documents"])):
