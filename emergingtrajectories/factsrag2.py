@@ -138,7 +138,7 @@ class FactRAGFileCache:
         # Set up / load cache
         self.cache = self.load_cache()
 
-    def get_facts_as_dict(self, n_results=-1) -> list:
+    def get_facts_as_dict(self, n_results=-1, min_date: datetime = None) -> list:
         """
         Get all facts as a list.
 
@@ -150,9 +150,9 @@ class FactRAGFileCache:
         """
 
         if n_results == -1:
-            all_facts_raw = self.facts_rag_collection.peek(n_results)
-        else:
             all_facts_raw = self.facts_rag_collection.peek()
+        else:
+            all_facts_raw = self.facts_rag_collection.peek(n_results)
 
         facts = {}
         for i in range(0, len(all_facts_raw["documents"])):
@@ -160,12 +160,23 @@ class FactRAGFileCache:
             fact_content = all_facts_raw["documents"][i]
             fact_source = all_facts_raw["metadatas"][i]["source"]
             fact_datetime = all_facts_raw["metadatas"][i]["datetime_string"]
+            fact_timestamp = all_facts_raw["metadatas"][i]["added_on_timestamp"]
 
-            facts[fact_id] = {
-                "content": fact_content,
-                "source": fact_source,
-                "added": fact_datetime,
-            }
+            add_fact = False
+            if min_date is None:
+                add_fact = True
+            else:
+                if min_date.timestamp() <= fact_timestamp:
+                    add_fact = True
+
+            if add_fact:
+
+                facts[fact_id] = {
+                    "content": fact_content,
+                    "source": fact_source,
+                    "added": fact_datetime,
+                    "added_on_timestamp": fact_timestamp,
+                }
 
         return facts
 
@@ -199,6 +210,33 @@ class FactRAGFileCache:
         """
         return self.facts_rag_collection.count()
 
+    def get_fact_details(self, fact_id: str) -> dict:
+        """
+        Returns similar structure as query_to_fact_list() but for a specific fact ID. Returns NONE otherwise.
+
+        Args:
+            fact_id (str): The fact ID to get.
+
+        Returns:
+            dict: A dictionary with the content, source, added date, and added timestamp.
+        """
+
+        results = self.facts_rag_collection.get(fact_id)
+        if len(results["ids"]) == 0:
+            return None
+
+        fact_content = results["documents"][0]
+        fact_source = results["metadatas"][0]["source"]
+        fact_datetime = results["metadatas"][0]["datetime_string"]
+        fact_timestamp = results["metadatas"][0]["added_on_timestamp"]
+
+        return {
+            "content": fact_content,
+            "source": fact_source,
+            "added": fact_datetime,
+            "added_on_timestamp": fact_timestamp,
+        }
+
     def query_to_fact_list(
         self, query: str, n_results: int = 10, since_date: datetime = None
     ) -> dict:
@@ -215,6 +253,10 @@ class FactRAGFileCache:
         """
 
         r = []
+
+        if n_results == -1:
+            n_results = self.count_facts()
+
         if since_date is None:
             r = self.facts_rag_collection.query(
                 query_texts=[query], n_results=n_results
@@ -235,11 +277,13 @@ class FactRAGFileCache:
             fact_content = r["documents"][0][i]
             fact_source = r["metadatas"][0][i]["source"]
             fact_datetime = r["metadatas"][0][i]["datetime_string"]
+            fact_timestamp = (r["metadatas"][0][i]["added_on_timestamp"],)
 
             facts[fact_id] = {
                 "content": fact_content,
                 "source": fact_source,
                 "added": fact_datetime,
+                "added_on_timestamp": fact_timestamp,
             }
 
         return facts
@@ -295,9 +339,18 @@ class FactRAGFileCache:
         if not skip_separator:
             fact_content = """--- START FACTS ---------------------------\n"""
 
-        min_date_timestamp = (datetime.now() - timedelta(days=days)).timestamp()
-        for key, fact in self.facts.items():
-            if fact["added_timestamp"] > min_date_timestamp:
+        # min_date_timestamp = (datetime.now() - timedelta(days=days)).timestamp()
+        # applicable_facts = self.query_to_fact_list("", -1, min_date_timestamp)
+
+        min_date = datetime.now() - timedelta(days=days)
+        min_date_timestamp = min_date.timestamp()
+
+        # This "" approach doesn't work because OpenAI errors out.
+        # applicable_facts = self.query_to_fact_list("", -1, min_date)
+        applicable_facts = self.get_facts_as_dict(-1, min_date)
+
+        for key, fact in applicable_facts.items():
+            if fact["added_on_timestamp"] > min_date_timestamp:
                 fact_content += key + ": " + fact["content"] + "\n"
 
         if not skip_separator:
