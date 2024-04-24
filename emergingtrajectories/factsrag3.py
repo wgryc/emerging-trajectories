@@ -32,6 +32,7 @@ from . import Client
 from .crawlers import crawlerPlaywright
 from .prompts import *
 from .news import NewsAPIAgent, RSSAgent, FinancialTimesAgent
+from .chunkers import *
 
 # Number of search results to return from web searche (default value).
 _DEFAULT_NUM_SEARCH_RESULTS = 10
@@ -69,16 +70,6 @@ For example, if you are referring to a fact that came under --- SOURCE: 3 ---, y
 
 DO NOT PROVIDE A FORECAST, BUT SIMPLY STATE AND SHARE THE FACTS AND INSIGHTS YOU HAVE GATHERED.
 """
-
-fact_system_prompt = """You are a researcher helping extract facts about {topic}, trends, and related observations. We will give you a piece of content scraped on the web. Please extract facts from this. Each fact should stand on its own, and can be several sentences long if need be. You can have as many facts as needed. For each fact, please start it as a new line with "---" as the bullet point. For example:
-
---- Fact 1... This is the fact.
---- Here is a second fact.
---- And a third fact.
-
-Please do not include new lines between bullet points. Make sure you write your facts in ENGLISH. Translate any foreign language content/facts/observations into ENGLISH.
-
-We will simply provide you with content and you will just provide facts."""
 
 
 def uri_to_local(uri: str) -> str:
@@ -344,6 +335,7 @@ class FactRAGFileCache:
         cache_file: str = "cache.json",
         rag_db_file="vector_db.pickle",
         crawler=None,
+        chunker=None,
     ) -> None:
         """
         This is a RAG-based fact database. We build a database of facts available in JSON and via RAG and use this as a basic search engine for information. We use our own DB to index all facts, but also maintain a list of facts, sources, etc. in a JSON file. Finally, we keep a cache of all content and assume URLs do not get updated; we'll change this process in the future.
@@ -354,6 +346,7 @@ class FactRAGFileCache:
             cache_file (str, optional): The name of the cache file. Defaults to "cache.json".
             rag_db_folder (str, optional): The folder where the database will be stored. Defaults to "cdb".
             crawler (optional): The crawler to use. Defaults to None, in which case a Playwright crawler will be used.
+            chunker (optional): The sort of chunker to use. Defaults to None, in which case a GPT-4 chunker will be used.
         """
         self.root_path = folder_path
         self.root_parsed = os.path.join(folder_path, "parsed")
@@ -361,6 +354,11 @@ class FactRAGFileCache:
         self.cache_file = os.path.join(folder_path, cache_file)
         self.rag_db_file = os.path.join(folder_path, rag_db_file)
         self.openai_api_key = openai_api_key
+
+        if chunker is None:
+            self.chunker = ChunkerGPT4(openai_api_key)
+        else:
+            self.chunker = chunker
 
         # Use the same default crawler for all other agents.
         # TODO Eventually we'll want to have an array agents we use to get content.
@@ -691,32 +689,12 @@ class FactRAGFileCache:
 
         content = self.get(url)
 
-        llm = OpenAIGPTWrapper(self.openai_api_key, model="gpt-4-turbo-preview")
-        chatbot = ChatBot(llm)
-        chatbot.messages = [{"role": "system", "content": fact_system_prompt}]
-
-        prompt_template = ChatPrompt(
-            [
-                {"role": "system", "content": fact_system_prompt},
-            ]
-        )
-
-        chatbot.messages = prompt_template.fill(topic=topic)
-
-        response = chatbot.chat(content)
-
-        lines = response.split("\n")
-
-        facts = []
+        facts = self.chunker.chunk(content, topic)
         sources = []
+        for f in facts:
+            sources.append(url)
 
-        for line in lines:
-            if line[0:4] == "--- ":
-                fact = line[4:]
-                facts.append(fact)
-                sources.append(url)
-
-        if len(facts):
+        if len(facts) > 0:
             return self.add_facts(facts, sources)
         return False
 
@@ -736,10 +714,10 @@ class FactRAGFileCache:
         for url in urls:
             if not self.in_cache(url):
                 print("RSS RESULT: " + url)
-                try:
-                    self.facts_from_url(url, topic)
-                except:
-                    print("Error; failed to get content from " + url)
+                # try:
+                self.facts_from_url(url, topic)
+                # except:
+                #    print("Error; failed to get content from " + url)
 
     # This builds facts based on news articles.
     def new_get_new_info_news(
