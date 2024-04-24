@@ -203,11 +203,7 @@ class VectorDBDict:
 
             new_modifier = min(self.MAX_BATCH_SIZE, len(texts) - last_index)
 
-            print(f"NEW MOD: {new_modifier}")
-
             text_subset = texts[last_index : (last_index + new_modifier)]
-
-            print(f"LEN OF SUBSET: {len(text_subset)}")
 
             response = self.openai_client.embeddings.create(
                 input=text_subset, model="text-embedding-3-small"
@@ -281,10 +277,11 @@ class VectorDBDict:
         Returns:
             dict: The text and metadata for the index.
         """
-        return {
-            "text": self.db["original_texts"][index],
-            "metadata": self.db["metadata"][index],
-        }
+
+        text = self.db["original_texts"][index]
+        metadata = self.db["metadata"][index]
+
+        return text, metadata
 
     def query(self, text: str, n: int = 10) -> list:
         """
@@ -308,7 +305,7 @@ class VectorDBDict:
         return list(I[0])
 
     def query_min_date(
-        self, text: str, min_date: datetime, n: int = 10, date_field: str = "date"
+        self, text: str, min_date: datetime, n: int = 10, date_field: str = "datetime"
     ) -> list:
         """
         Returns the closest vector IDs to a specific query/text, with a minimum date filter.
@@ -349,13 +346,13 @@ class FactRAGFileCache:
         crawler=None,
     ) -> None:
         """
-        This is a RAG-based fact database. We build a database of facts available in JSON and via RAG and use this as a basic search engine for information. We use ChromaDB to index all facts, but also maintain a list of facts, sources, etc. in a JSON file. Finally, we keep a cache of all content and assume URLs do not get updated; we'll change this process in the future.
+        This is a RAG-based fact database. We build a database of facts available in JSON and via RAG and use this as a basic search engine for information. We use our own DB to index all facts, but also maintain a list of facts, sources, etc. in a JSON file. Finally, we keep a cache of all content and assume URLs do not get updated; we'll change this process in the future.
 
         Args:
             folder_path (str): The folder where everything will be stored.
             openai_api_key (str): The OpenAI API key. Used for RAG embeddings.
             cache_file (str, optional): The name of the cache file. Defaults to "cache.json".
-            rag_db_folder (str, optional): The folder where the ChromaDB database will be stored. Defaults to "cdb".
+            rag_db_folder (str, optional): The folder where the database will be stored. Defaults to "cdb".
             crawler (optional): The crawler to use. Defaults to None, in which case a Playwright crawler will be used.
         """
         self.root_path = folder_path
@@ -375,6 +372,7 @@ class FactRAGFileCache:
         # Set up / load cache
         self.cache = self.load_cache()
 
+        # Vector DB.
         self.vector_db = VectorDBDict(self.rag_db_file, self.openai_api_key)
 
     def get_facts_as_dict(self, n_results=-1, min_date: datetime = None) -> list:
@@ -388,34 +386,32 @@ class FactRAGFileCache:
             list: A list of fact dictionaries containing content, source, and added (the date string for when the fact was added).
         """
 
-        if n_results == -1:
-            all_facts_raw = self.facts_rag_collection.peek(
-                limit=self.facts_rag_collection.count()
-            )
-        else:
-            all_facts_raw = self.facts_rag_collection.peek(n_results)
+        all_facts_raw = self.vector_db.db["original_texts"]
+        all_metadata_raw = self.vector_db.db["metadata"]
 
         facts = {}
-        for i in range(0, len(all_facts_raw["documents"])):
-            fact_id = all_facts_raw["ids"][i]
-            fact_content = all_facts_raw["documents"][i]
-            fact_source = all_facts_raw["metadatas"][i]["source"]
-            fact_datetime = all_facts_raw["metadatas"][i]["datetime_string"]
-            fact_timestamp = all_facts_raw["metadatas"][i]["added_on_timestamp"]
+        for i in range(0, len(all_facts_raw)):
+            fact_id = f"f{i}"
+            fact_content = all_facts_raw[i]
+            fact_source = all_metadata_raw[i]["source"]
+            fact_datetime_string = all_metadata_raw[i]["datetime"].strftime(
+                "%Y-%m-%d %H:%M:%S"
+            )
+            fact_timestamp = all_metadata_raw[i]["added_on_timestamp"]
+            fact_datetime = all_metadata_raw[i]["datetime"]
 
             add_fact = False
             if min_date is None:
                 add_fact = True
             else:
-                if min_date.timestamp() <= fact_timestamp:
+                if min_date <= fact_datetime:
                     add_fact = True
 
             if add_fact:
-
                 facts[fact_id] = {
                     "content": fact_content,
                     "source": fact_source,
-                    "added": fact_datetime,
+                    "added": fact_datetime_string,
                     "added_on_timestamp": fact_timestamp,
                 }
 
@@ -432,15 +428,7 @@ class FactRAGFileCache:
             list: A list of facts (as strings).
         """
 
-        all_facts_raw = self.facts_rag_collection.peek(
-            self.facts_rag_collection.count()
-        )
-
-        facts = []
-        for d in all_facts_raw["documents"]:
-            facts.append(d)
-
-        return facts
+        return self.vector_db.db["original_texts"].copy()
 
     def count_facts(self) -> int:
         """
@@ -449,7 +437,7 @@ class FactRAGFileCache:
         Returns:
             int: The number of facts in the knowledge database.
         """
-        return self.facts_rag_collection.count()
+        return self.vector_db.count()
 
     def get_fact_details(self, fact_id: str) -> dict:
         """
@@ -462,14 +450,18 @@ class FactRAGFileCache:
             dict: A dictionary with the content, source, added date, and added timestamp.
         """
 
-        results = self.facts_rag_collection.get(fact_id)
-        if len(results["ids"]) == 0:
-            return None
+        f_str = fact_id.lower()
+        if f_str[0] == "f":
+            f_id_as_int = int(f_str[1:])
+        else:
+            f_id_as_int = int(f_str)
 
-        fact_content = results["documents"][0]
-        fact_source = results["metadatas"][0]["source"]
-        fact_datetime = results["metadatas"][0]["datetime_string"]
-        fact_timestamp = results["metadatas"][0]["added_on_timestamp"]
+        text, metadata = self.vector_db.get(f_id_as_int)
+
+        fact_content = text
+        fact_source = metadata["source"]
+        fact_datetime = metadata["datetime"].strftime("%Y-%m-%d %H:%M:%S")
+        fact_timestamp = metadata["added_on_timestamp"]
 
         return {
             "content": fact_content,
@@ -499,26 +491,25 @@ class FactRAGFileCache:
             n_results = self.count_facts()
 
         if since_date is None:
-            r = self.facts_rag_collection.query(
-                query_texts=[query], n_results=n_results
-            )
+
+            result_ids = self.vector_db.query(query, n_results)
+
         else:
-            r = self.facts_rag_collection.query(
-                query_texts=[query],
-                n_results=n_results,
-                where={"added_on_timestamp": {"$gt": since_date.timestamp()}},
+
+            result_ids = self.vector_db.query_min_date(
+                query, since_date, n_results, "datetime"
             )
 
         facts = {}
+        for f_id_as_int in result_ids:
+            fact_id = f"f{f_id_as_int}"
 
-        print(r["metadatas"][0])
+            text, metadata = self.vector_db.get(f_id_as_int)
 
-        for i in range(0, len(r["ids"][0])):
-            fact_id = r["ids"][0][i]
-            fact_content = r["documents"][0][i]
-            fact_source = r["metadatas"][0][i]["source"]
-            fact_datetime = r["metadatas"][0][i]["datetime_string"]
-            fact_timestamp = (r["metadatas"][0][i]["added_on_timestamp"],)
+            fact_content = text
+            fact_source = metadata["source"]
+            fact_datetime = metadata["datetime"].strftime("%Y-%m-%d %H:%M:%S")
+            fact_timestamp = metadata["added_on_timestamp"]
 
             facts[fact_id] = {
                 "content": fact_content,
@@ -610,20 +601,15 @@ class FactRAGFileCache:
             str: The source of the fact.
         """
 
-        results = self.facts_rag_collection.get(fact_id)
-        if len(results["ids"]) == 0:
-            new_id = fact_id.lower()
-            results = self.facts_rag_collection.get(new_id)
+        f_str = fact_id.lower()
+        if f_str[0] == "f":
+            f_id_as_int = int(f_str[1:])
+        else:
+            f_id_as_int = int(f_str)
 
-        if len(results["ids"]) == 0:
-            raise ValueError(f"Fact ID {fact_id} not found in the knowledge database.")
+        text, metadata = self.vector_db.get(f_id_as_int)
 
-        if "source" in results["metadatas"][0]:
-            return results["metadatas"][0]["source"]
-
-        raise ValueError(
-            f"Fact ID {fact_id} does not have a source in the knowledge database."
-        )
+        return metadata["source"]
 
     def get_fact_content(self, fact_id: str) -> str:
         """
@@ -636,15 +622,15 @@ class FactRAGFileCache:
             str: The content of the fact.
         """
 
-        results = self.facts_rag_collection.get(fact_id)
-        if len(results["ids"]) == 0:
-            new_id = fact_id.lower()
-            results = self.facts_rag_collection.get(new_id)
+        f_str = fact_id.lower()
+        if f_str[0] == "f":
+            f_id_as_int = int(f_str[1:])
+        else:
+            f_id_as_int = int(f_str)
 
-        if len(results["ids"]) == 0:
-            raise ValueError(f"Fact ID {fact_id} not found in the knowledge database.")
+        text, metadata = self.vector_db.get(f_id_as_int)
 
-        return results["documents"][0]
+        return text
 
     def add_fact(self, fact: str, url: str) -> bool:
         """
@@ -671,33 +657,32 @@ class FactRAGFileCache:
             bool: True if the facts were added, False otherwise.
         """
 
-        fact_id_start = self.facts_rag_collection.count() + 1
+        # fact_id_start = self.facts_rag_collection.count() + 1
 
         added_now = datetime.now()
         added_now_timestamp = added_now.timestamp()
-        added_now_string = added_now.strftime("%Y-%m-%d %H:%M:%S")
+        # added_now_string = added_now.strftime("%Y-%m-%d %H:%M:%S")
 
-        fact_ids = []
+        # fact_ids = []
         metadatas = []
         for i in range(0, len(facts)):
-            fact_ids.append(f"f{fact_id_start + i}")
+            # fact_ids.append(f"f{fact_id_start + i}")
             metadatas.append(
                 {
                     "added_on_timestamp": added_now_timestamp,
-                    "datetime_string": added_now_string,
+                    "datetime": added_now,
                     "source": sources[i],
                 }
             )
 
-        self.facts_rag_collection.add(
-            documents=facts, ids=fact_ids, metadatas=metadatas
-        )
+        self.vector_db.add_texts(facts, metadatas)
+        self.vector_db.save()
 
         return True
 
     def facts_from_url(self, url: str, topic: str) -> None:
         """
-        Given a URL, extract facts from it and save them to ChromaDB and the facts dictionary. Also returns the facts in an array, in case one wants to analyze new facts.
+        Given a URL, extract facts from it and save them to our DB and the facts dictionary. Also returns the facts in an array, in case one wants to analyze new facts.
 
         Args:
             url (str): Location of the content.

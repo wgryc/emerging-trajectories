@@ -21,6 +21,7 @@ setup(
         "chromadb",
         "feedparser",
         "pypdf",
+        "faiss-cpu",
     ],
     extras_require={
         "docs": [

@@ -7,3 +7,4 @@ beautifulsoup4
 chromadb
 feedparser
 pypdf
+faiss-cpu
