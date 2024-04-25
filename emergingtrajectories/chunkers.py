@@ -97,7 +97,8 @@ class ChunkerNewLines:
         facts = []
 
         for line in lines:
-            if len(line) >= self.min_length:
-                facts.append(line.strip())
+            ls = line.strip()
+            if len(ls) >= self.min_length:
+                facts.append(ls)
 
         return facts
