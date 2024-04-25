@@ -7,6 +7,9 @@ from .crawlers import crawlerPlaywright, _get_text_bs4
 
 from playwright.sync_api import sync_playwright
 
+from news_search_client import NewsSearchClient
+from azure.core.credentials import AzureKeyCredential
+
 
 def force_empty_content(rss_url: str, content, cache_function) -> None:
     """
@@ -51,6 +54,48 @@ class RSSAgent:
         feed = feedparser.parse(self.rss_url)
         for entry in feed.entries:
             urls.append(entry.link)
+        return urls
+
+
+class NewsBingAgent:
+
+    def __init__(self, api_key: str, endpoint: str):
+        """
+        Creates a new Bing News API agent. To learn more, see: https://github.com/microsoft/bing-search-sdk-for-python/
+
+        Args:
+            api_key (str): The Bing News API key.
+            endpoint (str): The Bing News API endpoint.
+        """
+        self.api_key = api_key
+        self.endpoint = endpoint
+
+    def get_news_as_list(self, query: str, market: str = "en-us") -> list:
+        """
+        Gets a list of URLS from the Bing News API. For more information on markets, see: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/market-codes
+
+        Args:
+            query (str): The query to search for.
+            market (str, optional): The market to search in. Defaults to "en-us". (US English
+
+        Returns:
+            list: A list of URLs.
+        """
+
+        client = NewsSearchClient(
+            endpoint=self.endpoint, credential=AzureKeyCredential(self.api_key)
+        )
+
+        urls = []
+
+        try:
+            news_result = client.news.search(query=query, market=market, count=10)
+            for n in news_result.value:
+                urls.append(n.url)
+
+        except Exception as err:
+            print("Encountered exception. {}".format(err))
+
         return urls
 
 

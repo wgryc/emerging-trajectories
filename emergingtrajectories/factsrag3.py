@@ -31,7 +31,7 @@ from datetime import datetime, timedelta
 from . import Client
 from .crawlers import crawlerPlaywright
 from .prompts import *
-from .news import NewsAPIAgent, RSSAgent, FinancialTimesAgent
+from .news import NewsAPIAgent, RSSAgent, FinancialTimesAgent, NewsBingAgent
 from .chunkers import *
 
 # Number of search results to return from web searche (default value).
@@ -718,6 +718,28 @@ class FactRAGFileCache:
                 self.facts_from_url(url, topic)
                 # except:
                 #    print("Error; failed to get content from " + url)
+
+    # Builds a fact base baed on news from Bing.
+    def new_get_new_bing_news(
+        self, api_key, subscription_endpoint, topic, queries
+    ) -> None:
+        """
+        Uses Bing to get recent news on the queries and associated topics.
+
+        Args:
+            api_key (str): The Bing API key.
+            subscription_endpoint (str): The Bing subscription endpoint.
+            topic (str): a brief description of the research you are undertaking.
+            queries (list[str]): A list of queries to search for.
+        """
+
+        news_agent = NewsBingAgent(api_key, subscription_endpoint)
+        for q in queries:
+            results_urls = news_agent.get_news_as_list(q)
+            for url in results_urls:
+                if not self.in_cache(url):
+                    print("NEWS RESULT: " + url)
+                    self.facts_from_url(url, topic)
 
     # This builds facts based on news articles.
     def new_get_new_info_news(
