@@ -22,6 +22,8 @@ setup(
         "feedparser",
         "pypdf",
         "faiss-cpu",
+        "microsoft-bing-newssearch",
+        "scrapingbee",
     ],
     extras_require={
         "docs": [

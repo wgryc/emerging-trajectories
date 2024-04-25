@@ -9,6 +9,8 @@ from bs4 import BeautifulSoup
 
 from phasellm.agents import WebpageAgent
 
+from scrapingbee import ScrapingBeeClient
+
 
 def _bs4_childtraversal(html: str) -> str:
     """
@@ -140,4 +142,29 @@ class crawlerPhaseLLM:
         """
         content_raw = self.scraper.scrape(url, text_only=False, body_only=False)
         content_parsed = self.scraper.scrape(url, text_only=True, body_only=True)
+        return content_raw, content_parsed
+
+
+class crawlerScrapingBee:
+
+    def __init__(self, api_key: str):
+        """
+        Crawler that uses ScrapingBee to scrape web pages.
+        """
+        self.client = ScrapingBeeClient(api_key=api_key)
+
+    def get_content(self, url):
+        """
+        Gets content for a specific URL.
+
+        Args:
+            url (str): URL to scrape
+
+        Returns:
+            tuple[str, str]: Raw HTML content and extracted text content (in this order)
+        """
+
+        response = self.client.get(url)
+        content_raw = response.content.decode("utf-8")
+        content_parsed = _get_text_bs4(content_raw)
         return content_raw, content_parsed
