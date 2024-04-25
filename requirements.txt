@@ -8,3 +8,5 @@ chromadb
 feedparser
 pypdf
 faiss-cpu
+microsoft-bing-newssearch
+scrapingbee
