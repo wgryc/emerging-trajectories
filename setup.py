@@ -24,6 +24,7 @@ setup(
         "faiss-cpu",
         "microsoft-bing-newssearch",
         "scrapingbee",
+        "tiktoken",
     ],
     extras_require={
         "docs": [

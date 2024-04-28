@@ -19,6 +19,7 @@ import pickle
 import warnings
 
 from openai import OpenAI
+import tiktoken
 
 # Using JSONEncoder to be consistent with the Emerging Trajectories website and platform.
 from django.core.serializers.json import DjangoJSONEncoder
@@ -120,6 +121,7 @@ class VectorDBDict:
         self.error_out_on_conflict = error_out_on_conflict
         self.openai_api_key = openai_api_key
         self.openai_client = OpenAI(api_key=self.openai_api_key)
+        self.encoding = tiktoken.encoding_for_model("text-embedding-3-small")
 
         if not os.path.exists(db_file_path):
             dictionary_to_write = {
@@ -176,6 +178,25 @@ class VectorDBDict:
         """
         return self.add_vectors([vector], [text], [metadata])[0]
 
+    def shorten_text(self, text, max_token_length: int = 8000) -> str:
+        """
+        Shortens text to a maximum token length. This is useful for OpenAI API calls, which have a token limit.
+
+        Args:
+            text (str): The text to shorten.
+            max_token_length (int): The maximum token length.
+
+        Returns:
+            str: The shortened text; should ONLY be used for encoding.
+        """
+
+        new_text = text[:]
+        while len(self.encoding.encode(new_text)) > max_token_length:
+            if len(new_text) > 250:
+                new_text = new_text[:-250] + "..."
+
+        return new_text
+
     def add_texts(self, texts: list, metadata: list = None) -> list:
         """
         Adds text to the database. Calls an embedding function and then adds via add_vectors().
@@ -194,7 +215,13 @@ class VectorDBDict:
 
             new_modifier = min(self.MAX_BATCH_SIZE, len(texts) - last_index)
 
-            text_subset = texts[last_index : (last_index + new_modifier)]
+            # In this approach, we keep the original text even though we encode the new text. We might want to revisit this to keep the new text.
+            # TODO See above.
+            text_subset = []
+            text_subset_prechecked = texts[last_index : (last_index + new_modifier)]
+            for t in text_subset_prechecked:
+                t_new = self.shorten_text(t)
+                text_subset.append(t_new)
 
             response = self.openai_client.embeddings.create(
                 input=text_subset, model="text-embedding-3-small"
@@ -641,7 +668,7 @@ class FactRAGFileCache:
         Returns:
             bool: True if the fact was added, False otherwise.
         """
-        return self.add_fact([fact], [url])
+        return self.add_facts([fact], [url])
 
     def add_facts(self, facts: list, sources: list) -> bool:
         """
