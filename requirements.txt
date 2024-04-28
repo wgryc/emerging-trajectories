@@ -10,3 +10,4 @@ pypdf
 faiss-cpu
 microsoft-bing-newssearch
 scrapingbee
+tiktoken

@@ -1160,7 +1160,7 @@ class FactBot:
                     ref_str += " " + new_text_source_num
 
                     # Save the source
-                    fact_text = self.knowledge_db.get_fact_conteont(ref)
+                    fact_text = self.knowledge_db.get_fact_content(ref)
                     new_source_text = f"""<span class='fact_span'><b>{ref_ctr}:</b> ${fact_text} <a href='{self.source(ref)}' target='_blank'>View Source</a></span>"""
                     sources_text += new_source_text + "\n"
 
