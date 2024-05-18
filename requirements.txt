@@ -1,4 +1,4 @@
-phasellm>=0.0.21
+phasellm>=0.0.22
 Django>=5.0.0
 python-dotenv>=1.0.0
 dateparser>=1.2.0
@@ -11,3 +11,4 @@ faiss-cpu
 microsoft-bing-newssearch
 scrapingbee
 tiktoken
+# db-dtypes # For Google Cloud, unsure if needed
