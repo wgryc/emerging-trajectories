@@ -850,11 +850,25 @@ class FactRAGFileCache:
 
         for google_search_query in self.google_search_queries:
 
-            results = webagent.search_google(
-                query=google_search_query,
-                custom_search_engine_id=self.google_search_id,
-                num=_DEFAULT_NUM_SEARCH_RESULTS,
-            )
+            try:
+                results = webagent.search_google(
+                    query=google_search_query,
+                    custom_search_engine_id=self.google_search_id,
+                    num=_DEFAULT_NUM_SEARCH_RESULTS,
+                )
+            except:
+                print("Error; failed to get content from " + google_search_query)
+                continue
+
+            try:
+                for result in results:
+                    pass
+            except:
+                print(
+                    "Error; failed to get 'result' in 'results' from "
+                    + google_search_query
+                )
+                continue
 
             for result in results:
                 if not self.in_cache(result.url):
