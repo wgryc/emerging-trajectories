@@ -253,6 +253,110 @@ class EmergingTrajectoriesClient(object):
         else:
             raise Exception(response.text)
 
+    def create_automation_factbase(
+        self, short_code, job_type, arg_string=None, args=None
+    ):
+        """
+        Create an automation for a fact base.
+
+        Args:
+            short_code: the short code for the factbase
+            job_type: the type of job to run
+            arg_string: a string of arguments
+            args: a dictionary of arguments if the job requires more than one
+
+        Returns:
+            dict: the automation object
+        """
+
+        url = self.base_url + "create_automation_for_factbase" + "/" + short_code
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {
+            "job_type": job_type,
+        }
+        if arg_string != None:
+            data["arg_string"] = arg_string
+        if "args" != None:
+            data["args"] = args
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        j = response.json()
+        return j["info"]
+
+    def create_automation_document(self, doc_id, job_type, arg_string=None, args=None):
+        """
+        Create an automation for a document.
+
+        Args:
+            doc_id: the document ID
+            job_type: the type of job to run
+            arg_string: a string of arguments
+            args: a dictionary of arguments if the job requires more than one
+
+        Returns:
+            dict: the automation object
+        """
+
+        url = self.base_url + "create_automation_for_documente" + "/" + str(doc_id)
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {
+            "job_type": job_type,
+        }
+        if arg_string != None:
+            data["arg_string"] = arg_string
+        if "args" != None:
+            data["args"] = args
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        j = response.json()
+        return j["info"]
+
+    def get_factbase_automations(self, factbase_short_code):
+        """
+        Get an array of all automations that can be run on a factbase.
+
+        Args:
+            factbase_short_code: the short code for the factbase
+
+        Returns:
+            list: an array of automations that can be run on the factbase
+        """
+        url = self.base_url + f"get_automations/{factbase_short_code}"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        response = requests.post(url, headers=headers)
+        j = response.json()
+        print(j)
+        return j["automations"]
+
+    def queue_automation(self, automation_id):
+        """
+        Queue an automation (i.e., request the Emerging Trajectories platform to run an automation).
+
+        Args:
+            automation_id: the ID of the automation to queue
+
+        Returns:
+            bool: True if successful, False otherwise
+        """
+        url = self.base_url + f"queue_automation/{automation_id}"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        response = requests.post(url, headers=headers)
+        if response.status_code == 200:
+            return True
+        return False
+
     def get_statement(self, statement_id: int) -> Statement:
         """
         Returns a given statement from the platform. Includes title, description, deadline, and fill-in-the-blank.
