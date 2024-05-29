@@ -253,6 +253,100 @@ class EmergingTrajectoriesClient(object):
         else:
             raise Exception(response.text)
 
+    def create_document(
+        self, factbase_shortcode: str, title: str = None, days_filter=99999
+    ) -> int:
+        """
+        Create a new document on the Emerging Trajectories platform.
+
+        Args:
+            factbase_shortcode: the short code for the factbase to attach the document to
+            title (optional): the title of the document
+            days_filter (optional): limit facts to the recent number of days
+
+        Returns:
+            int: The ID of the document.
+        """
+
+        url = self.base_url + "api_doc_create"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {
+            "title": title,
+            "factbase_shortcode": factbase_shortcode,
+            "days_filter": days_filter,
+        }
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            if "doc_id" in r:
+                return int(r["doc_id"])
+        else:
+            raise Exception(response.text)
+
+        raise Exception("Failed to create document.")
+
+    def append_text_block(self, doc_id: int, text: str) -> bool:
+        """
+        Add a text block to a document.
+
+        Args:
+            doc_id: the ID of the document to append the text block to
+            text: the text to append
+        Returns:
+            bool: True if successful, False otherwise
+        """
+
+        url = self.base_url + "api_doc_append_text_block"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {
+            "doc_id": doc_id,
+            "text": text,
+        }
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            return True
+
+        return False
+
+    def append_askai_block(self, doc_id: int, query: str) -> dict:
+        """
+        Add an AI block to a document.
+
+        Args:
+            doc_id: the ID of the document to append the text block to
+            query: the query to use for the AI block
+        Returns:
+            JSON dict with document information
+        """
+
+        url = self.base_url + "api_doc_append_askai_block"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {
+            "doc_id": doc_id,
+            "query": query,
+        }
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            return r
+
+        raise Exception(response.text)
+
     def create_automation_factbase(
         self, short_code, job_type, arg_string=None, args=None
     ):
