@@ -290,6 +290,32 @@ class EmergingTrajectoriesClient(object):
 
         raise Exception("Failed to create document.")
 
+    def get_document(self, doc_id: int) -> dict:
+        """
+        Get document data.
+
+        Args:
+            doc_id: the ID of the document
+
+        Returns:
+            int: The ID of the document.
+        """
+
+        url = self.base_url + "api_doc_get"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"doc_id": doc_id}
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            return r
+        else:
+            raise Exception(response.text)
+
     def append_text_block(self, doc_id: int, text: str) -> bool:
         """
         Add a text block to a document.
