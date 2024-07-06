@@ -316,6 +316,34 @@ class EmergingTrajectoriesClient(object):
         else:
             raise Exception(response.text)
 
+    def append_header_block(self, doc_id, text: str) -> bool:
+        """
+        Add a header block to a document.
+
+        Args:
+            doc_id: the ID of the document to append the header block to
+            text: the text (header) to append
+        Returns:
+            bool: True if successful, False otherwise
+        """
+
+        url = self.base_url + "api_doc_append_header_block"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {
+            "doc_id": doc_id,
+            "text": text,
+        }
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            return True
+
+        return False
+
     def append_text_block(self, doc_id: int, text: str) -> bool:
         """
         Add a text block to a document.
