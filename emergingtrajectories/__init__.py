@@ -372,6 +372,36 @@ class EmergingTrajectoriesClient(object):
 
         return False
 
+    def append_askai_fts_block(self, doc_id: int, query: str, fts_term: str) -> dict:
+        """
+        Add an AI (FTS) block to a document.
+
+        Args:
+            doc_id: the ID of the document to append the text block to
+            query: the query to use for the AI block
+            fts_term: the full text search (FTS) terms/query to use for the AI block
+        Returns:
+            JSON dict with document information
+        """
+        url = self.base_url + "api_doc_append_askai_fts_block"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {
+            "doc_id": doc_id,
+            "query": query,
+            "arg": fts_term,
+        }
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            return r
+
+        raise Exception(response.text)
+
     def append_askai_block(self, doc_id: int, query: str) -> dict:
         """
         Add an AI block to a document.
