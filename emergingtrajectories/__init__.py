@@ -254,7 +254,12 @@ class EmergingTrajectoriesClient(object):
             raise Exception(response.text)
 
     def create_document(
-        self, factbase_shortcode: str, title: str = None, days_filter=99999
+        self,
+        factbase_shortcode: str,
+        title: str = None,
+        days_filter=99999,
+        temperature=None,
+        llm=None,
     ) -> int:
         """
         Create a new document on the Emerging Trajectories platform.
@@ -278,6 +283,12 @@ class EmergingTrajectoriesClient(object):
             "factbase_shortcode": factbase_shortcode,
             "days_filter": days_filter,
         }
+
+        if temperature is not None:
+            data["temperature"] = temperature
+
+        if llm is not None:
+            data["llm"] = llm
 
         response = requests.post(url, headers=headers, data=json.dumps(data))
 
