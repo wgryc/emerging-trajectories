@@ -327,6 +327,32 @@ class EmergingTrajectoriesClient(object):
         else:
             raise Exception(response.text)
 
+    def get_block(self, doc_id: int, block_named_id: str) -> str:
+        """
+        Get the content of a named block from a document.
+
+        Args:
+            doc_id: the ID of the document
+            block_named_id: the named ID of the block to retrieve
+        Returns:
+            str: the content of the block
+        """
+
+        url = self.base_url + "api_block_get"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"doc_id": doc_id, "block_named_id": block_named_id}
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()["content"]
+            return r
+        else:
+            raise Exception(response.text)
+
     def append_header_block(self, doc_id, text: str) -> bool:
         """
         Add a header block to a document.
@@ -383,7 +409,9 @@ class EmergingTrajectoriesClient(object):
 
         return False
 
-    def append_askai_fts_block(self, doc_id: int, query: str, fts_term: str) -> dict:
+    def append_askai_fts_block(
+        self, doc_id: int, query: str, fts_term: str, named_id: str = None
+    ) -> dict:
         """
         Add an AI (FTS) block to a document.
 
@@ -391,6 +419,7 @@ class EmergingTrajectoriesClient(object):
             doc_id: the ID of the document to append the text block to
             query: the query to use for the AI block
             fts_term: the full text search (FTS) terms/query to use for the AI block
+            named_id: the named ID of the AI block
         Returns:
             JSON dict with document information
         """
@@ -405,6 +434,9 @@ class EmergingTrajectoriesClient(object):
             "arg": fts_term,
         }
 
+        if named_id is not None:
+            data["named_id"] = named_id
+
         response = requests.post(url, headers=headers, data=json.dumps(data))
 
         if response.status_code == 200:
@@ -413,13 +445,16 @@ class EmergingTrajectoriesClient(object):
 
         raise Exception(response.text)
 
-    def append_askai_cot_block(self, doc_id: int, query: str) -> dict:
+    def append_askai_cot_block(
+        self, doc_id: int, query: str, named_id: str = None
+    ) -> dict:
         """
         Add an AI (COT) block to a document.
 
         Args:
             doc_id: the ID of the document to append the text block to
             query: the query to use for the AI block
+            named_id: the named ID of the AI block
         Returns:
             JSON dict with document information
         """
@@ -434,6 +469,9 @@ class EmergingTrajectoriesClient(object):
             "query": query,
         }
 
+        if named_id is not None:
+            data["named_id"] = named_id
+
         response = requests.post(url, headers=headers, data=json.dumps(data))
 
         if response.status_code == 200:
@@ -442,7 +480,7 @@ class EmergingTrajectoriesClient(object):
 
         raise Exception(response.text)
 
-    def append_askai_block(self, doc_id: int, query: str) -> dict:
+    def append_askai_block(self, doc_id: int, query: str, named_id: str = None) -> dict:
         """
         Add an AI block to a document.
 
@@ -462,6 +500,9 @@ class EmergingTrajectoriesClient(object):
             "doc_id": doc_id,
             "query": query,
         }
+
+        if named_id is not None:
+            data["named_id"] = named_id
 
         response = requests.post(url, headers=headers, data=json.dumps(data))
 
