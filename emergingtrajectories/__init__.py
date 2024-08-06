@@ -301,6 +301,47 @@ class EmergingTrajectoriesClient(object):
 
         raise Exception("Failed to create document.")
 
+    def update_document(
+        self,
+        doc_id: int,
+        title: str = None,
+        is_public: bool = None,
+        short_code: str = None,
+    ) -> bool:
+        """
+        Update document settings.
+
+        Args:
+            doc_id: the ID of the document
+            title: the new title of the document
+            is_public: whether the document is public (updated setting)
+            short_code: the short code for the document (updated setting)
+
+        Returns:
+            bool: True if successful, False otherwise
+        """
+
+        url = self.base_url + "api_doc_update"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"doc_id": doc_id}
+
+        if title is not None:
+            data["title"] = title
+        if is_public is not None:
+            data["is_public"] = is_public
+        if short_code is not None:
+            data["short_code"] = short_code
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            return True
+        else:
+            raise Exception(response.text)
+
     def get_document(self, doc_id: int) -> dict:
         """
         Get document data.
