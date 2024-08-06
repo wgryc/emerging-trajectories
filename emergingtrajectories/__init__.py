@@ -301,6 +301,34 @@ class EmergingTrajectoriesClient(object):
 
         raise Exception("Failed to create document.")
 
+    def convert_facts_in_text(self, factbase_shortcode: str, text: str):
+        """
+        Convert text with facts to HTML cost with associated links.
+
+        Args:
+            factbase_shortcode: the short code for the factbase to attach the document to
+            text: the text to convert
+
+        Returns:
+            str: the converted text as HTML
+            array: a list facts found in the text, with the key being the source ID in the HTML
+        """
+
+        url = self.base_url + "api_convert_facts_in_text"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"factbase_shortcode": factbase_shortcode, "text": text}
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            return r["html"], r["sources"]
+        else:
+            raise Exception(response.text)
+
     def update_document(
         self,
         doc_id: int,
