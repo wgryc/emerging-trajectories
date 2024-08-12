@@ -832,6 +832,46 @@ class EmergingTrajectoriesClient(object):
         else:
             raise Exception(response.text)
 
+    def get_facts_from_factbase(
+        self,
+        fact_db_slug: str,
+        fact_id: str = None,
+        fact_ids: list = None,
+        source_url: str = None,
+    ) -> list[dict]:
+        """
+        Gets a list of facts from a fact base.
+
+        Args:
+            fact_db_slug: the slug of the fact database to get facts from.
+            fact_id: the ID of the fact to retrieve.
+            fact_ids: a list of fact IDs to retrieve.
+            source_url: the URL of the source to retrieve facts from.
+
+        Returns:
+            list: a list of facts from the fact base.
+        """
+
+        api_url = self.base_url + "get_facts/" + fact_db_slug
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        j = {}
+        if fact_id is not None:
+            j["fact_id"] = fact_id
+        if fact_ids is not None:
+            j["fact_ids"] = fact_ids
+        if source_url is not None:
+            j["source_url"] = source_url
+
+        response = requests.post(api_url, headers=headers, json=j)
+
+        if response.status_code == 200 or response.status_code == 201:
+            return response.json()["facts"]
+
+        raise Exception(response.text)
+
     def add_facts_to_factbase(
         self, fact_db_slug: str, url: str, facts: list[str]
     ) -> bool:
@@ -860,7 +900,6 @@ class EmergingTrajectoriesClient(object):
 
         if response.status_code == 200 or response.status_code == 201:
             return True
-        print(response)
         return False
 
     def add_fact_to_factbase(self, fact_db_slug: str, url: str, fact: str) -> bool:
