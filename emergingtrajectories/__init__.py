@@ -620,6 +620,41 @@ class EmergingTrajectoriesClient(object):
 
         raise Exception(response.text)
 
+    def append_askai_cot_pubdate_block(
+        self, doc_id: int, query: str, named_id: str = None
+    ) -> dict:
+        """
+        Add an AI (COT) block to a document.
+
+        Args:
+            doc_id: the ID of the document to append the text block to
+            query: the query to use for the AI block
+            named_id: the named ID of the AI block
+        Returns:
+            JSON dict with document information
+        """
+
+        url = self.base_url + "api_doc_append_askai_cot_pubdate_block"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {
+            "doc_id": doc_id,
+            "query": query,
+        }
+
+        if named_id is not None:
+            data["named_id"] = named_id
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            return r
+
+        raise Exception(response.text)
+
     def append_askai_block(self, doc_id: int, query: str, named_id: str = None) -> dict:
         """
         Add an AI block to a document.
