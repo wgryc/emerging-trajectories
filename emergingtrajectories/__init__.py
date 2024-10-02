@@ -260,6 +260,8 @@ class EmergingTrajectoriesClient(object):
         days_filter=99999,
         temperature=None,
         llm=None,
+        facts_min_date=None,
+        facts_max_date=None,
     ) -> int:
         """
         Create a new document on the Emerging Trajectories platform.
@@ -289,6 +291,12 @@ class EmergingTrajectoriesClient(object):
 
         if llm is not None:
             data["llm"] = llm
+
+        if facts_max_date is not None:
+            data["facts_max_date"] = facts_max_date.isoformat()
+
+        if facts_min_date is not None:
+            data["facts_min_date"] = facts_min_date.isoformat()
 
         response = requests.post(url, headers=headers, data=json.dumps(data))
 
@@ -396,6 +404,56 @@ class EmergingTrajectoriesClient(object):
         else:
             raise Exception(response.text)
 
+    def add_viewer(self, doc_id: int, viewer_email: str) -> bool:
+        """
+        Add a viewer to a private document.
+
+        Args:
+            doc_id: the ID of the document
+            viewer_email: the email of the viewer to add
+        Returns:
+            bool: True if successful, False otherwise
+        """
+
+        url = self.base_url + "api_doc_add_viewer"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"doc_id": doc_id, "viewer": viewer_email}
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            return True
+        else:
+            raise Exception(response.text)
+
+    def remove_viewer(self, doc_id: int, viewer_email: str) -> bool:
+        """
+        Remove a viewer from a private document.
+
+        Args:
+            doc_id: the ID of the document
+            viewer_email: the email of the viewer to remove
+        Returns:
+            bool: True if successful or if the email is NOT a viewer already, False otherwise
+        """
+
+        url = self.base_url + "api_doc_remove_viewer"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"doc_id": doc_id, "viewer": viewer_email}
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            return True
+        else:
+            raise Exception(response.text)
+
     def get_block(self, doc_id: int, block_named_id: str) -> str:
         """
         Get the content of a named block from a document.
@@ -422,13 +480,14 @@ class EmergingTrajectoriesClient(object):
         else:
             raise Exception(response.text)
 
-    def append_header_block(self, doc_id, text: str) -> bool:
+    def append_header_block(self, doc_id, text: str, is_hidden: bool = False) -> bool:
         """
         Add a header block to a document.
 
         Args:
             doc_id: the ID of the document to append the header block to
             text: the text (header) to append
+            is_hidden: whether the block is hidden in public documents
         Returns:
             bool: True if successful, False otherwise
         """
@@ -442,6 +501,9 @@ class EmergingTrajectoriesClient(object):
             "doc_id": doc_id,
             "text": text,
         }
+
+        if is_hidden:
+            data["is_hidden"] = "true"
 
         response = requests.post(url, headers=headers, data=json.dumps(data))
 
@@ -478,8 +540,41 @@ class EmergingTrajectoriesClient(object):
 
         return False
 
+    def append_hidden_block(self, doc_id: int, prompt: str) -> bool:
+        """
+        Add a text block to a document.
+
+        Args:
+            doc_id: the ID of the document to append the text block to
+            prompt: the text (typically a prompt) to append
+        Returns:
+            bool: True if successful, False otherwise
+        """
+
+        url = self.base_url + "api_doc_append_hidden_block"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {
+            "doc_id": doc_id,
+            "text": prompt,
+        }
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            return True
+
+        return False
+
     def append_askai_fts_block(
-        self, doc_id: int, query: str, fts_term: str, named_id: str = None
+        self,
+        doc_id: int,
+        query: str,
+        fts_term: str,
+        named_id: str = None,
+        is_hidden: bool = False,
     ) -> dict:
         """
         Add an AI (FTS) block to a document.
@@ -489,6 +584,7 @@ class EmergingTrajectoriesClient(object):
             query: the query to use for the AI block
             fts_term: the full text search (FTS) terms/query to use for the AI block
             named_id: the named ID of the AI block
+            is_hidden: whether the block is hidden in public documents
         Returns:
             JSON dict with document information
         """
@@ -503,6 +599,9 @@ class EmergingTrajectoriesClient(object):
             "arg": fts_term,
         }
 
+        if is_hidden:
+            data["is_hidden"] = "true"
+
         if named_id is not None:
             data["named_id"] = named_id
 
@@ -515,7 +614,7 @@ class EmergingTrajectoriesClient(object):
         raise Exception(response.text)
 
     def append_risk_score_doc_block(
-        self, doc_id: int, query: str, named_id: str = None
+        self, doc_id: int, query: str, named_id: str = None, is_hidden: bool = False
     ) -> dict:
         """
         Add a risk score block to a document. This risk score only evaluates based on what's in the document already; it does not query the fact base.
@@ -524,6 +623,7 @@ class EmergingTrajectoriesClient(object):
             doc_id: the ID of the document to append the text block to
             query: the query to use for the AI block
             named_id: the named ID of the AI block
+            is_hidden: whether the block is hidden in public documents
         Returns:
             JSON dict with document information
         """
@@ -537,6 +637,9 @@ class EmergingTrajectoriesClient(object):
             "query": query,
         }
 
+        if is_hidden:
+            data["is_hidden"] = "true"
+
         if named_id is not None:
             data["named_id"] = named_id
 
@@ -549,7 +652,12 @@ class EmergingTrajectoriesClient(object):
         raise Exception(response.text)
 
     def append_askai_fts_cot_block(
-        self, doc_id: int, query: str, fts_term: str, named_id: str = None
+        self,
+        doc_id: int,
+        query: str,
+        fts_term: str,
+        named_id: str = None,
+        is_hidden: bool = False,
     ) -> dict:
         """
         Add an AI (FTS) block to a document.
@@ -559,6 +667,7 @@ class EmergingTrajectoriesClient(object):
             query: the query to use for the AI block
             fts_term: the full text search (FTS) terms/query to use for the AI block
             named_id: the named ID of the AI block
+            is_hidden: whether the block is hidden in public documents
         Returns:
             JSON dict with document information
         """
@@ -574,6 +683,9 @@ class EmergingTrajectoriesClient(object):
             "arg": fts_term,
         }
 
+        if is_hidden:
+            data["is_hidden"] = "true"
+
         if named_id is not None:
             data["named_id"] = named_id
 
@@ -586,7 +698,7 @@ class EmergingTrajectoriesClient(object):
         raise Exception(response.text)
 
     def append_askai_cot_block(
-        self, doc_id: int, query: str, named_id: str = None
+        self, doc_id: int, query: str, named_id: str = None, is_hidden: bool = False
     ) -> dict:
         """
         Add an AI (COT) block to a document.
@@ -595,6 +707,7 @@ class EmergingTrajectoriesClient(object):
             doc_id: the ID of the document to append the text block to
             query: the query to use for the AI block
             named_id: the named ID of the AI block
+            is_hidden: whether the block is hidden in public documents
         Returns:
             JSON dict with document information
         """
@@ -609,6 +722,9 @@ class EmergingTrajectoriesClient(object):
             "query": query,
         }
 
+        if is_hidden:
+            data["is_hidden"] = "true"
+
         if named_id is not None:
             data["named_id"] = named_id
 
@@ -621,7 +737,7 @@ class EmergingTrajectoriesClient(object):
         raise Exception(response.text)
 
     def append_askai_cot_pubdate_block(
-        self, doc_id: int, query: str, named_id: str = None
+        self, doc_id: int, query: str, named_id: str = None, is_hidden: bool = False
     ) -> dict:
         """
         Add an AI (COT) block to a document.
@@ -630,6 +746,7 @@ class EmergingTrajectoriesClient(object):
             doc_id: the ID of the document to append the text block to
             query: the query to use for the AI block
             named_id: the named ID of the AI block
+            is_hidden: whether the block is hidden in public documents
         Returns:
             JSON dict with document information
         """
@@ -644,6 +761,9 @@ class EmergingTrajectoriesClient(object):
             "query": query,
         }
 
+        if is_hidden:
+            data["is_hidden"] = "true"
+
         if named_id is not None:
             data["named_id"] = named_id
 
@@ -655,13 +775,16 @@ class EmergingTrajectoriesClient(object):
 
         raise Exception(response.text)
 
-    def append_askai_block(self, doc_id: int, query: str, named_id: str = None) -> dict:
+    def append_askai_block(
+        self, doc_id: int, query: str, named_id: str = None, is_hidden: bool = False
+    ) -> dict:
         """
         Add an AI block to a document.
 
         Args:
             doc_id: the ID of the document to append the text block to
             query: the query to use for the AI block
+            is_hidden: whether the block is hidden in public documents
         Returns:
             JSON dict with document information
         """
@@ -675,6 +798,9 @@ class EmergingTrajectoriesClient(object):
             "doc_id": doc_id,
             "query": query,
         }
+
+        if is_hidden:
+            data["is_hidden"] = "true"
 
         if named_id is not None:
             data["named_id"] = named_id
