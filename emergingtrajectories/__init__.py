@@ -2,6 +2,9 @@ import requests
 import json
 from datetime import datetime
 import dateparser
+from typing import Union, List
+import warnings
+import time
 
 
 def hello() -> None:
@@ -252,6 +255,268 @@ class EmergingTrajectoriesClient(object):
                 return r["short_code"]
         else:
             raise Exception(response.text)
+
+    def build_research_plan(self, query: str) -> dict:
+        """
+        Given a research question/query, we create a set of tasks that we can then automate document creation around.
+
+        Args:
+            query: the research question/query to build tasks around
+        Returns:
+            dict: a dictionary with two keys -- "text" which is the text plan, and "plan" which is a JSON plan
+        """
+
+        url = self.base_url + "api_research_analyst_build_plan"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"query": query}
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            return r
+        else:
+            raise Exception(response.text)
+
+    def run_research_sub_task(
+        self,
+        command: str,
+        args: Union[str, List[str]],
+        document_id: int,
+        short_code: str,
+        wait_until_completion: bool = True,
+    ) -> int:
+        """
+        Run the research sub-task outlined in a research plan.
+
+        Args:
+            command: the command to run
+            args: the arguments to pass to the command
+            document_id: the ID of the document to attach the research task to
+            short_code: the short code for the factbase to use
+            wait_until_completion: whether to wait until the task is completed before returning
+        Returns:
+            int: the ID of the job or -1 if not applicable
+        """
+
+        job_id = -1
+        job_status = ""
+
+        if command == "NEWS":
+            job_id = self.run_data_collector_news(short_code, args)
+        elif command == "SEARCH" or command == "WEBSEARCH":
+            job_id = self.run_data_collector_serp(short_code, args, 5)
+        elif (
+            command == "QUERY" or command == "LIST"
+        ):  # We should treat lists differently later.
+            job_id = self.research_task_header_and_block(document_id, args)
+
+        if wait_until_completion:
+            job_status = ""
+            while job_status != "complete":
+                job_status = self.get_data_collector_job_status(job_id)
+                print(job_status)
+                time.sleep(10)
+
+        return -1
+
+    # TODO: refactor all run_data_collector_*
+    def research_task_header_and_block(self, doc_id: int, query: str) -> int:
+        """
+        Runs a research analyst task where we generate a header block and then run the query for the document.
+
+        Args:
+            doc_id: the ID of the document to attach the research task to
+            query: the query to run
+        Returns:
+            int: the ID of the job
+        """
+
+        url = self.base_url + "api_data_collector_run_header_and_block/" + str(doc_id)
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"query": query}
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            if "job_id" in r:
+                return int(r["job_id"])
+        else:
+            raise Exception(response.text)
+
+        raise Exception("Failed to create job.")
+
+    def run_data_collector_job(self, factbase_shortcode: str, settings: dict) -> int:
+        """
+        Creates a new data collector job and runs it. Contact us for information on how to pass settings.
+
+        Args:
+            factbase_shortcode: the short code for the factbase
+            settings: a dictionary of settings for the data collector job
+        Returns:
+            int: The ID of the job
+        """
+
+        url = self.base_url + "api_data_collector_run_once/" + factbase_shortcode
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"data_collector_settings": settings}
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            if "job_id" in r:
+                return int(r["job_id"])
+        else:
+            raise Exception(response.text)
+
+        raise Exception("Failed to create job.")
+
+    # TODO: refactor all run_data_collector_*
+    def run_data_collector_serp(
+        self,
+        factbase_shortcode: str,
+        query: Union[str, List[str]],
+        n: int = 5,
+        settings: dict = None,
+    ) -> int:
+        """
+        Creates a new data collector job and runs it. Contact us for information on how to pass settings.
+
+        Args:
+            factbase_shortcode: the short code for the factbase
+            query: a string to search or an array of strings
+            settings: a dictionary of settings for the data collector job
+        Returns:
+            int: The ID of the job
+        """
+
+        if settings is None:
+            settings = {}
+        settings_clean = settings.copy()
+        settings_clean["collector"] = "SEARCH"
+        if query is type(str):
+            settings_clean["query"] = [query]
+        else:
+            settings_clean["query"] = query
+
+        if n > 10:
+            settings_clean["n"] = 10
+            warnings.warn("The maximum number of results is 10.")
+        else:
+            settings_clean["n"] = n
+
+        url = self.base_url + "api_data_collector_run_serp/" + factbase_shortcode
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"data_collector_settings": settings_clean}
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            if "job_id" in r:
+                return int(r["job_id"])
+        else:
+            raise Exception(response.text)
+
+        raise Exception("Failed to create job.")
+
+    # TODO: refactor all run_data_collector_*
+    def run_data_collector_news(
+        self,
+        factbase_shortcode: str,
+        query: Union[str, List[str]],
+        n: int = 5,
+        settings: dict = None,
+    ) -> int:
+        """
+        Creates a new data collector job and runs it. Contact us for information on how to pass settings.
+
+        Args:
+            factbase_shortcode: the short code for the factbase
+            query: a string to search or an array of strings
+            settings: a dictionary of settings for the data collector job
+        Returns:
+            int: The ID of the job
+        """
+
+        if settings is None:
+            settings = {}
+        settings_clean = settings.copy()
+        settings_clean["collector"] = "NEWSSEARCH4"
+        if query is type(str):
+            settings_clean["query"] = [query]
+        else:
+            settings_clean["query"] = query
+
+        if n > 10:
+            settings_clean["n"] = 10
+            warnings.warn("The maximum number of results is 10.")
+        else:
+            settings_clean["n"] = n
+
+        url = self.base_url + "api_data_collector_run_news/" + factbase_shortcode
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"data_collector_settings": settings_clean}
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            if "job_id" in r:
+                return int(r["job_id"])
+        else:
+            raise Exception(response.text)
+
+        raise Exception("Failed to create job.")
+
+    def get_data_collector_job_status(self, job_id: int) -> str:
+        """
+        Get the status of a data collector job.
+
+        Args:
+            job_id: the ID of the job
+        Returns:
+            str: The status of the job
+        """
+
+        if job_id <= 0 or job_id is None or type(job_id) is not int:
+            return (
+                "complete"  # We don't have a job ID, so we'll just say it's complete.
+            )
+
+        url = self.base_url + "api_data_collector_run_once_status/" + str(job_id)
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+
+        response = requests.post(url, headers=headers)
+
+        if response.status_code == 200:
+            r = response.json()
+            if "job_status" in r:
+                return r["job_status"]
+        else:
+            raise Exception(response.text)
+
+        raise Exception("Failed; unknown error.")
 
     def create_document(
         self,
@@ -1122,4 +1387,4 @@ class EmergingTrajectoriesClient(object):
         if response.status_code == 200 or response.status_code == 201:
             return True
         print(response)
-        return False
+        return Fals
