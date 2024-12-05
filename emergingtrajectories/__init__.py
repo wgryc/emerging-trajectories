@@ -576,7 +576,7 @@ class EmergingTrajectoriesClient(object):
 
     def convert_facts_in_text(self, factbase_shortcode: str, text: str):
         """
-        Convert text with facts to HTML cost with associated links.
+        Convert text with facts to HTML code with associated links.
 
         Args:
             factbase_shortcode: the short code for the factbase to attach the document to
@@ -1387,4 +1387,35 @@ class EmergingTrajectoriesClient(object):
         if response.status_code == 200 or response.status_code == 201:
             return True
         print(response)
-        return Fals
+        return False
+
+    def add_url_to_factbase(
+        self, fact_db_slug: str, url: Union[str, list[str]], topic: str = ""
+    ) -> bool:
+        """
+        Sends URL to the Emerging Trajectories website, crawls the URL, and extracts facts from it.
+
+        Args:
+            fact_db_slug: the slug of the fact database to add the content to.
+            url: the URL of the content, which we will crawl. Could also be an array.
+            topic: the topic of the content.
+
+        Returns:
+            bool: True if successful, False otherwise.
+        """
+
+        api_url = self.base_url + "add_url_to_factbase/" + fact_db_slug
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        j = {
+            "url": url,
+            "topic": topic,
+        }
+        response = requests.post(api_url, headers=headers, json=j)
+
+        if response.status_code == 200 or response.status_code == 201:
+            return True
+        print(response)
+        return False
