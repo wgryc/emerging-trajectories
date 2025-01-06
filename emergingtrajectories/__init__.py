@@ -256,6 +256,45 @@ class EmergingTrajectoriesClient(object):
         else:
             raise Exception(response.text)
 
+    def query_factbase(self, short_code, query, days_filter=1, pubdate_days_filter=-1, llm_model=None, llm_temperature=None) -> str:
+        """
+        Query the fact base as if you'd query a document, but with no document required. The responses here are ephemeral and are not stored anywhere.
+
+        Args:
+            short_code: the short code for the factbase to query
+            query: the query to run
+            days_filter: limit facts to the recent number of days
+            pubdate_days_filter: limit facts to the recent number of days based on publication date
+            llm_model: the LLM model to use
+            llm_temperature: the LLM temperature to use
+        Returns:
+            str: The response written based on facts in the fact base.
+        """
+
+        url = self.base_url + "factbase_query/" + short_code 
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"query": query}
+
+        data['days_filter'] = days_filter
+        data['pubdate_days_filter'] = pubdate_days_filter
+
+        if llm_model is not None:
+            data['llm_model'] = llm_model
+
+        if llm_temperature is not None:
+            data['llm_temperature'] = llm_temperature
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            return r['response']
+        else:
+            raise Exception(response.text)
+
     def build_research_plan(self, query: str) -> dict:
         """
         Given a research question/query, we create a set of tasks that we can then automate document creation around.
