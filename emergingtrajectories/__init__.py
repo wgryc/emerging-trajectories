@@ -1117,6 +1117,50 @@ class EmergingTrajectoriesClient(object):
 
         raise Exception(response.text)
 
+    def append_askai_block_fact_range(
+        self, doc_id: int, query: str, named_id: str = None, is_hidden: bool = False, num_results=10, num_before=7, num_after=7
+    ) -> dict:
+        """
+        Add an AI 'fact range' block to a document. This uses an experimental form of RAG that should reduce hallucinations but also reduces the # of sources that can be queried.
+
+        Args:
+            doc_id: the ID of the document to append the text block to
+            query: the query to use for the AI block
+            is_hidden: whether the block is hidden in public documents
+            num_results: the number of results (sources) to return when doing a deep dive
+            num_before: the number of facts to include prior to the core fact (with chunking)
+            num_after: the number of facts to include after the core fact (with chunking)
+        Returns:
+            JSON dict with document information
+        """
+
+        url = self.base_url + "api_doc_append_askai_fact_range_block"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {
+            "doc_id": doc_id,
+            "query": query,
+            "num_results": num_results,
+            "num_before": num_before,
+            "num_after": num_after
+        }
+
+        if is_hidden:
+            data["is_hidden"] = "true"
+
+        if named_id is not None:
+            data["named_id"] = named_id
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            return r
+
+        raise Exception(response.text)
+
     def create_automation_factbase(
         self, short_code, job_type, arg_string=None, args=None
     ):
