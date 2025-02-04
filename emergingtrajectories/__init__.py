@@ -50,7 +50,7 @@ class Forecast(object):
 class Client(object):
 
     # The base URL for the API, in case we need to change it or if someone wants to self-host anything.
-    base_url = "https://emergingtrajectories.com/a/api/v0.2/"
+    base_url = "https://app.emergingtrajectories.com/a/api/v0.2/"
 
     def __init__(self, api_key: str) -> None:
         """
