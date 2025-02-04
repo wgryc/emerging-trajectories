@@ -219,7 +219,7 @@ class EmergingTrajectoriesClient(object):
     """
 
     # The base URL for the API, in case we need to change it or if someone wants to self-host anything.
-    base_url = "https://emergingtrajectories.com/a/api/v0.2/"
+    base_url = "https://app.emergingtrajectories.com/a/api/v0.2/"
 
     def __init__(self, api_key: str) -> None:
         """
@@ -609,6 +609,7 @@ class EmergingTrajectoriesClient(object):
             if "doc_id" in r:
                 return int(r["doc_id"])
         else:
+            print(response.text)
             raise Exception(response.text)
 
         raise Exception("Failed to create document.")
