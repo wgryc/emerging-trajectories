@@ -256,6 +256,40 @@ class EmergingTrajectoriesClient(object):
         else:
             raise Exception(response.text)
 
+    def get_facts(self, short_code, query, days_filter=1, pubdate_days_filter=-1, use_text_match=False) -> str:
+        """
+        Query the fact base and simply get the raw facts normally generated for documents or other internal processes.
+
+        Args:
+            short_code: the short code for the factbase to query
+            query: the query to run
+            days_filter: limit facts to the recent number of days
+            pubdate_days_filter: limit facts to the recent number of days based on publication date
+            use_text_match: use text matching for the query
+
+        Returns:
+            str: A list of facts as a string.
+        """
+
+        url = self.base_url + "factbase_get_facts/" + short_code 
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"query": query}
+
+        data['days_filter'] = days_filter
+        data['pubdate_days_filter'] = pubdate_days_filter
+        data['use_text_match'] = use_text_match
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            r = response.json()
+            return r['response']
+        else:
+            raise Exception(response.text)
+
     def query_factbase(self, short_code, query, days_filter=1, pubdate_days_filter=-1, llm_model=None, llm_temperature=None) -> str:
         """
         Query the fact base as if you'd query a document, but with no document required. The responses here are ephemeral and are not stored anywhere.
