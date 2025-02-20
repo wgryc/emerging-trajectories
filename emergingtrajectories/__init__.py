@@ -5,6 +5,8 @@ import dateparser
 from typing import Union, List
 import warnings
 import time
+import os 
+import mimetypes
 
 
 def hello() -> None:
@@ -227,6 +229,41 @@ class EmergingTrajectoriesClient(object):
             api_key: the API key for the Emerging Trajectories platform.
         """
         self.api_key = api_key
+
+    def upload_pdf(self, pdf_path: str, factbase_shortcode: str) -> bool:
+        """
+        Upload a PDF to the Emerging Trajectories platform.
+
+        Args:
+            pdf_path: the path to the PDF file to upload
+            factbase_shortcode: the short code for the factbase to attach the PDF to
+
+        Returns:
+            bool: returns True if file has been uploaded successfully
+        """
+        url = self.base_url + "api_ingest_pdf_via_post/" + factbase_shortcode
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": None,
+        }
+
+        
+        try:
+            with open(pdf_path, 'rb') as pdf_file:
+                files = {
+                    'file': (os.path.basename(pdf_path), pdf_file, 'application/pdf')
+                }
+                response = requests.post(
+                    url,
+                    files=files,
+                    headers=headers
+                )
+                response.raise_for_status()
+        except requests.exceptions.RequestException as e:
+            print(f"Upload failed: {e}")
+            raise
+
+        return True 
 
     def create_factbase(self, title: str, description: str) -> str:
         """
