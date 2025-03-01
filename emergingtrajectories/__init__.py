@@ -1454,7 +1454,7 @@ class EmergingTrajectoriesClient(object):
         raise Exception(response.text)
 
     def add_facts_to_factbase(
-        self, fact_db_slug: str, url: str, facts: list[str]
+        self, fact_db_slug: str, url: str, facts: list[str],
     ) -> bool:
         """
         Adds a list of facts to a factbase on the Emerging Trajectories website.
@@ -1464,7 +1464,7 @@ class EmergingTrajectoriesClient(object):
             url: the URL of the fact.
             facts: the facts to add (a list of strings).
 
-        Reutnr:
+        Returns:
             bool: True if successful, False otherwise.
         """
 
@@ -1483,7 +1483,50 @@ class EmergingTrajectoriesClient(object):
             return True
         return False
 
-    def add_fact_to_factbase(self, fact_db_slug: str, url: str, fact: str) -> bool:
+    def add_facts_to_factbase_unique_urls(
+        self, fact_db_slug: str, urls: list[str], facts: list[str], pubdates: list[datetime] = None
+    ) -> bool:
+        """
+        Adds a list of facts to a factbase on the Emerging Trajectories website. This currently has a maximum # of 100 facts that can be sent at a time.
+
+        Args:
+            fact_db_slug: the slug of the fact database to add the fact to.
+            urls: the URLs of the facts.
+            facts: the facts to add (a list of strings).
+            pubdates: the publication dates of the facts.
+        
+        Returns:
+            bool: True if successful, False otherwise.
+        """
+
+        if len(urls) != len(facts):
+            raise Exception("URLs and facts must be the same length.")
+        
+        if pubdates is not None and len(pubdates) != len(facts):
+            raise Exception("Pubdates must be the same length as facts.")
+
+        api_url = self.base_url + "add_facts_unique_urls/" + fact_db_slug
+
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+
+        j = {
+            "urls": urls,
+            "facts": facts,
+        }
+
+        if pubdates is not None:
+            j['pubdates_iso'] = [d.isoformat() for d in pubdates]
+
+        response = requests.post(api_url, headers=headers, json=j)
+        if response.status_code == 200 or response.status_code == 201:
+            return True
+        print(response)
+        return False
+
+    def add_fact_to_factbase(self, fact_db_slug: str, url: str, fact: str, pubdate = None) -> bool:
         """
         Adds a fact to a factbase on the Emerging Trajectories website.
 
@@ -1491,8 +1534,9 @@ class EmergingTrajectoriesClient(object):
             fact_db_slug: the slug of the fact database to add the fact to.
             url: the URL of the fact.
             fact: the fact to add.
+            pubdate: datetime object for when the fact was published.
 
-        Reutnr:
+        Returns:
             bool: True if successful, False otherwise.
         """
         api_url = self.base_url + "add_fact/" + fact_db_slug
@@ -1504,11 +1548,15 @@ class EmergingTrajectoriesClient(object):
             "fact": fact,
             "url": url,
         }
+        if pubdate is not None:
+            j['pubdate_iso'] = pubdate.isoformat()
+
         response = requests.post(api_url, headers=headers, json=j)
 
         if response.status_code == 200 or response.status_code == 201:
             return True
         print(response)
+        print(response.text)
         return False
 
     def add_content_to_factbase(
