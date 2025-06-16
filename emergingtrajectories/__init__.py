@@ -230,6 +230,40 @@ class EmergingTrajectoriesClient(object):
         """
         self.api_key = api_key
 
+    def get_events(self, project_codes: Union[str, List[str]] = None, limit: int = 100) -> List[dict]:
+
+        """
+        Get events from the Emerging Trajectories platform.
+
+        Args:
+            project_codes: a single project code or a list of project codes to filter events by
+
+        Returns:
+            List[dict]: a list of events, each represented as a dictionary
+        """
+
+        project_code_str = ""
+        if project_codes is not None:
+            if isinstance(project_codes, str):
+                project_code_str = project_codes
+            else:
+                project_code_str = ",".join(project_codes)
+
+        url = self.base_url + f"api_get_events/{project_code_str}?limit={limit}"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+
+        response = requests.get(url, headers=headers)
+        if response.status_code == 200:
+            json_data = response.json()
+            if "message" in json_data:
+                print(f"MESSAGE: {json_data['message']}")
+            return json_data["events"]
+        else:
+            raise Exception(response.text)
+
     def upload_pdf(self, pdf_path: str, factbase_shortcode: str) -> bool:
         """
         Upload a PDF to the Emerging Trajectories platform.
