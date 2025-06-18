@@ -231,7 +231,6 @@ class EmergingTrajectoriesClient(object):
         self.api_key = api_key
 
     def get_events(self, project_codes: Union[str, List[str]] = None, limit: int = 100) -> List[dict]:
-
         """
         Get events from the Emerging Trajectories platform.
 
@@ -264,6 +263,42 @@ class EmergingTrajectoriesClient(object):
         else:
             raise Exception(response.text)
 
+    def search_public_events(self, query, project_codes: Union[str, List[str]], limit:int = 10) -> List[dict]:
+        """
+        Search for public events on the Emerging Trajectories platform.
+
+        Args:
+            query: the search query string
+            project_codes: a single project code or a list of project codes to filter events by
+            limit: the maximum number of events to return
+
+        Returns:
+            List[dict]: a list of events, each represented as a dictionary
+        """
+
+        project_code_str = ""
+        if project_codes is not None:
+            if isinstance(project_codes, str):
+                project_code_str = project_codes
+            else:
+                project_code_str = ",".join(project_codes)
+
+        url = self.base_url + f"api_search_events_public/{project_code_str}"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        data = {"query": query, "limit": limit}
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+
+        if response.status_code == 200:
+            json_data = response.json()
+            if "message" in json_data:
+                print(f"MESSAGE: {json_data['message']}")
+            return json_data["events"]
+        else:
+            raise Exception(response.text)
+
     def upload_pdf(self, pdf_path: str, factbase_shortcode: str) -> bool:
         """
         Upload a PDF to the Emerging Trajectories platform.
@@ -281,7 +316,6 @@ class EmergingTrajectoriesClient(object):
             "Content-Type": None,
         }
 
-        
         try:
             with open(pdf_path, 'rb') as pdf_file:
                 files = {
